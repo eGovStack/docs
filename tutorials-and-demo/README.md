@@ -1,2 +1,4 @@
 # Tutorials & Demo
 
+Here are the articles in this section:[Architecture ExplainedAn high level view on DIGIT's overall layered architecture and services. You may get to know about the tech stack & how/...](architecture-explained.md)[Open source Git ReposHelps knowing our various GitRepos and it's purpose. If you are a partner/contributor you may choose to fork or clone de...](open-source-git-repos.md)[Infra provisioning - AWSProvisioning kubernetes cluster which is an abstracted infrastructure requirement for DIGIT to be deployed. Here we'll p...](infra-provisioning-aws.md)[Digit Deployment on AWSWhat does it take to deploy DIGIT services on kubernetes, how to prepare deployment manifests for various services along...](digit-deployment-on-aws.md)[DIGIT - CI/CDWhile there are many DIGIT services and the development code is part of various git repos, how to create a CI/CD pipelin...](digit-ci-cd.md)
+

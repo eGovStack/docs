@@ -1,2 +1,2 @@
-# API Contracts
+# api-contracts
 

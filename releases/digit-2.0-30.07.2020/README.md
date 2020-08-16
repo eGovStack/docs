@@ -1,33 +1,12 @@
----
-description: Baselined and Standardised Release
----
-
 # DIGIT 2.0 \(30.07.2020\)
 
-## **Release Summary:**
-
-* DIGIT 2.0 is a baselined release that has got very few functional changes, but more of a non-functional standardisation changes.
-* Functional: Introducing advance payment feature and Advance collection integration with W/S.
-* Non-functional: Upgrading spring boot and tracer version of all the backend services to enhance the range of non-functional benefits like performance, metrics, and security. Also all digit services/configs are baselined to follow the Semantic Versioning. These would enable the partner eco-system, system Integrators and state teams for an easy on-going upgrades and integrations.
-
-## Upgrade Instructions:
-
-* DIGIT 2.0 is a baselined release - considering simplification and standardization as a theme. It is strongly recommended all state teams upgrade to leverage benefits.
-  * All services versioning will follow [**SemVer 2.0**](https://medium.com/@pmuens/understanding-semver-3f75d11b4d)**,** naming conventions and Git Tagging are improved for better tracing.
-  * Next release we might have few more enhancements to the services naming conventions and handling MDMS and Configs better.
-* **Impact**: Functionally, the upgrade to DIGIT 2.0 should not impact the existing environments.
-
-## What has changed
-
-{% tabs %}
-{% tab title="Functional Changes" %}
-### **New Features:**
+## **New Features:** <a id="new-features"></a>
 
 * Ability to handle [advanced payments](https://digit-discuss.atlassian.net/wiki/spaces/ED/pages/604307457/Release+Notes+for+Advance+Payment+implementation+in+W+S) - platform and Reference implementation in W&S.
 * Advance Collection integration with W&S
   * API Contracts
 
-### **Enhancements:**
+## **Enhancements:** <a id="enhancements"></a>
 
 * Bulk persister changes to support bulk persisting for migration in Persister Service.
 * Localization URL params to be changed to request params in Localization service
@@ -40,10 +19,8 @@ description: Baselined and Standardised Release
   * Generalized Client-side PDF generation component and integration with Property, Fire NOC, Trade License, and W&S applications\).
   * Generalize acknowledgment screens component
   * MDMS namespace common component and integration with PT and TL modules.
-{% endtab %}
 
-{% tab title="Non-functional Changes" %}
-### **New Features:**
+## **New Features:** <a id="new-features-1"></a>
 
 **Infra and Operations Simplification**
 
@@ -57,18 +34,9 @@ description: Baselined and Standardised Release
 * DIGIT on Spot Instances for AWS users, saves 60% of the cloud cost.
 * Configurable SSO with GitHub or Google SSO oauth for all the Infra apps like Jaeger, Grafana, Kibana.
 * DIGIT Jenkins as a service
-* DIGIT CI/CD [Pipelines-as-a-service](https://github.com/egovernments/CIOps)
-
-### **Enhancements:**
+* 
+## **Enhancements:** <a id="enhancements-1"></a>
 
 * Versioned Git Tags for all the services
 * Versioned MDMS and Config data.
-{% endtab %}
-{% endtabs %}
-
-
-
-\*\*\*\*
-
-### 
 
