@@ -1,4 +1,2 @@
-# Understand DIGIT
-
-Technology & Architecture
+# DIGIT Modules & Features
 
