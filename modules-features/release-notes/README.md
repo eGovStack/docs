@@ -4,14 +4,14 @@ description: 'New release features, enhancements, and fixes'
 
 # Release Notes DIGIT 2.0
 
-### Release Summary
+## Release Summary
 
 ‌DIGIT 2.0 is a baselined release that has got few functional changes, but more of non-functional standardisation changes.
 
 * Functional: Introducing advance payment feature and Advance collection integration with W/S.
 * Non-functional: Upgrading spring boot and tracer version of all the backend services to enhance the range of non-functional benefits like performance, metrics, and security. Also, all digit services/configs are baselined to follow the Semantic Versioning. These would enable the partner eco-system, system Integrators and state teams for easy on-going upgrades and integrations.
 
-### New ‌Feature Additions
+## New ‌Feature Additions
 
 <table>
   <thead>
@@ -26,7 +26,7 @@ description: 'New release features, enhancements, and fixes'
     <tr>
       <td style="text-align:left">Advance Payments</td>
       <td style="text-align:left">
-        <p>Ability to handle <a href="advance-payments-release-notes.md">advanced payments </a>-
+        <p>Ability to handle <a href="advance-payments-release-notes.md">advanced payments</a> -
           platform and Reference implementation in W&amp;S.</p>
         <p>Advance Collection integration with W&amp;S</p>
       </td>
@@ -60,7 +60,7 @@ description: 'New release features, enhancements, and fixes'
   </tbody>
 </table>
 
-### Enhancements
+## Enhancements
 
 <table>
   <thead>
@@ -122,7 +122,7 @@ DIGIT 2.0 is a baselined release - considering simplification and standardizatio
 * Next release might have a few more enhancements to the services naming conventions and handling MDMS and Configs better.
 * **Impact**: Functionally, the upgrade to DIGIT 2.0 will not impact the existing environments.
 
-### Document Resources and Links
+## Document Resources and Links
 
 <table>
   <thead>
@@ -218,7 +218,7 @@ DIGIT 2.0 is a baselined release - considering simplification and standardizatio
   </tbody>
 </table>
 
-### Upcoming Release Highlights
+## Upcoming Release Highlights
 
 * Renaming of the backend services with a naming convention in place.
 * Config \(MDMS, Configs\) Baseline versioning.
