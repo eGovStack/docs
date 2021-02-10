@@ -1,6 +1,6 @@
 # Module Setup
 
-Master data templates allow users to configure the key parameters and details required for the effective functioning of the modules. This section offers comprehensive information on how to configure the master data templates for each module.
+Master data templates allow users to configure the key parameters and details required for the effective functioning of the modules. This section offers comprehensive information on how to configure the master data templates for each module. 
 
 {% page-ref page="configuring-trade-licenses-data/" %}
 
@@ -29,4 +29,36 @@ Master data templates allow users to configure the key parameters and details re
 {% page-ref page="untitled-2/" %}
 
 {% page-ref page="untitled/" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

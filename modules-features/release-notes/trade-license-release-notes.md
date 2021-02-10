@@ -4,11 +4,11 @@ description: DIGIT 2.0 Changes to the Trade License
 
 # Trade License Release Notes
 
-## Overview
+### Overview
 
 Trade License v2.0 enables seamless and hassle-free renewal mechanism for existing trade licenses. Separate workflows for unedited and edited renewal applications to accelerate the process.
 
-## Release Highlights
+### Release Highlights
 
 * The renewal application can be generated for any existing trade license
 * Users can edit trade type and owner details before submitting the renewal application 
@@ -16,7 +16,7 @@ Trade License v2.0 enables seamless and hassle-free renewal mechanism for existi
 * The one-touch renewal process is applicable for unedited applications too 
 * Users will receive SMS notifications for renewal application progress
 
-## Release Features
+### Release Features
 
 <table>
   <thead>
@@ -112,7 +112,7 @@ Trade License v2.0 enables seamless and hassle-free renewal mechanism for existi
   </tbody>
 </table>
 
-## Reference Doc Links
+### Reference Doc Links
 
 | **Doc Links** | **Description** |
 | :--- | :--- |

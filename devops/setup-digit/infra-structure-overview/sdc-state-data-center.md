@@ -4,7 +4,7 @@ description: State Data Centres with On-Premise Kubernetes Clusters
 
 # SDC
 
-## What to know when deploying Kubernetes on SDC
+### What to know when deploying Kubernetes on SDC
 
 Running Kubernetes on-premise gives a cloud-native experience or SDC becomes cloud-agnostic when it comes to the experience of Deploying DIGIT.
 
@@ -21,7 +21,7 @@ To successfully deploy a bespoke Kubernetes cluster and achieve a cloud-like exp
 
 Let us look at each of these challenges individually, and we’ll try to provide enough of an overview to aid you in getting started.
 
-## Automating the deployment process
+### Automating the deployment process
 
 Using a tool like an ansible can make deploying Kubernetes clusters on-premise trivial.
 
@@ -34,7 +34,7 @@ After this phase, automating the deployment process is an important if not neces
 
 If you already using ansible, kubespray is a great option otherwise we recommend writing automation around kubeadm using your preferred playbook tool after using it a few times. This will also increase your confidence and knowledge in the tooling surrounding Kubernetes.
 
-## Choosing a network solution
+### Choosing a network solution
 
 When designing clusters, choosing the right container networking interface \(CNI\) plugin can be the hardest part. This is because choosing a CNI that will work well with an existing network topology can be tough. Do you need BGP peering capabilities? Do you want an overlay network using vxlan? How close to bare-metal performance are you trying to get?
 
@@ -42,7 +42,7 @@ There are a lot of articles that compare the various CNI provider solutions \(ca
 
 For ingress traffic, you’ll need to pick a load-balancer solution. For a simple configuration, you can use MetalLB, but if you’re lucky enough to have F5 hardware load-balancers available we recommend checking out the [K8s F5 BIG-IP Controller](https://clouddocs.f5.com/containers/v2/kubernetes/). The controller supports connecting your network plugin to the F5 either through either vxlan or BGP peering. This gives the controller full visibility into pod health and provides the best performance.
 
-## Choosing a storage solution
+### Choosing a storage solution
 
 Kubernetes provides a number of [included storage volume plugins](https://kubernetes.io/docs/concepts/storage/storage-classes/#provisioner). If you’re going on-premise you’ll probably want to use network-attached storage \(NAS\) option to avoid forcing pods to be pinned to specific nodes.
 
@@ -50,7 +50,7 @@ For a cloud-like experience, you’ll need to add a plugin to dynamically create
 
 Pure Storage has a great example helm chart, the [_Pure Service Orchestrator_ \(PSO\)](https://github.com/purestorage/helm-charts), that provides smart provisioning although it only works for Pure Storage products.
 
-## Handle security and authentication
+### Handle security and authentication
 
 As anyone familiar with security knows, this is a rabbit-hole. You can always make your infrastructure more secure and should be investing in continual improvements.
 
@@ -64,7 +64,7 @@ When designing on-premise clusters you’ll have to decide where to draw the lin
 
 For user authentication, we recommend checking out [guard](https://github.com/appscode/guard) which will integrate with an existing authentication provider. If you’re already using Github teams to then this could be a no-brainer.
 
-## Other Considerations
+### Other Considerations
 
 Hope this has given you a good idea of deploying, networking, storage, and security for you to take the leap into deploying your own on-premise Kubernetes clusters. Like we mentioned above, the team will want to build proof-of-concept clusters, run conformance and performance tests, and really become experts on Kubernetes if you’re going to be using it to run DIGIT on production.
 

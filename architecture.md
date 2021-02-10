@@ -6,7 +6,7 @@ description: Digital Governance Platform
 
 DIGIT is India’s largest open-source platform for Urban Governance. It is built on OpenAPI \(OAS 2.0\) and provides API based access to a variety of urban/municipal services enabling state governments and city administrators to provide citizen services with relevant new services and also integrating the existing system into the platform and run seamlessly on any commercial/on-prem cloud infrastructure with scale and speed.
 
-## Key Architecture Highlights <a id="Key-Architecture-Highlights"></a>
+### Key Architecture Highlights <a id="Key-Architecture-Highlights"></a>
 
 * DIGIT is a microservices-based platform which is built to scale. Microservices are small, autonomous and developer-friendly services that work together.
 

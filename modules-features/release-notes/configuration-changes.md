@@ -4,7 +4,7 @@ description: DIGIT 2.0 - Technical Details of the Changes
 
 # Configuration Changes
 
-## **MDMS changes**
+### **MDMS changes**
 
 | **Feature** | **Status** | **Changes** | **Description** |
 | :--- | :--- | :--- | :--- |
@@ -30,7 +30,7 @@ description: DIGIT 2.0 - Technical Details of the Changes
 | Localization | New | [PR-1073](https://github.com/egovernments/egov-mdms-data/pull/1073) | Added new action for v2 localisation search |
 | Reports | Deprecate | [PR-1170](https://github.com/egovernments/egov-mdms-data/pull/1170) | Disabling the Reports and UI localization Links |
 
-## Backend Config Changes
+### Backend Config Changes
 
 | **Module** | **Action** | **PR** | **Description** |
 | :--- | :--- | :--- | :--- |
@@ -56,7 +56,7 @@ description: DIGIT 2.0 - Technical Details of the Changes
 | BPA | Update | [noc-persister.yml](https://github.com/egovernments/configs/commit/b94803a5d2e700b56c35b89b8cde5e1e32cfdbc4) | Changed filestore to filestoreId |
 | BPA | Update | [noc-persister.yml](https://github.com/egovernments/configs/commit/5f7eafdf3339d49a736d31c50037333a11c0f114) | Updated NOC persister |
 
-## Infra/Deployment Config Changes
+### Infra/Deployment Config Changes
 
 <table>
   <thead>
@@ -133,7 +133,7 @@ description: DIGIT 2.0 - Technical Details of the Changes
   </tbody>
 </table>
 
-## Service Build Artefacts
+### Service Build Artefacts
 
 <table>
   <thead>
@@ -828,7 +828,7 @@ description: DIGIT 2.0 - Technical Details of the Changes
   </tbody>
 </table>
 
-## Deprecated Features
+### Deprecated Features
 
 * egov-data-uploader
 * egov-common-masters

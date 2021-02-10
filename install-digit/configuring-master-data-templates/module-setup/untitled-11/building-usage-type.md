@@ -1,12 +1,12 @@
 # Building Usage Type
 
-## Introduction
+### Introduction
 
 Buildings can be classified into various categories on the basis of their usage. Different fire stations can have different ontology for building usage type but in order to provide citizens and businesses a uniform experience, it is important that the building usage types ontology is standardized at the state level.
 
 For this purpose, the states can also use the National Building Code of India \(NBC\), a comprehensive building code, which is a national instrument providing guidelines for regulating the building construction activities across the country.
 
-## Data Table
+### Data Table
 
 | Sr. No. | \*Building Usage Type Code | \*Building Usage Type | \*Building Group \(as per NBC\) | \*Building Usage Type \(as per NBC\) |
 | :--- | :--- | :--- | :--- | :--- |
@@ -17,9 +17,9 @@ For this purpose, the states can also use the National Building Code of India \(
 Data given in the above table is a sample data.
 {% endhint %}
 
-## Procedure
+### Procedure
 
-### Data Definitions
+#### Data Definitions
 
 | Sr. No. | Column Name | Data Type | Data Size | Mandatory | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -28,7 +28,7 @@ Data given in the above table is a sample data.
 | 3 | Building Group \(as per NBC\) | Text | 256 | Yes | The code is given to the building usage type as per NBC. Eg: Group A, Group B |
 | 4 | Building Usage Type \(as per NBC\) | Text | 256 | Yes | Name of building usage type as per NBC. Eg: Residential, Educational |
 
-### How to fill data
+#### How to fill data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -39,11 +39,11 @@ Data given in the above table is a sample data.
 7. Record the appropriate group and building type from NBC in the Building Group \(as per NBC\) and Building Usage Type \(as per NBC\) respectively.
 8. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -51,7 +51,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../untitled-1/checklist.md) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -85,11 +85,13 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-## Attachments
+### Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-building-usage-type.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sample-configuration-data-building-usage-type-1-.xlsx" caption="Sample Data" %}
 
 {% file src="../../../../.gitbook/assets/nbc-building-classification.xlsx" caption="NBC Building Classification" %}
+
+
 

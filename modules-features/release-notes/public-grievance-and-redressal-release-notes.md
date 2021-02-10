@@ -4,16 +4,16 @@ description: DIGIT 2.0 Changes to the Public Grievance and Redressal
 
 # PGR Release Notes
 
-## Overview
+### Overview
 
 PGR is a standardized solution offering on DIGIT platform to register and redress citizen grievances. It provides a transparent and trackable mechanism to solve public grievances by inducing responsive administration. PGR enables the citizens to file the complaints using various channels and helps the municipal employees to resolve them in a timebound manner.
 
-## Release Highlights
+### Release Highlights
 
 1. Additional user role added - Provision for the additional role of state CSR for addressing Public Grievances
 2. Display the exact count of assigned or unassigned complaints in GRO/LME inbox
 
-## Release Features
+### Release Features
 
 <table>
   <thead>
@@ -62,7 +62,7 @@ PGR is a standardized solution offering on DIGIT platform to register and redres
 
 ![](blob:https://digit-discuss.atlassian.net/7f949e40-3ee2-4eef-98f0-30ece30f0e73#media-blob-url=true&id=4d067959-7f98-4bee-932d-f6af66848a1f&collection=contentId-700809219&contextId=700809219&mimeType=image%2Fpng&name=PGR-enhancement1.png&size=162912&width=613&height=373)
 
-## Reference Doc Links
+### Reference Doc Links
 
 | **Doc Links** | **Description** |
 | :--- | :--- |

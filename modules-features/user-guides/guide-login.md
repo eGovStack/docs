@@ -6,7 +6,7 @@ description: Guide to user registration and user profile management
 
 DIGIT users can sign up to use various modules through the online web portal or the mobile application login interface.
 
-## User Registration
+### User Registration
 
 The first step to logging in to use the **DIGIT** modules is to register as a user.
 
@@ -24,7 +24,7 @@ Click on the **Resend** button on the screen in case you have not received your 
 
 ![](https://docs.google.com/drawings/u/0/d/sNyb8dw-xIYxcNLqvo3_d8w/image?w=624&h=349&rev=1&ac=1&parent=1pR9OLsrbm5UDtHSuq-Iv2BM78gUTwagbwGpCMGdeqrg)
 
-## User Login
+### User Login
 
 Enter the URL [https://egov-micro-qa.egovernments.org/citizen/](https://egov-micro-qa.egovernments.org/citizen/) to log in to the system. Click on the **Login** button.
 
@@ -34,7 +34,7 @@ Enter your **Mobile Number**. Mobile app users can scan the QR code on the scree
 
 Enter the **OTP** sent to the registered mobile number. Click on the **Continue** button. You are logged in to the app.
 
-## Edit User Profile
+### Edit User Profile
 
 Click on the drop-down icon next to your profile logo on the top right corner of the window to change your account details. Click on **Edit Profile**.
 
@@ -50,7 +50,7 @@ Click on the camera ![](https://lh4.googleusercontent.com/TByzXzqFM0xmlOY171TFHK
 
 Click on the **Save** button. The profile changes are saved and applied.
 
-## Change Language Settings
+### Change Language Settings
 
 Users can change the language of the app from English to Hindi or the local language for ease and convenience. To change language click on the button labelled English adjacent to the profile icon.
 
@@ -58,7 +58,7 @@ Users can change the language of the app from English to Hindi or the local lang
 
 Select the preferred language from the list of available languages. The system menu and prompts will now be displayed in the selected language.
 
-## Logging Out
+### Logging Out
 
 To log out from the app click on the drop-down icon next to your profile logo on the top right corner of the window. Click on Logout.
 

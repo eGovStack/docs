@@ -4,11 +4,11 @@ description: DIGIT 2.0 Changes to the Water & Sewerage
 
 # Water & Sewerage Release Notes
 
-## Overview
+### Overview
 
 Version 2.0 of 'Water & Sewerage' product allows the user to Apply for a New Water/Sewerage connection online. A citizen can apply for a new Water/ Sewerage connection Individually or in an Integrated manner. Citizen will receive a text and in-app notification on each step of the workflow. The Applications can be tracked online, in the 'My Applications' section provided to the citizen. Online application payment, send back to the citizen are some other features available for the citizen. Employees can search and process the application filed by the citizen. Some other features are workflow approval process, application payment collection etc.
 
-## Release Highlights
+### Release Highlights
 
 1. W&S and Property integration, while applying for a New connection
 2. Generation of artefacts at a desired stage of the application \(For eg. Generation of 'estimation notice' after the 'field inspector' approves the application\)
@@ -19,7 +19,7 @@ Version 2.0 of 'Water & Sewerage' product allows the user to Apply for a New Wat
 7. Capture plumber information
 8. Usage of Property ontology to cater to diverse use cases \(For eg. Water/Sewerage connections for Institutional, Commercial properties etc.\)
 
-## Release Features
+### Release Features
 
 The W&S Version 2.0 release is equipped to allow citizens and employee to create an application for new water and sewerage connection online. The application is designed to facilitate the following affordance:
 
@@ -309,7 +309,7 @@ The W&S Version 2.0 release is equipped to allow citizens and employee to create
   </tbody>
 </table>
 
-## Known Issues
+### Known Issues
 
 * 'Property Type' localization value missing
 * Owner details, in case of multiple owners, need to refresh for getting other names
@@ -330,7 +330,7 @@ The W&S Version 2.0 release is equipped to allow citizens and employee to create
 * No download/Print option to DV, FI, AP after submission \(Artifacts are needed to be downloaded\)
 * Metered connection getting executed without initial meter reading
 
-## Upcoming Release Feature
+### Upcoming Release Feature
 
 <table>
   <thead>
@@ -408,7 +408,7 @@ The W&S Version 2.0 release is equipped to allow citizens and employee to create
   </tbody>
 </table>
 
-## Reference Doc Links
+### Reference Doc Links
 
 <table>
   <thead>

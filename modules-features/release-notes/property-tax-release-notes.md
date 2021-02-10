@@ -4,11 +4,11 @@ description: DIGIT 2.0 Changes to the Property Tax
 
 # Property Tax Release Notes
 
-## Overview
+### Overview
 
 The Property Tax System in DIGIT provides a digital interface to make property assessments, pay property tax, generate payment receipts or monitor and generate tax collection reports. It can be used by citizens, Urban Local Body \(ULB\) counter employees, field employees, and ULB Administrators to accomplish their specific tasks.
 
-## Release Highlights
+### Release Highlights
 
 1. Ability to search Property in public domain
 2. Ability to make Property tax payments without login in DIGIT
@@ -17,7 +17,7 @@ The Property Tax System in DIGIT provides a digital interface to make property a
 5. Payment QR code on bills
 6. Enlisting documents required to apply for property registration and transfer of ownership
 
-## Release Features
+### Release Features
 
 | **Key Feature** | **Description** |
 | :--- | :--- |
@@ -28,7 +28,7 @@ The Property Tax System in DIGIT provides a digital interface to make property a
 | Payment QR code on bills | Property tax bills will have a payment QR code printed. Each bill will have a unique QR code which will be a link to the common pay page. |
 | Enlisting documents required to apply for property registration and transfer of ownership | Before initiating property registration and transfer of ownership application, the citizen will be informed about the documents required to complete the application. The list of documents can be configured based on the state’s requirements. |
 
-## Reference Doc Links
+### Reference Doc Links
 
 | **Doc Links** | **Description** |
 | :--- | :--- |

@@ -1,6 +1,6 @@
 # BPA Release Notes
 
-## Overview
+### Overview
 
 Occupancy certificate is an additional service in the building plan module. The architect has to apply for an occupancy certificate after completing the construction with the permit issued by the ULB/Department as reference.
 
@@ -8,7 +8,7 @@ To create an Occupancy certificate, OC eDCR scrutiny is mandatory where the arch
 
 OC eDCR will validate whether the actual construction is complying to the by-laws and check for deviation from the originally planned diagram for which the permit was issued.
 
-## Release Highlights
+### Release Highlights
 
 1. eDCR scrutiny for Occupancy certificate with the by-laws as on permit eDCR scrutiny date.
 2. Comparison report between permit diagram and OC diagram
@@ -17,7 +17,7 @@ OC eDCR will validate whether the actual construction is complying to the by-law
 5. Check the status of the application.
 6. Download artefacts
 
-## Release Features
+### Release Features
 
 <table>
   <thead>
@@ -105,7 +105,7 @@ OC eDCR will validate whether the actual construction is complying to the by-law
   </tbody>
 </table>
 
-## Reference Doc Links
+### Reference Doc Links
 
 | **Doc Links** | **Description** |
 | :--- | :--- |

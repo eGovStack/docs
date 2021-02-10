@@ -14,7 +14,7 @@ The citizen pays the fees for miscellaneous services through the CEs or FEs. Onc
 * Download receipts
 * Print receipts
 
-## **Search Download And Print Receipts**
+### **Search Download And Print Receipts**
 
 Citizens can search for payment receipts and download or print these online. To search for payment receipts navigate to the **Collections** option in the sidebar main menu.
 

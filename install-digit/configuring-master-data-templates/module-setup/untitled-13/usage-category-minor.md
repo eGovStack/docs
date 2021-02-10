@@ -1,40 +1,40 @@
 # Usage Category Minor
 
-## Introduction
+### Introduction
 
 Usage Category Minor is nothing but a further classification of “ Usage Category Major’s ”, which can be explained as a broad diversification of the usage of your property.
 
 This broad diversification is ideally used to classify the tax amount to which a property could be exempted from.
 
-## Data Table
+### Data Table
 
 Below mentioned is the data table that is used for collecting data:
 
-| Sr. No | Usage Category Minor Code\* | Usage Category Minor\* \(In English\)\* | Usage Category Minor\* \(In Local Language\) | Exemption Rate \(In %\)\* | Max Exemption Amount | Flat Exemption Amount | Usage Category Major Code\* |
+| Sr. No | Usage Category Minor Code\* | Usage Category Minor\* \(In English\)\* | Usage Category Minor\* \(In Local Language\) |  Exemption Rate \(In %\)\* |  Max Exemption Amount |  Flat Exemption Amount | Usage Category Major Code\* |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1. | RESIDENTIAL | Residential | आवासीय | NA | 0 | 0 | RESIDENTIAL |
-| 2. | COMMERCIAL | Commercial | व्यावसायिक | NA | 0 | 0 | NONRESIDENTIAL |
-| 3. | INDUSTRIAL | Industrial | औद्योगिक | NA | 0 | 0 | NONRESIDENTIAL |
+| 1. | RESIDENTIAL | Residential | आवासीय |  NA |  0 | 0  | RESIDENTIAL |
+| 2. | COMMERCIAL | Commercial | व्यावसायिक |  NA |  0 | 0   | NONRESIDENTIAL |
+| 3. | INDUSTRIAL | Industrial | औद्योगिक |  NA | 0  | 0 | NONRESIDENTIAL |
 
 {% hint style="info" %}
 Please note that the data mentioned in the table is sample data, however, the state might further update this on the basis of their requirements.
 {% endhint %}
 
-## Procedure
+### Procedure
 
-### Data Definition
+#### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Usage Category Minor Code | Alphanumeric | 64 | Yes | This is the unique identifier that is given to every category. |
-| 2 | Usage Category Minor \(In English\) | Text | 256 | Yes | This is the description of the Minor category in English. |
-| 3 | Usage Category Minor \(In Local Language\) | Text | 256 | Yes | This is the description of the Minor Category in the Local Language. |
-| 4 | Exemption Rate \(in % \) | Decimal | \(12,2\) | No | This column defines the % to which the property could be exempted. |
-| 5 | Max Exemption Amount | Decimal | \(12,2\) | No | This is the maximum amount which the property can be exempted from. |
-| 6 | Flat Exemption Amount | Decimal | \(12,2\) | No | The amount that should be exempted for a particular category from the property tax. |
-| 7 | Usage Category Major Code | Reference | 256 | Yes | This is the mapping between the minor’s and major’s of the usage category which can be found[ Usage Category Major](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/413958414/Usage+Category+Major) |
+| 1 | Usage Category Minor Code  | Alphanumeric | 64 | Yes | This is the unique identifier that is given to every category. |
+| 2 | Usage Category Minor \(In English\)  | Text | 256 | Yes | This is the description of the Minor category in English. |
+| 3 | Usage Category Minor \(In Local Language\)  | Text | 256 | Yes | This is the description of the Minor Category in the Local Language. |
+| 4 | Exemption Rate \(in % \)  | Decimal |  \(12,2\) | No | This column defines the % to which the property could be exempted. |
+| 5 | Max Exemption Amount  | Decimal |  \(12,2\) | No | This is the maximum amount which the property can be exempted from. |
+| 6 | Flat Exemption Amount  | Decimal |  \(12,2\) | No | The amount that should be exempted for a particular category from the property tax. |
+| 7 | Usage Category Major Code  | Reference | 256 | Yes | This is the mapping between the minor’s and major’s of the usage category which can be found[ Usage Category Major](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/413958414/Usage+Category+Major) |
 
-### Steps to fill Data
+#### Steps to fill Data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -46,11 +46,11 @@ Please note that the data mentioned in the table is sample data, however, the st
 8. Get the rates as well as amounts for the exemption if any.
 9. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -62,11 +62,11 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of. | [Checklist](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/502203140/Checklist) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 Not Applicable
 
-## Attachments
+### Attachments
 
 {% file src="../../../../.gitbook/assets/configurable-template-pt-usage-type-minor.xlsx" caption="Configuration Data Template" %}
 
