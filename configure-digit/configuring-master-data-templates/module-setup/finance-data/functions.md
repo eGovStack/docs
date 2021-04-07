@@ -1,6 +1,6 @@
 # Functions
 
-### Introduction
+## Introduction
 
 Functions shall represent the various functions or services carried out by the ULBs. Functions are provided through various responsibilities centres called Departments.
 
@@ -10,7 +10,7 @@ Functions of the ULB can have three levels within it.
 * The second Level in function would represent the particular type of service under a function, known as “Function Description”. Identified as 1 in the template
 * The third level will represent a particular cost centre, Known as “Cost Centre”, which provides the service. Identified as 2 in the template.
 
-### Data Table
+## Data Table
 
 | \*Sr. No. | \*Name | \*Code | \*Level | Parent Type | Parent Code |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -25,9 +25,9 @@ Functions of the ULB can have three levels within it.
 Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr No | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -37,7 +37,7 @@ Data given in the table is a sample data.
 | 4 | Parent Type | Text | 250 | No | If the ULB’s using multiple Functions then a Hierarchy of “Parent-Child “can be set up for the Function, so under each Parent Function a multiple child function can be set up |
 | 5 | Parent Code | Alphanumeric | 50 | No | The unique code representing the parent type function |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -46,11 +46,11 @@ Data given in the table is a sample data.
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -58,7 +58,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of. | [Checklist](../common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -88,11 +88,9 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-function.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sample-confugration-data-function.xlsx" caption="Sample Data" %}
-
-
 

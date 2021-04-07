@@ -15,7 +15,7 @@ The Citizen role can -
 * [Rate complaints](https://app.gitbook.com/@egov-digit/s/external/understand-digit/product-user-guides/public-grievance/citizen-guide#rate-complaints)
 * [Reopen complaints](https://app.gitbook.com/@egov-digit/s/external/understand-digit/product-user-guides/public-grievance/citizen-guide#reopen-complaints)
 
-### File Complaints
+## File Complaints
 
 The File Complaints option allows citizens to register their complaints.
 
@@ -37,7 +37,7 @@ The bell icon on the top right corner of the complaint tab will display any noti
 
 ![](https://lh4.googleusercontent.com/JsuSwZN1YEjovJ9Mezq5STjFjnB-KoMTc-bL3RlIZsYkccDYgMdzd48mtYXf0cNfzvtOc1gpkHT7KdVdZpfo1ZraW4A39P7WU-KGm99pQ9_flbuHvlOyJ-zeIKRbyjhmio3fhNE5)
 
-### My Complaints
+## My Complaints
 
 My Complaints tab enables citizens to track the status of their complaints.
 
@@ -51,7 +51,7 @@ The complaint summary view contains the **Complaint Details**, **Complaint Timel
 
 Enter any additional information about the complaint in the **Comments** section.
 
-### Rate Complaints
+## Rate Complaints
 
 The PGR module enables the citizens to give their feedback on resolved complaints.
 
@@ -67,7 +67,7 @@ Click on the number of stars on the screen to rate the work on the complaint on 
 
 The system displays an acknowledgement for your ratings. Click on the **Go To Home** button to navigate back to the home page.
 
-### Reopen Complaints
+## Reopen Complaints
 
 To reopen the complaint navigate to **Complaints &gt; My Complaints** menu option in the sidebar. Click on the closed complaint that you want to reopen. Scroll down to the **Complaint Timeline** section. Click on the **Re-Open** button on the timeline.
 

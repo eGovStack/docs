@@ -1,22 +1,22 @@
 # Escalation Matrix
 
-### Introduction
+## Introduction
 
 Escalation of a grievance is about updating the non-redressal of grievance to next level officer in the escalation level while the responsibility of resolving the grievance lies with the last mile employee who has received the grievance at first. Escalation matrix is defined based on the levels of escalations and the SLAs defined at each and every level.
 
-### Data Table
+## Data Table
 
 This feature is in the development plan bucket.
 
-### Procedure
+## Procedure
 
 This feature is in the development plan bucket.
 
-### Checklist
+## Checklist
 
 This feature is in the development plan bucket.
 
-### Attachments
+## Attachments
 
 This feature is in the development plan bucket.
 

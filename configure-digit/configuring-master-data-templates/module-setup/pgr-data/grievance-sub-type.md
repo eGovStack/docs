@@ -1,10 +1,10 @@
 # Grievance Sub Type
 
-### Introduction
+## Introduction
 
 Grievance sub-type defines the second level of classification of grievances which are related to ULB’s functions and adds detail to a grievance type.
 
-### Data Table
+## Data Table
 
 The data table below represents the structure of the template and given here to explain the template in detail.
 
@@ -15,12 +15,12 @@ The data table below represents the structure of the template and given here to 
 | 3 | WNS01 | Illegal Discharge of Sewage | सीवेज का अवैध निपटान | WNS | PHS | 48 |
 
 {% hint style="info" %}
- Data given in the table is a sample data.
+Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ The data table below represents the structure of the template and given here to 
 | 5 | Department Code | Reference | 64 | Yes | Unique department code from the [ULB's Departments](../../environment-setup/state-level-setup/ulb-departments.md) entity |
 | 6 | SLA \(In Hours\) | Decimal | \(5,2\) | Yes | This field defined the service level agreements in hours. This the time within which a complaint raised to be resolved |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -40,17 +40,17 @@ The data table below represents the structure of the template and given here to 
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every checklist point/ activity mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed after the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
 To see the common checklist refer to the page [Checklist](../common-config/checklist.md) consisting of all the activities which are to be followed to ensure complete and quality data.
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -85,11 +85,9 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/grievance-subtype\_template\_v1.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/grievance-type-and-subtype\_configuraion-data.xlsx" caption="Sample Data" %}
-
-
 

@@ -1,12 +1,12 @@
 # Bank Account
 
-### Introduction
+## Introduction
 
 A bank account is a financial account maintained by a State in which the financial transactions between the bank and a customer are recorded. Each bank sets the terms and conditions for each type of account it offers, which are classified in commonly understood types, such as deposit accounts, credit card accounts, current accounts, loan accounts or many other types of account.
 
 The list of banks account which the ULB holds an account in various banks will have to be created here.
 
-### Data Table
+## Data Table
 
 | Sr. No.\* | Bank Branch\* | Bank Branch Code\* | Account number\* | Fund\* | Account Type \(COA Grouping\)\* | Description | Usage Type\* | Pay to |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -18,9 +18,9 @@ The list of banks account which the ULB holds an account in various banks will h
 Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr No | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -33,7 +33,7 @@ Data given in the table is a sample data.
 | 7 | Usage Type | Text | 250 | Yes | The Usage type indicates a bank account is used for, whether a particular account is used to make payments or used for collection purpose and used for both receipt & payment purpose |
 | 8 | Pay To | Text | 100 | No | The “Pay To” indicates payments to be made to a particular bill or paying the relevant government department all the statutory remittances like Provident fund, TDS, etc using the particular bank account |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the workflow template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -42,11 +42,11 @@ Data given in the table is a sample data.
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -54,7 +54,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/502203140/Checklist) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -78,11 +78,9 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-bank-account.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sample-confugration-data-bank-account.xlsx" caption="Sample Data" %}
-
-
 

@@ -1,25 +1,25 @@
 # Deployment Of App on Play Store
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 In this document, we are coming to learn how to upload apk to play store and available to the end user to download and use from play store.
 
-### Pre-requisites <a id="Pre-requisites"></a>
+## Pre-requisites <a id="Pre-requisites"></a>
 
 Before starting the process of upload the apk to play store the following requirements are a must.
 
 * Make sure that signed apk \(signed apk has key generated, which is used to release different versions of the apk \) is generated for the application that you want to upload to play store.
-*  Make sure that you have account for google play console by agreeing to terms and conditions, also payment shd have been done for the account and is ready for uploading an apk to play store.
+* Make sure that you have account for google play console by agreeing to terms and conditions, also payment shd have been done for the account and is ready for uploading an apk to play store.
 * two **screenshots** of your app and they must be at least 320 pixels wide and be in a PNG or JPEG format.
 * You must also add your **high resolution app icon**. It must be 512 by 512 pixels and it must be in 32-bit PNG format. This icon will be visible on the Google Play app’s page and in search results.
 * Next, a Feature Graphic image, which will be visible at the top of the Google Play app’s page. This image must be 1024 by 500 pixels, and maybe in JPEG or 24-bit PNG format.
 * Also, prepare a small description about app in four to five lines.
 
-### Key Functionalities <a id="Key-Functionalities"></a>
+## Key Functionalities <a id="Key-Functionalities"></a>
 
 The use of deploying the apk to the play store is to enable the user to download the apk from the play store and use whenever needed. By uploading the apk to play store our app will be available to all end-users around the world just on the fingertips.
 
-### Deployment Details <a id="Deployment-Details"></a>
+## Deployment Details <a id="Deployment-Details"></a>
 
 Now, we are going to learn step by step procedure of uploading apk to play store.
 
@@ -28,8 +28,6 @@ Open google play console by entering the url \([https://play.google.com/apps/pub
 After login in the following screen can be seen.
 
 ![](../.gitbook/assets/1%20%282%29.png)
-
-
 
 Now on the top-right click on create Application button and you get a popup to enter the title of the apk. Refer the screenshot below and click on create.
 

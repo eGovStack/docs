@@ -1,10 +1,10 @@
 # Grievance Type
 
-### Introduction
+## Introduction
 
 A grievance is a formal complaint submitted to a ULB. Something wrong or something believed to cause distress in services provided by the ULB is considered as grounds for complaint. Grievances which are closely associated with ULB’s functions classified into different buckets, that different sections of ULB deal with are known as grievance types.
 
-### Data Table
+## Data Table
 
 | Sr. No. | Grievance Type Code\* | Grievance Type\* \(In English\) | Grievance Type\* \(In Local Language\) |
 | :--- | :--- | :--- | :--- |
@@ -13,12 +13,12 @@ A grievance is a formal complaint submitted to a ULB. Something wrong or somethi
 | 3 | DRN | Drains | नाली |
 
 {% hint style="info" %}
- Data given in the table is a sample data.
+Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -26,7 +26,7 @@ A grievance is a formal complaint submitted to a ULB. Something wrong or somethi
 | 2 | Grievance Type\* \(In English\) | Text | 256 | Yes | This is the text or string stating grievance type in English |
 | 3 | Grievance Type\* \(In Local Language\) | Text | 256 | Yes | This the text or string stating the grievance type in local language like Hindi, Telugu etc. whatever is applicable |
 
-#### Step to fill data
+### Step to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -35,17 +35,17 @@ A grievance is a formal complaint submitted to a ULB. Something wrong or somethi
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
 To see common checklist refer to the page [Checklist](../common-config/checklist.md) consisting of all the activities which are to be followed to ensure completeness and quality of data.
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -80,13 +80,9 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-grievance-type\_v1.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sample-configuraion-data-grievance-type-and-subtype.xlsx" caption="Sample Data" %}
-
-
-
-
 

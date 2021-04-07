@@ -1,22 +1,22 @@
 # Routing Matrix
 
-### Introduction
+## Introduction
 
 Routing of the grievance is defined as assigning the grievance to the last mile employee from a ULB who has been designated with the responsibility to address it within the stipulated time frame. Assigning a grievance to an employee is role-based.
 
-### Data Table
+## Data Table
 
 No data is required here to configure the routing matrix. It is simple UI based user-role mapping in the system.
 
-### Procedure
+## Procedure
 
 Not applicable.
 
-### Checklist
+## Checklist
 
 Not applicable.
 
-### Attachments
+## Attachments
 
 Not applicable.
 

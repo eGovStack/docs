@@ -16,7 +16,7 @@ The citizens can -
 6. [View past payment details](ws-citizen-manual.md#view-past-payment-details)
 7. Download bills, receipts and approval letters
 
-### Apply for new connections
+## Apply for new connections
 
 The **Apply for New Connection** option allows citizens to submit their application for new water or sewerage connection. Application forms are submitted through the portal for further processing and approval for new connections by the ULB employees.
 
@@ -46,7 +46,7 @@ Click on the **Select** button available for the relevant property in the search
 
 ![](https://lh4.googleusercontent.com/wNb0NodZr4VGnAwuNpaj0NpNAymFQYCamu4NfV22pVJD0u__70NpfBxCjDYS5NGZWygs9qrQUOYUCjgrlYUxf14HcZG6X1zQNbyKLfD8Vxuoltclrt4asZCFFxJ8RRUMCo1U7m7r)
 
-The **Same as Owner Details** box is checked by default in the **Connection Holder Details** panel. Uncheck this box if the connection holder details are not the same as the property owner. Now enter the connection holder’s **Mobile No.**, **Name**, **Gender**, **Guardian Name**, **Relationship** with the mentioned guardian, **Correspondence Address** and **Special Applicant Category** details. 
+The **Same as Owner Details** box is checked by default in the **Connection Holder Details** panel. Uncheck this box if the connection holder details are not the same as the property owner. Now enter the connection holder’s **Mobile No.**, **Name**, **Gender**, **Guardian Name**, **Relationship** with the mentioned guardian, **Correspondence Address** and **Special Applicant Category** details.
 
 ![](https://lh6.googleusercontent.com/0-mO_efE7wvxHwryn-c8VUH8b_GW_nFsyMVOhwcEzSiuJQi87hCOiJhZNCSZDgcgTSZjZEfwt3-bipGwIxtjPs3A22I94SXuDP1ixhd7BAaJ_gnXSNRaC488qeCrwzl4uv_VcMCt)
 
@@ -56,7 +56,7 @@ Enter the **No. of Taps** proposed if you are applying for water connection. Sel
 
 ![](https://lh5.googleusercontent.com/WBBE4aeXHkfUSEe2BAOI9i9ZMITkd0YGHpdbkrr_82QURzTmb20Qp3jL--FBzmw0Z92U4_lvsEM7gx9bli4RIQaYgbToGaCyHklRUP7srz5pejc2eOWfymfXmx9rI2fxxZC4smYB)
 
-The system allocates a unique **Application No.** available on the top of the application form page. Click on the **Select Documents** drop-down menu to identify the relevant document that will be uploaded as **Identity Proof**, **Address Proof**, **Building Plan** etc. 
+The system allocates a unique **Application No.** available on the top of the application form page. Click on the **Select Documents** drop-down menu to identify the relevant document that will be uploaded as **Identity Proof**, **Address Proof**, **Building Plan** etc.
 
 Click on the **Upload File** button to attach the documents to the application. Click on the **Next Step** button to move to the Summary section of the application.
 
@@ -72,7 +72,7 @@ The system displays the success acknowledgement message. Click on the **Download
 The application is processed by the ULB employees who verify the attached documents and carry out field inspections before the final approval. The citizen is allotted a unique consumer number once the application is processed and approved.
 {% endhint %}
 
-### View applications & pay application fees
+## View applications & pay application fees
 
 Citizens can view their applications to find status details, pending fees to be paid, or any other notifications linked to the application.
 
@@ -86,13 +86,13 @@ The system displays all the applications submitted by the citizen and the curren
 
 ![](https://lh6.googleusercontent.com/BMxgeufBDe-PqeoZR8ApPqu8X2kzJ1UEVFCjDH2KgU3ALxd25W2ZZ-Xi8Wy5YNS-LXB0LtNjsoYBDnRElMTbmJsmAkKp8u4XMZxh0ZcIkBgNzPtlFY7h2A3stN9bhHuCUPplpTKS)
 
-Click on the **View History** button available in the **Application Summary** panel on top. This displays all the tasks completed and in progress along with the date. 
+Click on the **View History** button available in the **Application Summary** panel on top. This displays all the tasks completed and in progress along with the date.
 
 ![](https://lh3.googleusercontent.com/Jm0dUUUtM-0iwwZFrIczW_BAPJavtexEwuTLW06HoG-NXQQZ2yC14WKkwv0enZHYWJKzhymXyQiYhMGsRV4clzuztcJYRwTi8yR01gSEOtL7_iYUwk5LN-4SbcjpRDSL-i6UjG4y)
 
 ![](https://lh5.googleusercontent.com/lnVV6KzHJOdZIjSsTYv--69KtDiOhJlg-hT2mZqb_OUj1-GqVYcbVg885J4Cep7O33UjN8ZaQsl1HeHCZYydzS51m0U713W-GYTzZZzuU5eFlDHCFsYmuXVItaraO5nrezWz_no2)
 
-The **Fee Estimate** panel displays the payable application fee details. Click on the **View Breakup** button to find the fee calculation details. 
+The **Fee Estimate** panel displays the payable application fee details. Click on the **View Breakup** button to find the fee calculation details.
 
 ![](https://lh4.googleusercontent.com/9ko45ToqeADE8YVWp6bqUwpCe-91Yv75T6UEMz7WHdze9ezQ_wto7wW__8GtV87g8xeeu5xPEHItrWXi7WpaIvZvNandmf7oxvTYcJU4FOGBS6EnU94aZTHO53jlHmsuzZH8Gtxf)
 
@@ -102,9 +102,9 @@ Click on the **Take Action** button at the bottom of the application and then cl
 
 Click on the **Download** or **Print** button on the top right corner of the page to download or print the application or the payment receipt.
 
-### Check meter readings
+## Check meter readings
 
-The W&S module allows citizens to check the meter readings in case they have metered connections. 
+The W&S module allows citizens to check the meter readings in case they have metered connections.
 
 To check meter readings
 
@@ -120,9 +120,9 @@ The meter reading and current consumption readings are available in the **Consum
 
 ![](https://lh5.googleusercontent.com/vuVf9JmPq-S3SxmOG_XhIc7IHCyf0Gx3BtggozZLSTG2XkD_s8-_bO5WpoOK_bbM7Su6l6nKPTwCRlIg2lfZAzFqUt2K9kOQSVpGou7DrWeVbr1o_o7nMZxZ6leN7dNra4-KU47q)
 
-Scroll down the page to view past readings. 
+Scroll down the page to view past readings.
 
-### View connection details
+## View connection details
 
 Citizens can view their water or sewerage connection details through the portal.
 
@@ -134,13 +134,13 @@ Click on **My Connections** card on the W&S home page. The existing connections 
 
 The **Connection Details** page displays the **Service Details**, **Property Details**, **Owner Details** and the **Connection Holder Details**. Scroll down the page to view these details.
 
-### Pay bills
+## Pay bills
 
 The citizen portal allows users to view their existing connection details and pay water or sewerage bills online.
 
 To view and pay bills
 
-Click on **My Connections** card on the W&S home page. The existing connections for the listed user are available on the screen. 
+Click on **My Connections** card on the W&S home page. The existing connections for the listed user are available on the screen.
 
 ![](https://lh3.googleusercontent.com/OnCM-dJV8Agzz1cTcp5LTE8CBpY43cx6y2ZXUAGo9qOmvprQbtV708Ow7wtGOtgD_dolVCagVgeIy0TStOpkCT1PZxtlZKq-N9p02nfVxs9mI7wCK_ZLN_w0gG9h-ddYRZE9WwQg)
 
@@ -160,17 +160,17 @@ The **Bill Details** shows the **Total Amount**, **Due Date**, and amount breaku
 
 ![](https://lh4.googleusercontent.com/1_YX7o0kVL4r45a_Avela-7-0vXuWbQmC0nMCMcCzFaPPq3r_MTCd0Vz2SRy5Qcej_BWuN1ttge_yuzREidrxw2HJ093-lu7DaStxBSEROSQYobJH8WFRt6JZcmXvBh5VxchKBmh)
 
-Select **Full Amount** or **Custom Amount** depending on whether you are paying the entire bill amount or making a partial payment or advance payment. Enter the **Amount to pay \(Rs\)** in case of **Custom Amount**. Enter the **Payer Details**. 
+Select **Full Amount** or **Custom Amount** depending on whether you are paying the entire bill amount or making a partial payment or advance payment. Enter the **Amount to pay \(Rs\)** in case of **Custom Amount**. Enter the **Payer Details**.
 
-Select the relevant option for **Payment Paid By**. Select **Owner** if the payment is done by the owner else select **Other** if someone else is making the bill payment. Enter the **Payer Name** and **Payer Mobile No.** In the case of **Owner**, these details are auto-populated. 
+Select the relevant option for **Payment Paid By**. Select **Owner** if the payment is done by the owner else select **Other** if someone else is making the bill payment. Enter the **Payer Name** and **Payer Mobile No.** In the case of **Owner**, these details are auto-populated.
 
-Click on the **Make Payment** button to proceed with the payment. Select the preferred payment method and provide the required payment details. The system displays the payment success acknowledgement message. 
+Click on the **Make Payment** button to proceed with the payment. Select the preferred payment method and provide the required payment details. The system displays the payment success acknowledgement message.
 
 Click on the **Download** or **Print** button to download or print the payment receipt.
 
 ![](https://lh4.googleusercontent.com/9bDiCOJtlGss81IqaWKkV1CfVY94Hljh-ZD0c1GY3PsDYvQpmlxi3V48G_hr2mNUnLY9X1Jn3g52KkE1NZSAHka_O5XxhxHadW66cv6jioWUPnTtV7y2y9VtW3iJN983D9Z5SbIf)
 
-### View past payment details
+## View past payment details
 
 Citizens can view past bill payment details from their portal.
 
@@ -180,7 +180,7 @@ Click on the **Past Payments** option on the W&S home page.
 
 ![](https://lh4.googleusercontent.com/9kQKkGwjUsC-dGr_ASYj8LKVMS2wCWhHtdO4XHNt-ohYjI0sClBS3qerStjojF3OA-eP0bGVB8mvkYobbVa2MdKFeL0zRESus4yW6k2N7yYExsm8A7po5hf9VXqf-gDGVsE3rVwa)
 
-The system displays historic payment details. 
+The system displays historic payment details.
 
 ![](https://lh5.googleusercontent.com/oCUkquc-i0rTcok3UGxhTYrin_rxowOiuMGVg_86At187qrVBG4-dab0od_FD4EstcqxJZ41lpj2lgDRQ9ZeNIAEy1lSruyifN4Lm2qiSk-mKZnyLZ-AmcqiwbrhQ4emyJSy7peV)
 
