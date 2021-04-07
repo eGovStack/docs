@@ -6,7 +6,7 @@ In DIGIT, most of the applications are RESTful services which follow the below p
 
 _\(Note: The above structure image is for reference only\)_
 
-#### The structure consists of the following packages:- <a id="[hardBreak][hardBreak]The-structure-consists-of-the-following-packages:-"></a>
+## The structure consists of the following packages:- <a id="[hardBreak][hardBreak]The-structure-consists-of-the-following-packages:-"></a>
 
 * **Config:** This package consists of configuration code and data for the application. The class defined here will read the value from the property file. While enhancing the service suppose new values are added in the property file those values are accessed through the config file defined in this package. 
 * **Consumer:** This package consists of the Kafka Consumer program, which consumes the published messages from the producer. The consumer consumes the message by subscribing to the topic. A new consumer must be added to this package only. Refer to this document for[ writing a new consumer](https://digit-discuss.atlassian.net/l/c/ShuCAXy0). 
@@ -18,9 +18,9 @@ _\(Note: The above structure image is for reference only\)_
 * **Controller:** The most important part is the controller layer. It binds everything together right from the moment a request is intercepted until the response is prepared and sent back. The controller layer is present in the controller package, the best practices suggest that we keep this layer versioned to support multiple versions of the application. It expects to have different versions having different features. Refer to this document for [API Do's and Don'ts](https://digit-discuss.atlassian.net/l/c/DSc5y1LQ). 
 * **DB.migration.main:** This package consists of flyway migration scripts related to setting up an application, for example, database scripts. For any changes in the database table of this service, a script has to be added to this package.
 
-  *  **Note:**   1\) Never overwrite the previously created scripts always create a new one as per  the requirements.  2\) The file name should follow this naming convention _**V&lt;timestamp&gt;\_\_&lt;purpose&gt;.sql**_  **ex:** _**V20200717125510\_\_create\_table.sql**_ 
+  * **Note:**   1\) Never overwrite the previously created scripts always create a new one as per  the requirements.  2\) The file name should follow this naming convention _\*\*V&lt;timestamp&gt;\_\_&lt;purpose&gt;.sql**\_**  ex: **\_**V20200717125510\_\_create\_table.sql\*\*\_ 
 
-  Any changes here, if it is required to change the retrieval query then accordingly the classes present in the repository package have to update. And also the persister file associates with these services need to update.  
+  Any changes here, if it is required to change the retrieval query then accordingly the classes present in the repository package have to update. And also the persister file associates with these services need to update.
 
 * **application.properties:** The application.properties file is just straightforward key-value stockpiling for configuration properties. You can package the configuration file in your application jar or put the file in the file system of the runtime environment and load it on Spring Boot startup. This file contains the value of
   * server port

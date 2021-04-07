@@ -33,5 +33,3 @@ The benefits of defining the entity at the state level are given below.
 3. Avoids the data duplicacy in the configuration for those values which are most common across the ULBs.
 4. Support standardization of processes rules across the ULBs.
 
-
-

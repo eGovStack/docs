@@ -1,10 +1,10 @@
 # Fee Structure
 
-### Introduction
+## Introduction
 
 Fee Structure masters list contains the fee details applicable for processing specific services. All fee-related information collected by the authorities during the course of building plan approval is maintained in this masters.
 
-### Data Table
+## Data Table
 
 | Sr No. | Service Type\* | Application Type\* | Application Subtype | Fee Subtype\* | BPA Fees\* | Amount\* | Calculation Logic |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -17,9 +17,9 @@ Fee Structure masters list contains the fee details applicable for processing sp
 Data given in the table is sample data for reference.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ Data given in the table is sample data for reference.
 | 6 | Amount | Integer | 6 | Yes | Fee Amount collected is mentioned here. Refer to the Data Table above for illustration |
 | 7 | Calculation Logic | Text | 1024 | No | Fees calculation logic if any is mentioned here |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Refer to the ‘Data Definition’ section of this document to understand the headers in the template sheet, their data type, size, and definitions.
@@ -39,11 +39,11 @@ Data given in the table is sample data for reference.
 4. Identify the combination of attributes for with the fee is defined and then fill into the given template.
 5. Go through the checklist to verify the data. Make sure that each and every point mentioned in the checklist is covered.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data entry requirements are met. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -51,11 +51,11 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 There is no separate entity-specific checklist for this entity.
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/fee-structure-template.xlsx" caption="Configuration Data Template " %}
 

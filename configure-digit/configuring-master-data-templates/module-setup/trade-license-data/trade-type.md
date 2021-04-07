@@ -1,15 +1,15 @@
 # Trade Type
 
-### Introduction
+## Introduction
 
 Once the [Trade Categories](trade-category.md) are defined, the next task is to -
 
 * Define Trade Types
-*  Map Trade Category to listed Trade Types
+* Map Trade Category to listed Trade Types
 
 The Trade Type can be defined as the next \(2nd\) level classification of Trade. There can be multiple trade types and the list may vary from one State/ULB to another.
 
-### Data Table
+## Data Table
 
 | Sr. No. | Trade Type Code\* | Trade Type Name\* \(In English\) | Trade Type Name\* \(In Local Language\) | Trade Category Code\* |
 | :--- | :--- | :--- | :--- | :--- |
@@ -20,18 +20,18 @@ The Trade Type can be defined as the next \(2nd\) level classification of Trade.
 The table above contains sample Trade Type data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Trade Type Code | Alphanumeric | 64 | Yes | The Code assigned to the Trade Type. Eg: TRADE\_TYPE\_MEDICAL is assigned to Hospitals |
-| 3 | Trade Type Name \(In English\) | Text | 256  | Yes | Name of the Trade Type in English. Eg: Goods, Services etc. |
-| 3 | Trade Type Name \(In Local Language\) | Text | 256  | Yes | Name of the Trade Type in Local Language \(as decided\). Eg: Service is described as “सर्विस” in Hindi |
-| 4 | Trade Category Code | Reference |  64 | Yes | The Code assigned to the[ Trade Category](trade-category.md). Eg: TC1 For Goods, TC2 for Services |
+| 3 | Trade Type Name \(In English\) | Text | 256 | Yes | Name of the Trade Type in English. Eg: Goods, Services etc. |
+| 3 | Trade Type Name \(In Local Language\) | Text | 256 | Yes | Name of the Trade Type in Local Language \(as decided\). Eg: Service is described as “सर्विस” in Hindi |
+| 4 | Trade Category Code | Reference | 64 | Yes | The Code assigned to the[ Trade Category](trade-category.md). Eg: TC1 For Goods, TC2 for Services |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Refer to the ‘Data Definition’ section of this document to learn more about the template sheet, data type, size, and definitions.
@@ -40,11 +40,11 @@ The table above contains sample Trade Type data.
 5. Enter a Trade Type Name \(In English\).
 6. Enter the Trade Type Name \(In Local Language\).
 
-### Checklist
+## Checklist
 
 The checklist contains a set of activities to be performed once the data is filled into a template to ensure data entry requirements are met. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -52,7 +52,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -86,11 +86,9 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-trade-master-3-.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sample-configuration-data-template-trade-master-filled-3- \(1\).xlsx" caption="Sample Data Template" %}
-
-
 

@@ -1,6 +1,6 @@
 # Funds
 
-### Introduction
+## Introduction
 
 A Fund is used to capture activities/ group of activities for which separate books of accounts are required to be maintained. The concept of Funds brings accountability and better transparency
 
@@ -8,7 +8,7 @@ Various Funds are set up in ULB for meeting certain objectives. Income and expen
 
 Fund Accounting is a self-contained accounting with its own assets, liabilities, revenues, expenditures and fund balance.
 
-### Data Table
+## Data Table
 
 | Sr. No\* | Name\* | Code\* | Identifier | Level\* | Parent Fund |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -21,9 +21,9 @@ Fund Accounting is a self-contained accounting with its own assets, liabilities,
 Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr No | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -33,7 +33,7 @@ Data given in the table is a sample data.
 | 4 | Level | Numeric | 50 | Yes | The Funds can be defined in the tree structure, so the Level indicates the structure in which the funds would be set up. Root nodes will be level 0 and the next level funds will have value as 1 and the next level as value 2 |
 | 5 | Parent Fund | Text | 50 | No | If the ULB’s using multiple Funds then a Hierarchy of “Parent-Child “can be set up for the Fund, so under each Parent Fund multiple child funds can be set up |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -42,11 +42,11 @@ Data given in the table is a sample data.
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -54,7 +54,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -84,11 +84,9 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-fund.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sample-confugration-data-fund.xlsx" caption="Sample Data" %}
-
-
 

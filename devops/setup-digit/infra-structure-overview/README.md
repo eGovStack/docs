@@ -11,7 +11,3 @@ Supported Cloud List
 * [SDC](sdc-state-data-center.md)
 * [NIC](nic-national-informatica-cloud.md)
 
-
-
-
-

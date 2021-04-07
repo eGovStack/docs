@@ -1,10 +1,10 @@
 # BPA Service
 
-### Description 
+## Description
 
-Construction or renovation of buildings is regulated by Municipal Body in India. One must get permission from the ULB prior to construction. This process involves submitting the building plan to ULB along with other documents, ULB verifies the plan with other documents and approves the construction. The document which authorizes the construction is called “**Permit Order**” One must have this permit order with him till the completion of construction. ULB officials will inspect various stages of construction and make sure it is compliance with the plan. When construction completed, after inspection Secretary provides “**Completion certificate**” and finally will provide “**Occupancy Certificate**”.  This entire process is known as “Building Plan Approval”.
+Construction or renovation of buildings is regulated by Municipal Body in India. One must get permission from the ULB prior to construction. This process involves submitting the building plan to ULB along with other documents, ULB verifies the plan with other documents and approves the construction. The document which authorizes the construction is called “**Permit Order**” One must have this permit order with him till the completion of construction. ULB officials will inspect various stages of construction and make sure it is compliance with the plan. When construction completed, after inspection Secretary provides “**Completion certificate**” and finally will provide “**Occupancy Certificate**”. This entire process is known as “Building Plan Approval”.
 
-### Functionality
+## Functionality
 
 This section covers the high-level details of the functionalities available in the Building Plan Application system.
 
@@ -22,7 +22,7 @@ This section covers the high-level details of the functionalities available in t
 * Revocation process
 * Configurable functionalities
 
-### **System Requirements**
+## **System Requirements**
 
 * Knowledge of Java/J2EE\(preferably Java 8 version\)
 * Knowledge of Spring Boot and spring-boot microservices
@@ -31,17 +31,17 @@ This section covers the high-level details of the functionalities available in t
 * Knowledge of the Lombok library will helpful
 * knowledge of eGov-mdms service, eGov-persister, eGov-idgen, eGov-sms, eGov-email,eGov-user, eGov-localization, eGov-workflow-service,dcr, land-services, bpa-calculator will be helpful
 
-### **Setup and usage** <a id="Setup-and-usage:"></a>
+## **Setup and usage** <a id="Setup-and-usage:"></a>
 
-The [**Application**](https://github.com/egovernments/municipal-services/tree/master) is present among the _**municipal services**_ group of applications available in the eGov-services git repository with the folder name **bpa-services**.  The spring boot application needs the **Lombok\*** extension added in your IDE to load it. Once the application is up and running API requests can be posted to the URL and ids can be generated. 
+The [**Application**](https://github.com/egovernments/municipal-services/tree/master) is present among the _**municipal services**_ group of applications available in the eGov-services git repository with the folder name **bpa-services**. The spring boot application needs the **Lombok\*** extension added in your IDE to load it. Once the application is up and running API requests can be posted to the URL and ids can be generated.
 
 * in case of IntelliJ, the plugin can be installed directly, for eclipse the Lombok jar location has to be added in eclipse.ini file in this format  javaagent:lombok.jar
 
-### _**API Information**_  <a id="API-Information-:"></a>
+## _**API Information**_ <a id="API-Information-:"></a>
 
 * Please refer to Swagger API for YAML file details. Link - [API Specs](https://github.com/egovernments/municipal-services/blob/master/docs/bpa/bpa-service.yaml).
 
-### _**Application.properties File Information**_ <a id="Application.properties-File-Information:"></a>
+## _**Application.properties File Information**_ <a id="Application.properties-File-Information:"></a>
 
 Here we are listing the configs apart from dependent service host, URLs, DB and Flyway configs.
 
@@ -89,7 +89,7 @@ Here we are listing the configs apart from dependent service host, URLs, DB and 
   * NOC workflow action goes for AutoAprove to auto-approve offline NOC , while moving from NOC\_VERIFICATION\_PENDING to next state
     * `egov.noc.autoapprove.action=AUTO_APPROVE`
 
-### **External API References**
+## **External API References**
 
 * **egov-user** - \(Manage user\)
 * **tl-services** - Stakeholder Registration \(Registration process of Stakeholder is handled by this service\)
@@ -112,9 +112,9 @@ Here we are listing the configs apart from dependent service host, URLs, DB and 
 * **dcr-services** \(get and validate EDCR data\)
 * **noc-services** \(NOC application\)
 
-### **Configuration** <a id="Configuration:"></a>
+## **Configuration** <a id="Configuration:"></a>
 
-#### _**BPA Specific Mdms configuration**_ <a id="BPA-Specific-Mdms-configuration:"></a>
+### _**BPA Specific Mdms configuration**_ <a id="BPA-Specific-Mdms-configuration:"></a>
 
 [MDMS Github Repo](https://github.com/egovernments/egov-mdms-data/tree/master)
 
@@ -179,7 +179,7 @@ master-config.json for BPA
   }
 ```
 
-####  MDMS Details <a id="MDMS-Details"></a>
+### MDMS Details <a id="MDMS-Details"></a>
 
 <table>
   <thead>
@@ -351,7 +351,7 @@ master-config.json for BPA
   </tbody>
 </table>
 
-#### Access MDMS Config <a id="Access-MDMS-Config"></a>
+### Access MDMS Config <a id="Access-MDMS-Config"></a>
 
 **Action Test : URL Actions adding**
 
@@ -609,7 +609,7 @@ master-config.json for BPA
     }
 ```
 
-#### Billing Service MDMS Config <a id="Billing-Service-MDMS-Config"></a>
+### Billing Service MDMS Config <a id="Billing-Service-MDMS-Config"></a>
 
 [BusinessService.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BillingService/BusinessService.json)
 
@@ -640,7 +640,6 @@ Application Fee, Sanction Fee BPA High/Medium Risk
       "isVoucherCreationEnabled": true,
       "isActive": true
     },
-    
 ```
 
 Application Fee, Sanction Fee for BPA Low Risk
@@ -686,7 +685,7 @@ Application Fee, Sanction Fee for BPA OC
     }
 ```
 
-#### TaxHead MDMS  <a id="TaxHead-MDMS"></a>
+### TaxHead MDMS <a id="TaxHead-MDMS"></a>
 
 [TaxHeader.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BillingService/TaxHeadMaster.json)
 
@@ -713,7 +712,6 @@ Tax Head for BPA High/Medium Risk
       "order": "2",
       "isRequired": false
     },
-   
 ```
 
 TaxHead config for BPA Low Risk
@@ -766,7 +764,7 @@ TaxHead config for BPA OC
     },
 ```
 
-#### TaxPeriod MDMS Config <a id="TaxPeriod-MDMS-Config"></a>
+### TaxPeriod MDMS Config <a id="TaxPeriod-MDMS-Config"></a>
 
 [TaxPeriod.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BillingService/TaxPeriod.json)
 
@@ -825,7 +823,7 @@ TaxPeriod Config for BPA OC
     }
 ```
 
-#### ID Gen Config for BPA Numbers <a id="ID-Gen-Config-for-BPA-Numbers"></a>
+### ID Gen Config for BPA Numbers <a id="ID-Gen-Config-for-BPA-Numbers"></a>
 
 [idFormats.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/common-masters/IdFormat.json)
 
@@ -873,17 +871,17 @@ BPA OC Receipt Number format config
     },
 ```
 
-#### _**Persister configuration**_ <a id="Persister-configuration:"></a>
+### _**Persister configuration**_ <a id="Persister-configuration:"></a>
 
 [BPA Persister YAML](https://github.com/egovernments/configs/blob/master/egov-persister/bpa-persist.yml)
 
-#### Indexer Configuration <a id="Indexer-Configuration:"></a>
+### Indexer Configuration <a id="Indexer-Configuration:"></a>
 
 [BPA Indexer YAML](https://github.com/egovernments/configs/blob/master/egov-indexer/egov-bpa-indexer.yml)
 
-#### Locality Search Configuration <a id="Locality-Search-Configuration:"></a>
+### Locality Search Configuration <a id="Locality-Search-Configuration:"></a>
 
-Setup the locality Search query in the [localitySearcher.yml](https://github.com/egovernments/configs/blob/master/egov-searcher/localitySearcher.yml) as ****a ****new entry. Add RoleAction Test and Role Action for the URL **`“`**`/egov-searcher/locality/bpa-services/_get`**`“`**
+Setup the locality Search query in the [localitySearcher.yml](https://github.com/egovernments/configs/blob/master/egov-searcher/localitySearcher.yml) as **a** new entry. Add RoleAction Test and Role Action for the URL **`“`**`/egov-searcher/locality/bpa-services/_get`**`“`**
 
 ```text
   - name: bpa-services
@@ -910,15 +908,15 @@ Setup the locality Search query in the [localitySearcher.yml](https://github.com
       responseInfoPath: $.ResponseInfo
 ```
 
-#### Database Schema <a id="Database-Schema"></a>
+### Database Schema <a id="Database-Schema"></a>
 
 ![](../../../../.gitbook/assets/image-20200729-065812.png)
 
-### Postman Links <a id="Postman-Links"></a>
+## Postman Links <a id="Postman-Links"></a>
 
 [Postman Collection](https://www.getpostman.com/collections/667f52a25918f7f5ba25)
 
-### Workflow Configuration <a id="Workflow-Configuration"></a>
+## Workflow Configuration <a id="Workflow-Configuration"></a>
 
 [BPA](https://github.com/egovernments/municipal-services/blob/master/bpa-services/src/main/resources/workflow-config.json) - Building Plan Approval Apply High/Medium Risk
 
@@ -1049,12 +1047,12 @@ In the above Flow Chart
   * How to change Revocation Letter format
     * Can be changed by changing the data and format configs of the revocation letter, please refer PDF’s section of Revocation letter
 
-### Validations included <a id="Validations-included"></a>
+## Validations included <a id="Validations-included"></a>
 
 * On Workflow action of Every Stage, System verifies the Documents Configured for the given stage of the workflow from the **DocumentTypeMapping** MDMS and validates the required Documents attached to move forward
 * DropDown values to be validated against the MDMS values, Value in those fields should be one of the MDMS value.
 
-### Notifications <a id="Notifications"></a>
+## Notifications <a id="Notifications"></a>
 
 Notifications Message codes for SMS and User Events are prepared as follows
 
@@ -1064,7 +1062,7 @@ Example BPA Apply Application \(i.e applicationType is **BUILDING\_PLAN\_SCRUTIN
 
 The message text for the above code is sent through SMS and Notification filling the owner, serviceType, application Number and other values.
 
-### PDFS used <a id="PDFS-used"></a>
+## PDFS used <a id="PDFS-used"></a>
 
 BPA supports below PDF’s
 

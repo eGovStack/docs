@@ -1,10 +1,10 @@
 # MDMS Overview
 
-### Overview
+## Overview
 
 MDMS stands for Master Data Management Service. MDMS is One of the applications in the eGov DIGIT core group of services. This service aims to reduce the time spent by developers on writing codes to store and fetch master data \( primary data needed for module functionality \) which doesn’t have any business logic associated with them.
 
-### Pre-requisites
+## Pre-requisites
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
@@ -14,19 +14,19 @@ Before you proceed with the configuration, make sure the following pre-requisite
 * Prior knowledge of Git.
 * Advanced knowledge on how to operate JSON data would be an added advantage to understand the service.
 
-### Key Functionalities
+## Key Functionalities
 
 * The MDMS service reads the data from a set of JSON files from a pre-specified location.
 * It can either be an online location \(readable JSON files from online\) or offline \(JSON files stored in local memory\).
 * The JSON files will be in a prescribed format and store the data on a map. The **tenantID** of the file serves as a key and a map of master data details as values.
 * Once the data is stored in the map the same can be retrieved by making an API request to the MDMS service. Filters can be applied in the request to retrieve data based on the existing fields of JSON.
 
-### Deployment Details
+## Deployment Details
 
 * For deploying the changes in MDMS data, the service needs to be restarted.
 * The changes in MDMS data could be adding new data, updating existing data, or deletion.
 
-### Configuration Details
+## Configuration Details
 
 The config JSON files to be written should follow the listed rules
 
@@ -67,16 +67,16 @@ Example Config JSON for “Billing Service”
 }
 ```
 
-### Reference Docs
+## Reference Docs
 
-#### Doc Links
+### Doc Links
 
 | **Title** | **Link** |
 | :--- | :--- |
 | Reference Doc Link 1 | MDMS-Service |
 | Reference Doc Link 2 | MDMS-Rewritten |
 
-#### API List
+### API List
 
 |  | **Link** |
 | :--- | :--- |

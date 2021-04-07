@@ -1,12 +1,12 @@
 # Suppliers
 
-### Introduction
+## Introduction
 
 A supplier is a person or business that provides a product or service to another entity. The role of a supplier in business is to provide high-quality products.
 
 A supplier may also be referred to as a vendor who supplies required materials or a product to the State or ULB for the works which need to be executed. \(Example: materials for street light, cable wires for street light etc\)
 
-### Data Table
+## Data Table
 
 | Sr. No\* | Name\* | Permanent Address\* | Correspondence Address | Supplier Code\* | Contact Person\* | Email ID\* | Mobile No.\* | PAN No. | Registration No | GST/TIN No. | GST registered State/UT | Bank Name | Bank Account No. | IFSC Code |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -17,9 +17,9 @@ A supplier may also be referred to as a vendor who supplies required materials o
 Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr No | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -38,7 +38,7 @@ Data given in the table is a sample data.
 | 13 | Bank Account No | Alphanumeric | 25 | No | Company Bank Account number or an individual person Bank Account number. With the bank account number, the bill payment can be made to the correct account, also while doing the RTGS fund transfer the amount can be transferred to the respective firms or individual account. |
 | 14 | IFSC Code | Alphanumeric | 11 | No | The Bank IFSC code pertaining to the bank account of the Company or an Individual person holding a bank account, the IFSC code will be a validation check for the bank account provided by the contractor and useful for the user while doing a bill payment via RTGS. |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -47,7 +47,7 @@ Data given in the table is a sample data.
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -55,7 +55,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of. | [Checklist](../common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -64,11 +64,9 @@ This checklist covers the activities which are specific to the entity.
 | 1 | The Supplier Code should be alphanumeric and unique | ABC134 |
 | 2 | The Email ID should be valid Id, email Id should contain the Company/Firm name or an individual personal name before the “@” and the “[XXXXX.com](http://xxxxx.com/)” after the “@” | [abcsupplies@gmail.com](mailto:abcsupplies@gmail.com) |
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-supplier.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sample-confugration-data-supplier.xlsx" caption="Sample Data" %}
-
-
 

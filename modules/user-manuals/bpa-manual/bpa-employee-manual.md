@@ -18,15 +18,15 @@ DV can
 
 ### Send application back to citizen
 
-DV can send the application back to the citizen for any corrections or if any vital document has not been uploaded. The DV can also upload the documents on behalf of the citizens. 
+DV can send the application back to the citizen for any corrections or if any vital document has not been uploaded. The DV can also upload the documents on behalf of the citizens.
 
 **To send the application back to the citizen**
 
-Click on the **Application No**. hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard. 
+Click on the **Application No**. hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard.
 
 ![](https://lh5.googleusercontent.com/tu0Qj3uHfyTeuIFXDeu_9AdulhZ4woEDsurcaAlc_1r3y6lz2eMCxASi0ao3TNmN8ePYzbDRUErjMSbSJ3hBbCHnZRkOh9ZIHse3Cq5laHsILmu35CJBw8b2LW8q5sJaVN0olevA)
 
-Or, enter the **Application No.** or any other search parameter to search for the application. 
+Or, enter the **Application No.** or any other search parameter to search for the application.
 
 Click on the **Application No.** link to open the application.
 
@@ -54,7 +54,7 @@ The application is placed back in the **Citizen** queue for required edits.
 
 ### **Reject** Application or **Revoke** Applications
 
-The DV can reject the application if the documents and information furnished by the citizen do not meet the permit or occupancy guidelines. 
+The DV can reject the application if the documents and information furnished by the citizen do not meet the permit or occupancy guidelines.
 
 **To reject or revoke applications**
 
@@ -76,13 +76,13 @@ State the reasons for rejecting the application in the **Comments** section. Cli
 
 The application is rejected and a notification is sent to the owner informing the same.
 
-Permit orders are sanctioned instantly for low-risk applications. However, the application goes through the normal workflows for document verification, field inspection, and NOC verification. The ULB authorities can revoke the permit order in case any anomalies are detected during the verification process. 
+Permit orders are sanctioned instantly for low-risk applications. However, the application goes through the normal workflows for document verification, field inspection, and NOC verification. The ULB authorities can revoke the permit order in case any anomalies are detected during the verification process.
 
 Applications can be revoked at any stage by the Document Verifier, Field Inspector, or the NOC Verifier.
 
 **To revoke application**
 
-Click on the **Application No.** in the **Assigned to Me** section of the employee dashboard or enter the **Application No.** or any other search parameter to search for the application. 
+Click on the **Application No.** in the **Assigned to Me** section of the employee dashboard or enter the **Application No.** or any other search parameter to search for the application.
 
 Click on the **Application No.** link to open the application. Scroll down the application page to review the filled in details. Click on the **View File** button to open the documents uploaded in the application.
 
@@ -141,7 +141,7 @@ FI prepares the field inspection report and attaches the report to the applicati
 
 To prepare the inspection report
 
-Click on the **Application No.** hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard. 
+Click on the **Application No.** hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard.
 
 Or, enter the **Application No.** or any other search parameter to search for the application. Click on the **Application No.** link to open the application.
 
@@ -181,7 +181,7 @@ The application is placed back in the Citizen queue for required edits.
 
 ### **Reject application**
 
-The FI can reject the application if the documents and information furnished by the citizen do not meet the permit or occupancy guidelines. 
+The FI can reject the application if the documents and information furnished by the citizen do not meet the permit or occupancy guidelines.
 
 **To reject the application**
 
@@ -195,7 +195,7 @@ The application is rejected and a notification is sent to the owner informing th
 
 ### **Forward applications**
 
-The FI verifies and forwards the application if the documents and information provided in the application are found satisfactory and complete. 
+The FI verifies and forwards the application if the documents and information provided in the application are found satisfactory and complete.
 
 **To forward the applications**
 
@@ -223,7 +223,7 @@ The NOC Verifier can send the application back to the citizen in case there are 
 
 **To send the application back to the citizen**
 
-Click on the **Application No.** hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard. Or, enter the **Application No.** or any other search parameter to search for the application. 
+Click on the **Application No.** hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard. Or, enter the **Application No.** or any other search parameter to search for the application.
 
 Click on the **Application No.** link to open the application.
 
@@ -251,7 +251,7 @@ The application is placed back in the Citizen queue for required edits.
 
 ### **Reject applications**
 
-The NOC Verifier can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines. 
+The NOC Verifier can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines.
 
 **To reject the application**
 
@@ -268,7 +268,7 @@ The application is rejected and a notification is sent to the owner informing th
 The NOC Verifier verifies and forwards the application to the BPA Approver if the documents and information provided in the application are found satisfactory and complete.
 
 {% hint style="info" %}
-The NOC Verifier cannot forward the application to the BPA Approver until and unless the NOC from the respective authorities is received. 
+The NOC Verifier cannot forward the application to the BPA Approver until and unless the NOC from the respective authorities is received.
 {% endhint %}
 
 **To forward the applications**
@@ -296,7 +296,7 @@ BPA Approver can reject the application if the documents and information furnish
 
 **To reject applications**
 
-Click on the **Application No.** hyperlink available in the list of applications Assigned to Me section of the employee dashboard. 
+Click on the **Application No.** hyperlink available in the list of applications Assigned to Me section of the employee dashboard.
 
 Or, enter the search parameter to find the application pending for approval.
 
@@ -328,11 +328,9 @@ Click on the **Approve** button once all requirements and verifications are comp
 
 Provide any additional information for the assignee in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Approve** button.
 
-The application is approved.  
-
+The application is approved.
 
 ![](https://lh5.googleusercontent.com/aFxu2F8ap2fI-SyAwev_N5F1U8IxJ0fVzdtIKnbe42uzCF96RosugJ8CA0k_9wvv6yFVH4tW-zm2nAR0oCuh2rygAoPo0pDKuAVnfqU54XI7k6BuGXX4OuInG9DXpg2kL0ucBtV3)
 
-The citizen or the stakeholder can now download and print the building permit or occupancy certificate from their account only after paying the permit fee. There is no fee applicable for an occupancy certificate.  
-****
+The citizen or the stakeholder can now download and print the building permit or occupancy certificate from their account only after paying the permit fee. There is no fee applicable for an occupancy certificate.
 

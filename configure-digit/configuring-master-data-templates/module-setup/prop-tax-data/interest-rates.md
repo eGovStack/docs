@@ -1,22 +1,22 @@
 # Interest Rates
 
-### Introduction
+## Introduction
 
 This is the amount which is calculated on percentage defined and collected from citizen if failed to pay the property tax demand on time. It is also called the late payment penalty.
 
-### Data Table
+## Data Table
 
 | Rate | Minimum Amount | Flat Amount | Maximum Amount | From FY\* | Start Date\* |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 18% | 200 | 120 | 20000 | 2014-15 | 01/01/2019 |
 
 {% hint style="info" %}
- Data given in the table is a sample data.
+Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -27,7 +27,7 @@ This is the amount which is calculated on percentage defined and collected from 
 | 5 | From FY | Decimal | \(12,2\) | Yes | The year from which the interest rate begins. |
 | 6 | Start Date | Decimal | \(12,2\) | Yes | The date from which this penalty has to start. |
 
-#### Steps to fill Data
+### Steps to fill Data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -37,11 +37,11 @@ This is the amount which is calculated on percentage defined and collected from 
 6. Start filling the data from the interest rate followed by the rest of the details.
 7. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -49,11 +49,11 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of. | [Checklist](../common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 Not Applicable
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configurable-data-template-interest-rates-v1.xlsx" caption="Configuration Data Template" %}
 

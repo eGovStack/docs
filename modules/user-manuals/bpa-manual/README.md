@@ -1,10 +1,10 @@
 # Building Plan Approval \(BPA\)
 
-### **Introduction to BPA**
+## **Introduction to BPA**
 
-The Building Plan Approval or BPA module allows stakeholders to submit building plans for approval by the concerned ULB departments. Construction or renovation of buildings is regulated by the Municipal Body in India. One must get permission from ULB prior to construction. This process involves submitting the building plan to ULB along with other documents. The ULB verifies the plan with other documents and approves the construction. The document which authorizes the construction is called Permit Order. One must have this permit order with him till the completion of construction. ULB officials will inspect various stages of construction and make sure it is compliant to the plan. Once the construction is complete, the Inspection Secretary inspects the building and releases a Completion certificate and finally an Occupancy Certificate.  This completes the Building Plan Approval process.
+The Building Plan Approval or BPA module allows stakeholders to submit building plans for approval by the concerned ULB departments. Construction or renovation of buildings is regulated by the Municipal Body in India. One must get permission from ULB prior to construction. This process involves submitting the building plan to ULB along with other documents. The ULB verifies the plan with other documents and approves the construction. The document which authorizes the construction is called Permit Order. One must have this permit order with him till the completion of construction. ULB officials will inspect various stages of construction and make sure it is compliant to the plan. Once the construction is complete, the Inspection Secretary inspects the building and releases a Completion certificate and finally an Occupancy Certificate. This completes the Building Plan Approval process.
 
-### Key Features
+## Key Features
 
 The module supports the following key functions -
 
@@ -19,10 +19,9 @@ The module supports the following key functions -
 9. Send applications back to citizens or reject applications
 10. Integration with NOC department
 
-### User Roles
+## User Roles
 
-Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.   
-
+Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.
 
 <table>
   <thead>
@@ -116,15 +115,15 @@ Refer to the table below to understand the different user roles and the scope of
   </tbody>
 </table>
 
-### \*\*\*\*
+## \*\*\*\*
 
-### **Getting Started with BPA**
+## **Getting Started with BPA**
 
-This section of the user manual guides you through the user login process. Citizens can sign up to use the module through the online web portal or the mobile application login interface. 
+This section of the user manual guides you through the user login process. Citizens can sign up to use the module through the online web portal or the mobile application login interface.
 
 Refer to [Logging Into DIGIT](../digit-login.md) page to learn more about DIGIT user registration, logging in, editing user profile, and logging out.
 
-### **Using BPA**
+## **Using BPA**
 
 This section guides you through the details of using the BPA module for each role. Click on the relevant role below to learn more about how to use the module.
 
