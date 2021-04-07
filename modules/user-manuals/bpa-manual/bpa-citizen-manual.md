@@ -1,8 +1,9 @@
 # Citizen User Manual
 
-## **Citizens**
+## **Citizens** 
 
-Citizens represent individuals, groups, and communities who are the building owners or occupants. The BPA module provides the citizens with the scope to view building permit applications submitted by the stakeholders or architects. They can request the stakeholders to make any changes in the application if required. Citizens approve the applications and make the payment.
+Citizens represent individuals, groups, and communities who are the building owners or occupants. The BPA module provides the citizens with the scope to view building permit applications submitted by the stakeholders or architects. They can request the stakeholders to make any changes in the application if required. Citizens approve the applications and make the payment.  
+****
 
 **The citizen can -**
 
@@ -14,7 +15,7 @@ Citizens represent individuals, groups, and communities who are the building own
 
 ### **Register Stakeholders**
 
-The citizen user portal allows stakeholders to register themselves on the OBPAS system. Stakeholders constitute architects, builders, engineers, supervisors, or town planners. A unique license number is generated for each stakeholder on the system.
+The citizen user portal allows stakeholders to register themselves on the OBPAS system. Stakeholders constitute architects, builders, engineers, supervisors, or town planners. A unique license number is generated for each stakeholder on the system. 
 
 {% hint style="info" %}
 Citizens can have multi-stakeholder access. Hence, a citizen can be registered as an architect, a builder, and a normal citizen.
@@ -24,7 +25,7 @@ Citizens can have multi-stakeholder access. Hence, a citizen can be registered a
 The registered stakeholder will have state-level access permission to apply for new building permits or occupancy certificates.
 {% endhint %}
 
-**To register stakeholders**
+**To register stakeholders** 
 
 Navigate to **Building Plan Approval** option in the sidebar. Click on the **Register Technical Person/Builder** card on the screen.
 
@@ -80,9 +81,10 @@ Once the stakeholder is approved the applicant receives a notification. In addit
 
 ### **View Application Status**
 
-The view application option allows citizens to review the application submitted by the stakeholder. In case there are any mistakes or changes required in the application the citizen can request the stakeholder to make these edits.
+The view application option allows citizens to review the application submitted by the stakeholder. In case there are any mistakes or changes required in the application the citizen can request the stakeholder to make these edits.   
 
-**To view application status**
+
+**To view application status** 
 
 Navigate to the **Building Plan Approval** option in the sidebar. Click on **My Applications**.
 
@@ -98,7 +100,8 @@ Click on the **View Details** button below the relevant application details. Scr
 
 ### **Request edits and approve applications**
 
-Building permit applications submitted by the architects or any other stakeholders are routed to the citizens or the owner to verify details. The owner reviews the application details and sends back the application to the stakeholders if there is any mistake or any changes required in the application.
+Building permit applications submitted by the architects or any other stakeholders are routed to the citizens or the owner to verify details. The owner reviews the application details and sends back the application to the stakeholders if there is any mistake or any changes required in the application.  
+****
 
 **To request edits or approve application**
 
@@ -124,15 +127,15 @@ Click on the **Send To Architect** button. The application is now in the stakeho
 
 ![](https://lh6.googleusercontent.com/BoZzMEzOS5s1cBw14_dr6W5rGSVwJkd6Dh3beXUAzR7w5yX7pPWTODxXdCLweXA3PXchuMzo4QwgPS4MVNpPPJZbUhD6WBhpM8KeecZs_87U1usqqIy1X3Chx8ApciqrTRobefPu)
 
-Enter any **Comments** in context to the application in the panel. Click on the **Upload Files** button to upload any supporting documents for the application. Click on the **Approve** button. The system displays the approved success acknowledgement message.
+Enter any **Comments** in context to the application in the panel. Click on the **Upload Files** button to upload any supporting documents for the application. Click on the **Approve** button. The system displays the approved success acknowledgement message. 
 
 ![](https://lh3.googleusercontent.com/dD0gMY8oK1WzDQuiDdMvYPc_gwYaHo2XIh-PtwRSqsmboGzyLAzfMP6gDjOosnmb7usvJdaut06JXfeYmRsuvoArKeGbx09o2gM5hhk1g3QFnlXQh-ATx-uy59UPwxAPQcg2v1GG)
 
 ### **Make Payment**
 
-The **Make Payment** button is enabled once the stakeholder submits the building permit or occupancy certificate application on behalf of the owner.
+The **Make Payment** button is enabled once the stakeholder submits the building permit or occupancy certificate application on behalf of the owner. 
 
-Click on the **Application No.** for which payment has to be made. The **Payment Information** details are available on the top of the application.
+Click on the **Application No.** for which payment has to be made. The **Payment Information** details are available on the top of the application. 
 
 Click on the **Make Payment** button at the bottom of the screen.
 
@@ -150,7 +153,7 @@ The payment success acknowledgement message is displayed along with the **Paymen
 
 Stakeholders represent the registered builders, architects, town planners, engineers or supervisors. The stakeholder role within the system encompasses submitting details for eDCR scrutiny, obtaining building permit orders, completion certificates, and occupancy certificates.
 
-**Stakeholders can**
+**Stakeholders can** 
 
 * [Register other stakeholders](bpa-citizen-manual.md#register-other-stakeholders)
 * [Submit for  DIGIT DCR scrutiny](bpa-citizen-manual.md#submit-for-digit-dcr-scrutiny)
@@ -187,13 +190,13 @@ The system might reject the submitted building plan if there are any errors or o
 
 ![](https://lh6.googleusercontent.com/z5tG7PNaveZghiqpY5nzG--lCbUZugQfRt0uRByEMjqbrFuSQ6Xm7zGpSQwjAZAPN2eo19LyvQYd5ZmxQl4xK3lrVXmxH_kfBO8qsvWXGWw67HXolnGVLeRQT8aHf-Q4RsH11csJ)
 
-Click on the **Create Building Permit Application** button to apply for a permit.
+Click on the **Create Building Permit Application** button to apply for a permit. 
 
 Follow the same steps to apply for Occupancy Certificate eDCR Scrutiny for New Building.
 
 ### **Low-risk building permit application**
 
-Stakeholders can apply for low-risk building permit applications following the same steps outlined above. Permits for building plans marked as low risk are processed immediately and the stakeholders can download the permit order after submitting the required documents and details.
+Stakeholders can apply for low-risk building permit applications following the same steps outlined above. Permits for building plans marked as low risk are processed immediately and the stakeholders can download the permit order after submitting the required documents and details. 
 
 **The key parameters defining low-risk application categories include -**
 
@@ -205,7 +208,7 @@ The permit order issued for low-risk applications can be revoked by the State or
 
 ### **Apply for Building Permits for New Construction**
 
-Stakeholders can apply for building permits for new construction once the eDCR Scrutiny is approved.
+Stakeholders can apply for building permits for new construction once the eDCR Scrutiny is approved. 
 
 To apply for building permits for new construction
 
@@ -217,17 +220,17 @@ Click on **Building Permit New Construction** card. Select the **City** for the 
 
 ![](https://lh6.googleusercontent.com/9WaqdSEg3fyraF9EfgSgvu6dJ7rxr68Q7jQm9KWLbvy8te3jZiHafOBx_TwquzEVR4w_yowOrjMWjCxsTAHesmjYr8RlSjXRr38t75K-kAQFAUtzner2B8xtOwBD87fIrAvg-Y8Z)
 
-Alternatively, click on the **Create Building Permit Application** button once the DIGIT-DCR scrutiny is accepted.
+Alternatively, click on the **Create Building Permit Application** button once the DIGIT-DCR scrutiny is accepted. 
 
 ![](https://lh6.googleusercontent.com/Y6bJxAPL3Q6XglN_EwyJm8sSZc049PvJEEO00vxa9JpWfBZ9B0QqVolVwK1fhRwfeHOIv-52DaVFYB5NowsdTyq2FTBakzx9F386WHjAgGYrt_TJiRHJS-9xHe6yxjkN1SzMeylg)
 
 The **Apply for Building Permit** form contains 5 sections - **Basic Details**, **Scrutiny Details**, **Owner Info**, **Document and NOC Details**, and **Summary**.
 
-Enter the **Building Plan Scrutiny Number**. Click on the **Search** icon ![](https://lh5.googleusercontent.com/zHZ9x__sXeRLFEzF7FktiqcqgJ5dIj4dWUguvXsHLk0Jr_hPov30fmbiQTGGg9n3BMufiANvUcpd8hl0Caxe_Dop-RYeOx5GblnvF1kDdLPJnu5J-j8hF0Rtuxy5PaNszhRgKO1U) adjacent to the **Building Plan Scrutiny Number**. This will fetch the building and application details from the scrutiny report. The **Building Plan Scrutiny Number** is auto-populated in case the user initiates the application from the DCR scrutiny accepted acknowledgement screen.
+Enter the **Building Plan Scrutiny Number**. Click on the **Search** icon ![](https://lh5.googleusercontent.com/zHZ9x__sXeRLFEzF7FktiqcqgJ5dIj4dWUguvXsHLk0Jr_hPov30fmbiQTGGg9n3BMufiANvUcpd8hl0Caxe_Dop-RYeOx5GblnvF1kDdLPJnu5J-j8hF0Rtuxy5PaNszhRgKO1U) adjacent to the **Building Plan Scrutiny Number**. This will fetch the building and application details from the scrutiny report. The **Building Plan Scrutiny Number** is auto-populated in case the user initiates the application from the DCR scrutiny accepted acknowledgement screen. 
 
 ![](https://lh6.googleusercontent.com/u7H8o2NZLXtFQ7HnyaUtSTw4Mg163q3xQX-PtC-hk1EoGMzI3SQdm3Tl7fNbzudR9tsqxX_caplhjDGP4Vf6rNOor0BUos1UROOm6vPyL80wuiuVrmd0_gvjYLRaLYIXZ9bOjs27)
 
-**Occupancy**, **Application Type**, **Risk Type**, and **Service Type** information in the **Basic Details** panel is auto-populated from the listed DIGIT-DCR scrutiny report. The **Risk Type** is **Low** in the case of low-risk permit applications.
+**Occupancy**, **Application Type**, **Risk Type**, and **Service Type** information in the **Basic Details** panel is auto-populated from the listed DIGIT-DCR scrutiny report. The **Risk Type** is **Low** in the case of low-risk permit applications. 
 
 Enter any additional comments in the **Remarks** field.
 
@@ -257,11 +260,11 @@ Select the appropriate document type for each of the **Required Documents** cate
 
 ![](https://lh4.googleusercontent.com/kyBBISw1HYOJrZBQ_udY8CM3hWDKhIAhxtKPCqZo38PftmRTS8keLjTEzUl9Mne013s1ZfYK0VaLxtACFonnsT_TTlLph9qrJGzgowIwKl7eH4zaDmTnsbLvR2ZmEJEp0fprsHOK)
 
-Scroll down the page to upload the **Building Plan Diagram**, **Fire and Airport Authority NOC Details**. If the users have the NOC documents click on the **Upload** button to attach the documents to the application.
+Scroll down the page to upload the **Building Plan Diagram**, **Fire and Airport Authority NOC Details**. If the users have the NOC documents click on the **Upload** button to attach the documents to the application. 
 
 ![](https://lh6.googleusercontent.com/TEHxYu6buYGTJPI81MKNEIaYrAoPpfK4MCnelC1jvWcuDT59rD4Kbtws6CxwyyemKBti3Fxfrs0C_ueQj57qYboEds7NNSM0nfJ_99BCDbe-uj72ox4jvWmvFs_6D89IcwmMPXGK)
 
-Click on the **Next Step** button to review the application details. The **Summary** page displays the payable **Application Fee** details.
+Click on the **Next Step** button to review the application details. The **Summary** page displays the payable **Application Fee** details. 
 
 ![](https://lh6.googleusercontent.com/4rO5ka4w0xYmrj75x4z7o_MXkeQKX-7u2YQSf2GHKMoJcFD5HvVuK3sCo8MUgNiXkEro6J8DeZkBdeXjyWkxbJhXF2XX2_5KCqh9vhinlRxemhXHL68EFDnthOnWsENljXojrPRN)
 
@@ -301,13 +304,13 @@ Click on the **Submit** button to process the scrutiny.
 
 ![](https://lh5.googleusercontent.com/UOXVnVt7qOW44pJNVfgxEs76-Drclmv9Zp2qbP-95vM2vXA5_DacwqWFSKQbLbPjokvxHtM67qgxp5_VqQ8ffP2dif5a3YxPbYEVp5463wSecu0E_sWyegmnZtpzzPxgwCkb2MT3)
 
-Click on the **Download** or **Print** button to download or print the **Scrutiny Report**.
+Click on the **Download** or **Print** button to download or print the **Scrutiny Report**. 
 
 Click on the **Create Occupancy Certificate Application** button to proceed with the application or you can choose to proceed with the application later. Make a note of the **OC Scrutiny Number** that is required to create the application.
 
 **To apply for building permits for new construction**
 
-Navigate to the **Building Plan Approval** menu option in the sidebar. Click on **Occupancy Certificate New Building Construction** card.
+Navigate to the **Building Plan Approval** menu option in the sidebar. Click on **Occupancy Certificate New Building Construction** card. 
 
 ![](https://lh4.googleusercontent.com/mH53QjBDT1rI6bkFugOWLYXF4gpbXJGakWgCXqgsIeSZypMCUUyvSuqIuJTEGKpjw_UesQa0MKfQ2stjcwhNvwWF4Sgle7gKDeSSaQBV8ZZSJkWv2x98-Z787VriSLZc9X74S21w)
 
@@ -315,7 +318,7 @@ Enter the applicable **City** for the new building construction.
 
 ![](https://lh4.googleusercontent.com/gHRQMNfjh-cv60kCZPfQmrQCP_6QhCIyn2L9xV9F2-IXB5-j4dme0suI2J0T5Ks9Hz00goNB9ZS-vNyNvNUxOdLZyRtbDiICUlJfMOjvdTRB8ckdqwpdttTtC3QdbPCInvghlXD0)
 
-Click on the **Select** button.
+Click on the **Select** button.  
 
 Enter the **Occupancy Certificate Security Number**. \(The above steps are not required if the user has selected to create the OC application immediately after the OC scrutiny is completed\).
 
@@ -325,11 +328,11 @@ The **Application Type**, **Risk Type**, **Service Type**, **Applicant Name**, *
 
 The **Application Date** accepts the current date by default. Enter any comments in the **Remarks** field.
 
-The **Occupancy Certificate Scrutiny Details** panel displays the **eDCR Number**, and a clickable link to download the **Uploaded Image** and **Scrutiny Report**.
+The **Occupancy Certificate Scrutiny Details** panel displays the **eDCR Number**, and a clickable link to download the **Uploaded Image** and **Scrutiny Report**. 
 
 ![](https://lh4.googleusercontent.com/2e-n9PUAfjyxrpgee0UpEmq-3r60RtyScDzbpSU4mIeWRDa0C8uw6cjFa05cNOxFG-yx9EtgpxTdvL045nrK9-1xgWRAOlL5kqT9MTWxqUUpwjtUO_rfdSxsR8LtbXspuDc4fN4a)
 
-The **Actual Building Details** are auto-populated from the scrutiny report. A **Comparison Report** is also generated at this stage. The comparison report provides a comparative assessment between the proposed construction and the actual construction diagram. This report can be downloaded once the OC application is submitted for further processing by the stakeholder.
+The **Actual Building Details** are auto-populated from the scrutiny report. A **Comparison Report** is also generated at this stage. The comparison report provides a comparative assessment between the proposed construction and the actual construction diagram. This report can be downloaded once the OC application is submitted for further processing by the stakeholder. 
 
 Enter the **Total Buildup Area \(Sq Mtrs\)**, **Number of Floors**, **High From Ground Level from Mumty \(In mtrs\)** details in the **Actual Building Abstract** panel.
 
@@ -341,7 +344,7 @@ Select the appropriate document type for each of the **Required Documents** cate
 
 ![](https://lh5.googleusercontent.com/n-CFpNmLMH0gN6AuAc9X9BDC7TftLbLNvolGvnawn2bSBjHIapOf7a14QIu1jSCB-kpAZimRqDTW7t8zWj779xrbUYtsdd8_mNshtj340m-IWofzxvMoQKTMwa7w9sXMjz8Nt9D5)
 
-Click on the **Next Step** button to review the application details. The **Summary** page displays the payable **Application Fee** details.
+Click on the **Next Step** button to review the application details. The **Summary** page displays the payable **Application Fee** details. 
 
 ![](https://lh3.googleusercontent.com/sFLOdw2Y79bnqALGFuU8JdLJ3oSf9n4TBVVbBeximCnXpQzRJ1r__7osTwSAZM1JnhwdlNc87UrgwCq-ELAAW0D15p7cMqs2j5fIeYE8OCLInkSxacA2dhe7bhHBONg6zheVzHyn)
 

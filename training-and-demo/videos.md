@@ -6,7 +6,7 @@ Watch out for this space as we are constantly adding on to our video library.
 
 DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. Refer to these videos for clarity and ease of understanding the different functions of the modules. Our product video library covers a wide range of functions, right from configuring DIGIT environment components to using the modules.
 
-## Module Data Templates Configuration Videos
+### Module Data Templates Configuration Videos
 
 <table>
   <thead>
@@ -118,6 +118,7 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Property Tax Configuration Videos</td>
       <td style="text-align:left">
+        <p></p>
         <ul>
           <li><a href="https://youtu.be/XLfhJD2X_gY">Road Type</a>
           </li>
@@ -214,6 +215,7 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">mCollect Configuration Videos</td>
       <td style="text-align:left">
+        <p></p>
         <ul>
           <li><a href="https://youtu.be/N-exC_4Zz-A">Service Category</a>
           </li>
@@ -225,6 +227,7 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Finance</td>
       <td style="text-align:left">
+        <p></p>
         <ul>
           <li><a href="https://youtu.be/9QOeBLrGZAI">Schemes</a>
           </li>
@@ -258,7 +261,7 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
   </tbody>
 </table>
 
-## Module Workflow Videos
+### Module Workflow Videos
 
 <table>
   <thead>
@@ -271,6 +274,7 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Trade License Workflow</td>
       <td style="text-align:left">
+        <p></p>
         <ul>
           <li><a href="https://youtu.be/aTJf5GFIQ_M">Filling and submitting TL application forms</a>
           </li>
@@ -293,4 +297,6 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     </tr>
   </tbody>
 </table>
+
+
 

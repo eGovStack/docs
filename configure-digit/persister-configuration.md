@@ -53,6 +53,9 @@ serviceMaps:
       - jsonPath: $.service.address.city
 
       - jsonPath: $.service.address.pincode
+
+
+
 ```
 
 The above configuration is used to insert data published on the kafka topic save-pgr-request in the tables eg\_pgr\_service\_v2 and eg\_pgr\_address\_v2. Similarly, the configuration can be written to update data. Following is a sample configuration:
@@ -99,6 +102,7 @@ The above configuration is used to insert data published on the kafka topic save
       - jsonPath: $.service.address.pincode
 
       - jsonPath: $.service.address.id
+
 ```
 
 The above configuration is used to update the data in tables. Similarly, the upsert operation can be done using ON CONFLICT\(\) function in psql. Following table describe each field in the configuration.

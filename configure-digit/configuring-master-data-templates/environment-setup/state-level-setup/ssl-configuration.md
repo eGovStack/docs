@@ -1,6 +1,6 @@
 # SSL Configuration
 
-## Introduction
+### Introduction
 
 SSL is Secure Sockets Layer is an encryption-based network security protocol developed for the assurance of privacy, authenticity and data integrity in internet communications.
 
@@ -8,27 +8,27 @@ Ideally, the domain name configuration and the SSL certification are obtained co
 
 No data is needed from the state team for this.
 
-## Data Table
+### Data Table
 
 Not Applicable
 
-## Procedure
+### Procedure
 
 Not Applicable
 
-### Data Definition
+#### Data Definition
 
 Not Applicable
 
-### Steps to fill data
+#### Steps to fill data
 
 Not Applicable
 
-## Checklist
+### Checklist
 
 Not Applicable
 
-## Attachments
+### Attachments
 
 Not Applicable
 

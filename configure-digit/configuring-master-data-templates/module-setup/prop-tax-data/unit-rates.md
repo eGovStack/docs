@@ -1,27 +1,27 @@
 # Unit Rates
 
-## Introduction
+### Introduction
 
 Unit rates are also an important part of property tax. The property tax for a property is counted on the are that the property is covering. These unit rates could differ from ULB to ULB, Ward to Ward, Mohalla to Mohalla and then can be based on different parameters such as Road Type, Property Construction Type etc.
 
-## Data Table
+### Data Table
 
 | Sr. No. | Boundary Code\* | Boundary Name\* | Parameter 1\* | Parameter 2 | Unit Rate\* |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | M001 | Haldwani Mandir | PUCCA | &lt; 12 m | 1.50 |
 | 2 | M001 | Haldwani Mandir | SEMIPUCCA | &gt;= 12 m and &lt;= 24 m | 1.75 |
-| 3 | M001 | Haldwani Mandir | KUCCHA | &gt; 24 m | 2.00 |
+| 3  | M001 | Haldwani Mandir | KUCCHA | &gt; 24 m | 2.00 |
 | 4 | M002 | Kali Mata Mandir Road | SEMIPUCCA | &lt; 12 m | 3.00 |
-| 5 | M002 | Kali Mata Mandir Road | SEMIPUCCA | &gt;= 12 m and &lt;= 24 m | 10.00 |
-| 6 | M002 | Kali Mata Mandir Road | SEMIPUCCA | &gt; 24 m | 20.00 |
+| 5  | M002 | Kali Mata Mandir Road | SEMIPUCCA | &gt;= 12 m and &lt;= 24 m | 10.00 |
+| 6  | M002 | Kali Mata Mandir Road | SEMIPUCCA | &gt; 24 m | 20.00 |
 
 {% hint style="info" %}
-Data given in the table is a sample data.
+ Data given in the table is a sample data.
 {% endhint %}
 
-## Procedure
+### Procedure
 
-### Data Definition
+#### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ Data given in the table is a sample data.
 | 4 | Parameter 2 | Alphanumeric | 64 | No | This is the second parameter\(if available\) on the basis of which the unit rates are being defined |
 | 5 | Unit rates | Decimal | \(5,2\) | Yes | The unit rate |
 
-### Steps to fill the data
+#### Steps to fill the data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -42,11 +42,11 @@ Data given in the table is a sample data.
 7. At the end fill up the unit rates column.
 8. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -54,13 +54,15 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../common-config/checklist.md) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 Not Applicable
 
-## Attachments
+### Attachments
 
 {% file src="../../../../.gitbook/assets/configurable-data-template-property-tax-unit-rate-v1.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/configurable-sample-data-property-tax-unit-rate-v1.xlsx" caption="Sample Data" %}
+
+
 

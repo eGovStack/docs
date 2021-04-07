@@ -4,14 +4,14 @@ description: 'New release features, enhancements, and fixes'
 
 # Release Notes DIGIT 2.2
 
-## Release Summary
+### Release Summary
 
 DIGIT 2.2 is a release that has got a few functional changes and few non-functional standardization changes.
 
 * Functional: PGR v2 \(Revamped UI/UX, Revamped APIs, and Workflow integration\), Water & Sewerage Enhancements \(Public Domain Search, Open Payments, and PT Workflow Config Changes\), Property Enhancements, Search/Cancel Receipts Screen, and Enhancements in HRMS.
 * Non-functional: Config Repo baselining \(Indexer and Persister configs sem version and baselining\).
 
-## New ‌Feature Additions
+### New ‌Feature Additions
 
 <table>
   <thead>
@@ -88,7 +88,7 @@ DIGIT 2.2 is a release that has got a few functional changes and few non-functio
   </tbody>
 </table>
 
-## Enhancements
+### Enhancements
 
 <table>
   <thead>
@@ -185,9 +185,9 @@ DIGIT 2.2 is a release that has got a few functional changes and few non-functio
   </tbody>
 </table>
 
-## Document Resources and Links
+### Document Resources and Links
 
-### UI Technical Documents
+#### UI Technical Documents
 
 {% file src="../../.gitbook/assets/employee-inbox.pdf" caption="Employee Inbox" %}
 
@@ -213,6 +213,8 @@ DIGIT 2.2 is a release that has got a few functional changes and few non-functio
 
 {% file src="../../.gitbook/assets/digit-ui-internals-faq.pdf" caption="DIGIT UI Internals - Development Guidelines & FAQs" %}
 
+#### Backend Service Documents
+
 {% file src="../../.gitbook/assets/pgr-v2.pdf" caption="PGR V2.0" %}
 
 {% file src="../../.gitbook/assets/pgr-migration.pdf" caption="PGR Migration" %}
@@ -227,43 +229,45 @@ DIGIT 2.2 is a release that has got a few functional changes and few non-functio
 
 {% file src="../../.gitbook/assets/property-service-reindexing.pdf" caption="Property Service Reindexing" %}
 
-### Tech Enablement Documents
+{% page-ref page="pgr-technical-release-notes.md" %}
+
+#### Tech Enablement Documents
 
 {% page-ref page="../services-overview/core-services/user-session-management.md" %}
 
-{% endpage-ref %}
-
 {% page-ref page="../../configure-digit/persister-configuration.md" %}
-
-{% endpage-ref %}
 
 {% page-ref page="../../configure-digit/indexer-configuration.md" %}
 
-{% endpage-ref %}
-
 {% page-ref page="../../customizing-digit/digit-customization/enhancing-existing-service.md" %}
-
-{% endpage-ref %}
 
 {% page-ref page="../services-overview/core-services/indexer-service.md" %}
 
-{% endpage-ref %}
-
 {% page-ref page="../services-overview/core-services/pdf-generation-services.md" %}
-
-{% endpage-ref %}
 
 {% page-ref page="../services-overview/core-services/url-shortening-service.md" %}
 
-{% endpage-ref %}
-
 {% page-ref page="../services-overview/core-services/user-services.md" %}
-
-{% endpage-ref %}
 
 {% page-ref page="../services-overview/core-services/workflow-services.md" %}
 
-{% endpage-ref %}
-
 {% page-ref page="../../configure-digit/setting-up-edcr-service.md" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

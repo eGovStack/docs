@@ -6,7 +6,7 @@ description: A complete guide to using mCollect module
 
 The mCollect module is designed to facilitate the ULBs process miscellaneous types of payments. Miscellaneous payments may include parking fees, advertising fees, rent, challans, etc. The module objective is to process and record payment collections on account of miscellaneous heads within the ULBs. This makes it easy to track payment receipts and generate reports for administrative purposes.
 
-## Key Features
+### Key Features
 
 The MCS module enables ULB employees to -
 
@@ -15,7 +15,7 @@ The MCS module enables ULB employees to -
 * Access dashboard analytics
 * Generate reports for administration
 
-## **User roles**
+### **User roles**
 
 Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.
 
@@ -68,13 +68,11 @@ Refer to the table below to understand the different user roles and the scope of
   </tbody>
 </table>
 
-## **Using MCS**
+### **Using MCS**
 
 This section guides you through the details of using the MCS module for the defined roles. Click on the relevant role below to learn more about how to use the MCS system.
 
 {% page-ref page="mcollect-citizen-manual.md" %}
-
-{% endpage-ref %}
 
 {% page-ref page="mcollect-employee-manual.md" %}
 

@@ -4,7 +4,7 @@ description: DIGIT 2.2 - Technical Details of the Changes
 
 # Configuration Changes
 
-## MDMS changes <a id="MDMS-changes"></a>
+### MDMS changes <a id="MDMS-changes"></a>
 
 | **Feature** | **Service Name** | **Changes** | **Description** |
 | :--- | :--- | :--- | :--- |
@@ -15,7 +15,7 @@ description: DIGIT 2.2 - Technical Details of the Changes
 | Role Action Mapping |  | [\#1406](https://github.com/egovernments/egov-mdms-data/pull/1406), [\#1407](https://github.com/egovernments/egov-mdms-data/pull/1407) | Added Workflow Process Count access to TL, Fire NOC, WS and BPA Employees |
 | DSS |  | [\#1415](https://github.com/egovernments/egov-mdms-data/pull/1415), [\#1416](https://github.com/egovernments/egov-mdms-data/pull/1416) | Added mandatory DDRname for all tenants |
 
-## Config Changes <a id="Config-Changes"></a>
+### Config Changes   <a id="Config-Changes"></a>
 
 <table>
   <thead>
@@ -98,7 +98,7 @@ description: DIGIT 2.2 - Technical Details of the Changes
   </tbody>
 </table>
 
-## Infra Change <a id="Infra-Change"></a>
+### Infra Change <a id="Infra-Change"></a>
 
 | **Feature** | **Feature** | **Description** |
 | :--- | :--- | :--- |

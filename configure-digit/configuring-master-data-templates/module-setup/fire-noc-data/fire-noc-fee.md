@@ -1,6 +1,6 @@
 # Fire NOC Fee
 
-## Introduction
+### Introduction
 
 After the building usage and sub usage ontology has been defined for all the Firestations, the next step is to collect the Fire NOC fee that the citizens have to pay to obtain the certificate.
 
@@ -11,17 +11,17 @@ The Fire NOC fee is dependent on the following parameters:
 3. Building Sub usage type
 4. Fire NOC type
 
-## Data Table
+### Data Table
 
 | Sr. No. | \*Fire Station Code | \*Building Usage Type Code | \*Sub Type Code | \*Fire NOC Fee |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  | New | Provisional | Renew |
-| 1 | FS01 | BU01 | BSU01 | 1000 | 200 | 800 |
-| 2 | FS02 | BU01 | BSU02 | 2000 | 1000 | 2000 |
+| 1 | FS01 |  BU01 | BSU01 | 1000 | 200 | 800 |
+| 2 | FS02 |  BU01 | BSU02 | 2000 | 1000 | 2000 |
 
-## Procedure
+### Procedure
 
-### Data Definitions
+#### Data Definitions
 
 | Sr. No. | Column Name | Data Type | Data Size | Mandatory | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -30,7 +30,7 @@ The Fire NOC fee is dependent on the following parameters:
 | 3 | Building Sub Usage Code | Reference | 64 | Yes | The code given to each Fire station in the [Fire Sub Usage Type Master](building-usage-sub-type.md) |
 | 4 | Fire NOC Fee | Integer | 6 | Yes | The amount that will be charged for each Fire NOC type. For Eg: 2000 for new, 0 for Provisional and 1000 for renew |
 
-### How to fill data
+#### How to fill data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -40,9 +40,9 @@ The Fire NOC fee is dependent on the following parameters:
 6. Identify the fees that the fire stations are charging to issuing a new, provisional, or renewed Fire NOC for every building usage and sub usage combination.
 7. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-## Checklist
+### Checklist
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -50,7 +50,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../common-config/checklist.md) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -91,9 +91,11 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-## Attachments <a id="Attachments"></a>
+### Attachments <a id="Attachments"></a>
 
 {% file src="../../../../.gitbook/assets/configuration-data-fire-noc-fee.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sample-data-template-fire-noc-fee-1-.xlsx" caption="Sample Data" %}
+
+
 

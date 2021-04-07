@@ -9,9 +9,9 @@ description: >-
 ![](.gitbook/assets/digit_municipal_finance_creatives-09-1-.jpg)
 
 {% hint style="info" %}
-_**DIGIT-Municipal Finance**_ automates the entire financial management process. The module design complies with the National Municipal Accounting Manual to help municipalities maintain financial records of urban local bodies in tune with established policies and procedures.
+ _**DIGIT-Municipal Finance**_ automates the entire financial management process. The module design complies with the National Municipal Accounting Manual to help municipalities maintain financial records of urban local bodies in tune with established policies and procedures. 
 
-[Register](https://us02web.zoom.us/webinar/register/WN_RS-SYWJfSHGjcquS_iCxZw) for the DIGIT-Municipal Finance functional training event now.
+[Register](https://us02web.zoom.us/webinar/register/WN_RS-SYWJfSHGjcquS_iCxZw) for the DIGIT-Municipal Finance functional training event now. 
 
 _**Training Session Plan - Municipal Finance \(March 9 - 10, 2021\)**_
 
@@ -21,9 +21,9 @@ _**Training Session Plan - Municipal Finance \(March 9 - 10, 2021\)**_
 {% endhint %}
 
 {% hint style="info" %}
-_**DIGIT-Online Building Permission System \(OBPS\)**_ streamlines the building plan approval system right from the point of plan scrutiny to obtaining the Permit Order and Occupancy Certificate.
+_**DIGIT-Online Building Permission System \(OBPS\)**_ streamlines the building plan approval system right from the point of plan scrutiny to obtaining the Permit Order and Occupancy Certificate. 
 
-[Register](https://us02web.zoom.us/webinar/register/WN_KgbbqmZRRBeJlD6ylNlx-A) for the DIGIT-Online Building Permission System functional training event now.
+[Register](https://us02web.zoom.us/webinar/register/WN_KgbbqmZRRBeJlD6ylNlx-A) for the DIGIT-Online Building Permission System functional training event now.  
 
 _**Training Session Plan - OBPAS \(March 16 - 17, 2021\)**_
 
@@ -44,7 +44,7 @@ _**Training Session Plan - OBPAS \(March 16 - 17, 2021\)**_
 | OBPS Session 3 | 17 March 2021 | 4 - 5 pm | [Register](https://us02web.zoom.us/webinar/register/WN_AQ-eoHJ6RZ2pVQjYRP3pOw) |
 
 {% hint style="danger" %}
-**Disclaimer**
+**Disclaimer** 
 
 **Registration for Session 1 is an essential pre-requisite for attending session 2 and session 3.**
 {% endhint %}

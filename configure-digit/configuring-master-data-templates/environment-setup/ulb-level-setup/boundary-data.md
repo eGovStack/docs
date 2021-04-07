@@ -1,6 +1,6 @@
 # Boundary Data
 
-## Introduction
+### Introduction
 
 This is the next step after collating all the boundary hierarchies which are being used in the state. In a hierarchy, there are certain types of boundary classification and in all the levels there will be a mapping which we could define as a parent-child mapping in order to link certain levels of the classification.
 
@@ -10,7 +10,7 @@ Administration Hierarchy: City/ULB → Zone → Ward → Locality
 
 In the above-mentioned hierarchy, a City/ULB is being divided into different into zones followed by zones into wards and at the end wards into the locality.
 
-## Data Table
+### Data Table
 
 Data has to be collected for every boundary hierarchy type and boundary type with a mapping between the boundary code and its parent boundary code. Following is the table which is to be used across all the hierarchy types.
 
@@ -25,9 +25,9 @@ Data has to be collected for every boundary hierarchy type and boundary type wit
 Data given in the table is a sample data.
 {% endhint %}
 
-## Procedure
+### Procedure
 
-### Data Definition
+#### Data Definition
 
 Following is the definition of the data columns which are being used in the template:
 
@@ -40,7 +40,7 @@ Following is the definition of the data columns which are being used in the temp
 | 5 | Boundary Type | Text | 256 | Yes | The name of the boundary type i.e. Ward, Zone etc. |
 | 6 | Hierarchy Type Code | Alphanumeric | 64 | Yes | The code of the [Boundary Hierarchies ](boundary-hierarchies.md)for which this particular boundary is defined |
 
-### Steps to fill data
+#### Steps to fill data
 
 Following are the steps which should be used to fill the template:
 
@@ -54,11 +54,11 @@ Following are the steps which should be used to fill the template:
 8. Follow the steps until you reach the last sub-classification.
 9. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -66,7 +66,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../../module-setup/common-config/checklist.md) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -74,7 +74,7 @@ This checklist covers the activities which are specific to the entity.
 | :--- | :--- | :--- |
 | 1 | Every boundary type of data should be filled separately | - |
 
-## Attachments
+### Attachments
 
 {% file src="../../../../.gitbook/assets/configurable-data-template-boundary-data\_v1.xlsx" caption="Configuration Data Template" %}
 

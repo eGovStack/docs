@@ -1,6 +1,6 @@
 # POS Integration Configuration
 
-## Introduction
+### Introduction
 
 Point of Sales \(POS\) machine is a machine that helps in handling transaction processing. This machine accepts and verifies the payments which are made by citizens for prevailing the services of DIGIT.
 
@@ -8,19 +8,19 @@ POS facilitates a middleware app developed in order to verify the payment proces
 
 In this case, no data is required from the state team.
 
-## Data Table
+### Data Table
 
 Not applicable.
 
-## Procedure
+### Procedure
 
 Not applicable.
 
-## Checklist
+### Checklist
 
 Not applicable.
 
-## Attachments
+### Attachments
 
 Not applicable.
 

@@ -1,6 +1,6 @@
 # Trade License Documents Attachment
 
-## Introduction <a id="Introduction"></a>
+### Introduction <a id="Introduction"></a>
 
 Along with the [rates](trade-license-fee.md), the Trade License application process does require certain documents as an attachment of proof. The proof can be defined by a set of documents ranging from
 
@@ -10,7 +10,7 @@ Along with the [rates](trade-license-fee.md), the Trade License application proc
 
 The Number and the Documents required could vary across the State, ULB\(s\), and might be dependent on Trade Subtypes, all of which are totally configurable on DIGIT.
 
-## Data Table <a id="Data-Table"></a>
+### Data Table <a id="Data-Table"></a>
 
 | Sr. No. | \*Trade Subtype Code | \*Trade Subtype Name \(In English\) | \*Application Type | \*Document 1 | \*Document 2 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -21,17 +21,17 @@ The Number and the Documents required could vary across the State, ULB\(s\), and
 The table above contains sample data.
 {% endhint %}
 
-## Procedure
+### Procedure
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Trade Sub Type Code | Reference | 64 | Yes | The Code assigned to the[ Trade Sub Type](trade-sub-type.md). Eg: TRADE\_SMALL\_BAKERY is assigned to Bakery |
-| 2 | Trade Sub Type Name \(English\) | Text | 256 | Yes | Name of the Trade Sub Type in English Eg: Clinic |
-| 3 | Application Type | Text | 256 | Yes | Type of application for which the documents related to trade are configured. It can either be new or renewal |
+| 2 | Trade Sub Type Name \(English\) | Text | 256  | Yes | Name of the Trade Sub Type in English Eg: Clinic |
+| 3 | Application Type | Text | 256  | Yes | Type of application for which the documents related to trade are configured. It can either be new or renewal |
 | 4 | Document 1 | Reference | 256 | Yes | The primary document required as a verification parameter. Refer to the [Standard Document List](../common-config/standard-document-list.md) |
 | 5 | Document 2 | Reference | 256 | Yes | The Secondary Document required as a verification parameter. Refer to the [Standard Document List](../common-config/standard-document-list.md) |
 
-### How to fill data
+#### How to fill data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -41,11 +41,11 @@ The table above contains sample data.
 6. Add the “Trade Sub Type Code” respectively against the identified trade type\(s\).
 7. Fill in the \*Document 1 & \*Document 2 columns respectively.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -53,7 +53,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../common-config/checklist.md) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -78,7 +78,7 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-## Attachments
+### Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-trade-master-4- \(1\).xlsx" caption="Configuration Data Template" %}
 
