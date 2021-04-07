@@ -1,6 +1,6 @@
 # Employee User Manual
 
-## Counter Employee \(CE\) 
+## Counter Employee \(CE\)
 
 The Counter Employee \(CE\) represents the ULB employee responsible for assisting the citizens with water and sewerage connection related activities. The W&S module provides the CE with the scope to submit applications for new connections on behalf of the citizens or collect payment for the citizen bills at the counter.
 
@@ -24,7 +24,7 @@ Click on the **Water & Sewerage** menu option in the sidebar or the **Water & Se
 
 ![](https://lh5.googleusercontent.com/8NG-fVkCGaJTlbYLqu08su1Xse8Y7H8yB7HH7DaweuYsydG-4gAnbC7xf9BTykohXZGwGfItK57ZF2M5j9NwD4suEyGmTeOryAZ0_Xql2330sxE3MzsiFzZ7n5Z2g0BjJLZ-eGKT)
 
-Click on the **New Application** button available on the top right corner of the page. Follow the steps iterated in the [**Citizens Apply**](citizen-user-manual.md#apply-for-new-connections) for new connections section to apply for new connections. 
+Click on the **New Application** button available on the top right corner of the page. Follow the steps iterated in the [**Citizens Apply**](citizen-user-manual.md#apply-for-new-connections) for new connections section to apply for new connections.
 
 ### Search applications or connections
 
@@ -44,13 +44,13 @@ Click on the **Water & Sewerage** menu option in the sidebar or the **Water & Se
 
 ![](https://lh3.googleusercontent.com/ILxfcqRBW-tIbpds56JwbLSCii-7MTeX8LkpSI2Gg8u8K3kcnlHsuZhawBvC06RXBOcytdBduwYOlyY8cWZrxXiz3E_ym6V5krkNB5-6FkfkBDS1pRzm0MsT4owZsWM_ojeC5_xw)
 
-Enter the **Consumer No.** or **Application Number**, or **Owner Mobile No.**, or **Application Type** to filter the search for applications. The application search can also be filtered by **Application Status** or defining a specific period in the **From Date** and **To Date** fields. The system fetches the applications created between the specified period or after the specified date. 
+Enter the **Consumer No.** or **Application Number**, or **Owner Mobile No.**, or **Application Type** to filter the search for applications. The application search can also be filtered by **Application Status** or defining a specific period in the **From Date** and **To Date** fields. The system fetches the applications created between the specified period or after the specified date.
 
 Click on the **Search** button to view the search results. Click on the **Reset** button to renew the search using different parameters.
 
 ### Add meter readings
 
-CEs add the meter readings for each connection to generate monthly bills based on the recorded usage. 
+CEs add the meter readings for each connection to generate monthly bills based on the recorded usage.
 
 To add meter readings
 
@@ -78,7 +78,7 @@ Click on the **Save** button to save the reading. This will generate the bill or
 
 ### Activate new connections
 
-Once the application for new water or sewerage connection is approved and the citizen has paid the applicable connection charges, the CE is responsible for activating the new connection. 
+Once the application for new water or sewerage connection is approved and the citizen has paid the applicable connection charges, the CE is responsible for activating the new connection.
 
 To activate new connections
 
@@ -106,7 +106,7 @@ Click on **Next Step** to the **Summary** section of the application. Review the
 
 ![](https://lh6.googleusercontent.com/ll1BQCGJjAgBo2ECQLyYtoux0_maFn9Zu5a_8tKpPujNxm62_inLcP246uVlo8lZxNk-6x9rwybuQ4lfhZYhPtXjVNTobFk_isslAmhQj19BXx5BakqHpcZCvqS5kHT6KWXzVBo-)
 
-Enter any **Comments** for activating the connection. Click on the **Activate Connection** button. 
+Enter any **Comments** for activating the connection. Click on the **Activate Connection** button.
 
 ![](https://lh6.googleusercontent.com/hzX8StrpLBMet1yVHH3qSIsI7lHQgGLBRAzyN0kyeWJTsYEbuHLBNXuESn1j-t4LZuJ4-wlIjGKjGF1vxYfl5ISwOJ1LGMgy144MJ7lcVf40gID95HF6OpabAz5ixNHk9tfU_r1G)
 
@@ -159,7 +159,7 @@ Search for the specific connection using applicable search parameters. Click on 
 Scroll down the page and click on the **Take Action** button. Click on **Modify Connection**.
 
 {% hint style="info" %}
-The system does not allow employees to modify connection details in 2 cases 
+The system does not allow employees to modify connection details in 2 cases
 
 1. If there are any pending dues for the connection - the owner has to settle the pending dues before making any modifications to the connection details.
 2. If there is already any other modification application pending for approval - the owner can raise another modification request only once the previous application is approved.
@@ -167,7 +167,7 @@ The system does not allow employees to modify connection details in 2 cases
 
 ![](https://lh4.googleusercontent.com/Q7GjCzetbwc8pCFniYSqgt42RQL6xltsL09nozs8w9MbNI3FeT4bjGoNhVa4iStJwyKWJpW53h71kRGZuSKVHXDG7uAKlTlDjDa69YJtQLjZQy1r7KhoPHJuoiIeKTKi2rtHHE5n)
 
-The **Modify Connection** application form contains 4 sections. The **Property Details** panel displays the existing property details linked to the connection. Click on the **Search Property** button to replace the existing property details with another property. Select the applicable **Property ID**. The change request for property details will be forwarded to the Approver for final approval. 
+The **Modify Connection** application form contains 4 sections. The **Property Details** panel displays the existing property details linked to the connection. Click on the **Search Property** button to replace the existing property details with another property. Select the applicable **Property ID**. The change request for property details will be forwarded to the Approver for final approval.
 
 Click on the Modify Property button to make any changes to the existing property. This action is integrated with the Property Tax module. So, whatever changes or edits are requested for the listed property will go through the Edit Property workflow for verification and final approval from the Property Tax department.
 
@@ -248,12 +248,11 @@ Click on the **View File** button to open the documents uploaded in the applicat
 
 State the reasons for sending the application back to the citizen in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Send Back** button.
 
-The application is placed back in the Citizen queue for required edits.  
-
+The application is placed back in the Citizen queue for required edits.
 
 ### Reject applications
 
-The DV can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines. 
+The DV can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines.
 
 To reject the application
 
@@ -263,8 +262,7 @@ Click on the **Take Action** button at the bottom of the application page once t
 
 State the reasons for rejecting the application in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Reject** button.
 
-The application is rejected and a notification is sent to the applicant informing the same.  
-
+The application is rejected and a notification is sent to the applicant informing the same.
 
 ### Verify and forward applications
 
@@ -325,11 +323,11 @@ Select the relevant **Road Type**. Enter the **Area \(in sq ft\)** to indicate t
 
 Click on **Next Step** to the **Summary** section of the application. Review the application details. Complete the changes and click on the **Take Action** button to proceed with the required action on the application.
 
-### Send applications back 
+### Send applications back
 
 FIs can send the application back to the DV for any corrections or if any vital document has not been uploaded.
 
-To send the application back 
+To send the application back
 
 Enter the **Application No.** or any other search parameter to search for the application. Click on the **Application No.** link to open the application. Scroll down the application page to review the filled in details.
 
@@ -343,7 +341,7 @@ The application is placed back in the DV queue for required edits.
 
 ### Reject applications
 
-The FI can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines. 
+The FI can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines.
 
 To reject the application
 
@@ -353,8 +351,7 @@ Click on the **Take Action** button at the bottom of the application page once t
 
 State the reasons for rejecting the application in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Reject** button.
 
-The application is rejected and a notification is sent to the applicant informing the same.  
-
+The application is rejected and a notification is sent to the applicant informing the same.
 
 ### Verify and forward applications
 
@@ -374,7 +371,7 @@ The application is forwarded to the W&S Approver for final approval.
 
 The W&S Approver is responsible for approving or rejecting the application for new water or sewerage connections. Once approved the applicant must pay the connection charges to initiate the activation of connection. The counter employee fills in the activation details and activates the connection. Post connection activation the system generates a unique consumer number.
 
-The  Approver can
+The Approver can
 
 * [Edit applications](employee-user-manual.md#edit-applications-2)
 * [Send back applications](employee-user-manual.md#send-back-applications-to-fi)
@@ -385,7 +382,7 @@ The  Approver can
 
 To edit applications
 
-The application **Pending for Approval** is available on the DIGIT home page. Else, search for the application using the search parameters. Open the application. 
+The application **Pending for Approval** is available on the DIGIT home page. Else, search for the application using the search parameters. Open the application.
 
 Click on the **View History** button available in the **Task Status** panel on top to view the list of actions taken on the application so far. Click on the **View Breakup** button to find the fee breakup details in the **Fee Estimate** panel. Click on the **Add Rebate/Penalty** button to add any ad hoc penalty or rebate amount to the total fee payable.
 
@@ -415,7 +412,7 @@ The application is placed back in the FI queue for the required processing.
 
 ### Reject applications
 
-The Approver can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines. 
+The Approver can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines.
 
 To reject the application
 
@@ -429,7 +426,7 @@ The application is rejected and a notification is sent to the applicant informin
 
 ### Approve connections
 
-The Approver verifies the application and if the documents and information provided in the application are found satisfactory and complete, the connection request is approved. 
+The Approver verifies the application and if the documents and information provided in the application are found satisfactory and complete, the connection request is approved.
 
 To approve connections
 
@@ -439,7 +436,5 @@ Click on the **Take Action** button at the bottom of the application page once t
 
 Provide any additional information for the applicant in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Approve Connection** button.
 
-The application for new water or sewerage connection is approved. The applicant is allotted a unique **Consumer Number**. The application is now routed back to the citizen to make the payment towards connection charges. Once the payment is done the connection is activated.  
-  
-
+The application for new water or sewerage connection is approved. The applicant is allotted a unique **Consumer Number**. The application is now routed back to the citizen to make the payment towards connection charges. Once the payment is done the connection is activated.
 

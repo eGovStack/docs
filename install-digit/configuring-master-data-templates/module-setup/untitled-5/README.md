@@ -1,10 +1,10 @@
 # Water Charges Data Templates
 
-### Introduction
+## Introduction
 
 The Water Charges module offers a consolidated platform for managing new and existing water connections. The module eliminates the need for manual processing and streamlines the key water management functions for operational efficiency. DIGIT Water & Sewerage \(W&S\) module enables automated processing of new connection requests, generating water bills, and facilitating online payment of bills.
 
-### Module Features
+## Module Features
 
 DIGIT Water Charges module enables citizens to -
 
@@ -21,13 +21,13 @@ DIGIT Water module enables employees at ULB and State level to -
 3. View custom dashboards for module statistics.
 4. Filter search results using advanced configurable search parameters.
 
-### Module Ontology
+## Module Ontology
 
-#### State Level
+### State Level
 
 None
 
-#### ULB Level
+### ULB Level
 
 1. [Pipe Size Types](pipe-size-types.md)
 2. [Water Source Types](water-source-types.md)
@@ -36,7 +36,7 @@ None
 5. [Water Penalty Rates](water-penalty-rates.md)
 6. [Water Interest Rates](water-interest-rates.md)
 
-### Module Reports
+## Module Reports
 
 None
 

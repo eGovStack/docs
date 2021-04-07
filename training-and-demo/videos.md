@@ -118,7 +118,6 @@ Navigate to the relevant category to view the list of videos available.
     <tr>
       <td style="text-align:left">Property Tax Configuration Videos</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="https://youtu.be/XLfhJD2X_gY">Road Type</a>
           </li>

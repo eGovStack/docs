@@ -15,7 +15,3 @@ Key configurations at the state level include -
 * [Localization](localization.md)
 * [Google Map Configuration](google-map-configuration.md)
 
-
-
-
-

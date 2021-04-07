@@ -4,16 +4,16 @@ description: DIGIT 2.1 Changes to the Property Tax Module
 
 # BPA 2.1 Release Notes
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 The version supports the integration of the NOC module with the BPA module.
 
-### Release Highlights <a id="Release-Highlights"></a>
+## Release Highlights <a id="Release-Highlights"></a>
 
 * Common application form for multiple departments
 * Integration with NOC Department
 
-### Release Features <a id="Release-Features"></a>
+## Release Features <a id="Release-Features"></a>
 
 <table>
   <thead>
@@ -51,16 +51,16 @@ The version supports the integration of the NOC module with the BPA module.
   </tbody>
 </table>
 
-### Known Issues <a id="Known-Issues"></a>
+## Known Issues <a id="Known-Issues"></a>
 
 * Workflow inbox issue - instead of displaying the application in the assigned to me section, it is displayed in the common inbox
 * Document upload issue - when uploading any document, the document gets attached to the particular document header and before getting attached if the user clicks on add button to the next document header, both the documents are added to the new document header.
 
-### Upcoming Release Features <a id="Upcoming-Release-Features"></a>
+## Upcoming Release Features <a id="Upcoming-Release-Features"></a>
 
 Not planned
 
-### Reference Doc Links <a id="Reference-Doc-Links"></a>
+## Reference Doc Links <a id="Reference-Doc-Links"></a>
 
 | **Doc Links** | **Description** |
 | :--- | :--- |

@@ -1,10 +1,10 @@
 # Checklist
 
-### Introduction
+## Introduction
 
 The checklist is the set of activities which are there to perform on completion of a task to ensure the fullness and quality of the task.
 
-### Data Types
+## Data Types
 
 The data type is an attribute of data, is a particular kind of data item, as defined by the values it can take, the computer system used, or the operations that can be performed on it. In order to help to fill the right kind of data for a data field/ column in excel, the below-given table has different data types with its description.
 
@@ -18,16 +18,16 @@ The data type is an attribute of data, is a particular kind of data item, as def
 | 6 | Reference | It is a code of a record from the referred entity and having a related record in the prevailing entity |
 | 7 | Document | It represents a document which is needed as an attachment with other relevant details in the template |
 
-### Checklist
+## Checklist
 
-#### **State Level: These activities are applicable to state-level entities only**
+### **State Level: These activities are applicable to state-level entities only**
 
 | Sr. No. | Activity | Example |
 | :--- | :--- | :--- |
 | 1 | The entity is to be decided to be defined at the state level and all the ULBs are agreed on the same. | NA |
 | 2 | Data filled into templates should cater to the needs of each and every ULBs. | NA |
 
-#### **General: These activities are applicable to all the entities**
+### **General: These activities are applicable to all the entities**
 
 <table>
   <thead>
@@ -98,7 +98,7 @@ The data type is an attribute of data, is a particular kind of data item, as def
   </tbody>
 </table>
 
-#### **Data Type Based: These activities are applicable to all entities**
+### **Data Type Based: These activities are applicable to all entities**
 
 <table>
   <thead>
