@@ -1,12 +1,12 @@
 # Finance Data Templates
 
-### Introduction
+## Introduction
 
 Financial Module \(FM\) is a key module that is built on coexistence with DIGIT which enables municipalities to create and manage financial transactions like budget, revenue demand, receipt, advances, deposits, bills, payments, asset creation \(capitalization\), fund transfer and also reconciliations and reporting.
 
 FM enables municipalities to maintain financial records of ULBs following established procedures and practices. Financial Module is a fund based double-entry accrual accounting system designed in line with the National Municipal Accounting Manual.
 
-### Module Features
+## Module Features
 
 The financial module enables users to -
 
@@ -21,9 +21,9 @@ The financial module enables users to -
 9. Contra Entry, Bank-reconciliation, Deduction Management & period End Activities.
 10. Deduction Management - processing statutory and non-statutory deductions and its remittances.
 
-### Module Ontology
+## Module Ontology
 
-#### State Level
+### State Level
 
 1. [Chart of Accounts](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/424214577/Chart+of+Accounts)
 2. [Funds](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/424738850/Funds)
@@ -32,7 +32,7 @@ The financial module enables users to -
 5. [Deduction](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/424575032/Deduction)
 6. [SubLedger Category](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/515473513/SubLedger+Category)
 
-#### ULB Level
+### ULB Level
 
 1. [Contractors](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/424607790/Contractors)
 2. [Suppliers](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/424345645/Suppliers)
@@ -43,7 +43,7 @@ The financial module enables users to -
 7. [Opening Balances](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/424345692/Opening+Balances)
 8. [SubLedger Master](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/424738870/SubLedger+Master)
 
-### Module Reports
+## Module Reports
 
 1. Financial Management
 2. Budget Reports

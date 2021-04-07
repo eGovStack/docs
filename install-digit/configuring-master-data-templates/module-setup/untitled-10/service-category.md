@@ -1,6 +1,6 @@
 # Service Category
 
-### Introduction
+## Introduction
 
 Service Category is a comprehensive list of services existing for the specific State/ULB. Service Category basically defines the miscellaneous revenue collection heads. Example - Rental, Entry Fees, User Charges etc.
 
@@ -8,7 +8,7 @@ Service categories are defined at a global level for different types of revenues
 
 The Service Category masters list allows States/ULBs to identify the miscellaneous services for which payments and collections can be processed.
 
-### Data Table
+## Data Table
 
 | Sr. No. | Service Category Code\* | Service Category \(In English\)\* | Service Category \(In Local Language\)\* |
 | :--- | :--- | :--- | :--- |
@@ -19,9 +19,9 @@ The Service Category masters list allows States/ULBs to identify the miscellaneo
 Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -29,7 +29,7 @@ Data given in the table is a sample data.
 | 2 | Service Category \(English\) | Text | 250 | Yes | Name of “Service Category” in English. This will help the user select the category name to process the payment collection |
 | 3 | Service Category \(Local Language\) | Text | 250 | Yes | Name of “Service Category” in Local Language. This will help the user select the category name to process the payment collection |
 
-#### Steps to Fill Data
+### Steps to Fill Data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -38,11 +38,11 @@ Data given in the table is a sample data.
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the[ checklist ](../untitled-1/checklist.md)and taking care of each and every point mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -50,7 +50,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../untitled-1/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -75,7 +75,7 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-service-category.xlsx" caption="Configuration Data Template" %}
 

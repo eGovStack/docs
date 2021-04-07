@@ -1,21 +1,21 @@
 # Ownership Sub Category
 
-### Introduction
+## Introduction
 
 This is a further sub-classification of the ownership which details what is the ownership sub category, whether there is a single owner, multiple owner etc. . An example has been given in the attachments section of the page.
 
-### Data Table
+## Data Table
 
 The data has to be collected for all the subcategories of ownership type present in the state. Below mentioned is the table of the template that is being used to gather data:
 
 | Sr. No | Ownership Sub Category Code\* | Ownership Category Code\* | Ownership Sub Category\* \(In English\) | Ownership Sub Category\* \(In Local Language\) |
 | :--- | :--- | :--- | :--- | :--- |
-|  1. |  SO |  INDIVIDUAL |  Single Owner |  एकल स्वामी |
-|  2. |  MO |  INDIVIDUAL | Multiple Owner |  मल्टीपल ओनर |
+| 1. | SO | INDIVIDUAL | Single Owner | एकल स्वामी |
+| 2. | MO | INDIVIDUAL | Multiple Owner | मल्टीपल ओनर |
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -24,7 +24,7 @@ The data has to be collected for all the subcategories of ownership type present
 | 3 | Ownership Sub Category \(In English\) | Text | 256 | Yes | Description of the ownership Sub type in the English Language |
 | 4 | Ownership Sub Category \(In Local Language\) | Text | 256 | Yes | Description of the ownership Sub type in Native Language |
 
-#### Steps to fill Data
+### Steps to fill Data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -37,11 +37,11 @@ The data has to be collected for all the subcategories of ownership type present
 9. Repeat the steps for all the ownership type categories\(Parent Level\) .
 10. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -49,7 +49,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/502203140/Checklist) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -58,7 +58,7 @@ This checklist covers the activities which are specific to the entity.
 | 1 | There should be a mapping code between the sub category \(child\) and Property Tax: Ownership Category \(parent level\), no child can be left without a parent | - |
 | 2 | Make sure that no code which is not mentioned in the ownership category classification \(parent\) can be used | - |
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configurable-data-template-pt-ownership-sub-type.xlsx" caption="Configuration Data Template" %}
 
