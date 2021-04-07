@@ -23,7 +23,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 ## Interaction Diagram <a id="Interaction-Diagram"></a>
 
-![](../../../.gitbook/assets/image%20%2876%29.png)
+![](../../../.gitbook/assets/image%20%28101%29.png)
 
 ## Deployment Details <a id="Deployment-Details"></a>
 

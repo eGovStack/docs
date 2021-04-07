@@ -1,12 +1,12 @@
 # Email Account Configuration
 
-### Introduction
+## Introduction
 
 An email account of the client/state team has to be set up in order to receive/send the email notifications.
 
 In order to achieve the functionality, an email account has to be set up at there server since most of the states would defer from creating an account with the Gmail/public server. Further, this email account has to be integrated with the various DIGIT modules.
 
-### Data Table
+## Data Table
 
 In order to achieve the above functionality, we require the below-mentioned details
 
@@ -18,24 +18,24 @@ In order to achieve the above functionality, we require the below-mentioned deta
 The values mentioned here are sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Email ID | Alphanumeric |  N/A | Yes | Email id which is being configured |
-| 2 | Your Name | Text |  256 | Yes |  The name on behalf of which the email would be sent in order to receive the updates |
-| 3 | Account Type | Alphanumeric |  64 | Yes | The type of email account type protocol which will be used to download messages |
-| 4 | Incoming Mail Server | Numeric | \(12,2\) |  Yes |  The IP address of the email server through which messages would be received |
-| 5 | Outgoing Mail Server\(SMTP\) | Numeric |  \(12,2\) | Yes |  The IP address of the email server through which messages would be sent |
-| 6 | Password | Alphanumeric |  64 | Yes |  The password of the email server |
-| 7 | Incoming Server POP3 Port | Numeric |  \(12,2\) | Yes |  The port number through which the emails are received |
-| 8 | Outgoing server SMTP Port | Numeric |  \(12,2\) | Yes |  The port number through which the emails are to be sent |
-| 9 | Encrypted Connection Type | Alphanumeric |  64 | Yes |  The encryption type which is used for the connection |
-| 10 | Days after which the email should be removed from the server | Numeric |  \(12,2\) | Yes |  The number of days after which the email should be deleted from the server \(not from the local device\) |
+| 1 | Email ID | Alphanumeric | N/A | Yes | Email id which is being configured |
+| 2 | Your Name | Text | 256 | Yes | The name on behalf of which the email would be sent in order to receive the updates |
+| 3 | Account Type | Alphanumeric | 64 | Yes | The type of email account type protocol which will be used to download messages |
+| 4 | Incoming Mail Server | Numeric | \(12,2\) | Yes | The IP address of the email server through which messages would be received |
+| 5 | Outgoing Mail Server\(SMTP\) | Numeric | \(12,2\) | Yes | The IP address of the email server through which messages would be sent |
+| 6 | Password | Alphanumeric | 64 | Yes | The password of the email server |
+| 7 | Incoming Server POP3 Port | Numeric | \(12,2\) | Yes | The port number through which the emails are received |
+| 8 | Outgoing server SMTP Port | Numeric | \(12,2\) | Yes | The port number through which the emails are to be sent |
+| 9 | Encrypted Connection Type | Alphanumeric | 64 | Yes | The encryption type which is used for the connection |
+| 10 | Days after which the email should be removed from the server | Numeric | \(12,2\) | Yes | The number of days after which the email should be deleted from the server \(not from the local device\) |
 
-#### Steps to fill Data
+### Steps to fill Data
 
 Below steps could be followed in order to fill the template:
 
@@ -47,11 +47,11 @@ Below steps could be followed in order to fill the template:
 6. The data would be available in the POP and IMAP account settings at the server level.
 7. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -59,11 +59,11 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../../module-setup/untitled-1/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 Not Applicable
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configurable-data-template-email-account-configuration-v1.xlsx" caption="Configuration Data Template" %}
 

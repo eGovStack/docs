@@ -27,7 +27,7 @@ The OpenAPI Specification \(OAS\) defines a standard, programming language-agnos
 
 ### Why [Microservice Architecture](https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9)
 
-Microservices are nothing but breaking big beast into smaller units that can independently be developed, enhanced and scaled as a categorized and layered stack that gives better control over each component of an application that exists in its own container, independently managed and updated. This means that developers can build applications from multiple components and program each component in the language best suited to its function, rather than having to choose a single less-than-ideal language to use for everything. Optimizing software all the way down to the components of the application helps you increase the quality of your products. No time and resources are wasted managing the effects updating one application have on another. 
+Microservices are nothing but breaking big beast into smaller units that can independently be developed, enhanced and scaled as a categorized and layered stack that gives better control over each component of an application that exists in its own container, independently managed and updated. This means that developers can build applications from multiple components and program each component in the language best suited to its function, rather than having to choose a single less-than-ideal language to use for everything. Optimizing software all the way down to the components of the application helps you increase the quality of your products. No time and resources are wasted managing the effects updating one application have on another.
 
 ### Why [Containerized/Dockerized](https://medium.com/@pablo.iorio/container-based-architecture-i-iii-technical-advantages-7176195456c5#:~:text=Using%20containers%20facilitates%20the%20development,complexity%2C%20network%20latency%2C%20monitoring.)
 
@@ -35,11 +35,11 @@ Comparatively the best infra choice for running a microservices application arch
 
 ### Why [Kubernetes](why-kubernetes-for-digit.md)
 
-As most modern software developers can attest, containers have provided us with dramatically more flexibility for running cloud-native applications on physical and virtual infrastructure. Kubernetes allows you to deploy cloud-native applications anywhere and manage them exactly as you like everywhere. For more details refer the above link that explains various advantages of kubernetes. 
+As most modern software developers can attest, containers have provided us with dramatically more flexibility for running cloud-native applications on physical and virtual infrastructure. Kubernetes allows you to deploy cloud-native applications anywhere and manage them exactly as you like everywhere. For more details refer the above link that explains various advantages of kubernetes.
 
 ### Why [Helm Charts](https://medium.com/@technospace/an-introduction-to-helm-charts-41be1544370c)
 
-Kubernetes, the popular container orchestration system, is used extensively. However, it can become complex: you have to handle all of the objects \(ConfigMaps, pods, etc.\), and would also have to manage the releases. Both can be accomplished with [Kubernetes Helm](https://platform9.com/resource/kubernetes-helm-why-it-matters/). It is a Kubernetes package manager designed to easily package, configure, and deploy applications and services onto Kubernetes clusters in a standard way, this helps the ecosystem to adopt the standard way of deployment and customization. 
+Kubernetes, the popular container orchestration system, is used extensively. However, it can become complex: you have to handle all of the objects \(ConfigMaps, pods, etc.\), and would also have to manage the releases. Both can be accomplished with [Kubernetes Helm](https://platform9.com/resource/kubernetes-helm-why-it-matters/). It is a Kubernetes package manager designed to easily package, configure, and deploy applications and services onto Kubernetes clusters in a standard way, this helps the ecosystem to adopt the standard way of deployment and customization.
 
 For being successful in the DIGIT Setup, here are certain requirements that need to be ascertained:
 

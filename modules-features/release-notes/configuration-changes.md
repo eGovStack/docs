@@ -4,7 +4,7 @@ description: DIGIT 2.1 - Technical Details of the Changes
 
 # Configuration Changes
 
-### MDMS Changes
+## MDMS Changes
 
 | **Feature** | **Service Name** | **Changes** | **Description** |
 | :--- | :--- | :--- | :--- |
@@ -22,7 +22,7 @@ description: DIGIT 2.1 - Technical Details of the Changes
 | WS |  | [\#1276](https://github.com/egovernments/egov-mdms-data/pull/1276) | Documents for WS Modify Connection |
 | WS |  | [\#1281](https://github.com/egovernments/egov-mdms-data/pull/1281) | Application Type drop-down for WS |
 
-### Config Changes
+## Config Changes
 
 | **Feature** | **Service Name** | **Changes** | **Description** |
 | :--- | :--- | :--- | :--- |
@@ -31,9 +31,9 @@ description: DIGIT 2.1 - Technical Details of the Changes
 | WS | PDF | [\#555](https://github.com/egovernments/configs/pull/555) | WS Sanction Letter changes |
 | WS | Searcher | [\#560](https://github.com/egovernments/configs/pull/560) | Locality Searcher query changes |
 | NOC | Searcher | [\#446](https://github.com/egovernments/configs/pull/446) | Added NOC service locality searcher |
-| WS | Bill PDF |  [\#434](https://github.com/egovernments/configs/pull/434), [\#430](https://github.com/egovernments/configs/pull/430), [\#428](https://github.com/egovernments/configs/pull/428), [\#423](https://github.com/egovernments/configs/pull/423), [\#422](https://github.com/egovernments/configs/pull/422), [\#420](https://github.com/egovernments/configs/pull/420), [\#413](https://github.com/egovernments/configs/pull/413), [\#412](https://github.com/egovernments/configs/pull/412) | WS Bill PDF changes |
+| WS | Bill PDF | [\#434](https://github.com/egovernments/configs/pull/434), [\#430](https://github.com/egovernments/configs/pull/430), [\#428](https://github.com/egovernments/configs/pull/428), [\#423](https://github.com/egovernments/configs/pull/423), [\#422](https://github.com/egovernments/configs/pull/422), [\#420](https://github.com/egovernments/configs/pull/420), [\#413](https://github.com/egovernments/configs/pull/413), [\#412](https://github.com/egovernments/configs/pull/412) | WS Bill PDF changes |
 
-### Infra changes
+## Infra changes
 
 | **Feature** | **Feature** | **Description** |
 | :--- | :--- | :--- |
@@ -41,5 +41,5 @@ description: DIGIT 2.1 - Technical Details of the Changes
 | UAT | [\#971](https://github.com/egovernments/eGov-infraOps/pull/971) | UAT.yml upgrade for the digit 2.1 release |
 | PGR | [\#979](https://github.com/egovernments/eGov-infraOps/pull/979) | Added time to close complaint-uat config |
 | DSS | [\#981](https://github.com/egovernments/eGov-infraOps/pull/981) | DSS config override |
-| Tenant ID | [\#995](https://github.com/egovernments/eGov-infraOps/pull/995) |  State-level Tenant Id configurations |
+| Tenant ID | [\#995](https://github.com/egovernments/eGov-infraOps/pull/995) | State-level Tenant Id configurations |
 

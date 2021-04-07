@@ -1,10 +1,10 @@
 # Adding New APIs For Access
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 Roles define the permissions of a user to perform a group of tasks. The tasks are created as API calls to do certain actions when a request for those calls is sent by the system. Access permission is grated by mapping roles with API. User assigned with the roles to provide access for the API
 
-### Pre-requisites <a id="Pre-requisites"></a>
+## Pre-requisites <a id="Pre-requisites"></a>
 
 Before proceeding with the configuration, make sure the following pre-requisites are met -
 
@@ -23,15 +23,15 @@ Before proceeding with the configuration, make sure the following pre-requisites
   * Take most search parameters in POST body only
 * For further more information about how new API is developed could be referred in this link[ API Do's and Don'ts](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/686719019/API+Do%27s+and+Don%27ts)
 
-### Key Functionalities <a id="Key-Functionalities"></a>
+## Key Functionalities <a id="Key-Functionalities"></a>
 
 * Adding New APIs\(actions\) and Mapping Roles with that APIs provides permission to perform certain task can be restricted based on the requirement.
 
-### Deployment Details <a id="Deployment-Details"></a>
+## Deployment Details <a id="Deployment-Details"></a>
 
 * After mapping Roles with APIs, the MDMS service needs to be restarted to read the newly added data.
 
-### Configuration Details <a id="Configuration-Details"></a>
+## Configuration Details <a id="Configuration-Details"></a>
 
 APIs are added in **actions-test.json** and called as action.  
 In MDMS, file **actions-test.json**, under **ACCESSCONTROL-ACTIONS-TEST** folder APIs are added.
@@ -60,7 +60,7 @@ API Sample -
       "queryParams": ""
     },
    ]
-  }   
+  }
 ```
 
 APIs are added as action array element with the request url and other required details for the array "actions-test"
@@ -85,7 +85,7 @@ Each action is defined as a key-value pair:
 
 Roles are added in **roles.json**  
 In MDMS, file **roles.json**, under **ACCESSCONTROL-ROLES** folder roles are added.  
- More about roles can be checked in the below link:  
+More about roles can be checked in the below link:  
 [Adding roles to System](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/717946899/Adding+roles+to+System)
 
 Mapping of Roles and APIs/action is added in **roleactions.json**, under the folder  
@@ -121,13 +121,13 @@ Each mapping is defined with key-value pairs. keys are rolecode, actionid, actio
 | 3 | actioncode | No | The code of the API/action which is defined in actions-test.json and which is required to be mapped with the role. |
 | 4 | tenantid | Yes | tenant id of state. |
 
-### Reference Docs <a id="Reference-Docs"></a>
+## Reference Docs <a id="Reference-Docs"></a>
 
-#### Doc Links <a id="Doc-Links"></a>
+### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
 | Sample actions-test.json | [https://github.com/egovernments/ukd-mdms-data/blob/SDC/data/uk/ACCESSCONTROL-ACTIONS-TEST/actions-test.json](https://github.com/egovernments/ukd-mdms-data/blob/SDC/data/uk/ACCESSCONTROL-ACTIONS-TEST/actions-test.json) |
-|  Sample roles.json | [https://github.com/egovernments/ukd-mdms-data/blob/SDC/data/uk/ACCESSCONTROL-ROLES/roles.json](https://github.com/egovernments/ukd-mdms-data/blob/SDC/data/uk/ACCESSCONTROL-ROLES/roles.json) |
+| Sample roles.json | [https://github.com/egovernments/ukd-mdms-data/blob/SDC/data/uk/ACCESSCONTROL-ROLES/roles.json](https://github.com/egovernments/ukd-mdms-data/blob/SDC/data/uk/ACCESSCONTROL-ROLES/roles.json) |
 | Sample roleactions.json Roles APIs mapping | [https://github.com/egovernments/ukd-mdms-data/blob/SDC/data/uk/ACCESSCONTROL-ROLEACTIONS/roleactions.json](https://github.com/egovernments/ukd-mdms-data/blob/SDC/data/uk/ACCESSCONTROL-ROLEACTIONS/roleactions.json) |
 

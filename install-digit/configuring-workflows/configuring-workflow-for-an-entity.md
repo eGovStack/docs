@@ -1,17 +1,17 @@
 # Configuring Workflows For An Entity
 
-### Overview
+## Overview
 
 Workflow is defined as a sequence of tasks that has to be performed on an application/Entity to process it. The _egov-workflow-v2_ is a workflow engine which helps in performing these operations seamlessly using a predefined configuration. We will discuss how to create this configuration for a new product in this document.
 
-### Pre-requisites
+## Pre-requisites
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
 * _egov-workflow-v2 service is up and running_
 * Role-Action mapping are added for business Service API’s 
 
-### Key Functionalities
+## Key Functionalities
 
 * Create and modify workflow configuration according to the product requirements
 * Configure State level as well BusinessService level SLA to efficiently track the progress of the application
@@ -34,14 +34,14 @@ Before you proceed with the configuration, make sure the following pre-requisite
 | roles | A list containing the roles which can perform the actions |
 | auditDetails | Contains fields to audit edits on the data. _\(createdTime, createdBy,lastModifiedTIme,lastModifiedby\)_ |
 
-### Deployment Details
+## Deployment Details
 
 1. Deploy the latest version of egov-workflow-v2 service
 2. Add businessService persister yaml path in persister configuration
 3. Add Role-Action mapping for BusinessService API’s
 4. Overwrite the egov.wf.statelevel flag \( _true_ for state level and _false_ for tenant level\)
 
-### Configuration Details
+## Configuration Details
 
 The Workflow configuration has 3 levels of hierarchy:  
 a. BusinessService  
@@ -116,20 +116,20 @@ _\(generally, such actions are named SENDBACK\)_
 
 SENDBACKTOCITIZEN is a special keyword for action name. This action sends back the application to the citizen’s inbox for him to take action. A new State should be created on which Citizen can take action and should be the nextState of this action. While calling this action from module _assignees_ should be enriched by the module with the uuids of the owners of the application
 
-### Integration
+## Integration
 
-For integration-related steps please refer to the document [**Setting Up Workflows**](setting-up-workflow.md). 
+For integration-related steps please refer to the document [**Setting Up Workflows**](setting-up-workflow.md).
 
-### Reference Docs
+## Reference Docs
 
-#### Doc Links
+### Doc Links
 
 | **Title** | **Link** |
 | :--- | :--- |
 | Workflow Service Documentation | [https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
 | Setting Up Workflows | [ttps://digit-discuss.atlassian.net/wiki/spaces/DD/pages/644546619/Setting+Up+Workflows](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/644546619/Setting+Up+Workflows) |
 
-#### API List
+### API List
 
 |  | **Link** |
 | :--- | :--- |
