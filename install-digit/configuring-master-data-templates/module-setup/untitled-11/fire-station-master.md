@@ -1,10 +1,10 @@
 # Fire Station Master
 
-## Introduction
+### Introduction
 
 The first step is to identify all the fire stations within the state. It is important to note that all the ULBs may not have a fire department. Generally, the bigger ULBs of the state have a fire department that caters to that ULB at the same time to all the surrounding smaller ULBs and rural areas as well.
 
-## Data Table
+### Data Table
 
 | Sr. No. | \*Fire Station Code | \*Fire Station Name |
 | :--- | :--- | :--- |
@@ -15,16 +15,16 @@ The first step is to identify all the fire stations within the state. It is impo
 Data given in the above table is a sample data.
 {% endhint %}
 
-## Procedure
+### Procedure
 
-### Data Definitions
+#### Data Definitions
 
 | Sr. No. | Column Name | Data Type | Data Size | Mandatory | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Fire Station Code | Alphameric | 64 | Yes | The code is given to the fire station by the state team. Eg: FS01 For Patiala Fire station, FS02 for Amritsar Fire station |
-| 2 | Fire Station Name | Text | 256 | Yes | Name of the fire station. Eg: Patiala, Amritsar |
+| 1 | Fire Station Code | Alphameric |  64 | Yes | The code is given to the fire station by the state team. Eg: FS01 For Patiala Fire station, FS02 for Amritsar Fire station |
+| 2 | Fire Station Name | Text | 256  | Yes | Name of the fire station. Eg: Patiala, Amritsar |
 
-### How to fill data
+#### How to fill data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -33,11 +33,11 @@ Data given in the above table is a sample data.
 5. Next, give each fire station a unique code and enter that code in the Fire Station Code column.
 6. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -45,7 +45,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../untitled-1/checklist.md) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -78,7 +78,7 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-## Attachments
+### Attachments
 
 {% file src="../../../../.gitbook/assets/sample-configuration-data-fire-noc-master.xlsx" caption="Configuration Data Template" %}
 

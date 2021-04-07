@@ -1,10 +1,10 @@
 # Azure
 
-## Prepare Azure Environment
+### Prepare Azure Environment
 
 For provisioning Kubernetes clusters with the [Azure cloud provider](https://github.com/kubermatic/machine-controller/tree/master/pkg/cloudprovider/provider/azure) Kubermatic needs a service account with \(at least\) the Azure role `Contributor`. Please follow the following steps to create a matching service account.
 
-## Login to Azure and Get Basic Information
+### Login to Azure and Get Basic Information
 
 Login to Azure with [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) `az`.
 

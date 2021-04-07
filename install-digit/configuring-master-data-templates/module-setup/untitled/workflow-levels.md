@@ -1,10 +1,10 @@
 # Workflow Levels
 
-## Introduction
+### Introduction
 
 Workflow levels are defined for a service with Rights/Role to perform a set of Workflow Actions. There would one or more than one levels involved in a workflow process. This page helps to understand and then define all the levels with its job description and fill in a standard template.
 
-## Data Table
+### Data Table
 
 | Sr. No. | Module | Service | Workflow Level | Task | Role |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -18,9 +18,9 @@ Workflow levels are defined for a service with Rights/Role to perform a set of W
 Data given in the above table is sample data.
 {% endhint %}
 
-## Procedure
+### Procedure
 
-### Data Definition
+#### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -30,7 +30,7 @@ Data given in the above table is sample data.
 | 4 | Task | Text | 64 | Yes | The task refers to which state the action is in progress during the workflow |
 | 5 | Job Description | Text | 256 | Yes | A short description provided for the role \(Example: Designation of the Role\) |
 
-### Step to fill data
+#### Step to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -39,11 +39,11 @@ Data given in the above table is sample data.
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -51,11 +51,11 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/502203140/Checklist) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 Please discuss with a relevant department head before finalizing the workflow.
 
-## Attachments
+### Attachments
 
 {% file src="../../../../.gitbook/assets/workflowtemplate\_v2.xlsx" caption="Workflow Template" %}
 

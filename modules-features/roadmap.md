@@ -4,11 +4,11 @@ description: Product themes and deliverable
 
 # DIGIT Roadmap
 
-## Roadmap Overview
+### Roadmap Overview
 
 Commitment and transparency are deeply ingrained values defining our product development approach. We are constantly developing new capabilities to facilitate the digital transformation of our cities. Take a glimpse into our DIGIT Roadmap to learn more about our upcoming tools and features.
 
-## Key Themes And Objectives
+### Key Themes And Objectives
 
 | Themes | Objectives |
 | :--- | :--- |
@@ -18,14 +18,14 @@ Commitment and transparency are deeply ingrained values defining our product dev
 | Theme 4: Enhance data privacy and security | Update and enhance data privacy parameters on DIGIT across reports, modules, and dashboards |
 | Theme 5: New product innovation | Identify high-impact product innovation areas through validation, understanding the domain, and processes involved |
 
-## Quarter 1 - April to June 2020
+### Quarter 1 - April to June 2020
 
-| Release Date: 01/06/2020 | Beta date: | GA date: |
+| Release Date: 01/06/2020 | Beta date:  | GA date:  |
 | :--- | :--- | :--- |
 
 
 {% hint style="success" %}
-**Water & Sewerage \(W&S\) -**
+**Water & Sewerage \(W&S\) -** 
 
 * Provide the capability to apply for new Water and Sewerage Connection. This simplifies the application process for Citizens and for Employees. 
   * All the steps from application submission to connection provision are digitized.
@@ -48,7 +48,7 @@ EoDB mandates the following details about a Property should be verifiable inform
 {% endhint %}
 
 {% hint style="success" %}
-**Online Building Plan Approval System\(OBPAS\) -**
+**Online Building Plan Approval System\(OBPAS\) -** 
 
 * Provide the capability to scrutinize the plan diagram for occupancy certificate post-construction online
 * Facilitate stakeholder to apply for an occupancy certificate application online
@@ -61,7 +61,7 @@ EoDB mandates the following details about a Property should be verifiable inform
 {% endhint %}
 
 {% hint style="success" %}
-**Integrated user Experience -**
+**Integrated user Experience -** 
 
 * Enable ease of payments for Citizens
   * Citizens can pay their property tax dues without having to login into the system. Citizens can access this feature from open search, SMS/email notification, or any physical artefact having a payment link
@@ -69,14 +69,14 @@ EoDB mandates the following details about a Property should be verifiable inform
   * Bills will have a payment QR code printed. Each bill will have a unique QR code which will be a link to the common pay page.
 {% endhint %}
 
-## Quarter 2 - July to September 2020
+### Quarter 2 - July to September 2020
 
-| Release Date: 01/06/2020 | Beta date: | GA date: |
+| Release Date: 01/06/2020 | Beta date:  | GA date:  |
 | :--- | :--- | :--- |
 
 
 {% hint style="success" %}
-**Water & Sewerage \(W&S\) -**
+**Water & Sewerage \(W&S\) -** 
 
 * Provide the capability to modify existing Water and Sewerage Connection. This simplifies the process for modification of Connection for Citizens and for Employees in a transparent manner through
   * Notifications
@@ -94,7 +94,7 @@ EoDB mandates the following details about a Property should be verifiable inform
 {% endhint %}
 
 {% hint style="success" %}
-**Online Building Plan Approval System\(OBPAS\) -**
+**Online Building Plan Approval System\(OBPAS\) -** 
 
 * EODB mandates CAF \( Common application form\) for building permits
   * Allows citizen to create permit application as well as the application for NOCs in a single interface
@@ -118,7 +118,7 @@ EoDB mandates the following details about a Property should be verifiable inform
 {% endhint %}
 
 {% hint style="success" %}
-**Integrated user Experience -**
+**Integrated user Experience -** 
 
 * Provide the capability to make payments through Whatsapp
   * Creating an additional channel for payment
@@ -130,7 +130,7 @@ EoDB mandates the following details about a Property should be verifiable inform
 {% endhint %}
 
 {% hint style="success" %}
-**New Product Innovation -**
+**New Product Innovation -** 
 
 * Work with a knowledge partner to study and identify areas to be addressed in the domain of ‘Non-networked Sewerage Management’.  This study will help identify:
   * Need assessment 
@@ -153,7 +153,7 @@ EoDB mandates the following details about a Property should be verifiable inform
 * Product Training material
 {% endhint %}
 
-## Quarter 3 - October to December 2020
+### Quarter 3 - October to December 2020
 
 {% hint style="success" %}
 **Functional Enhancements -**
@@ -170,7 +170,7 @@ EoDB mandates the following details about a Property should be verifiable inform
 {% endhint %}
 
 {% hint style="success" %}
-**Decision Support System -**
+**Decision Support System -** 
 
 * Enhancements to Real-Time Dashboards to enable 
   * Employee Performance Measurement 
@@ -184,7 +184,7 @@ EoDB mandates the following details about a Property should be verifiable inform
 {% endhint %}
 
 {% hint style="success" %}
-**Standardization and Simplification -**
+**Standardization and Simplification -** 
 
 * Improve automation test cases coverage
 * Automating onboarding procedures 
@@ -192,21 +192,21 @@ EoDB mandates the following details about a Property should be verifiable inform
 {% endhint %}
 
 {% hint style="success" %}
-**Integrated User Experience -**
+**Integrated User Experience -** 
 
 * Redesigned Citizen Portal with enhanced accessibility, findability
 * Redesigned Citizen and Employee User Experience
 {% endhint %}
 
 {% hint style="success" %}
-**New Product Innovation -**
+**New Product Innovation -** 
 
 * Impactful product Innovation areas through validation and understanding the domain and processes involved by working with customers and partners
 * Proof of Concept for one Product. Possible: “ Fecal Sludge Management”
 {% endhint %}
 
 {% hint style="success" %}
-**Knowledge assets, Tools, Documentation -**
+**Knowledge assets, Tools, Documentation -** 
 
 * Upgrades to Product and Technical Documentation, Templates, Release Documentation
 * Knowledge repository setup
