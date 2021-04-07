@@ -1,13 +1,13 @@
 # Fire NOC Data Templates
 
-## Introduction
+### Introduction
 
 The Fire No-Objection Certificate \(NOC\) application, developed on the eGov-DIGIT platform, makes the  
 process of obtaining a Fire NOC easy, smooth, and transparent. It eliminates the current manual process  
 by automating and streamlining it, thus providing a better citizen service experience with the Urban  
 Local Body \(ULB\) and Fire station employees.
 
-## Module Features
+### Module Features
 
 Features offered to the citizens-
 
@@ -24,9 +24,9 @@ Features offered to the Employees-
 3. Dashboard with application statistics.
 4. Search applications using configurable parameters.
 
-## Module Ontology
+### Module Ontology
 
-### State Level
+#### State Level
 
 1. [Fire Stations Master](fire-station-master.md)
 2. [Building Usage Type](building-usage-type.md)
@@ -34,11 +34,11 @@ Features offered to the Employees-
 4. [Application Workflow](../untitled/workflow-actions.md)
 5. [Area Master](areas-served-master.md)
 
-### ULB Level
+#### ULB Level
 
 1. [Boundry Data](../../environment-setup/ulb-level-setup/boundary-data.md)
 
-## Module Reports
+### Module Reports
 
 1. Receipt Register
 2. Application Status

@@ -4,16 +4,16 @@ description: DIGIT 2.1 Changes to the Property Tax Module
 
 # Property Tax 2.1 Release Notes
 
-## Overview <a id="Overview"></a>
+### Overview <a id="Overview"></a>
 
 This latest release version offers the capability to edit applications in workflow by the citizen and the counter employee.
 
-## Release Highlights <a id="Release-Highlights"></a>
+### Release Highlights <a id="Release-Highlights"></a>
 
 1. Send back to the citizen and Edit Application - New Property application, edit property application & Mutation/transfer of ownership application
 2. Capture payer details on the citizen common pay page
 
-## Release Features <a id="Release-Features"></a>
+### Release Features <a id="Release-Features"></a>
 
 <table>
   <thead>
@@ -53,18 +53,18 @@ This latest release version offers the capability to edit applications in workfl
   </tbody>
 </table>
 
-## Known Issues <a id="Known-Issues"></a>
+### Known Issues <a id="Known-Issues"></a>
 
 None
 
-## Upcoming Release Features <a id="Upcoming-Release-Features"></a>
+### Upcoming Release Features <a id="Upcoming-Release-Features"></a>
 
 Not Planned
 
-## Reference Doc Links <a id="Reference-Doc-Links"></a>
+### Reference Doc Links <a id="Reference-Doc-Links"></a>
 
 | **Doc Links** | **Description** |
 | :--- | :--- |
-|  |  |
+|   |  |
 |  |  |
 

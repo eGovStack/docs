@@ -1,20 +1,20 @@
 # Adding New Master
 
-## Overview
+### Overview
 
 For creating a new master in MDMS, create the JSON file with the master data and configure the newly created master in the master config file.
 
-## Pre-requisites
+### Pre-requisites
 
 Before proceeding with the configuration, make sure the following pre-requisites are met -
 
 * User with permissions to edit the git repository where MDMS data is configured.
 
-## Deployment Details
+### Deployment Details
 
 After adding the new master, the MDMS service needs to be restarted to read the newly added data.
 
-## Configuration Details
+### Configuration Details
 
 **Creating Master JSON**  
 The new JSON file needs to contain 3 keys as shown in the below code snippet.  
@@ -57,9 +57,9 @@ Each master contain the following data and keys are self-explanatory
 }
 ```
 
-## Reference Docs
+### Reference Docs
 
-### Doc Links
+#### Doc Links
 
 | **Title** | **Link** |
 | :--- | :--- |

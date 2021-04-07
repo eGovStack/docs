@@ -4,14 +4,14 @@ description: 'New release features, enhancements, and fixes'
 
 # Release Notes DIGIT 2.1
 
-## Release Summary
+### Release Summary
 
 DIGIT 2.1 is a release that has got a few functional changes and few non-functional standardization changes.
 
 * Functional: Introducing Water and Sewerage edit connection and Connection holder feature, DSS enhancements, Edit \(send back to Citizen\) property enhancements, and PGR APIs redesign along with workflow integration and reports.
 * Non-functional: Baselining Actions, Role action mapping, and English Localization data.
 
-## New ‌Feature Additions
+### New ‌Feature Additions
 
 <table>
   <thead>
@@ -27,6 +27,7 @@ DIGIT 2.1 is a release that has got a few functional changes and few non-functio
       <td style="text-align:left">Water and Sewerage edit connection and Connection holder feature</td>
       <td
       style="text-align:left">
+        <p></p>
         <ul>
           <li>Edit existing water or sewerage connection information using a workflow
             approval process.</li>
@@ -37,6 +38,7 @@ DIGIT 2.1 is a release that has got a few functional changes and few non-functio
     <tr>
       <td style="text-align:left">PGR API Contracts and APIs redesign</td>
       <td style="text-align:left">
+        <p></p>
         <ul>
           <li>PGR APIs redesign along with workflow integration.</li>
           <li>New reports
@@ -53,7 +55,7 @@ DIGIT 2.1 is a release that has got a few functional changes and few non-functio
   </tbody>
 </table>
 
-## Enhancements
+### Enhancements
 
 <table>
   <thead>
@@ -119,9 +121,9 @@ DIGIT 2.1 is a release that has got a few functional changes and few non-functio
   </tbody>
 </table>
 
-## Document Resources and Links
+### Document Resources and Links
 
-### UI Technical Documents
+#### UI Technical Documents
 
 {% file src="../../.gitbook/assets/dss-features-enhancements-v2-technical-document-for-ui.pdf" caption="DSS Feature Enhancements" %}
 
@@ -141,7 +143,7 @@ DIGIT 2.1 is a release that has got a few functional changes and few non-functio
 
 {% file src="../../.gitbook/assets/edit-connection-flow.pdf" caption="Edit Connection Flow" %}
 
-### Backend Service Documents
+#### Backend Service Documents
 
 {% file src="../../.gitbook/assets/water-service-technical-doc.pdf" caption="Water Service Technical Document" %}
 
@@ -165,7 +167,7 @@ DIGIT 2.1 is a release that has got a few functional changes and few non-functio
 
 {% file src="../../.gitbook/assets/noc-promotion-document.pdf" caption="NOC Promotion Document" %}
 
-### Infra/Deployment Documents
+#### Infra/Deployment Documents
 
 * [MDMS \(Master Data Management Service\)](https://docs.digit.org/modules-features/technical-documentation/core-service/mdms-master-data-management-service)
 * [Setting Up Workflows](https://app.gitbook.com/@egov-digit/s/home/install-digit/configuring-workflows/setting-up-workflow)

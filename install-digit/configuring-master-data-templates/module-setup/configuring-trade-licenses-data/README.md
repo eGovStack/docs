@@ -1,10 +1,10 @@
 # Trade Licenses Templates
 
-## Introduction
+### Introduction
 
 The Trade License application, developed on the eGov-DIGIT platform, makes the process of obtaining a Trade License easy, smooth, and transparent. The module, hence, removes the need for manual processing and streamlines the key trade license management functions to provide a better user experience.
 
-## Module Features
+### Module Features
 
 DIGIT Trade License module enables citizens to -
 
@@ -21,9 +21,9 @@ DIGIT Trade License module enables employees to -
 3. View custom dashboards for module statistics.
 4. Filter search results using advanced configurable search parameters.
 
-## Module Ontology
+### Module Ontology
 
-### State Level <a id="State-Level"></a>
+#### State Level <a id="State-Level"></a>
 
 1. [Trade Category](trade-category.md)
 2. [Trade Type](trade-type.md)
@@ -32,11 +32,11 @@ DIGIT Trade License module enables employees to -
 5. [Structure Type](structure-type.md)
 6. [Structure Subtype](structure-sub-type.md)
 
-### ULB Level <a id="ULB-Level"></a>
+#### ULB Level <a id="ULB-Level"></a>
 
 1. [Trade License Fee](trade-license-fee.md)
 
-## Module Reports
+### Module Reports
 
 1. Receipt Register
 2. Application Status

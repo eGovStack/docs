@@ -1,11 +1,11 @@
 # Adding New Language
 
-## Overview
+### Overview
 
 Digit system supports multiple languages.  
 To add a new language, it should be configured in MDMS.
 
-## Pre-requisites
+### Pre-requisites
 
 Before proceeding with the configuration, following are the pre-requisites -
 
@@ -13,16 +13,16 @@ Before proceeding with the configuration, following are the pre-requisites -
 * Knowledge of MDMS is required.
 * User with permissions to edit the git repository where MDMS data is configured.
 
-## Key Functionalities
+### Key Functionalities
 
 * Users can view the web page of digit application in the language of their choice by selecting it from the available languages.
 * SMS and Emails of information about the transactions on digit application, can be received in languages based on the selection.
 
-## Deployment Details
+### Deployment Details
 
 After adding the new language, the MDMS service needs to be restarted to read the newly added data.
 
-## Configuration Details
+### Configuration Details
 
 A new language is added in StateInfo.json  
 In MDMS, file **StateInfo.json**, under **common-masters** folder holds the details of language to be added.
@@ -149,9 +149,9 @@ Any one language from the multiple added language, can be set as default. For ex
 }
 ```
 
-## Reference Docs
+### Reference Docs
 
-### Doc Links
+#### Doc Links
 
 | **Title** | **Link** |
 | :--- | :--- |

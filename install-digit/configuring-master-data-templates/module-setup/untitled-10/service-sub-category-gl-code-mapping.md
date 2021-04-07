@@ -1,10 +1,10 @@
 # Service Sub Category GL Code Mapping
 
-## Introduction
+### Introduction
 
 Service Subcategory is mapped to relevant GL code to help capture the accounting-related parameters for each service subcategory. The same is used to pass the accounting vouchers into accounting and finance system.
 
-## Data Table
+### Data Table
 
 | Sr.No | Service Subcategory Code\* | Service Subcategory \(English\)\* | Service Subcategory \(Local Language\)\* | GLCODE\* | ULB CODE | DEPT CODE | FUND Code |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -15,9 +15,9 @@ Service Subcategory is mapped to relevant GL code to help capture the accounting
 Data given in the table is a sample data.
 {% endhint %}
 
-## Procedure
+### Procedure
 
-### Data Definition
+#### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -29,7 +29,7 @@ Data given in the table is a sample data.
 | 6 | DEPT CODE | Alphanumeric | 50 | No | The Master Department Code linked to the“Service Category” at the State Level. The Department Code can be ascertained from the ULB Departments master. Click[ here](../../environment-setup/state-level-setup/ulb-departments.md) to learn more about ULB Departments |
 | 7 | FUND Code | Text | 250 | No | The type of fund allocated/associated with the respective service subcategory. Click [here](../untitled-6/funds.md) for Fund reference |
 
-### Steps to Fill Data
+#### Steps to Fill Data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -38,11 +38,11 @@ Data given in the table is a sample data.
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -50,11 +50,11 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../untitled-1/checklist.md) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity. There is no entity-specific checklist activity applicable.
 
-## Attachments
+### Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-service-subcategory-gl-code-mapping.xlsx" caption="Configuration Data Template" %}
 

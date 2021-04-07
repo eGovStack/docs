@@ -1,19 +1,19 @@
 # Impact Of Heavy Reports On Platform
 
-## Overview <a id="Overview"></a>
+### Overview <a id="Overview"></a>
 
 Rainmaker has report framework to configure new reports. As part of the report configuration, we have to write a native SQL query to get the required data for the report. So if the query takes huge time to execute or query result has huge data, then it will impact on the whole application performance.
 
-## Root Cause <a id="Root-Cause"></a>
+### Root Cause <a id="Root-Cause"></a>
 
 The following cases where we can see the application performance issue because of heavy reports.
 
-* Filtering with long date range data or applying fewer filters which in turns return huge data
+*  Filtering with long date range data or applying fewer filters which in turns return huge data
 * Join the multiple tables for getting required data and missing creating index on join columns
 * Implementing conditional logic inside the queries itself
 * Writing multiple sub-queries inside a single query for getting required data
 
-## Impact <a id="Impact"></a>
+### Impact <a id="Impact"></a>
 
 Because of heavy reports, the following things will impact the platform
 

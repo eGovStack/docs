@@ -1,17 +1,17 @@
 # Setting Up Finance Service
 
-## **Overview** <a id="Overview"></a>
+### **Overview** <a id="Overview"></a>
 
 This document describes the steps to be followed to set up a new instance of Finance. When a new state or city is to be set up, there are some activities to be executed in a defined order. Setting up an instance of an application server and configuration changes etc are a few of the key activities.
 
-## **Technical Prerequisites** <a id="Technical-Prerequisites"></a>
+### **Technical Prerequisites** <a id="Technical-Prerequisites"></a>
 
 * Prior Knowledge of Java/J2EE.
 * Prior Knowledge of Spring and Hibernate
 * Prior knowledge of Maven
 * Prior knowledge of Git.
 
-## **Hardware/Software Prerequisites** <a id="Hardware/Software-Prerequisites"></a>
+### **Hardware/Software Prerequisites** <a id="Hardware/Software-Prerequisites"></a>
 
 * Maven v3.2.x
 * PostgreSQL v9.6
@@ -21,16 +21,16 @@ This document describes the steps to be followed to set up a new instance of Fin
 * Create subdomains under the main domain for each of the cities that are to be set up
 * Create a schema per city in the database
 
-## **Configurations and Setup** <a id="Configurations-and-Setup"></a>
+### **Configurations and Setup** <a id="Configurations-and-Setup"></a>
 
 The [Co-existence repository](https://github.com/egovernments/egov-coexistence) is the base repository for the finance product and the client-specific data needs to be defined in the [Client implementation repository](https://github.com/egovernments/eGov-Punjab-Implementation/tree/punjab-financeerp-impl)
 
-### **How to set up a client implementation repository** <a id="How-to-set-up-a-client-implementation-repository"></a>
+#### **How to set up a client implementation repository** <a id="How-to-set-up-a-client-implementation-repository"></a>
 
 1. Fork and create a client implementation repository from [Client implementation repository](https://github.com/egovernments/eGov-Punjab-Implementation/tree/punjab-financeerp-impl) to keep client-specific data and configurations.
 2. Any configurations and data specific to the client should be added in the client repository.
 
-### **Application Configuration** <a id="Application-Configuration"></a>
+#### **Application Configuration** <a id="Application-Configuration"></a>
 
 * The default application configurations of the finance service are present in the [application configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file. To enable or disable any feature, either update the values in the [application configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file or the [override configuration](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/templates/override-configmap.yaml) file.
 * The [override configuration](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/templates/override-configmap.yaml) is the template and the values for the template are present either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or in the environment named yaml file. The [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml is the common file to override the default values and the changes made to this file are applicable for all environments \(dev, qa, uat, prod etc\).
@@ -43,7 +43,7 @@ https://github.com/egovernments/Train-InfraOps/blob/master/helm/environments/qa.
 https://github.com/egovernments/Train-InfraOps/blob/master/helm/environments/uat.yaml
 ```
 
-### **Database configuration** <a id="Database-configuration"></a>
+#### **Database configuration** <a id="Database-configuration"></a>
 
 Add or update the db url in the [environment specific](https://github.com/egovernments/Train-InfraOps/blob/master/helm/environments/qa.yaml) file using the below property
 
@@ -62,14 +62,14 @@ secrets:
             password:  <password value>
 ```
 
-### **Set up a schema-based multi-tenant database** <a id="Set-up-a-schema-based-multi-tenant-database"></a>
+#### **Set up a schema-based multi-tenant database** <a id="Set-up-a-schema-based-multi-tenant-database"></a>
 
 Finance co-existence service uses schema-based multi-tenancy, this means there will be one schema present for a city. The following are the configuration changes to set up this kind of database.
 
 * Enable multi-tenancy by enabling the following property
 
 ```text
-multitenancy: true
+multitenancy: true  
 ```
 
 * Each ULB is enabled by adding a schema name and domain name. Schema names should follow a naming standard, It should be the same as that of the city name.
@@ -99,10 +99,10 @@ Example [environment specific configuration](https://github.com/egovernments/Tra
 
 ```text
 For citya, domain url should be citya.egovernments.org
-For cityb, domain url should be cityb.egovernments.org
+For cityb, domain url should be cityb.egovernments.org 
 ```
 
-### **Database migration settings** <a id="Database-migration-settings"></a>
+#### **Database migration settings** <a id="Database-migration-settings"></a>
 
 The default database migration configurations are present in the [application configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file.
 
@@ -145,7 +145,7 @@ statewide_migration: true
 multitenancy: true
 ```
 
-### System Integration User Details Configuration <a id="System-Integration-User-Details-Configuration"></a>
+#### System Integration User Details Configuration <a id="System-Integration-User-Details-Configuration"></a>
 
 Configure the following property either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or the environment-specific yaml file.
 
@@ -156,7 +156,7 @@ Systemintegration: |
  si.microservice.usertype=SYSTEM
  si.microservice.scope=read
  si.microservice.granttype=password
-
+ 
  env: |
   - name: si-microservice-password
     valueFrom:
@@ -175,49 +175,49 @@ Systemintegration: |
 
 ```text
 {
-    "info": {
-        "_postman_id": "81469f7c-793c-43b2-8e05-9ce6c8174cd4",
-        "name": "SIUSER_Creation",
-        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-    },
-    "item": [
-        {
-            "name": "createnovalidate",
-            "request": {
-                "method": "POST",
-                "header": [
-                    {
-                        "key": "Content-Type",
-                        "value": "application/json"
-                    }
-                ],
-                "body": {
-                    "mode": "raw",
-                    "raw": "{\n \"RequestInfo\": {\n   \"api_id\": \"1\",\n   \"ver\": \"1\",\n   \"ts\": null,\n   \"action\": \"create\",\n   \"did\": \"\",\n   \"key\": \"\",\n   \"msg_id\": \"\",\n   \"requester_id\": \"\",\n   \"auth_token\": \"12e8753e-099f-42cb-b2ec-402b10215610\"\n },\n \"User\": {\n  \"userName\": \"SIFINANCE\",\n  \"name\": \"SYS INTG FINANCE\",\n  \"gender\": \"Male\",\n  \"mobileNumber\": \"\",\n  \"active\": true,\n  \"type\": \"SYSTEM\",\n  \"password\": \"sifinance123@\",\n  \"tenantId\":\"pg.citya\",\n  \"roles\": [\n       {\n                   \"tenantId\": \"pg.citya\",\n                   \"code\": \"SYS_INTEGRATOR_FINANCE\",\n                   \"name\": \"System Integrator Finance\"\n               }\n   ]\n }\n}\n"
-                },
-                "url": {
-                    "raw": "https://egov-micro-qa.egovernments.org/user/users/_createnovalidate",
-                    "protocol": "https",
-                    "host": [
-                        "egov-micro-qa",
-                        "egovernments",
-                        "org"
-                    ],
-                    "path": [
-                        "user",
-                        "users",
-                        "_createnovalidate"
-                    ]
-                },
-                "description": "user create with no OTP validation"
-            },
-            "response": []
-        }
-    ]
+	"info": {
+		"_postman_id": "81469f7c-793c-43b2-8e05-9ce6c8174cd4",
+		"name": "SIUSER_Creation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createnovalidate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"RequestInfo\": {\n   \"api_id\": \"1\",\n   \"ver\": \"1\",\n   \"ts\": null,\n   \"action\": \"create\",\n   \"did\": \"\",\n   \"key\": \"\",\n   \"msg_id\": \"\",\n   \"requester_id\": \"\",\n   \"auth_token\": \"12e8753e-099f-42cb-b2ec-402b10215610\"\n },\n \"User\": {\n  \"userName\": \"SIFINANCE\",\n  \"name\": \"SYS INTG FINANCE\",\n  \"gender\": \"Male\",\n  \"mobileNumber\": \"\",\n  \"active\": true,\n  \"type\": \"SYSTEM\",\n  \"password\": \"sifinance123@\",\n  \"tenantId\":\"pg.citya\",\n  \"roles\": [\n       {\n                   \"tenantId\": \"pg.citya\",\n                   \"code\": \"SYS_INTEGRATOR_FINANCE\",\n                   \"name\": \"System Integrator Finance\"\n               }\n   ]\n }\n}\n"
+				},
+				"url": {
+					"raw": "https://egov-micro-qa.egovernments.org/user/users/_createnovalidate",
+					"protocol": "https",
+					"host": [
+						"egov-micro-qa",
+						"egovernments",
+						"org"
+					],
+					"path": [
+						"user",
+						"users",
+						"_createnovalidate"
+					]
+				},
+				"description": "user create with no OTP validation"
+			},
+			"response": []
+		}
+	]
 }
 ```
 
-### **Elastic Dashboard Configuration** <a id="Elastic-Dashboard-Configuration"></a>
+#### **Elastic Dashboard Configuration** <a id="Elastic-Dashboard-Configuration"></a>
 
 To enable or disable an event to push the bills and vouchers to the elastic search indexer the below need to be configured either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or the environment-specific yaml file.
 
@@ -225,7 +225,7 @@ To enable or disable an event to push the bills and vouchers to the elastic sear
 finance: true
 ```
 
-### **File store Configuration** <a id="File-store-Configuration"></a>
+#### **File store Configuration** <a id="File-store-Configuration"></a>
 
 Configure the following property either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or the environment-specific yaml file.
 
@@ -233,7 +233,7 @@ Configure the following property either in the [finance service values](https://
 filestore: /tmp/egovfilestore
 ```
 
-### **Quartz Scheduler Configuration** <a id="Quartz-Scheduler-Configuration"></a>
+#### **Quartz Scheduler Configuration** <a id="Quartz-Scheduler-Configuration"></a>
 
 Configure the following property either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or the environment-specific yaml file.
 
@@ -241,7 +241,7 @@ Configure the following property either in the [finance service values](https://
 scheduler: true
 ```
 
-### DIGIT integration configuration <a id="DIGIT-integration-configuration"></a>
+#### DIGIT integration configuration <a id="DIGIT-integration-configuration"></a>
 
 Finance service reads data from multiple other DIGIT services. The following are the different services finance system reads data from. Update the domain URL of the respective service based on the service where it is running.
 
@@ -263,7 +263,7 @@ microservice: |
   egov.filestore.service.endpoint=http://egov-filestore.egov:8080/
 ```
 
-### MDMS Configuration <a id="MDMS-Configuration"></a>
+#### MDMS Configuration <a id="MDMS-Configuration"></a>
 
 * The following master data is present in the [MDMS repository](https://github.com/egovernments/egov-mdms-data).
   * Department
@@ -303,7 +303,7 @@ microservice: |
 
 MDMS serach url is configured in the [Application Configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file.
 
-### Changes required to setup workspace in local machine <a id="Changes-required-to-setup-workspace-in-local-machine"></a>
+#### Changes required to setup workspace in local machine <a id="Changes-required-to-setup-workspace-in-local-machine"></a>
 
 1. Setup Finance service workspace by following the instructions provided in [README](https://github.com/egovernments/egov-coexistence/blob/master/README.md).
 2. After set up is done, make the changes to the host file in the local machine, by mapping the domain URLs with a local IP address and save the changes. Restart your local machine to make the host mapping effective.
@@ -314,7 +314,7 @@ $ vim /etc/hosts
 127.0.0.1 egov-micro-dev.egovernments.org
 ```
 
-## **Reference Docs**
+### **Reference Docs** 
 
 | **Title** | **Link** |
 | :--- | :--- |

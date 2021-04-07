@@ -6,7 +6,7 @@ description: A complete guide to using Water & Sewerage module
 
 The W&S module allows citizens to apply for new connections and pay bills online. For employees, this module enables automated processing of new connection requests, editing existing connection details, generating water bills, and facilitating online collection of bill payments.
 
-## Features and applications
+### Features and applications
 
 The module supports the following key functions -
 
@@ -16,9 +16,10 @@ The module supports the following key functions -
 4. Download artefacts such as application details, connection details, bills, receipts, sanction letter and estimation notice  
 5. Process applications using configurable workflows
 
-## User roles
+### User roles
 
-Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.
+Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.   
+
 
 <table>
   <thead>
@@ -96,7 +97,7 @@ Refer to the table below to understand the different user roles and the scope of
   </tbody>
 </table>
 
-## **Using W&S**
+### **Using W&S**
 
 This section guides you through the details of using the \[module name\] module for each role. Click on the relevant role below to learn more about how to use the module.
 

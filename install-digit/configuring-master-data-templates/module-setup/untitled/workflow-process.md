@@ -1,10 +1,10 @@
 # Workflow Process
 
-## Introduction
+### Introduction
 
 The workflow process is a set of steps through which information flows in sequence and the [workflow roles](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/537624711/Workflow+Actions) which derives the actors are assigned to a step to complete the work defined for that [level](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/537690461/Workflow+Levels). The states of each level are derived based on the information received from the previous step.
 
-## Data Table
+### Data Table
 
 | Sr. No. | Current State | Workflow Actions | Next State | Role Name | SLA |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -21,9 +21,9 @@ The workflow process is a set of steps through which information flows in sequen
 Data given in the above table is sample data.
 {% endhint %}
 
-## Procedure
+### Procedure
 
-### Data Definition
+#### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -33,7 +33,7 @@ Data given in the above table is sample data.
 | 4 | Role Name | Reference | 64 | Yes | The role is the different hierarchy of people with designation who are authorized to initiate, approval or rejecting the process. It refers to Workflow Levels |
 | 5 | SLA | Integer | 2 | No | The SLA indicates the time-frame within which the action to be completed |
 
-### Step to fill data
+#### Step to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -41,11 +41,11 @@ Data given in the above table is sample data.
 4. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 5. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -53,11 +53,11 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../untitled-1/checklist.md) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 Please discuss with a relevant department head before finalizing the workflow.
 
-## Attachments
+### Attachments
 
 {% file src="../../../../.gitbook/assets/workflowtemplate\_v2 \(1\).xlsx" caption="Workflow Template" %}
 

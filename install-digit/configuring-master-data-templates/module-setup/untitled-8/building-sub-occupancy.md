@@ -1,10 +1,10 @@
 # Building Sub Occupancy
 
-## Introduction
+### Introduction
 
 Building Sub Occupancy details refer to sub-categorization of primary occupancy types. For instance, residential buildings can be further classified as apartments or old age homes depending on the specific usage of the buildings. Refer to the [National Bye-Laws](http://mohua.gov.in/upload/uploadfiles/files/Chap-4.pdf) to view the prescribed list of sub-occupancy types.
 
-## Data Table
+### Data Table
 
 | Sr. No. | Sub Occupancy Code\* | Sub Occupancy Name\* \(In English\) | Sub Occupancy Name\* \(In Local Language\) | Occupancy Code\* |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16,9 +16,9 @@ Building Sub Occupancy details refer to sub-categorization of primary occupancy 
 Data given in the table is sample data for reference.
 {% endhint %}
 
-## Procedure
+### Procedure
 
-### Data Definition
+#### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -27,7 +27,7 @@ Data given in the table is sample data for reference.
 | 3 | Sub Occupancy Name \(In Local Language\) | Text | 64 | Yes | Names for sub occupancy types in local language e.g. in Hindi, Telugu etc. |
 | 4 | Occupancy Code | Reference | 3 | Yes | Corresponding [Building Occupancy](building-occupancy.md) for the given sub occupancy type |
 
-### Steps to fill data
+#### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Refer to the ‘Data Definition’ section of this document to understand the headers in the template sheet, their data type, size, and definitions.
@@ -35,11 +35,11 @@ Data given in the table is sample data for reference.
 4. Identify the sub occupancy which is applicable. Refer to [National Bye-Laws](http://mohua.gov.in/upload/uploadfiles/files/Chap-4.pdf) to learn more about occupancy types and names.
 5. Go through the checklist to verify the data. Make sure that each and every point mentioned in the checklist is covered.
 
-## Checklist
+### Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data entry requirements are met. These activities have been divided into 2 groups as given below.
 
-### Common Checklist
+#### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -47,13 +47,15 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/502203140/Checklist) |
 
-### Entity Specific Checklist
+#### Entity Specific Checklist
 
 There is no separate entity-specific checklist for this entity.
 
-## Attachment
+### Attachment
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-building-sub-occupancy\_v1.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sub-occupancy-sample-data.xlsx" caption="Sample Data" %}
+
+
 
