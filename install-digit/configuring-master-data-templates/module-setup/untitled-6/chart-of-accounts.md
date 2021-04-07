@@ -1,10 +1,10 @@
 # Chart Of Accounts
 
-### Introduction
+## Introduction
 
 A chart of Accounts \(COA\) is a listing of the Ledger codes that a State or ULB’s has identified and made available for recording transactions in its general ledger. COA is a standard data which need to be set up as per the National Municipal Accounting Manual or Respective State-wise manual. Click [here](http://www.cmao.nic.in/Resources/National%20Accounting%20Manual.pdf) for NMAM manual. The COA definition can consist of 3 or 4 levels of hierarchy. Ex: Major-&gt;Minor-&gt;Detailed \(3 levels\) or Major-&gt;Minor-&gt;Sub Minor-&gt;Detailed \(4 Levels\). It is up to the state to define the levels required depending on the reporting needs. Detailed code is the node or the level at which the transaction is done.
 
-### Data Table
+## Data Table
 
 | Sr. No\* | Major Code\* | Major head Description\* | Minor Code\* | Minor Head Description\* | SubMinor Code | SubMinor Head Description | Detailed Heads \(Ledgers\)\* | Ledger Code\* | Type | Account Detail Type | Function Required | Budget Required |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -17,18 +17,18 @@ A chart of Accounts \(COA\) is a listing of the Ledger codes that a State or ULB
 Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr No | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Major Code | Alphanumeric | 50 | Yes | The Major Code can be any number of digits, \(though NMAM suggest the first 3 digits\) of the GL Code to be the Major code, this will help in collating the reports at the Nation level |
-| 2 | Major head Description |  Text | 250 | Yes | The short name given to the Major code to easily identify the Account Name for individual code |
+| 2 | Major head Description | Text | 250 | Yes | The short name given to the Major code to easily identify the Account Name for individual code |
 | 3 | Minor Code | Alphanumeric | 50 | Yes | The Minor Code can be any number of digits, the digits are configurable. The Minor code will help in collating the reports at the State level. Also, the State has the flexibility to define the minor codes |
-| 4 | Minor Head Description |  Text | 250 | Yes | The short name given to the Minor code to easily identify the Account Name for individual code |
+| 4 | Minor Head Description | Text | 250 | Yes | The short name given to the Minor code to easily identify the Account Name for individual code |
 | 5 | SubMinor Code | Alphanumeric | 50 | No | The SubMinor Code can be optional, State/ULB can set up a sub minor level code based on their requirement, this would help in facilitating the additional level of reporting and also detail transaction-level information \(The SubMinor code is not listed in NMAM manual\) |
-| 6 | SubMinor Head Description |  Text | 250 | No | The short name given to the SubMinor code to easily identify the Account Name for individual code |
+| 6 | SubMinor Head Description | Text | 250 | No | The short name given to the SubMinor code to easily identify the Account Name for individual code |
 | 7 | Detailed Heads \(Ledgers\) | Text | 250 | Yes | The short name for the Ledger Code, wherein users use this account head name while posting the transactions into the system |
 | 8 | Ledger Code | Alphanumeric | 50 | Yes | A General Ledger Code \(GL Code\) is a string of 7 to 9 digit numeric characters assigned to each financial entry in a State/ULB ledger. A GL Code can be assigned to different debit or credit entries to make accounting transactions |
 | 9 | Type | Text | 250 | No | The Type indicates the Income, Expenses, Liabilities and Assets which are mapped to each individual GL code. User can easily identify the GL code by this mapping |
@@ -36,7 +36,7 @@ Data given in the table is a sample data.
 | 11 | Function Required | Text | 250 | No | A GL Code can be linked for the validation of the Function, the user while posting a transaction can select a particular function to which transaction will be linked and this will facilitate easy Function wise reporting |
 | 12 | Budget Required | Text | 250 | No | A GL Code can be linked for the validation of a Budget. User can have a validation check while posting a transaction into the system, this will facilitate to track the amount usage |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -44,11 +44,11 @@ Data given in the table is a sample data.
 4. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 5. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -56,7 +56,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../untitled-1/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -87,11 +87,9 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-chart-of-account.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../.gitbook/assets/sample-confugration-data-chart-of-account.xlsx" caption="Sample Data" %}
-
-
 

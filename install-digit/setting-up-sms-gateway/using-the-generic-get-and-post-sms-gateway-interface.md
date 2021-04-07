@@ -36,7 +36,7 @@ Special variables that are mapped
 
 So if you use sms.config.map={'u':'$username', 'p':'password'}. Then the API call will be passed &lt;url&gt;?u=&lt;$username&gt;&p=password
 
-### Message Success or Failure <a id="Message-Success-or-Failure"></a>
+## Message Success or Failure <a id="Message-Success-or-Failure"></a>
 
 Message success delivery can be controlled using the below properties
 
@@ -48,7 +48,7 @@ Message success delivery can be controlled using the below properties
 
 If you want to verify some text in the API call response set sms.verify.response=true and sms.verify.responseContains to the text that should be contained in the response
 
-### Blacklisting or Whitelisting numbers <a id="Blacklisting-or-Whitelisting-numbers"></a>
+## Blacklisting or Whitelisting numbers <a id="Blacklisting-or-Whitelisting-numbers"></a>
 
 It is possible to whitelist or blacklist phone numbers to which the messages should be sent. This can be controlled using the below properties:
 
@@ -59,7 +59,7 @@ Both of them can be given a , separated list of numbers or number patterns. To u
 
 sms.blacklist.numbers=5\*,9999999999,88888888XX will blacklist any phone number starting with 5, or the exact number 9999999999 and all numbers starting from 8888888800 to 8888888899
 
-### Prefixing <a id="Prefixing"></a>
+## Prefixing <a id="Prefixing"></a>
 
 Few 3rd parties require a prefix of 0 or 91 or +91 with the mobile number. In such a case you can use sms.mobile.prefix to automatically add the prefix to the mobile number coming in the message queue.
 

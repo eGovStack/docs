@@ -4,17 +4,17 @@ description: DIGIT 2.0 changes to the Advance Payments
 
 # Advance Payments Release Notes
 
-### Overview
+## Overview
 
 Advance payments feature helps citizens to make a payment more than the pending amount. The platform informs the citizen about the excess amount paid and the amount available as an advance in the bills and receipts.
 
-### Release Highlights
+## Release Highlights
 
 1. Pay/ Adjust excess amount against the demand generated
 2. Generate Receipt showing the excess payment
 3. Generate Bill with advance amount adjustment
 
-### Release Features
+## Release Features
 
 <table>
   <thead>
@@ -74,14 +74,14 @@ Advance payments feature helps citizens to make a payment more than the pending 
   </tbody>
 </table>
 
-### Known Issues
+## Known Issues
 
 | **Issue** | **Description** |
 | :--- | :--- |
 | Bill amount incorrectly calculated | 'Due amount' miscalculation, if multiple meter readings are added without payment |
 | Advance adjusted incorrectly calculated | 'Advance adjusted' miscalculated in the bill PDF |
 
-### Upcoming Release Feature
+## Upcoming Release Feature
 
 <table>
   <thead>
@@ -122,7 +122,7 @@ Advance payments feature helps citizens to make a payment more than the pending 
   </tbody>
 </table>
 
-### Reference Doc Links
+## Reference Doc Links
 
 | **Doc Links** | **Description** |
 | :--- | :--- |
