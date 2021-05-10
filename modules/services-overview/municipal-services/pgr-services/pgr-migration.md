@@ -1,6 +1,6 @@
 # PGR Migration
 
-### Setup <a id="Setup:"></a>
+## Setup <a id="Setup:"></a>
 
 | **Config/Service Name** | **Path/Build** |
 | :--- | :--- |
@@ -59,11 +59,11 @@ curl --location --request POST 'http://localhost:8083/rainmaker-pgr/v2/_migrate?
 }'
 ```
 
-### WSD <a id="WSD:"></a>
+## WSD <a id="WSD:"></a>
 
 ![](../../../../.gitbook/assets/migration.png)
 
-### Validation Queries <a id="Validation-Queries:"></a>
+## Validation Queries <a id="Validation-Queries:"></a>
 
 ```text
 select  distinct(action),count(*) from eg_pgr_action group by  action
@@ -91,7 +91,7 @@ select count(*) from eg_wf_document_v2 where processinstanceid IN (select id fro
 
 _\*\(Last query related to document might need little modification as values in NOT IN clause can be more than the 2 specified\)_
 
-### Prod Data Insights <a id="Prod-Data-Insights:"></a>
+## Prod Data Insights <a id="Prod-Data-Insights:"></a>
 
 1. null value is stored in action for adding comments in old system it’s mapped to COMMENT in new system.
 2. Locality attribute in new eg\_pgr\_address\_v2 table does not allow NULL values whereas the locality attribute in old eg\_pgr\_address in Punjab prod data has NULL values. Those values are filled in migration with dummy value NOT\_AVAILABLE.
@@ -103,7 +103,5 @@ _\*\(Last query related to document might need little modification as values in 
 8. Phone column contains phone numbers, we are not migrating that column as it has PII data and will be already present in user service as well.
 9. If sla is not found in old config \(will only happen if some complaint category is removed from MDMS and complaints are present in system of that category\) default SLA value will be used.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

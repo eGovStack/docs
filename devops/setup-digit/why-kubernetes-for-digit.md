@@ -1,24 +1,24 @@
 # Why Kubernetes for DIGIT
 
-### Overview
+## Overview
 
 This page explains why Kubernetes is required. It deep dives into the key benefits of using Kubernetes to run a large containerized platform like DIGIT in production environments.
 
-### The Big Why 
+## The Big Why
 
-Kubernetes project started in the year 2014 with [more than a decade of experience of running production workloads at Google](https://queue.acm.org/detail.cfm?id=2898444). Kubernetes has now become the de facto standard for deploying containerized applications at scale in private, public and hybrid cloud environments. The largest public cloud platforms [AWS](https://aws.amazon.com/ecs/), [Google Cloud](https://cloud.google.com/kubernetes-engine/), [Azure](https://azure.microsoft.com/en-us/services/container-service/), [IBM Cloud](https://www.ibm.com/cloud/container-service) and [Oracle Cloud](https://cloud.oracle.com/containers) now provide managed services for Kubernetes. A few years back RedHat, Mesosphere, Pivotal, VMware, Nutanix completely redesigned their implementation with Kubernetes and collaborated with the Kubernetes community for implementing the next generation container platform with incorporated key features of Kubernetes such as container grouping, overlay networking, layer 4 routing, secrets, etc.  Today many organizations & technology providers adapting kubernetes at a rapid phase.
+Kubernetes project started in the year 2014 with [more than a decade of experience of running production workloads at Google](https://queue.acm.org/detail.cfm?id=2898444). Kubernetes has now become the de facto standard for deploying containerized applications at scale in private, public and hybrid cloud environments. The largest public cloud platforms [AWS](https://aws.amazon.com/ecs/), [Google Cloud](https://cloud.google.com/kubernetes-engine/), [Azure](https://azure.microsoft.com/en-us/services/container-service/), [IBM Cloud](https://www.ibm.com/cloud/container-service) and [Oracle Cloud](https://cloud.oracle.com/containers) now provide managed services for Kubernetes. A few years back RedHat, Mesosphere, Pivotal, VMware, Nutanix completely redesigned their implementation with Kubernetes and collaborated with the Kubernetes community for implementing the next generation container platform with incorporated key features of Kubernetes such as container grouping, overlay networking, layer 4 routing, secrets, etc. Today many organizations & technology providers adapting kubernetes at a rapid phase.
 
-### Kubernetes Architecture
+## Kubernetes Architecture
 
 ![Figure 1: Kubernetes Architecture](../../.gitbook/assets/image%20%2865%29.png)
 
 One of the fundamental design decisions which have been taken by this impeccable cluster manager is its ability to deploy existing applications that run on VMs without any changes to the application code. On the high level, any application that runs on VMs can be deployed on Kubernetes by simply containerizing its components. This is achieved by its core features; container grouping, container orchestration, overlay networking, container-to-container routing with layer 4 virtual IP based routing system, service discovery, support for running daemons, deploying stateful application components, and most importantly the ability to extend the container orchestrator for supporting complex orchestration requirements.
 
-On very high-level Kubernetes provides a set of dynamically scalable hosts for running workloads using containers and uses a set of management hosts called masters for providing an API for managing the entire container infrastructure. 
+On very high-level Kubernetes provides a set of dynamically scalable hosts for running workloads using containers and uses a set of management hosts called masters for providing an API for managing the entire container infrastructure.
 
 That's just a glimpse of what Kubernetes provides out of the box. In the next few sections will go through its core features and explain how it can help applications to be deployed on it in no time.
 
-### Application Deployment Model
+## Application Deployment Model
 
 ![Figure 2: Kubernetes Application Deployment Model](../../.gitbook/assets/image%20%2867%29.png)
 
@@ -30,25 +30,25 @@ A containerized application can be deployed on Kubernetes using a deployment def
 kubectl run  --image= --port=
 ```
 
-### Service Discovery & Load Balancing
+## Service Discovery & Load Balancing
 
 ![Figure 3: Kubernetes Service Discovery &amp; Load Balancing Model](../../.gitbook/assets/image%20%2866%29.png)
 
 One of the key features of Kubernetes is its service discovery and internal routing model provided using SkyDNS and layer 4 virtual IP based routing system. These features provide internal routing for application requests using services. A set of pods created via a replica set can be load balanced using a service within the cluster network. The services get connected to pods using selector labels. Each service will get assigned a unique IP address, a hostname derived from its name and route requests among the pods in round-robin manner. The services will even provide IP-hash based routing mechanism for applications which may require session affinity. A service can define a collection of ports and the properties defined for the given service will apply to all the ports in the same way. Therefore, in a scenario where session affinity is only needed for a given port where all the other ports required to use round-robin based routing, multiple services may need to be used.
 
-### How Services Internally Work <a id="52e3"></a>
+## How Services Internally Work <a id="52e3"></a>
 
 ![Figure 4: Kubernetes Service Proxy Modes \(Userspace, iptables, &amp; ipvs\)](../../.gitbook/assets/image%20%2869%29.png)
 
 Kubernetes services have been implemented using a component called kube-proxy. A kube-proxy instance runs in each node and provides three proxy modes: Userspace, iptables and IPVS. The current default is iptables.
 
-In the first proxy mode: userspace, kube-proxy itself will act as a proxy server and delegate requests accepted by an iptable rule to the backend pods. In this mode, kube-proxy will operate in the userspace and will add an additional hop to the message flow. 
+In the first proxy mode: userspace, kube-proxy itself will act as a proxy server and delegate requests accepted by an iptable rule to the backend pods. In this mode, kube-proxy will operate in the userspace and will add an additional hop to the message flow.
 
 In the second proxy mode: iptables, the kube-proxy will create a collection of iptable rules for forwarding incoming requests from the clients directly to the ports of backend pods on the network layer without adding an additional hop in the middle. This proxy mode is much faster than the first mode because of operating in the kernel space and not adding an additional proxy server in the middle.
 
 The third proxy mode was [added in Kubernetes v1.8](https://github.com/kubernetes/kubernetes/issues/44063) which is much similar to the second proxy mode and it makes use of an [IPVS](http://www.linuxvirtualserver.org/software/ipvs.html) based virtual server for routing requests without using iptable rules. IPVS is a transport layer load balancing feature which is available in the Linux kernel based on Netfilter and provides a collection of load balancing algorithms. The main reason for using IPVS over iptables is the performance overhead of syncing proxy rules when using iptables. When thousands of services are created, updating iptable rules takes a considerable amount of time compared to a few milliseconds with IPVS. Moreover, IPVS uses a hash table for looking up the proxy rules over sequential scans with iptables. More information on the introduction of IPVS proxy mode can be found in “[Scaling Kubernetes to Support 50,000 Services](https://docs.google.com/presentation/d/1BaIAywY2qqeHtyGZtlyAp89JIZs59MZLKcFLxKE6LyM/edit#slide=id.p3)” presentation done by Huawei at KubeCon 2017.
 
-### Internal/External Routing Separation
+## Internal/External Routing Separation
 
 ![Figure 5: Kubernetes Internal/External Routing Separation](../../.gitbook/assets/image%20%2871%29.png)
 
@@ -62,7 +62,7 @@ kubectl expose deployment  --type=LoadBalancer --name=
 
 The above command will create a service of load balancer type and map it to the pods using the same selector label created when the pods were created. As a result, depending on how the Kubernetes cluster has been configured a load balancer service on the underlying infrastructure will get created for routing requests for the given pods either via the service or directly.
 
-### Usage of Persistent Volumes
+## Usage of Persistent Volumes
 
 ![Figure 6: Kubernetes Persistent Volume Binding Models](../../.gitbook/assets/image%20%2870%29.png)
 
@@ -70,7 +70,7 @@ Applications that require persisting data on the filesystem may use volumes for 
 
 Disks that support ReadWriteOnce will only be able to connect to a single pod and will not be able to share among multiple pods at the same time. However, disks that support ReadOnlyMany will be able to share among multiple pods at the same time in read-only mode. In contrast, as the name implies disks with ReadWriteMany support can be connected to multiple pods for sharing data in read and write mode. Kubernetes provides [a collection of volume plugins](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#types-of-persistent-volumes) for supporting storage services available on public cloud platforms such as AWS EBS, GCE Persistent Disk, Azure File, Azure Disk and many other well-known storage systems such as NFS, Glusterfs, iSCSI, Cinder, etc.
 
-### Deploying Daemons on Nodes
+## Deploying Daemons on Nodes
 
 ![Figure 7: Deploying Daemons on Kubernetes Nodes](../../.gitbook/assets/image%20%2872%29.png)
 
@@ -81,7 +81,7 @@ Kubernetes provides a resource called DaemonSets for running a copy of a pod in 
 * A log collection daemon such as `fluentd` or `logstash` to be run on every node for collecting container and Kubernetes component logs.
 * An ingress controller pod to be run on a collection of nodes for providing external routing.
 
-### Deploying Stateful Distributed Systems
+## Deploying Stateful Distributed Systems
 
 ![Figure 8: Stateful Component Deployment Model](../../.gitbook/assets/image%20%2873%29.png)
 
@@ -97,15 +97,15 @@ On high-level StatefulSets are similar to ReplicaSets except that it provides th
 
 In the above, stable refers to preserving the network identifiers and persistent storage across pod rescheduling. Unique network identifiers are provided by using headless services as shown in the above figure. Kubernetes has provided examples of StatefulSets for deploying [Cassandra](https://kubernetes.io/docs/tutorials/stateful-application/cassandra/), and [Zookeeper](https://kubernetes.io/docs/tutorials/stateful-application/zookeeper/) in a distributed manner.
 
-### Running Background Jobs
+## Running Background Jobs
 
 In addition to ReplicaSets and StatefulSets Kubernetes provides two additional controllers for running workloads in the background called [Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/) and [CronJobs](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/). The difference between Jobs and CronJobs is that Jobs execute once and terminates whereas CronJobs get executed periodically by a given time interval similar to standard Linux cron jobs.
 
-### Deploying Databases
+## Deploying Databases
 
 Deploying databases on container platforms for production usage would be a slightly difficult task than deploying applications due to their requirements for clustering, point to point connections, replication, shading, managing backups, etc. As mentioned previously StatefulSets has been designed specifically for supporting such complex requirements and there are a couple of options for running [PostgreSQL](https://kubernetes.io/blog/2017/02/postgresql-clusters-kubernetes-statefulsets/), and [MongoDB](https://kubernetes.io/blog/2017/01/running-mongodb-on-kubernetes-with-statefulsets/) clusters on Kubernetes today. YouTube’s database clustering system [Vitess](https://vitess.io/getting-started/) which is now a CNCF project would be a great option for running MySQL at scale on Kubernetes with shading. By saying that it would be better to note that those options are still at very early stages and if an existing production-grade database system is available on the given infrastructure such as RDS on AWS, Cloud SQL on GCP, or on-premise database cluster it might be better to choose one of those options considering the installation complexity and maintenance overhead.
 
-### Configurations Management
+## Configurations Management
 
 Containers generally use environment variables for parameterizing their runtime configurations. However, typical enterprise applications use a considerable amount of configuration files for providing static configurations required for a given deployment. Kubernetes provides a fabulous way of managing such configuration files using a simple resource called ConfigMaps without bundling them into the container images. ConfigMaps can be created using directories, files or literal values using following CLI command:
 
@@ -116,7 +116,7 @@ kubectl create configmap  # map-name: name of the config map
 
 Once a ConfigMap is created, it can be mounted to a pod using a volume mount. With this loosely coupled architecture, configurations of an already running system can be updated seamlessly just by updating the relevant ConfigMap and executing a rolling update process which I will explain in one of the next sections. I might be important to note that currently ConfigMaps does not support nested folders, therefore if there are configuration files available in a nested directory structure of the application, a ConfigMap would need to be created for each directory level.
 
-### Credentials Management
+## Credentials Management
 
 Similar to ConfigMaps Kubernetes provides another valuable resource called Secrets for managing sensitive information such as passwords, OAuth tokens, and ssh keys. Otherwise updating that information on an already running system might require rebuilding the container images.
 
@@ -131,7 +131,7 @@ $ kubectl create secret generic app-credentials --from-file=./username.txt --fro
 
 Once a secret is created, it can be read by a pod either using environment variables or volume mounts. Similarly, any other type of sensitive information can be injected into pods using the same approach.
 
-### Rolling Out Updates
+## Rolling Out Updates
 
 ![Figure 9: Kubernetes Rolling Update Process](https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/5bddc931-ramped.gif)
 
@@ -153,7 +153,7 @@ deployment "" successfully rolled out
 
 Using the same CLI command `kubectl set image deployment` an update can be rolled back to a previous state.
 
-### Autoscaling
+## Autoscaling
 
 ![Image for post](https://miro.medium.com/max/60/1*MdH5uByqV1uZmH-9qF-L1Q.png?q=20)
 
@@ -167,7 +167,7 @@ kubectl scale --replicas= deployment/
 
 As shown in the above figure this functionality can be extended by adding another resource called [Horizontal Pod Autoscaler \(HPA\)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) against a deployment for dynamically scaling the pods based on their actual resource usage. The HPA will monitor the resource usage of each pod via the resource metrics API and inform the deployment to change the replica count of the ReplicaSet accordingly. Kubernetes uses an upscale delay and a downscale delay for avoiding thrashing which could occur due to frequent resource usage fluctuations in some situations. Currently, HPA only provides support for scaling based on CPU usage. If needed custom metrics can also be plugged in via the [Custom Metrics API](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/custom-metrics-api.md) depending on the nature of the application.
 
-### Package Management
+## Package Management
 
 ![Image for post](https://miro.medium.com/max/60/1*47vHS7ZkOF7tp-hRBp3A-w.png?q=20)
 
@@ -179,11 +179,11 @@ The Kubernetes community initiated a separate project for implementing a package
 
 A wide range of stable Helm charts for well-known software applications can be found in it’s [Github repository](https://github.com/kubernetes/charts/tree/master/stable) and also in the central Helm server: [Kubeapps Hub](https://hub.kubeapps.com/).
 
-### Conclusion
+## Conclusion
 
 Kubernetes has been designed with over a decade of experience on running containerized applications at scale at Google. It has been already adopted by the largest public cloud vendors, technology providers and currently being embraced by most of the software vendors and enterprises as this article is written. It has even lead to the inception of the Cloud Native Computing Foundation \(CNCF\) in the year 2015, was the first project to graduate under CNCF, and started streamlining the container ecosystem together with other container-related projects such as CNI, Containers, Envoy, Fluentd, gRPC, Jagger, Linkerd, Prometheus, RKT and Vitess. The key reasons for its popularity and to be endorsed at such level might be its flawless design, collaborations with industry leaders, making it open-source, always being open to ideas and contributions.
 
-### References
+## References
 
 \[1\] What is Kubernetes: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
@@ -215,7 +215,5 @@ Kubernetes has been designed with over a decade of experience on running contain
 
 \[15\] Deploying Apache Zookeeper using StatefulSets: [https://github.com/kubernetes/contrib/tree/master/statefulsets/zookeeper](https://github.com/kubernetes/contrib/tree/master/statefulsets/zookeeper)
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

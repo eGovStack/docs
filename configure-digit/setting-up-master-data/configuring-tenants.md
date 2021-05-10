@@ -1,10 +1,10 @@
 # Configuring Tenants
 
-### Overview
+## Overview
 
 Tenant represents a body in a system. In the municipal system, a state and its ULBs \(Urban local bodies\) are tenants. ULB represents a city or a town in a state. Tenant configuration is done in MDMS.
 
-### Pre-requisites
+## Pre-requisites
 
 Before proceeding with the configuration, the following pre-requisites are met -
 
@@ -12,17 +12,17 @@ Before proceeding with the configuration, the following pre-requisites are met -
 * Knowledge of MDMS is required.
 * User with permissions to edit the git repository where MDMS data is configured.
 
-### Key Functionalities
+## Key Functionalities
 
 * For login page city name selection is required. Tenant added in MDMS shows in city drop-down of the login page.
 * In reports or in the employee inbox page the details related to ULB is displayed from the fetched ULB data which is added in MDMS.
 * Modules i.e., TL, PT, MCS can be enabled based on the requirement for the tenant.
 
-### Deployment Details
+## Deployment Details
 
 After adding the new tenant, the MDMS service needs to be restarted to read the newly added data.
 
-### Configuration Details
+## Configuration Details
 
 Tenant is added in tenant.json.  
 In MDMS, file **tenant.json**, under **tenant** folder holds the details of state and ULBs to be added in that state.
@@ -105,16 +105,14 @@ Localization should be pushed for ULB grade and ULB name. The format is given be
 
 Boundary data should be added for the new tenant.
 
-### Reference Docs
+## Reference Docs
 
-#### Doc Links
+### Doc Links
 
 | **Title** | **Link** |
 | :--- | :--- |
 | tenant json file | [![](https://github.githubassets.com/favicon.ico)tenants.json](https://github.com/egovernments/ukd-mdms-data/blob/master/data/uk/tenant/tenants.json) |
 | content | [MDMS Configuration:](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/110952456) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

@@ -10,13 +10,13 @@ Commitment and transparency are deeply ingrained values defining our product dev
 
 | **Theme** | **Description** |
 | :--- | :--- |
-| **Promote Urban Mission** | Product feature enhancements and concentrated focus on increasing adoption  |
+| **Promote Urban Mission** | Product feature enhancements and concentrated focus on increasing adoption |
 | **Champion Product Innovation** | New products to address the sanitation issues facing urban areas and public finance management solutions |
 | **Facilitate Ease of Use and Access to Citizens** | Create integrated user experience with a key focus on flexibility, accessibility, quality of service; Optimized user experience |
 | **Enhance Data Privacy and Security** | Adopt improvements on the platforms that will address some key issues like privacy, security as well as adding new capabilities like GIS |
-| **Support Product Research**  | Identify high-impact research and product innovation areas through validation, understanding the domain, and processes involved |
+| **Support Product Research** | Identify high-impact research and product innovation areas through validation, understanding the domain, and processes involved |
 
-## Quarter 1 - April to June 2020
+## Quarter 1 - April to June 2021
 
 | Release Date: 01/06/2021 | Beta date: | GA date: |
 | :--- | :--- | :--- |
@@ -69,9 +69,7 @@ Commitment and transparency are deeply ingrained values defining our product dev
 * Intuitive UI elements for added ease and convenience
 {% endhint %}
 
-
-
-## Quarter 2 - July to September 2020
+## Quarter 2 - July to September 2021
 
 | Release Date: 01/06/2021 | Beta date: | GA date: |
 | :--- | :--- | :--- |
@@ -118,7 +116,7 @@ Commitment and transparency are deeply ingrained values defining our product dev
 * Product Training material - help links and how-to articles 
 {% endhint %}
 
-## Quarter 3 - October to December 2020
+## Quarter 3 - October to December 2021
 
 | Release Date: 01/12/2021 | Beta date: | GA date: |
 | :--- | :--- | :--- |
@@ -170,8 +168,6 @@ Commitment and transparency are deeply ingrained values defining our product dev
   * Product packaging
 {% endhint %}
 
-
-
 ## **Quarter 4 - January to March 2022**
 
 | **Release Date: 01/03/2022** | **Beta date:** | **GA date:** |
@@ -202,5 +198,5 @@ Commitment and transparency are deeply ingrained values defining our product dev
 * CSC integration - Inclusion of CSC/ Sewa Kendras as a channel for providing DIGIT services to Citizens
 {% endhint %}
 
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

@@ -4,5 +4,3 @@ This section provides technical details about business service setup, configurat
 
 * Bill Amendment
 
-
-

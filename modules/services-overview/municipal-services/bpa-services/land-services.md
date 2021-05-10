@@ -1,19 +1,19 @@
 # Land Services
 
-### Description <a id="Description"></a>
+## Description <a id="Description"></a>
 
 This service is the major service supporting bpa-services which handles the data of the land like land details, owner information, unit, address and documents which has the complete information of the land.
 
 Which can be used as input for the bpa-services to create and process the Building Plan Application.
 
-### Functionality <a id="Functionality"></a>
+## Functionality <a id="Functionality"></a>
 
 This section covers the high-level details of the functionalities available Land Service
 
 * UI integrated as part of BPA screens
-*  Ability to create/update Land Details
+* Ability to create/update Land Details
 
-### **System Requirements** <a id="System-Requirements:"></a>
+## **System Requirements** <a id="System-Requirements:"></a>
 
 * Knowledge of Java/J2EE\(preferably Java 8 version\)
 * Knowledge of Spring Boot and spring-boot microservices.
@@ -22,17 +22,17 @@ This section covers the high-level details of the functionalities available Land
 * Knowledge of the Lombok library will helpful.
 * knowledge of eGov-mdms service, eGov-persister, eGov-idgen, eGov-user, eGov-localization will be helpful.
 
-### **Setup and Usage** <a id="Setup-and-usage:"></a>
+## **Setup and Usage** <a id="Setup-and-usage:"></a>
 
-The [**Application**](https://github.com/egovernments/municipal-services/tree/master) is present among the _**municipal services**_ group of applications available in the eGov-services git repository with the folder name **land-services**.  The spring boot application needs the **Lombok\*** extension added in your IDE to load it. Once the application is up and running API requests can be posted to the URL and ids can be generated. 
+The [**Application**](https://github.com/egovernments/municipal-services/tree/master) is present among the _**municipal services**_ group of applications available in the eGov-services git repository with the folder name **land-services**. The spring boot application needs the **Lombok\*** extension added in your IDE to load it. Once the application is up and running API requests can be posted to the URL and ids can be generated.
 
 * in case of IntelliJ, the plugin can be installed directly, for eclipse the Lombok jar location has to be added in eclipse.ini file in this format  javaagent:lombok.jar
 
-### **API Information**
+## **API Information**
 
 * Please refer to Swagger API for YAML file details. Link - [API Specs](https://github.com/egovernments/municipal-services/blob/master/docs/bpa/bpa-service.yaml).
 
-#### _**Application.properties File Information**_
+### _**Application.properties File Information**_
 
 Here we are listing the configs apart from dependent service host, url’s, DB and Flyway configs.
 
@@ -40,7 +40,7 @@ Here we are listing the configs apart from dependent service host, url’s, DB a
   * persister.save.landinfo.topic=save-landinfo
   * persister.update.landinfo.topic=update-landinfo
 
-### **External API References** <a id="external-API-references:"></a>
+## **External API References** <a id="external-API-references:"></a>
 
 * **egov-user** - \( Manage user \)
 * **egov-filestore** \( To store the documents uploaded by the user \)
@@ -51,9 +51,9 @@ Here we are listing the configs apart from dependent service host, url’s, DB a
 * **egov-mdms** \( Configurations/master data used in the application is served by MDMS \)
 * **egov-persister** \( Helps to persist the data \)
 
-### **Configuration** <a id="Configuration:"></a>
+## **Configuration** <a id="Configuration:"></a>
 
-#### _**Land Service Specific MDMS configuration**_**:** <a id="Land-Service-Specific-MDMS-configuration:"></a>
+### _**Land Service Specific MDMS configuration**_**:** <a id="Land-Service-Specific-MDMS-configuration:"></a>
 
 There is not MDMS config for Land Service exists as of now.
 
@@ -189,27 +189,25 @@ Access MDMS Config
     }
 ```
 
-#### _**Persister configuration**_ <a id="Persister-configuration:"></a>
+### _**Persister configuration**_ <a id="Persister-configuration:"></a>
 
 [Land Persister YAML](https://github.com/egovernments/configs/blob/master/egov-persister/land-persister.yml)
 
-#### Database Schema <a id="Database-Schema"></a>
+### Database Schema <a id="Database-Schema"></a>
 
 ![](../../../../.gitbook/assets/image-20200803-050931.png)
 
-#### Workflow Configuration <a id="Workflow-Configuration"></a>
+### Workflow Configuration <a id="Workflow-Configuration"></a>
 
 NA
 
-#### Notifications  <a id="Notifications"></a>
+### Notifications <a id="Notifications"></a>
 
 NA
 
-#### PDF Used <a id="PDF-Used"></a>
+### PDF Used <a id="PDF-Used"></a>
 
 NA
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

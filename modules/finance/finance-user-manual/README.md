@@ -4,7 +4,7 @@ description: An illustrative guide to using the finance module
 
 # Finance User Manual
 
-The Finance User Manual is a standardized document available on the DIGIT platform to help the municipal employees operate the Financial Module System \(FMS\). 
+The Finance User Manual is a standardized document available on the DIGIT platform to help the municipal employees operate the Financial Module System \(FMS\).
 
 Financial Module \(FM\) User Manual is for users who are responsible for processing financial and accounting transactions within Municipal Corporations, Municipalities and ULBs. This user manual guides users on how to use the FMS to account for various financial transactions and generate Demand notes, Receipts, Bills and process Payments. The document also helps users in the creation of masters like adding detailed charts of account, bank branch and account etc.
 
@@ -23,8 +23,7 @@ This document acts as an easy reference for the ULB employees using the Finance 
 
 ## User Roles
 
-Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.   
-
+Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.
 
 <table>
   <thead>
@@ -171,9 +170,5 @@ Refer to the table below to understand the different user roles and the scope of
 
 This section guides you through the details of using the Finance module for each role. Click on the relevant role below to learn more about how to use the module.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).  
-  
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

@@ -4,11 +4,11 @@ description: Learn how to setup and configure FSM service
 
 # FSM Service Configuration
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 Faecal Sludge Management \(FSM\) is a system that enables a citizen to raise a request for septic tank cleaning with there ULB’s directly or by reaching out to the ULB counter. The Citizen can track the application, make a payment for the charges and rate the service. This document contains the details about how to set up the FSM services and describes the functionalities it provides.
 
-### Pre-requisites <a id="Pre-requisites"></a>
+## Pre-requisites <a id="Pre-requisites"></a>
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
@@ -32,7 +32,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
   * billing-service
   * collection-services
 
-### Key Functionalities <a id="Key-Functionalities"></a>
+## Key Functionalities <a id="Key-Functionalities"></a>
 
 * A Citizen can file, track and rate the application for cleaning septic tank
 * ULB Employee can file an application for cleaning septic tank on behalf of Citizen
@@ -42,15 +42,15 @@ Before you proceed with the configuration, make sure the following pre-requisite
 * FSM Admin in ULB can cancel the application at any stage before completing the application
 * ULB Employee or Admin can view the audit log of the given application
 
-### Deployment Details <a id="Deployment-Details"></a>
+## Deployment Details <a id="Deployment-Details"></a>
 
 1. Deploy the latest version of FSM
 2. Add fsm-persister.yml file in config folder in git and add that path in persister . _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
 3. If an index is to be created add the indexer config path in indexer service. \(_The file path is to be added in environment yaml file in param called_ egov-indexer-yaml-repo-path\)
 
-### Configuration Details <a id="Configuration-Details"></a>
+## Configuration Details <a id="Configuration-Details"></a>
 
-#### MDMS Configuration <a id="MDMS-Configuration[hardBreak]"></a>
+### MDMS Configuration <a id="MDMS-Configuration[hardBreak]"></a>
 
 Add master data in MDMS service with the module name as FSM. Following is some sample master data for Application Channel \(Source\).
 
@@ -85,31 +85,31 @@ Checklist \(Checklist to be answered by a citizen while rating\)
 
 ```text
 {
-	"tenantId": "pb",
-	"moduleName": "FSM",
-	"CheckList": [{
-			"code": "SPILAGE",
-			"active": true,
-			"required": true,
-			"type": "SINGLE_SELECT",
-			"options": [
-				"YES",
-				"NO",
-				"NA"
-			]
-		},
-		{
-			"code": "SAFETY_GEARS_USED",
-			"active": true,
-			"type": "MULTI_SELECT",
-			"required": true,
-			"options": [
-				"EYE_GEAR",
-				"HAND_GLOVES",
-				"NOSE_MASK"
-			]
-		}
-	]
+    "tenantId": "pb",
+    "moduleName": "FSM",
+    "CheckList": [{
+            "code": "SPILAGE",
+            "active": true,
+            "required": true,
+            "type": "SINGLE_SELECT",
+            "options": [
+                "YES",
+                "NO",
+                "NA"
+            ]
+        },
+        {
+            "code": "SAFETY_GEARS_USED",
+            "active": true,
+            "type": "MULTI_SELECT",
+            "required": true,
+            "options": [
+                "EYE_GEAR",
+                "HAND_GLOVES",
+                "NOSE_MASK"
+            ]
+        }
+    ]
 }
 ```
 
@@ -157,7 +157,7 @@ Config \(Configuration at the application level\)
             "active":true,
             "description":"properties in override allowed to modify when FSM application moving from CREATED Status to next status."
         }
-        
+
     ]
 }
 ```
@@ -502,7 +502,7 @@ Property Type
       "minAmount":"10100",
       "maxAmount":"10500"
     }
-  
+
   ]
 }
 ```
@@ -511,87 +511,87 @@ Slum \(Slums mapped to the locality of the city\)
 
 ```text
 {
-	"tenantId": "pb",
-	"moduleName": "FSM",
-	"Slum": [{
-			"code": "SL0001",
-			"active": true,
-			"name": "Kathagada juanga sahi",
-			"locality": "SUN20"
-		},
-		{
-			"code": "SL0002",
-			"active": true,
-			"name": "Kathagada Parbatia Sahi",
-			"locality": "SUN20"
-		},
-		{
-			"code": "SL0003",
-			"active": true,
-			"name": "Gangadhar Sahi",
-			"locality": "SUN35"
-		},
-		{
-			"code": "SL0004",
-			"active": true,
-			"name": "Pandab Nagar",
-			"locality": "SUN35"
-		},
-		{
-			"code": "SL0005",
-			"active": true,
-			"name": "Haridakhandi Harijana sahi",
-			"locality": "SUN35"
-		},
-		{
-			"code": "SL0006",
-			"active": true,
-			"name": "Haridakhandi Kadalibada Sahi",
-			"locality": "SUN55"
-		},
-		{
-			"code": "SL0007",
-			"active": true,
-			"name": "Haridakhandi Bada sahi",
-			"locality": "SUN55"
-		},
-		{
-			"code": "SL0008",
-			"active": true,
-			"name": "Haridakhandi Redika Sahi",
-			"locality": "SUN55"
-		},
-		{
-			"code": "SL0009",
-			"active": true,
-			"name": "Golapali Sahi",
-			"locality": "SUN18"
-		},
-		{
-			"code": "SL0010",
-			"active": true,
-			"name": "Surya Nagar",
-			"locality": "SUN18"
-		},
-		{
-			"code": "SL0011",
-			"active": true,
-			"name": "Damba Sahi",
-			"locality": "SUN18"
-		},
-		{
-			"code": "SL0012",
-			"active": true,
-			"name": "Raju Dhoba Sahi",
-			"locality": "SUN08"
-		}
-	]
+    "tenantId": "pb",
+    "moduleName": "FSM",
+    "Slum": [{
+            "code": "SL0001",
+            "active": true,
+            "name": "Kathagada juanga sahi",
+            "locality": "SUN20"
+        },
+        {
+            "code": "SL0002",
+            "active": true,
+            "name": "Kathagada Parbatia Sahi",
+            "locality": "SUN20"
+        },
+        {
+            "code": "SL0003",
+            "active": true,
+            "name": "Gangadhar Sahi",
+            "locality": "SUN35"
+        },
+        {
+            "code": "SL0004",
+            "active": true,
+            "name": "Pandab Nagar",
+            "locality": "SUN35"
+        },
+        {
+            "code": "SL0005",
+            "active": true,
+            "name": "Haridakhandi Harijana sahi",
+            "locality": "SUN35"
+        },
+        {
+            "code": "SL0006",
+            "active": true,
+            "name": "Haridakhandi Kadalibada Sahi",
+            "locality": "SUN55"
+        },
+        {
+            "code": "SL0007",
+            "active": true,
+            "name": "Haridakhandi Bada sahi",
+            "locality": "SUN55"
+        },
+        {
+            "code": "SL0008",
+            "active": true,
+            "name": "Haridakhandi Redika Sahi",
+            "locality": "SUN55"
+        },
+        {
+            "code": "SL0009",
+            "active": true,
+            "name": "Golapali Sahi",
+            "locality": "SUN18"
+        },
+        {
+            "code": "SL0010",
+            "active": true,
+            "name": "Surya Nagar",
+            "locality": "SUN18"
+        },
+        {
+            "code": "SL0011",
+            "active": true,
+            "name": "Damba Sahi",
+            "locality": "SUN18"
+        },
+        {
+            "code": "SL0012",
+            "active": true,
+            "name": "Raju Dhoba Sahi",
+            "locality": "SUN08"
+        }
+    ]
 }
 ```
 
-#### Business Service / Workflow Configuration
+### Business Service / Workflow Configuration
 
- Create businessService \(workflow configuration\) using the  __/businessservice/\_create. 
+Create businessService \(workflow configuration\) using the \_\_/businessservice/\_create.
 
 Following is the product configuration for FSM:
 
@@ -948,9 +948,9 @@ Following is the product configuration for FSM:
 }
 ```
 
-#### Localization Setup <a id="Localization-Setup"></a>
+### Localization Setup <a id="Localization-Setup"></a>
 
-Using /localization/messages/v1/\_upsert , add localisation \(templates\) for notification messages to be sent. 
+Using /localization/messages/v1/\_upsert , add localisation \(templates\) for notification messages to be sent.
 
 Following are the product notification templates
 
@@ -1009,7 +1009,7 @@ Following are the product notification templates
 }
 ```
 
-#### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
+### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
 
 Add Role-Action mapping for the APIs in MDMS. Following are the required entries. They should be mapped to both CITIZEN and appropriate employee roles.
 
@@ -1072,7 +1072,7 @@ Add Role-Action mapping for the APIs in MDMS. Following are the required entries
       "serviceCode": "",
       "code": "null",
       "path": ""
-    },  
+    },
 ```
 
 **Role Action Mapping**
@@ -1465,37 +1465,37 @@ values.yml for fms-calculator can be found [here](https://github.com/egovernment
   </tbody>
 </table>
 
-- User with userType employee and role FSM\_CREATOR\_EMP role,
+* User with userType employee and role FSM\_CREATOR\_EMP role,
 
-### Integration <a id="Integration"></a>
+## Integration <a id="Integration"></a>
 
-#### Integration Scope <a id="Integration-Scope"></a>
+### Integration Scope <a id="Integration-Scope"></a>
 
-FSM can be integrated with any ULB or system which wants to track FSM application. The organisations can customise the workflow depending on there product requirements 
+FSM can be integrated with any ULB or system which wants to track FSM application. The organisations can customise the workflow depending on there product requirements
 
-#### Integration Benefits <a id="Integration-Benefits"></a>
+### Integration Benefits <a id="Integration-Benefits"></a>
 
 * Easy tracking and resolution FSM Application
 * Configurable workflow according to client requirement
 
-#### Steps to Integration <a id="Steps-to-Integration"></a>
+### Steps to Integration <a id="Steps-to-Integration"></a>
 
-1.  Citizen/ULB Employee can file Application request using the /fsm/v1/\_create
+1. Citizen/ULB Employee can file Application request using the /fsm/v1/\_create
 2. Organisation or System can search the FSM Applications using /fsm/v1/\_searchendpoint
 3. Once the application is filed the organisation or system can call /fsm/v1/\_update endpoint to move the application further in workflow until it gets resolved
 
-### Interaction Diagram <a id="Interaction-Diagram"></a>
+## Interaction Diagram <a id="Interaction-Diagram"></a>
 
 TBD
 
-### Reference Docs <a id="Reference-Docs"></a>
+## Reference Docs <a id="Reference-Docs"></a>
 
-#### Doc Links <a id="Doc-Links"></a>
+### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  Workflow Technical Document |  [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
-|  User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service)   |
+| Workflow Technical Document | [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
+| User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service) |
 | MDMS Technical Document | **NEEDS TO BE UPDATED** |
 | IDGen Technical Document | **NEEDS TO BE UPDATED** |
 | Localization Technical Document | **NEEDS TO BE UPDATED** |
@@ -1505,16 +1505,14 @@ TBD
 | API Contract | [FSM API Contract](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/fsm/Fsm_Apply_Contract.yaml) |
 | Postman Collection | [FSM Postman Collection](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 
-#### API List <a id="API-List"></a>
+### API List <a id="API-List"></a>
 
 | **Title** | **Link** |
 | :--- | :--- |
-|  /fsm/v1/\_create | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
-|  /fsm/v1/\_update | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
+| /fsm/v1/\_create | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
+| /fsm/v1/\_update | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | /fsm/v1/\_search | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | /fsm/v1/\_audit | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

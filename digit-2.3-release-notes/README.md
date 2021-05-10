@@ -4,14 +4,14 @@ description: 'New release features, enhancements, and fixes'
 
 # Release Notes
 
-### Release Summary <a id="Release-Summary"></a>
+## Release Summary <a id="Release-Summary"></a>
 
 DIGIT 2.3 release offers new modules, few functional changes, and non-functional changes.
 
 * Functional: Faecal Sludge Management module, Bill Amendment module, and Enhancements in HRMS.
 * Non-functional: Security fixes.
 
-### New ‌Feature Additions <a id="New-&#x200C;Feature-Additions"></a>
+## New ‌Feature Additions <a id="New-&#x200C;Feature-Additions"></a>
 
 <table>
   <thead>
@@ -101,7 +101,7 @@ DIGIT 2.3 release offers new modules, few functional changes, and non-functional
   </tbody>
 </table>
 
-### Enhancements <a id="Enhancements"></a>
+## Enhancements <a id="Enhancements"></a>
 
 <table>
   <thead>
@@ -194,9 +194,9 @@ DIGIT 2.3 release offers new modules, few functional changes, and non-functional
   </tbody>
 </table>
 
-### ‌Document Resources and Links <a id="&#x200C;Document-Resources-and-Links"></a>
+## ‌Document Resources and Links <a id="&#x200C;Document-Resources-and-Links"></a>
 
-#### UI Technical Documents
+### UI Technical Documents
 
 {% file src="../.gitbook/assets/bill-amendment.pdf" caption="Bill Amendment" %}
 
@@ -214,7 +214,7 @@ DIGIT 2.3 release offers new modules, few functional changes, and non-functional
 
 {% file src="../.gitbook/assets/pgr-ui-implementation.pdf" caption="PGR UI Implementation" %}
 
-#### Backend Service Documents
+### Backend Service Documents
 
 {% page-ref page="../modules/services-overview/business-services/bill-amendment.md" %}
 
@@ -232,5 +232,5 @@ DIGIT 2.3 release offers new modules, few functional changes, and non-functional
 
 {% file src="../.gitbook/assets/egov-hrms.pdf" caption="egov-hrms" %}
 
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

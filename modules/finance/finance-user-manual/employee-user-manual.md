@@ -36,7 +36,7 @@ Select the relevant Fund, Department, Scheme, and Sub Scheme details. Enter the 
 
 ![](https://lh3.googleusercontent.com/DE5lJeD59qoH8w0KWdIOJw4s6pdC7zycQpbSb8HaBZDBGiBYDF9yxbEyETbvOskADX3gtgyrjqwhXN4FNb5i_JyyEF_4jMKbGxKSy24wNvOQ7L33tBOViiwkwnK6Gg2A_cqHHdaX)
 
-Enter any Narration as required. Enter the Party Bill Number and the Party Bill Date. Select the applicable Bill Subtype. Enter the relevant SubLedger Details. Select the applicable SubLedger Type and enter the payee details. 
+Enter any Narration as required. Enter the Party Bill Number and the Party Bill Date. Select the applicable Bill Subtype. Enter the relevant SubLedger Details. Select the applicable SubLedger Type and enter the payee details.
 
 Select the appropriate Account Code Template. The list of templates is available based on the selected Bill Subtype and SubLedger Type. If the subledger type is not selected then only templates for non-subledger types will be listed.
 
@@ -64,7 +64,7 @@ Click on the Forward button to forward the bill to the Bill Approver. Else, clic
 
 ### Contractor Bill
 
-The Contractor Bill option is used to raise all bills against a work order by the contractor. Once the contractor is selected, all the work orders assigned to this contractor is listed. The contractor bill is based on the listed work order. 
+The Contractor Bill option is used to raise all bills against a work order by the contractor. Once the contractor is selected, all the work orders assigned to this contractor is listed. The contractor bill is based on the listed work order.
 
 To create contractor bill
 
@@ -106,7 +106,7 @@ Check the entry details available in the Account Details and SubLedger Details p
 
 ![](https://lh4.googleusercontent.com/cgspIUAne8xYww_g60MYFQpXCSIMnigXpYl-JCxr9miwwFkDOe5IB8ha46eOs1e5RKLSW6TofQkhXRao5ZcrlWHkcRkimg1LhtEw3J8TCZXMlgC7HQZMVjnCjemLGsd60XomJJWX)
 
-Click on the Browse button to select supporting files. Click on the Add File button to add more files. To forward the bill for approval fill in the Approver Department, Approver Designation, and Approver details. Enter any pertinent information in the Comments section for the approver. 
+Click on the Browse button to select supporting files. Click on the Add File button to add more files. To forward the bill for approval fill in the Approver Department, Approver Designation, and Approver details. Enter any pertinent information in the Comments section for the approver.
 
 Click on the Forward button to forward the bill to the Bill Approver. Else, click on Create and Approve to approve the bill. There is no need to fill in the Approval Details if the bill is spot-verified.
 
@@ -128,11 +128,11 @@ Navigate to Transactions &gt; Bills Accounting &gt; Supplier Bill.
 
 ![](https://lh4.googleusercontent.com/WOemjS_3XzHByjcSJ7HdhhngsHbu_6HJMgHX8BpSIs969bgAskHVnn0qkUoSkGO9M9hq7HQOLEgpgkw2oCI9YvtxVzTFZ24Q6nfjIzxjE91t8DeGh0CMCLYrECvm96uM8BccaPHs)
 
-Fill in all the mandatory details in the Supplier Bill screen. Please note fields marked with ‘\*’ signs are mandatory fields. 
+Fill in all the mandatory details in the Supplier Bill screen. Please note fields marked with ‘\*’ signs are mandatory fields.
 
 The Bill Date reflects the current date by default. Click on the field to change the date if required.
 
-Select the Supplier and the applicable Purchase Order. The system will display all purchase orders for the selected supplier. Based on the Purchase Order selected, Fund, Department, Scheme and Sub Scheme details are automatically populated. 
+Select the Supplier and the applicable Purchase Order. The system will display all purchase orders for the selected supplier. Based on the Purchase Order selected, Fund, Department, Scheme and Sub Scheme details are automatically populated.
 
 All debit and credit account heads are taken into appropriate sections and the net pay account code is populated based on system configuration.
 
@@ -186,7 +186,7 @@ To view bill registers
 
 The View Bill Register option enables users to fetch consolidated views of bills.
 
-Navigate to Finance &gt; Transactions &gt; Bills Accounting &gt; View Bill Registers option in the sidebar. ****Select Expenditure Type. Enter the Bill Date From and Bill Date To details to specify the period. Select the applicable Fund. Make sure to fill in the mandatory fields. 
+Navigate to Finance &gt; Transactions &gt; Bills Accounting &gt; View Bill Registers option in the sidebar. _\*\*_Select Expenditure Type. Enter the Bill Date From and Bill Date To details to specify the period. Select the applicable Fund. Make sure to fill in the mandatory fields.
 
 Select the Department. Enter Bill Number. Click on the Search button to fetch the bill generated.
 
@@ -204,7 +204,7 @@ To create entries for the bank to bank transfers -
 
 Bill Creators can create entries for the bank to bank transfers.
 
-Navigate to Finance &gt; Transactions &gt; Contra Entries &gt; Bank to Bank Transfer option in the sidebar. Select the applicable Fund. Based on the Fund selected, the bank account details get populated. 
+Navigate to Finance &gt; Transactions &gt; Contra Entries &gt; Bank to Bank Transfer option in the sidebar. Select the applicable Fund. Based on the Fund selected, the bank account details get populated.
 
 ![](https://lh6.googleusercontent.com/DYKyTU6Bav5IyRXs_RMO_U_Iur8ogzJ0I0K4vT8Ziy2NiMgXJvw0EJqSB99lrhjft7aqBkz5K2DwoDBUKPOsVyO2_u-HY9-ExqDRjz7xyj11ub4XG1DdcYSfaDHTYDNQ1nhiAc1fMsPZph6cSw)
 
@@ -216,7 +216,7 @@ Key in any additional details in the Narration field. Click on the Save option t
 
 ## Bill Approver
 
-The Bill Approver user role is responsible for approving the bills or vouchers created by the bill creator. 
+The Bill Approver user role is responsible for approving the bills or vouchers created by the bill creator.
 
 ### Approve Bills
 
@@ -248,7 +248,7 @@ Bill approvers can search for vouchers, view and print payment receipts and vouc
 
 To search for vouchers
 
-Navigate to Finance &gt; Transactions &gt; View Voucher menu option in the sidebar. ****Enter the Voucher Number directly to search for specific vouchers.
+Navigate to Finance &gt; Transactions &gt; View Voucher menu option in the sidebar. _\*\*_Enter the Voucher Number directly to search for specific vouchers.
 
 ![](https://lh5.googleusercontent.com/ge5ZszjF4IQjHSUrJjBshgi-IAYdnIjsOZjcE0opejAj6qcvcxO2xaS3CzRWQVHcnHYaCYK1_Woi1EqdEESc7xQOAggMVo-wam-GWSU3nZ6fUVGkmG7XyAYo76oTHhxcnWbKrxYx)
 
@@ -268,7 +268,7 @@ Voucher creator user roles are responsible for creating journal vouchers and vie
 
 To create a journal voucher
 
-Click on the Finance option in the sidebar and then click on Transactions. ****Click on the Journal Voucher option.
+Click on the Finance option in the sidebar and then click on Transactions. _\*\*_Click on the Journal Voucher option.
 
 ![](https://lh4.googleusercontent.com/zWO-U2ifwwBLkRT_ldCGxKlMsnDKppBYAMOr5cnlJrjsdifqssmcnz6KJu62cpH6hAVD6aq0omadiso1BUh70I4Pbp0EJSSk-r-TRoVAftXSVFUK7D3-89VxnlName4l-e8ddsJs)
 
@@ -336,7 +336,7 @@ The voucher approver user role is responsible for approving vouchers.
 
 To approve vouchers
 
-Navigate to Finance &gt; Transactions &gt; View Voucher option in the sidebar. ****Enter the Voucher Number to fetch a voucher directly. Select the Voucher Type and Voucher Name.
+Navigate to Finance &gt; Transactions &gt; View Voucher option in the sidebar. _\*\*_Enter the Voucher Number to fetch a voucher directly. Select the Voucher Type and Voucher Name.
 
 ![](https://lh6.googleusercontent.com/LFNKgIvIZxeMLxFf0G9xc4mZ2wS7gYY1Rcx63j5ux9Ljybf3nBaJ1QUM9W4ZU3QcF3rqc8QcJoOvCp1b7MEjym0OXSNWpX7NYIcjzP9wVuMPhktgEBzsVSLcqIA6B8FpqlKzNCex)
 
@@ -356,7 +356,7 @@ Navigate to Finance &gt; Transactions &gt; Payments &gt; Bill Payment option in 
 
 ![](https://lh4.googleusercontent.com/kLedh24X62wHa7brMKkdKYhEJnbqOIrCJfL7O2LYYsROMvfIeHH52UnWY5qUpeaCaaOHpP1So1jHgblgvxxAq_jTIE3e4cIu8UQl9uDvY5lKO_UdZD4NKF4KT4TuYoiMPsnUPdqB)
 
-Enter the applicable search parameters to find the bill for making payment. Use any of the following parameters to search for the bills - Bill Number, Bill Date From, Bill Date To, Expenditure Type, Fund \(mandatory\), Fund Source, Scheme, Sub-Scheme, Department or Function. 
+Enter the applicable search parameters to find the bill for making payment. Use any of the following parameters to search for the bills - Bill Number, Bill Date From, Bill Date To, Expenditure Type, Fund \(mandatory\), Fund Source, Scheme, Sub-Scheme, Department or Function.
 
 Click on the Search button to view the list of bills. Click on the Contractor Bill, Supplier Bill, or Expense Bill tab to view the list of bills in listed categories.
 
@@ -378,7 +378,7 @@ The bill is processed for payment.
 
 ### Direct Bank Payments
 
-To make a direct bank payment 
+To make a direct bank payment
 
 Navigate to Finance &gt; Transactions &gt; Payments &gt; Direct Bank Payment option in the sidebar. Select the applicable Fund, Scheme, Sub Scheme, Fund Source, Department and Function detail.
 
@@ -398,7 +398,7 @@ Else, click on the Create and Approve button to process the payment.
 
 ### RTGS Assignment
 
-Bills can be assigned for RTGS payment. 
+Bills can be assigned for RTGS payment.
 
 To assign bills for RTGS payment
 
@@ -416,7 +416,7 @@ The system displays a success message. Click on the Generate PDF or Generate xls
 
 To assign a cheque for the payment
 
-Navigate to Finance &gt; Transactions &gt; Payments &gt; Cheque Assignment menu option in the sidebar.  Enter the Payment Voucher Date From and Payment Voucher Date To details to search for vouchers assigned for cheque payment.
+Navigate to Finance &gt; Transactions &gt; Payments &gt; Cheque Assignment menu option in the sidebar. Enter the Payment Voucher Date From and Payment Voucher Date To details to search for vouchers assigned for cheque payment.
 
 ![](../../../.gitbook/assets/image%20%2899%29.png)
 
@@ -426,7 +426,7 @@ Check the option Re-assign Surrender Cheque if applicable. Click on the Search b
 
 ![](https://lh6.googleusercontent.com/MtQWKDD6n7s740-zSCTcIkLNbnNWN7JAXSHNNRJFrBIWSibliVRp-FfbRTIgIFSlOlthxFAWehopM8dA6PozigBjqPjPTkEhxvik5SMSwmHDFpdYtyURm4h80p6WctA4zbQHlDXr9fz0IWpgAQ)
 
-Select the voucher for which cheques need to be assigned. Enter in the Cheque Number. The cheque number should be as per the cheque Masters. Select the applicable Cheque Issued Department and then click on Assign Cheque. 
+Select the voucher for which cheques need to be assigned. Enter in the Cheque Number. The cheque number should be as per the cheque Masters. Select the applicable Cheque Issued Department and then click on Assign Cheque.
 
 The cheque is assigned for payment and the system displays a success message.
 
@@ -442,7 +442,7 @@ Select the applicable Bank, Bank Account, and Department. Click on the Search bu
 
 ![](https://lh5.googleusercontent.com/AjdAU-oOuRPR85cY_jMGv4QIUgAfYX6kRfW_3J_80GY8DEaK894iakb72fWhI4orLIWS4By2AVs41c8_tIwMVL41s2SJ-9wTbCA8TuN4hQ1Rw5DyiGjOc9n_yDnSdgCkID6RVwFH3zqiCwfmPA)
 
-Select the record for which the cheque has to be surrendered. State the reason for surrender. 
+Select the record for which the cheque has to be surrendered. State the reason for surrender.
 
 ![](https://lh3.googleusercontent.com/tVe0ugeni2NPrFRUNLNcW9ADPeY_-JRpBXeFePIUj4XYqi7i6ldn5AbmBgzCJu6SbkXtWQIZ6hBQBtYH-dQEsCoNEK9QTcHhwNWFvhgfHUb_-3yd17j7J0xeo_BqTjE4SpJsuIB3k5ND2Xci7Q)
 
@@ -480,9 +480,9 @@ The system displays an acknowledgement page on success.
 
 ### Deductions Payment
 
-To process deductions payment 
+To process deductions payment
 
-Navigate to Finance &gt; Transactions &gt; Deductions &gt; Deduction Payment option in the sidebar. 
+Navigate to Finance &gt; Transactions &gt; Deductions &gt; Deduction Payment option in the sidebar.
 
 Select the applicable Recovery Code.
 
@@ -504,7 +504,7 @@ Any deduction payments that are sent for verification and approval will be liste
 
 To process deductions cheque assignment
 
-Navigate to Finance &gt; Transactions &gt; Deductions &gt; Deduction Payment option in the sidebar. Enter the Payment Voucher Date From and Payment Voucher Date To details to fetch vouchers for the listed period. Enter Payment Voucher No. Select the applicable Recovery Code. 
+Navigate to Finance &gt; Transactions &gt; Deductions &gt; Deduction Payment option in the sidebar. Enter the Payment Voucher Date From and Payment Voucher Date To details to fetch vouchers for the listed period. Enter Payment Voucher No. Select the applicable Recovery Code.
 
 Select applicable Fund, Fund Source, Department, and Function details to get the bills from which there are deductions for the selected recovery code. Select the applicable Payee Bank-Branch and Payee Bank Account details.
 
@@ -518,8 +518,7 @@ Click on Search to list the payment vouchers for assigning cheques. Select the p
 
 ![](https://lh4.googleusercontent.com/a3RWe3rDfKf4O17qk5TqTb6pkgBS-0PeOaGxAFVOrK6KYZIP1FXSUsoD7kEniZ8G1DquRH8AGmUo-SDC0D4RZxfK6fU6YnpkapdzF4JA4JNDEc9DD4wQYJCYHfovnwAbAbrRjdb_sZ-uJhZmVw)
 
-The system displays an acknowledgement page with a link to download the Bank Advice.  
-
+The system displays an acknowledgement page with a link to download the Bank Advice.
 
 ### Deductions RTGS Assignment
 
@@ -569,10 +568,5 @@ Enter Voucher Date From and Voucher Date To details to fetch vouchers for the sp
 
 Click on the relevant Voucher Number to open the voucher. Click on the Approve button to approve the voucher or the Reject button to reject the voucher. Provide the reason for rejection in the Comments section.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
-  
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

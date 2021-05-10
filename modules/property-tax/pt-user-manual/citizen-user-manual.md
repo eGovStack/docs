@@ -271,7 +271,5 @@ Click on the **Edit Property** button available at the bottom of the page. Chang
 
 ![](https://lh6.googleusercontent.com/XtsThM4bEc0a60zbxxolazcaz12HF8-_b6LnFhL283sUwkbzlZhtvfAehFSdOlvrebWfbr1sqcq4-haLIRjjYbivtc14pFNMDwfzuXguuiRTJOoo86Ok-ic6P6RsZm917gPXA-u5)
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

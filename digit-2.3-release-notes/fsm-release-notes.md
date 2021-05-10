@@ -4,13 +4,13 @@ description: FSM module release details
 
 # FSM Release Notes
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 Emptying of septic tank / Pit \(Desludging\) request can be created by the citizen online which will be processed by the ULB. The processed request will then be assigned to a particular desludging operator post payment of desludging charges by the citizen.
 
 The desludging operator then completes the emptying task on the ground and transports the faecal sludge to the designated septage treatment plant where a plan operator updates the vehicle log and septage dumped at the plant.
 
-### Release Highlights <a id="Release-Highlights"></a>
+## Release Highlights <a id="Release-Highlights"></a>
 
 1. Citizen
    1. Create Emptying of septic tank/pit application
@@ -30,7 +30,7 @@ The desludging operator then completes the emptying task on the ground and trans
 4. FSTP Operator
    1. Update vehicle log
 
-### Release Features <a id="Release-Features"></a>
+## Release Features <a id="Release-Features"></a>
 
 | **Key Feature** | **Description** |
 | :--- | :--- |
@@ -44,19 +44,19 @@ The desludging operator then completes the emptying task on the ground and trans
 | DSO Assign vehicle and completes the request | DSO can tag a vehicle to a request which is assigned to him, process and update the volume of septage collected at the site and complete the request. |
 | Update Vehicle log by FSTP / SeTP Operator | The septage which is collected at the site would be transported to the Septage treatment plant where the plant operator can update the vehicle entry time to the plant and the volume of septage dumped at the plant. |
 
-### Known Issues <a id="Known-Issues"></a>
+## Known Issues <a id="Known-Issues"></a>
 
- None
+None
 
-### Upcoming Release Features <a id="Upcoming-Release-Features"></a>
+## Upcoming Release Features <a id="Upcoming-Release-Features"></a>
 
 * Dashboard and Reports
 
-### Reference Doc Links <a id="Reference-Doc-Links"></a>
+## Reference Doc Links <a id="Reference-Doc-Links"></a>
 
 | **Doc Links** | **Description** |
 | :--- | :--- |
-|  [ Help Manual](../modules/faecal-sludge-management-fsm/fsm-user-manual/) | User manual for citizens, DSO, SeTPO, and Employee |
+| [ Help Manual](../modules/faecal-sludge-management-fsm/fsm-user-manual/) | User manual for citizens, DSO, SeTPO, and Employee |
 
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
