@@ -10,11 +10,11 @@ Commitment and transparency are deeply ingrained values defining our product dev
 
 | **Theme** | **Description** |
 | :--- | :--- |
-| **Promote Urban Mission** | Product feature enhancements and concentrated focus on increasing adoption |
-| **Champion Product Innovation** | New products to address the sanitation issues facing urban areas and public finance management solutions |
-| **Facilitate Ease of Use and Access to Citizens** | Create integrated user experience with a key focus on flexibility, accessibility, quality of service; Optimized user experience |
-| **Enhance Data Privacy and Security** | Adopt improvements on the platforms that will address some key issues like privacy, security as well as adding new capabilities like GIS |
-| **Support Product Research** | Identify high-impact research and product innovation areas through validation, understanding the domain, and processes involved |
+| **Deepen the Impact of Urban Missions** | Product feature enhancements and concentrated focus on increasing adoption |
+| **Champion New Societal Missions** | New products to address the sanitation issues facing urban areas and public finance management solutions |
+| **Improve Usability and Accessibility** | Create integrated user experience with a key focus on flexibility, accessibility, quality of service; Optimized user experience |
+| **Enhance Platform Capabilities** | Adopt improvements on the platforms that will address some key issues like privacy, security as well as adding new capabilities like GIS |
+| **Drive Product Research and Innovation** | Identify high-impact research and product innovation areas through validation, understanding the domain, and processes involved |
 
 ## Quarter 1 - April to June 2021
 
