@@ -19,7 +19,7 @@ The Citizen role can -
 
 The File Complaints option allows citizens to register their complaints.
 
-![](../../../.gitbook/assets/pgr-apply.gif)
+![How to file complaints](../../../.gitbook/assets/pgr-apply.gif)
 
 
 
