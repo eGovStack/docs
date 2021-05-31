@@ -59,6 +59,10 @@ Enter any additional information about the complaint in the **Comments** section
 
 The PGR module enables the citizens to give their feedback on resolved complaints.
 
+![How to give your feedback on resolved complaints](../../../.gitbook/assets/pgr-rate-screenr2.gif)
+
+
+
 To rate resolved complaints navigate to the **Complaints** menu option in the sidebar. Click on the **My Complaints** tab. Scroll down to the complaint you want to rate. You can rate only complaints marked as Closed. Scroll down to the **Complaint Timeline** section.
 
 ![](https://lh4.googleusercontent.com/YrDkHeVMyf8WdXykJ8oEkQbX43nhn4u2g7Zvmfh1FXNvCHJrkj2eS6bCgeOL1ZC5vRM9YN6Z3XmYu4BWd55GaUI854VkF_09bDOjjkoIvR5nwn7Swl4g7zI4tHVEHXPxzYRIIREb)

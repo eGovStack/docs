@@ -109,7 +109,7 @@ Any port numbers marked with \* are overridable, so you will need to ensure any 
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left">Kubernetes as a managed service or VMs to provision Kubernetes</td>
+      <td style="text-align:left">Kubernetes as a managed service or on-prem VMs to provision Kubernetes</td>
       <td
       style="text-align:left">
         <p>Managed Kubernetes service with HA/DRS</p>
@@ -250,6 +250,18 @@ Any port numbers marked with \* are overridable, so you will need to ensure any 
       <td style="text-align:left">NIC managed (Or) SDC managed SSL certificate per URL</td>
       <td style="text-align:left">2 URLs per env</td>
       <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">SMS Gateway</td>
+      <td style="text-align:left">Transactional SMS/OTP</td>
+      <td style="text-align:left">per env</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">GMap Key</td>
+      <td style="text-align:left">For Location API, GeoCode API</td>
+      <td style="text-align:left">Per Tenant</td>
+      <td style="text-align:left">for users to select address from the map</td>
     </tr>
   </tbody>
 </table>
