@@ -910,7 +910,7 @@ Setup the locality Search query in the [localitySearcher.yml](https://github.com
 
 ### Database Schema <a id="Database-Schema"></a>
 
-![](../../../../.gitbook/assets/image-20200729-065812.png)
+![](../../../../.gitbook/assets/image%20%28106%29.png)
 
 ## Postman Links <a id="Postman-Links"></a>
 
