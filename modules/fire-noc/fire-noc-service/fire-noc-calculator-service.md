@@ -2,7 +2,7 @@
 
 ## Overview
 
-Fire-Noc calculator service is used to calculate the fire noc charges for the building based on the billing slab defined in the system. This service allows an employee with SUPERUSER role to create the billing slab with different combination of the height of the building, built_-_up area, plot size, number of floors etc.
+Fire-Noc calculator service is used to calculate the fire noc charges for the building based on the billing slab defined in the system. This service allows an employee with SUPERUSER role to create the billing slab with different combination of the height of the building, built\_-\_up area, plot size, number of floors etc.
 
 ## Pre-requisites
 
@@ -70,7 +70,7 @@ TBD
 
 #### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
 | API Swagger Contract | [Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/firenoc-calculator/config/docs/contract/fire_noc_calculation_service.yaml#!/) |
 | Fire Noc Service Document | [Fire Noc Service](./) |
@@ -79,11 +79,11 @@ TBD
 
 | Title | **Link** |
 | :--- | :--- |
-| firenoc-calculator/billingslab/\_create |  [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
-| firenoc-calculator/billingslab/\_search |  [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
-| firenoc-calculator/billingslab/\_update |  [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
-| firenoc-calculator/v1/\_calculate |  [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
-| firenoc-calculator/v1/\_getbill |  [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
+| firenoc-calculator/billingslab/\_create | [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
+| firenoc-calculator/billingslab/\_search | [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
+| firenoc-calculator/billingslab/\_update | [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
+| firenoc-calculator/v1/\_calculate | [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
+| firenoc-calculator/v1/\_getbill | [https://www.getpostman.com/collections/1906fad8a6860fbadd55](https://www.getpostman.com/collections/1906fad8a6860fbadd55) |
 
 _\(Note: All the API’s are in the same postman collection therefore same link is added in each row\)_
 

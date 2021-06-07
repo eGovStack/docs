@@ -34,9 +34,9 @@ XState chatbot can be integrated with any other module to improve the ease of se
 
 #### Integration of New Whatsapp Provider <a id="Integration-of-New-Whatsapp-Provider-:"></a>
 
-Whatsapp provider is a third-party service that works in the middle of a user's WhatsApp client and  XState-Chatbot server. All messages coming/going to/from user pass through WhatsApp provider. Chatbot calls WhatsApp provider to send messages to the user. When a user responds with any WhatsApp message the WhatsApp provider calls Chatbot service’s configured endpoint with details ex:- user sent message, sender’s number etc.
+Whatsapp provider is a third-party service that works in the middle of a user's WhatsApp client and XState-Chatbot server. All messages coming/going to/from user pass through WhatsApp provider. Chatbot calls WhatsApp provider to send messages to the user. When a user responds with any WhatsApp message the WhatsApp provider calls Chatbot service’s configured endpoint with details ex:- user sent message, sender’s number etc.
 
- If any new WhatsApp provider is to be used with a chatbot, code must be written to convert the provider’s incoming messages to the format that the chatbot understands and also final output from the chatbot should be converted to WhatsApp provider’s API request format.
+If any new WhatsApp provider is to be used with a chatbot, code must be written to convert the provider’s incoming messages to the format that the chatbot understands and also final output from the chatbot should be converted to WhatsApp provider’s API request format.
 
 Currently, the XState-Chatbot service is using ValueFirst as the WhatsApp Provider. This will require provider-specific environment variable to be configured. If the provider changes then, all these environment variable will also change. Few of those environment variables are stored as secrets, so these values need to be configured in _env_-secrets.yaml.
 
@@ -88,29 +88,29 @@ _\(Note: Both the list should not be empty, it must contain at least one element
 
 #### Integration of Bill Payment and Receipt Search feature in Xstate-Chatbot <a id="Integration-of-Bill-Payment-and-Receipt-Search-feature-in-Xstate-Chatbot:"></a>
 
-The integration of the Bill payment and receipt search feature with a chatbot can be enabled and disabled by making changes in this [file](https://github.com/egovernments/core-services/blob/xstate-chatbot/xstate-chatbot/nodejs/src/machine/service/service-loader.js). By exporting the respective bill service and receipt service file, the payment and receipt search feature can be enabled and vice versa.  
-  
+The integration of the Bill payment and receipt search feature with a chatbot can be enabled and disabled by making changes in this [file](https://github.com/egovernments/core-services/blob/xstate-chatbot/xstate-chatbot/nodejs/src/machine/service/service-loader.js). By exporting the respective bill service and receipt service file, the payment and receipt search feature can be enabled and vice versa.
+
 **Configuration of module for Bill payment and Receipt search**
 
 To configure the list of modules to appear as an option for payment and receipt, Add the module business service code in the list present in the [environment](https://github.com/egovernments/eGov-infraOps/blob/master/helm/environments/qa.yaml#L206) file.
 
 **For example:**  
- If `bill-supported-modules: "WS, PT, TL`"  
- then Water and Sewerage, Property, Trade license module would appear for bill payment and  
- receipt search.
+If `bill-supported-modules: "WS, PT, TL`"  
+then Water and Sewerage, Property, Trade license module would appear for bill payment and  
+receipt search.
 
-Also add the message bundle, validation and service code for locality searcher in [egov-bill](https://github.com/egovernments/core-services/blob/xstate-chatbot/xstate-chatbot/nodejs/src/machine/service/egov-bill.js) and [egov-receipt](https://github.com/egovernments/core-services/blob/xstate-chatbot/xstate-chatbot/nodejs/src/machine/service/egov-receipts.js) file.  
-  
+Also add the message bundle, validation and service code for locality searcher in [egov-bill](https://github.com/egovernments/core-services/blob/xstate-chatbot/xstate-chatbot/nodejs/src/machine/service/egov-bill.js) and [egov-receipt](https://github.com/egovernments/core-services/blob/xstate-chatbot/xstate-chatbot/nodejs/src/machine/service/egov-receipts.js) file.
+
 **Configuration of Xstate-Chatbot localisation message**
 
 XState-Chatbot does not have any MDMS data, nor does it store any messages in localization-service. If any message needs to be modified, the changes will have to be made in the source code, then build the new docker image and deploy it.  
-For Configuration details of the XState-chatbot localisation message please refer to the links in Reference Docs.  
-  
+For Configuration details of the XState-chatbot localisation message please refer to the links in Reference Docs.
+
 The table below contains the details about some environment variables use in XState-Chatbot service which is present in this [file](https://github.com/egovernments/core-services/blob/xstate-chatbot/xstate-chatbot/nodejs/src/env-variables.js):
 
 | **Environment Variables** | **Description** |
 | :--- | :--- |
-| WHATSAPP\_BUSINESS\_NUMBER |  The mobile number to be used on the server |
+| WHATSAPP\_BUSINESS\_NUMBER | The mobile number to be used on the server |
 | VALUEFIRST\_USERNAME | Username for a  configured number for sending messages to the user through WhatsApp provider API calls |
 | VALUEFIRST\_PASSWORD | Password for a configured number for sending messages to the user through WhatsApp provider API calls |
 | GOOGLE\_MAPS\_API\_KEY | Maps API key to access geocoding feature |
@@ -123,7 +123,7 @@ The table below contains the details about some environment variables use in XSt
 | COMPLAINT\_SEARCH\_LIMIT | Limit for showing a maximum number of complaints on search. |
 | BILL\_SUPPORTED\_MODULES | Contains the list of modules to be used for bill payment and receipts search. |
 | INFORMATION\_IMAGE\_FILESTORE\_ID | Contains the filestoreid of informational image, which shows how to share the user current location. |
-| USER\_SERVICE\_HARDCODED\_PASSWORD | This variable contains the fixed value of login password and OTP. This value has to be configured in _env_-secrets.yaml.  |
+| USER\_SERVICE\_HARDCODED\_PASSWORD | This variable contains the fixed value of login password and OTP. This value has to be configured in _env_-secrets.yaml. |
 
 #### Configuration of Telemetry File <a id="Configuration-of-Telemetry-File"></a>
 

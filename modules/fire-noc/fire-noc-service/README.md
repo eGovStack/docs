@@ -65,7 +65,7 @@ Firenoc service makes calls to egov-mdms-service to fetch required masters. Thes
 | [PropertyType](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/firenoc/PropertyType.json) | This master contains the list of property type. |
 | [FireNocULBConstats](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/amritsar/firenoc/FireNocULBConstats.json) | This master contains the list of minimum charges of each application type. |
 
-Create businessService \(workflow configuration\) using the  __/businessservice/\_create. Following is the product configuration for firenoc service
+Create businessService \(workflow configuration\) using the \_\_/businessservice/\_create. Following is the product configuration for firenoc service
 
 ```text
 "BusinessServices": [
@@ -324,7 +324,7 @@ Create businessService \(workflow configuration\) using the  __/businessservice/
               }
           ]
       },
-      
+
       {
           "sla": null,
           "state": "CITIZENACTIONREQUIRED-DV",
@@ -352,9 +352,9 @@ Create businessService \(workflow configuration\) using the  __/businessservice/
 
 **Persister Config**
 
-[https://github.com/egovernments/configs/blob/DEV/egov-persister/firenoc\_persiter.yaml](https://github.com/egovernments/configs/blob/DEV/egov-persister/firenoc_persiter.yaml)  
+[https://github.com/egovernments/configs/blob/DEV/egov-persister/firenoc\_persiter.yaml](https://github.com/egovernments/configs/blob/DEV/egov-persister/firenoc_persiter.yaml)
 
-**Id Gen Config** 
+**Id Gen Config**
 
 [https://github.com/egovernments/egov-services/blob/noc/core/egov-idgen/src/main/resources/db/migration/main/V20190517152600\_\_create\_fn\_sequence\_ddl.sql](https://github.com/egovernments/egov-services/blob/noc/core/egov-idgen/src/main/resources/db/migration/main/V20190517152600__create_fn_sequence_ddl.sql)
 
@@ -410,7 +410,7 @@ To Do
 
 #### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
 | API Swagger Documentation | [Swagger Documentation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/firenoc-services/docs/contract/fire_noc_contract.yaml#!/) |
 | Firer Noc Calculator Service | [Fire Noc Calculator Service](https://digit-discuss.atlassian.net/l/c/28H8m1B9) |
@@ -419,9 +419,9 @@ To Do
 
 | Title | **Link** |
 | :--- | :--- |
-| _firenoc-services/v1/\_create_ |  [https://www.getpostman.com/collections/093e28bb4e341770b6c7](https://www.getpostman.com/collections/093e28bb4e341770b6c7) |
-| _firenoc-services/v1/\_search_ |  [https://www.getpostman.com/collections/093e28bb4e341770b6c7](https://www.getpostman.com/collections/093e28bb4e341770b6c7) |
-| _firenoc-services/v1/\_update_ |  [https://www.getpostman.com/collections/093e28bb4e341770b6c7](https://www.getpostman.com/collections/093e28bb4e341770b6c7) |
+| _firenoc-services/v1/\_create_ | [https://www.getpostman.com/collections/093e28bb4e341770b6c7](https://www.getpostman.com/collections/093e28bb4e341770b6c7) |
+| _firenoc-services/v1/\_search_ | [https://www.getpostman.com/collections/093e28bb4e341770b6c7](https://www.getpostman.com/collections/093e28bb4e341770b6c7) |
+| _firenoc-services/v1/\_update_ | [https://www.getpostman.com/collections/093e28bb4e341770b6c7](https://www.getpostman.com/collections/093e28bb4e341770b6c7) |
 
 _\(Note: All the API’s are in the same postman collection therefore same link is added in each row\)_
 

@@ -1,12 +1,12 @@
 # System Users
 
-### Introduction
+## Introduction
 
 A system user is a person who uses the application service. A user often has a user account and is identified to the system by a username. A user is a person who accesses a particular application to perform a set of actions.
 
 Each user has a certain number of set tasks, the user would be allowed to perform a task by assigning particular roles which are Super Admin, Trade License Approver, Data Entry Admin and Trade License document verifier etc.
 
-### Data Table
+## Data Table
 
 | Sl No. | Name\* | Mobile No\* | Father/Husband's Name \* | Gender \* | Date of Birth\* | Email | Correspondence Address \* | ULB\* | Role\* | Employment Type \* | Current Assignment | Status \* | Hierarchy \* | Boundary Type \* | Boundary \* | Assigned from Date\* | Department\* | Designation\* |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -17,9 +17,9 @@ Each user has a certain number of set tasks, the user would be allowed to perfor
 Data given in the table is sample data for reference.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr No | Column Name | Data Type | Data Size | Is Mandatory? | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -42,7 +42,7 @@ Data given in the table is sample data for reference.
 | 17 | Department | Text | 256 | Yes | The Department indicates the particular department to which his/her role is assigned |
 | 18 | Designation | Text | 256 | Yes | The designation indicates a particular designation is assigned to his/her role |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -50,11 +50,11 @@ Data given in the table is sample data for reference.
 4. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 5. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed once the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -62,7 +62,7 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/502203140/Checklist) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -103,13 +103,11 @@ This checklist covers the activities which are specific to the entity.
   </tbody>
 </table>
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/configuration-data-template-system-user.xlsx" caption="Configuration Data Template " %}
 
 {% file src="../../../../.gitbook/assets/sample-confugration-data-system-user.xlsx" caption="Sample Data " %}
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

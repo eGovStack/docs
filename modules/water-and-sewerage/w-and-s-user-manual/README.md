@@ -4,8 +4,6 @@ description: An illustrative guide to using Water & Sewerage module
 
 # W&S User Manual
 
-
-
 The W&S module allows citizens to apply for new connections and pay bills online. For employees, this module enables automated processing of new connection requests, editing existing connection details, generating water bills, and facilitating online collection of bill payments.
 
 ## Features and applications
@@ -108,7 +106,5 @@ This section guides you through the details of using the \[module name\] module 
 4. [Field Inspector \(FI\)](w-and-s-employee-user-manual.md#field-inspectors-fi)
 5. [Approver](w-and-s-employee-user-manual.md#approver)
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

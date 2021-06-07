@@ -28,29 +28,24 @@ Join the virtual DIGIT Technical Training sessions to learn in-depth about the D
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p></p>
         <p>21st April 2021</p>
         <p>(11.45 am to 1.30 pm)</p>
       </td>
       <td style="text-align:left"><b>Overview of DIGIT Implementation</b>
       </td>
       <td style="text-align:left">
-        <p></p>
         <ul>
-          <li><a href="./">eGov &amp; DIGIT Overview </a>
+          <li><a href="./">eGov &amp; DIGIT Overview</a>
           </li>
-          <li><a href="./">Program Governance </a>
+          <li><a href="./">Program Governance</a>
           </li>
-          <li><a href="devops/setup-digit/tech-enablement-training-essential-skills-and-pre-requisites.md">People Pre-requisites</a> 
+          <li><a href="devops/setup-digit/tech-enablement-training-essential-skills-and-pre-requisites.md">People Pre-requisites</a>
           </li>
-          <li><a href="devops/setup-digit/cluster-requirements.md">Infra Pre-requisites </a>
+          <li><a href="devops/setup-digit/cluster-requirements.md">Infra Pre-requisites</a>
           </li>
         </ul>
       </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>Leadership/ Program and Tech Management</p>
-      </td>
+      <td style="text-align:left">Leadership/ Program and Tech Management</td>
       <td style="text-align:left"><a href="https://us02web.zoom.us/webinar/register/WN_fLPBIfwlSIWLlgrjHR3uDg">Register</a>
       </td>
     </tr>
@@ -62,11 +57,10 @@ Join the virtual DIGIT Technical Training sessions to learn in-depth about the D
       <td style="text-align:left">
         <p><b>DIGIT Platform Overview</b>
         </p>
-        <p><b>Session 1 </b>
+        <p><b>Session 1</b>
         </p>
       </td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="architecture.md">DIGIT Architecture</a>
           </li>
@@ -76,10 +70,7 @@ Join the virtual DIGIT Technical Training sessions to learn in-depth about the D
           </li>
         </ul>
       </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>Architects / Tech Leads</p>
-      </td>
+      <td style="text-align:left">Architects / Tech Leads</td>
       <td style="text-align:left"><a href="https://us02web.zoom.us/webinar/register/WN_3vdqSW0_TGSmQbTWYExutA">Register</a>
       </td>
     </tr>
@@ -95,7 +86,6 @@ Join the virtual DIGIT Technical Training sessions to learn in-depth about the D
         </p>
       </td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="configure-digit/setting-up-digit/">Overview</a>
           </li>
@@ -107,11 +97,7 @@ Join the virtual DIGIT Technical Training sessions to learn in-depth about the D
           </li>
         </ul>
       </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>DevOps / Architects / Tech Leads</p>
-        <p></p>
-      </td>
+      <td style="text-align:left">DevOps / Architects / Tech Leads</td>
       <td style="text-align:left"><a href="https://us02web.zoom.us/webinar/register/WN_Un8AaGLETgaB2oeRJkPvaQ">Register</a>
       </td>
     </tr>
@@ -127,7 +113,6 @@ Join the virtual DIGIT Technical Training sessions to learn in-depth about the D
         </p>
       </td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="modules/mcollect-mcs/">MCS + eChallans</a>
           </li>
@@ -151,7 +136,6 @@ Join the virtual DIGIT Technical Training sessions to learn in-depth about the D
         </p>
       </td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="modules/online-building-plan-approval-system-obpas/">OBPAS</a>
           </li>
@@ -168,22 +152,15 @@ Join the virtual DIGIT Technical Training sessions to learn in-depth about the D
         <p>23rd April 2021</p>
         <p>(11.00 am to 1.00 pm)</p>
       </td>
-      <td style="text-align:left">
-        <p></p>
-        <p><b>DIGIT Extension / Customisation Session 1</b>
-        </p>
+      <td style="text-align:left"><b>DIGIT Extension / Customisation Session 1</b>
       </td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="customizing-digit/">Customization</a> &amp; <a href="configure-digit/">Configuration</a>
           </li>
         </ul>
       </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>Tech Leads / Senior Developers</p>
-      </td>
+      <td style="text-align:left">Tech Leads / Senior Developers</td>
       <td style="text-align:left"><a href="https://us02web.zoom.us/webinar/register/WN_zC211mGWQVq082P1CLynyg">Register</a>
       </td>
     </tr>
@@ -199,15 +176,10 @@ Join the virtual DIGIT Technical Training sessions to learn in-depth about the D
           <li>Extension case study</li>
         </ul>
       </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>Architects / Tech Leads / Senior Developers</p>
-      </td>
+      <td style="text-align:left">Architects / Tech Leads / Senior Developers</td>
       <td style="text-align:left"><a href="https://us02web.zoom.us/webinar/register/WN_rCkfVXd_Q5uxDEerJi6YXA">Register</a>
       </td>
     </tr>
   </tbody>
 </table>
-
-
 

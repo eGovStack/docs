@@ -6,7 +6,7 @@ description: Finance module streamlines municipal accounting and transaction pro
 
 ## About DIGIT-Finance
 
-DIGIT-Financial Module \(FM\) is a key module in web-based integrated ERP software that enables municipalities to create and manage Financial Transactions like Budget, Revenue Demand, Receipt, Advances, Deposits, Bills, Payments, Asset Creation\(Capitalization\), Fund Transfer and also Reconciliations and Reporting. 
+DIGIT-Financial Module \(FM\) is a key module in web-based integrated ERP software that enables municipalities to create and manage Financial Transactions like Budget, Revenue Demand, Receipt, Advances, Deposits, Bills, Payments, Asset Creation\(Capitalization\), Fund Transfer and also Reconciliations and Reporting.
 
 FM enables municipalities to maintain financial records of ULBs following established procedures and practices. The module follows a fund based double-entry accrual accounting system designed to synch with the standards outlined in the National Municipal Accounting Manual.
 
@@ -51,7 +51,5 @@ This section contains all docs and information required to understand the FM mod
 
 Reach out to us through any of the below-mentioned contact channels for any assistance or additional information on DIGIT-Finance module deployment.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

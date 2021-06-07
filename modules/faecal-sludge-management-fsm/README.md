@@ -6,7 +6,7 @@ description: Online solution to desludging operations management
 
 ## About FSM
 
-The FSM module is a web-based system with application processing, user registrations, seamless workflows, Management Information System and Decision Support System capabilities. Business Intelligence, Document Management Systems and Handheld Devices are some of the trending technologies that are envisioned in the implementation of DIGIT-FSM to make a marked difference in the functioning of ULB towards sanitation services. 
+The FSM module is a web-based system with application processing, user registrations, seamless workflows, Management Information System and Decision Support System capabilities. Business Intelligence, Document Management Systems and Handheld Devices are some of the trending technologies that are envisioned in the implementation of DIGIT-FSM to make a marked difference in the functioning of ULB towards sanitation services.
 
 ## Key Features
 
@@ -45,8 +45,5 @@ This section contains all docs and information required to understand the FSM mo
 
 Reach out to us through any of the below-mentioned contact channels for any assistance or additional information on FSM module deployment.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).  
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

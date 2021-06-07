@@ -1,6 +1,6 @@
 # W&S Implementation Guide
 
-## Section 1: Executive Summary  
+## Section 1: Executive Summary
 
 ### Overview of the Product
 
@@ -8,16 +8,15 @@ Access to clean and safe water is one of the basic needs of citizens. Each Urban
 
 ### Implementation Methodology for W&S
 
-For the offered product, the implementation process can be divided into six major distinctive stages. Each stage has predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision making for the overall success of the engagement. The whole implementation lifecycle is typical of 23-27 weeks for the State/UT keeping in mind the entry, and exit criteria defined at the beginning and end of each stage are met on time recommended.  
-
+For the offered product, the implementation process can be divided into six major distinctive stages. Each stage has predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision making for the overall success of the engagement. The whole implementation lifecycle is typical of 23-27 weeks for the State/UT keeping in mind the entry, and exit criteria defined at the beginning and end of each stage are met on time recommended.
 
 ![](https://lh6.googleusercontent.com/oTzTqSSRDKpFkpNzY9WL1gNp5X-I5LSRxIPs4LLZiyfp78EKyYJSDowUrkJC9X61ZlQ8UbbNr1r1mDHntUyxmMTfM9xd6P4Lmpm1hNQirB6lmWK-Vue6fHkDrx81jbgdUolVnYgx)
 
-Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One of the initiative requires scoping of the initiative and decide on the priorities for implementation by the State/UT implementation Team. In Stage Two, the W&S team is appointed and its processes are standardized. In Stage Three, the State/UT Team will work upon identifying and finding solutions to the significant gaps in the product offered w.r.t. to the need of the State/UT.  Configuration and customization of the product offered in the primary objective of stage four. This involves working on various aspects of UT-specific needs and incorporating them into the product suite offered. In Stage Four and Five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State/UT level\(Go Live\) from a couple of ULBs to pan State/UT coverage. In Stage Six of sustenance and ongoing improvement, key activities are adoption and governance tracking with the planning of ongoing sustenance. \(For details on implementation plan refer to Section-3\).
+Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One of the initiative requires scoping of the initiative and decide on the priorities for implementation by the State/UT implementation Team. In Stage Two, the W&S team is appointed and its processes are standardized. In Stage Three, the State/UT Team will work upon identifying and finding solutions to the significant gaps in the product offered w.r.t. to the need of the State/UT. Configuration and customization of the product offered in the primary objective of stage four. This involves working on various aspects of UT-specific needs and incorporating them into the product suite offered. In Stage Four and Five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State/UT level\(Go Live\) from a couple of ULBs to pan State/UT coverage. In Stage Six of sustenance and ongoing improvement, key activities are adoption and governance tracking with the planning of ongoing sustenance. \(For details on implementation plan refer to Section-3\).
 
 ### Critical Success Factors for implementation
 
-Implementation of Water and Sewerage \(W&S\) requires meticulous planning and close coordination between various stakeholders at the centre and State/UT level. The success of the initiative is dependent upon many factors like strong Program governance, availability of the trained resource,  financial planning, targeted implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to the urban centre. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Water and Sewerage Implementation System in the UT.
+Implementation of Water and Sewerage \(W&S\) requires meticulous planning and close coordination between various stakeholders at the centre and State/UT level. The success of the initiative is dependent upon many factors like strong Program governance, availability of the trained resource, financial planning, targeted implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to the urban centre. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Water and Sewerage Implementation System in the UT.
 
 ## Section 2: Water and Sewerage \(W&S\) Product - Overview
 
@@ -48,8 +47,7 @@ This module provides enables the following capabilities:
 
 ### Module 2: Application for new Water & Sewerage connection
 
-The system allows the Citizen / ULB user \(with an appropriate role in the system\) to apply for a  New Water/Sewerage connection. The application goes through an approval workflow before it is available for various transactions in the system. The workflow to be followed for a new water/sewerage connection is configurable. In the workflow, the ULB official will generate the estimation notice. Once the payment is made, a work order will be generated.  
-
+The system allows the Citizen / ULB user \(with an appropriate role in the system\) to apply for a New Water/Sewerage connection. The application goes through an approval workflow before it is available for various transactions in the system. The workflow to be followed for a new water/sewerage connection is configurable. In the workflow, the ULB official will generate the estimation notice. Once the payment is made, a work order will be generated.
 
 Every time there is a change in the status of an application, the citizen will be intimated through in-app notifications, SMS and email. The citizen and employee can view the history of the various states that an application has been in and the comments added by the employee in each state of the application.
 
@@ -64,9 +62,9 @@ Only employees from the W&S department will be able to access the feature, to se
 * From date
 * To date
 
-The search result contains the Application number, Consumer number, Owner name, Status, Due amount and the Pay now option. The Employee can make payment for a connection on the citizen’s behalf using the ‘Pay Now’ option. 
+The search result contains the Application number, Consumer number, Owner name, Status, Due amount and the Pay now option. The Employee can make payment for a connection on the citizen’s behalf using the ‘Pay Now’ option.
 
-Citizens can also search for their connection in the portal. They can search using the Owners mobile number, Property ID, Consumer number etc.  The search result yields, Owner’s Name, Address, Due amount and Pay option.
+Citizens can also search for their connection in the portal. They can search using the Owners mobile number, Property ID, Consumer number etc. The search result yields, Owner’s Name, Address, Due amount and Pay option.
 
 ### Module 4: Modifications to a Connection
 
@@ -94,11 +92,11 @@ The employee can edit meter status, current reading, date and consumption under 
 
 ### Module 6: Generate Demand
 
-In the system, there is a feature to generate demand under the billing section. Generate demand has a search feature in which the connections can be searched for which demand has been already generated. An employee can view, also edit those demands based on certain conditions. 
+In the system, there is a feature to generate demand under the billing section. Generate demand has a search feature in which the connections can be searched for which demand has been already generated. An employee can view, also edit those demands based on certain conditions.
 
-The system has the capability to configure the demand generation as an automatic or a manual process. In the automatic process, the demand generation for non-metered connections is automatically done periodically. For metered connection as soon as the employee enters the meter reading and clicks on ‘SAVE’, the demand is generated. 
+The system has the capability to configure the demand generation as an automatic or a manual process. In the automatic process, the demand generation for non-metered connections is automatically done periodically. For metered connection as soon as the employee enters the meter reading and clicks on ‘SAVE’, the demand is generated.
 
-Any success/ failure to generate demand triggers an automatic notification to the concerned ULB officials via email. Also, the demand generation cycle, demand generation date and officials who should receive the notifications can be configured. 
+Any success/ failure to generate demand triggers an automatic notification to the concerned ULB officials via email. Also, the demand generation cycle, demand generation date and officials who should receive the notifications can be configured.
 
 ### Module 7: Payments collection and Receipts
 
@@ -110,7 +108,7 @@ If the Water tap owner has got his own water source then the water tap owner can
 
 ### Module 9: Dashboards and Reports
 
-The state-level administrator can keep track of relevant metrics by using dashboards. Dashboards for W&S can be accessed by a state-level user under login. 
+The state-level administrator can keep track of relevant metrics by using dashboards. Dashboards for W&S can be accessed by a state-level user under login.
 
 The dashboard has these components:
 
@@ -140,9 +138,9 @@ The dashboard has these components:
 
 ## Water & Sewerage \(W&S\) Implementation Methodology for the State of xxx
 
-## Section 3 Water and Sewerage \(W&S\) Implementation Methodology 
+## Section 3 Water and Sewerage \(W&S\) Implementation Methodology
 
-This section provides an overview of the methodology for State-wide implementation of W&S. The Implementation of W&S is distributed across seven distinct stages. Each stage has predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision making for the overall success of the program. Details of each stage are defined in this section.  
+This section provides an overview of the methodology for State-wide implementation of W&S. The Implementation of W&S is distributed across seven distinct stages. Each stage has predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision making for the overall success of the program. Details of each stage are defined in this section.
 
 ![](https://lh4.googleusercontent.com/bN1Oeyb0rz8voxHH4pNMbAynq8W0uEBvQwtErV6ZvVaP5FfbNFoHrURdS8MYFfslR079BInVnPpWt10cAOJEh6fT_diHc_RUHu3YxlzFUPLggZ2AVwaAHsWvLNNCUWpryOuX8zbo)
 
@@ -195,7 +193,7 @@ There is a set of initial critical activities that are undertaken on receiving a
   </tbody>
 </table>
 
-#### Vision:  
+#### Vision:
 
 * Define the value proposition of the programme  for the state  
 * Define the  time frame within which the state needs to:
@@ -247,7 +245,7 @@ This stage envisages the in-person interaction of crucial State/UT officials and
           <li>State Baseline Data (As per the Module)</li>
           <li>Pilot ULBs Specific Product Data Configuration</li>
           <li>Agreement on Product Feature Priorities and high-level delivery timelines</li>
-          <li>Assessment of all on<b> </b>ground W&amp;S process along (1) citizen services/channels
+          <li>Assessment of all on ground W&amp;S process along (1) citizen services/channels
             around it (2) Integration with other Department process</li>
           <li>Finalize Program Success Metrics for Rollout and Adoption and Governance
             adhering to the vision of the program</li>
@@ -290,7 +288,7 @@ This stage envisages the in-person interaction of crucial State/UT officials and
 
 ### Stage 2 - Solution Design
 
-During the Solution design stage, key State/UT officials and members, who are subject matter experts, are expected to share State/UT acts and policies and help interpret the same for the System Integrator \(SI\) Team. This stage baselines the State/UT-specific product features in the Product Configuration report. 
+During the Solution design stage, key State/UT officials and members, who are subject matter experts, are expected to share State/UT acts and policies and help interpret the same for the System Integrator \(SI\) Team. This stage baselines the State/UT-specific product features in the Product Configuration report.
 
 <table>
   <thead>
@@ -490,10 +488,10 @@ During this stage, a demonstration of the product followed by a hand on session 
 
 ### Stage 5 – Rollout
 
-On successful Go-Live in the Pilot ULBs, after further configurations to stabilize the product, the solution will be rolled out to the rest of the ULBs in multiple phases. Guidance and support from the State/UT Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.  
+On successful Go-Live in the Pilot ULBs, after further configurations to stabilize the product, the solution will be rolled out to the rest of the ULBs in multiple phases. Guidance and support from the State/UT Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.
 
 {% hint style="info" %}
-Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches. 
+Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches.
 {% endhint %}
 
 <table>
@@ -556,7 +554,7 @@ Note: The rollout phase needs to be detailed out for iterative activities of onb
 Note: Only once all the stages are complete in one batch of the rollout of around 30 ULBs, the next batch begins. There are multiple phases of rollout. The second batch begins after the first batch has successfully fulfilled all the criteria of the Rollout Phase. Typical timelines for closure of rollout in each batch is 5-6 weeks \(in a batch of 30 ULBs\).
 {% endhint %}
 
-###  Stage 6 – Sustenance and Ongoing Improvement
+### Stage 6 – Sustenance and Ongoing Improvement
 
 The final stage consists of strategies to ensure the sustenance of the product in the State/UT. Systems are put in place to ensure the continuous tracking of data and provisions are made to improve the product if new data suggest.
 
@@ -620,12 +618,12 @@ Resource requirements for the W&S cell required to be formed by the UT
 | Resource Name | No. Of Resources |
 | :--- | :--- |
 | Project Head | 1 |
-| Domain Expert | 2  |
+| Domain Expert | 2 |
 | Nodal Officer | 2 |
 | MIS Expert | 4 |
 
 {% hint style="info" %}
-Note: Designation mentioned above are as per designations known driving W&S implementation at the State/UT level as explained below. \(These are the preferred figures in the case of  Domain Expert, 2 people are subject to availability\)
+Note: Designation mentioned above are as per designations known driving W&S implementation at the State/UT level as explained below. \(These are the preferred figures in the case of Domain Expert, 2 people are subject to availability\)
 {% endhint %}
 
 * Project Head: Is the Head of the W&S Cell who will drive the project from the State/UT Side
@@ -635,23 +633,23 @@ Note: Designation mentioned above are as per designations known driving W&S impl
 
 eGov Team: eGov Team is the technical partner of the project which will provide all necessary support to the State/UT concerning the implementation, Program Designing etc.
 
-System Integrator \(SI\) Team: SI Team will be responsible for the rollout of the initiative in the UT, providing end to end support to the State/UT w.r.t. The implementation of the products in the ULBs. 
+System Integrator \(SI\) Team: SI Team will be responsible for the rollout of the initiative in the UT, providing end to end support to the State/UT w.r.t. The implementation of the products in the ULBs.
 
 Guidelines to read the table are mentioned on the next page:
 
 * Execute - One who owns the accountability to complete the activity
 * Consult - One who may initiate, guide and in the process, handhold the execution of the activity
 
-| Stage 0 - Program Setup/ On-Boarding |   |   |
+| Stage 0 - Program Setup/ On-Boarding |  |  |
 | :--- | :--- | :--- |
-| **Task/Activity** | **eGov** | **State Leadership**  |
+| **Task/Activity** | **eGov** | **State Leadership** |
 | Appoint W&S Cell | Consult | Execute |
 | Finalize funding for the program | Consult | Execute |
 | Define state/UT-specific procurement process | Consult | Execute |
-| System Integrator\(SI\) Team sign-up/onboarding  | Consult | Execute |
+| System Integrator\(SI\) Team sign-up/onboarding | Consult | Execute |
 | Finalize Water and Sewerage Program Vision | Consult | Execute |
 
- Note: Stage 0 is where the W&S cell and SI team are formed, hence there are only two entities playing a role which is that of eGov and the state leadership. Once the W&S cell and SI team are finalized, their role begins in the following stages.
+Note: Stage 0 is where the W&S cell and SI team are formed, hence there are only two entities playing a role which is that of eGov and the state leadership. Once the W&S cell and SI team are finalized, their role begins in the following stages.
 
 <table>
   <thead>
@@ -748,55 +746,55 @@ Guidelines to read the table are mentioned on the next page:
   </tbody>
 </table>
 
-| Stage 2 - Solution Design |   |   |   |
+| Stage 2 - Solution Design |  |  |  |
 | :--- | :--- | :--- | :--- |
 | **Task/Activity** | **eGov** | **W&S Cell** | **SI Team** |
-| Standardisation of all W&S processes, if needed  |   | Consult | Execute |
-| Initiate policy change and Process Re-engineering, if needed based on identified improvements   | Consult | Execute | Consult |
-| Conduct Product familiarization workshop  | Consult | Consult | Execute |
-| Initiate collection of master data from pilot ULBs  |   | Consult | Execute |
-| Finalize data migration/collection/sync-up approach  |   | Consult | Execute |
-| Finalize data validation approach  |   | Execute | Consult |
-| Building capacity for basic understanding of resources and tools required to be used |   | Execute | Consult |
+| Standardisation of all W&S processes, if needed |  | Consult | Execute |
+| Initiate policy change and Process Re-engineering, if needed based on identified improvements | Consult | Execute | Consult |
+| Conduct Product familiarization workshop | Consult | Consult | Execute |
+| Initiate collection of master data from pilot ULBs |  | Consult | Execute |
+| Finalize data migration/collection/sync-up approach |  | Consult | Execute |
+| Finalize data validation approach |  | Execute | Consult |
+| Building capacity for basic understanding of resources and tools required to be used |  | Execute | Consult |
 
-| Stage 3 – Configuration & Customization |   |   |   |
+| Stage 3 – Configuration & Customization |  |  |  |
 | :--- | :--- | :--- | :--- |
 | **Task/Activity** | **eGov** | **W&S Cell** | **SI Team** |
-| Setting up development environments |   | Consult | Execute |
-| Development/customization of reports and dashboards |   | Consult | Execute |
-| Development/Integration of portal |   | Consult | Execute |
-| Third-Party Integrations \(Payment gateway, Handheld/pos device\) |   | Consult | Execute |
-| Updation of user manuals and other key documents |   | Consult | Execute |
-| Preparation & execution of Test Cases |   | Consult | Execute |
-| Setup monitoring, support & maintenance processes, tools and dashboards |   | Consult | Execute |
-| Data Migration for Pilot ULBs\(at least\) |   | Consult | Execute |
-| Training for basic understanding of resources and tools required to be used \(system-related\) |   | Execute | Consult |
-| Legacy Data Validation signoff from the state on Data Validation  |   | Execute | Consult |
+| Setting up development environments |  | Consult | Execute |
+| Development/customization of reports and dashboards |  | Consult | Execute |
+| Development/Integration of portal |  | Consult | Execute |
+| Third-Party Integrations \(Payment gateway, Handheld/pos device\) |  | Consult | Execute |
+| Updation of user manuals and other key documents |  | Consult | Execute |
+| Preparation & execution of Test Cases |  | Consult | Execute |
+| Setup monitoring, support & maintenance processes, tools and dashboards |  | Consult | Execute |
+| Data Migration for Pilot ULBs\(at least\) |  | Consult | Execute |
+| Training for basic understanding of resources and tools required to be used \(system-related\) |  | Execute | Consult |
+| Legacy Data Validation signoff from the state on Data Validation |  | Execute | Consult |
 
-| Stage 4 – UAT & Go Live |   |   |   |
+| Stage 4 – UAT & Go Live |  |  |  |
 | :--- | :--- | :--- | :--- |
 | **Task/Activity** | **eGov** | **W&S Cell** | **SI Team** |
 | UAT Environment Setup | Consult | Consult | Execute |
-| UAT Testing |   | Consult | Execute |
-| Issues/bug resolution |   | Consult | Execute |
-| UAT Sign off from Pilot ULBs |   | Execute | Consult |
-| Setting up the Production environment |   | Consult | Execute |
-| Setting up Support Center & processes \(Help Desk\) |   | Execute | Consult |
-| Training \(Users, trainer\) |   | Execute | Consult |
-| Training the Support Resources |   | Consult | Execute |
-| Marketing & promotion activities |   | Execute | Consult |
-| Go Live & launch event |   | Execute | Consult |
-| Setup of review and monitoring cadence/team Usage/ review/Dashboard/Field Visits  |   | Execute | Consult |
+| UAT Testing |  | Consult | Execute |
+| Issues/bug resolution |  | Consult | Execute |
+| UAT Sign off from Pilot ULBs |  | Execute | Consult |
+| Setting up the Production environment |  | Consult | Execute |
+| Setting up Support Center & processes \(Help Desk\) |  | Execute | Consult |
+| Training \(Users, trainer\) |  | Execute | Consult |
+| Training the Support Resources |  | Consult | Execute |
+| Marketing & promotion activities |  | Execute | Consult |
+| Go Live & launch event |  | Execute | Consult |
+| Setup of review and monitoring cadence/team Usage/ review/Dashboard/Field Visits |  | Execute | Consult |
 
-| Stage 5: Rollout |   |   |   |
+| Stage 5: Rollout |  |  |  |
 | :--- | :--- | :--- | :--- |
 | **Task/Activity** | **eGov** | **W&S Cell** | **SI Team** |
-| ULB configurations |   | Consult | Execute |
-| Phase wise Migration and verification of ULB data |   | Execute | Consult |
-| Logistics planning for training |   | Execute | Consult |
-| Training the Users at the district level |   | Execute | Consult |
+| ULB configurations |  | Consult | Execute |
+| Phase wise Migration and verification of ULB data |  | Execute | Consult |
+| Logistics planning for training |  | Execute | Consult |
+| Training the Users at the district level |  | Execute | Consult |
 | Roll Out - All Locations | Consult | Execute | Execute |
-| Stabilize product |   | Consult | Execute |
+| Stabilize product |  | Consult | Execute |
 
 <table>
   <thead>
@@ -967,17 +965,17 @@ Guidelines to read the table are mentioned on the next page:
 | :--- |
 
 
-Vision: Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets 
+Vision: Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets
 
-Project Plan: A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required. 
+Project Plan: A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required.
 
-System Integrator: The Entity/Company which collates all the subsystem required for the project and integrates them to achieve the program objective 
+System Integrator: The Entity/Company which collates all the subsystem required for the project and integrates them to achieve the program objective
 
-Program Charter: Outline of implementation plan agreement with priority applications and broad timelines, program governance model, program success metrics and capacity building. 
+Program Charter: Outline of implementation plan agreement with priority applications and broad timelines, program governance model, program success metrics and capacity building.
 
-Acceptance Letter/MOU: Formal Acceptance/Sign Off of the Client State with a clear mandate of the Program 
+Acceptance Letter/MOU: Formal Acceptance/Sign Off of the Client State with a clear mandate of the Program
 
-Program Success Metrics: Defining the parameters \(which are measurable\) prior to the program, on which the success of the program is to be measured  on the completion of the program 
+Program Success Metrics: Defining the parameters \(which are measurable\) prior to the program, on which the success of the program is to be measured on the completion of the program
 
 Project steering committee: The key body within the governance structure which is responsible for the business issues associated with the project that are essential in ensuring the delivery of the project outputs and the attainment of project outcomes.
 
@@ -989,19 +987,19 @@ Project governance: Set of policies, regulations, functions, processes, procedur
 
 Scoping: List of activities measured against the time taken to complete them in accordance with the project goals
 
-Baseline data: Set of information that serves as a foundation to compare other data acquired afterwards 
+Baseline data: Set of information that serves as a foundation to compare other data acquired afterwards
 
-Project Kick-off meeting: Meeting with the project team and the client of the project. This meeting would follow the definition of the base elements for the project and other project planning activities 
+Project Kick-off meeting: Meeting with the project team and the client of the project. This meeting would follow the definition of the base elements for the project and other project planning activities
 
-Fitment Study: GAP Study of the Existing/Required Field Process Vs Product 
+Fitment Study: GAP Study of the Existing/Required Field Process Vs Product
 
-Data migration: Existing Records of the functional activities need to be moved into the Database of the newly released Application 
+Data migration: Existing Records of the functional activities need to be moved into the Database of the newly released Application
 
 Data collection: Required data for the roll-out of the applications, which needs to be collected from the existing functional process
 
-Data validation approach: This approach enables the sanctity of the Data with built-in validation by Design 
+Data validation approach: This approach enables the sanctity of the Data with built-in validation by Design
 
-Data synchronization: The process of establishing consistency among data from a source to a target data storage and vice versa and the continuous harmonization of the data over time. 
+Data synchronization: The process of establishing consistency among data from a source to a target data storage and vice versa and the continuous harmonization of the data over time.
 
 Pilot Implementation: Any new process is tested out as a pilot in one or two instances before pan implementation
 
@@ -1015,13 +1013,11 @@ Deployment: Deployment defines the complete package of Software components set u
 | :--- |
 
 
-Customisation: Details of changes to be made in the Product to comply with the needed field process 
+Customisation: Details of changes to be made in the Product to comply with the needed field process
 
-Configuration: Defining existing content such as Options and Variables  based on the requirements on the ground
+Configuration: Defining existing content such as Options and Variables based on the requirements on the ground
 
 Product walkthrough: Explaining the users step-by-step through a set of actions that they need to take to achieve a specific outcome
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

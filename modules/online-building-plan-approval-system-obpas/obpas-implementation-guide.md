@@ -8,24 +8,23 @@ The computerised and automatic building permission system offered under the Nati
 
 ### Implementation Methodology for OBPS
 
-For the offered product, the implementation process can be divided into six major distinctive stages. Each stage has predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision making for the overall success of the engagement. The whole implementation lifecycle is typical of 35-40 weeks keeping in mind the entry, and exit criteria defined at the beginning and end of each stage is met within the recommended time.   
-  
+For the offered product, the implementation process can be divided into six major distinctive stages. Each stage has predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision making for the overall success of the engagement. The whole implementation lifecycle is typical of 35-40 weeks keeping in mind the entry, and exit criteria defined at the beginning and end of each stage is met within the recommended time.
+
 ![](https://lh4.googleusercontent.com/bXkn86M80PRdyRBedsdHGJb7zGsfu1p7-heUEkC2IY7GKXrsSzGJFl7eNQASqhvgmUSRYqWwnHgpaOpYlpL4CPQqSFpsbsJBQ7yCgdAdirQ86UjPC75LmTc2Y5FvMzUsMsjbN7ZO)
 
-Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process. 
+Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process.
 
-Stage One of the initiative requires scoping of the initiative and deciding on the priorities for implementation by the state implementation Team. 
+Stage One of the initiative requires scoping of the initiative and deciding on the priorities for implementation by the state implementation Team.
 
-In stage three, the state Team will work upon identifying and finding solutions to the significant gaps in the product offered w.r.t. to the needs of the state. 
+In stage three, the state Team will work upon identifying and finding solutions to the significant gaps in the product offered w.r.t. to the needs of the state.
 
-Configuration and customisation of the product offered in the primary objective of stage four. This involves working on various aspects of state-specific needs and incorporating them into the product suite offered. 
+Configuration and customisation of the product offered in the primary objective of stage four. This involves working on various aspects of state-specific needs and incorporating them into the product suite offered.
 
 In stage four and five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the state level \(Go Live\) from a couple of ULBs to pan state coverage. \(For details on the implementation plan refer to Section-3\).
 
 ### Manpower Requirement For Implementation
 
-The whole implementation cycle requires a Team of individuals with specific skill sets to work very closely. The state implementation unit comprises individuals with Program management, business analysis, implementation engineering, software engineering, architecture \(DCR Domain\) and capacity building skills. Depending upon the phases of implementing the initiative is in, the amount of effort by each participant in the smaller units will vary. \(For details on resource sizing and requirements refer to Section-5\)  
-
+The whole implementation cycle requires a Team of individuals with specific skill sets to work very closely. The state implementation unit comprises individuals with Program management, business analysis, implementation engineering, software engineering, architecture \(DCR Domain\) and capacity building skills. Depending upon the phases of implementing the initiative is in, the amount of effort by each participant in the smaller units will vary. \(For details on resource sizing and requirements refer to Section-5\)
 
 ### Budgetary Requirement For Implementation
 
@@ -34,8 +33,7 @@ Based on close deliberations with various stakeholders, it is recommended that t
 ### Critical Success Factors For Implementation
 
 Implementation of the Online Building Permission System \(OBPS\) requires meticulous planning and close coordination between various stakeholders at the centre and state level. The success of the initiative is dependent upon many factors like strong Program governance, availability of the trained resource, financial planning, targeted implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to urban centres. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Building Permission System in the state.  
-![](https://lh5.googleusercontent.com/574djb2Kb0dHaQqOQ-6flXFkWIKfGDdQGfp_UsrQQkjIg54dQhuXbMRsaWai7VlTNtuLJ8MRadQIfzxtWs9er4lhjC7XxmTY5sMpsq1BnOjrOJzfv1uAXfeO69SdcdTjGppRgIfm)  
-
+![](https://lh5.googleusercontent.com/574djb2Kb0dHaQqOQ-6flXFkWIKfGDdQGfp_UsrQQkjIg54dQhuXbMRsaWai7VlTNtuLJ8MRadQIfzxtWs9er4lhjC7XxmTY5sMpsq1BnOjrOJzfv1uAXfeO69SdcdTjGppRgIfm)
 
 1 Assuming NICSI standard rate cards and 20% range on the actual estimated cost
 
@@ -43,8 +41,8 @@ Implementation of the Online Building Permission System \(OBPS\) requires meticu
 
 ## Section 2: Online Building Permission System\(OBPS\) Implementation Methodology
 
-This section provides an overview of the methodology for the state-wide implementation of OBPS. Implementation of OBPS is distributed across six distinct stages. Each stage has predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision making for the overall success of the engagement. Details of each stage are defined in this section.  
-  
+This section provides an overview of the methodology for the state-wide implementation of OBPS. Implementation of OBPS is distributed across six distinct stages. Each stage has predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision making for the overall success of the engagement. Details of each stage are defined in this section.
+
 ![](https://lh4.googleusercontent.com/bXkn86M80PRdyRBedsdHGJb7zGsfu1p7-heUEkC2IY7GKXrsSzGJFl7eNQASqhvgmUSRYqWwnHgpaOpYlpL4CPQqSFpsbsJBQ7yCgdAdirQ86UjPC75LmTc2Y5FvMzUsMsjbN7ZO)
 
 OBPS implementation program is expected to be completed within approximately 37 weeks with the resource deployment by the State and System Integrator\(SI\) Team \(as defined below\). However, it is critical that activities and exit criteria set for each stage are achieved to adhere to this timeline.
@@ -305,8 +303,7 @@ During this stage, the active involvement of Pilot ULB officials is expected for
 
 ### Stage 5 – Rollout
 
-On successful rollout in the Pilot ULBs, the solution will be rolled out to the rest of the ULBs in batches. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.  
-
+On successful rollout in the Pilot ULBs, the solution will be rolled out to the rest of the ULBs in batches. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.
 
 {% hint style="info" %}
 Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches.
@@ -367,18 +364,18 @@ Consult - One who may initiate, guide and in the process, handhold the execution
 
 | Task/Activity | NUS Team | OBPS Cell | SI Team |
 | :--- | :--- | :--- | :--- |
-| Stage 0 - Program Setup/ On-Boarding |   |   |   |
-| Appoint State Program Head/Nodal Officer | Consult | Execute |   |
-| Identify funding for the program | Consult | Execute |   |
-| Define State-specific procurement process | Consult | Execute |   |
-| System Integrator\(SI\) Team Onboarding | Consult | Execute |   |
-| Provide the state-specific resource and infrastructure requirements | Execute | Consult |   |
-| Stage 1 - Program kick-off |   |   |   |
+| Stage 0 - Program Setup/ On-Boarding |  |  |  |
+| Appoint State Program Head/Nodal Officer | Consult | Execute |  |
+| Identify funding for the program | Consult | Execute |  |
+| Define State-specific procurement process | Consult | Execute |  |
+| System Integrator\(SI\) Team Onboarding | Consult | Execute |  |
+| Provide the state-specific resource and infrastructure requirements | Execute | Consult |  |
+| Stage 1 - Program kick-off |  |  |  |
 | Identify & agree on high-level scope and exclusions | Consult | Consult | Execute |
-| Identify Pilot ULBs |   | Execute | Consult |
+| Identify Pilot ULBs |  | Execute | Consult |
 | Project kick-off meeting and stakeholders consultation | Consult | Consult | Execute |
-| Product Walkthroughs |   | Consult | Execute |
-| Define Project Steering Committee structure and Project Governance process |   | Execute | Consult |
+| Product Walkthroughs |  | Consult | Execute |
+| Define Project Steering Committee structure and Project Governance process |  | Execute | Consult |
 
 <table>
   <thead>
@@ -613,22 +610,22 @@ Consult - One who may initiate, guide and in the process, handhold the execution
   </tbody>
 </table>
 
-| Stage 3 – Configuration & Customization |   |   |   |
+| Stage 3 – Configuration & Customization |  |  |  |
 | :--- | :--- | :--- | :--- |
-| Setting up development & UAT environments |   | Consult | Execute |
-| Customization & configuration of DCR Rules |   | Consult | Execute |
-| Customisation of BPA Workflow |   | Consult | Execute |
-| Development of reports and dashboards |   | Consult | Execute |
-| Development/Integration of portal |   | Consult | Execute |
-| Third-Party Integrations \(NOC, Payment gateway, Digital signature\) |   | Consult | Execute |
-| Validation of DCR Rules |   | Execute | Consult |
-| Preparation & execution of Test Cases |   | Consult | Execute |
-| Setup support & maintenance processes & tools |   | Consult | Execute |
-| Provide clarification and guidance on the interpretation of state Bylaws |   | Execute | Consult |
-| Test configured product and provide feedback |   | Execute | Consult |
-| Provide support in integrating Third-Party State services/departments |   | Execute | Consult |
-| Test product features and provides feedback |   | Execute | Consult |
-| Support System Integrator\(SI\) Team in integration with Third-party solutions |   | Execute | Consult |
+| Setting up development & UAT environments |  | Consult | Execute |
+| Customization & configuration of DCR Rules |  | Consult | Execute |
+| Customisation of BPA Workflow |  | Consult | Execute |
+| Development of reports and dashboards |  | Consult | Execute |
+| Development/Integration of portal |  | Consult | Execute |
+| Third-Party Integrations \(NOC, Payment gateway, Digital signature\) |  | Consult | Execute |
+| Validation of DCR Rules |  | Execute | Consult |
+| Preparation & execution of Test Cases |  | Consult | Execute |
+| Setup support & maintenance processes & tools |  | Consult | Execute |
+| Provide clarification and guidance on the interpretation of state Bylaws |  | Execute | Consult |
+| Test configured product and provide feedback |  | Execute | Consult |
+| Provide support in integrating Third-Party State services/departments |  | Execute | Consult |
+| Test product features and provides feedback |  | Execute | Consult |
+| Support System Integrator\(SI\) Team in integration with Third-party solutions |  | Execute | Consult |
 
 <table>
   <thead>
@@ -796,18 +793,18 @@ Consult - One who may initiate, guide and in the process, handhold the execution
   </tbody>
 </table>
 
-| Stage 5: Rollout |   |   |   |
+| Stage 5: Rollout |  |  |  |
 | :--- | :--- | :--- | :--- |
-| Training the Architects \(District Level\) |   | Consult | Execute |
-| Training the State/Client Users \(District Level\) |   | Consult | Execute |
-| Stabilisation Period Support with On Field Support |   | Consult | Execute |
-| Statewide Rollout |   | Execute | Execute |
-| Operations and Support |   | Execute | Execute |
-| Product Support |   | Execute | Execute |
-| Provision of Training Facility at Districts |   | Execute | Consult |
-| Program Management of Training |   | Execute | Consult |
-| Program Management of Client/User Infra |   | Execute | Consult |
-| Program Management of Rollout |   | Execute | Consult |
+| Training the Architects \(District Level\) |  | Consult | Execute |
+| Training the State/Client Users \(District Level\) |  | Consult | Execute |
+| Stabilisation Period Support with On Field Support |  | Consult | Execute |
+| Statewide Rollout |  | Execute | Execute |
+| Operations and Support |  | Execute | Execute |
+| Product Support |  | Execute | Execute |
+| Provision of Training Facility at Districts |  | Execute | Consult |
+| Program Management of Training |  | Execute | Consult |
+| Program Management of Client/User Infra |  | Execute | Consult |
+| Program Management of Rollout |  | Execute | Consult |
 
 ## Section 4- Resource, effort estimation and Budget Requirements for the Program
 
@@ -909,14 +906,14 @@ Consult - One who may initiate, guide and in the process, handhold the execution
 
 #### Implementation Budget requirements of the program
 
-| Operations and Maintenance Cost Summary per year\(in Cr\) |   |   |
+| Operations and Maintenance Cost Summary per year\(in Cr\) |  |  |
 | :--- | :--- | :--- |
 |  | Type of Resources | Total Budget Required\(in Cr\) |
 | Program Management | Project Manager | 0.432 |
 | Application Support | Business Analyst/ Support Engineer | 0.84 |
 | Help Desk | Helpdesk Support | 0.144 |
-| Hosting Infrastructure |   | 0.28 |
-| Total |   | 1.69 |
+| Hosting Infrastructure |  | 0.28 |
+| Total |  | 1.69 |
 
 The summary of the budgeting is as per the NICSI rates\(Please refer to annexure-1\) and assuming a 20% range.
 
@@ -941,12 +938,11 @@ Note: Overall Budget Summary \(in INR\) is as per NICSI rates
 Note: Designation mentioned above are as per designations known driving OBPS implementation at the state level as explained below
 {% endhint %}
 
-  
 Project Sponsor: Is the Head of the OBPS Cell who will drive the project from the State Side
 
 Plan Process Expert: The two resources that will provide the BPA application process and workflow. Validate the UAT in compliance with the expected outcome.
 
-Development Control Rules Experts: they should have the domain skills on the drawings and plan along with the DCR rules of the State. They would provide the templatization of the DCR Rules, validate the same once configured in the Application and approve. 
+Development Control Rules Experts: they should have the domain skills on the drawings and plan along with the DCR rules of the State. They would provide the templatization of the DCR Rules, validate the same once configured in the Application and approve.
 
 Nodal Officer: He would play the organise role who will provide all logistics support and scheduling of activities related to the project, Rollout and training of both Engineers and ULB officials across the State.
 

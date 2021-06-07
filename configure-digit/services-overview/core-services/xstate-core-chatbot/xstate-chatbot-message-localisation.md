@@ -27,10 +27,10 @@ Developers will be the ones first filling up the sheet with codes \(and the Engl
 4. All the message bundles would be present in the “messages” object near the end of the file. They have been organized in a pattern in the JS object like fileComplaint.complaintType2Step.category.question
    1. The corresponding localization code for such a message bundle in the sheet would be “pgr.fileComplaint.complaintType2Step.category.question”, where the first “pgr.” is added as the prefix for the file name.
 
-#### Guidelines for writing messages <a id="Guidelines-for-writing-messages"></a>
+### Guidelines for writing messages <a id="Guidelines-for-writing-messages"></a>
 
-Once the localization codes have been written correctly  \(and the English version of the messages\) in the sheet, it should be easy to add the new message in the corresponding new column. Some guidelines to follow when adding new messages:
+Once the localization codes have been written correctly \(and the English version of the messages\) in the sheet, it should be easy to add the new message in the corresponding new column. Some guidelines to follow when adding new messages:
 
-1. The parameter names are written within {{}} _\(double curly brackets\)_
+1. The parameter names are written within  _\(double curly brackets\)_
 2. The content inside these curly brackets should be written in English even when writing messages for any new language
 

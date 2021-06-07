@@ -1,8 +1,8 @@
 # Understanding ERP Stack
 
-This section contains steps that are involved in the build and deploy the application. 
+This section contains steps that are involved in the build and deploy the application.
 
-### **Build Stages**
+## **Build Stages**
 
 1. Checking out code from github
 2. Maven Build process \(includes the Junit tests\):
@@ -23,19 +23,19 @@ This section contains steps that are involved in the build and deploy the applic
 6. Deploy the same to the respective environments:
 
 &gt; maven deploy to nexus - Nexus is the option for hosting third-party artefacts, as well as for reusing internal artefacts across development streams.  
-&gt; **Nexus** \(sonatype\) is a repository manager - It allows you to proxy, collect, and manage your dependencies so that you are not constantly juggling a collection of JARs. It makes it easy to distribute your software. Internally, you configure your build to publish artefacts to **Nexus** and they then become available to other developers.  
-  
-**Inside ERP Stack:**   
+&gt; **Nexus** \(sonatype\) is a repository manager - It allows you to proxy, collect, and manage your dependencies so that you are not constantly juggling a collection of JARs. It makes it easy to distribute your software. Internally, you configure your build to publish artefacts to **Nexus** and they then become available to other developers.
+
+**Inside ERP Stack:**  
 Fig.1.0: Graphical Representation of ERP Architecture
 
 ![](https://digit-discuss.atlassian.net/wiki/download/thumbnails/8716301/worddav665bdb5f17de344bd1557562a65638e7.png?version=1&modificationDate=1553666606212&cacheVersion=1&api=v2&width=712&height=405)
 
-#### **1. Apache Web servers for Load Balancer**:
+### **1. Apache Web servers for Load Balancer**:
 
 1.1 **Load Balancer** - A load balancer is a device that distributes network or application traffic across a cluster of servers. Load balancing improves responsiveness and increases the availability of applications.  
 1.2 **Apache** HTTP server - is a cross-platform web server. A web server is the software application that receives your request to access a web page. It runs a few security checks on your HTTP request and takes you to the web page.
 
-#### **2. WildFly for Application Servers** with instances \(with java as a prerequisite\)
+### **2. WildFly for Application Servers** with instances \(with java as a prerequisite\)
 
 2.1 Application Server - An application server is a software framework that provides both facilities to create web applications and a server environment to run them  
 2.1 WildFly - is a Java EE 8 certified application server. It provides a list of services as,
@@ -52,7 +52,7 @@ Fig.1.0: Graphical Representation of ERP Architecture
 
 Our ERP application architecture follows the 3-tier architecture for web applications\*.
 
-### **Accessing the application using IP address and domain name**
+## **Accessing the application using IP address and domain name**
 
 This section is to be referred to only if you want the application to run using any IP address or domain name.
 
@@ -69,7 +69,7 @@ name → hosts, schemas, etc., which helps to access the application at right ho
    Have an entry in the table \(eg\_city\) in the database with an IP address of the machine where the application server is running \(for ex: domainurl="172.16.2.164"\) to access the application using the IP address.  
    &gt; Access the application using the URL [http://172.16.2.164:8080/egi/](http://172.16.2.164:8080/egi/) where 172.16.2.164 is the IP and 8080 is the port of the machine where the application server is running.
 
-2.  To access the application using a domain name: 
+2. To access the application using a domain name:
 
    &gt;Have an entry in the table \(eg\_city\) in the database with a domain name \(for ex: domainurl= "www.egoverpphoenix.org"\) to access the application using a domain name.  
    &gt; Add the entry in the hosts file of your system with details as 172.16.2.164 www.egoverpphoenix.org \(This needs to be done both in server machine as well as the machines in which the application needs to be accessed since this is not a public domain\).  
@@ -101,7 +101,5 @@ Fig.3.0: AWS 3-Tier Architecture Diagram
 
 ![](https://digit-discuss.atlassian.net/wiki/download/thumbnails/8716301/worddav4faa0e315d2eb20c1297023c7aa65d51.png?version=1&modificationDate=1553666611915&cacheVersion=1&api=v2&width=649&height=459)
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

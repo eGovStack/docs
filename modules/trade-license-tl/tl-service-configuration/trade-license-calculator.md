@@ -2,7 +2,6 @@
 
 ## Overview
 
-  
 Trade License Calculator service is used to calculate the Trade license fees / renewal fees based on the defined billing slabs. This service enables the TL admins to create billing slab with different combination of license type, trade type, structure type and accessory type.  
 The service is designed in such a way that it can be used to serve different type of licenses.
 
@@ -58,7 +57,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
     }
   ]
-}   
+}
 ```
 
 #### **MDMS file for Rebate Calculation**
@@ -142,7 +141,6 @@ Before you proceed with the configuration, make sure the following pre-requisite
     "path": ""
   }
 ]
-
 ```
 
 #### **Role Action Mapping**
@@ -180,7 +178,6 @@ Before you proceed with the configuration, make sure the following pre-requisite
     "tenantId": "pb"
   }
 ]
-
 ```
 
 ## Integration Details
@@ -209,7 +206,7 @@ TBD
 
 #### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
 | API Swagger Contract | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/egov-services/master/docs/rainmaker/trade-license/tl-calculator.yml#!/) |
 | Trade License Document | [Trade License Service](https://digit-discuss.atlassian.net/l/c/WQ1uMqaa) |

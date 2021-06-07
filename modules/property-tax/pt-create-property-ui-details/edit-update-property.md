@@ -38,5 +38,3 @@ MDMS data used here is the same as the Create flow since the flow structure used
 
 For Edit/Update Property also, the Localization keys are being added in the ‘_rainmaker-pt_’ locale module. To change, update or adding of any new localization key will be done in the same locale module only.
 
-
-

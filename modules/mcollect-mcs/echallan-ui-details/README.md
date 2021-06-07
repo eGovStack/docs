@@ -6,7 +6,7 @@ description: UI details for eChallan feature in mCollect module
 
 ## Overview
 
-This page offers a detailed insight into the user interface features, screens, and navigation available for the eChallan service in the mCollect module. Browse through this document to find the eChallan service details, MDMS and localization details. 
+This page offers a detailed insight into the user interface features, screens, and navigation available for the eChallan service in the mCollect module. Browse through this document to find the eChallan service details, MDMS and localization details.
 
 ## Objective
 
@@ -20,8 +20,8 @@ Employees will be able to Create Challan, by selecting the service category, ent
 
 ![](../../../.gitbook/assets/image-20210514-092513.png)
 
-Click here to find the [create new challan file changes](https://github.com/egovernments/frontend/blob/39ffbeb4f5446bbb08729e9ce6cf0d519f2f748c/web/rainmaker/dev-packages/egov-uc-dev/src/ui-config/screens/specs/uc/newCollection.js).   
-  
+Click here to find the [create new challan file changes](https://github.com/egovernments/frontend/blob/39ffbeb4f5446bbb08729e9ce6cf0d519f2f748c/web/rainmaker/dev-packages/egov-uc-dev/src/ui-config/screens/specs/uc/newCollection.js).
+
 Selecting City is disabled as UC Employee of City A should be able to access/create only City A related challans.
 
 ## **MDMS Details**
@@ -74,10 +74,10 @@ For eg: Refer to the response object
 }
 ```
 
-Based on that `"businessService": "WaterCharges.Metered"` 
+Based on that `"businessService": "WaterCharges.Metered"`
 
 The service Category is `"WaterCharges"` and the service Type is `"Metered"`  
-The conversion of business Service utils is `setServiceCategory` method present in ``[https://github.com/egovernments/frontend/blob/39ffbeb4f5446bbb08729e9ce6cf0d519f2f748c/web/rainmaker/dev-packages/egov-uc-dev/src/ui-config/screens/specs/utils/index.js](https://github.com/egovernments/frontend/blob/39ffbeb4f5446bbb08729e9ce6cf0d519f2f748c/web/rainmaker/dev-packages/egov-uc-dev/src/ui-config/screens/specs/utils/index.js)
+The conversion of business Service utils is `setServiceCategory` method present in \`\`[https://github.com/egovernments/frontend/blob/39ffbeb4f5446bbb08729e9ce6cf0d519f2f748c/web/rainmaker/dev-packages/egov-uc-dev/src/ui-config/screens/specs/utils/index.js](https://github.com/egovernments/frontend/blob/39ffbeb4f5446bbb08729e9ce6cf0d519f2f748c/web/rainmaker/dev-packages/egov-uc-dev/src/ui-config/screens/specs/utils/index.js)
 
 ### **Tax Head Dropdown Formation**
 
@@ -95,19 +95,19 @@ Users will be able to see the Challan Acknowledgement once the Challan is create
 
 Actions available:
 
-1.  Proceed to Payment
+1. Proceed to Payment
 2. Download/print Challan
 3. Navigate back to Home page
 
 ![](../../../.gitbook/assets/image-20210514-100011.png)
 
-Challan’s can be downloaded through this API `egov-pdf/download/UC/mcollect-challan?challanNo=` 
+Challan’s can be downloaded through this API `egov-pdf/download/UC/mcollect-challan?challanNo=`
 
 ## **Localisation Module**
 
 `rainmaker-uc`
 
-**API Used** 
+**API Used**
 
 1. `egov-mdms-service/v1/_search`
 2. `echallan-services/eChallan/v1/_create`
@@ -117,11 +117,11 @@ Challan’s can be downloaded through this API `egov-pdf/download/UC/mcollect-ch
 
 | [**S.NO**](http://s.no/) | **API** | **ROLES** | **ACTION ID** |
 | :--- | :--- | :--- | :--- |
-| 1 | `egov-mdms-service/v1/_search` |   | 954 |
+| 1 | `egov-mdms-service/v1/_search` |  | 954 |
 | 2 | `echallan-services/eChallan/v1/_create` | UC\_EMP | 2112 |
 | 3 | `egov-pdf/download/UC/mcollect-challan` | UC\_EMP | 2115 |
 
-## **Document Resources and Links** 
+## **Document Resources and Links**
 
 | **Related Title** | **Documentation** |
 | :--- | :--- |
@@ -129,7 +129,5 @@ Challan’s can be downloaded through this API `egov-pdf/download/UC/mcollect-ch
 | MCollect Pay Challan | [BillGenie](https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/436502610/BillGenie) |
 | MCollect Edit / Update Challan | [Edit/Cancel Challan](edit-cancel-challan.md) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

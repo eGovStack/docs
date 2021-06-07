@@ -6,7 +6,7 @@ description: PGR module simplifies the public grievance management process
 
 ## About PGR
 
-DIGIT-Public Grievance & Redressal \(PGR\) is a web and mobile-enabled system designed to register and resolve public grievances. The seamless interface enables citizens to submit their grievances anytime and from anywhere. The complaints are routed to the concerned municipal departments and employees who work towards resolving the issues within a specified time limit. This digitized and easily configurable platform facilitates speedy and efficient resolution of civic complaints while providing the local urban bodies with an intuitive system that categorizes issues and helps them to initiate corrective actions, without any delay.  
+DIGIT-Public Grievance & Redressal \(PGR\) is a web and mobile-enabled system designed to register and resolve public grievances. The seamless interface enables citizens to submit their grievances anytime and from anywhere. The complaints are routed to the concerned municipal departments and employees who work towards resolving the issues within a specified time limit. This digitized and easily configurable platform facilitates speedy and efficient resolution of civic complaints while providing the local urban bodies with an intuitive system that categorizes issues and helps them to initiate corrective actions, without any delay.
 
 ## Key Features
 
@@ -44,9 +44,5 @@ This section contains all docs and information required to understand the PGR mo
 
 Reach out to us through any of the below-mentioned contact channels for any assistance or additional information on PGR module deployment.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). 
-
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

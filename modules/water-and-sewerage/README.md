@@ -53,7 +53,5 @@ This section contains all docs and information required to understand the W&S mo
 
 Reach out to us through any of the below-mentioned contact channels for any assistance or additional information on W&S module deployment.
 
-
-
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

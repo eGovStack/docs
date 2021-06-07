@@ -39,7 +39,7 @@ The MDMS data configuration uses the same data updated by Billing-Service
 
 [Billing Service \| Configuration-Details:](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service#Configuration-Details%3A) Refer MDMS data config from here.
 
- Following are the properties in the application.properties
+Following are the properties in the application.properties
 
 | **Property** | **Value** | **Remarks** |
 | :--- | :--- | :--- |
@@ -81,24 +81,20 @@ Collection service can be integrated with any organization or system that wants 
 
 **Doc Links**
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  Billing-service |  [Billing Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service) |
-|  Id-Gen service |   |
-| url-shortening |   |
-|  MDMS |   |
+| Billing-service | [Billing Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service) |
+| Id-Gen service |  |
+| url-shortening |  |
+| MDMS |  |
 
 **API List**
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  /payments/\_create | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
-|  /payments/\_update | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
+| /payments/\_create | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
+| /payments/\_update | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
 | /payments/\_workflow | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 
