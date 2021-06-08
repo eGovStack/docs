@@ -32,7 +32,7 @@ Below listed are the technical skillsets that are required to work on eDCR servi
 
 ### Hardware prerequisites
 
-Trainees are expected to have laptops/ desktops configured as mentioned below with all the software required to run the eDCR service application
+Trainees are expected to have laptops/ desktops configured as mentioned below with all the software required to run the eDCR service application.
 
 * Laptop for hands-on training with 16GB RAM and OS preferably Ubuntu
 * All developers need to have Git ids
@@ -170,6 +170,10 @@ There are knowledge assets available in the Net for general items and eGov asset
     </tr>
   </tbody>
 </table>
+
+
+
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 
