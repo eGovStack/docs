@@ -9,7 +9,7 @@
   * [WhatsApp Channel Release Notes](digit-release-notes/fsm-release-notes.md)
   * [eChallan Release Notes](digit-release-notes/hrms-release-notes.md)
   * [Property Tax Release Notes](digit-release-notes/edcr-release-notes.md)
-  * [QA Automation Release Notes](digit-release-notes/bill-amendment-release-notes.md)
+  * [QA Automation Release Notes](digit-release-notes/qa-automation-release-notes.md)
   * [Fire NOC Release Notes](digit-release-notes/fire-noc-release-notes.md)
 * [Products & Modules](modules/README.md)
   * [Trade License \(TL\)](modules/trade-license-tl/README.md)

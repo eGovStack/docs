@@ -150,9 +150,9 @@ DIGIT 2.4 is a release that has got new modules, a few functional changes, and n
                 Water &amp; Sewerage, Fire NOC, Building Plan Approval, FSM, and PGR.</li>
             </ul>
           </li>
-          <li>Here is the <a href="bill-amendment-release-notes.md">document</a> with
-            the details of services automated and README documentation which details
-            the detailed steps to execute the automation</li>
+          <li>Here is the <a href="qa-automation-release-notes.md">document</a> with the
+            details of services automated and README documentation which details the
+            detailed steps to execute the automation</li>
         </ul>
       </td>
     </tr>
