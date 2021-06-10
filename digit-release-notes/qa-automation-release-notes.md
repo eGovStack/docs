@@ -1,5 +1,5 @@
 ---
-description: API automatio release details
+description: API automation release details
 ---
 
 # QA Automation Release Notes
