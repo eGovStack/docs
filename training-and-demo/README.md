@@ -2,7 +2,7 @@
 
 Access our extensive library of product training resources available in pdf file formats or short training videos.
 
-View our [Training Events](../digit-training-event.md) page for upcoming training events and scheduled product demos.
+View our [Training Events](../digit-open-events.md) page for upcoming training events and scheduled product demos.
 
 Browse through our [Training Videos](training-videos.md) designed to assist you in configuring and using our diverse products.
 
