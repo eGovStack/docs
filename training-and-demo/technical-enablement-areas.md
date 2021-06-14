@@ -47,12 +47,9 @@ description: Enablement artefacts and doc resources
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">DIGIT - full environment setup</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">
-        <ul>
-          <li><a href="https://www.youtube.com/channel/UCKNfhFNuYfHfbLmSHEb4MEg">DIGIT - Git Repos </a>
-          </li>
-        </ul>
+      <td style="text-align:left"><a href="https://www.youtube.com/channel/UCKNfhFNuYfHfbLmSHEb4MEg">DIGIT - Git Repos </a>
+      </td>
+      <td style="text-align:left"><a href="../configure-digit/setting-up-digit/setting-up-digit-environment.md">DIGIT Environment Setup</a>
       </td>
     </tr>
     <tr>
