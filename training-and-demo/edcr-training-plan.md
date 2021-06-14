@@ -99,7 +99,8 @@
       <td style="text-align:left">
         <p></p>
         <ul>
-          <li>eDCR integration with other systems</li>
+          <li><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/edcr-integration.md">eDCR integration with other systems</a>
+          </li>
           <li>Explanation of the open APIs</li>
         </ul>
       </td>
@@ -110,8 +111,10 @@
       <td style="text-align:left">
         <p></p>
         <ul>
-          <li>Set up a workspace for eDCR in the local machine</li>
-          <li>Changes required for local machine workspace setup</li>
+          <li><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Set up a workspace for eDCR in the local machine</a>
+          </li>
+          <li><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Changes required for local machine workspace setup</a>
+          </li>
           <li>Override properties changes, Domain name setting, tenant setup</li>
           <li>Flyway scripts and best practices</li>
           <li>State-specific and City-specific schemas</li>
@@ -131,6 +134,7 @@
 
 
 
-* 
 
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 
