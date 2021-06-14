@@ -342,7 +342,7 @@
     * [NIC](devops/infra-structure-overview/nic-national-informatica-cloud.md)
   * [Deployment - Key Concepts](devops/deployment-key-concepts/README.md)
     * [Security Practices](devops/deployment-key-concepts/security-practices.md)
-    * [CI/CD](devops/deployment-key-concepts/cicd.md)
+    * [Service Integration](devops/deployment-key-concepts/cicd.md)
     * [Readiness & Liveness](devops/deployment-key-concepts/probes.md)
     * [Resource Requests & Limits](devops/deployment-key-concepts/resource-requests-and-limits.md)
   * [Understanding ERP Stack](devops/understanding-erp-stack/README.md)
