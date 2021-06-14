@@ -18,10 +18,12 @@
         <ul>
           <li><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Introduction to eDCR</a>
           </li>
-          <li>eDCR demo and discussion on different outputs</li>
+          <li>eDCR <a href="https://docs.google.com/spreadsheets/d/1dloyJRCYfEBfed-Nowx-d9t2pKnOeuTm6Vdl4OGy-II/edit#gid=484175232">demo and discussion</a> on
+            different outputs</li>
         </ul>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://youtu.be/HTiy57lh9kA">Training on eDCR Template</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">eDCR Drawing</td>
@@ -39,7 +41,8 @@
           <li>Q&amp;A</li>
         </ul>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://youtu.be/gJ15IKkbIUU">Technical Training on eDCR Template</a>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -66,7 +69,8 @@
           <li>Implementation repository</li>
         </ul>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://youtu.be/9IWMdHANWMw">Setup eDCR</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Coding Steps</td>
@@ -122,7 +126,8 @@
           <li>Q&amp;A</li>
         </ul>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://youtu.be/9IWMdHANWMw">Setup eDCR</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Server Requirement</td>
