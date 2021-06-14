@@ -153,7 +153,8 @@ description: Enablement artefacts and doc resources
           </li>
         </ul>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../devops/deployment-key-concepts/service-integration.md">New Service Integration Details</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
