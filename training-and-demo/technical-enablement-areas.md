@@ -59,31 +59,36 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"></td>
       <td style="text-align:left">Email service setup</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"> <a href="../configure-digit/setting-up-digit/email-and-sms-set-up.md">Email Service Setup</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Filestore setup</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"> <a href="../configure-digit/setting-up-digit/filestore-set-up.md">Filestore Setup</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Git/Repo structure and access</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"> <a href="../configure-digit/git-repos.md">Git Repos</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">SSL Certificate</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/setting-up-digit/setting-up-ssl-certificate.md">Setting up SSL Certificate</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Periodic log cleanup and other activities</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/setting-up-digit/periodic-log-cleanup.md">Periodic Log Cleanup &amp; Other Activities</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Troubleshooting &amp; Debugging</b>
@@ -184,7 +189,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"></td>
       <td style="text-align:left">Deploying services</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../devops/digit-deployment-on-aws/">Deploying DIGIT Services</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -198,13 +204,15 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">How MDMS works</td>
       <td style="text-align:left"><a href=" https://youtu.be/FzckrPiyvTQ">Master Data Setup</a>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"> <a href="../configure-digit/services-overview/core-services/mdms-services.md">MDMS Service</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">How to configure a tenant</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"> <a href="../configure-digit/setting-up-master-data/configuring-tenants.md">Configure Tenants</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -216,13 +224,15 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"></td>
       <td style="text-align:left">How to add a new Master</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"> <a href="../configure-digit/setting-up-master-data/adding-new-master.md">Adding New Master</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">State-level masters v/s ULB Level masters</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/setting-up-master-data/state-level-vs-city-level-master.md">State Level Masters v/s ULB Level Masters</a> 
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -243,13 +253,15 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"></td>
       <td style="text-align:left">Adding new APIs for access</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/adding-new-apis-for-access.md">Adding New APIs for Access</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Mapping roles with APIs</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/mapping-roles-with-apis.md">Mapping Roles with APIs</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -276,13 +288,15 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"></td>
       <td style="text-align:left">Adding a new language</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/setting-up-a-language/adding-a-language.md">Adding a New Language</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">How to setup default language for SMS and Emails</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/setting-up-a-language/setting-a-default-language-for-sms-and-email.md">Setting up Default Language for SMS &amp; Emails</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -296,7 +310,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">Using the generic GET &amp; POST Gateway interface</td>
       <td style="text-align:left"><a href="https://youtu.be/ZR14wM642E4">SMS Gateway &amp; Payment Integration</a>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/setting-up-sms-gateway/">SMS Gateway Integration</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -323,7 +338,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"></td>
       <td style="text-align:left">How to integrate workflow into a service</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/configuring-workflows/">Setting up Workflows</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -335,7 +351,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"></td>
       <td style="text-align:left">Configure workflow for Product X?</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/configuring-workflows/configuring-workflow-for-an-entity.md">Configuring Workflows</a> 
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Payment Gateway Integration</b>
@@ -343,7 +360,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">Existing gateway integration documentation</td>
       <td style="text-align:left"><a href=" https://youtu.be/VfbQuC7IS10">Payment Gateway Integration</a>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/services-overview/core-services/payment-gateway-services.md">Payment Gateway Integration</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -389,7 +407,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">Repo Setup and best practices</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p></p>
+        <p><a href="../configure-digit/git-repos.md">Git Repos</a>
+        </p>
         <p></p>
         <p></p>
       </td>
@@ -400,7 +419,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">Overview of each service</td>
       <td style="text-align:left"><a href="https://www.youtube.com/watch?v=Lx7KrdeLz48">Service Customization</a>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/persister-configuration.md">Persister Service</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -426,25 +446,29 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">How reporting service and PDF generator works</td>
       <td style="text-align:left"><a href="https://www.youtube.com/watch?v=TPlnfEInwGA">PDF Generator</a>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/services-overview/core-services/pdf-generation-services.md">PDF Generation Service</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Which types of reports should report service be used for</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"> <a href="../configure-digit/configuring-digit-services/customizing-pdf-notices-and-certificates/integration-of-pdf-in-ui-for-download-and-print-pdf.md">PDF Integration</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Impact of heavy reports on the platform</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/configuring-reports/impact-of-heavy-reports-on-platform.md">Reporting Framework</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Configuring a new report</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/configuring-reports/">Configuring New Reports</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Customizing Frontend</b>
@@ -452,7 +476,37 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">Adding/Removing fields</td>
       <td style="text-align:left"><a href=" https://youtu.be/S4KcOd0vqRE">Frontend Customization</a>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p></p>
+        <ul>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/52953152/Rainmaker+UI+app+structure">UI App Structure</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/53051775/Egov+UI+framework">DIGIT UI Framework</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/343113747/Egov-UI-framework+to+create+a+new+project+and+use+it.">UI Framework to Create a New Project</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/343113898/How+to+add+new+screen+configuration+in+a+new+module">Add New Screen Configuration in New Module</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/343179479/Configuration+definition">Configuration Definition</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/409208022/Component+and+Component+list">Component &amp; Component List</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/54198463/SMS+redirection+URLs">SMS Redirection URLs</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/54198415/Rainmaker+-+Localstorage">Rainmaker - Local Storage</a>
+          </li>
+          <li><a href="../modules/property-tax/pt-create-property-ui-details/">Property Tax UI</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/54427654/Trade+license+-+UI">Trade License UI</a>
+          </li>
+          <li><a href="../configure-digit/configuring-master-data-templates/environment-setup/state-level-setup/pos-integration-configuration.md">POS Integration Details</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/389546014/S3+References+in+UI+Application">S3 References in Applications</a>
+          </li>
+          <li><a href="https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/290422869/How+to+use+and+configure+localization+screen">Use &amp; Configure Localization Screens</a>
+          </li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -484,7 +538,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"></td>
       <td style="text-align:left">Enhancing existing Service</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../customizing-digit/digit-customization/enhancing-existing-service.md">Enhancing Existing Service</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -496,14 +551,22 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"></td>
       <td style="text-align:left">Persister and Indexer changes</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"> <a href="../configure-digit/services-overview/core-services/indexer-service.md">Indexer Service</a>
+      <td style="text-align:left">
+        <p></p>
+        <ul>
+          <li><a href="../configure-digit/configuring-digit-services/persister-configuration.md">Persister Service</a>
+          </li>
+          <li><a href="../configure-digit/services-overview/core-services/indexer-service.md">Indexer Service</a>
+          </li>
+        </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Writing a new consumer</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../customizing-digit/digit-customization/writing-a-new-customer.md"> Writing a New Customer</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -517,13 +580,15 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">Configuration and Default Setup</td>
       <td style="text-align:left"> <a href="https://youtu.be/ZDhpEvKy8O8">Configuring Dashboards</a>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"> <a href="../configure-digit/configuring-digit-services/dss-configuration-and-setup/">Configuring Dashboards</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Building New Dashboards</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/dss-configuration-and-setup/building-new-dashboards.md">Building New Dashboards</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Mobile</b>
@@ -531,13 +596,15 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">Deployment of App on Playstore</td>
       <td style="text-align:left"><a href="https://youtu.be/h_obyJq8onI">Mobile App Configuration</a>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/deployment-of-app-on-play-store.md">Deployment of App on Playstore</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">Customise PDF receipts and certificates</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/customizing-pdf-notices-and-certificates/customizing-pdf-receipts-and-certificates.md">Customize PDF Receipts &amp; Certificates</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Web Portals</b>
@@ -564,7 +631,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left">How to configure eDCR</td>
       <td style="text-align:left"> <a href="https://youtu.be/JtQLorq-A9U">eDCR Configuration</a>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">eDCR Configuration</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -583,7 +651,8 @@ description: Enablement artefacts and doc resources
       </td>
       <td style="text-align:left">How to configure finance</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"> <a href="../modules/finance/setting-up-finance-service.md">Setting up Finance</a>
+      </td>
     </tr>
   </tbody>
 </table>
