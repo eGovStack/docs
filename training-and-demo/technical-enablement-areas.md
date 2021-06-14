@@ -24,7 +24,16 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Setup and Deployment</b>
       </td>
       <td style="text-align:left">Setting up a Kubernetes Cluster</td>
-      <td style="text-align:left"> <a href="https://youtu.be/FzckrPiyvTQ">https://youtu.be/FzckrPiyvTQ</a>
+      <td style="text-align:left">
+        <p></p>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1lvtXlVTyi1Ib7OYVDRmdQB2iS1TQzkod/view?usp=sharing">DIGIT Builds</a>
+          </li>
+          <li><a href="https://drive.google.com/file/d/12IzMrSHS3jEa_f3KR0ctsp0CgNLXeUTZ/view?usp=sharing">DIGIT Cluster Creation</a>
+          </li>
+          <li><a href="https://drive.google.com/file/d/1Z3AXXDW8Hg7baYCyt3zsSVg1jUu2UUFS/view?usp=sharing">DIGIT Deployment</a>
+          </li>
+        </ul>
       </td>
       <td style="text-align:left">
         <p></p>
@@ -80,7 +89,17 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Troubleshooting &amp; Debugging</b>
       </td>
       <td style="text-align:left">Kafka infra logging troubleshooting</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p></p>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1lvtXlVTyi1Ib7OYVDRmdQB2iS1TQzkod/view?usp=sharing">DIGIT Builds</a>
+          </li>
+          <li><a href="https://drive.google.com/file/d/12IzMrSHS3jEa_f3KR0ctsp0CgNLXeUTZ/view?usp=sharing">DIGIT Cluster Creation</a>
+          </li>
+          <li><a href="https://drive.google.com/file/d/1Z3AXXDW8Hg7baYCyt3zsSVg1jUu2UUFS/view?usp=sharing">DIGIT Deployment</a>
+          </li>
+        </ul>
+      </td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -123,7 +142,17 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Build and Deployment Pipeline</b>
       </td>
       <td style="text-align:left">Adding a new service for Build</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p></p>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1lvtXlVTyi1Ib7OYVDRmdQB2iS1TQzkod/view?usp=sharing">DIGIT Builds</a>
+          </li>
+          <li><a href="https://drive.google.com/file/d/12IzMrSHS3jEa_f3KR0ctsp0CgNLXeUTZ/view?usp=sharing">DIGIT Cluster Creation</a>
+          </li>
+          <li><a href="https://drive.google.com/file/d/1Z3AXXDW8Hg7baYCyt3zsSVg1jUu2UUFS/view?usp=sharing">DIGIT Deployment</a>
+          </li>
+        </ul>
+      </td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -166,7 +195,8 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Master Data Setup</b>
       </td>
       <td style="text-align:left">How MDMS works</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href=" https://youtu.be/FzckrPiyvTQ">Master Data Setup</a>
+      </td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -203,7 +233,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Role Access Mapping</b>
       </td>
       <td style="text-align:left">Adding roles to System</td>
-      <td style="text-align:left"> <a href="https://youtu.be/GcadlCpQG-o">https://youtu.be/GcadlCpQG-o</a>
+      <td style="text-align:left"><a href=" https://youtu.be/GcadlCpQG-o">Role-Action Mapping</a>
       </td>
       <td style="text-align:left"><a href="../configure-digit/services-overview/core-services/access-control-services.md">Access Control Services</a>
       </td>
@@ -230,7 +260,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b> Localization</b>
       </td>
       <td style="text-align:left">How to setup base product localization</td>
-      <td style="text-align:left"> <a href="https://youtu.be/lTvWb-eeOdw">https://youtu.be/lTvWb-eeOdw</a>
+      <td style="text-align:left"><a href="https://youtu.be/lTvWb-eeOdw"> Localization</a>
       </td>
       <td style="text-align:left"><a href="../configure-digit/configuring-digit-services/configuring-localization/setup-base-product-localization.md">Setup Base Product Localization</a> 
       </td>
@@ -263,7 +293,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>SMS Gateway</b>
       </td>
       <td style="text-align:left">Using the generic GET &amp; POST Gateway interface</td>
-      <td style="text-align:left"> <a href="https://youtu.be/ZR14wM642E4">https://youtu.be/ZR14wM642E4</a>
+      <td style="text-align:left"><a href="https://youtu.be/ZR14wM642E4">SMS Gateway &amp; Payment Integration</a>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -283,7 +313,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Workflow</b>
       </td>
       <td style="text-align:left">Workflow configuration documentation</td>
-      <td style="text-align:left"> <a href="https://youtu.be/kH_c8YvaDyw">https://youtu.be/kH_c8YvaDyw</a>
+      <td style="text-align:left"><a href="https://youtu.be/kH_c8YvaDyw">Workflow Configuration</a>
       </td>
       <td style="text-align:left"> <a href="../configure-digit/services-overview/core-services/workflow-services.md">Workflow Services</a>
       </td>
@@ -310,7 +340,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Payment Gateway Integration</b>
       </td>
       <td style="text-align:left">Existing gateway integration documentation</td>
-      <td style="text-align:left"> <a href="https://youtu.be/VfbQuC7IS10">https://youtu.be/VfbQuC7IS10</a>
+      <td style="text-align:left"><a href=" https://youtu.be/VfbQuC7IS10">Payment Gateway Integration</a>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -367,7 +397,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Service Documentation</b>
       </td>
       <td style="text-align:left">Overview of each service</td>
-      <td style="text-align:left"> <a href="https://youtu.be/Lx7KrdeLz48">https://youtu.be/Lx7KrdeLz48</a>
+      <td style="text-align:left"><a href="https://www.youtube.com/watch?v=Lx7KrdeLz48">Service Customization</a>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -393,7 +423,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Reporting &amp; PDF Generator</b>
       </td>
       <td style="text-align:left">How reporting service and PDF generator works</td>
-      <td style="text-align:left"> <a href="https://youtu.be/TPlnfEInwGA">https://youtu.be/TPlnfEInwGA</a>
+      <td style="text-align:left"><a href="https://www.youtube.com/watch?v=TPlnfEInwGA">PDF Generator</a>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -419,7 +449,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Customizing Frontend</b>
       </td>
       <td style="text-align:left">Adding/Removing fields</td>
-      <td style="text-align:left"> <a href="https://youtu.be/S4KcOd0vqRE">https://youtu.be/S4KcOd0vqRE</a>
+      <td style="text-align:left"><a href=" https://youtu.be/S4KcOd0vqRE">Frontend Customization</a>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -445,7 +475,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Customizing Backend Service</b>
       </td>
       <td style="text-align:left">Writing a new Service</td>
-      <td style="text-align:left"> <a href="https://youtu.be/CvRmht7bZsY">https://youtu.be/CvRmht7bZsY</a>
+      <td style="text-align:left"><a href="https://youtu.be/CvRmht7bZsY">Backend Service Customization</a>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -484,7 +514,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>DSS</b>
       </td>
       <td style="text-align:left">Configuration and Default Setup</td>
-      <td style="text-align:left"> <a href="https://youtu.be/ZDhpEvKy8O8">https://youtu.be/ZDhpEvKy8O8</a>
+      <td style="text-align:left"> <a href="https://youtu.be/ZDhpEvKy8O8">Configuring Dashboards</a>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -498,7 +528,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>Mobile</b>
       </td>
       <td style="text-align:left">Deployment of App on Playstore</td>
-      <td style="text-align:left"> <a href="https://youtu.be/h_obyJq8onI">https://youtu.be/h_obyJq8onI</a>
+      <td style="text-align:left"><a href="https://youtu.be/h_obyJq8onI">Mobile App Configuration</a>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -531,7 +561,7 @@ description: Enablement artefacts and doc resources
       <td style="text-align:left"><b>eDCR</b>
       </td>
       <td style="text-align:left">How to configure eDCR</td>
-      <td style="text-align:left"> <a href="https://youtu.be/JtQLorq-A9U">https://youtu.be/JtQLorq-A9U</a>
+      <td style="text-align:left"> <a href="https://youtu.be/JtQLorq-A9U">eDCR Configuration</a>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -556,6 +586,8 @@ description: Enablement artefacts and doc resources
     </tr>
   </tbody>
 </table>
+
+
 
 
 
