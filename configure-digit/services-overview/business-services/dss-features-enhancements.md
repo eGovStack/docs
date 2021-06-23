@@ -63,7 +63,7 @@ File Details
 The following Method along with parameters is used to fetch the previous year data.
 
 ```text
-getLastYearRequest(calledFrom, visualcode, active, filterList) 
+getLastYearRequest(calledFrom, visualcode, active, filterList)
 ```
 
 after receiving last year data it is compared with current year data and will be shown insight data will be shown, comparison logic is present in uiTable.js
@@ -140,10 +140,6 @@ A DSS\_EVENT\_DURATION\_GRAPH was added in the PGR config
 | 6 | /dashboard-analytics/dashboard/getDashboardConfig/pgr | 1894 | STADMIN |
 | 7 | /dashboard-analytics/dashboard/getDashboardConfig/ws | 2010 | STADMIN |
 | 8 | /dashboard-analytics/dashboard/getChartV2 | 1890 | STADMIN, EMPLOYEE |
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

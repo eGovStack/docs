@@ -2,7 +2,6 @@
 
 ## Overview
 
-  
 eChallan system enables employees to generate the challans for Adhoc services so that the payment can be recorded into the system along with service-specific details.
 
 It also enables citizens to make payments online based on challan no.
@@ -65,7 +64,7 @@ The eChallan service is used to generate **e-challans / bill** for all miscellan
 
 #### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
 | API Swagger Documentation | [Swagger Documentation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/develop/docs/e-Challan-v1.0.0.yaml#!/) |
 
@@ -73,7 +72,7 @@ The eChallan service is used to generate **e-challans / bill** for all miscellan
 
 | Title | **Link** |
 | :--- | :--- |
-|  _echallan-services/eChallan/v1/\_create_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
+| _echallan-services/eChallan/v1/\_create_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
 | _echallan-services/eChallan/v1/\_update_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
 | _echallan-services/eChallan/v1/\_search_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
 

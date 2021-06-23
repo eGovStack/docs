@@ -6,7 +6,7 @@ description: Functional overview for stakeholders
 
 ## Introduction
 
-The Property Tax System\(PT\) provides a digital interface to make property assessments, pay property tax, generate payment receipts and monitor tax collection. It can be used by the citizens, Urban Local Body \(ULB\) counter and field employees and ULB Administrators to accomplish their specific tasks. It is available as a mobile and web-based application. 
+The Property Tax System\(PT\) provides a digital interface to make property assessments, pay property tax, generate payment receipts and monitor tax collection. It can be used by the citizens, Urban Local Body \(ULB\) counter and field employees and ULB Administrators to accomplish their specific tasks. It is available as a mobile and web-based application.
 
 ## Functional Scope
 
@@ -34,11 +34,11 @@ The PT product features can be broadly classified as the following modules:
 
 ### Filing For Property Assessment
 
-With this feature, a citizen and employee can perform a self-assessment of a new property for a financial year. This feature helps in registering the property in the system. The details of the property can be entered online and can be assessed for the calculation of the taxes. 
+With this feature, a citizen and employee can perform a self-assessment of a new property for a financial year. This feature helps in registering the property in the system. The details of the property can be entered online and can be assessed for the calculation of the taxes.
 
-The PT Product is designed in a user friendly manner and reduces chances of error. System calculates the tax automatically and creates the demand. If a user wants to reassess his property due to any reason \(for eg, incorrect data, change in property etc\), it can be done by editing details of the last assessment. 
+The PT Product is designed in a user friendly manner and reduces chances of error. System calculates the tax automatically and creates the demand. If a user wants to reassess his property due to any reason \(for eg, incorrect data, change in property etc\), it can be done by editing details of the last assessment.
 
-An employee can edit the details of the last assessment, on behalf of the citizen-based on the owner’s input. Citizen can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.  
+An employee can edit the details of the last assessment, on behalf of the citizen-based on the owner’s input. Citizen can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.
 
 {% hint style="warning" %}
 * Citizen/CSC can Assess New Property \(By Different Financial Years\).
@@ -68,9 +68,9 @@ o Sample Details captured:
 * Any other statutory documents
 {% endhint %}
 
-###  Searching for a Property
+### Searching for a Property
 
-Citizen or Employee can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.  
+Citizen or Employee can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.
 
 {% hint style="warning" %}
 * Citizen/CSC can search for Property by 
@@ -84,7 +84,7 @@ Citizen or Employee can track down the status of his incomplete assessment. Any 
 
 ### Modifications to a Property
 
-The PT system provides the ability to capture mutation and transfer of ownership. It  reduces interfaces between the user and the State and thus promote greater transparency. It also helps in reducing the time taken for mutation after registration. The system provides the ability for alteration of assessment after verification and inspection. Any structural changes like addition/extension/reduction of existing built up area or construction type OR utility changes like usage or occupancy have an impact on the increase/decrease in property tax demand. These changes can be handled by the ‘Additional/Alteration of Assessment’ feature. 
+The PT system provides the ability to capture mutation and transfer of ownership. It reduces interfaces between the user and the State and thus promote greater transparency. It also helps in reducing the time taken for mutation after registration. The system provides the ability for alteration of assessment after verification and inspection. Any structural changes like addition/extension/reduction of existing built up area or construction type OR utility changes like usage or occupancy have an impact on the increase/decrease in property tax demand. These changes can be handled by the ‘Additional/Alteration of Assessment’ feature.
 
 The System provides the ability for bifurcation/ amalgamation of property. The property bifurcation/ amalgamation undergoes an approval process. The parent property needs to be modified accordingly, which can be done in the system.
 
@@ -97,7 +97,7 @@ The System provides the ability for bifurcation/ amalgamation of property. The p
 
 ### Generate Demand Notice
 
-System has the capability to automatically generate demand notice for a financial year based on set triggers like time-based roll over on completion of a financial year. The system notifies the citizens about the demand through SMS/Email. The generated Bills can also be grouped and printed for physical distribution by the ULB employees. The system provides the capability to Employees to merge and download bills based on given parameters to plan their distribution drives. 
+System has the capability to automatically generate demand notice for a financial year based on set triggers like time-based roll over on completion of a financial year. The system notifies the citizens about the demand through SMS/Email. The generated Bills can also be grouped and printed for physical distribution by the ULB employees. The system provides the capability to Employees to merge and download bills based on given parameters to plan their distribution drives.
 
 {% hint style="warning" %}
 * Generate Demand Notice based on periodic basis
@@ -120,7 +120,7 @@ The citizen/ employee can view payment status of previous assessments from Asses
 
 ### Reports and Dashboards
 
-PT reports provides facility to access receipt register, cancelled receipt register, account receipt register, ULB wise PT collection report, DCB Register. All reports can be downloaded in PDF/XLS format.State level administrator can monitor property tax collections, assessments and other information at a state level through  dashboards.
+PT reports provides facility to access receipt register, cancelled receipt register, account receipt register, ULB wise PT collection report, DCB Register. All reports can be downloaded in PDF/XLS format.State level administrator can monitor property tax collections, assessments and other information at a state level through dashboards.
 
 {% hint style="warning" %}
 * State Dashboard : View Reports for Total Collections, Properties Assessed, ULBs on Prod, Usage Type, Payment Distribution
@@ -135,11 +135,11 @@ PT reports provides facility to access receipt register, cancelled receipt regis
 {% hint style="warning" %}
 **Notifications -** The system has the capability to send notifications to citizens. These notifications can be sent for various steps like - assessment completion, payment reminder, payment confirmation. These notifications can be sent in the language chosen by the ULB through all channels - SMS, Whatsapp, Email.
 
-**Legacy Data Migration -** The system has the capability to migrate Demand and Collection.  In most states, the preliminary step would be to migrate Legacy data of existing properties/connections along with the Demand and Collection details. This would ensure that subsequent demand generation happens through the system.
+**Legacy Data Migration -** The system has the capability to migrate Demand and Collection. In most states, the preliminary step would be to migrate Legacy data of existing properties/connections along with the Demand and Collection details. This would ensure that subsequent demand generation happens through the system.
 
-**Configurable Masters** - The system provides the following masters that can be configured as per the State’s 
+**Configurable Masters** - The system provides the following masters that can be configured as per the State’s
 
-**Requirements -** 
+**Requirements -**
 
 * Charges & Calculation : Calculation Engine, Rebate, Penalty, 
 * Rate Master
@@ -301,40 +301,40 @@ System specification in compliance with the Ease of Doing Business \(EODB\) BRAP
 | List of Functionalities | Corresponding Features |
 | :--- | :--- |
 | Registration, Login, Creation of User Profile | Provision for Language Selection during first time registration via Mobile/ Web App. |
-| OTP Based Login for Citizen/ Employee via Mobile/ Web App |   |
-| Login Credentials for various hierarchy of employees. |   |
-| Provision of Personalized Profile for Citizen/ Employee on Web App |   |
+| OTP Based Login for Citizen/ Employee via Mobile/ Web App |  |
+| Login Credentials for various hierarchy of employees. |  |
+| Provision of Personalized Profile for Citizen/ Employee on Web App |  |
 | Filing an assessment for a property | Citizen/CSC : Assess New Property \(By Different Financial Years\). |
-| Citizen/CSC : Capture Address, Assessment Info, Owner Info. |   |
-| Citizen/CSC : View/Print Summary of Filled Form |   |
+| Citizen/CSC : Capture Address, Assessment Info, Owner Info. |  |
+| Citizen/CSC : View/Print Summary of Filled Form |  |
 | Searching for a property | Citizen/CSC : Search Property \(By Mobile No,City, Property Tax Unique ID, Existing ID\). |
-| Citizen/CSC : View the Searched Property |   |
-| Citizen : View My Properties |   |
-| Citizen : View Incomplete Assessments |   |
-| Citizen/CSC : Edit the Searched Property |   |
-| Citizen/CSC : Reassess Searched Property |   |
+| Citizen/CSC : View the Searched Property |  |
+| Citizen : View My Properties |  |
+| Citizen : View Incomplete Assessments |  |
+| Citizen/CSC : Edit the Searched Property |  |
+| Citizen/CSC : Reassess Searched Property |  |
 | Generate demand notice | Generate Demand Notice based on periodic basis |
-| Group/ Print/ Cancel Demand Notices |   |
-| Send notifications to citizens on demand generation- SMS, Whatsapp, Email, Physical bill |   |
+| Group/ Print/ Cancel Demand Notices |  |
+| Send notifications to citizens on demand generation- SMS, Whatsapp, Email, Physical bill |  |
 | Modifications to a property | Mutation of property and change of ownership details |
-| Capture Extension/ Addition and Alteration and reassessment based on changed property details |   |
-| Bifurcation/ Amalgamation of property |   |
+| Capture Extension/ Addition and Alteration and reassessment based on changed property details |  |
+| Bifurcation/ Amalgamation of property |  |
 | Payment collection and receipts | Payment of TAX \(Online,Cheque,Cash,DD\) : During Assessment |
-| Payment of TAX \(Online,Cheque,Cash,DD\) : Partial Payment |   |
-| Citizen/CSC : Download Receipts for payments |   |
+| Payment of TAX \(Online,Cheque,Cash,DD\) : Partial Payment |  |
+| Citizen/CSC : Download Receipts for payments |  |
 | Dashboards and reports | State Dashboard : View Reports for Total Collections, Properties Assessed, ULBs on Prod, Usage Type, Payment Distribution |
-| State Dashboard : PT Collection Timeline \(Monthly,Weekly\) |   |
-| State Dashboard : ULB Wise \(Collection, Assessments\) |   |
-| Cancelled Receipt Register Report |   |
-| PT Collection Report \(ULB/Date Wise\) |   |
+| State Dashboard : PT Collection Timeline \(Monthly,Weekly\) |  |
+| State Dashboard : ULB Wise \(Collection, Assessments\) |  |
+| Cancelled Receipt Register Report |  |
+| PT Collection Report \(ULB/Date Wise\) |  |
 | General features | Notification |
-| Legacy data migration |   |
-| System assigns a unique property ID based on the Process defined in the ULBs. |   |
-| System has the facility to classify the property based on its type. |   |
-| System allows changing the type of property. |   |
+| Legacy data migration |  |
+| System assigns a unique property ID based on the Process defined in the ULBs. |  |
+| System has the facility to classify the property based on its type. |  |
+| System allows changing the type of property. |  |
 | Configuration masters | Configurable Rate Master \(ULB Specific\) : Fire Cess/ Building Height |
-| Charges & Calculation : Calculation Engine, Rebate, Penalty |   |
-| State Masters : Property Ontology, Documents List, Employee Data Mapping, Boundary Data Mapping |   |
+| Charges & Calculation : Calculation Engine, Rebate, Penalty |  |
+| State Masters : Property Ontology, Documents List, Employee Data Mapping, Boundary Data Mapping |  |
 
 
 

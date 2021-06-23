@@ -357,12 +357,10 @@ Click on **My Applications** on the BPA home page.
 
 Click on the relevant **Application Number** hyperlink to view the application.
 
-Click on the **Download** or **Print** button to download the **Comparison Report**. This report is available for citizen download too.[  
+Click on the **Download** or **Print** button to download the **Comparison Report**. This report is available for citizen download too.[    
 ](https://docs.digit.org/v/v2.2/modules/user-manuals/bpa-manual)
 
 ![](https://lh4.googleusercontent.com/AAnfz8qh_hk_B1Vpq73Lz6lGlzEt_M1kDMiIRW1JQdp5nkfpRIVEa7WBmJaWDdXpo_D5tKEAWqVP-0MWm3S2D17WrlEgta8OItccPXXhzh4jnx-bZz1ObzDakPn6jaIp_YskbK6c)
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

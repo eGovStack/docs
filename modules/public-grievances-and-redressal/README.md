@@ -6,7 +6,7 @@ description: PGR module simplifies the public grievance management process
 
 ## About PGR
 
-DIGIT-Public Grievance & Redressal \(PGR\) is a web and mobile-enabled system designed to register and resolve public grievances. The seamless interface enables citizens to submit their grievances anytime and from anywhere. The complaints are routed to the concerned municipal departments and employees who work towards resolving the issues within a specified time limit. This digitized and easily configurable platform facilitates speedy and efficient resolution of civic complaints while providing the local urban bodies with an intuitive system that categorizes issues and helps them to initiate corrective actions, without any delay.  
+DIGIT-Public Grievance & Redressal \(PGR\) is a web and mobile-enabled system designed to register and resolve public grievances. The seamless interface enables citizens to submit their grievances anytime and from anywhere. The complaints are routed to the concerned municipal departments and employees who work towards resolving the issues within a specified time limit. This digitized and easily configurable platform facilitates speedy and efficient resolution of civic complaints while providing the local urban bodies with an intuitive system that categorizes issues and helps them to initiate corrective actions, without any delay.
 
 ## Key Features
 

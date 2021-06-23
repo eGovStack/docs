@@ -1,6 +1,6 @@
 # Setting Up eDCR Service
 
-### Overview
+## Overview
 
 This document mainly covers all the steps that one needs to do for setting up a new instance of eDCR \(Development Control Regulations\). Say when a new State is to be set up, there are some activities to be executed in a defined order. Setting up an instance of an application server and configuring customer-specific rules, and data, etc are a few of the key activities.
 
@@ -9,7 +9,7 @@ This document mainly covers all the steps that one needs to do for setting up a 
 * Uniform code base supporting all the ULBs for the state. City-specific changes are maintained using client-specific implementation repositories.
 * A separate schema for each ULB in the database.
 
-### Prerequisites
+## Prerequisites
 
 * Prior Knowledge of Java/J2EE.
 * Prior Knowledge of Spring and Hibernate
@@ -22,7 +22,7 @@ This document mainly covers all the steps that one needs to do for setting up a 
   * Git 2.8.3
   * JDK 8 update 112 or higher
 
-### Configurations and Setup
+## Configurations and Setup
 
 eDCR Service repository will be used to define default rules. The statewide rules to be defined within the client implementation repository.
 
@@ -94,7 +94,7 @@ Add the property and update the MDMS search URL, mdms.searchurl=/egov-mdms-servi
 3. The tenantId used should follow {state\_name.city\_name} naming convention, then the state\_name passed in the request and city code in the state schema must be the same.
 {% endhint %}
 
-### References
+## References
 
 | Title | Link |
 | :--- | :--- |
@@ -104,7 +104,5 @@ Add the property and update the MDMS search URL, mdms.searchurl=/egov-mdms-servi
 | Sample client implementation repository | [https://github.com/egovernments/egov-dcr-client](https://github.com/egovernments/egov-dcr-client) |
 | Configuring MDMS | [Configuring Master Data](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/644349987/Configuring+Master+Data) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

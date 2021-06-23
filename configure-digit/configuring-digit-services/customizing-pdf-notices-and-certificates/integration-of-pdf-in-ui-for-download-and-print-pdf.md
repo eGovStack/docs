@@ -1,39 +1,39 @@
 # Integration Of PDF In UI For Download And Print PDF
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 The objective of PDF generation service is to bulk generate pdf as per requirement.
 
-### Pre-requisites <a id="Pre-requisites"></a>
+## Pre-requisites <a id="Pre-requisites"></a>
 
 Before you proceed with the documentation, make sure the following pre-requisites are met -
 
 * All required data and format file path is added in the environment yml file
-*  pdf-service is up and running
+* pdf-service is up and running
 
-### Key Functionalities <a id="Key-Functionalities"></a>
+## Key Functionalities <a id="Key-Functionalities"></a>
 
 * Provide functionality to download and print PDF’s
 * Provide functionality to download and print bulk PDF’s
 
-### Deployment Details <a id="Deployment-Details"></a>
+## Deployment Details <a id="Deployment-Details"></a>
 
 1. Create data config and format config for a PDF according to product requirement.
 2. Add data config and format config files in PDF configuration
 3. Add the file path of data and format config in the environment yml file
 4. Deploy the latest version of pdf-service in a particular environment.
 
-### Configuration Details <a id="Configuration-Details"></a>
+## Configuration Details <a id="Configuration-Details"></a>
 
 For Configuration details please refer to the **Customizing PDF Receipts & Certificates** document in Reference Docs
 
-### Integration  <a id="Integration"></a>
+## Integration <a id="Integration"></a>
 
-#### Integration Scope <a id="Integration-Scope"></a>
+### Integration Scope <a id="Integration-Scope"></a>
 
 The PDF configuration can be used by any module which needs to show particular information in PDF format that can be printed/downloaded by the user.
 
-#### Integration Benefits <a id="Integration-Benefits"></a>
+### Integration Benefits <a id="Integration-Benefits"></a>
 
 * Functionality to generate PDFs in bulk
 * Avoid regeneration
@@ -41,7 +41,7 @@ The PDF configuration can be used by any module which needs to show particular i
 * Functionality to specify a maximum number of records to be written in one PDF
 * Uploading generated PDF to filestore and return filestore id for easy access
 
-#### Steps to Integration <a id="Steps-to-Integration"></a>
+### Steps to Integration <a id="Steps-to-Integration"></a>
 
 The following are the steps for integrating TL certificate in UI.
 
@@ -71,8 +71,7 @@ In tlCertificateDownloadObject give the proper label name and key for the pdf. I
 
 Mention the function name “downloadCertificateForm“ and “generateReceipt“ in import , because the functions is define in /frontend/web/rainmaker/dev-packages/egov-tradelicence-dev/src/ui-config/screens/specs/utils/index.js and /frontend/web/rainmaker/dev-packages/egov-tradelicence-dev/src/ui-config/screens/specs/utils/receiptPDF.js
 
-In index.js define the function which is responsible for calling the Create API of PDF service to create respective PDF. In that function, you have to mention the tenant ID and proper key value which is the same as the key mentioned in the data and format config. Also mentioned the URL : /pdf-service/v1/\_create and action as get and also call the function downloadReceiptFromFilestoreID which is responsible to call filestore service with filestoreid and return the URL for pdf.  
-
+In index.js define the function which is responsible for calling the Create API of PDF service to create respective PDF. In that function, you have to mention the tenant ID and proper key value which is the same as the key mentioned in the data and format config. Also mentioned the URL : /pdf-service/v1/\_create and action as get and also call the function downloadReceiptFromFilestoreID which is responsible to call filestore service with filestoreid and return the URL for pdf.
 
 **Example of function downloadCertificateForm**
 
@@ -106,7 +105,7 @@ export const downloadCertificateForm = (Licenses) => {
 }
 ```
 
- E**xample of function generateReceipt**
+E**xample of function generateReceipt**
 
 ```text
 const generateReceipt = async (state, dispatch, type) => {
@@ -119,7 +118,7 @@ const generateReceipt = async (state, dispatch, type) => {
             italics: 'Cambay-Regular.ttf',
             bolditalics: 'Cambay-Regular.ttf'
     },
-  
+
   };
   let data1 = _.get(
     state.screenConfiguration.preparedFinalObject,
@@ -177,7 +176,7 @@ const generateReceipt = async (state, dispatch, type) => {
   };
   switch (type) {
     case "certificate_download":
-   
+
       let certificate_data = getCertificateData(transformedData, ulbLogo);
       certificate_data &&
      //  pdfMakeCustom.createPdf(certificate_data).download("tl_certificate.pdf");
@@ -189,7 +188,7 @@ const generateReceipt = async (state, dispatch, type) => {
       break;
     case "receipt_download":
       let receipt_data = getReceiptData(transformedData, ulbLogo);
-      
+
       receipt_data &&
      //   pdfMakeCustom.createPdf(receipt_data).download("tl_receipt.pdf");
         pdfMakeCustom.createPdf(receipt_data).open();
@@ -204,27 +203,27 @@ const generateReceipt = async (state, dispatch, type) => {
 };
 ```
 
-### Reference Docs <a id="Reference-Docs"></a>
+## Reference Docs <a id="Reference-Docs"></a>
 
-#### Doc Links <a id="Doc-Links"></a>
+### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-| PDF Generation service technical documentation | [PDF Generation Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/717979679/PDF+Generation+Service)   |
-|  Customizing PDF Receipts & Certificates |   [Customizing PDF Receipts & Certificates](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/720306189) |
+| PDF Generation service technical documentation | [PDF Generation Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/717979679/PDF+Generation+Service) |
+| Customizing PDF Receipts & Certificates | [Customizing PDF Receipts & Certificates](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/720306189) |
 | API Swagger Documentation | [Swagger Documentation](https://app.swaggerhub.com/apis/eGovernment/pdf-service_ap_is/1.1.0) |
 
-#### API List <a id="API-List"></a>
+### API List <a id="API-List"></a>
 
 |  | **Link** |
 | :--- | :--- |
 | _pdf-service/v1/\_create_ | [https://www.getpostman.com/collections/5a9bfd6fd03f9f2a6fad](https://www.getpostman.com/collections/5a9bfd6fd03f9f2a6fad) |
-|  _pdf-service/v1/\_createnosave_ |  [https://www.getpostman.com/collections/5a9bfd6fd03f9f2a6fad](https://www.getpostman.com/collections/5a9bfd6fd03f9f2a6fad) |
+| _pdf-service/v1/\_createnosave_ | [https://www.getpostman.com/collections/5a9bfd6fd03f9f2a6fad](https://www.getpostman.com/collections/5a9bfd6fd03f9f2a6fad) |
 | _pdf-service/v1/\_search_ | [https://www.getpostman.com/collections/5a9bfd6fd03f9f2a6fad](https://www.getpostman.com/collections/5a9bfd6fd03f9f2a6fad) |
 
 _\(Note: All the API’s are in the same postman collection therefore the same link is added in each row\)_
 
 \_\_
 
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

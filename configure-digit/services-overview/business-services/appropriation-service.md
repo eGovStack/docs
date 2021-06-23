@@ -31,7 +31,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 There is no separate configuration required. The TaxHead master that is configured in the billing service is only used
 
-## Integration Details 
+## Integration Details
 
 ### Integration Scope
 
@@ -55,10 +55,10 @@ Any payment service which wants to divide the paid amount into different tax hea
 
 #### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-| Collection Service |  [Collection Service V2](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620574288/Collection+Service+V2) |
-| Billing Service |  [Billing Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service) |
+| Collection Service | [Collection Service V2](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620574288/Collection+Service+V2) |
+| Billing Service | [Billing Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service) |
 | API Swagger Documentation |  |
 
 #### API List <a id="API-List"></a>
@@ -66,11 +66,11 @@ Any payment service which wants to divide the paid amount into different tax hea
 | Title | **Link** |
 | :--- | :--- |
 | _/apportion-service/v2/bill/\_apportion_ | [https://www.getpostman.com/collections/142983a40e95da157b45](https://www.getpostman.com/collections/142983a40e95da157b45) |
-| _/apportion-service/v2/demand/\_apportion_ |  [https://www.getpostman.com/collections/142983a40e95da157b45](https://www.getpostman.com/collections/142983a40e95da157b45) |
+| _/apportion-service/v2/demand/\_apportion_ | [https://www.getpostman.com/collections/142983a40e95da157b45](https://www.getpostman.com/collections/142983a40e95da157b45) |
 
 _\(Note: All the API’s are in the same postman collection therefore the same link is added in each row\)_
 
 \_\_
 
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

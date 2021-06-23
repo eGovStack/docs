@@ -21,7 +21,7 @@ Connect to the remote machine using SSH and follow the steps mentioned below.
 * sudo systemctl start jenkins
 * sudo systemctl status jenkins \(should be active\)
 
-#### Install and setup apache2 for Jenkins
+### Install and setup apache2 for Jenkins
 
 * sudo apt install apache2
 * sudo a2enmod proxy
@@ -49,7 +49,6 @@ AllowEncodedSlashes NoDecode
 
 ##### ============================================================ ####
 ##### ############################################################ ####
-
 ```
 
 * **sudo vi /etc/default/jenkins** and make sure
@@ -68,10 +67,6 @@ JENKINS_ARGS="--webroot=/var/cache/$NAME/war --httpPort=$HTTP_PORT --prefix=/jen
 * copy the initial password inside the file
 * now open remote-host-ip/jenkins in local browser
 * paste the password, select the required plugin to install and start the installation
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

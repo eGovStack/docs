@@ -3,7 +3,7 @@
 This section contains steps that are involved in the build and deploy the application.  
 FAQ related to various deployment and development issues are discussed [here](https://digit-discuss.atlassian.net/wiki/spaces/FAQ/overview)
 
-### Setup with auto-installer <a id="Setup-with-auto-installer"></a>
+## Setup with auto-installer <a id="Setup-with-auto-installer"></a>
 
 * Clone the eGov repository \(development is done on the develop branch\).
 
@@ -25,7 +25,7 @@ FAQ related to various deployment and development issues are discussed [here](ht
 
 `1$ cd ${HOME}/egovgithub/egov-smartcity-suite && make deploy`
 
-### Manual Setup Instruction <a id="Manual-Setup-Instruction"></a>
+## Manual Setup Instruction <a id="Manual-Setup-Instruction"></a>
 
 **Prerequisites**
 
@@ -87,11 +87,10 @@ to control the redis server host and port use the following property values \(on
 1. Download and unzip the customized JBoss Wildfly Server from [here](https://devops.egovernments.org/Downloads/wildfly/wildfly-11.0.0.Final.zip). This server contains some additional jars that are required for the ERP.
 2. In case, properties needs to be overridden, edit the below file \(This is only required if egov-erp-&lt;username&gt;.properties is not present\)
 
-`1<JBOSS_HOME>/modules/system/layers/base/ 2 3org 4└── egov 5 └── settings 6 └── main 7 ├── config 8 │   └── egov-erp-override.properties 9 └── module.xml`
+`1<JBOSS_HOME>/modules/system/layers/base/ 2 3org 4└── egov 5 └── settings 6 └── main 7 ├── config 8 │ └── egov-erp-override.properties 9 └── module.xml`
 
 1. Update settings in standalone.xml under &lt;JBOSS\_HOME&gt;/standalone/configuration
-
-* Check Datasource setting is in sync with your database details.
+2. Check Datasource setting is in sync with your database details.
 
 `1<connection-url>jdbc:postgresql://localhost:5432/<YOUR_DB_NAME></connection-url> 2<security> 3 <user-name><YOUR_DB_USER_NAME></user-name> 4 <password><YOUR_DB_USER_PASSWORD></password 5</security>`
 
@@ -107,8 +106,7 @@ Alternatively, this can be done manually by following the below steps.
 
 * Copy the generated exploded ear &lt;CLONED\_REPO\_DIR&gt;/egov/egov-ear/target/egov-ear-&lt;VERSION&gt;.ear in to your JBoss deployment folder &lt;JBOSS\_HOME&gt;/standalone/deployments
 * Create or touch a file named egov-ear-&lt;VERSION&gt;.ear.dodeploy to make sure JBoss picks it up for auto-deployment
-
-1. Start the wildfly server by executing the below command
+* Start the wildfly server by executing the below command
 
 `1 $ cd <JBOSS_HOME>/bin/ 2 $ nohup ./standalone.sh -b 0.0.0.0 & 3`
 
@@ -116,7 +114,7 @@ In Mac OSx, it may also required to specify -Djboss.modules.system.pkgs=org.jbos
 
 -b 0.0.0.0 only required if the application accessed using an IP address or domain name.
 
-1. Monitor the logs and in case of successful deployment, just hit &lt;http://localhost:&lt;YOUR\_HTTP\_PORT&gt;/egi&gt; in your favourite browser.
+1. Monitor the logs and in case of successful deployment, just hit &lt;[http://localhost:&lt;YOUR\_HTTP\_PORT&gt;/egi&gt](http://localhost:<YOUR_HTTP_PORT>/egi&gt); in your favourite browser.
 2. Log in using the username as egovernments and password demo
 
 **Accessing the application using IP address and domain name**
@@ -136,7 +134,7 @@ This section is to be referred to only if you want the application to run using 
 
 Always start the wildfly server with the below command to access the application using IP address or domain name.`1 nohup ./standalone.sh -b 0.0.0.0 &`
 
-### Developer Guide <a id="Developer-Guide"></a>
+## Developer Guide <a id="Developer-Guide"></a>
 
 This section gives more details regarding developing and contributing to the eGov suit.
 
@@ -146,7 +144,7 @@ egov - folder contains all the source code of eGov opensource projects
 
 **Check out sources**
 
-git clone git@github.com:egovernments/egov-smartcity-suite.git or git clone &lt;https://github.com/egovernments/egov-smartcity-suite.git&gt;
+git clone git@github.com:egovernments/egov-smartcity-suite.git or git clone &lt;[https://github.com/egovernments/egov-smartcity-suite.git&gt](https://github.com/egovernments/egov-smartcity-suite.git&gt);
 
 **Prerequisites**
 
@@ -206,7 +204,5 @@ Browser:-
 * Firefox
 * Internet Explorer
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

@@ -104,7 +104,7 @@ The estimation service class loops through all the units and calculates the tax 
 * Fire Cess
 * Cancer Cess
 
- From the above charges and exemptions penalty, interest and rebate are time-based. Rebate is given if the payment is done before the rebate deadline date specified in Rebate master data. Similarly, the penalty is charged if payment is not done before the deadline to pay tax. After the deadline to pay tax is passed daily interest is charged according to the rate defined in the master.
+  From the above charges and exemptions penalty, interest and rebate are time-based. Rebate is given if the payment is done before the rebate deadline date specified in Rebate master data. Similarly, the penalty is charged if payment is not done before the deadline to pay tax. After the deadline to pay tax is passed daily interest is charged according to the rate defined in the master.
 
 #### Property Tax <a id="Property-Tax:"></a>
 
@@ -260,7 +260,6 @@ In case of update, if the tax head estimates changes, the difference in amount f
                     "tenantId": "pb.amritsar"
                 }
             ],
-
 ```
 
 After updating if the PT\_TAX increases to 150 we add one more demand detail to account for the increased amount. The demand detail will be updated to:
@@ -298,7 +297,6 @@ After updating if the PT\_TAX increases to 150 we add one more demand detail to 
                     "tenantId": "pb.amritsar"
                 }
             ],
-
 ```
 
 RoundOff is bill-based i.e every time bill is generated round-off is adjusted so that the payable amount is the whole number. Individual PT\_ROUNDOFF in demand detail can be greater than 0.5 but the sum of all PT\_ROUNDOFF will always be less than 0.5.
@@ -328,8 +326,6 @@ Carries out the process of creating demand and updating them on a need basis as 
 Property-services[ Property Services](./)
 
 API Collection - [https://www.getpostman.com/collections/d7c858f62b53d17c4335](https://www.getpostman.com/collections/d7c858f62b53d17c4335)
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

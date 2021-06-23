@@ -85,7 +85,6 @@ The combination of the above can be used to define the billing slab. Billing Sla
         }
       ]
     }
-
 ```
 
 If all criteria will match for that water connection this slab will use for calculation.
@@ -135,7 +134,6 @@ Below is a sample of master data JSON for interest :
     }
   ]
 }
-
 ```
 
 **Penalty**
@@ -157,7 +155,6 @@ Below is a sample of master data JSON for penalty :
     }
   ]
 }
-
 ```
 
 **Round Off**
@@ -226,8 +223,6 @@ If the fraction is greater than equal to 0.5 the number is round up else it’s 
       "path": ""
     }
 ]
-
-
 ```
 
 **Role Action Mapping**
@@ -330,7 +325,6 @@ In the case of an update, if the tax head estimates change, the difference in am
                     "tenantId": "pb.amritsar"
                 }
             ],
-
 ```
 
 After updating if the WATER\_CHARGE increases to 150 we add one more demand detail to account for the increased amount. The demand detail will be updated to:
@@ -368,7 +362,6 @@ After updating if the WATER\_CHARGE increases to 150 we add one more demand deta
                     "tenantId": "pb.amritsar"
                 }
             ],
-
 ```
 
 RoundOff is bill based i.e every time bill is generated round off is adjusted so that the payable amount is the whole number. Individual WS\_ROUNDOFF in demand detail can be greater than 0.5 but the sum of all WS\_ROUNDOFF will always be less than 0.5.
@@ -416,7 +409,7 @@ So in future, if calculation logic needs to modify then changes can be carried o
 
 ### Steps to Integration
 
-1.  Once the water connection is activated for metered-connection, employee can add meter reading details using this API - /ws-calculator/meterConnection/\_createwhich in-turn will generate the demand. For the Non-Metered connections, the scheduler APIs need to be called periodically to generate the demand.
+1. Once the water connection is activated for metered-connection, employee can add meter reading details using this API - /ws-calculator/meterConnection/\_createwhich in-turn will generate the demand. For the Non-Metered connections, the scheduler APIs need to be called periodically to generate the demand.
 2. For the Metered Connection service, to get the previous meter reading /meterConnection/\_search API is used.
 3. To Activate the Water Service application, the user needs to pay the ONE\_TIME\_FEE for the connection. To calculate the ONE\_TIME\_FEE /waterCalculator/\_estimate API is used.
 4. To generate the demand for metered or non-metered water connection /waterCalculator/\_calculate API is used.
@@ -428,7 +421,7 @@ So in future, if calculation logic needs to modify then changes can be carried o
 
 #### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
 | API Swagger Contract | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/water-sewerage-services.yaml) |
 | Water Service Document | [Water Service](https://digit-discuss.atlassian.net/l/c/JQVK4F1K) |

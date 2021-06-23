@@ -14,7 +14,7 @@ Code Git Repos: [https://github.com/egovernments/frontend/tree/master/web/dss-da
 
 ## **Dashboard List**
 
-There are three types of dashboards - 
+There are three types of dashboards -
 
 1. Home page \(**refer figure 1**\).
 2. Overview page \(**refer figure 2**\).
@@ -47,7 +47,7 @@ Overview and Module level card is differentiated by vizType,
 
 roleName: Which type of user.
 
-Visualizations: Key contains all configuration for displaying the visualization like rows with charts etc please refer to **figure  1.3**.
+Visualizations: Key contains all configuration for displaying the visualization like rows with charts etc please refer to **figure 1.3**.
 
 In Figure 1.3, **vizType** key will define the module UI like
 
@@ -67,7 +67,7 @@ Collection Chart & Module Chart **refer the figure 1**
 
 In dashboardConfig response **visualizations** key contains all rows & charts details\(refer **figure 1.3**\).
 
-1.Each row contains the visual details like name,vizType,noUnit,isCollapsible,charts etc ****\(refer **figure 1.3**\).
+1.Each row contains the visual details like name,vizType,noUnit,isCollapsible,charts etc **\*\*\(refer** figure 1.3\*\*\).
 
 1. name - Name of visualization.
 2. vizType - type of visualization like COLLECTION,MODULE,METRIC-COLLECTION, PERFORMING-METRIC, CHART.
@@ -124,7 +124,7 @@ In dashboardConfig response **visualizations** key contains all rows & charts de
 
 **ULB Dashboard**
 
-ULB Dashboard is having different filters, i.e ULB’s and Wards/Blocks. The data to the filters are loaded from below MDMS API - 
+ULB Dashboard is having different filters, i.e ULB’s and Wards/Blocks. The data to the filters are loaded from below MDMS API -
 
 [https://dev.digit.org/egov-mdms-service/v1/\_search](https://dev.digit.org/egov-mdms-service/v1/_search)
 
@@ -165,7 +165,7 @@ Denomination filter will not be applied to the percentage and text \(refer to **
 
 **Custom Date Filter**
 
- If duration &lt; 15 days, it will display data day-wise.
+If duration &lt; 15 days, it will display data day-wise.
 
 If duration &lt;= 30 days, it will display data week-wise.
 
@@ -195,7 +195,7 @@ In table response, filter key & drillDownChartId is having value means its Drill
 3. Card containing option icon which contains Image download and Image share option.
 4. Image download and share user id from vizArray in order to differentiate each card in a page.
 
-**Download and Share \(refer to figure 2.9\)** 
+**Download and Share \(refer to figure 2.9\)**
 
 1.Download having two option to download data, i.e, Image and PDF
 
@@ -218,8 +218,6 @@ Each S3 image will be shortened using below API
 Github link for config: [https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/config/configs.js](https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/config/configs.js)
 
 ![](../../../.gitbook/assets/132.png)
-
-
 
 **BASE URL**: End point of REST API for dashboard.
 
@@ -259,10 +257,10 @@ Module name: rainmaker-dss
 
 \*\*\*\*[https://docs.google.com/spreadsheets/d/1AdwSGxUZoSmVcSc3PtujGMRCKpNaAEYgAn\_8XNTF2vM/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1AdwSGxUZoSmVcSc3PtujGMRCKpNaAEYgAn_8XNTF2vM/edit?usp=sharing)
 
-**Steps to setup DSS in Local**  
-  
-Step 1: Run as independent, switch to dss-dashboard folder  
-  
+**Steps to setup DSS in Local**
+
+Step 1: Run as independent, switch to dss-dashboard folder
+
 Step 2: We have to get the below details from the environment website and update the localstorage in the browser.
 
 Employee.tenant-id  
@@ -278,10 +276,6 @@ Step 3: Run Yarn install and yarn start to start working on dss in local setup.
 DSS Features Enhancements V2:
 
 [DSS Features Enhancements V2 Technical Document for UI](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1633321002/DSS+Features+Enhancements+V2+Technical+Document+for+UI)
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

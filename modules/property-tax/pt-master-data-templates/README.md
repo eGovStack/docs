@@ -4,11 +4,11 @@ description: This page provides configuration details for PT master data templat
 
 # PT Master Data Templates
 
-### Introduction
+## Introduction
 
 DIGIT Property Tax facilitate ULBs and citizens to automate the assessment/ re-assessment of property tax for a property and its demand billing and collection. It also enables the ULBs as well as citizens to process the transfer of title of a property in case of a sale, gift or will and captures the history of ownership.
 
-### Module Features
+## Module Features
 
 The main features of the product are as given below.
 
@@ -22,9 +22,9 @@ The main features of the product are as given below.
 4. Collection of property tax through various modes \(Cash, Cheque, POS \(Credit/ Debit Card\), NEFT/RTGS, Online - Through Payment Gateway\)
 5. Auto calculation of rebate, interest and penalty.
 
-### Module Ontology
+## Module Ontology
 
-#### State Level
+### State Level
 
 1. [Property Type](property-type.md)
 2. [Property Sub Type](property-sub-type.md)
@@ -39,7 +39,7 @@ The main features of the product are as given below.
 11. [Special Category Documents](special-category-documents.md)
 12. [Road Type](road-type.md)
 
-#### ULB Level
+### ULB Level
 
 1. [Unit Rate](unit-rates.md)
 2. [Tax Rate](tax-rates.md)
@@ -48,7 +48,7 @@ The main features of the product are as given below.
 5. [Rebate Rate](rebate-rates.md)
 6. [Mutation Fee](mutation-fee.md)
 
-### Module Reports
+## Module Reports
 
 1. Receipt Register
 2. Cancelled Receipt Register

@@ -67,10 +67,8 @@ The system will display the relevant search results in the panel below. Click on
 
 Click on the download icon on the pdf page to download the receipt. Click on the Print icon on the pdf page to print the receipt.
 
-Click on the **Reset** button to renew your search with different parameters.[  
+Click on the **Reset** button to renew your search with different parameters.[    
 ](https://docs.digit.org/v/v2.1/modules-features/user-guides/guide-mcollect/citizen-user-manual)
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

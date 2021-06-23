@@ -4,11 +4,11 @@ description: Configuration and setup details on registering vehicles in FSM modu
 
 # FSM Vehicle Registry v1.0
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 Vehicle Registry is a system that enables ULB Employees to create and search Vehicle Entities and schedule Vehicle Trip for FSM Application and track the VehicleTrip. This document contains the details about how to set up the Vehicle and describe the functionalities provided.
 
-### Pre-requisites <a id="Pre-requisites"></a>
+## Pre-requisites <a id="Pre-requisites"></a>
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
@@ -22,20 +22,20 @@ Before you proceed with the configuration, make sure the following pre-requisite
   * egov-workflow-v2
   * egov-idgen
 
-### Key Functionalities <a id="Key-Functionalities"></a>
+## Key Functionalities <a id="Key-Functionalities"></a>
 
-### Deployment Details <a id="Deployment-Details"></a>
+## Deployment Details <a id="Deployment-Details"></a>
 
 1. Deploy the latest version of the vehicle
 2. Add vehicle-persister.yml file in config folder in git and add that path in persister. _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
 
-### Configuration Details <a id="Configuration-Details"></a>
+## Configuration Details <a id="Configuration-Details"></a>
 
-#### MDMS Configuration <a id="MDMS-Configuration[hardBreak]"></a>
+### MDMS Configuration <a id="MDMS-Configuration[hardBreak]"></a>
 
-Add master data in MDMS service with the module name as Vehicle. 
+Add master data in MDMS service with the module name as Vehicle.
 
-Following is some sample master data for 
+Following is some sample master data for
 
 **SuctionType**
 
@@ -56,7 +56,6 @@ Following is some sample master data for
         }
     ]
 }
-
 ```
 
 **VehicleMakeModel**
@@ -130,9 +129,9 @@ Following is some sample master data for
 }
 ```
 
-#### Business Service / Workflow Configuration <a id="Business-Service-/-Workflow-Configuration"></a>
+### Business Service / Workflow Configuration <a id="Business-Service-/-Workflow-Configuration"></a>
 
-Workflow configuration for VehicleTrip of FSM 
+Workflow configuration for VehicleTrip of FSM
 
 ```text
 {
@@ -207,7 +206,7 @@ Workflow configuration for VehicleTrip of FSM
     }
 ```
 
-#### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
+### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
 
 **Actions**
 
@@ -401,11 +400,11 @@ env: |
   {{- end }}
 ```
 
-### Data Setup <a id="Data-Setup"></a>
+## Data Setup <a id="Data-Setup"></a>
 
-#### Create Vehicle <a id="Create-Vehicle"></a>
+### Create Vehicle <a id="Create-Vehicle"></a>
 
-Create Vehicle with one of the vehicle ****types available in the VehicleMakeModel MDMS
+Create Vehicle with one of the vehicle _\*\*_types available in the VehicleMakeModel MDMS
 
 **Sample Curl**
 
@@ -459,37 +458,37 @@ curl --location --request POST 'https://dev.digit.org/vehicle/v1/_create' \
 }'
 ```
 
-### Integration <a id="Integration"></a>
+## Integration <a id="Integration"></a>
 
-#### Integration Scope <a id="Integration-Scope"></a>
+### Integration Scope <a id="Integration-Scope"></a>
 
 Integrated with Application through REST API to create, and search vehicles.
 
 For any module where vehicle Trip is required, can integrate REST API trip/v1/create, update, search
 
-#### Integration Benefits <a id="Integration-Benefits"></a>
+### Integration Benefits <a id="Integration-Benefits"></a>
 
 * Vehicle Managed would become easy
 * Trip Management would become easy
 
-#### Steps to Integration <a id="Steps-to-Integration"></a>
+### Steps to Integration <a id="Steps-to-Integration"></a>
 
 * FSM Application can vehicle/v1/\_search to validate the **FSM** vehicle assignment
 * FSM Application call vehicle/trip/v1/\_create on assigning vehicle to the Application
 * FSTP operator can mark the vehicleTrip as DISPOSED.
 
-### Interaction Diagram <a id="Interaction-Diagram"></a>
+## Interaction Diagram <a id="Interaction-Diagram"></a>
 
 ![](../../../.gitbook/assets/image-20210309-103114.png)
 
-### Reference Docs <a id="Reference-Docs"></a>
+## Reference Docs <a id="Reference-Docs"></a>
 
-#### Doc Links <a id="Doc-Links"></a>
+### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  Workflow Technical Document |  [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
-|  User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service)   |
+| Workflow Technical Document | [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
+| User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service) |
 | MDMS Technical Document | **NEEDS TO BE UPDATED** |
 | IDGen Technical Document | **NEEDS TO BE UPDATED** |
 | Localization Technical Document | **NEEDS TO BE UPDATED** |
@@ -498,7 +497,7 @@ For any module where vehicle Trip is required, can integrate REST API trip/v1/cr
 | API Contract | [API Contract](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/fsm/Vehicle_Registry_Contract.yaml) |
 | Postman Scripts | [Postman Collection](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
 
-#### API List <a id="API-List"></a>
+### API List <a id="API-List"></a>
 
 | Title | **Link** |
 | :--- | :--- |
@@ -508,7 +507,5 @@ For any module where vehicle Trip is required, can integrate REST API trip/v1/cr
 | vehicle/trip/v1/\_update | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
 | vehicle/trip/v1/\_search | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

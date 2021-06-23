@@ -10,10 +10,10 @@ Commitment and transparency are deeply ingrained values defining our product dev
 
 | **Theme** | **Description** |
 | :--- | :--- |
-| **Widen Urban Mission Impact** | Product feature enhancements and concentrated focus on increasing adoption  |
+| **Widen Urban Mission Impact** | Product feature enhancements and concentrated focus on increasing adoption |
 | **Champion Societal Missions** | New products to address the sanitation issues facing urban areas and public finance management solutions |
 | **Promote Usability and Accessibility** | Create integrated user experience with a key focus on flexibility, accessibility, quality of service; Optimized user experience |
-| **Enhance Platform Capabilities**  | Adopt improvements on the platforms that will address some key issues like privacy, security as well as adding new capabilities like GIS |
+| **Enhance Platform Capabilities** | Adopt improvements on the platforms that will address some key issues like privacy, security as well as adding new capabilities like GIS |
 | **Drive Product Research and Innovation** | Identify high-impact research and product innovation areas through validation, understanding the domain, and processes involved |
 
 ## Quarter 1 - April to June 2021
@@ -68,8 +68,6 @@ Commitment and transparency are deeply ingrained values defining our product dev
 * Kibana dashboards for products
 * Intuitive UI elements for added ease and convenience
 {% endhint %}
-
-
 
 ## Quarter 2 - July to September 2021
 
@@ -169,8 +167,6 @@ Commitment and transparency are deeply ingrained values defining our product dev
 * Findability/access to multiple channels -
   * Product packaging
 {% endhint %}
-
-
 
 ## **Quarter 4 - January to March 2022**
 

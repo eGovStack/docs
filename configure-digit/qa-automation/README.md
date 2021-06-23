@@ -26,7 +26,7 @@ DIGIT Test Automation framework majorly deals with various API services validati
   * bpa-calculator, bpa-services, firenoc-calculator, firenoc-services, land-services, property-services, pt-calculator-v2, rainmaker-pgr, sw-calculator, sw-services, tl-calculator, tl-services, ws-calculator, ws-services
 * **E2E - Integration of services**
 
- E2E pt services, E2E ws services, E2E pgr services, E2E tl services, mCollect
+  E2E pt services, E2E ws services, E2E pgr services, E2E tl services, mCollect
 
 ## Approach
 
@@ -39,7 +39,7 @@ Automation is accomplished by building a custom framework using Karate Framework
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Title </b>
+      <th style="text-align:left"><b>Title</b>
       </th>
       <th style="text-align:left"><b>Description</b>
       </th>
@@ -109,17 +109,13 @@ Automation is accomplished by building a custom framework using Karate Framework
 
 #### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  Manual Test Cases |  [![](https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico)Egov Automation: Test Cases](https://docs.google.com/spreadsheets/d/16BdbxgE4z38atk6MZBCRcw4_D4fL0AHEvblqGPSYJ_s/edit?usp=sharing) |
-|  Automation Source Code | [![](https://github.com/fluidicon.png)egovernments/test-automation](https://github.com/egovernments/test-automation) |
+| Manual Test Cases | [![](https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico)Egov Automation: Test Cases](https://docs.google.com/spreadsheets/d/16BdbxgE4z38atk6MZBCRcw4_D4fL0AHEvblqGPSYJ_s/edit?usp=sharing) |
+| Automation Source Code | [![](https://github.com/fluidicon.png)egovernments/test-automation](https://github.com/egovernments/test-automation) |
 | Automation Readme | [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/test-automation/blob/master/README.md - Connect to preview](https://github.com/egovernments/test-automation/blob/master/README.md) |
 | Kafka Approach Document | [Kafka Consumer Producer Approach](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1540587710/Kafka+Consumer+Producer+Approach) |
 | Sample Config File \(for passing to execution command\) | [![](https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png)config.yaml](https://drive.google.com/file/d/19XDqJErhGrNegrmI2AxL9dsDqubxaWdo/view?usp=sharing) |
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 
