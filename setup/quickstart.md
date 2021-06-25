@@ -68,8 +68,6 @@ To setup k3d \(a minimal installation of Kubernetes\), make sure your windows/Li
 
    `kubectl get nodes`
 
-\`\`
-
     
 
 
