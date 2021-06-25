@@ -56,14 +56,17 @@ To setup k3d \(a minimal installation of Kubernetes\), make sure your windows/Li
 
 ### **Cluster Creation:**
 
-   ****Create /kube directory. To use this directory for persistent data mount.  
-      `mkdir /kube`
+* Create /kube directory. To use this directory for persistent data mount.
 
-   Create a cluster with a single server node and 2 agents and mount the pre created directory. `k3d cluster create --agents 2 -v /kube:/kube@agent[0,1] -v /kube:/kube@server[0]`
+  `mkdir /kube`
 
-Use the new cluster with kubectl, e.g.:
+* Create a cluster with a single server node and 2 agents and mount the pre**-**created directory. 
 
-`kubectl get nodes`
+  `k3d cluster create --agents 2 -v /kube:/kube@agent[0,1] -v /kube:/kube@server[0]`
+
+* Use the new cluster with kubectl, e.g.:
+
+   `kubectl get nodes`
 
 \`\`
 
