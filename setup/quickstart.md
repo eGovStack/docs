@@ -48,11 +48,11 @@ To setup k3d \(a minimal installation of Kubernetes\), make sure your windows/Li
 * Install sops[ mozilla/sops](https://github.com/mozilla/sops#download) in case you need to use encrypted configurations like userid/pwd
 * All DIGIT services are packaged using helm charts[ ![](https://helm.sh/img/favicon-152.png)Installing Helm](https://helm.sh/docs/intro/install/)
 * kubectl is a cli to connect to the kuberntes cluster from your machine[ ![](https://kubernetes.io/images/favicon.png)Install and Set Up kubectl on Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
-* aws-cli[ Installing, updating, and uninstalling the AWS CLI version 2 on Linux - AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html)
-* git[ ![](https://git-scm.com/favicon.ico)Git - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* aws-cli[ Installing, updating, and uninstalling the AWS CLI version 2 on Linux - AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+* git[ ![](https://git-scm.com/favicon.ico)Git - Installing Git](https://git-scm.com/downloads)
 * aws-iam-authenticator [Install aws-iam-authenticator](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
 * Visualstudio Code [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
-* Terraform \(v14.10\)[![](https://www.terraform.io/assets/images/favicons/apple-touch-icon-5c2d0048.png)Terraform](https://www.terraform.io/docs/cli/install/apt.html)
+* Terraform \(v14.10\)[![](https://www.terraform.io/assets/images/favicons/apple-touch-icon-5c2d0048.png)Terraform](https://www.terraform.io/downloads.html)
 
 ### **Cluster Creation:**
 
