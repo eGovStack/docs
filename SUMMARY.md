@@ -346,7 +346,8 @@
 ## Setup
 
 * [Quickstart](setup/quickstart.md)
-* [Install on Cloud](setup/untitled.md)
+* [Install on Cloud](setup/untitled/README.md)
+  * [On AWS](setup/untitled/on-aws.md)
 * [Deployment Docs](setup/devops/README.md)
   * [Setup Requirements](setup/devops/setup-digit/README.md)
     * [Tech Enablement Training - Essential Skills and Pre-requisites](setup/devops/setup-digit/tech-enablement-training-essential-skills-and-pre-requisites.md)
