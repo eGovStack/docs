@@ -64,6 +64,9 @@ To setup k3d \(a minimal installation of Kubernetes\), make sure your windows/Li
 
   `k3d cluster create --agents 2 -v /kube:/kube@agent[0,1] -v /kube:/kube@server[0]`
 
+* To get the kubeconfig file, 
+  * `k3d kubeconfig get k3s-default > k3dconfig`
+  * `kubectl config use-context k3s-default --kubeconfig=k3dconfig`
 * Use the new cluster with kubectl, e.g.:
 
    `kubectl get nodes`
