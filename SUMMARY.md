@@ -345,7 +345,7 @@
 
 ## Setup
 
-* [Quickstart](setup/quickstart.md)
+* [Quickstart Guide](setup/quickstart.md)
 * [Install on Cloud](setup/untitled/README.md)
   * [On AWS](setup/untitled/on-aws.md)
 * [Deployment Docs](setup/devops/README.md)

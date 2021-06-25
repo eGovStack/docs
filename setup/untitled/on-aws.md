@@ -4,51 +4,69 @@ description: Provision infra for DIGIT on AWS using Terraform
 
 # On AWS
 
-The Amazon Elastic Kubernetes Service \(EKS\) is the AWS service an abstracted infrastructure requirement for deploying, managing, and scaling DIGIT on AWS.
+The [**Amazon Elastic Kubernetes Service \(EKS\)**](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) is one of the AWS service for deploying, managing, and scaling any distributed and containerized workloads, here we can provision the EKS cluster on AWS from ground up and using an automated way \(infra-as-code\) using [**terraform**](https://www.terraform.io/intro/index.html) and then deploy the DIGIT Services config-as-code using [**Helm**](https://helm.sh/docs/).
 
 ## Prerequisites <a id="Prerequisites"></a>
 
-* [AWS account](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=default&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start) with the IAM permissions listed on the [EKS module documentation](https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/docs/iam-permissions.md)
-* AWS CLI configured
-* AWS IAM Authenticator
-* kubectl
+1. [**AWS account**](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=default&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start) with the admin access to provision EKS Service, you can always subscribe to free AWS account to learn the basics and try, but there is a limit to [**what is offered as free**](https://aws.amazon.com/free/), for this demo you need to have a commercial subscription to the EKS service, if you want to try out for a day or two, it might cost you about Rs 500 - 1000.
+2. Install [**kubectl**](https://kubernetes.io/docs/tasks/tools/) on your local machine that helps you interact with the kubernetes cluster
+3.  Install [**Helm**](https://helm.sh/docs/intro/install/) that helps you package the services along with the configurations, envs, secrets, etc into a ****[**kubernetes manifests**](https://devspace.cloud/docs/cli/deployment/kubernetes-manifests/what-are-manifests) 
+4. \*\*\*\*[**Install AWS CLI**](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) ****on your local machine so that you can use aws cli commands to provision and manage the cloud resources on your account.
+5. Install [**AWS IAM Authenticator**](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html) that helps you authenticate your connection from your local machine so that you should be able to deploy DIGIT services.
+6. Create an [**AWS IAM User**](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) ****for the Terraform \([**Infra-as-code**](https://devops.digit.org/devops-general/infra-as-code)\) to connect with your AWS account and provision the cloud resources.
 
-### Set up Terraform with AWS <a id="Set-up-Terraform-with-AWS"></a>
+   1. Login to AWS Console =&gt; go to the **IAM section =&gt; Create User**
+   2. **Create Group** by attaching the following access and add it to the above User 
+      * AdministratorAccess
+      * AmazonEKSClusterPolicy
+   3. After these steps, you'll get a **Secret Access Key** and **Access Key ID**. **Save them safely** because this will be displayed only one time.
+   4. Open terminal and Run the following command. you have already installed the aws cli and you have the credentials saved. \(Prive the credentials and you can leave the region and output format as blank\)
 
-The first thing to **set up** is **your Terraform**. We will **create an AWS IAM user for Terraform**.
+   ```text
+   aws configure --profile egov-test-account 
 
-In your **AWS console**, go to the **IAM section** and **create a user named “FullAccess”**. Then **add your user to a group** named “FullAccessGroup”. Attaches to this group the following rights:
+   AWS Access Key ID []:<Your access key>
+   AWS Secret Access Key []:<Your secret key>
+   Default region name []: ap-south-1
+   Default output format []: text
+   ```
 
-* **AdministratorAccess**
-* **AmazonEKSClusterPolicy**
+   5. The above will create the following file In your machine as /Users/&lt;your username&gt;/.aws/credentials
 
-After these steps, AWS will provide you a **Secret Access Key and Access Key ID**. **Save them precisely** because this will be the only time AWS gives it to you.
+   ```text
+   [egov-test-account] 
+   aws_access_key_id=*********** 
+   aws_secret_access_key=****************************
+   ```
 
-In your own console, create a ~/.aws/credentials file and put your credentials in it:
+## **Resource Graph** <a id="Set-up-and-initialize-your-Terraform-workspace"></a>
 
-```text
-[default] 
-aws_access_key_id=*********** 
-aws_secret_access_key=****************************
-```
+Terraform builds a graph of all your resources, and parallelizes the creation and modification of any non-dependent resources. Because of this, Terraform builds infrastructure as efficiently as possible, and operators get insight into dependencies in their infrastructure.
 
-The last step is to **create this file**:
+Before we provision the cloud resources, we need to understand and be sure about what resources that need to be provisioned by terraform to deploy DIGIT. The following picture shows the various key components. \(EKS, Worker Nodes, PostGres DB, EBS Volumes, Load Balancer\)
 
-```text
-[default]
- region=eu-west-3
-```
+![EKS Architecture for DIGIT Setup](../../.gitbook/assets/image%20%28109%29.png)
 
-## Set up and initialize your Terraform workspace <a id="Set-up-and-initialize-your-Terraform-workspace"></a>
+Considering the above deployment architecture, following is the resource graph that we are going to provision using terraform in a standard way so that everytime and for every env, it'll have the same infra.
 
-‌Clone the following repository:
+* EKS Control Plane \(Kubernetes Master\)
+* Work node group \(VMs with the estimated number of vCPUs, Memory\)
+* EBS Volumes \(Persistent Volumes\)
+* RDS \(PostGres\)
+* VPCs \(Private network\)
+* Users to access, deploy and read-only
+
+## Understand the Terraform script: <a id="Set-up-and-initialize-your-Terraform-workspace"></a>
+
+* Ideally one would write the terraform script from the scratch using this [doc](https://learn.hashicorp.com/collections/terraform/modules)
+* Here we have already written the terraform script that provisions the production grade DIGIT Infra and can be customized with specified configuration.
+* Let's Clone the [DIGIT-DevOps](https://github.com/egovernments/DIGIT-DevOps.git) GitHub repo where the terraform script to provision EKS cluster is available and below is the structure of the files.
 
 ```text
 git clone https://github.com/egovernments/DIGIT-DevOps.git
 cd DIGIT-DevOps/infra-as-code/terraform
-```
 
-```text
+
 └── modules
     ├── db
     │   └── aws
@@ -76,11 +94,7 @@ cd DIGIT-DevOps/infra-as-code/terraform
             └── variables.tf
 ```
 
-In here, you will find three modules used to provision a EKS cluster, RDS, and Storage.
-
-![EKS Architecture for DIGIT Setup](../../.gitbook/assets/image%20%28109%29.png)
-
-#### Kubernetes module: <a id="Kubernetes-module:"></a>
+In here, you will find the modules used to provision a EKS cluster, RDS, and Storage. All these are modularized and reacts as per the customized options are provided.  
 
 * **VPC Resources:**
   * VPC
@@ -97,22 +111,18 @@ In here, you will find three modules used to provision a EKS cluster, RDS, and S
   * Data source to fetch latest EKS worker AMI
   * AutoScaling Launch Configuration to configure worker instances
   * AutoScaling Group to launch worker instances
+* **Database**
+  * Configuration in this directory creates set of RDS resources including DB instance, DB subnet group, and DB parameter group.
+* **Storage Module**
+  * Configuration in this directory creates EBS volume and attaches it together.
 
-#### Database Module: <a id="Database-Module:"></a>
+## Choose the environment <a id="Set-up-an-environment"></a>
 
-Configuration in this directory creates set of RDS resources including DB instance, DB subnet group, and DB parameter group.
-
-#### Storage Module: <a id="Storage-Module:"></a>
-
-Configuration in this directory creates EBS volume and attaches it together.
-
-## Set up an environment <a id="Set-up-an-environment"></a>
-
-Here, you will find five files used to provision a VPC, security groups, IAM users, storages, EKS cluster, s3 bucket. The final product should be similar to this:
+Here, you can define your env and provide the env specific cloud requirements so that using the same terraform template you can customize the configurations.
 
 ```text
 ├── dev
-│   ├── main.tf
+│   ├── main.tf 
 │   ├── outputs.tf
 │   ├── providers.tf
 │   ├── remote-state
@@ -127,14 +137,80 @@ Here, you will find five files used to provision a VPC, security groups, IAM use
     └── variables.tf
 ```
 
-The source for each module in the [main.tf](http://main.tf/) is from the modules like:
+Following are the values that you need to mention in the following files, the blank ones will be prompted for inputs while execution.
 
 ```text
-../modules/storage/aws
-../modules/kubernetes/aws/eks-cluster
+## Add Cluster Name
+variable "cluster_name" {
+  default = "<Desired Cluster name>"  #eg: digit-qa
+}
+
+## Add vpc_cidr_block
+variable "vpc_cidr_block" {
+  default = "CIDR" 
+}
+
+# If you want prod grade N/W, you can define HA, DRS with multi zone
+variable "network_availability_zones" {  
+  default = ["ap-south-1b", "ap-south-1a"]
+}
+
+# Which zone, it matters
+variable "availability_zones" {
+  default = ["ap-south-1b"]
+}
+
+variable "kubernetes_version" {
+  default = "1.18"
+}
+
+# instance type for your worker nodes like r5a.large is 8 vCPU and 16GB RAM
+variable "instance_type" {
+  default = "r5a.large"
+}
+
+# spot instance configuration
+variable "override_instance_types" {
+  default = ["r5a.large", "r5ad.large", "r5d.large", "t3a.xlarge"] 
+}
+
+# number of machines as per estimate
+variable "number_of_worker_nodes" {
+  default = "3"
+}
+
+##Add ssh key in case you want to ssh to nodes
+variable "ssh_key_name" {
+  default = "ssh key name"
+}
+
+# terraform users ssh public key
+variable "iam_keybase_user" {
+  default = "keybase:egovterraform"
+}
+
+# will be prompted to provide during the execution
+variable "db_password" {}
+
 ```
 
-Configuration in this directory creates a set of:
+## Run terraform
+
+Now that we know what the terraform does, resources graph that it provisions and what values should be given with respect to type of env. 
+
+Let's being with running the script to provision infra required to Deploy DIGIT on AWS.
+
+1. CD into the following directory and run the following command 1-by-1 and watch the output closely.
+
+```text
+cd DIGIT-DevOps/infra-as-code/terraform/dev
+terraform init
+terraform plan
+terraform apply
+terraform output
+```
+
+ Upon Successful execution following resources gets created which can be verified by the command "terraform output"
 
 * **s3 bucket:** to store terraform state.
 * **Network:** VPC, security groups.
@@ -143,21 +219,26 @@ Configuration in this directory creates a set of:
 * **EKS cluster:** with master\(s\) & worker node\(s\).
 * **Storage\(s\):** for es-master, es-data-v1, es-master-infra, es-data-infra-v1, zookeeper, kafka, kafka-infra.
 
+2. Use this link to [get the kubeconfig from EKS](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) to get the kubeconfig file and being able to connect to the cluster from your local machine so that you should be able to deploy DIGIT services to the cluster.
+
 ```text
-cd eGov-infraOps/terraform/dev
-terraform init
-terraform plan
-terraform apply
-terraform output
+aws sts get-caller-identity
+
+# Run the below command and give the respective region-code and the cluster name
+aws eks --region <region-code> update-kubeconfig --name <cluster_name>
 ```
 
-The Kubernetes tools can be used to verify the newly created cluster. Once terraform apply execution is done it will generate the Kubernetes configuration file or you can get it from terraform state.
+3. Finally, Verify that you are able to connect to the cluster by running the following command
 
-Set an environment variable so that kubectl picks up the correct config. Use this link to [get the kubeconfig from EKS](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
+```text
+kubectl get nodes
 
-Verify the health of the cluster.
+NAME                                             STATUS AGE   VERSION               OS-Image           
+ip-192-168-xx-1.ap-south-1.compute.internal   Ready  45d   v1.15.10-eks-bac369   Amazon Linux 2   
+ip-192-168-xx-2.ap-south-1.compute.internal   Ready  45d   v1.15.10-eks-bac369   Amazon Linux 2   
+ip-192-168-xx-3.ap-south-1.compute.internal   Ready  45d   v1.15.10-eks-bac369   Amazon Linux 2   
+ip-192-168-xx-4.ap-south-1.compute.internal   Ready  45d   v1.15.10-eks-bac369   Amazon Linux 2 
+```
 
-`kubectl get nodes`
-
-You should see the details of your worker nodes, and they should all have a status Ready.![](blob:https://digit-discuss.atlassian.net/e26a285f-6386-4624-ab5a-3a151727a7fd#media-blob-url=true&id=d24de44e-31fc-4b61-8857-497b9a38e14c&collection=contentId-695861499&contextId=695861499&mimeType=image%2Fpng&name=assets%252F-MERG_iQW5oN4ukgXP8K%252F-MGDl14gRpdtvzEHtsDS%252F-MGDq14LK9hilL256Npl%252FScreenshot%2520from%25202020-09-02%252018-10-14.png%3Falt%3Dmedia%26token%3Da32b2594-3ec3-4323-83c4-da7a308f0223&size=26187&width=743&height=92)
+Whola! All set and now you can go Deploy DIGIT...
 

@@ -4,7 +4,7 @@ description: >-
   not meant for production use as is.
 ---
 
-# Quickstart
+# Quickstart Guide
 
 DIGIT is a distributed microservice based platform that comprise of many services which are containerized and can be run on any container supported orchestration platform like dockers, kubernetes, etc,
 
