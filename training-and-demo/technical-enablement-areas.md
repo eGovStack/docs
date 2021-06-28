@@ -4,7 +4,7 @@ description: Enablement artefacts and doc resources
 
 # Technical Enablement Areas
 
-## Setting Up DIGIT Environment <a id="setting-up-digit-environment"></a>
+## 📙 Setting Up DIGIT Environment <a id="setting-up-digit-environment"></a>
 
 <table>
   <thead>
@@ -350,7 +350,7 @@ description: Enablement artefacts and doc resources
   </tbody>
 </table>
 
-## Customization and Extension <a id="customization-and-extension"></a>
+## 👁🗨 Customization and Extension <a id="customization-and-extension"></a>
 
 <table>
   <thead>
