@@ -64,11 +64,11 @@ As a result of the pipeline execution, the respective app/service docker image w
 
 The Jenkins CI pipeline is configured and managed 'as code'.
 
-[New Service Integration - Example](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/111673399/New+Service+Integration+-+Example) URL - [https://builds.egovernments.org/](https://builds.egovernments.org/)
+[New Service Integration - Example](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/111673399/New+Service+Integration+-+Example) URL - https://builds.digit.org/
 
 **Job Builder** – Job Builder is a Generic Jenkins job which creates the Jenkins pipeline automatically which are then used to build the application, create the docker image of it and push the image to docker repository. The Job Builder job requires the git repository URL as a parameter. It clones the respective git repository and reads the **build/**[**build-config.yml**](https://github.com/egovernments/core-services/blob/master/build/build-config.yml) file for each git repository and uses it to create the service build job.
 
-‌**Check git repository URL is available in** [**ci.yaml**](https://github.com/egovernments/eGov-infraOps/blob/master/helm/environments/ci.yaml)[‌](https://github.com/egovernments/eGov-infraOps/blob/master/helm/environments/ci.yaml)‌
+‌**Check git repository URL is available in** [**ci.yaml**](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/ci.yaml)\*\*\*\*[‌](https://github.com/egovernments/eGov-infraOps/blob/master/helm/environments/ci.yaml)‌
 
 ![](../../../.gitbook/assets/0%20%281%29.png)
 
@@ -91,12 +91,11 @@ values.yaml        # The default configuration values for this chart
 templates/         # A directory of templates that, when combined with values, will generate valid Kubernetes manifest files.
 ```
 
-To deploy a new service, we need to create the helm chart for it. The chart should be created under the **charts/helm** directory in **eGov-infraOps** repository.
+To deploy a new service, we need to create the helm chart for it. The chart should be created under the **charts/helm** directory in **DIGIT-DevOps** repository.
 
 ```text
 Github repository 
-    https://github.com/egovernments/eGov-infraOps
-    https://github.com/egovernments/Train-InfraOps
+    https://github.com/egovernments/DIGIT-DevOps/deploy-as-code/helm/charts
 ```
 
 We have an automatic helm chart generator utility which needs to be installed on the local machine, the utility will prompt for user inputs about the newly developed service\( app specifications\) for creating the helm chart. The requested chart with the configuration values \(created based on the inputs provided\) will be created for the user.

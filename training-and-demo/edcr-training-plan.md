@@ -16,7 +16,7 @@
       <td style="text-align:left">
         <p></p>
         <ul>
-          <li><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Introduction to eDCR</a>
+          <li><a href="../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Introduction to eDCR</a>
           </li>
           <li>eDCR <a href="https://docs.google.com/spreadsheets/d/1dloyJRCYfEBfed-Nowx-d9t2pKnOeuTm6Vdl4OGy-II/edit#gid=484175232">demo and discussion</a> on
             different outputs</li>
@@ -77,7 +77,7 @@
       <td style="text-align:left">
         <p></p>
         <ul>
-          <li><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Explanation of extract, validate, process, and report part</a>
+          <li><a href="../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Explanation of extract, validate, process, and report part</a>
           </li>
           <li>Use FAR and Parking validation/Process as an example to define a feature</li>
           <li>Error handling &amp; show plan errors</li>
@@ -103,7 +103,7 @@
       <td style="text-align:left">
         <p></p>
         <ul>
-          <li><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/edcr-integration.md">eDCR integration with other systems</a>
+          <li><a href="../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/edcr-integration.md">eDCR integration with other systems</a>
           </li>
           <li>Explanation of the open APIs</li>
         </ul>
@@ -115,9 +115,9 @@
       <td style="text-align:left">
         <p></p>
         <ul>
-          <li><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Set up a workspace for eDCR in the local machine</a>
+          <li><a href="../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Set up a workspace for eDCR in the local machine</a>
           </li>
-          <li><a href="../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Changes required for local machine workspace setup</a>
+          <li><a href="../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Changes required for local machine workspace setup</a>
           </li>
           <li>Override properties changes, Domain name setting, tenant setup</li>
           <li>Flyway scripts and best practices</li>

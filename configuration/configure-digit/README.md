@@ -4,7 +4,7 @@ description: >-
   DIGIT platform
 ---
 
-# Configuration Docs
+# Configure DIGIT
 
 Learn how to configure the DIGIT platform. Partner with us to enhance and integrate more into the platform.
 
@@ -18,7 +18,7 @@ Learn how to configure the DIGIT platform. Partner with us to enhance and integr
 
 {% page-ref page="configuring-digit-services/configuring-workflows/" %}
 
-{% page-ref page="../../modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md" %}
+{% page-ref page="../../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md" %}
 
 {% page-ref page="configuration-faqs.md" %}
 
