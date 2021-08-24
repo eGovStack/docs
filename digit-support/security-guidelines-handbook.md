@@ -43,21 +43,13 @@
 
 ## Detailed Guidelines
 
-<<<<<<< HEAD
 ### Privilege Escalation <a id="Privilege-Escalation"></a>
-=======
-#### Privilege Escalation  <a id="Privilege-Escalation"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Role Action mapping should be in accordance with the business requirements. No role should have access to resources that are not required by that role on UI. In the case of a CITIZEN role, extra precaution should be taken. If there is a business requirement for user-based access to entities instead of role-based access, validations should be added at the module level to verify the user id.
 
 There is a possibility of horizontal/vertical escalation in the case of workflows. We have fixed this issue by validating the logged in user and the workflow item's owner. Allowing access if the logged-in user and the workflow owner are the same.
 
-<<<<<<< HEAD
 ### Failure to restrict URL Access <a id="Failure-to-restrict-URL-Access"></a>
-=======
-#### Failure to restrict URL Access <a id="Failure-to-restrict-URL-Access"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 We use pre-signed URLs, so we cannot restrict access to the file if someone gets the URL. As a security measure, we should restrict the value of the URL validity to as minimum as possible. The value is configurable and can be overwritten in helm charts using the following property:
 
@@ -65,19 +57,11 @@ We use pre-signed URLs, so we cannot restrict access to the file if someone gets
 filestore-url-validity
 ```
 
-<<<<<<< HEAD
 ### Insecure direct object references \(IDOR\) <a id="Insecure-direct-object-references-(IDOR)"></a>
 
 API’s like /user/\_search which exposes the personal data of users shouldn’t be directly exposed. We have removed access to the API from UI, the user information of logged in user can be instead fetched from /user/oauth/token which is now enhanced to return the required info.
 
 ### Malicious file upload leads to Cross-Site scripting <a id="Malicious-file-upload-leads-to-Cross-Site-scripting"></a>
-=======
-#### Insecure direct object references \(IDOR\) <a id="Insecure-direct-object-references-(IDOR)"></a>
-
-API’s like /user/\_search which exposes the personal data of users shouldn’t be directly exposed. We have removed access to the API from UI, the user information of logged in user can be instead fetched from /user/oauth/token which is now enhanced to return the required info.
-
-#### Malicious file upload leads to Cross-Site scripting <a id="Malicious-file-upload-leads-to-Cross-Site-scripting"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Unrestricted file upload is a serious security risk. To tackle this problem we have a bunch of security validations. The file extension, content and content type in the header are all validated. We define the allowed extensions and their corresponding content type as a map and is configurable using the following property:
 
@@ -85,7 +69,6 @@ Unrestricted file upload is a serious security risk. To tackle this problem we h
   allowed-file-formats-map: "{jpg:{'image/jpg','image/jpeg'},jpeg:{'image/jpeg','image/jpg'},png:{'image/png'},pdf:{'application/pdf'},odt:{'application/vnd.oasis.opendocument.text'},ods:{'application/vnd.oasis.opendocument.spreadsheet'},docx:{'application/x-tika-msoffice','application/x-tika-ooxml','application/vnd.oasis.opendocument.text'},doc:{'application/x-tika-msoffice','application/x-tika-ooxml','application/vnd.oasis.opendocument.text'},dxf:{'text/plain','application/dxf','application/octet-stream','image/vnd.dxf','image/vnd.dxf; format=ascii','image/vnd.dxf; format=binary','image/vnd.dxb'},csv:{'text/plain'},txt:{'text/plain'},xlsx:{'application/x-tika-ooxml','application/x-tika-msoffice','application/vnd.ms-excel'},xls:{'application/x-tika-ooxml','application/x-tika-msoffice','application/vnd.ms-excel'}}"
 ```
 
-<<<<<<< HEAD
 ### Improper Authentication <a id="Improper-Authentication"></a>
 
 Before adding endpoints in the whitelist or mixed endpoints list all security implications should be thought through, as there will be no authentication or authorisation of the request. It’s a good practice to add origin-based rate limiting to avoid DDoS attack.
@@ -95,17 +78,6 @@ Before adding endpoints in the whitelist or mixed endpoints list all security im
 The account locking mechanism is provided in the DIGIT platform and should never be disabled. It helps in mitigating brute force attacks.
 
 ### Request Throttling Attack <a id="Request-Throttling-Attack"></a>
-=======
-#### Improper Authentication <a id="Improper-Authentication"></a>
-
-Before adding endpoints in the whitelist or mixed endpoints list all security implications should be thought through, as there will be no authentication or authorisation of the request. It’s a good practice to add origin-based rate limiting to avoid DDoS attack.
-
-#### Missing Account Lockout <a id="Missing-Account-Lockout"></a>
-
-The account locking mechanism is provided in the DIGIT platform and should never be disabled. It helps in mitigating brute force attacks.
-
-#### Request Throttling Attack <a id="Request-Throttling-Attack"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 All \_create API’s should have some sort of rate throttling to avoid DDoS attack that can overwhelm the system. The rate-limiting can be achieved by configuring the endpoint in limiter.properties of zuul. Following is a sample configuration:
 
@@ -117,19 +89,11 @@ zuul.ratelimit.policy-list.tl-services[0].type[0]=url=/tl-services/v1/_create
 zuul.ratelimit.policy-list.tl-services[0].type[1]=user
 ```
 
-<<<<<<< HEAD
 ### Weak Encoding Mechanism <a id="Weak-Encoding-Mechanism"></a>
 
 Client secrets shouldn’t be sent in Base64 encoded format from UI, only for the server to server call the secret can be sent in Authorization header in Base64 format. We have removed client secret from the Authorization header in Digit Platform
 
 ### Sensitive Information in URL <a id="Sensitive-Information-in-URL"></a>
-=======
-#### Weak Encoding Mechanism <a id="Weak-Encoding-Mechanism"></a>
-
-Client secrets shouldn’t be sent in Base64 encoded format from UI, only for the server to server call the secret can be sent in Authorization header in Base64 format. We have removed client secret from the Authorization header in Digit Platform
-
-#### Sensitive Information in URL <a id="Sensitive-Information-in-URL"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Avoid sending sensitive information in URL as a query param. Instead, it can be sent either in the request body or in headers. For example in the previous Digit version in \_logout API, authToken was sent in query param as below:
 
@@ -155,11 +119,7 @@ The API is now enhanced to accept the authToken in Request Body as below :
 }
 ```
 
-<<<<<<< HEAD
 ### Lack of Automatic Session Expiration <a id="Lack-of-Automatic-Session-Expiration"></a>
-=======
-#### Lack of Automatic Session Expiration <a id="Lack-of-Automatic-Session-Expiration"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Proper expiry time should be set for authToken validity. In case the authToken get’s stolen, it can be exploited only till the time the token is valid. The validity can be configured from the following two property in helm charts:
 
@@ -168,19 +128,11 @@ Proper expiry time should be set for authToken validity. In case the authToken g
   refresh-token-validity: 15
 ```
 
-<<<<<<< HEAD
 ### Concurrent Session <a id="Concurrent-Session"></a>
 
 Multiple logins using the same user name and password should be avoided. Due to business requirement, we currently have not implemented the feature in Digit
 
 ### Improper Error Handling <a id="Improper-Error-Handling"></a>
-=======
-#### Concurrent Session <a id="Concurrent-Session"></a>
-
-Multiple logins using the same user name and password should be avoided. Due to business requirement, we currently have not implemented the feature in Digit
-
-#### Improper Error Handling <a id="Improper-Error-Handling"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Errors should not expose any sensitive data or detailed error message to the end-user. Hackers can use this information to attack the system. Use of e.printStackTrace\(\) should be avoided instead the error should be logged using logger. Always return a custom error message to the end-user.
 
@@ -200,16 +152,9 @@ try{
 catch(Exception e){
   log.error("ERROR_CODE", e)
 }
-<<<<<<< HEAD
 ```
 
 ### Improper Input Validation <a id="Improper-Input-Validation"></a>
-=======
-
-```
-
-#### Improper Input Validation <a id="Improper-Input-Validation"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 All user inputs should be validated before storing in DB. If not done attacker could use malicious input to  
 modify data or possibly alter control flow in unexpected ways, including arbitrary command execution. In Digit we use annotations to validate user data Following is a sample validation using annotations:
@@ -222,20 +167,12 @@ modify data or possibly alter control flow in unexpected ways, including arbitra
 private String tenantId
 ```
 
-<<<<<<< HEAD
 ### Mail Command Injection <a id="Mail-Command-Injection"></a>
-=======
-#### Mail Command Injection <a id="Mail-Command-Injection"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Validate any user input that is used to create an email subject line from user input. And encode special characters after proper canonicalization, and in particular, any line break \(CR / LF\) characters  
 in the input, that attackers may use to inject unexpected headers in the mail message sent to the server.
 
-<<<<<<< HEAD
 ### Use of hardcoded credentials <a id="Use-of-hardcoded-credentials"></a>
-=======
-#### Use of hardcoded credentials <a id="Use-of-hardcoded-credentials"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Always overwrite sensitive values in application.properties during deployment. Never use hardcoded credentials. Generally, the sensitive values in application.properties will be like the DB user name and password, secrets etc. In Digit all the sensitive values are overwritten using kubernetes ConfigMaps. Following is examples of properties that we overwrite:
 
@@ -245,7 +182,6 @@ spring.datasource.username=postgres
 spring.datasource.password=postgres
 ```
 
-<<<<<<< HEAD
 ### Use of sensitive information into the configuration file <a id="Use-of-sensitive-information-into-configuration-file"></a>
 
 Make sure any sensitive information like authToken or secrets are not exposed in any configuration file.
@@ -259,21 +195,6 @@ If the format string is constructed with untrusted input, an attacker may produc
 Sanitize user input before using it in HTTP parameters. Concatenating unvalidated user input into a URL can allow an attacker to override the value of a request parameter
 
 ### Standard pseudo-random number generators cannot withstand cryptographic attacks <a id="Standard-pseudo-random-number-generators-cannot-withstand-cryptographic-attacks"></a>
-=======
-#### Use of sensitive information into the configuration file <a id="Use-of-sensitive-information-into-configuration-file"></a>
-
-Make sure any sensitive information like authToken or secrets are not exposed in any configuration file.
-
-#### Exclude unsanitized user input from format strings <a id="Exclude-unsanitized-user-input-from-format-strings"></a>
-
-If the format string is constructed with untrusted input, an attacker may produce unexpected application behaviour. It may cause an exception such as java.util.MissingFormatArgumentException to be thrown \(which, if not cached, may lead to a denial-of-service condition\), or information leak. Do not compose format strings from untrusted input. The arguments, except format string, to the formatting methods, are data and could contain format specifiers without any unexpected behaviour.
-
-#### HTTP Parameter Pollution <a id="HTTP-Parameter-Pollution"></a>
-
-Sanitize user input before using it in HTTP parameters. Concatenating unvalidated user input into a URL can allow an attacker to override the value of a request parameter
-
-#### Standard pseudo-random number generators cannot withstand cryptographic attacks <a id="Standard-pseudo-random-number-generators-cannot-withstand-cryptographic-attacks"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 There are two types of PRNGs: statistical and cryptographic. Statistical PRNGs provide useful statistical  
 properties, but their output is highly predictable and form an easy to reproduce numeric stream that is unsuitable for use in cases where security depends on generated values being unpredictable. Cryptographic PRNGs address this problem by generating output that is more difficult to predict. In the latest release of Digit we have taken care of it by the following replacement:
@@ -288,11 +209,7 @@ replaced with
 SecureRandom random = new SecureRandom();
 ```
 
-<<<<<<< HEAD
 ### Weak cryptographic hash <a id="Weak-cryptographic-hash"></a>
-=======
-#### Weak cryptographic hash <a id="Weak-cryptographic-hash"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 The use of a weak hashing algorithm could compromise the original value. For example, if an authentication system takes an incoming password and generates a hash, then compares the hash to another hash stored in the authentication database, then the ability to create a collision could allow an attacker to provide an alternate password that produces the same target hash, bypassing authentication. It is recommended to use SHA-2 instead of SHA-1.
 
@@ -304,11 +221,7 @@ MessageDigest messageDigest2 = MessageDigest.getInstance(SHA_256); // OK
 MessageDigest messageDigest3 = MessageDigest.getInstance("SHA-384"); // OK
 ```
 
-<<<<<<< HEAD
 ### Insecure SSL configuration <a id="Insecure-SSL-configuration"></a>
-=======
-#### Insecure SSL configuration <a id="Insecure-SSL-configuration"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 The problem with a flawed SSL configuration is that it may allow man-in-the-middle attacks and other issues. Following is a reference implementation:
 
@@ -321,19 +234,11 @@ URL url = new URL("https://spoofable.mybank.com/online-banking");
 return url.openConnection().getInputStream();
 ```
 
-<<<<<<< HEAD
 ### Improper Neutralization of CRLF Sequences in HTTP Header <a id="Improper-Neutralization-of-CRLF-Sequences-in-HTTP-Header"></a>
 
 An attacker could inject line separators \(CR/LF sequences\) that could split the response message generated by the software into two messages. The second response is completely under the control of the attacker \(intermediate web proxies may cache it\), with could produce multiple conditions \(web defacement, cache poisoning, cross-site scripting, or page hijacking\). It is recommended to strip out any input which contains the %0d%0a URL encoded characters in HTTP request headers.
 
 ### Avoid Capturing Java.Lang Security Exception <a id="Avoid-Capturing-Java.Lang-Security-Exception"></a>
-=======
-#### Improper Neutralization of CRLF Sequences in HTTP Header <a id="Improper-Neutralization-of-CRLF-Sequences-in-HTTP-Header"></a>
-
-An attacker could inject line separators \(CR/LF sequences\) that could split the response message generated by the software into two messages. The second response is completely under the control of the attacker \(intermediate web proxies may cache it\), with could produce multiple conditions \(web defacement, cache poisoning, cross-site scripting, or page hijacking\). It is recommended to strip out any input which contains the %0d%0a URL encoded characters in HTTP request headers.
-
-#### Avoid Capturing Java.Lang Security Exception <a id="Avoid-Capturing-Java.Lang-Security-Exception"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Security exceptions are related to security breaches such as denied permissions and improper use of the API. The code should not catch security exceptions except in specific cases where it may be necessary to mask some of these exceptions, for example, in the case of a log-on failure.
 
@@ -344,7 +249,6 @@ Security exceptions are related to security breaches such as denied permissions 
             } catch (SecurityException e) {
                 e.printStackTrace();
             }
-<<<<<<< HEAD
 
   //OK   
   catch (IllegalArgumentException e) {
@@ -353,36 +257,17 @@ Security exceptions are related to security breaches such as denied permissions 
 ```
 
 ### Always normalize system inputs <a id="Always-normalize-system-inputs"></a>
-=======
-            
-  //OK   
-  catch (IllegalArgumentException e) {
-                log.error("ERROR_CODE",e);
-      }       
-```
-
-#### Always normalize system inputs <a id="Always-normalize-system-inputs"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Not validating and normalizing the user input can lead to the execution of arbitrary code. An application’s strategy for avoiding cross-site scripting \(XSS\) vulnerabilities may include forbidding &lt;script&gt; tags in inputs. Such blacklisting mechanisms are a useful part of a security strategy, even though they are insufficient for complete input validation and sanitization. When implemented, this form of  
 validation must be performed only after normalizing the input. We handle this by annotating all string user input field with @SafetHtml annotation
 
 ```text
-<<<<<<< HEAD
     @SafeHtml
     @JsonProperty("ownershipCategory")
     private String ownershipCategory;
 ```
 
 ### Avoid the Command Throws within Finally <a id="Avoid-the-Command-Throws-within-Finally"></a>
-=======
-	@SafeHtml
-	@JsonProperty("ownershipCategory")
-	private String ownershipCategory;
-```
-
-#### Avoid the Command Throws within Finally <a id="Avoid-the-Command-Throws-within-Finally"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Throwing an exception from within a finally block will mask any exception which was previously thrown in  
 the try or catch block, and the masked's exception message and stack trace will be lost.
@@ -391,11 +276,7 @@ the try or catch block, and the masked's exception message and stack trace will 
 
 ```
 
-<<<<<<< HEAD
 ### Close Input and Output resources in finally block <a id="Close-Input-and-Output-resources-in-finally-block"></a>
-=======
-#### Close Input and Output resources in finally block <a id="Close-Input-and-Output-resources-in-finally-block"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Failure to properly close resources will result in a resource leak which could bring first the application on to their knees. Always closes any input stream in finally block.
 
@@ -429,11 +310,7 @@ public void readMdmsConfigFiles(String masterConfigUrl) {
     }
 ```
 
-<<<<<<< HEAD
 ### Cross Site Request Forgery <a id="Cross-Site-Request-Forgery"></a>
-=======
-#### Cross Site Request Forgery <a id="Cross-Site-Request-Forgery"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 CSRF attack forces a logged-on victim’s browser to send a request to a vulnerable web application, which then performs the chosen action on behalf of the victim. A successful CSRF exploit can compromise end user data and operation in the case of a normal user. If the targeted end user is the administrator account, this can compromise the entire web application. For this attack to be successful, the user must be logged into the application.
 
@@ -458,11 +335,7 @@ ex: applicationSecurityContext-egi.xml
 <security:filter-chain pattern="/**"  filters="concurrentSessionFilter,securityContextPersistenceFilter,logoutFilter,authenticationProcessingFilter,headerWriterFilter,csrfFilter,securityContextHolderAwareRequestFilter,rememberMeAuthenticationFilter,anonymousAuthenticationFilter,exceptionTranslationFilter,filterSecurityInterceptor" />
 ```
 
-<<<<<<< HEAD
 ### Cross Site Scripting - Stored <a id="Cross-Site-Scripting---Stored"></a>
-=======
-#### Cross Site Scripting - Stored <a id="Cross-Site-Scripting---Stored"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Cross-site scripting is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable application. It allows an attacker to circumvent the same origin policy, which is designed to segregate different websites from each other.
 
@@ -497,11 +370,7 @@ public static String validate(String field, String input) {
     }
 ```
 
-<<<<<<< HEAD
 ### Insufficient Cookie Attributes <a id="Insufficient-Cookie-Attributes"></a>
-=======
-#### Insufficient Cookie Attributes <a id="Insufficient-Cookie-Attributes"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 The application was missing the “Secure” cookie attribute which was carrying the session information \(SessionID\). The Secure attribute makes sure that the cookie will only be sent with requests made over an encrypted connection and an attacker will not be able to steal cookies by sniffing.
 
@@ -510,11 +379,6 @@ Added the missing secure cookie attribute
 ```text
 @Value("${secure.cookie}")
 private boolean secureCookie;
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 @Bean
 public CookieSerializer cookieSerializer() {
     DefaultCookieSerializer serializer = new DefaultCookieSerializer();
@@ -523,16 +387,9 @@ public CookieSerializer cookieSerializer() {
     serializer.setUseSecureCookie(secureCookie);
     return serializer;
 }
-<<<<<<< HEAD
 ```
 
 ### Code Injection <a id="Code-Injection"></a>
-=======
-
-```
-
-#### Code Injection <a id="Code-Injection"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Application accepts the unvalidated user input. Interpreting user-controlled instructions at run-time can allow attackers to execute malicious code.
 
@@ -540,31 +397,18 @@ Fixed this issue by sanitizing the user input and removed eval\(\).
 
 ```text
 function preventBack(){
-<<<<<<< HEAD
     var sanitizedUrl = sanitizeHTML(document.URL);
     history.pushState(null, null, sanitizedUrl);
-=======
-	var sanitizedUrl = sanitizeHTML(document.URL);
-	history.pushState(null, null, sanitizedUrl);
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     window.addEventListener('popstate', function () {
         history.pushState(null, null, sanitizedUrl);
     });
 }
 function sanitizeHTML(text) {
-<<<<<<< HEAD
     return jQuery('<div>').text(text).html();
 }
 ```
 
 ### Exclude unsanitized user input from format strings <a id="Exclude-unsanitized-user-input-from-format-strings.1"></a>
-=======
-	return jQuery('<div>').text(text).html();
-}
-```
-
-#### Exclude unsanitized user input from format strings <a id="Exclude-unsanitized-user-input-from-format-strings.1"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Used format specifiers \(%s, %d, %c etc\) while constructing format strings instead of adding using the additional operator.
 
@@ -572,27 +416,16 @@ Used format specifiers \(%s, %d, %c etc\) while constructing format strings inst
 String validationMessage = String.format("Glcode: %1$s which  is mapped with Istrument type cheque in mdms is not exist in database",  accountCode.getGlcode());
 
 cgvnNumber = String.format("%s/%s/%s%010d", vh.getFundId().getIdentifier(), getCgnType(vh.getType()), "CGVN",
-<<<<<<< HEAD
                 nextSequence);
 ```
 
 ### Avoid data submissions to non-editable fields <a id="Avoid-data-submissions-to-non-editable-fields"></a>
-=======
-				nextSequence);
-
-```
-
-
-
-#### Avoid data submissions to non-editable fields <a id="Avoid-data-submissions-to-non-editable-fields"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Fixed this issue by using WebDataBinder.setDisallowedFields\(\) to disallow id in request binding.
 
 ```text
 @InitBinder
 public void initBinder(WebDataBinder binder) {
-<<<<<<< HEAD
         binder.setDisallowedFields("id");
 }
 ```
@@ -602,17 +435,6 @@ public void initBinder(WebDataBinder binder) {
 Most of the loops present in the third party \(YUI\) libraries. So we have not changed this.
 
 ### Avoid dangerous J2EE API, use replacements from security-focused libraries \(like OWASP ESAPI\) <a id="Avoid-dangerous-J2EE-API,-use-replacements-from-security-focused-libraries-(like-OWASP-ESAPI)"></a>
-=======
-		binder.setDisallowedFields("id");
-}
-```
-
-#### Potential Infinite Loops <a id="Potential-Infinite-Loops"></a>
-
-Most of the loops present in the third party \(YUI\) libraries. So we have not changed this.
-
-#### Avoid dangerous J2EE API, use replacements from security-focused libraries \(like OWASP ESAPI\) <a id="Avoid-dangerous-J2EE-API,-use-replacements-from-security-focused-libraries-(like-OWASP-ESAPI)"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Replaced the dangerous J2EE API with OWASP Enterprise Security API \(ESAPI\) equivalent APIs
 
@@ -642,17 +464,12 @@ httpUtilities.addHeader(response, "Expires", "-1");
 httpUtilities.addHeader(response, "Vary", "*");
 ```
 
-<<<<<<< HEAD
 ### Do not allow external input to control resource identifiers <a id="Do-not-allow-external-input-to-control-resource-identifiers"></a>
-=======
-#### Do not allow external input to control resource identifiers <a id="Do-not-allow-external-input-to-control-resource-identifiers"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Sanitized the user input to fix this issue.
 
 ```text
 function sanitizeHTML(text) {
-<<<<<<< HEAD
     return jQuery('<div>').text(text).html();
 }
 
@@ -661,17 +478,6 @@ url: "/services/EGF/voucher/common-ajaxYearCode.action?departmentId="+sanitizeHT
 ```
 
 ### The setter method for an identifier property \(id or composite-id\) should be private <a id="The-setter-method-for-an-identifier-property-(id-or-composite-id)-should-be-private"></a>
-=======
-	return jQuery('<div>').text(text).html();
-}
-
-url: "/services/EGF/voucher/common-ajaxYearCode.action?departmentId="+sanitizeHTML(departmentid.value)
-			+"&bankaccount="+sanitizeHTML(document.getElementById('bankaccount').value)
-
-```
-
-#### The setter method for an identifier property \(id or composite-id\) should be private <a id="The-setter-method-for-an-identifier-property-(id-or-composite-id)-should-be-private"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Changed the identifiers setter to private/protected
 
@@ -697,10 +503,6 @@ window.open(validateAndReturn(strDest), "myresults");
 validateAndReturn(url){
 Validation Logic to prevent only Allowed URL to Redirect to External Website
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Exported activity must require permissions**
@@ -710,7 +512,6 @@ Activity can be exported by setting its attribute exported=true, or adding an in
 _It is recommended to set attribute exported=false or remove the intent-filter as default value without the intent is considered as false._
 
 ```text
-<<<<<<< HEAD
     <activity
             android:name="org.egovernment.mseva.MainActivity"
             android:launchMode="singleInstance"
@@ -728,25 +529,6 @@ _It is recommended to set attribute exported=false or remove the intent-filter a
                     android:pathPrefix="/" /> <!-- if you want only a specific directory from your website to be opened in the app through external links -->
             </intent-filter>
         </activity>
-=======
-	<activity
-			android:name="org.egovernment.mseva.MainActivity"
-			android:launchMode="singleInstance"
-			android:permission="dangerous"  // Set Permissions
-			android:screenOrientation="portrait"> <!-- remove or alter as your apps requirement -->
-			<intent-filter
-				android:label="@string/app_name"
-				android:exported="false">
-				<action android:name="android.intent.action.VIEW" />
-				<category android:name="android.intent.category.DEFAULT" />
-				<category android:name="android.intent.category.BROWSABLE" />
-				<data android:scheme="https"
-					android:host="staging.digit.org"
-					android:pathPattern=".*"
-					android:pathPrefix="/" /> <!-- if you want only a specific directory from your website to be opened in the app through external links -->
-			</intent-filter>
-		</activity>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Potential code injection via WebView.addJavaScriptInterface\(\)**
@@ -756,7 +538,6 @@ _To avoid this security issue, you may remove addJavaScriptInterface\(\) when po
 
 _Either_
 
-<<<<<<< HEAD
 _\(1\) remove the JavaScript/Java bridge \(addJavascriptInterface\) or_
 
 _\(2\) make sure that the content loaded by WebView is really trusted \(and place a suppression for violations when needed\), or_
@@ -768,19 +549,6 @@ _\(3\) upgrade to API level 17 or higher and place a @JavascriptInterface annota
     public boolean isMsewaApp() {
         return true;
     }
-=======
- _\(1\) remove the JavaScript/Java bridge \(addJavascriptInterface\) or_
-
- _\(2\) make sure that the content loaded by WebView is really trusted \(and place a suppression for violations when needed\), or_
-
- _\(3\) upgrade to API level 17 or higher and place a @JavascriptInterface annotation on allowed public methods, as in the following code_
-
-```text
-	@JavascriptInterface    // Added Anotation to overcome this issue.
-	public boolean isMsewaApp() {
-		return true;
-	}
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Intent Manipulation**
@@ -790,7 +558,6 @@ If untrusted input is inserted into certain parts of an Android Intent, without 
 _It is recommended to validate untrusted input that does not proceed from app-controlled resources, and in particular user interface fields and other Intents coming from other apps._
 
 ```text
-<<<<<<< HEAD
     void loadView(String url, Boolean tab) {
         Intent request = getIntent(); // possibly coming from a malicious app
         ComponentName component = request.getComponent();
@@ -813,31 +580,6 @@ _It is recommended to validate untrusted input that does not proceed from app-co
     }
 ```
 
-=======
-	void loadView(String url, Boolean tab) {
-		Intent request = getIntent(); // possibly coming from a malicious app
-		ComponentName component = request.getComponent();
-		if(  isValidComponent(component) ) {  // Validating Intent
-		if (tab) {
-			Intent intent = new Intent(Intent.ACTION_VIEW);
-			intent.setData(Uri.parse(url));
-			startActivity(intent);
-		} else {
-			webView.loadUrl(url);
-		}}
-	}
-
-	private boolean isValidComponent(ComponentName component) {  // Validation Logic
-		String activityName = component.getClassName();
-		if(activityName.contains("MainActivity")){ 
-			return true;
-		}
-		return false;
-	}
-```
-
-  
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 **Do not release debuggable apps**
 
 It was observed that android:debuggable is set to true. Android allows the attribute android:debuggable to be set to true in the manifest so that the app can be debugged. By default this attribute is disabled, i.e., it is set to false, but it may be set to true to help with debugging during the development of the app. However, an app should never be released with this attribute set to true as it enables users to gain access to details of the app that should be kept secure.  
@@ -886,21 +628,13 @@ if (wfSlaConfig) {
         return wfSlaConfig[0].negativeSlabColor;
       }
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Do not use dangerouslySetInnerHTML property in React components.**
 
 dangerouslySetInnerHTML is React’s replacement for using innerHTML in the browser DOM. In general, setting HTML from code is risky because it’s easy to inadvertently expose your users to a cross-site scripting \(XSS\) attack.
 
-<<<<<<< HEAD
 _Avoid dangerouslySetInnerHTML, equivalent to the risky innerHTML in DOM, when possible. Try using HTML directly from React, but use dangerouslySetInnerHTML and pass an object with a \_\_html key.\_
-=======
-_Avoid dangerouslySetInnerHTML, equivalent to the risky innerHTML in DOM, when possible. Try using HTML directly from React, but use dangerouslySetInnerHTML and pass an object with a \_\_html key._
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 **Avoid post cross-document messages with an overly permissive target origin**  
 It was observed that the cross-document messaging feature has been used. The feature allows scripts to post messages to other windows. The corresponding API allows the user to specify the origin of the target window. However, caution should be taken when specifying the target origin because an overly permissive target origin will allow malicious script to communicate with the victim window in an inappropriate way.
@@ -930,7 +664,6 @@ for(i=0;!(i<P); i--) { ejecuta(); }
 ```
 
 **Never use JavaScript 'history' object or navigation-based positioning functions**  
-<<<<<<< HEAD
 Using 'history' \(window.history, self.history\) or navigation-based positioning functions \(window.back\(\), window.forward\(\)\) is a bad practice for different reasons: \* POST: If a visited page was generated with POST, _the_ browser will emit a warning if the submitted data is not encoded in the URL. \* PRIVACY: No application should know which pages a user visited \(browsers will emit a security alert and block access\). \* POOR NAVIGATION LOGIC: The exact page sequence taken by users may not match programmer expectations
 
 _It is recommended not to use the navigation history._
@@ -939,20 +672,5 @@ _It is recommended not to use the navigation history._
  window.location.replace(targetUrl); // OK, not using navigation history
 ```
 
-=======
-Using 'history' \(window.history, self.history\) or navigation-based positioning functions \(window.back\(\), window.forward\(\)\) is a bad practice for different reasons: \* POST: If a visited page was generated with POST, _the_ browser will emit a warning if the submitted data is not encoded in the URL. \* PRIVACY: No application should know which pages a user visited \(browsers will emit a security alert and block access\). \* POOR NAVIGATION LOGIC: The exact page sequence taken by users may not match programmer expectations  
-  
-_It is recommended not to use the navigation history._
-
-```text
-
- window.location.replace(targetUrl); // OK, not using navigation history
-```
-
-
-
-
-
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

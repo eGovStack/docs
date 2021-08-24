@@ -56,7 +56,6 @@ To configure the PGR module to use in Xstate-chatbot - the below variable values
 
 To configure PGR v2 in XState chatbot then pgrVersion should be ‘v2' and pgrUpdateTopic should be 'update-pgr-request’.
 
-<<<<<<< HEAD
 **Adding Information Image in PGR complaint creation**
 
 To configure the filestoreid for informational image follow the steps mention below
@@ -72,23 +71,6 @@ For Compliant status update notifications to citizen when an employee performs a
 Xstate chatbot is maintaining the template id of each message which gets triggered on the respective status or action performed on the complaint. The template ids are maintained in the [environment file](https://github.com/egovernments/eGov-infraOps/blob/master/helm/environments/qa.yaml#L198). For any new notification, its template id has to mention in the above file.
 
 Each notification in a different language will have different template ids. For example, the complaint resolve notification in English will have template-id as ‘12345' and the same notification in Hindi will have template-id as ‘6789’. The order of mentioning the template id must be the same as the order of the supported locale mentioned in [env-variable.js file](https://github.com/egovernments/core-services/blob/xstate-chatbot/xstate-chatbot/nodejs/src/env-variables.js#L20).
-=======
-**Configuration of city and locality search with nlp-search engine**
-
-To enable the fuzzy search for city and locality selection in PGR complaint flow  
-The variable **nlp-geoSearch** has to be set true in the [environment file](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L221).  
-To use the nlp-search engine with xstate chatbot, make sure that stable build is deployed and all the mdms data are present for that particular environment.  
-To know more about the nlp-search engine service please refer to the Reference document section.
-
-**Adding Information Image in PGR complaint creation and Open search information image**
-
-To configure the filestoreid for informational image follow the steps mention below
-
-1. Download the images from the section _**Information Images for PGR and Open Search**_
-2. Upload the image into filestore server. Use the upload file API from this postman collection\([https://www.getpostman.com/collections/bdb059c5af698f0d81d6\)](https://www.getpostman.com/collections/bdb059c5af698f0d81d6)
-3. For PGR information image mention the filestore id [here](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L219) in environment file .
-4. For Open search information image mention the filestore id [here](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L220) in environment file .
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 **For example:**
 
@@ -100,7 +82,6 @@ b\) if supportedLocales: process.env.SUPPORTED\_LOCALES \|\| 'hi\_IN,en\_IN'
 
 then valuefirst-notification-resolved-templateid: "6789,12345"
 
-<<<<<<< HEAD
 {% hint style="info" %}
 _\(Note: Both the list should not be empty, it must contain at least one element\)_
 {% endhint %}
@@ -147,80 +128,6 @@ The table below contains the details about some environment variables use in XSt
 #### Configuration of Telemetry File <a id="Configuration-of-Telemetry-File"></a>
 
 Add this [telemetry file](https://github.com/egovernments/configs/pull/629/files) in the [config repo](https://github.com/egovernments/configs/tree/DEV/egov-indexer) and mention the filename in the respective [environment yaml file](https://github.com/egovernments/eGov-infraOps/blob/master/helm/environments/qa.yaml#L248).
-=======
-_\(Note: Both the list should not be empty, it must contain at least one element\)_
-
-#### **Configuration of push notification template messages** with button <a id="[hardBreak]Configuration-of-push-notification-template-messages-with-button"></a>
-
-Template messages with button are maintained in the same way as describe in previous section \(**Configuration of push notification template messages**\)  
-  
-There are two type of button message
-
-* Quick Reply
-* Call To Action
-
-More details can be found in the value first document.
-
-{% file src="../../../../../.gitbook/assets/userguide-valuefirst-whatsapp-v1.0.4-190421-1-.pdf" caption="Value First Whatsapp User Guide" %}
-
-#### Integration of Bill Payment and Receipt Search feature in Xstate-Chatbot: <a id="Integration-of-Bill-Payment-and-Receipt-Search-feature-in-Xstate-Chatbot:"></a>
-
-The integration of the Bill payment and receipt search feature with the chatbot can be enabled and disable by making changes in this [file](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/service-loader.js). By exporting the respective bill service and receipt service file, the payment and receipt search feature can be enable**d** and vice versa.
-
-**Configuration of module for Bill payment and Receipt search**
-
-To configure the list of modules to appear as an option for payment and receipt, Add the module business service code in the list present in the [environment](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L216) file.
-
-**For example:**  
- If `bill-supported-modules: "WS, PT, TL"`  
- then Water and Sewerage, Property, Trade license module would appear for bill payment and  
- receipt search.
-
-Also add the message bundle, validation and service code for locality searcher in [egov-bill](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/egov-bill.js) and [egov-receipt](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/egov-receipts.js) file.  
-
-
-| **Environment Variables** | **Description** |
-| :--- | :--- |
-| `WHATSAPP_BUSINESS_NUMBER` |  The mobile number to be used on server |
-| `VALUEFIRST_USERNAME` | Username for configured number for sending messages to user through whatsapp provider API calls |
-| `VALUEFIRST_PASSWORD` | Password for configured number for sending messages to user through whatsapp provider API calls |
-| `GOOGLE_MAPS_API_KEY` | Maps API key to access geocoding feature |
-| `ROOT_TENANTID` | Contains state level tenantid value |
-| `SUPPORTED_LOCALES` | This variable contains the list supported language in chatbot. If there is a need to add new language in chatbot, then its respective locale need to add in this list. |
-| `PGR_VERSION` | Contains PGR version value to use \(i.e v1 or v2\) |
-| `PGR_UPDATE_TOPIC` | Depends on PGR version respective PGR update kafka topic name should mention here. Example: If `PGR_VERSION: 'v2'` then `PGR_UPDATE_TOPIC: 'update-pgr-request'` |
-| `BILL_SEARCH_LIMIT` | Limit for showing maximum number of bills on search. |
-| `RECEIPT_SEARCH_LIMIT` | Limit for showing maximum number of receipts on search. |
-| `COMPLAINT_SEARCH_LIMIT` | Limit for showing maximum number of complaints on search. |
-| `BILL_SUPPORTED_MODULES` | Contains the list of modules to be use for bill payment and receipts search. |
-| `INFORMATION_IMAGE_FILESTORE_ID` | Contains the filestoreid of informational image, which shows how to share the user current location. |
-| `OPEN_SEARCH_IMAGE_FILESTORE_ID` | Contains the filestoreid of open search informational image, which shows how to use open search pay feature for bill payment |
-| `USER_SERVICE_HARDCODED_PASSWORD` | This variable contain fixed value of login password and otp. This value has to configured in _env_-secrets.yaml.  |
-| `GEO_SEARCH` | Boolean flag to enable and disable city / locality nlp search |
-
-Configuration of Telemetry File
-
-Add this [telemetry file](https://github.com/egovernments/configs/pull/629/files) in [config repo](https://github.com/egovernments/configs/tree/DEV/egov-indexer) and mention the filename in respective [environment yaml file](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L263).
-
-####  **Searcher config file:** <a id="[hardBreak]Searcher-config-file:"></a>
-
-  
-[![](https://github.com/fluidicon.png)configs/localitySearcher.yml at qa · egovernments/configs](https://github.com/egovernments/configs/blob/qa/egov-searcher/localitySearcher.yml)  
-  
-**Cron job mdms entry:**  
-  
-[![](https://github.com/fluidicon.png)RAIN-2768 Added entry in cron job api config file · egovernments/egov-mdms-data@30881ab](https://github.com/egovernments/egov-mdms-data/commit/30881ab4f759c8b607417be2047b46865ec953ef)
-
-####  **Localisation for PGR service** <a id="[hardBreak]Localisation-for-PGR-service:[hardBreak]"></a>
-
-{% file src="../../../../../.gitbook/assets/pgr\_complaints\_localisation.json" caption="PGR Complaints Localization" %}
-
- **Information Images for PGR and Open Search**
-
-![Location Share Image](../../../../../.gitbook/assets/image%20%28280%29.png)
-
-![Open Search Image](../../../../../.gitbook/assets/image%20%28300%29.png)
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ## Reference Docs
 
@@ -229,25 +136,10 @@ Add this [telemetry file](https://github.com/egovernments/configs/pull/629/files
 | **Title** | **Link** |
 | :--- | :--- |
 | Chatbot Message Localisation | [Chatbot Message Localisation Doc](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1174306907/Xstate-Chatbot+Message+Localisation?atlOrigin=eyJpIjoiOTg3NTVmYTRhYTgzNDE3ODliODIzN2E1ODIxNmFkNmYiLCJwIjoiYyJ9) |
-<<<<<<< HEAD
 
 #### API List <a id="API-List"></a>
-=======
-| nlp-search engine | [NLP Engine Service](../nlp-engine-service.md) |
-
-## API List
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 | **Title** | **Link** |
 | :--- | :--- |
 | /xstate-chatbot/message | [https://www.getpostman.com/collections/57615217a846330672c6](https://www.getpostman.com/collections/57615217a846330672c6) |
-<<<<<<< HEAD
-=======
-| /xstate-chatbot/reminder | [https://www.getpostman.com/collections/47c10d1bc82a7133c269](https://www.getpostman.com/collections/47c10d1bc82a7133c269) |
-| /xstate-chatbot/status | [https://www.getpostman.com/collections/47c10d1bc82a7133c269](https://www.getpostman.com/collections/47c10d1bc82a7133c269) |
-
-
-
-
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 

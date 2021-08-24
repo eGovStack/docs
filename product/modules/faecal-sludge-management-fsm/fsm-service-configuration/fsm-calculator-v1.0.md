@@ -4,21 +4,13 @@ description: Details for setting up FSM calculator service
 
 # FSM Calculator v1.0
 
-<<<<<<< HEAD
 ## Overview <a id="Overview"></a>
-=======
-### Overview <a id="Overview"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 FSM Calculator is a system that enables FSM Admin to create billing slab for the FSM application\(s\) with different combination of propertyType , slum , tank capacity and etc..
 
 Generates the Demand after calculating the charges for the given application using the billing slab already configured. This document contains the details about how to setup the fsm-calculator service and description the functionalities it provides.
 
-<<<<<<< HEAD
 ## Pre-requisites <a id="Pre-requisites"></a>
-=======
-### Pre-requisites <a id="Pre-requisites"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
@@ -32,11 +24,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
   * fsm
   * billing-service
 
-<<<<<<< HEAD
 ## Key Functionalities <a id="Key-Functionalities"></a>
-=======
-### Key Functionalities <a id="Key-Functionalities"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 * FSM Admin an Employee of ULB with FSM Admin role can create, update billing slab\(s\)
 * ULB Employee with FSM\_CREATOR and FSM\_EDITOR can search billing slab\(s\)
@@ -44,16 +32,11 @@ Before you proceed with the configuration, make sure the following pre-requisite
 * ULB Employee can get the estimate for FSM Application
 * FSM service internally call fsm-calculator to generate a demand
 
-<<<<<<< HEAD
 ## Deployment Details <a id="Deployment-Details"></a>
-=======
-### Deployment Details <a id="Deployment-Details"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 1. Deploy the latest version of fsm
 2. Add fsm-calculator-persister.yml file in config folder in git and add that path in persister . _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
 
-<<<<<<< HEAD
 ## Configuration Details <a id="Configuration-Details"></a>
 
 ### MDMS Configuration <a id="MDMS-Configuration[hardBreak]"></a>
@@ -65,19 +48,6 @@ FSM MDMS Configuration is sufficient
 NA
 
 ### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
-=======
-### Configuration Details <a id="Configuration-Details"></a>
-
-#### MDMS Configuration <a id="MDMS-Configuration[hardBreak]"></a>
-
-FSM MDMS Configuration is sufficient
-
-#### Business Service / Workflow Configuration <a id="Business-Service-/-Workflow-Configuration"></a>
-
-NA
-
-#### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 **Actions**
 
@@ -242,19 +212,11 @@ values.yml for fms-calculator can be found [here](https://github.com/egovernment
         key: fsm
 ```
 
-<<<<<<< HEAD
 ## Data Setup <a id="Data-Setup"></a>
 
 ### Billing Slab Setup <a id="Billing-Slab-Setup"></a>
 
 Create Billing Slab with _\*\*_a combination of PropertyType refer values form [PropertyType Mdms](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/FSM/PropertyType.json), Slum \( YES/NO\), capacityFrom and capacityTo refers to Vehicle Tank Capacity.
-=======
-### Data Setup <a id="Data-Setup"></a>
-
-#### Billing Slab Setup <a id="Billing-Slab-Setup"></a>
-
-Create Billing Slab with ****a combination of PropertyType refer values form [PropertyType Mdms](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/FSM/PropertyType.json), Slum \( YES/NO\), capacityFrom and capacityTo refers to Vehicle Tank Capacity.
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Sample Curl
 
@@ -280,11 +242,6 @@ curl --location --request POST 'http://localhost:9098/fsm-calculator/v1/billingS
         "authToken": "a35b5ba7-2d5f-4272-8a67-0303cfab2c9f"
     },
    "billingSlab":{
-<<<<<<< HEAD
-
-=======
-          
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
             "tenantId": "pb.amritsar",
             "capacityFrom": 1000.00,
             "capacityTo": 50000.00,
@@ -297,7 +254,6 @@ curl --location --request POST 'http://localhost:9098/fsm-calculator/v1/billingS
 }'
 ```
 
-<<<<<<< HEAD
 ## Integration <a id="Integration"></a>
 
 ### Integration Scope <a id="Integration-Scope"></a>
@@ -309,19 +265,6 @@ FSM-calculator will be integrated with FSM Application. FSM Application internal
 * Calculation and demand generation logic will be separated from the FSM service. For each implementation, calculation implementation can be changed if required without modifying the fsm service.
 
 ### Steps to Integration <a id="Steps-to-Integration"></a>
-=======
-### Integration <a id="Integration"></a>
-
-#### Integration Scope <a id="Integration-Scope"></a>
-
-FSM-calculator will be integrated with FSM Application. FSM Application internally invokes the fsm-calculator service to calculate and generate demand for the charges.
-
-#### Integration Benefits <a id="Integration-Benefits"></a>
-
-* Calculation and demand generation logic will be separated from the FSM service. For each implementation, calculation implementation can be changed if required without modifying the fsm service.
-
-#### Steps to Integration <a id="Steps-to-Integration"></a>
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 1. FSM application to call fsm-calulator/v1/\_calculate to calculate and generate the demand for the fsm application
 2. ULB Employee can call fsm-calculator/v1/\_estimate to get the estimates for the fsm application
@@ -329,7 +272,6 @@ FSM-calculator will be integrated with FSM Application. FSM Application internal
 4. ULB Employee can update billing slab calling fsm-calculator/v1/billingSlab/\_update
 5. ULB Employee can search billing slab calling fsm-calculator/v1/billingSlab/\_search
 
-<<<<<<< HEAD
 ## Interaction Diagram <a id="Interaction-Diagram"></a>
 
 TBD
@@ -342,20 +284,6 @@ TBD
 | :--- | :--- |
 | Workflow Technical Document | [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
 | User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service) |
-=======
-### Interaction Diagram <a id="Interaction-Diagram"></a>
-
-TBD
-
-### Reference Docs <a id="Reference-Docs"></a>
-
-#### Doc Links <a id="Doc-Links"></a>
-
-| **Title**  | **Link** |
-| :--- | :--- |
-|  Workflow Technical Document |  [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
-|  User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service)   |
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 | MDMS Technical Document | **NEEDS TO BE UPDATED** |
 | IDGen Technical Document | **NEEDS TO BE UPDATED** |
 | Localization Technical Document | **NEEDS TO BE UPDATED** |
@@ -364,30 +292,15 @@ TBD
 | API Contract | [API Contract](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/fsm/Fsm_Apply_Contract.yaml) |
 | Postman Scripts | [Postman Scripts](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 
-<<<<<<< HEAD
 ### API List <a id="API-List"></a>
 
 | Title | **Link** |
 | :--- | :--- |
 | fsm-calulator/v1/\_calculate | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | fsm-calculator/v1/\_estimate | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
-=======
-#### API List <a id="API-List"></a>
-
-| Title | **Link** |
-| :--- | :--- |
-|  fsm-calulator/v1/\_calculate | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
-|  fsm-calculator/v1/\_estimate | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 | fsm-calculator/v1/billingSlab/\_create | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | fsm-calculator/v1/billingSlab/\_update | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | fsm-calculator/v1/billingSlab/\_search | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 
-<<<<<<< HEAD
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-=======
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
->>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
