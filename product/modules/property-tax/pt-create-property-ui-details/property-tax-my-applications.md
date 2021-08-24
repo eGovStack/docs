@@ -10,7 +10,11 @@ Once the user clicks on the Track Button, the Application Details Page is displa
 
 ![](../../../../.gitbook/assets/screenshot-from-2021-05-04-19-16-16.png)
 
+<<<<<<< HEAD
 **Timeline component:** The timeline component is present at the end of the application details which tells about the current status and history of the application passing through various workflows and actions taken.
+=======
+**Timeline component:** The timeline component is present at the end of the application details which tells about the current status and history of the application passing through various workflows and actions taken. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](../../../../.gitbook/assets/screenshot-from-2021-05-07-14-30-40.png)
 
@@ -34,7 +38,11 @@ The two main util function and the objective of it are given below:
 
 Create Util Function: While going through the Create flow, all the inputs that the user has entered are stored in a different structure. Since the units are not separated in the flow but incorporated according to each ground, the storing structure is different from the request body of Create API. This function transforms the flow of stored data into the requested body format.
 
+<<<<<<< HEAD
 [Click here](https://github.com/egovernments/digit-ui-internals/tree/development/packages/modules/pt/src/utils) to fetch the code.
+=======
+[Click here](https://github.com/egovernments/digit-ui-internals/tree/development/packages/modules/pt/src/utils) to fetch the code. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 [Update Util Function: ](edit-update-property.md)Click here to find detailed information about this function.
 
@@ -46,5 +54,12 @@ No MDMS data is used here, all the data is being loaded from Search API.
 
 For My Applications also the Localization keys are added in the ‘_rainmaker-pt_’ locale module same as My properties and create. To change, update or add any new localization key is done in the same locale module only.
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)
 

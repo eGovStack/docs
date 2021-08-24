@@ -1,16 +1,33 @@
 # Table of contents
 
 * [DIGIT](README.md)
+<<<<<<< HEAD
 * [Open Events](digit-open-events.md)
+=======
+* [Access DIGIT](access-digit.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 * [Architecture](architecture.md)
 * [Roadmap](roadmap.md)
 * [Release Notes](digit-release-notes/README.md)
   * [MDMS Configuration & Service Build Updates](digit-release-notes/mdms-configuration-and-service-build-updates.md)
+<<<<<<< HEAD
   * [WhatsApp Channel Release Notes](digit-release-notes/whatsapp-release-notes.md)
   * [eChallan Release Notes](digit-release-notes/echallan-release-notes.md)
   * [Property Tax Release Notes](digit-release-notes/property-tax-release-notes.md)
   * [QA Automation Release Notes](digit-release-notes/qa-automation-release-notes.md)
   * [Fire NOC Release Notes](digit-release-notes/fire-noc-release-notes.md)
+=======
+  * [Test Cases](digit-release-notes/test-cases.md)
+  * [WhatsApp Channel Release Notes](digit-release-notes/whatsapp-release-notes.md)
+  * [Trade License Release Notes](digit-release-notes/trade-license-release-notes.md)
+  * [FSM Release Notes](digit-release-notes/fsm-release-notes.md)
+  * [eDCR Release Notes](digit-release-notes/edcr-release-notes.md)
+  * [Workflow Auto Escalation Release Notes](digit-release-notes/workflow-auto-escalation-release-notes.md)
+  * [QA Automation Release Notes](digit-release-notes/qa-automation-release-notes-1.md)
+  * [HRMS UI/UX Revamp Release Notes](digit-release-notes/hrms-ui-ux-revamp-release-notes.md)
+  * [Bill Amendment Release Notes](digit-release-notes/bill-amendment-release-notes.md)
+  * [W&S Release Notes](digit-release-notes/w-and-s-release-notes.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ## Product Docs <a id="product"></a>
 
@@ -31,6 +48,18 @@
       * [Trade License Document Attachment](product/modules/trade-license-tl/tl-master-data-templates/trade-license-document-attachment.md)
     * [TL Service Configuration](product/modules/trade-license-tl/tl-service-configuration/README.md)
       * [Trade License Calculator](product/modules/trade-license-tl/tl-service-configuration/trade-license-calculator.md)
+<<<<<<< HEAD
+=======
+    * [TL Apply Flow UI Details](product/modules/trade-license-tl/tl-apply-flow-ui-details/README.md)
+      * [My Applications UI Flow](product/modules/trade-license-tl/tl-apply-flow-ui-details/my-applications-ui-flow.md)
+      * [Send Back - Edit UI Flow](product/modules/trade-license-tl/tl-apply-flow-ui-details/send-back-edit-ui-flow.md)
+      * [Trade License Renewal UI Flow](product/modules/trade-license-tl/tl-apply-flow-ui-details/trade-license-renewal-ui-flow.md)
+      * [Employee Inbox UI Details](product/modules/trade-license-tl/tl-apply-flow-ui-details/employee-inbox-ui-details.md)
+      * [Employee Search Application Search License UI Flow](product/modules/trade-license-tl/tl-apply-flow-ui-details/employee-search-application-search-license-ui-flow.md)
+      * [New Trade License UI Flow](product/modules/trade-license-tl/tl-apply-flow-ui-details/new-trade-license-ui-flow.md)
+      * [Application Details - Trade Details UI Flows](product/modules/trade-license-tl/tl-apply-flow-ui-details/application-details-trade-details-ui-flows.md)
+      * [Renew Edit Application](product/modules/trade-license-tl/tl-apply-flow-ui-details/renew-edit-application.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     * [TL User Manual](product/modules/trade-license-tl/tl-user-manual/README.md)
       * [Citizen User Manual](product/modules/trade-license-tl/tl-user-manual/citizen-user-manual.md)
       * [Employee User Manual](product/modules/trade-license-tl/tl-user-manual/employee-user-manual.md)
@@ -64,11 +93,25 @@
       * [Property Mutation & Mutation Calculator](product/modules/property-tax/property-tax-service/property-mutation-and-mutation-calculator.md)
       * [Assessment of Property](product/modules/property-tax/property-tax-service/assessment-of-property.md)
       * [PT Calculator](product/modules/property-tax/property-tax-service/pt-calculator.md)
+<<<<<<< HEAD
+=======
+      * [Fuzzy Search](product/modules/property-tax/property-tax-service/fuzzy-search/README.md)
+        * [Fuzzy Search Reindexing](product/modules/property-tax/property-tax-service/fuzzy-search/fuzzy-search-reindexing.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     * [PT - Create Property UI Details](product/modules/property-tax/pt-create-property-ui-details/README.md)
       * [Edit-Update Property](product/modules/property-tax/pt-create-property-ui-details/edit-update-property.md)
       * [Property Tax - My Applications](product/modules/property-tax/pt-create-property-ui-details/property-tax-my-applications.md)
       * [Property Tax - My Properties](product/modules/property-tax/pt-create-property-ui-details/property-tax-my-properties.md)
       * [Property Tax - Quick Pay for Citizen](product/modules/property-tax/pt-create-property-ui-details/property-tax-quick-pay-for-citizen.md)
+<<<<<<< HEAD
+=======
+      * [Create Application - Employee UI/UX Revamp](product/modules/property-tax/pt-create-property-ui-details/create-application-employee-ui-ux-revamp.md)
+      * [Employee Edit Application Flow](product/modules/property-tax/pt-create-property-ui-details/employee-edit-application-flow.md)
+      * [Employee - Search Property, Property Details Page & Assessment](product/modules/property-tax/pt-create-property-ui-details/employee-search-property-property-details-page-and-assessment.md)
+      * [Employee - Inbox & Application Details](product/modules/property-tax/pt-create-property-ui-details/employee-inbox-and-application-details.md)
+      * [Citizen Mutation Flow](product/modules/property-tax/pt-create-property-ui-details/citizen-mutation-flow.md)
+      * [Employee - Mutation \(Ownership Transfer\)](product/modules/property-tax/pt-create-property-ui-details/employee-mutation-ownership-transfer.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     * [PT Data Migration](product/modules/property-tax/pt-data-migration.md)
     * [PT User Manual](product/modules/property-tax/pt-user-manual/README.md)
       * [Citizen User Manual](product/modules/property-tax/pt-user-manual/citizen-user-manual.md)
@@ -144,15 +187,30 @@
     * [eChallan UI Details](product/modules/mcollect-mcs/echallan-ui-details/README.md)
       * [Edit - Cancel Challan](product/modules/mcollect-mcs/echallan-ui-details/edit-cancel-challan.md)
       * [Search and Pay Challan](product/modules/mcollect-mcs/echallan-ui-details/search-and-pay-challan.md)
+<<<<<<< HEAD
+=======
+      * [mCollect UI Flow](product/modules/mcollect-mcs/echallan-ui-details/mcollect-ui-flow.md)
+      * [Update - Cancel Challan UI Flow](product/modules/mcollect-mcs/echallan-ui-details/update-cancel-challan-ui-flow.md)
+      * [Challan Creation](product/modules/mcollect-mcs/echallan-ui-details/challan-creation.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     * [mCollect User Manual](product/modules/mcollect-mcs/mcollect-user-manual/README.md)
       * [MCS Citizen User Manual](product/modules/mcollect-mcs/mcollect-user-manual/mcs-citizen-user-manual.md)
       * [MCS Employee User Manual](product/modules/mcollect-mcs/mcollect-user-manual/mcs-employee-user-manual.md)
   * [Faecal Sludge Management \(FSM\)](product/modules/faecal-sludge-management-fsm/README.md)
     * [FSM Service Configuration](product/modules/faecal-sludge-management-fsm/fsm-service-configuration/README.md)
+<<<<<<< HEAD
+=======
+      * [FSM Implementation - Configuration](product/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-implementation-configuration.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
       * [FSM Calculator v1.0](product/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-calculator-v1.0.md)
       * [FSM Services](product/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-services.md)
       * [FSM Vendor Registry v1.0](product/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-vendor-registry-v1.0.md)
       * [FSM Vehicle Registry v1.0](product/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-vehicle-registry-v1.0.md)
+<<<<<<< HEAD
+=======
+      * [Legacy/Re-Indexing the FSM Data](product/modules/faecal-sludge-management-fsm/fsm-service-configuration/legacy-re-indexing-the-fsm-data.md)
+      * [FSM-DSS Technical Documentation](product/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-dss-technical-documentation.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     * [FSM User Manual](product/modules/faecal-sludge-management-fsm/fsm-user-manual/README.md)
       * [Citizen User Manual](product/modules/faecal-sludge-management-fsm/fsm-user-manual/citizen-user-manual.md)
       * [Employee User Manual](product/modules/faecal-sludge-management-fsm/fsm-user-manual/employee-user-manual.md)
@@ -196,11 +254,31 @@
       * [Fire NOC Employee User Manual](product/modules/fire-noc/fire-noc-user-manual/fire-noc-employee-user-manual.md)
   * [e-Challan Service](product/modules/e-challan-service/README.md)
     * [eChallan Calculator Services](product/modules/e-challan-service/echallan-calculator-services.md)
+<<<<<<< HEAD
+=======
+  * [HRMS](product/modules/hrms/README.md)
+    * [HRMS Employee Create-Edit UI Flow](product/modules/hrms/hrms-employee-create-edit-ui-flow.md)
+    * [Employee Details UI Flow](product/modules/hrms/employee-details-ui-flow.md)
+    * [Employee Activation-Deactivation UI Flow](product/modules/hrms/employee-activation-deactivation-ui-flow.md)
+    * [Search Employee By Multiple Criteria UI Flow](product/modules/hrms/search-employee-by-multiple-criteria-ui-flow.md)
+    * [Employees Count UI Flow](product/modules/hrms/employees-count-ui-flow.md)
+  * [Current Bill Cancellation UI Flow](product/modules/current-bill-cancellation-ui-flow/README.md)
+    * [Bill Details UI Flow](product/modules/current-bill-cancellation-ui-flow/bill-details-ui-flow.md)
+    * [Cancel Bill UI Flow](product/modules/current-bill-cancellation-ui-flow/cancel-bill-ui-flow.md)
+  * [Receipt Cancellation UI Flow](product/modules/receipt-cancellation-ui-flow/README.md)
+    * [View Receipt - Cancel UI Flow](product/modules/receipt-cancellation-ui-flow/view-receipt-cancel-ui-flow.md)
+  * [Auto Escalation UI Flow](product/modules/auto-escalation-ui-flow.md)
+  * [DSS UI Flow](product/modules/dss-ui-flow.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
   * [Product FAQs](product/modules/product-faqs.md)
 
 ---
 
 * [Training Resources](training-and-demo/README.md)
+<<<<<<< HEAD
+=======
+  * [Open Events](training-and-demo/digit-open-events.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
   * [Training Videos](training-and-demo/training-videos.md)
   * [Technical Enablement Areas](training-and-demo/technical-enablement-areas.md)
   * [eDCR Training Plan](training-and-demo/edcr-training-plan.md)
@@ -332,6 +410,10 @@
       * [PDF Generation Service](configuration/configure-digit/services-overview/core-services/pdf-generation-services.md)
       * [MDMS \(Master Data Management Service\)](configuration/configure-digit/services-overview/core-services/mdms-services.md)
       * [Payment Gateway Service](configuration/configure-digit/services-overview/core-services/payment-gateway-services.md)
+<<<<<<< HEAD
+=======
+      * [NLP Engine Service](configuration/configure-digit/services-overview/core-services/nlp-engine-service.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
       * [User Session Management In DIGIT](configuration/configure-digit/services-overview/core-services/user-session-management.md)
       * [Indexer Service](configuration/configure-digit/services-overview/core-services/indexer-service.md)
       * [URL Shortening Service](configuration/configure-digit/services-overview/core-services/url-shortening-service.md)
@@ -344,6 +426,10 @@
         * [Bill Amendment Service Configuration](configuration/configure-digit/services-overview/business-services/billing-service/bill-amendment-service-configuration.md)
       * [Collection Service](configuration/configure-digit/services-overview/business-services/collection-service/README.md)
         * [Collection Service Migration](configuration/configure-digit/services-overview/business-services/collection-service/collection-service-migration.md)
+<<<<<<< HEAD
+=======
+        * [Collection Service V2](configuration/configure-digit/services-overview/business-services/collection-service/collection-service-v2.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
       * [Billing Collection Integration](configuration/configure-digit/services-overview/business-services/billing-collection-integration.md)
       * [Dashboard Analytics - Backend](configuration/configure-digit/services-overview/business-services/dashboard-analytics-backend.md)
       * [DSS Technical Documentation](configuration/configure-digit/services-overview/business-services/dss-technical-documentation.md)
@@ -351,7 +437,13 @@
       * [DSS Features Enhancements](configuration/configure-digit/services-overview/business-services/dss-features-enhancements.md)
       * [Technical Script/Steps For Migration Process](configuration/configure-digit/services-overview/business-services/technical-script-steps-for-migration-process.md)
       * [Bill Amendment](configuration/configure-digit/services-overview/business-services/bill-amendment.md)
+<<<<<<< HEAD
     * [Municipal Service](configuration/configure-digit/services-overview/municipal-services.md)
+=======
+    * [Municipal Service](configuration/configure-digit/services-overview/municipal-services/README.md)
+      * [Turn-Io-Adapter](configuration/configure-digit/services-overview/municipal-services/turn-io-adapter.md)
+      * [Inbox Service](configuration/configure-digit/services-overview/municipal-services/inbox-service.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     * [Utilities](configuration/configure-digit/services-overview/utilities.md)
   * [Configuring Services](configuration/configure-digit/configuring-digit-services/README.md)
     * [Persister Configuration](configuration/configure-digit/configuring-digit-services/persister-configuration.md)
@@ -366,6 +458,10 @@
     * [Configuring Workflows](configuration/configure-digit/configuring-digit-services/configuring-workflows/README.md)
       * [Setting Up Workflows](configuration/configure-digit/configuring-digit-services/configuring-workflows/setting-up-workflow.md)
       * [Configuring Workflows For An Entity](configuration/configure-digit/configuring-digit-services/configuring-workflows/configuring-workflow-for-an-entity.md)
+<<<<<<< HEAD
+=======
+      * [Workflow Auto Escalation](configuration/configure-digit/configuring-digit-services/configuring-workflows/workflow-auto-escalation.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     * [DSS Configuration And Setup](configuration/configure-digit/configuring-digit-services/dss-configuration-and-setup/README.md)
       * [Building New Dashboards](configuration/configure-digit/configuring-digit-services/dss-configuration-and-setup/building-new-dashboards.md)
     * [Configuring New Reports](configuration/configure-digit/configuring-digit-services/configuring-reports/README.md)
@@ -378,6 +474,10 @@
     * [Configuring Localization](configuration/configure-digit/configuring-digit-services/configuring-localization/README.md)
       * [Setup Base Product Localization](configuration/configure-digit/configuring-digit-services/configuring-localization/setup-base-product-localization.md)
       * [Configure SMS and Email](configuration/configure-digit/configuring-digit-services/configuring-localization/configure-sms-and-email.md)
+<<<<<<< HEAD
+=======
+    * [DIGIT: Internal Datamart Deployment Steps](configuration/configure-digit/configuring-digit-services/digit-internal-datamart-deployment-steps.md)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     * [Customizing PDF Notices And Certificates](configuration/configure-digit/configuring-digit-services/customizing-pdf-notices-and-certificates/README.md)
       * [Integration Of PDF In UI For Download And Print PDF](configuration/configure-digit/configuring-digit-services/customizing-pdf-notices-and-certificates/integration-of-pdf-in-ui-for-download-and-print-pdf.md)
       * [Customizing PDF Receipts & Certificates](configuration/configure-digit/configuring-digit-services/customizing-pdf-notices-and-certificates/customizing-pdf-receipts-and-certificates.md)

@@ -54,8 +54,15 @@ There is no separate entity-specific checklist for this entity.
 
 [Configuration Data Templateconfigurable-data-template-noc-departments\_v1.xlsx - 10KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG_iQW5oN4ukgXP8K%2Fsync%2F8b1686fc0d5aaaa522eb396c917c3817d5907f07.xlsx?generation=1602050612582182&alt=media)
 
+<<<<<<< HEAD
 [Sample Datanoc-department-sample.xlsx - 10KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG_iQW5oN4ukgXP8K%2Fsync%2F2d5f4218da09b30fbe52fec5aaf8502d436cc000.xlsx?generation=1602050612588742&alt=media)[    
 ](https://docs.digit.org/configure-digit/configuring-master-data-templates/module-setup/obpas-data/town-planning-schemes)
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+=======
+[Sample Datanoc-department-sample.xlsx - 10KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG_iQW5oN4ukgXP8K%2Fsync%2F2d5f4218da09b30fbe52fec5aaf8502d436cc000.xlsx?generation=1602050612588742&alt=media)[  
+](https://docs.digit.org/configure-digit/configuring-master-data-templates/module-setup/obpas-data/town-planning-schemes)
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 

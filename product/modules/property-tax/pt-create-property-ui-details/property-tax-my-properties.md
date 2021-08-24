@@ -37,9 +37,20 @@ billData = await Digit.PaymentService.fetchBill(tenantId, {
 
 No MDMS data is used here, all the data is loaded from Search API.
 
+<<<<<<< HEAD
 ## **Localization**
 
 For My Properties also the Localization keys are added to the ‘_rainmaker-pt_’ locale module. To change, update or add, any new localization key is done in the same locale module only.
 
+=======
+## **Localization** 
+
+For My Properties also the Localization keys are added to the ‘_rainmaker-pt_’ locale module. To change, update or add, any new localization key is done in the same locale module only.
+
+
+
+
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)
 

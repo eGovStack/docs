@@ -1,6 +1,10 @@
 # PT Implementation Guide
 
+<<<<<<< HEAD
 ## Executive Summary
+=======
+## Executive Summary  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ### Overview of the Product
 
@@ -12,11 +16,21 @@ For the offered product, the implementation process can be divided into seven ma
 
 ![Exhibit 1: Phases of Implementation.](https://lh4.googleusercontent.com/YbdylRaOH65fQXr1Rx9jOLbo4RCaoCdiKyjDGXVp0LsXILVc0-SA-UBFL--XMm2_MHs0LOKVee2zzTq2ctMzH2F0ewG9y7MQJmXv8CSwnur9EfHaUTiqC5tEYfbCNGWkaOZU-aI)
 
+<<<<<<< HEAD
 Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One requires scoping of the initiative and decisions on the priorities for implementation by the State Implementation Team. In stage two, the State Team will work upon identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State. Configuration and customization of the product offered is the primary objective of stage four. This involves working on various aspects of State-specific needs and incorporating them into the product offered. In stage five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State level \(Go Live\) from a couple of ULBs to pan State coverage in batches. Finally, in stage 6 sustenance and ongoing improvements are worked upon while the product is already functioning in the State. \(For details on implementation plan refer to Section-3\)
 
 ### Critical Success Factors for implementation
 
 Implementation of Property Tax \(PT\) requires meticulous planning and close coordination between various stakeholders at the center and State level. The success of the initiative is dependent upon many factors like strong Program governance, availability of the trained resource, financial planning, targeted Implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to Urban center. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Property Tax System in the State.
+=======
+Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One requires scoping of the initiative and decisions on the priorities for implementation by the State Implementation Team. In stage two, the State Team will work upon identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State.  Configuration and customization of the product offered is the primary objective of stage four. This involves working on various aspects of State-specific needs and incorporating them into the product offered. In stage five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State level \(Go Live\) from a couple of ULBs to pan State coverage in batches. Finally, in stage 6 sustenance and ongoing improvements are worked upon while the product is already functioning in the State. \(For details on implementation plan refer to Section-3\)  
+
+
+### Critical Success Factors for implementation
+
+Implementation of Property Tax \(PT\) requires meticulous planning and close coordination between various stakeholders at the center and State level. The success of the initiative is dependent upon many factors like strong Program governance, availability of the trained resource, financial planning, targeted Implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to Urban center. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Property Tax System in the State.  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ## Property Tax \(PT\) Product - Overview
 
@@ -44,9 +58,15 @@ This module provides enables the following capabilities
 
 ### Module 2:   Filing an Assessment for a Property
 
+<<<<<<< HEAD
 With this feature, a citizen and employee can perform self assessment of a new property for a financial year. This feature helps in registering the property in the system. The details of the property can be entered online and can be assessed for calculation of the taxes. The PT Product is designed in a user friendly manner and reduces chances of error. System calculates the tax automatically and creates the demand. If a user wants to reassess his property due to any reason \(for eg, incorrect data, change in property etc\), it can be done by editing details of last assessment. Employee can edit the details of the last assessment, on behalf of the citizen based on owner’s input. Citizen can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.
 
 This module provides enables the following capabilities:
+=======
+With this feature, a citizen and employee can perform self assessment of a new property for a financial year. This feature helps in registering the property in the system. The details of the property can be entered online and can be assessed for calculation of the taxes. The PT Product is designed in a user friendly manner and reduces chances of error. System calculates the tax automatically and creates the demand. If a user wants to reassess his property due to any reason \(for eg, incorrect data, change in property etc\), it can be done by editing details of last assessment. Employee can edit the details of the last assessment, on behalf of the citizen based on owner’s input. Citizen can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.  
+
+ This module provides enables the following capabilities:
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 * Citizen/CSC can Assess New Property \(By Different Financial Years\).
 * Citizen/CSC can Capture Address, Assessment Info, Owner Info.for all types of properties like residential houses, flats and commercial buildings.
@@ -74,7 +94,11 @@ This module provides enables the following capabilities:
 
 ### Module 3:   Searching for a Property
 
+<<<<<<< HEAD
 Citizen or Employee can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.
+=======
+Citizen or Employee can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 This module provides the following capabilities:
 
@@ -99,7 +123,11 @@ This module provides the following capabilities:
 
 ### Module 5:  Generate Demand Notice
 
+<<<<<<< HEAD
 System has the capability to automatically generate demand notice for a financial year based on set triggers like time-based roll over on completion of a financial year. The system notifies the citizens about the demand through SMS/Email. The generated Bills can also be grouped and printed for physical distribution by the ULB employees. The system provides the capability to Employees to merge and download bills based on given parameters to plan their distribution drives.
+=======
+System has the capability to automatically generate demand notice for a financial year based on set triggers like time-based roll over on completion of a financial year. The system notifies the citizens about the demand through SMS/Email. The generated Bills can also be grouped and printed for physical distribution by the ULB employees. The system provides the capability to Employees to merge and download bills based on given parameters to plan their distribution drives. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 This module provides the following capabilities:
 
@@ -122,7 +150,11 @@ This module provides the following capabilities:
 
 ### Module 7:  Reports and Dashboards
 
+<<<<<<< HEAD
 PT reports provides facility to access receipt register, cancelled receipt register, account receipt register, ULB wise PT collection report, DCB Register. All reports can be downloaded in PDF/XLS format. State level administrator can monitor property tax collections, assessments and other information at a state level through dashboards.
+=======
+PT reports provides facility to access receipt register, cancelled receipt register, account receipt register, ULB wise PT collection report, DCB Register. All reports can be downloaded in PDF/XLS format. State level administrator can monitor property tax collections, assessments and other information at a state level through  dashboards.
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 This module provides the following capabilities:
 
@@ -140,9 +172,15 @@ The system has the capability to send notifications to citizens. These notificat
 
 #### Legacy Data Migration
 
+<<<<<<< HEAD
 The system has the capability to migrate Demand and Collection. In most states, the preliminary step would be to migrate Legacy data of existing properties/connections along with the Demand and Collection details. This would ensure that subsequent demand generation happens through the system.
 
 #### Configurable Masters
+=======
+The system has the capability to migrate Demand and Collection.  In most states, the preliminary step would be to migrate Legacy data of existing properties/connections along with the Demand and Collection details. This would ensure that subsequent demand generation happens through the system.
+
+#### Configurable Masters 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 The system provides the following masters that can be configured as per the State’s requirements:
 
@@ -291,13 +329,21 @@ The system provides the following masters that can be configured as per the Stat
 
 ## Property Tax \(PT\) Implementation Methodology
 
+<<<<<<< HEAD
 This section provides an overview of the methodology for State-wide implementation of PT. The Implementation of PT is distributed across seven distinct stages. Each stage has a predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision making for the overall success of the program. Details of each stage are defined in this section.
+=======
+This section provides an overview of the methodology for State-wide implementation of PT. The Implementation of PT is distributed across seven distinct stages. Each stage has a predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision making for the overall success of the program. Details of each stage are defined in this section.  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh4.googleusercontent.com/ghE5J_YGs1X1DSgwTdwh-j0meXtcHsvY2TEXy7875jmmRzZlZolKJi6_airBN5zN2yAn067iIFi0yZTyxtC4xm-S4ytmWmZFwqJocm8TFKGryqMBorHnVrxokgImW-zff02qLR8)
 
 Note: This document is specific for States that have more than 30 ULBs
 
+<<<<<<< HEAD
 PT implementation program is expected to be completed approximately between 38- 42 weeks depending on the variety in Processes, Integration and the Disparate legacy data systems involved. This is done with the resource deployment by the State and System Integrator \(SI\) Team. However, it is critical that activities and exit criteria set for each stage are achieved to adhere to this timeline.
+=======
+PT implementation program is expected to be completed approximately between 38- 42 weeks depending on the variety in Processes, Integration and the Disparate legacy data systems involved. This is done with the resource deployment by the State and System Integrator \(SI\) Team. However, it is critical that activities and exit criteria set for each stage are achieved to adhere to this timeline. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ### Seven Stages of Implementation
 
@@ -433,7 +479,11 @@ This stage envisages in-person interaction of crucial State officials and implem
 
 ### Stage 2 - Solution Design
 
+<<<<<<< HEAD
 During the Solution design stage, key State officials and members, who are subject matter experts, are expected to share their inputs, discuss the process and help understand how to bring in compliance around the system design for the System Integrator\(SI\) Team. This stage baselines the State-specific product features in the Product Configuration report.
+=======
+During the Solution design stage, key State officials and members, who are subject matter experts, are expected to share their inputs, discuss the process and help understand how to bring in compliance around the system design for the System Integrator\(SI\) Team. This stage baselines the State-specific product features in the Product Configuration report. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -634,9 +684,15 @@ During this stage, demonstration of the product followed by a hands on session i
 
 ### Stage 5 – Rollout
 
+<<<<<<< HEAD
 On successful Go-Live in the Pilot ULBs, and further fine tuning to stabilize the product, the solution will be rolled out to the rest of the ULBs in phases. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.
 
 Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches.
+=======
+On successful Go-Live in the Pilot ULBs, and further fine tuning to stabilize the product, the solution will be rolled out to the rest of the ULBs in phases. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.  
+
+Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -768,11 +824,19 @@ Resource requirements for the PT cell required to be formed by the State
 | Resource Name | No. Of Resources |
 | :--- | :--- |
 | Project Head | 1 |
+<<<<<<< HEAD
 | Domain Expert | 1 Representation from Corporations/Council/Panchayat etc. |
 | District Nodal Officer | 1 per district |
 | MIS Expert | 1 per district |
 
 Note:
+=======
+| Domain Expert |  1 Representation from Corporations/Council/Panchayat etc. |
+| District Nodal Officer | 1 per district |
+| MIS Expert | 1 per district |
+
+Note: 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 * Designations mentioned above are in accordance with those already driving PT implementation at the State level. 
 * The description of each designation is explained below. 
@@ -791,6 +855,7 @@ Note:
 
 **Consult** - One who may initiate, guide and in the process, handhold the execution of the activity
 
+<<<<<<< HEAD
 | Stage 0 - Program Setup/ On-Boarding |  |  |
 | :--- | :--- | :--- |
 | Task/Activity | eGov | State Leadership |
@@ -801,6 +866,18 @@ Note:
 | Finalise Property Tax Program Vision | Consult | Execute |
 
 Note: Stage 0 is where the PT cell and SI team is formed, hence there are only two entities playing a role which is that of eGov and the state leadership. Once the PT cell and SI team is finalised, their role begins in the following stages.
+=======
+| Stage 0 - Program Setup/ On-Boarding |   |   |
+| :--- | :--- | :--- |
+| Task/Activity | eGov | State Leadership  |
+| Appoint PT Cell | Consult | Execute |
+| Finalise funding for the program | Consult | Execute |
+| Define state -specific procurement process | Consult | Execute |
+| System Integrator\(SI\) Team sign-up/onboarding  | Consult | Execute |
+| Finalise Property Tax Program Vision | Consult | Execute |
+
+ Note: Stage 0 is where the PT cell and SI team is formed, hence there are only two entities playing a role which is that of eGov and the state leadership. Once the PT cell and SI team is finalised, their role begins in the following stages.
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -899,6 +976,7 @@ Note: Stage 0 is where the PT cell and SI team is formed, hence there are only t
 | Stage 2 - Solution Design |  |  |  |
 | :--- | :--- | :--- | :--- |
 | Task/Activity | eGov | PT Cell | SI Team |
+<<<<<<< HEAD
 | Standardisation of all PT processes, if needed |  | Consult | Execute |
 | Initiate policy change, if needed based on identified improvements | Consult | Execute | Consult |
 | Conduct Product familiarisation workshop |  | Consult | Execute |
@@ -906,10 +984,20 @@ Note: Stage 0 is where the PT cell and SI team is formed, hence there are only t
 | Finalise data migration/collection/sync-up approach |  | Consult | Execute |
 | Finalise data validation approach |  | Execute | Consult |
 | Capacity Building for making state team aware about basic usage of tools like MS Office, mails etc. |  | Execute | Consult |
+=======
+| Standardisation of all PT processes, if needed  |   | Consult | Execute |
+| Initiate policy change, if needed based on identified improvements  | Consult | Execute | Consult |
+| Conduct Product familiarisation workshop  |   | Consult | Execute |
+| Initiate collection of master data from pilot ULBs  |   | Consult | Execute |
+| Finalise data migration/collection/sync-up approach  |   | Consult | Execute |
+| Finalise data validation approach  |   | Execute | Consult |
+| Capacity Building for making state team aware about basic usage of tools like MS Office, mails etc.  |   | Execute | Consult |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 | Stage 3 – Configuration & Customization |  |  |  |
 | :--- | :--- | :--- | :--- |
 | Task/Activity | eGov | PT Cell | SI Team |
+<<<<<<< HEAD
 | Setting up development environments |  | Consult | Execute |
 | Development/customisation of reports and dashboards |  | Consult | Execute |
 | Development/Integration of portal |  | Consult | Execute |
@@ -920,11 +1008,24 @@ Note: Stage 0 is where the PT cell and SI team is formed, hence there are only t
 | PT legacy data collection from Pilot ULBs\(at least\) |  | Consult | Execute |
 | Capacity Building for making state team aware about basic usage of tools like MS Office, mails etc. |  | Execute | Consult |
 | Migration and verification of Pilot ULB data |  | Consult | Execute |
+=======
+| Setting up development environments |   | Consult | Execute |
+| Development/customisation of reports and dashboards |   | Consult | Execute |
+| Development/Integration of portal |   | Consult | Execute |
+| Third-Party Integrations \(Payment gateway, Handheld/pos device\) |   | Consult | Execute |
+| Updation of user manuals and other key documents |   | Consult | Execute |
+| Preparation & execution of Test Cases |   | Consult | Execute |
+| Setup monitoring, support & maintenance processes, tools and dashboards |   | Consult | Execute |
+| PT legacy data collection from Pilot ULBs\(at least\) |   | Consult | Execute |
+| Capacity Building for making state team aware about basic usage of tools like MS Office, mails etc. |   | Execute | Consult |
+| Migration and verification of Pilot ULB data |   | Consult | Execute |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 | Stage 4 – UAT & Go Live |  |  |  |
 | :--- | :--- | :--- | :--- |
 | Task/Activity | eGov | PT Cell | SI Team |
 | UAT Environment Setup | Consult | Consult | Execute |
+<<<<<<< HEAD
 | Identification of participants for UAT session |  | Consult | Execute |
 | Issues/bug resolution |  | Consult | Execute |
 | Regression UAT and sign off from Pilot ULBs/ State |  | Execute | Consult |
@@ -936,10 +1037,24 @@ Note: Stage 0 is where the PT cell and SI team is formed, hence there are only t
 | Marketing & promotion activities |  | Execute | Consult |
 | Go Live & launch event | Consult | Execute | Execute |
 | Setup of review and monitoring cadence/team |  | Execute | Consult |
+=======
+| Identification of participants for UAT session  |   | Consult | Execute |
+| Issues/bug resolution |   | Consult | Execute |
+| Regression UAT and sign off from Pilot ULBs/ State |   | Execute | Consult |
+| Setting up the Production environment |   | Consult | Execute |
+| Setting up Support Center & processes \(Help Desk\) |   | Execute | Consult |
+| Training user |   | Execute | Consult |
+| Training Trainer |   | Consult | Execute |
+| Training the Support Resources |   | Consult | Execute |
+| Marketing & promotion activities |   | Execute | Consult |
+| Go Live & launch event | Consult | Execute | Execute |
+| Setup of review and monitoring cadence/team  |   | Execute | Consult |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 | Stage 5: Rollout |  |  |  |
 | :--- | :--- | :--- | :--- |
 | Task/Activity | eGov | PT Cell | SI Team |
+<<<<<<< HEAD
 | ULB configurations phase wise as per the Project Plan |  | Consult | Execute |
 | Migration and verification of ULB data |  | Execute | Consult |
 | Logistics planning for training |  | Execute | Consult |
@@ -947,6 +1062,15 @@ Note: Stage 0 is where the PT cell and SI team is formed, hence there are only t
 | Training the Users at the district level |  | Execute | Consult |
 | Pan State Roll Out - All Locations | Consult | Execute | Execute |
 | Stabilise product |  | Consult | Execute |
+=======
+| ULB configurations phase wise as per the Project Plan |   | Consult | Execute |
+| Migration and verification of ULB data |   | Execute | Consult |
+| Logistics planning for training |   | Execute | Consult |
+| Establishment of bug ticketing tool for resolving ground level issues by the state team |   | Consult | Execute |
+| Training the Users at the district level |   | Execute | Consult |
+| Pan State Roll Out - All Locations | Consult | Execute | Execute |
+| Stabilise product |   | Consult | Execute |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -1109,12 +1233,17 @@ Note: Stage 0 is where the PT cell and SI team is formed, hence there are only t
 | :--- |
 
 
+<<<<<<< HEAD
 Vision:
+=======
+Vision:  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets
 
 Project Plan:
 
+<<<<<<< HEAD
 A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required.
 
 System Integrator:
@@ -1132,6 +1261,25 @@ Formal Acceptance/Sign Off of the Client State with a clear mandate of the Progr
 Program Success Metrics:
 
 Defining the parameters \(which are measurable\) prior to the program, on which the success of the program is to be measured on the completion of the program
+=======
+A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required. 
+
+System Integrator:
+
+The Entity/Company which collates all the subsystem required for the project and integrates them to achieve the program objective 
+
+Program Charter:
+
+Outline of implementation plan agreement with priority applications and broad timelines, program governance model, program success metrics and capacity building. 
+
+Acceptance Letter/MOU:
+
+Formal Acceptance/Sign Off of the Client State with a clear mandate of the Program 
+
+Program Success Metrics: 
+
+Defining the parameters \(which are measurable\) prior to the program, on which the success of the program is to be measured  on the completion of the program 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Project steering committee:
 
@@ -1139,12 +1287,18 @@ The key body within the governance structure which is responsible for the busine
 
 Project governance:
 
+<<<<<<< HEAD
 Set of policies, regulations, functions, processes, procedures and responsibilities that define the establishment, management and control of projects, programmes and portfolios.
+=======
+Set of policies, regulations, functions, processes, procedures and responsibilities that define the establishment, management and control of projects, programmes and portfolios.  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 | IMPLEMENTATION |
 | :--- |
 
 
+<<<<<<< HEAD
 Scoping:
 
 List of activities measured against time taken to complete them in accordance with the project goals
@@ -1154,6 +1308,17 @@ Baseline data:
 Set of information that serves as a foundation to compare other data acquired afterwards
 
 Project Kick off meeting:
+=======
+Scoping: 
+
+List of activities measured against time taken to complete them in accordance with the project goals
+
+Baseline data: 
+
+Set of information that serves as a foundation to compare other data acquired afterwards
+
+Project Kick off meeting: 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Meeting with the project team and the client of the project. This meeting would follow definition of the base elements for the project and other project planning activities
 
@@ -1169,7 +1334,11 @@ Data collection:
 
 Required data for the roll-out of the applications, which needs to be collected from the existing functional process
 
+<<<<<<< HEAD
 Data validation approach:
+=======
+Data validation approach: 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 This approach enables the sanctity of the Data with built-in validation by Design
 
@@ -1191,7 +1360,12 @@ On successful clearance of the Pilot, the Process/Application/Services are imple
 
 Deployment:
 
+<<<<<<< HEAD
 Deployment defines the complete package of Software components set up in a particular environment
+=======
+Deployment defines the complete package of Software components set up in a particular environment  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 | PRODUCT |
 | :--- |
@@ -1199,6 +1373,7 @@ Deployment defines the complete package of Software components set up in a parti
 
 Customisation:
 
+<<<<<<< HEAD
 Details of changes to be made in the Product to comply with the needed field process
 
 Configuration:
@@ -1206,6 +1381,17 @@ Configuration:
 Defining existing content such as Options and Variables based on the requirements on the ground
 
 Product walkthrough:
+=======
+Details of changes to be made in the Product to comply with the needed field process   
+
+
+Configuration:
+
+Defining existing content such as Options and Variables  based on the requirements on the ground   
+
+
+Product walkthrough: 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Explaining the users step-by-step through a set of actions that they need to take to achieve a specific outcome
 

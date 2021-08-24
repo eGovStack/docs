@@ -228,6 +228,10 @@ The combination of the above can be used to define the billing slab. Billing Sla
     }
   ]
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 If all criteria will match for that sewerage connection this slab will use for calculation.
@@ -276,6 +280,10 @@ Below is a sample of master data JSON for interest :
     }
   ]
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Penalty**
@@ -297,6 +305,10 @@ Below is a sample of master data JSON for penalty**:**
     }
   ]
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Round Off**
@@ -343,6 +355,12 @@ If the fraction is greater than equal to 0.5 the number is round up else it’s 
       "path": ""
     }
 ]
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Role Action Mapping**
@@ -423,6 +441,10 @@ If the fraction is greater than equal to 0.5 the number is round up else it’s 
     }
 
 ]
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 #### Demand Generation
@@ -451,6 +473,10 @@ In the case of an update, if the tax head estimates change, the difference in am
                     "tenantId": "pb.amritsar"
                 }
             ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 After updating if the SEWERAGE\_CHARGE increases to 150 we add one more demand detail to account for the increased amount. The demand detail will be updated to:
@@ -488,6 +514,10 @@ After updating if the SEWERAGE\_CHARGE increases to 150 we add one more demand d
                     "tenantId": "pb.amritsar"
                 }
             ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 RoundOff is bill based i.e every time bill is generated round off is adjusted so that the payable amount is the whole number. Individual SW\_ROUNDOFF in demand detail can be greater than 0.5 but the sum of all SW\_ROUNDOFF will always be less than 0.5.
@@ -545,7 +575,11 @@ So in future, if calculation logic needs to modify then changes can be carried o
 
 #### Doc Links <a id="Doc-Links"></a>
 
+<<<<<<< HEAD
 | **Title** | **Link** |
+=======
+| **Title**  | **Link** |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 | :--- | :--- |
 | API Swagger Contract | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/water-sewerage-services.yaml) |
 | Sewerage Service Document | [Sewerage Service](https://digit-discuss.atlassian.net/l/c/ZYtv10g0) |

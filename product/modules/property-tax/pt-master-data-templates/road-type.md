@@ -18,7 +18,11 @@ Given below is the sample data table from the template in which the data has to 
 
 Please note that the values mentioned in the data table are sample values and the states are free to add/update according to their specific requirements.
 
+<<<<<<< HEAD
 [Configuration Data Templateproperty-tax-roadtype\_template\_v1.xlsx - 9KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG_iQW5oN4ukgXP8K%2Fsync%2Fef792e2699fa36d6508fbe418e880d040621808f.xlsx?generation=1602050606784218&alt=media)
+=======
+[Configuration Data Templateproperty-tax-roadtype\_template\_v1.xlsx - 9KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG_iQW5oN4ukgXP8K%2Fsync%2Fef792e2699fa36d6508fbe418e880d040621808f.xlsx?generation=1602050606784218&alt=media) 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 [Sample Datasample\_data\_propety-tax\_road\_type.xlsx - 9KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG_iQW5oN4ukgXP8K%2Fsync%2F1ac1cd25b419603bcc481e2de186939016d1df08.xlsx?generation=1602050606660978&alt=media)
 

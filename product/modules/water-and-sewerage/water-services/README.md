@@ -175,6 +175,10 @@ master-config.json for water service
       "uniqueKeys": []
     }
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 Property creation through WNS module  
@@ -225,6 +229,11 @@ _**Persister configuration**_
       "path": ""
     }
 ]
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Role Action Mapping**
@@ -316,11 +325,22 @@ _**Persister configuration**_
       "tenantId": "pb"
     }
 ]
+<<<<<<< HEAD
 ```
 
 **Workflow business service config**
 
 Create businessService \(workflow configuration\) using the \_\_/businessservice/\_create. Following is the product configuration for water service
+=======
+
+
+```
+
+  
+**Workflow business service config**
+
+Create businessService \(workflow configuration\) using the  __/businessservice/\_create. Following is the product configuration for water service
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ```text
 {
@@ -554,6 +574,10 @@ Create businessService \(workflow configuration\) using the \_\_/businessservice
     }
   ]
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 Workflow for property creation through Water and Sewerage Module
@@ -653,6 +677,10 @@ Workflow for property creation through Water and Sewerage Module
     }
   ]
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Indexer config for water-service**
@@ -672,7 +700,11 @@ After connection activation or legacy connection, we can edit the connection. Th
 
 **Workflow config for edit connection**
 
+<<<<<<< HEAD
 Create businessService \(workflow configuration\) using the \_\_/businessservice/\_create. Following is the product configuration for editing the water connection.
+=======
+Create businessService \(workflow configuration\) using the  __/businessservice/\_create. Following is the product configuration for editing the water connection.
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ```text
 {
@@ -784,6 +816,10 @@ Create businessService \(workflow configuration\) using the \_\_/businessservice
     }
   ]
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Notification**
@@ -825,15 +861,25 @@ This ws-service module is used to manage water service connections against a pro
 ### Steps to Integration
 
 1. To integrate, host of ws-service module should be overwritten in helm chart.
+<<<<<<< HEAD
 2. /ws-services/wc/\_create should be added as the create endpoint for creating water application/connection in the system
 3. /ws-services/wc/\_search should be added as the search endpoint. This method handles all requests to search existing records depending on different search criteria
 4. /ws-services/wc/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update the status of the application based on workflow.
+=======
+2.  /ws-services/wc/\_create should be added as the create endpoint for creating water application/connection in the system
+3.  /ws-services/wc/\_search should be added as the search endpoint. This method handles all requests to search existing records depending on different search criteria
+4.  /ws-services/wc/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update the status of the application based on workflow.
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ## Reference Docs
 
 #### Doc Links <a id="Doc-Links"></a>
 
+<<<<<<< HEAD
 | **Title** | **Link** |
+=======
+| **Title**  | **Link** |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 | :--- | :--- |
 | API Swagger Documentation | [Swagger Documentation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/water-sewerage-services.yaml#!/) |
 | Water Calculator Service | [Water Calculator Service](https://digit-discuss.atlassian.net/l/c/9N49PrrT) |
@@ -842,7 +888,11 @@ This ws-service module is used to manage water service connections against a pro
 
 | Title | **Link** |
 | :--- | :--- |
+<<<<<<< HEAD
 | _/ws-services/wc/\_create_ | [https://www.getpostman.com/collections/b5b7248d1aeacc9431cb](https://www.getpostman.com/collections/b5b7248d1aeacc9431cb) |
+=======
+|  _/ws-services/wc/\_create_ | [https://www.getpostman.com/collections/b5b7248d1aeacc9431cb](https://www.getpostman.com/collections/b5b7248d1aeacc9431cb) |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 | _/ws-services/wc/\_update_ | [https://www.getpostman.com/collections/b5b7248d1aeacc9431cb](https://www.getpostman.com/collections/b5b7248d1aeacc9431cb) |
 | _/ws-services/wc/\_search_ | [https://www.getpostman.com/collections/b5b7248d1aeacc9431cb](https://www.getpostman.com/collections/b5b7248d1aeacc9431cb) |
 

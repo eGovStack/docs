@@ -35,6 +35,7 @@ The OBPS product features can be broadly classified as the following modules:
 7. Notice 
 8. General requirements 
 9. Module 1: Online registration of Architects/ Engineers / Supervisors etc. 
+<<<<<<< HEAD
 10. Approval of Applications: Enable the Competent Authority to approve/reject the applications for registration; based on a workflow system and business rules. Communication of successful registration/ rejection to the applicant through an e-mail alert & SMS. 
 11. Renewal of Registrations: Enable the Competent Authority to renew the applications for registration according to workflow/business rules. Communication of successful renewal will be sent to the applicant through an e-mail alert & SMS. 
 12. Search: Enable authorized officials to search the database for list of registered architects based on the ‘search’ criteria such as - line of business, turnover, past experience or as decided by ULB. 
@@ -95,10 +96,76 @@ The OBPS product features can be broadly classified as the following modules:
 38. Product has well defined service levels and the escalation matrix to officials regarding time limit for processing an application automatically in the system. 
 39. The  Product after the Citizen validates the application the system will schedule the Document Verification visit date. This date can be rescheduled by both the parties once. 
 40. SMS/Email Alerts enabled in the  Product
+=======
+
+
+
+1. Approval of Applications: Enable the Competent Authority to approve/reject the applications for registration; based on a workflow system and business rules. Communication of successful registration/ rejection to the applicant through an e-mail alert & SMS. 
+2. Renewal of Registrations: Enable the Competent Authority to renew the applications for registration according to workflow/business rules. Communication of successful renewal will be sent to the applicant through an e-mail alert & SMS. 
+3. Search: Enable authorized officials to search the database for list of registered architects based on the ‘search’ criteria such as - line of business, turnover, past experience or as decided by ULB. 
+4. Help: Provide an online handbook and user manual for registration. Provide FAQs on the registration process. ULB official will provide help desk assistance for resolving architects queries on registration process. 
+5. Module 2: Online Real Time Scrutiny of Drawing/Plan
+6. The Module enables the Architect/Engineer to submit the Drawing in Drawing Interchange Format\(DXF\) format from any Open Source CAD tools of their choice. The condition for the following are:
+   1. The drawing should adhere to the Standards stipulated. 
+   2. The Standards will be provided to the Architect in the native format \(DXF\) .
+7. The Module enables the Architect/Engineer to submit the Application for various Services as listed above along with required supporting documents. Under the current provision, the document checklist will aid the Architect/Engineer. 
+   1. The scrutiny process is online realtime and the Architect/Engineer will get the detailed Scrutiny report within minutes of submitting the Plan.
+   2. Scrutiny reports will list the Bye-laws and sub-clauses with the approved values against the extracted values.
+   3.  Based on the extracted value range validation will be done by the system.
+   4. Only on clearance of all the Rules Scrutinised the Report will reflect ACCEPTED.
+   5. On Accepted Report a unique number of the Scrutiny will be generated
+8. Scrutiny Parameters for all types of building meant for different usage; as per building bye laws and approved master plan will be taken into scrutiny. The major Plan provisions are as under : 
+   1. Plot area / shape 
+   2. Road width details 
+   3. MOS \(Marginal open space\) 
+   4. Ground coverage 
+   5. FAR \(Floor area ratio\) 
+   6. Building height 
+   7. Use of building \(Floor wise including mixed use in floors\) 
+   8. Parking provision 
+   9. Amenities
+   10. Components of building
+   11. Services Evaluation 
+   12. Firefighting requirement 
+   13. Green building norms 
+   14. Rain Water Harvesting 
+   15. Water supply 
+   16. Water treatment 
+   17. Solid waste management provisions 
+   18. NOC required on the basis of drawing details 
+9. Module 3: Submission and processing of Application  
+10. The entire process from the time of submission of drawing to scrutiny completion is automatic without any human intervention and instantaneous.
+    1.  If the Scrutiny report REJECT the drawing the Report will have the details of the clauses in which it was rejected and also the values of the parameters. 
+    2. The Architect/Engineer can correct the drawing and can resubmit the drawing till he gets the approval. 
+    3. Only on approval the unique reference number for the Scrutiny Report will be generated. 
+    4. Only with this number the Submission of Application can be initiated.
+11. The OBPS handles the Plan Scrutiny in Online Real time mode and there is no need for any wait time, once the Plan is drawn. Scrutiny gets completed in less than a minute.. 
+12. From the Plan submitted by the Architect the System will generate all the relevant plan in PDF format automatically. These are the set of Plans which will be issued to the end user with certification on successful completion of the Application Process. 
+13. The Application can be filled and required documents can be uploaded by the Architect once he has the Plan Scrutiny Reference number. 
+14. On Submission the Citizen need to validate and self certify the Application.
+15. Module -4: Application Process by the Department 
+16. Workflow is configurable as per the requirements and will be done during the Customisation phase of the Project
+17. All approvals will be electronically signed \(e-sign\) with QR code 
+18. The application captures all relevant details for all internal and external agencies; relevant data needs to be forwarded to corresponding agencies for issuing NOCs. 
+19. SLA on NOC is also validated by the System. If the required date is passed without a reply from the NOC department the NOC will be taken as Deemed approved.
+20. In addition a single window mechanism is also built into the system. This feature can be used by Departments which do not have the IT system for their process in full.
+21. Provision for entering onsite inspection details and geo-tagged images \(document upload facility\) of the Site Inspection. 
+22. The product has for the staff and the management for viewing the completed and pending tasks / works / applications. 
+23. The product has features for Online single window system, and integrations with all internal and external agencies required to provide applicable NOCs/approvals \(Fire Services, Water and Sewerage Department, Discoms, AAI, NMA, Forest, Labour, Factory Directorate\)
+24. A Statewide Dashboard is also available which can be used by State Administrators to see the flow of applications and the pendency or exceptions.
+25. The product offers Security on User Authentication with Role based access 
+26. The product will generate various MIS reports as per requirements of the Departments from time to time. MIS reports based on the payment received, dues position, plans passed, pending proposals, delayed approvals be generated as per Department requirement. 
+27. The Product has well-defined inspection report format at various levels to guide the inspectors which is also configurable. 
+28. The  Product incorporates digital signature \(e-sign\) for approval of application at different levels in the application system, Building permission letter, approved drawing, notices, letters, completion cum occupancy certificates etc. 
+29.  Product has well defined service levels and the escalation matrix to officials regarding time limit for processing an application automatically in the system. 
+30. The  Product after the Citizen validates the application the system will schedule the Document Verification visit date. This date can be rescheduled by both the parties once. 
+31. SMS/Email Alerts enabled in the  Product
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     1. Document Verification Meeting
     2. Field Verification
     3. Fee Computed and Demand Generated
     4. Plan Permit Approved and Digitally Signed
+<<<<<<< HEAD
 41. The Checklist for the Document Verification will be filled up by the officials on the Document Verification meeting. In the system the the Checklist is configurable.
 42. The  Product offers provision to incorporate the changes of building by-laws as intimated by the department in the application within time frame. 
     1. Product has the feature to capture the history of changes and based on the original application submission date the relevant rules will be taken into account for scrutiny.
@@ -126,6 +193,35 @@ The OBPS product features can be broadly classified as the following modules:
 63. The product have provisions where in providing basic parameters like certificate no., name, area etc. would generate basic information about approved certificate and hence would enable easy third party verification. 
 64. The Checklist, FAQ, User guide with video should be provided for end users. 
 65. The product provision to get month wise approved/ rejected/ pending application and status of pending approval.
+=======
+32. The Checklist for the Document Verification will be filled up by the officials on the Document Verification meeting. In the system the the Checklist is configurable.
+33. The  Product offers provision to incorporate the changes of building by-laws as intimated by the department in the application within time frame. 
+    1.  Product has the feature to capture the history of changes and based on the original application submission date the relevant rules will be taken into account for scrutiny.
+34. The  Product has the feature of provisioning ther Revoking/Cancelling of Building Permission. 
+35. On completion of the Document Verification the applicable NOC Departments will be addressed by the System for NOC.
+36. Field Verification Schedule will be assigned by the System with reschedule option for both the parties once.
+37. The officials can do the Field Verification, update the report in a checklist format and forward for approval
+38. Module-5: Online Fee Payments 
+39. The solution is  integrated with the payment gateway for Online Payments and facilitate for Fee collection, Fee calculation, refund calculation and generate online fee receipts based on the submitted Building plan. 
+40. Upon approval of the report and NOC clearances the Fees are computed automatically by the system. 
+41. The Fee computation uses the Plan Parameters and the applicable laws and rules of the State which are configurable.
+42. The Plans in PDF will be generated by the System with QR Code without any manual intervention.
+43. Citizen/Architect can pay the Fees Online
+44. Upon payment of Fees Plan Permit Approval process will be initiated and approved with Digital Signature. The Permit has been incorporated with QR Code.
+45. The Fees can be collected under various heads of accounts and the Reports for the collections against the Heads of Accounts will be generated. This will enable the user to account the collections accordingly. 
+46. Module-6: Certificate\(s\) 
+47. The product has provision to generate certificates with e-Sign/ digital signature and QR code which can be downloaded by the applicant.
+48. Module-7: Notice\(s\) 
+49. The notices, acknowledgment letters, approval letters, deviation or the rejection letters will be system generated with e-sign. 
+50. Every communication sent/received from/by an applicant will be received online only and reflected in the case as well as in the reports which can be used in court cases & for any other purpose. 
+51. Module-8: General requirements 
+52. The software tracks delays in approval steps and maintain an audit log of the approval process steps. 
+    1. System generates an alert against each application when it nears the time limit for disposing it. 
+53. The solution allows extraction of system logs to excel/pdf formats for internal analysis of cases.
+54. The product have provisions where in providing basic parameters like certificate no., name, area etc. would generate basic information about approved certificate and hence would enable easy third party verification. 
+55. The Checklist, FAQ, User guide with video should be provided for end users. 
+56. The product provision to get month wise approved/ rejected/ pending application and status of pending approval.
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Below mentioned table mention the functionality of the offered product as per the recommendations under the guidelines mentioned under the Ease of Doing Business\(EODB\) guidelines of 2019.
 
@@ -395,5 +491,11 @@ Below mentioned table mention the functionality of the offered product as per th
   </tbody>
 </table>
 
+<<<<<<< HEAD
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+=======
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 

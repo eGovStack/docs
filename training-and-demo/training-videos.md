@@ -126,6 +126,10 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Property Tax Configuration Videos</td>
       <td style="text-align:left">
+<<<<<<< HEAD
+=======
+        <p></p>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
         <ul>
           <li><a href="https://youtu.be/XLfhJD2X_gY">Road Type</a>
           </li>
@@ -222,6 +226,10 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">mCollect Configuration Videos</td>
       <td style="text-align:left">
+<<<<<<< HEAD
+=======
+        <p></p>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
         <ul>
           <li><a href="https://youtu.be/N-exC_4Zz-A">Service Category</a>
           </li>
@@ -233,6 +241,10 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Finance</td>
       <td style="text-align:left">
+<<<<<<< HEAD
+=======
+        <p></p>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
         <ul>
           <li><a href="https://youtu.be/9QOeBLrGZAI">Schemes</a>
           </li>
@@ -266,7 +278,11 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
   </tbody>
 </table>
 
+<<<<<<< HEAD
 ## Module Workflow Videos
+=======
+### Module Workflow Videos
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -279,6 +295,10 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Trade License Workflow</td>
       <td style="text-align:left">
+<<<<<<< HEAD
+=======
+        <p></p>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
         <ul>
           <li><a href="https://youtu.be/aTJf5GFIQ_M">Filling and submitting TL application forms</a>
           </li>
@@ -302,6 +322,10 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">OBPAS Workflow</td>
       <td style="text-align:left">
+<<<<<<< HEAD
+=======
+        <p></p>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
         <ul>
           <li><a href="https://youtu.be/UVGa46oBSE0">Architect Registration in DIGIT OBPAS Module</a>
           </li>
@@ -323,12 +347,22 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Finance Workflow</td>
       <td style="text-align:left">
+<<<<<<< HEAD
         <ul>
           <li><a href="https://youtu.be/ZAVVDHxYt8U">Chart of Accounts</a>
           </li>
           <li><a href="https://youtu.be/VbyohwHvQ2o">Deductions</a>
           </li>
           <li><a href="https://youtu.be/Pk0Uat4wi5s">Contractors-Suppliers</a>
+=======
+        <p></p>
+        <ul>
+          <li><a href="https://youtu.be/ZAVVDHxYt8U">Chart of Accounts</a>
+          </li>
+          <li><a href="https://youtu.be/VbyohwHvQ2o">Deductions </a>
+          </li>
+          <li><a href="https://youtu.be/Pk0Uat4wi5s">Contractors-Suppliers </a>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
           </li>
           <li><a href="https://youtu.be/x_ol6KurLSA">Funds</a>
           </li>
@@ -356,6 +390,10 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">PGR Workflow</td>
       <td style="text-align:left">
+<<<<<<< HEAD
+=======
+        <p></p>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
         <ul>
           <li><a href="https://youtu.be/uAPdghG-dH4">PGR Whatsapp Bill Payment</a>
           </li>

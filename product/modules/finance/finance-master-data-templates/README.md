@@ -56,6 +56,12 @@ The financial module enables users to -
 5. Revenue Reports
 6. MIS Reports
 
+<<<<<<< HEAD
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).[    
+=======
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).[  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ](https://docs.digit.org/configure-digit/configuring-master-data-templates/module-setup/hrms-data/system-users)
 

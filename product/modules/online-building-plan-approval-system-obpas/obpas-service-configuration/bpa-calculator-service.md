@@ -1,10 +1,18 @@
 # BPA Calculator Service
 
+<<<<<<< HEAD
 ## Description <a id="Description"></a>
 
 BPA application and BPA Occupancy Certificate application has Fee involved. Based on the Application Type, RiskType and ServiceType Fee to be calculated and generates a demand for the calculated amount for Payment. This service used to generate Application Fee, Sanction Fee, Low Application Permit Fee, Deviation Charges for BPA application and Occupancy Certificate Application.
 
 ## **System Requirements** <a id="System-Requirements:"></a>
+=======
+### Description <a id="Description"></a>
+
+BPA application and BPA Occupancy Certificate application has Fee involved. Based on the Application Type, RiskType and ServiceType Fee to be calculated and generates a demand for the calculated amount for Payment. This service used to generate Application Fee, Sanction Fee, Low Application Permit Fee, Deviation Charges for BPA application and Occupancy Certificate Application.
+
+### **System Requirements** <a id="System-Requirements:"></a>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 * Knowledge of Java/J2EE\(preferably Java 8 version\)
 * Knowledge of Spring Boot and spring-boot microservices.
@@ -13,6 +21,7 @@ BPA application and BPA Occupancy Certificate application has Fee involved. Base
 * Knowledge of the Lombok library will helpful.
 * knowledge of eGov-mdms service, eGov-persister, eGov-idgen, eGov-sms, eGov-email, eGov-user, eGov-localization, bpa-services will be helpful.
 
+<<<<<<< HEAD
 ## **Functionality**
 
 bpa calculator services present in municipal services provide multiple functionalities like calculating Application Fee, Sanction Fee, Low Permit Fee, OC Deviation Charges, generating demands for a particular BPA, BPA OC applications, updating demands, The different functionalities provided by sewerage calculator services are:
@@ -24,6 +33,19 @@ The [**Application**](https://github.com/egovernments/municipal-services/tree/ma
 * in case of IntelliJ, the plugin can be installed directly, for eclipse the Lombok jar location has to be added in eclipse.ini file in this format  javaagent:lombok.jar
 
 ### _**Application.properties File Information**_ <a id="Application.properties-File-Information:"></a>
+=======
+### **Functionality**
+
+bpa calculator services present in municipal services provide multiple functionalities like calculating Application Fee, Sanction Fee, Low Permit Fee, OC Deviation Charges, generating demands for a particular BPA, BPA OC applications, updating demands, The different functionalities provided by sewerage calculator services are:
+
+#### **Setup and usage** <a id="Setup-and-usage:"></a>
+
+The [**Application**](https://github.com/egovernments/municipal-services/tree/master) is present among the _**municipal services**_ group of applications available in the eGov-services git repository with the folder name **bpa-calculator**.  The spring boot application needs the **Lombok\*** extension added in your IDE to load it. Once the application is up and running API requests can be posted to the URL and ids can be generated. 
+
+* in case of IntelliJ, the plugin can be installed directly, for eclipse the Lombok jar location has to be added in eclipse.ini file in this format  javaagent:lombok.jar
+
+#### _**Application.properties File Information**_ <a id="Application.properties-File-Information:"></a>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 * Business service codes for
   * BPA High/Medium Risk Application Fee
@@ -57,11 +79,19 @@ _**External Application references**_
 * billing-service \( Generate and update demands \)
 * bpa-services \(Get the bpa application data for fee calculation \)
 
+<<<<<<< HEAD
 ### _**API Information**_ <a id="API-Information-:"></a>
 
 * bpa-calculator/v1/\_calculate End point to calculate the Fee and create Demand with the applicable businessService and TaxHeads
 
 ### MDMS Configuration: <a id="MDMS-Configuration:"></a>
+=======
+#### _**API Information**_ <a id="API-Information-:"></a>
+
+* bpa-calculator/v1/\_calculate End point to calculate the Fee and create Demand with the applicable businessService and TaxHeads
+
+#### MDMS Configuration: <a id="MDMS-Configuration:"></a>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -160,6 +190,10 @@ Application Fee, Sanction Fee BPA High/Medium Risk
       "isVoucherCreationEnabled": true,
       "isActive": true
     },
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Application Fee, Sanction Fee for BPA Low Risk**
@@ -232,6 +266,10 @@ Tax Head for BPA High/Medium Risk
       "order": "2",
       "isRequired": false
     },
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 TaxHead config for BPA Low Risk
@@ -343,6 +381,7 @@ TaxPeriod Config for BPA OC
     }
 ```
 
+<<<<<<< HEAD
 ## Workflow <a id="Workflow"></a>
 
 NA
@@ -364,4 +403,29 @@ NA
 NA
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+=======
+### Workflow <a id="Workflow"></a>
+
+NA
+
+### Persister configuration <a id="Persister-configuration"></a>
+
+NA
+
+### Database Schema <a id="Database-Schema"></a>
+
+NA
+
+### Notifications <a id="Notifications"></a>
+
+NA
+
+### PDF Configuration <a id="PDF-Configuration"></a>
+
+NA
+
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 

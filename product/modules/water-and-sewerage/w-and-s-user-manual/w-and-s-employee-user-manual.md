@@ -438,5 +438,11 @@ Provide any additional information for the applicant in the **Comments** section
 
 The application for new water or sewerage connection is approved. The applicant is allotted a unique **Consumer Number**. The application is now routed back to the citizen to make the payment towards connection charges. Once the payment is done the connection is activated.
 
+<<<<<<< HEAD
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+=======
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 

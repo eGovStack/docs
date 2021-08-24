@@ -2,7 +2,11 @@
 
 ## Overview
 
+<<<<<<< HEAD
 This page provides detailed UI information on the Create Property feature available in the Property Tax module.
+=======
+This page provides detailed UI information on the Create Property feature available in the Property Tax module. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 The objective is to provide user facilities to add a new property, view the property details and the application currently on their number. The feature allows users to update the property or edit the application.
 
@@ -52,6 +56,11 @@ In the case of Institutional, the following data will be asked in the first scre
 
 ![](../../../../.gitbook/assets/screenshot-from-2021-05-04-17-49-11.png)
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 In the case of a single/Multiple Owner following screen will be displayed, rest flow will remain the same.![](blob:https://digit-discuss.atlassian.net/24d51f36-7b39-442b-8268-c52650a28172#media-blob-url=true&id=9f17770a-184e-4f09-bf6e-85a9100c5fc8&collection=contentId-1569259539&contextId=1569259539&mimeType=image%2Fpng&name=Screenshot%20from%202021-05-04%2017-48-32.png&size=19616&width=258&height=514)
 
 ![](../../../../.gitbook/assets/screenshot-from-2021-05-04-17-48-32.png)
@@ -86,7 +95,11 @@ Pages Folder is where the high-level configuration for controlling the whole flo
 
 After completing the flow the user can download the acknowledgement PDF form of the property created. Click [here to find](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/pt/src/getPTAcknowledgementData.js) the config for the PDF generation.
 
+<<<<<<< HEAD
 Utils Folder basically contains all the methods which are being used throughout the PT module. In case any common method needs to be declared here, it can be imported into other files.
+=======
+Utils Folder basically contains all the methods which are being used throughout the PT module. In case any common method needs to be declared here, it can be imported into other files. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 For creating an Application the Create API from Property Tax is being called using the React hooks, which has been declared under hooks/elements/PT as PTService.
 
@@ -107,7 +120,11 @@ Throughout the flows, data across a few pages are imported from MDMS. Following 
 | 9 | PTGeolocation | Default value for location i.e Pratap Nagar Latitude and longitude | `PropertyTax` | `MapConfig` |
 | 10 | RentalDetails | Rentaldetails information regarding tax percentage is taken from MDMS | `PropertyTax` | `RentalDetails` |
 
+<<<<<<< HEAD
 Data React Hooks are used for calling MDMS, so that it could be shared throughout the modules.
+=======
+Data React Hooks are used for calling MDMS, so that it could be shared throughout the modules. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Below is the little code snippet for the call used for MDMS.
 
@@ -131,8 +148,13 @@ Localization keys are added under the ‘_rainmaker-pt_’ locale module. In fut
 | 4 | /property-services/property/\_create | 1895 | CITIZEN |
 | 5 | /property-services/property/\_search | 1897 | CITIZEN |
 | 6 | /property-services/property/\_update | 1896 | CITIZEN |
+<<<<<<< HEAD
 | 7 | /property-services/assessment/\_search |  | CITIZEN |
 | 8 | /billing-service/bill/v2/\_fetchbill |  | CITIZEN |
+=======
+| 7 | /property-services/assessment/\_search |   | CITIZEN |
+| 8 | /billing-service/bill/v2/\_fetchbill |   | CITIZEN |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ## Documents and Resource Links
 

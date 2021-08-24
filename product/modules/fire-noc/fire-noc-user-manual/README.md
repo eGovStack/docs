@@ -6,7 +6,12 @@ description: An illustrative guide to using the Fire NOC module
 
 ## **Introduction to Fire NOC**
 
+<<<<<<< HEAD
 The Fire NOC module allows citizens to make an application for Fire NoC and pay fire NoC fees. The module makes the process of obtaining a Fire NOC easy, smooth, and transparent. It eliminates the current manual process by automating and streamlining it, thus providing a better citizen service experience with the Urban Local Body \(ULB\) and Fire station employees.
+=======
+The Fire NOC module allows citizens to make an application for Fire NoC and pay fire NoC fees. The module makes the process of obtaining a Fire NOC easy, smooth, and transparent. It eliminates the current manual process by automating and streamlining it, thus providing a better citizen service experience with the Urban Local Body \(ULB\) and Fire station employees.  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ## **Key Features**
 
@@ -22,7 +27,12 @@ The module supports the following key functions -
 
 ## **User Roles**
 
+<<<<<<< HEAD
 Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.
+=======
+Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.   
+****
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -99,5 +109,14 @@ Refer to the table below to understand the different user roles and the scope of
 
 This section guides you through the details of using the Fire NOC module for each role. Click on the relevant role below to learn more about how to use the module.
 
+<<<<<<< HEAD
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
+=======
+## 
+
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+##  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa

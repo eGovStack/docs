@@ -6,11 +6,19 @@ description: Functional overview for stakeholders
 
 ## Introduction
 
+<<<<<<< HEAD
 The Water and Sewerage \(W&S\) module provides a digital interface to apply for water and sewerage connections and, pay the water and sewerage charges for connection/s. It can be used by the citizens, Urban Local Body \(ULB\) counter employees and field employees, and ULB Administrators to accomplish their specific tasks. It is available as a mobile and web-based application.
 
 ## Functional Scope
 
 The Water and Sewerage product features can be broadly classified as the following modules:
+=======
+The Water and Sewerage \(W&S\) module provides a digital interface to apply for water and sewerage connections and, pay the water and sewerage charges for connection/s. It can be used by the citizens, Urban Local Body \(ULB\) counter employees and field employees, and ULB Administrators to accomplish their specific tasks. It is available as a mobile and web-based application. 
+
+## Functional Scope
+
+ The Water and Sewerage   product features can be broadly classified as the following modules:
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 1. Registration, Login and Creation of User Profile
 2. Applying for a new Water/Sewerage connection
@@ -37,7 +45,11 @@ This module provides enables the following capabilities
 
 ### Application for new Water/Sewerage connection
 
+<<<<<<< HEAD
 The system allows the Citizen / ULB user \(with an appropriate role in the system\) to apply for a New Water/Sewerage connection. The application goes through an approval workflow before it is available for various transactions in the system. The workflow to be followed for a new water/sewerage connection is configurable. In the workflow, the ULB official will generate the estimation notice. Once the payment is made, a work order will be generated.
+=======
+The system allows the Citizen / ULB user \(with an appropriate role in the system\) to apply for a  New Water/Sewerage connection. The application goes through an approval workflow before it is available for various transactions in the system. The workflow to be followed for a new water/sewerage connection is configurable. In the workflow, the ULB official will generate the estimation notice. Once the payment is made, a work order will be generated.
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Every time there is a change in the status of an application, the citizen will be intimated through in-app notifications, SMS and email. The citizen and employee can view the history of the various states that an application has been in and the comments added by the employee in each state of the application.
 
@@ -52,9 +64,15 @@ The employee from the W&S department will be able to access the feature, to sear
 * From date
 * To date
 
+<<<<<<< HEAD
 The search result contains, Application number, Consumer number, Owner name, Status, Due amount and Pay now option. The Employee can make payment for a connection on the citizen’s behalf using the ‘Pay Now’ option.
 
 Citizens can also search for their connection in the portal. They can search using the Owners mobile number, Property ID, Consumer number etc. The search result yields, Owner’s Name, Address, Due amount and Pay option.
+=======
+The search result contains, Application number, Consumer number, Owner name, Status, Due amount and Pay now option. The Employee can make payment for a connection on the citizen’s behalf using the ‘Pay Now’ option. 
+
+Citizens can also search for their connection in the portal. They can search using the Owners mobile number, Property ID, Consumer number etc.  The search result yields, Owner’s Name, Address, Due amount and Pay option.
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ### Modifications to a Connection
 
@@ -76,6 +94,7 @@ On the W&S billing screen, there is a card called ‘Meter reading’. An employ
 * Billing Period Value
 * Consumer No.
 
+<<<<<<< HEAD
 This feature facilitates the employee to search for all results based on desired criteria. The search result yields the following values: consumer number, owner name, meter status, last reading, current reading, date and consumption.
 
 The employee can edit meter status, current reading, date and consumption under certain conditions. Based on this information the employee can generate the bills for connections.
@@ -91,6 +110,24 @@ Any success/ failure to generate demand triggers an automatic notification to th
 ### Payments collection and Receipts
 
 The citizen can pay for dues by searching his/her connection. In search results, the citizen can click on pay, which redirects to the summary page of the dues. After this, the citizen can pay for dues online. An employee can also collect the payment on the citizen’s behalf. After searching for the desired connection, clicking on pay will redirect the employee to the common payment page. The employee can print the receipt after the payment is successfully collected. The citizen is also notified and gets a download receipt link in the notification.
+=======
+This feature facilitates the employee to search for all results based on desired criteria. The search result yields the following values: consumer number, owner name, meter status, last reading, current reading, date and consumption. 
+
+ The employee can edit meter status, current reading, date and consumption under certain conditions. Based on this information the employee can generate the bills for connections.
+
+### Generate Demand
+
+ In the system, there is a feature to generate demand under the billing section. Generate demand has a search feature in which, the connections can be searched for which demand has been already generated. An employee can view, also edit those demands based on certain conditions. 
+
+The system has the capability to configure the demand generation as an automatic or a manual process. In the automatic process, the demand generation for non-metered connections is automatically done periodically. For metered connection as soon as the employee enters the meter reading and clicks on ‘SAVE’, the demand is generated. 
+
+ Any success/ failure to generate demand triggers an automatic notification to the concerned ULB officials via email. Also, the demand generation cycle, demand generation date and officials who should receive the notifications can be configured. 
+
+### Payments collection and Receipts
+
+ The citizen can pay for dues by searching his/her connection. In search results, the citizen can click on pay, which redirects to the summary page of the dues. After this, the citizen can pay for dues online. An employee can also collect the payment on the citizen’s behalf. After searching for the desired connection, clicking on pay will redirect the employee to the common payment page. The employee can print the receipt after the payment is successfully collected. The citizen is also notified and gets a download receipt link in the notification.  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ### Closure of Water Connection
 
@@ -98,7 +135,11 @@ If the Water tap owner has got his own water source then the water tap owner can
 
 ### Dashboards and Reports
 
+<<<<<<< HEAD
 The state-level administrator can keep track of relevant metrics by using dashboards. Dashboards for W&S can be accessed by a state-level user under login. The dashboard has these components:
+=======
+ The state-level administrator can keep track of relevant metrics by using dashboards. Dashboards for W&S can be accessed by a state-level user under login. The dashboard has these components:
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 * Financial Indicators
   * W&S Total collections YTD
@@ -173,5 +214,11 @@ The table below lists the functionalities supported by the offered product as pe
   </tbody>
 </table>
 
+<<<<<<< HEAD
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+=======
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 

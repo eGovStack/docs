@@ -1,6 +1,10 @@
 # TL Implementation Guide
 
+<<<<<<< HEAD
 ## Executive Summary
+=======
+## Executive Summary  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ### Overview of the Product
 
@@ -14,7 +18,11 @@ For the offered product, the implementation process can be divided into seven ma
 
 Exhibit 1: Phases of Implementation.
 
+<<<<<<< HEAD
 Stage Zero is that of program setup and onboarding which is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One requires scoping of the initiative and decisions on the priorities for implementation by the State Implementation Team. In stage two, the State Team will work upon identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State. Configuration and customization of the product offered is the primary objective of stage four. This involves working on various aspects of State-specific needs and incorporating them into the product offered. In stage five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State level \(Go Live\) from a couple of ULBs to pan State coverage in batches. Finally, in stage 6 sustenance and ongoing improvements are worked upon while the product is already functioning in the State. \(For details on implementation plan refer to Section-3\)
+=======
+Stage Zero is that of program setup and onboarding which is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One requires scoping of the initiative and decisions on the priorities for implementation by the State Implementation Team. In stage two, the State Team will work upon identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State.  Configuration and customization of the product offered is the primary objective of stage four. This involves working on various aspects of State-specific needs and incorporating them into the product offered. In stage five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State level \(Go Live\) from a couple of ULBs to pan State coverage in batches. Finally, in stage 6 sustenance and ongoing improvements are worked upon while the product is already functioning in the State. \(For details on implementation plan refer to Section-3\)
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ### Critical Success Factors for implementation
 
@@ -22,13 +30,18 @@ Implementation of Trade License \(TL\) requires meticulous planning and close co
 
 ## Product-Overview
 
+<<<<<<< HEAD
 The purpose of this document is to give an overview of the Trade License System \(TLS\). The Trade License product provides a digital interface, allowing citizens to apply for the Trade License and subsequently make the payment online.
+=======
+The purpose of this document is to give an overview of the Trade License System \(TLS\). The Trade License product provides a digital interface, allowing citizens to apply for the Trade License and subsequently make the payment online. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 The Trade License product enables:
 
 * Ease of doing business — Traders can apply for new licenses, renewals, amendments, and supplemental licenses
 * Regulatory Tracking — Administrators can track and manage regulatory processes
 * Shorter Timelines — It streamlines and automates business licensing processes and helps a business to be set up quickly
+<<<<<<< HEAD
 * Data-driven decision making — The application collates valuable information on the economic activity and employment opportunities in a ULB
 
   The TL product features can be broadly classified as the following modules:
@@ -41,12 +54,30 @@ The Trade License product enables:
 * Payments and Fee 
 * Dashboards and Reports
 * General Features
+=======
+* Data-driven decision making — The application collates valuable information on the economic activity and employment opportunities in a ULB 
+
+ The TL  product features can be broadly classified as the following modules:
+
+1. Registration, Login and Creation of User Profile
+2. Applying for a Trade License
+3. Trade License Issue
+4. Modifications to a Trade License
+5. Renewal of Trade License
+6. Payments and Fee 
+7. Dashboards and Reports
+8. General Features
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 [Click here](tl-module-functional-specifications.md) to view module capabilities and product functional specifications.
 
 ## Trade License \(TL\) Implementation Methodology
 
+<<<<<<< HEAD
 This section provides an overview of the methodology for State-wide implementation of TL. The Implementation of TL is distributed across seven distinct stages. Each stage has a predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision making for the overall success of the program. Details of each stage are defined in this section.
+=======
+This section provides an overview of the methodology for State-wide implementation of TL. The Implementation of TL is distributed across seven distinct stages. Each stage has a predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision making for the overall success of the program. Details of each stage are defined in this section.  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh4.googleusercontent.com/pYYmHAIeOJLerU7cHb-uPszewRSebMjf6_nxB80Rb-TmNDqsDEAHce5nAQUve0Nizl87dDt42EfcqEZcZkyk0RUmA-MeX4Xc6x8w0-UzsRxbwLvyyK_kCy5OK0TAP5a0mRTTIM4)
 
@@ -182,7 +213,11 @@ State Baseline Data: A Baseline Template is provided to collect certain vital in
 
 ### Stage 2 - Solution Design
 
+<<<<<<< HEAD
 During the Solution design stage, key State officials and members, who are subject matter experts, are expected to share State acts and policies and help interpret the same for the System Integrator \(SI\) Team. This stage baselines the State-specific product features in the Product Configuration report.
+=======
+During the Solution design stage, key State officials and members, who are subject matter experts, are expected to share State acts and policies and help interpret the same for the System Integrator \(SI\) Team. This stage baselines the State-specific product features in the Product Configuration report. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -242,7 +277,11 @@ During the Solution design stage, key State officials and members, who are subje
 </table>
 
 {% hint style="info" %}
+<<<<<<< HEAD
 Pilot ULBs Specific Product Data Configuration: Master data is required from the Product Perspective for go live. For e.g.: Boundary Data, List of Employees etc. A Master Data Template will be provided for the collection of this particular data type.
+=======
+Pilot ULBs Specific Product Data Configuration: Master data is required from the Product Perspective for go live. For e.g.: Boundary Data, List of Employees etc.  A Master Data Template will be provided for the collection of this particular data type.
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 {% endhint %}
 
 ### Stage 3 - Configuration & Customization
@@ -309,7 +348,12 @@ This stage consists of a series of developments in accordance with the detailed 
 
 ### Stage 4 - UAT & Go Live
 
+<<<<<<< HEAD
 During this stage, demonstration of the product followed by a hands-on session is conducted for the ULB officials. Necessary training of ULB officials and resources required for UAT is conducted and identified respectively. The establishment of the State support Team and required processes are initiated in this stage.
+=======
+During this stage, demonstration of the product followed by a hands-on session is conducted for the ULB officials. Necessary training of ULB officials and resources required for UAT is conducted and identified respectively. The establishment of the State support Team and required processes are initiated in this stage.  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -370,12 +414,21 @@ During this stage, demonstration of the product followed by a hands-on session i
 Note: The Nodal Officer is responsible to identify the ULB officials who are associated with the TL process on ground and will be working with the technological Product in the respective ULBs
 {% endhint %}
 
+<<<<<<< HEAD
 ### Stage 5 – Rollout
 
 On successful Go-Live in the Pilot ULBs, and further fine tuning to stabilize the product, the solution will be rolled out to the rest of the ULBs in phases. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.
 
 {% hint style="info" %}
 Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches.
+=======
+### Stage 5 – Rollout 
+
+On successful Go-Live in the Pilot ULBs, and further fine tuning to stabilize the product, the solution will be rolled out to the rest of the ULBs in phases. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.  
+
+{% hint style="info" %}
+Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 {% endhint %}
 
 <table>
@@ -501,7 +554,11 @@ Resource requirements for the TL cell required to be formed by the State
 | MIS Expert | 4 |
 
 {% hint style="info" %}
+<<<<<<< HEAD
 Note:
+=======
+Note: 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 * Designation mentioned above are as per designations already driving TLs implementation at the State level. 
 * The description of each designation is explained below. 
@@ -519,7 +576,12 @@ Description of resource persons:
 
 eGOv Team: eGov Team is the technical partner of the project which will provide all necessary support to the State concerning the implementation, Program Designing etc.
 
+<<<<<<< HEAD
 System Integrator \(SI\)Team: SI Team will be responsible for consulting, program management and the implementation of products in the ULBs in close collaboration with the TL cell, technical partner \(eGov\) and various other stakeholders.
+=======
+System Integrator \(SI\)Team: SI Team will be responsible for consulting, program management and the implementation of products in the ULBs in close collaboration with the TL cell, technical partner \(eGov\) and various other stakeholders.  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 {% hint style="info" %}
 Guidelines to read the tables below:
@@ -529,9 +591,15 @@ Execute - One who owns the accountability to complete the activity
 Consult - One who may initiate, guide and in the process, handhold the execution of the activity
 {% endhint %}
 
+<<<<<<< HEAD
 | Stage 0 - Program Setup/ On-Boarding |  |  |
 | :--- | :--- | :--- |
 | Task/Activity | eGov | State Leadership |
+=======
+| Stage 0 - Program Setup/ On-Boarding |   |   |
+| :--- | :--- | :--- |
+| Task/Activity | eGov | State Leadership  |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 | Appoint of TL Cell | Consult | Execute |
 | Finalise funding for the program | Consult | Execute |
 | Define state -specific procurement process | Consult | Execute |
@@ -542,6 +610,7 @@ Consult - One who may initiate, guide and in the process, handhold the execution
 Note: Stage 0 is where the TL cell and SI team is formed, hence there are only two entities playing a role which is that of eGov and the state leadership. Once the TL cell and SI team is finalised, their role begins in the following stages.
 {% endhint %}
 
+<<<<<<< HEAD
 | Stage 1 - Program kick-off |  |  |  |
 | :--- | :--- | :--- | :--- |
 | Task/Activity | eGov | TL Cell | SI Team |
@@ -572,10 +641,43 @@ Note: Stage 0 is where the TL cell and SI team is formed, hence there are only t
 | Finalise data validation approach |  | Execute | Consult |
 | Capacity Building for making state team aware about basic usage of tools like MS Office, mails etc. |  | Execute | Consult |
 | Dashboard design finalisation for Program Tracking |  | Execute | Consult |
+=======
+| Stage 1 - Program kick-off |   |   |   |
+| :--- | :--- | :--- | :--- |
+| Task/Activity | eGov | TL Cell | SI Team |
+| Identify & agree on scope and exclusions | Consult | Consult | Execute |
+| Identify pilot ULBs |   | Execute | Consult |
+| Project Kickoff - Implementation Methodology Presentation | Consult  | Consult  | Execute |
+| Product Walkthroughs  | Consult |    | Execute |
+| Define Project Steering Committee structure and Project Governance process | Consult | Consult | Execute |
+| Define phases of deployment/ rollout |   | Consult | Execute |
+| Agreement on Deployment Priorities and high-level delivery timelines |   | Consult | Execute |
+| Identify and study all TL process  |   | Consult | Execute |
+| Finalize Program Success Metrics for Adoption and Governance adhering to the vision of the program | Consult | Consult | Execute |
+| Stage 1 - Program kick-off |   |   |   |
+| Task/Activity | eGov | TL Cell | SI Team |
+|  Internal Capacity Building, program logistics at State and ULBs, as per the current scenario |   | Execute | Consult |
+| Collection of baseline data to measure end line target for the product \(Revenue generated, total properties in ULBs etc.\)  | Consult | Execute | Consult |
+| Circulation of baseline data collection templates to the state/SI Team |   |  Execute |  Consult |
+
+|  Stage 2 - Solution Design |   |   |   |
+| :--- | :--- | :--- | :--- |
+| Task/Activity | eGov | TL Cell | SI Team |
+| Standardisation of all TL processes |   | Consult | Execute |
+| Define criteria for success |   | Execute |  Consult |
+| Initiate policy change, if needed based on Processes defined | Consult | Execute | Consult |
+| Conduct Product familiarisation workshop |   | Consult | Execute |
+| Initiate collection of master data from pilot ULBs |   | Consult | Execute |
+| Finalise data migration/collection/sync-up approach |   | Consult | Execute |
+| Finalise data validation approach |   | Execute | Consult |
+| Capacity Building for making state team aware about basic usage of tools like MS Office, mails etc.  |   | Execute | Consult |
+| Dashboard design finalisation for Program Tracking |   |  Execute |  Consult |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 | Stage 3 – Configuration & Customization |  |  |  |
 | :--- | :--- | :--- | :--- |
 | Task/Activity | eGov | TL Cell | SI Team |
+<<<<<<< HEAD
 | Setting up development environments |  | Consult | Execute |
 | Development/customisation of reports and dashboards |  | Consult | Execute |
 | Development/Integration of portal |  | Consult | Execute |
@@ -587,11 +689,25 @@ Note: Stage 0 is where the TL cell and SI team is formed, hence there are only t
 | Capacity Building for making state team aware about basic usage of tools like MS Office, mails etc. |  | Execute | Consult |
 | Verification and Migration of Pilot ULB data |  | Consult | Execute |
 | Identification of participants for UAT session |  | Execute | Consult |
+=======
+| Setting up development environments |   | Consult | Execute |
+| Development/customisation of reports and dashboards |   | Consult | Execute |
+| Development/Integration of portal |   | Consult | Execute |
+| Third-Party Integrations \(Payment gateway, Handheld/pos device\) |   | Consult | Execute |
+| Updation of user manuals and other key documents |   | Consult | Execute |
+| Preparation & execution of Test Cases |   | Consult | Execute |
+| Setup monitoring, support & maintenance processes, tools and dashboards |   | Consult | Execute |
+| TL legacy data collection from Pilot ULBs \(at least\) |   | Consult | Execute |
+| Capacity Building for making state team aware about basic usage of tools like MS Office, mails etc. |   | Execute | Consult |
+| Verification and Migration of Pilot ULB data |   | Consult | Execute |
+| Identification of participants for UAT session  |   | Execute | Consult |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 | Stage 4 – UAT & Go Live |  |  |  |
 | :--- | :--- | :--- | :--- |
 | Task/Activity | eGov | TL Cell | SI Team |
 | UAT Environment Setup | Consult | Consult | Execute |
+<<<<<<< HEAD
 | Issues/bug identification and resolution |  | Consult | Execute |
 | Regression UAT and sign off from Pilot ULBs/ State |  | Execute | Consult |
 | Setting up the Production environment |  | Consult | Execute |
@@ -614,6 +730,30 @@ Note: Stage 0 is where the TL cell and SI team is formed, hence there are only t
 | Training the Users at the district level |  | Execute | Consult |
 | Pan State Roll Out – Phase wise | Consult | Execute | Execute |
 | Stabilise product |  | Consult | Execute |
+=======
+| Issues/bug identification and resolution |   | Consult | Execute |
+| Regression UAT and sign off from Pilot ULBs/ State |   | Execute | Consult |
+| Setting up the Production environment |   | Consult | Execute |
+| Setting up Support Centre & processes \(Help Desk\) |   | Execute | Consult |
+| Training user |   | Execute | Consult |
+| Training Trainer |   | Consult | Execute |
+| Stage 4 – UAT & Go Live |   |   |   |
+| Task/Activity | eGov | TL Cell | SI Team |
+| Training the Support Resources |   | Consult | Execute |
+| Marketing & promotion activities |   | Execute | Consult |
+| Go Live & launch event | Consult | Execute | Execute |
+| Setup of review and monitoring cadence/team  |   | Execute | Consult |
+
+| Stage 5: Rollout |   |   |   |
+| :--- | :--- | :--- | :--- |
+| Task/Activity | eGov | TL Cell | SI Team |
+| ULB configurations phase wise as per the Project Plan |   | Consult | Execute |
+| Verification and Migration  of ULB data phase wise as per the Data Agreement Sign Off provided by the State |   | Execute | Consult |
+| Establishment of bug ticketing tool for resolving ground level issues by the state team |   | Consult | Execute |
+| Training the Users at the district level |   | Execute | Consult |
+| Pan State Roll Out – Phase wise | Consult | Execute | Execute |
+| Stabilise product |   | Consult | Execute |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -776,12 +916,17 @@ Note: Stage 0 is where the TL cell and SI team is formed, hence there are only t
 | :--- |
 
 
+<<<<<<< HEAD
 Vision:
+=======
+Vision:  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets
 
 Project Plan:
 
+<<<<<<< HEAD
 A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required.
 
 System Integrator:
@@ -799,6 +944,25 @@ Formal Acceptance/Sign Off of the Client State with a clear mandate of the Progr
 Program Success Metrics:
 
 Defining the parameters \(which are measurable\) prior to the program, on which the success of the program is to be measured on the completion of the program
+=======
+A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required. 
+
+System Integrator:
+
+The Entity/Company which collates all the subsystem required for the project and integrates them to achieve the program objective 
+
+Program Charter:
+
+Outline of implementation plan agreement with priority applications and broad timelines, program governance model, program success metrics and capacity building. 
+
+Acceptance Letter/MOU:
+
+Formal Acceptance/Sign Off of the Client State with a clear mandate of the Program 
+
+Program Success Metrics: 
+
+Defining the parameters \(which are measurable\) prior to the program, on which the success of the program is to be measured  on the completion of the program 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Project steering committee:
 
@@ -806,12 +970,18 @@ The key body within the governance structure which is responsible for the busine
 
 Project governance:
 
+<<<<<<< HEAD
 Set of policies, regulations, functions, processes, procedures and responsibilities that define the establishment, management and control of projects, programmes and portfolios.
+=======
+Set of policies, regulations, functions, processes, procedures and responsibilities that define the establishment, management and control of projects, programmes and portfolios.  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 | IMPLEMENTATION |
 | :--- |
 
 
+<<<<<<< HEAD
 Scoping:
 
 List of activities measured against time taken to complete them in accordance with the project goals
@@ -821,6 +991,17 @@ Baseline data:
 Set of information that serves as a foundation to compare other data acquired afterwards
 
 Project Kick off meeting:
+=======
+Scoping: 
+
+List of activities measured against time taken to complete them in accordance with the project goals
+
+Baseline data: 
+
+Set of information that serves as a foundation to compare other data acquired afterwards
+
+Project Kick off meeting: 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Meeting with the project team and the client of the project. This meeting would follow definition of the base elements for the project and other project planning activities
 
@@ -836,7 +1017,11 @@ Data collection:
 
 Required data for the roll-out of the applications, which needs to be collected from the existing functional process
 
+<<<<<<< HEAD
 Data validation approach:
+=======
+Data validation approach: 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 This approach enables the sanctity of the Data with built-in validation by Design
 
@@ -860,12 +1045,17 @@ Deployment:
 
 Deployment defines the complete package of Software components set up in a particular environment
 
+<<<<<<< HEAD
 | PRODUCT |
+=======
+| PRODUCT  |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 | :--- |
 
 
 Customization:
 
+<<<<<<< HEAD
 Details of changes to be made in the Product to comply with the needed field process
 
 Configuration:
@@ -877,4 +1067,19 @@ Product walkthrough:
 Explaining the users step-by-step through a set of actions that they need to take to achieve a specific outcome
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+=======
+Details of changes to be made in the Product to comply with the needed field process 
+
+Configuration:
+
+Defining existing content such as Options and Variables  based on the requirements on the ground
+
+Product walkthrough: 
+
+Explaining the users step-by-step through a set of actions that they need to take to achieve a specific outcome
+
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 

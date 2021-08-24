@@ -6,7 +6,11 @@ description: >-
 
 # Fire NOC Employee User Manual
 
+<<<<<<< HEAD
 ## Counter Employee
+=======
+## Counter Employee 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Counter Employees are ULB employees responsible for helping citizens apply for fire NOC or pay the NOC fees at the counter. The Fire NoC module provides the Counter Employees with the scope to create new NOC applications on behalf of the citizens, view application status, and accept NOC fee payment.
 
@@ -17,7 +21,11 @@ The Counter Employees can -
 
 ### Create and Submit New Application
 
+<<<<<<< HEAD
 The Create New Application option allows counter employees to fill in and submit the NOC application form on behalf of the citizen.
+=======
+The Create New Application option allows counter employees to fill in and submit the NOC application form on behalf of the citizen. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 To create new application
 
@@ -33,7 +41,11 @@ Follow the same steps as outlined for the Citizens in the Apply for Fire NOC sec
 
 ### View Application Status
 
+<<<<<<< HEAD
 Counter Employees can check the application status of the citizen.
+=======
+Counter Employees can check the application status of the citizen. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 To check application status
 
@@ -45,7 +57,11 @@ Enter the applicable search parameter in the Search Fire NOC Application panel.
 
 For instance, select Application Status parameter as Pending for Payment to view all applications pending for payment. Click on the Search button. The system displays the search results filtered by the selected parameter. Click on the Application No hyperlink to open and view the application details.
 
+<<<<<<< HEAD
 Click on the Reset button to clear the search filters.
+=======
+Click on the Reset button to clear the search filters. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ## Document Verifier \(DV\)
 
@@ -61,7 +77,11 @@ DV can -
 
 To verify and forward the applications
 
+<<<<<<< HEAD
 Log in to the portal with the DV credentials. Click on the Fire NoC card on the home page.
+=======
+Log in to the portal with the DV credentials. Click on the Fire NoC card on the home page. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh6.googleusercontent.com/SwjoxnwteC7cZwQD-b25zYRHIDMuGZAjNNPTTDiQBC8G83gX-KK57qdGf1ZQI5r1sRQR0zX90z7ySm9jBaHPbYHU3GlDyMBEUFMRlv9EYfMe-Yvgmsc7UIECLO-GJHq7iYE0PTyt)
 
@@ -75,11 +95,19 @@ Scroll down the application to find the documents uploaded by the applicant. Cli
 
 ![](https://lh4.googleusercontent.com/rIWm8HlL-bTnatguqrBYhbBCvyKaeQe1Jz1kbnsJdPXR_z4LddOcZNLTTrvJmhO-BxaEkzo7n--8Y-eFiORl_HctZ62yka426MB6DatTowLIoiJEvY5tkYelYpEEsGeJKOefT9sW)
 
+<<<<<<< HEAD
 Scroll down and click on the Take Action button. Click on the Forward button if the documents are fine. Select the Field Inspector or Assignee to whom the application will be forwarded. Enter any Comments as required in context to the documents or application.
 
 ![](https://lh5.googleusercontent.com/_xR_sIQuLx6rzQqmYZ2-YBLVCtzJlPNXqf-trAHhJgWc_B-ZS_aqEuoHAMwIEv62p_CMr5x3KUEOO18MiAk4xR6FdcPIASytlYISBgBJjhqe3KO98x6oSCKQhMux6N1cQaRx3mTw)
 
 Click on the Upload File button to upload any supporting documents. Click on the Verify and Forward button. The application is forwarded to the Field Inspector or selected Assignee.
+=======
+Scroll down and click on the Take Action button. Click on the Forward button if the documents are fine. Select the Field Inspector or Assignee to whom the application will be forwarded. Enter any Comments as required in context to the documents or application. 
+
+![](https://lh5.googleusercontent.com/_xR_sIQuLx6rzQqmYZ2-YBLVCtzJlPNXqf-trAHhJgWc_B-ZS_aqEuoHAMwIEv62p_CMr5x3KUEOO18MiAk4xR6FdcPIASytlYISBgBJjhqe3KO98x6oSCKQhMux6N1cQaRx3mTw)
+
+Click on the Upload File button to upload any supporting documents. Click on the Verify and Forward button. The application is forwarded to the Field Inspector or selected Assignee. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh6.googleusercontent.com/JoeM6uCe5jikDR2_52lQbEamI8D30sHNpE4QBgbaGiHcfVs88YlJq7J0S20Ij55VfcIGhXk43faHqbksLE0Qhlmao1x_VeEofXqqrlfqr0Xt4l-Ooj5dTux_P0oxZhcHTHwDlwRz)
 
@@ -95,7 +123,11 @@ The DVs can refer the applications to other employees for their opinion on the a
 
 To refer applications
 
+<<<<<<< HEAD
 Click on the Refer button. Select the employee or Assignee to whom the application will be forwarded for their inputs and opinion. Enter any Comments as required in context to the documents or application.
+=======
+Click on the Refer button. Select the employee or Assignee to whom the application will be forwarded for their inputs and opinion. Enter any Comments as required in context to the documents or application. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh3.googleusercontent.com/zZHvth50f_fptkFUNWLjH_gIIfwWY3dNtAYr3Fas889u5quD-xzmBbA4-bM5kKWj178A7Ero6fEKGjDGggY3EcRgkKi8gltZ3mhYLs4ryiOSeHBzb_gIp0ojuDMmE1oXE_09xjDJ)
 
@@ -116,7 +148,11 @@ The FIs can -
 
 To verify and forward the applications
 
+<<<<<<< HEAD
 Log in to the portal with the FI credentials. Click on the Fire NoC card on the home page.
+=======
+Log in to the portal with the FI credentials. Click on the Fire NoC card on the home page. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Enter the relevant search criteria to fetch the applications Pending for Field Inspection. Alternatively, users can also view the applications queued for field inspection in their employee Inbox.
 
@@ -128,6 +164,7 @@ Scroll down the application to review the details filled in by the applicant. Cl
 
 ![](https://lh3.googleusercontent.com/bhR2wr_elfaQ-UAS-yTIlon55k6oF0lPoeqvcfYmlb97wxwDj0_pNswAkjVxwMzOdyg2lrZnzLqkbrznCz7MEdTtgZToui8H6Ru91Of6VZtbbpM5MFyfMm57BRHIXhiCVKkQ6Gh3)
 
+<<<<<<< HEAD
 Select the Assignee to whom the application will be forwarded for final approval. Enter any Comments as required in context to the documents or application.
 
 Click on the Upload File button to upload any supporting documents. Click on the Verify and Forward button. The application is forwarded to the selected Assignee.
@@ -135,6 +172,15 @@ Click on the Upload File button to upload any supporting documents. Click on the
 ### Reject applications
 
 Click on the Reject button in case the documents are not satisfactory or fail to comply with the requirements. Enter any Comments as required in context to the documents or application.
+=======
+Select the Assignee to whom the application will be forwarded for final approval. Enter any Comments as required in context to the documents or application. 
+
+Click on the Upload File button to upload any supporting documents. Click on the Verify and Forward button. The application is forwarded to the selected Assignee. 
+
+### Reject applications
+
+Click on the Reject button in case the documents are not satisfactory or fail to comply with the requirements. Enter any Comments as required in context to the documents or application. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh4.googleusercontent.com/Adz5O1-24eXx7aK8B97qxj5YqTsRav11owi2yPQn0gQmZC92gm4i_WPECbNt65zKDUQ9WhP0GmtHCPBE2LiPW2W34Ndd3EhZpia-oF8VeZlOXQ-8uaJxRg0EiBBc6nG6z9J_Ow9A)
 
@@ -142,7 +188,11 @@ Click on the Upload File button to upload any supporting documents. Click on the
 
 ### Send back applications
 
+<<<<<<< HEAD
 Click on the Sendback button in case the application details require re-verification. The applications are sent back to the document verifier for further action.
+=======
+Click on the Sendback button in case the application details require re-verification. The applications are sent back to the document verifier for further action.  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh3.googleusercontent.com/8KKjgKuG6pRjCRr0d1ehJUyWtcEF44c5RDicLkc85-DFG6D9dECYGMo7d_hAG6OH6FoZX-gxyZHzHrwfV1qJYqxBRLIwn6WsT-BhK4w6WOkitNgnDZb-usk2VsXVFCXOAPSTHKda)
 
@@ -154,13 +204,21 @@ The FIs can refer the applications to other employees for their opinion on the a
 
 To refer applications
 
+<<<<<<< HEAD
 Click on the Refer button. Select the employee or Assignee to whom the application will be forwarded for their inputs and opinion. Enter any Comments as required in context to the documents or application.
+=======
+Click on the Refer button. Select the employee or Assignee to whom the application will be forwarded for their inputs and opinion. Enter any Comments as required in context to the documents or application. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh4.googleusercontent.com/4fH0ye2dayrX0WzFpzIUnZ514zrxAYU8LV3QpaKTi3c5p41KyXS96gfHm20UwiqriA9B3OiCKttfZq0OAwKNQsG8a80z0AxLfESTiAbVm1biwkmbmOw7DoC4arSjNpGsWHWti71d)
 
 Click on the Upload File button to upload any supporting documents. Click on the Refer for Opinion button. The application is forwarded to the selected Assignee for their opinion.
 
+<<<<<<< HEAD
 ## Approver
+=======
+## Approver 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Approver is responsible for the final approval of the Fire NoC application in case the application details comply with the fire NOC requirements. In case of any non-compliance or inaccuracies the application is rejected.
 
@@ -175,7 +233,11 @@ The approver can
 
 To approve applications
 
+<<<<<<< HEAD
 Log in to the portal with the approver credentials. Click on the Fire NoC card on the home page.
+=======
+Log in to the portal with the approver credentials. Click on the Fire NoC card on the home page. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Enter the relevant search criteria to fetch the applications Pending for Approval. Alternatively, users can also view the applications queued for approval in their employee Inbox.
 
@@ -187,13 +249,21 @@ Scroll down the application to review the details filled in by the applicant. Cl
 
 ![](https://lh3.googleusercontent.com/9MHrAkwgkhS9wgQ2h0SgrTzWc_2SzET2Ww2R5M_tNmoK3-9NXItv-ikOL1YQiqlOEW5r9wYMCbgpSbU7Qq5xaAJxw59Mw3fyZr94lTaREj61dDRnKCcvM-KOptITcGbPmhyPY4-y)
 
+<<<<<<< HEAD
 Select the employee or Assignee Name who will issue the Fire NoC. Enter any Comments as required in context to the documents or application.
+=======
+Select the employee or Assignee Name who will issue the Fire NoC. Enter any Comments as required in context to the documents or application. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 Click on the Upload File button to upload any supporting documents. Click on the Approve button. The application is approved.
 
 ### Reject applications
 
+<<<<<<< HEAD
 Click on the Reject button in case the documents are not satisfactory or fail to comply with the requirements. Enter any Comments as required in context to the documents or application.
+=======
+Click on the Reject button in case the documents are not satisfactory or fail to comply with the requirements. Enter any Comments as required in context to the documents or application. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh6.googleusercontent.com/aq-llAkam6OuY76UR5SxAksHa2IpeM5rn2DOhNcxfXdgih8RQUjUp84D7n1OruHMDq51Pp1yCnoYFreAfisLSZmjwiSziooAu3hiE4XefHBxNrrZ5pR3eZAjvCQAGbj5BE7lvxZ1)
 
@@ -201,7 +271,11 @@ Click on the Upload File button to upload any supporting documents. Click on the
 
 ### Send back applications
 
+<<<<<<< HEAD
 Click on the Sendback button in case the application details require re-verification. The applications are sent back to the document verifier or field inspector for further action.
+=======
+Click on the Sendback button in case the application details require re-verification. The applications are sent back to the document verifier or field inspector for further action. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ![](https://lh4.googleusercontent.com/iGYSpjMh1CXWPy8a7QIc_oBGuk3f8PXnhb9nMGfslP_PRYMBEuES0wTBXwrb4FXTtGzzNEkAZjeA-izOTEds9zKSb5tcugWXqribGSwCjSQyYxp7-n87HICIxeIdIXVAJUyn0qJN)
 
@@ -213,6 +287,7 @@ The approver can refer the applications to other employees for their opinion on 
 
 To refer applications
 
+<<<<<<< HEAD
 Click on the Refer button. Select the employee or Assignee to whom the application will be forwarded for their inputs and opinion. Enter any Comments as required in context to the documents or application.
 
 ![](https://lh6.googleusercontent.com/5duOXk_pImiD-XM9kgHIvqS3oscD0SIs2DoIfSgUSvA0RNOcOFyHtrKHOyBcrd6_IgWNI4F9kdP0US8MsIEPp1_8NBTA3W3gacgPc_3wcrZZSt4c_nYlQJuZsHgjnt633dnWDghq)
@@ -220,4 +295,14 @@ Click on the Refer button. Select the employee or Assignee to whom the applicati
 Click on the Upload File button to upload any supporting documents. Click on the Refer for Opinion button. The application is forwarded to the selected Assignee for their opinion.
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+=======
+Click on the Refer button. Select the employee or Assignee to whom the application will be forwarded for their inputs and opinion. Enter any Comments as required in context to the documents or application. 
+
+![](https://lh6.googleusercontent.com/5duOXk_pImiD-XM9kgHIvqS3oscD0SIs2DoIfSgUSvA0RNOcOFyHtrKHOyBcrd6_IgWNI4F9kdP0US8MsIEPp1_8NBTA3W3gacgPc_3wcrZZSt4c_nYlQJuZsHgjnt633dnWDghq)
+
+Click on the Upload File button to upload any supporting documents. Click on the Refer for Opinion button. The application is forwarded to the selected Assignee for their opinion.  
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 

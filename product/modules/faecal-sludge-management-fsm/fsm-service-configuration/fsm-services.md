@@ -83,6 +83,7 @@ The checkList \(Checklist to be answered by a citizen while rating\)
 
 ```text
 {
+<<<<<<< HEAD
     "tenantId": "pb",
     "moduleName": "FSM",
     "CheckList": [{
@@ -108,6 +109,33 @@ The checkList \(Checklist to be answered by a citizen while rating\)
             ]
         }
     ]
+=======
+	"tenantId": "pb",
+	"moduleName": "FSM",
+	"CheckList": [{
+			"code": "SPILAGE",
+			"active": true,
+			"required": true,
+			"type": "SINGLE_SELECT",
+			"options": [
+				"YES",
+				"NO",
+				"NA"
+			]
+		},
+		{
+			"code": "SAFETY_GEARS_USED",
+			"active": true,
+			"type": "MULTI_SELECT",
+			"required": true,
+			"options": [
+				"EYE_GEAR",
+				"HAND_GLOVES",
+				"NOSE_MASK"
+			]
+		}
+	]
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 }
 ```
 
@@ -155,7 +183,11 @@ Config \(Configuration at the application level\)
             "active":true,
             "description":"properties in override allowed to modify when FSM application moving from CREATED Status to next status."
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
     ]
 }
 ```
@@ -500,7 +532,11 @@ Property Type
       "minAmount":"10100",
       "maxAmount":"10500"
     }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
   ]
 }
 ```
@@ -509,6 +545,7 @@ Slum \( Slums mapped to the locality of the city \)
 
 ```text
 {
+<<<<<<< HEAD
     "tenantId": "pb",
     "moduleName": "FSM",
     "Slum": [{
@@ -584,12 +621,93 @@ Slum \( Slums mapped to the locality of the city \)
             "locality": "SUN08"
         }
     ]
+=======
+	"tenantId": "pb",
+	"moduleName": "FSM",
+	"Slum": [{
+			"code": "SL0001",
+			"active": true,
+			"name": "Kathagada juanga sahi",
+			"locality": "SUN20"
+		},
+		{
+			"code": "SL0002",
+			"active": true,
+			"name": "Kathagada Parbatia Sahi",
+			"locality": "SUN20"
+		},
+		{
+			"code": "SL0003",
+			"active": true,
+			"name": "Gangadhar Sahi",
+			"locality": "SUN35"
+		},
+		{
+			"code": "SL0004",
+			"active": true,
+			"name": "Pandab Nagar",
+			"locality": "SUN35"
+		},
+		{
+			"code": "SL0005",
+			"active": true,
+			"name": "Haridakhandi Harijana sahi",
+			"locality": "SUN35"
+		},
+		{
+			"code": "SL0006",
+			"active": true,
+			"name": "Haridakhandi Kadalibada Sahi",
+			"locality": "SUN55"
+		},
+		{
+			"code": "SL0007",
+			"active": true,
+			"name": "Haridakhandi Bada sahi",
+			"locality": "SUN55"
+		},
+		{
+			"code": "SL0008",
+			"active": true,
+			"name": "Haridakhandi Redika Sahi",
+			"locality": "SUN55"
+		},
+		{
+			"code": "SL0009",
+			"active": true,
+			"name": "Golapali Sahi",
+			"locality": "SUN18"
+		},
+		{
+			"code": "SL0010",
+			"active": true,
+			"name": "Surya Nagar",
+			"locality": "SUN18"
+		},
+		{
+			"code": "SL0011",
+			"active": true,
+			"name": "Damba Sahi",
+			"locality": "SUN18"
+		},
+		{
+			"code": "SL0012",
+			"active": true,
+			"name": "Raju Dhoba Sahi",
+			"locality": "SUN08"
+		}
+	]
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 }
 ```
 
 #### Business Service / Workflow Configuration <a id="Business-Service-/-Workflow-Configuration"></a>
 
+<<<<<<< HEAD
 Create businessService \(workflow configuration\) using the \_\_`/businessservice/_create`. Following is the product configuration for FSM:
+=======
+Create businessService \(workflow configuration\) using the  __`/businessservice/_create`. Following is the product configuration for FSM:
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ```text
 {
@@ -1015,7 +1133,12 @@ Using `/localization/messages/v1/_upsert` , add localisation \(templates\) for n
 
 #### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
 
+<<<<<<< HEAD
 Add Role-Action mapping for the APIs in MDMS. Following are the required entries. They should be mapped to both CITIZEN and appropriate employee roles.
+=======
+Add Role-Action mapping for the APIs in MDMS. Following are the required entries. They should be mapped to both CITIZEN and appropriate employee roles.  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 **Action Configuration**
 
@@ -1076,7 +1199,11 @@ Add Role-Action mapping for the APIs in MDMS. Following are the required entries
       "serviceCode": "",
       "code": "null",
       "path": ""
+<<<<<<< HEAD
     },
+=======
+    },  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ```
 
 **Role Action Mapping**
@@ -1469,13 +1596,21 @@ values.yml for fms-calculator can be found [here](https://github.com/egovernment
   </tbody>
 </table>
 
+<<<<<<< HEAD
 * User with userType employee and role FSM\_CREATOR\_EMP role,
+=======
+- User with userType employee and role FSM\_CREATOR\_EMP role,
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ## Integration
 
 ### Integration Scope
 
+<<<<<<< HEAD
 FSM can be integrated with any ULB or system which wants to track FSM application. The organisations can customise the workflow depending on the product requirements**.**
+=======
+FSM can be integrated with any ULB or system which wants to track FSM application. The organisations can customise the workflow depending on the product requirements**.** 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 ### Integration Benefits
 
@@ -1484,7 +1619,11 @@ FSM can be integrated with any ULB or system which wants to track FSM applicatio
 
 ### Steps to Integration
 
+<<<<<<< HEAD
 1. Citizen/ULB Employee can file Application request using the /fsm/v1/\_create
+=======
+1.  Citizen/ULB Employee can file Application request using the /fsm/v1/\_create
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 2. Organisation or System can search the FSM Applications using /fsm/v1/\_searchendpoint
 3. Once the Application is filed the organisation or system can call /fsm/v1/\_update endpoint to move the application further in workflow until it gets resolved
 
@@ -1496,10 +1635,17 @@ TBD
 
 #### Doc Links <a id="Doc-Links"></a>
 
+<<<<<<< HEAD
 | **Title** | **Link** |
 | :--- | :--- |
 | Workflow Technical Document | [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
 | User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service) |
+=======
+| **Title**  | **Link** |
+| :--- | :--- |
+|  Workflow Technical Document |  [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
+|  User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service)   |
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 | MDMS Technical Document | **NEEDS TO BE UPDATED** |
 | IDGen Technical Document | **NEEDS TO BE UPDATED** |
 | Localization Technical Document | **NEEDS TO BE UPDATED** |
@@ -1513,10 +1659,21 @@ TBD
 
 | Title | **Link** |
 | :--- | :--- |
+<<<<<<< HEAD
 | /fsm/v1/\_create | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | /fsm/v1/\_update | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | /fsm/v1/\_search | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | /fsm/v1/\_audit | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+=======
+|  /fsm/v1/\_create | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
+|  /fsm/v1/\_update | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
+| /fsm/v1/\_search | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
+| /fsm/v1/\_audit | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
+
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 

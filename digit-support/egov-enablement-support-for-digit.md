@@ -1,8 +1,14 @@
 # eGov Enablement Support for DIGIT
 
+<<<<<<< HEAD
 ## Objectives
 
 eGov will enable partners to implement the DIGIT platform and products across ULBs for a State. As part of the enablement process, eGov will assist the partner by providing them product training, implementation training and training them on technical support for supporting the system.
+=======
+### Objectives
+
+eGov will enable partners to implement the DIGIT platform and products across ULBs for a State. As part of the enablement process, eGov will assist the partner by providing them product training, implementation training and training them on technical support for supporting the system. 
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 The key objectives for partner enablement are:
 
@@ -11,7 +17,11 @@ The key objectives for partner enablement are:
 3. Provide channels of communication to continue extending support through the project implementation.
 4. Assist the clients/partners in resolving incidents that are attributable to DIGIT.
 
+<<<<<<< HEAD
 ## Scope of Enablement Support
+=======
+### Scope of Enablement Support
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 The goal is to enable the State/Partner to be able to implement the DIGIT platform and products at speed and scale. They should not only be able to deploy the existing set of applications, but also be able to deliver new solutions on top of the DIGIT platform as per needs. The State/Partner should also be able to train their staff on these topics once they have been enabled suitably.
 
@@ -24,7 +34,11 @@ The goal is to enable the State/Partner to be able to implement the DIGIT platfo
 7. Enable partner to implement and exercise best practices shared by NUS
 8. Enable partner to manage DIGIT System upgrade activities independently
 
+<<<<<<< HEAD
 ## Enablement Process
+=======
+### Enablement Process
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 To enable the State/Partner to be self-sufficient, the following practices will be utilized:
 

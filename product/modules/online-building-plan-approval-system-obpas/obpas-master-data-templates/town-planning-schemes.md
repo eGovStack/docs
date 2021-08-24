@@ -56,6 +56,12 @@ There is no separate entity-specific checklist for this entity.
 
 [Sample Datatown-planning-scheme-sample.xlsx - 10KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG_iQW5oN4ukgXP8K%2Fsync%2Fb7469bfbad85893f52fdd1a96d36fa06d2dc9ef6.xlsx?generation=1602050610908677&alt=media)
 
+<<<<<<< HEAD
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).[    
+=======
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).[  
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 ](https://docs.digit.org/configure-digit/configuring-master-data-templates/module-setup/obpas-data/stakeholders-type)
 

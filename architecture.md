@@ -6,7 +6,11 @@ description: DIGIT Infra and architecture details
 
 DIGIT is India’s largest open-source platform for Urban Governance. It is built on OpenAPI \(OAS 2.0\) and provides API based access to a variety of urban/municipal services enabling state governments and city administrators to provide citizen services with relevant new services and also integrating the existing system into the platform and run seamlessly on any commercial/on-prem cloud infrastructure with scale and speed.
 
+<<<<<<< HEAD
 ## Key Architecture Highlights <a id="Key-Architecture-Highlights"></a>
+=======
+### Key Architecture Highlights <a id="Key-Architecture-Highlights"></a>
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 * DIGIT is a microservices-based platform that is built to scale. Microservices are small, autonomous and developer-friendly services that work together.
 
@@ -26,7 +30,11 @@ DIGIT is India’s largest open-source platform for Urban Governance. It is buil
 
 ![](.gitbook/assets/image%20%2813%29.png)
 
+<<<<<<< HEAD
 ## Multi-layer Architecture
+=======
+### Multi-layer Architecture
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 DIGIT follows Multilayer or n-tiered distributed architecture pattern. As seen in the illustration above there are different horizontal layers with some set of components eg. Data Access Layer, Infra Services, Business Services, different modules layers, client Apps and some vertical adapters. Every layer consists of a set of microservices. Each layer of the layered architecture pattern has a specific role and responsibility within the application.
 

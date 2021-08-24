@@ -4,7 +4,13 @@ description: Functional overview for stakeholders
 
 # Finance Module Functional Specifications
 
+<<<<<<< HEAD
 National Municipal Accounting Standards compliance is necessary for ULB funding and grants. The Accounting System is an NMAM compliant application which can be integrated with all the other relevant modules \(both internal as well as third party system\) with budgetary controls in place. The complete books of accounts can be maintained at one place which enables the creation of Financial statements. The high level feature set is listed below.
+=======
+National Municipal Accounting Standards compliance is necessary for ULB funding and grants. The Accounting System is an NMAM compliant application which can be integrated with all the other relevant modules \(both internal as well as third party system\) with budgetary controls in place. The complete books of accounts can be maintained at one place which enables the creation of Financial statements. The high level feature set is listed below.   
+  
+
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
 <table>
   <thead>
@@ -120,5 +126,11 @@ National Municipal Accounting Standards compliance is necessary for ULB funding 
   </tbody>
 </table>
 
+<<<<<<< HEAD
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+=======
+
+
+ [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+>>>>>>> 64dca8adbdf64336b1a8203199b3791fa23434fa
 
