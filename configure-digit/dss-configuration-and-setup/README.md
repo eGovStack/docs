@@ -74,7 +74,7 @@ http://dashboard-ingest.egov:8080/dashboard-ingest/ingest/migrate/paymentsindex-
 * Transform collection schema for V2
   * This transform collection v1 configuration file is used to map with the incoming data. This mapped data will go inside the data object in the DSS collection v2 index.
 
-![](../../.gitbook/assets/image-20201010-143543%20%281%29%20%287%29%20%285%29.png)
+![](../../.gitbook/assets/image-20201010-143543%20%281%29%20%287%29%20%288%29.png)
 
 [Click here for an example configuration](https://github.com/egovernments/punjab-rainmaker-customization/blob/UAT_V2/configs/egov-dss-dashboards/dashboard-ingest/DomainConfig.json)
 
