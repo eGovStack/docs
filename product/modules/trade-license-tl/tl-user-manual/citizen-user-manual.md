@@ -159,11 +159,5 @@ Enter payment details as requested on the screen. Click on the **Generate Receip
 
 Once the payment is complete the **Trade License Certificate** is issued. Click on the **Download** or **Print** button to download or print the Payment Receipt and Trade License Certificate.
 
-
-
-
-
-
-
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

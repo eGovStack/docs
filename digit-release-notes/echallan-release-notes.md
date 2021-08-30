@@ -4,18 +4,18 @@ description: mCollect feature release details
 
 # eChallan Release Notes
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 This enhancement enables users to generate, edit and cancel challans for all the miscellaneous services in the ULB. Also, we’re supporting online payments from citizens using the payment link in the notification and QR code on the challan.
 
-### Release Highlights <a id="Release-Highlights"></a>
+## Release Highlights <a id="Release-Highlights"></a>
 
 1. Generate **e-challans / bill** for all miscellaneous / Adhoc services which citizens avail from ULBs
 2. Edit/Cancel e-challan/bill
 3. The ability for ULBs to Notify citizens about the outstanding payments - Online\(email & SMS\) and offline
 4. Enable Digital payments for citizens - QR code, payment link in notifications, etc.
 
-### Release Features <a id="Release-Features"></a>
+## Release Features <a id="Release-Features"></a>
 
 <table>
   <thead>
@@ -57,25 +57,19 @@ This enhancement enables users to generate, edit and cancel challans for all the
   </tbody>
 </table>
 
-### Known Issues <a id="Known-Issues"></a>
+## Known Issues <a id="Known-Issues"></a>
 
- None
+None
 
-### Upcoming Release Features <a id="Upcoming-Release-Features"></a>
+## Upcoming Release Features <a id="Upcoming-Release-Features"></a>
 
 Not planned
 
-### Reference Doc Links <a id="Reference-Doc-Links"></a>
+## Reference Doc Links <a id="Reference-Doc-Links"></a>
 
 | **Doc Links** | **Description** |
 | :--- | :--- |
-|    |   |
-
-
-
-
-
-
+|  |  |
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

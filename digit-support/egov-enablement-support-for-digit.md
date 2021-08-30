@@ -1,8 +1,8 @@
 # eGov Enablement Support for DIGIT
 
-### Objectives
+## Objectives
 
-eGov will enable partners to implement the DIGIT platform and products across ULBs for a State. As part of the enablement process, eGov will assist the partner by providing them product training, implementation training and training them on technical support for supporting the system. 
+eGov will enable partners to implement the DIGIT platform and products across ULBs for a State. As part of the enablement process, eGov will assist the partner by providing them product training, implementation training and training them on technical support for supporting the system.
 
 The key objectives for partner enablement are:
 
@@ -11,7 +11,7 @@ The key objectives for partner enablement are:
 3. Provide channels of communication to continue extending support through the project implementation.
 4. Assist the clients/partners in resolving incidents that are attributable to DIGIT.
 
-### Scope of Enablement Support
+## Scope of Enablement Support
 
 The goal is to enable the State/Partner to be able to implement the DIGIT platform and products at speed and scale. They should not only be able to deploy the existing set of applications, but also be able to deliver new solutions on top of the DIGIT platform as per needs. The State/Partner should also be able to train their staff on these topics once they have been enabled suitably.
 
@@ -24,7 +24,7 @@ The goal is to enable the State/Partner to be able to implement the DIGIT platfo
 7. Enable partner to implement and exercise best practices shared by NUS
 8. Enable partner to manage DIGIT System upgrade activities independently
 
-### Enablement Process
+## Enablement Process
 
 To enable the State/Partner to be self-sufficient, the following practices will be utilized:
 
@@ -42,11 +42,5 @@ To enable the State/Partner to be self-sufficient, the following practices will 
     * DevOps related practices - CI/CD pipeline setup, monitoring tools setup
     * Upgrade considerations
 
-
-
-
-
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
-
 

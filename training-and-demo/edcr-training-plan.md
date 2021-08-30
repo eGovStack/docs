@@ -14,7 +14,6 @@
     <tr>
       <td style="text-align:left">eDCR Service Overview</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Introduction to eDCR</a>
           </li>
@@ -28,7 +27,6 @@
     <tr>
       <td style="text-align:left">eDCR Drawing</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>Explanation of layer name and color coding</li>
           <li>Plan_info layer definition and usage</li>
@@ -61,7 +59,6 @@
     <tr>
       <td style="text-align:left">eDCR Architecture &amp; Repos</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="https://github.com/egovernments/eGov-dcr-service">Explain the architecture</a>
           </li>
@@ -75,7 +72,6 @@
     <tr>
       <td style="text-align:left">Coding Steps</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Explanation of extract, validate, process, and report part</a>
           </li>
@@ -89,7 +85,6 @@
     <tr>
       <td style="text-align:left">Rule Configuration</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>Rule configuration city-wise, district-wise, state-wise etc</li>
           <li>How to override rule processing across the state for a feature</li>
@@ -101,7 +96,6 @@
     <tr>
       <td style="text-align:left">Third Party Integration</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/edcr-integration.md">eDCR integration with other systems</a>
           </li>
@@ -113,7 +107,6 @@
     <tr>
       <td style="text-align:left">Setup of eDCR System Locally</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="../product/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md">Set up a workspace for eDCR in the local machine</a>
           </li>
@@ -137,9 +130,5 @@
   </tbody>
 </table>
 
-
-
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

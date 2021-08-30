@@ -39,7 +39,7 @@ Select the **karate runner** tab and click on **overview-features.html** to view
 
 **Summary of service features and test status can be seen in details with Pass / Fail / run time stamp**
 
-![](../../../.gitbook/assets/160.png)
+![](../../../.gitbook/assets/159%20%283%29.png)
 
 \*\*\*\*
 
@@ -50,10 +50,6 @@ Now, observe below **Feature Report**, you can see lots of verbose logging in th
 * karate-summary.html:
 
 ![](../../../.gitbook/assets/158.png)
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

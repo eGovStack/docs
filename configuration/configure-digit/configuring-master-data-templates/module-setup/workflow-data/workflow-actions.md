@@ -1,12 +1,12 @@
 # Workflow Actions
 
-### Introduction
+## Introduction
 
 Workflow action defined as an activity which is performed by a workflow user on a service request/ application during the workflow. All the workflow actions are predefined and performed a well-defined job once performed.
 
 In its nature actions are not configurable, only the localization of actions is permissible as a configuration.
 
-### Data Table
+## Data Table
 
 | S. No. | Action | Description | Module\(s\) |
 | :--- | :--- | :--- | :--- |
@@ -31,27 +31,25 @@ In its nature actions are not configurable, only the localization of actions is 
 | 19 | Send back to Assistant | This action will help to send back the notification on the bill is rejected from the approver | Finance |
 | 20 | Cancel | This action will help the approver to cancel the bill if he/she feels that the bill need to be rejected | Finance |
 
-### Procedure
+## Procedure
 
 Actions are standard and are not configurable, hence the template, data definition and standard procedure to fill the template are not needed. This page is created to provide the information and helping the defined workflow process.
 
-#### Data Definition
+### Data Definition
 
 Not applicable
 
-#### Steps to fill data
+### Steps to fill data
 
 Not applicable
 
-### Checklist
+## Checklist
 
 Not applicable
 
-### Attachments
+## Attachments
 
 Not applicable
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

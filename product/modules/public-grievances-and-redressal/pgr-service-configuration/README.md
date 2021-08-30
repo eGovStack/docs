@@ -383,7 +383,7 @@ PGR service can be integrated with any organisation or system which wants to tra
 
 ## Interaction Diagram <a id="Interaction-Diagram"></a>
 
-![](../../../../.gitbook/assets/image%20%2895%29.png)
+![](../../../../.gitbook/assets/image%20%2877%29%20%284%29%20%287%29.png)
 
 ## Reference Docs <a id="Interaction-Diagram"></a>
 
@@ -391,8 +391,8 @@ PGR service can be integrated with any organisation or system which wants to tra
 
 | **Title** | **Link** |
 | :--- | :--- |
-| Workflow Technical Document | [Workflow Service]() |
-| User Technical Document | [User Service]() |
+| Workflow Technical Document | [Workflow Service](./) |
+| User Technical Document | [User Service](./) |
 
 ### API List <a id="API-List"></a>
 
@@ -403,7 +403,5 @@ PGR service can be integrated with any organisation or system which wants to tra
 | /requests/\_search | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |
 | /requests/\_count | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

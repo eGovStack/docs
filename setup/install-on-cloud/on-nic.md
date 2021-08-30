@@ -1,8 +1,6 @@
 # On NIC
 
-On National Informatica Cloud 
-
-
+On National Informatica Cloud
 
 Coming soon .....
 

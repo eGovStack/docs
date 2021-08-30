@@ -4,11 +4,11 @@ description: WhatsApp channel v2 release details
 
 # WhatsApp Channel Release Notes
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 This release leverages the capabilities of WhatsApp as an additional channel for citizens to view bills/ make payments for a particular module service. Extended capabilities include improvements in the Public Grievance Redressal module and localization support to assist ease of use.
 
-### Release Highlights <a id="Release-Highlights"></a>
+## Release Highlights <a id="Release-Highlights"></a>
 
 1. **Search and View Bill \`**
    1. View my Bills
@@ -29,7 +29,7 @@ This release leverages the capabilities of WhatsApp as an additional channel for
    1. Two-Step Complaint List \(By Type & Subtype\)
    2. Geo-Location Tagging
 
-### Release Features <a id="Release-Features"></a>
+## Release Features <a id="Release-Features"></a>
 
 <table>
   <thead>
@@ -44,7 +44,6 @@ This release leverages the capabilities of WhatsApp as an additional channel for
     <tr>
       <td style="text-align:left">Selection of Desired Service</td>
       <td style="text-align:left">
-        <p></p>
         <p>Allows Citizen to select the following via WhatsApp Chat :</p>
         <ul>
           <li>File Complaint</li>
@@ -58,7 +57,6 @@ This release leverages the capabilities of WhatsApp as an additional channel for
     <tr>
       <td style="text-align:left">Pay Bills &amp; Fees</td>
       <td style="text-align:left">
-        <p></p>
         <p>Allows Citizen to view the current outstanding bills with respect to applicable
           the modules, where his/ her mobile number is linked. The following information
           is displayed in the message :</p>
@@ -73,7 +71,6 @@ This release leverages the capabilities of WhatsApp as an additional channel for
     <tr>
       <td style="text-align:left">View Payment Receipts</td>
       <td style="text-align:left">
-        <p></p>
         <p>Allows Citizens to view past payment receipts with respect to applicable
           modules, linked with the current mobile number. In case, the current mobile
           number is not linked with the module, still citizen can proceed to search
@@ -103,26 +100,22 @@ This release leverages the capabilities of WhatsApp as an additional channel for
   </tbody>
 </table>
 
-### Known Issues <a id="Known-Issues"></a>
+## Known Issues <a id="Known-Issues"></a>
 
 Emojis are not supported as the input for chat responses
 
-### Upcoming Release Features <a id="Upcoming-Release-Features"></a>
+## Upcoming Release Features <a id="Upcoming-Release-Features"></a>
 
 * Improvement in Messaging Language & Flow
 * NLP Inclusion \(For City & Locality Selection\)
 * Referral, Rating & Help Mechanism
 * Privacy Enhancements
 
-### Reference Doc Links <a id="Reference-Doc-Links"></a>
+## Reference Doc Links <a id="Reference-Doc-Links"></a>
 
 | **Doc Links** | **Description** |
 | :--- | :--- |
 |  |  |
-
- 
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

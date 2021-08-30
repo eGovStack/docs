@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is one of the major application of the egov stack which helps municipal and citizens to handle sewerage services like creating sewerage connection, searching sewerage connection, sewerage connection, also creating property if it doesn't exist and creating and updating workflow were depending on different roles of the logged-in user he/she can perform various actions like editing or perform document verification and many more specified in workflow documentation and SMS & email notification sent to the owner for various actions performed in the workflow. 
+This is one of the major application of the egov stack which helps municipal and citizens to handle sewerage services like creating sewerage connection, searching sewerage connection, sewerage connection, also creating property if it doesn't exist and creating and updating workflow were depending on different roles of the logged-in user he/she can perform various actions like editing or perform document verification and many more specified in workflow documentation and SMS & email notification sent to the owner for various actions performed in the workflow.
 
 ## Pre-requisites
 
@@ -134,7 +134,6 @@ sw-services-calculation": {
       "uniqueKeys": []
     }
   }
-
 ```
 
 Property creation through WNS module  
@@ -274,13 +273,11 @@ _**Persister configuration**_**:**
       "tenantId": "pb"
     }
 ]
-
-
 ```
 
 _**Workflow business service config**_
 
-Create businessService \(workflow configuration\) using the  __/businessservice/\_create. Following is the product configuration for sewerage service
+Create businessService \(workflow configuration\) using the \_\_/businessservice/\_create. Following is the product configuration for sewerage service
 
 ```text
 {
@@ -514,7 +511,6 @@ Create businessService \(workflow configuration\) using the  __/businessservice/
     }
   ]
 }
-
 ```
 
 Workflow for property creation through Water and Sewerage Module
@@ -614,7 +610,6 @@ Workflow for property creation through Water and Sewerage Module
     }
   ]
 }
-
 ```
 
 _**Indexer config for sewerage-service**_
@@ -634,7 +629,7 @@ After connection activation or legacy connection, we can edit the connection. Th
 
 **Workflow config for edit connection**
 
-Create businessService \(workflow configuration\) using the  __/businessservice/\_create. Following is the product configuration for editing sewerage connection.
+Create businessService \(workflow configuration\) using the \_\_/businessservice/\_create. Following is the product configuration for editing sewerage connection.
 
 ```text
 {
@@ -746,7 +741,6 @@ Create businessService \(workflow configuration\) using the  __/businessservice/
     }
   ]
 }
-
 ```
 
 `1{ 2 "RequestInfo": { 3 "apiId": "Rainmaker", 4 "action": "", 5 "did": 1, 6 "key": "", 7 "msgId": "20170310130900|en_IN", 8 "requesterId": "", 9 "ts": 1513579888683, 10 "ver": ".01", 11 "authToken": "{{Auth_Token}}" 12 }, 13 "BusinessServices": [ 14 { 15 "tenantId": "pb", 16 "businessService": "ModifySWConnection", 17 "business": "sw-services", 18 "businessServiceSla": 259200000, 19 "states": [ 20 { 21 "sla": null, 22 "state": null, 23 "applicationStatus": null, 24 "docUploadRequired": false, 25 "isStartState": true, 26 "isTerminateState": false, 27 "isStateUpdatable": false, 28 "actions": [ 29 { 30 "action": "INITIATE", 31 "nextState": "INITIATED", 32 "roles": [ 33 "SW_CEMP" 34 ] 35 } 36 ] 37 }, 38 { 39 "sla": null, 40 "state": "INITIATED", 41 "applicationStatus": "INITIATED", 42 "docUploadRequired": false, 43 "isStartState": false, 44 "isTerminateState": false, 45 "isStateUpdatable": true, 46 "actions": [ 47 { 48 "action": "SUBMIT_APPLICATION", 49 "nextState": "PENDING_FOR_APPROVAL", 50 "roles": [ 51 "SW_CEMP" 52 ] 53 } 54 ] 55 }, 56 { 57 "sla": 86400000, 58 "state": "PENDING_FOR_APPROVAL", 59 "applicationStatus": "PENDING_FOR_APPROVAL", 60 "docUploadRequired": false, 61 "isStartState": false, 62 "isStateUpdatable": true, 63 "isTerminateState": false, 64 "actions": [ 65 { 66 "action": "APPROVE_CONNECTION", 67 "nextState": "APPROVED", 68 "roles": [ 69 "SW_APPROVER" 70 ] 71 }, 72 { 73 "action": "REJECT", 74 "nextState": "REJECTED", 75 "roles": [ 76 "SW_APPROVER" 77 ] 78 }, 79 { 80 "action": "SEND_BACK", 81 "nextState": "INITIATED", 82 "roles": [ 83 "SW_APPROVER" 84 ] 85 } 86 ] 87 }, 88 { 89 "sla": null, 90 "state": "REJECTED", 91 "applicationStatus": "REJECTED", 92 "isStateUpdatable": false, 93 "docUploadRequired": false, 94 "isStartState": false, 95 "isTerminateState": true 96 }, 97 { 98 "sla": null, 99 "state": "APPROVED", 100 "applicationStatus": "APPROVED", 101 "isStateUpdatable": false, 102 "docUploadRequired": false, 103 "isStartState": false, 104 "isTerminateState": true 105 } 106 ] 107 } 108 ] 109} 110`
@@ -765,7 +759,7 @@ The connection holder will get a notification based on a different state of the 
 We can add road cutting details of multiple roads to the sewerage connection. For each road which goes under cutting process we have to fill their road type details and road cutting area.  
 Based on this information, application one time fee estimate is calculated.
 
-## Integration 
+## Integration
 
 ### Integration Scope
 
@@ -781,15 +775,15 @@ This sw-service module is use to manage sewerage service connections against a p
 ### Steps to Integration
 
 1. To integrate, the host of sw-service module should be overwritten in helm chart.
-2.  /sw-services/swc/\_create should be added as the create endpoint for creating sewerage application/connection in the system
-3.  /sw-services/swc/\_search should be added as the search endpoint .This method handles all requests to search existing records depending on different search criteria
-4.  /sw-services/swc/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update the status of the application based on workflow.
+2. /sw-services/swc/\_create should be added as the create endpoint for creating sewerage application/connection in the system
+3. /sw-services/swc/\_search should be added as the search endpoint .This method handles all requests to search existing records depending on different search criteria
+4. /sw-services/swc/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update the status of the application based on workflow.
 
 ## Reference Docs
 
 #### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
 | API Swagger Documentation | [Swagger Documentation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/water-sewerage-services.yaml#!/) |
 | Sewerage Calculator Service | [Sewerage Calculator Service](https://digit-discuss.atlassian.net/l/c/vGpEzt2Q) |
@@ -798,7 +792,7 @@ This sw-service module is use to manage sewerage service connections against a p
 
 | Title | **Link** |
 | :--- | :--- |
-|  _/sw-services/swc/\_create_ | [https://www.getpostman.com/collections/c160dd65f1d585ed855f](https://www.getpostman.com/collections/c160dd65f1d585ed855f) |
+| _/sw-services/swc/\_create_ | [https://www.getpostman.com/collections/c160dd65f1d585ed855f](https://www.getpostman.com/collections/c160dd65f1d585ed855f) |
 | _/sw-services/swc/\_update_ | [https://www.getpostman.com/collections/c160dd65f1d585ed855f](https://www.getpostman.com/collections/c160dd65f1d585ed855f) |
 | _/sw-services/swc/\_search_ | [https://www.getpostman.com/collections/c160dd65f1d585ed855f](https://www.getpostman.com/collections/c160dd65f1d585ed855f) |
 

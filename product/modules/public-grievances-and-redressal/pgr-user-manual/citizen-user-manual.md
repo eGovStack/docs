@@ -81,7 +81,5 @@ The Re-Open button will be available only for 5 days after the complaint is reso
 
 Select the appropriate reason for reopening the complaint. Click on the camera icon to upload any photos related to the complaint. Enter any additional information in the **Comments** section. Click on the **Continue** button once done. The system displays an acknowledgement message stating the complaint is reopened. Click on the **Go To Home** button to navigate back to the home page.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

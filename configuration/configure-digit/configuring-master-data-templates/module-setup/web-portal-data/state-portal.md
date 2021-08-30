@@ -1,12 +1,12 @@
 # State Portal
 
-### Introduction
+## Introduction
 
 State Portal is a website for the state. Any content or information which is displayed on this site needs to be provided by the State.
 
 This document is to define a template to collect the portal content and information. And to help in filling up the content into the template.
 
-### Data Table
+## Data Table
 
 This section talks about the template and the table given below represents the template. Full template to fill with the portal content is attached with this page at the last into attachments sections.
 
@@ -20,11 +20,11 @@ This section talks about the template and the table given below represents the t
 | . |  |  |
 | 20 | About Website |  |
 
-### Procedure
+## Procedure
 
 This section consists of the information about the meaning of each and every section in the template and then how to fill the templates in a few easy steps.
 
-#### Data Definition
+### Data Definition
 
 Below table consist of a standard section of any portal. The additional section as required will have to capture as part of customization.
 
@@ -244,7 +244,7 @@ Below table consist of a standard section of any portal. The additional section 
   </tbody>
 </table>
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning given in this document under section 'Data Definition'.
@@ -253,11 +253,11 @@ Below table consist of a standard section of any portal. The additional section 
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every point mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -265,19 +265,17 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 | Sr. No. | Checklist Parameter | Example |
 | :--- | :--- | :--- |
 | 1 | All the sections with data type ‘Template’, data to be filled into the section-wise template provided as an attachment | NA |
 
-### Attachments
+## Attachments
 
 {% file src="../../../../../.gitbook/assets/configurable-data-template-state-portal\_v1.xls" caption="Configuration Data Template" %}
 
 {% file src="../../../../../.gitbook/assets/sample-configuration-data-state-portal\_v1 \(1\).xls" caption="Sample Data" %}
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

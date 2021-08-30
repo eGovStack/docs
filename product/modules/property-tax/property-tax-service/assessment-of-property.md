@@ -4,7 +4,7 @@ For **overview** Please refer to the parent file -[ Property Services](./)
 
 ## **Key Functionality**
 
- The assessment set of services inside the property module is used for assessing the value of a property in a given time frame and collect taxes for the same. Assessment is a snapshot of Property for a given transaction on that Property. These APIs provide functionalities to create/update/search the assessments. An assessment cannot exist without property.
+The assessment set of services inside the property module is used for assessing the value of a property in a given time frame and collect taxes for the same. Assessment is a snapshot of Property for a given transaction on that Property. These APIs provide functionalities to create/update/search the assessments. An assessment cannot exist without property.
 
 ## **Configuration Details** <a id="Configuration-Details:"></a>
 
@@ -16,11 +16,11 @@ Assessment shares most of the configs with Property as mentioned above, only exc
 
 | **name** | **value** | **description** |
 | :--- | :--- | :--- |
-| assessment id format |  PB-AS-\[cy:yyyy-MM-dd\]-\[SEQ\_EG\_PT\_ASSM\] |   |
-| kafka create assessment topic | save-pt-assessment |   |
-| kafka update assesmsent topic | update-pt-assessment |   |
+| assessment id format | PB-AS-\[cy:yyyy-MM-dd\]-\[SEQ\_EG\_PT\_ASSM\] |  |
+| kafka create assessment topic | save-pt-assessment |  |
+| kafka update assesmsent topic | update-pt-assessment |  |
 | assessment.workflow.enabled | true/false | Workflow integration can be controlled by the following two properties |
-| assessment.workflow.trigger.param | usageCategory,occupancyType,occupancyDate |   |
+| assessment.workflow.trigger.param | usageCategory,occupancyType,occupancyDate |  |
 
 **PERSISTER CONFIG**: [https://raw.githubusercontent.com/egovernments/configs/master/egov-persister/assessment-persister.yml?token=AE4Z2KFWEQBDCUY6AZLGGIK6AM3QQ](https://raw.githubusercontent.com/egovernments/configs/master/egov-persister/assessment-persister.yml?token=AE4Z2KFWEQBDCUY6AZLGGIK6AM3QQ)\`\`
 
@@ -251,8 +251,6 @@ serviceMaps:
       - jsonPath: $.Assessment.documents.*.auditDetails.lastModifiedBy
 
       - jsonPath: $.Assessment.documents.*.auditDetails.lastModifiedTime
-
-
 ```
 
 **Workflow Config**
@@ -468,11 +466,10 @@ Sample businessService create API body for Assessment workflow:
       ]
     }
   ]
-}	
-
+}
 ```
 
- Other system-level configs are the same as PT-Registry as mentioned above.
+Other system-level configs are the same as PT-Registry as mentioned above.
 
 **Notification Configs**
 
@@ -509,7 +506,6 @@ Sample businessService create API body for Assessment workflow:
       "module": "rainmaker-pt",
       "locale": "en_IN"
     }
-
 ```
 
 ### Assessment Notification <a id="Assessment-Notification:"></a>
@@ -551,12 +547,11 @@ Sample businessService create API body for Assessment workflow:
       "module": "rainmaker-pt",
       "locale": "en_IN"
     }
-
 ```
 
 For adding localization for any status append ASMT\_ prefix to the status and for adding a message for any status add ASMT\_MSG\_ before the status.
 
-Assessment ****\(Property Calculator\) -
+Assessment _\*\*_\(Property Calculator\) -
 
 The calculator service Prepares and property tax and files the demand in the billing service for payment. It has the ‘estimate’ API to give the estimated property tax without persisting data and a calculated API to create demand for payments.
 
@@ -585,15 +580,11 @@ please refer to the property document[ Property Services \| Doc-Links](./)
 
 **API LIST**
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  /assessment/\_create | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
-|  /assessment/\_update | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
+| /assessment/\_create | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
+| /assessment/\_update | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
 | /assessment/\_search | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

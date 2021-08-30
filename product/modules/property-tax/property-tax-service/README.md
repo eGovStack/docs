@@ -18,12 +18,12 @@ One of the major applications of the eGov stack which helps municipal and citize
 * Following services should be up and running:
   * user
   * MDMS
-  *  Persister
-  *  Location
-  *  Localization
-  *  Id-Gen
-  *  Billing-service
-  *  URL-shortener
+  * Persister
+  * Location
+  * Localization
+  * Id-Gen
+  * Billing-service
+  * URL-shortener
 
 ## **Key Functionality**
 
@@ -61,8 +61,8 @@ The Boolean field which can enable/disable Workflow - same field controls the up
 | :--- | :--- | :--- |
 | **is.workflow.enabled** | true/false | enable disbale workflow |
 | [**property.workflow.name**](http://property.workflow.name/) | **PT.CREATE** | the name should match the config name in the workflow businessservice JSON |
-| [**property.legacy.entry.workflow.name**](http://property.legacy.entry.workflow.name/) | **PT.LEGACY** |   |
-| [**property.update.workflow.name**](http://property.update.workflow.name/) | **PT.UPDATE** |   |
+| [**property.legacy.entry.workflow.name**](http://property.legacy.entry.workflow.name/) | **PT.LEGACY** |  |
+| [**property.update.workflow.name**](http://property.update.workflow.name/) | **PT.UPDATE** |  |
 
 Workflow Config for property create if the source is from **WATER CONNECTION** module
 
@@ -86,7 +86,7 @@ For each use case, to identify which workflow to use can be identified from this
       "inWorkflowStatusAllowed":true,
       "enable":true
   }
-     
+
  ]
 }
 ```
@@ -105,7 +105,7 @@ Then for all the property creation from Water and Sewerage module would have one
 | **enable** | If this filed is set as true, then the other fields associate with the particular object is use for property creation. |
 
 {% hint style="info" %}
-Note: The above objects indicate each use case mentioned in this [ticket](https://digit-discuss.atlassian.net/browse/RAIN-1772), so at a time only one object \(use case\) enable field must set as true 
+Note: The above objects indicate each use case mentioned in this [ticket](https://digit-discuss.atlassian.net/browse/RAIN-1772), so at a time only one object \(use case\) enable field must set as true
 {% endhint %}
 
 Sample workflow config for use case 1 where property creation is from water and sewerage module with one step workflow
@@ -383,8 +383,7 @@ Sample workflow config - \(The same PT.CREATE can be used for update workflow al
     ]
 }
   ]
-}	
-
+}
 ```
 
 **PT.LEGACY workflow config**
@@ -602,7 +601,7 @@ Configs in App.props
 | egov.idgen.ack.format | PB-AC-\[cy:yyyy-MM-dd\]-\[SEQ\_EG\_PT\_ACK\] |
 | egov.idgen.mutation.format | PB-MT-\[CITY\]-\[SEQ\_EG\_PT\_MUTATION\] |
 | egov.idgen.assm.format | PB-AS-\[cy:yyyy-MM-dd\]-\[SEQ\_EG\_PT\_ASSM\] |
-| egov.idgen.ptid.format |  PB-PT-\[cy:yyyy-MM-dd\]-\[SEQ\_EG\_PT\_PTID\] |
+| egov.idgen.ptid.format | PB-PT-\[cy:yyyy-MM-dd\]-\[SEQ\_EG\_PT\_PTID\] |
 | citizen.allowed.search.params | accountId,ids,propertyDetailids,mobileNumber,oldpropertyids |
 | employee.allowed.search.params | accountId,ids,propertyDetailids,mobileNumber,oldpropertyids |
 
@@ -629,29 +628,25 @@ Property service can be integrated with any organization or system that wants to
 
 **Doc Links**
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
 | USER Service | [ User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service) |
-| url-shortening |  [URL Shortening service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/896892936/URL+Shortening+service) |
-|  MDMS |  [MDMS \(Master Data Management Service\)](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/723189807) |
+| url-shortening | [URL Shortening service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/896892936/URL+Shortening+service) |
+| MDMS | [MDMS \(Master Data Management Service\)](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/723189807) |
 | Billing-service | [ Billing Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service) |
 | Location | [ Location Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664338482/Location+Service) |
 | Workflow | [ Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
-| Persister |  **** |
-| Localization |   |
-|  Id-Gen service |   |
+| Persister | _\*\*_ |
+| Localization |  |
+| Id-Gen service |  |
 
 API LIST:
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  /Property/\_create | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
-|  /Property/\_update | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
+| /Property/\_create | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
+| /Property/\_update | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
 | /property/\_search | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

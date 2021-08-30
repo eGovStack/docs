@@ -9,9 +9,5 @@ This section contains docs and information resources that guide you through the 
 * [CI/CD](deployment-key-concepts/cicd.md)
 * [Security Practices](deployment-key-concepts/security-practices.md)
 
-
-
-
-
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

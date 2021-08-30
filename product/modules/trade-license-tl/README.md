@@ -60,14 +60,10 @@ Reach out to us through any of the below-mentioned contact channels for any assi
 12th Main, 3rd Block,  
 Koramangala, Bangalore 560034
 
-*      [Find us on map](https://goo.gl/maps/pYCFMhHWW7r)
-*      +91 80 4125 5708
-*      contact@digit.org
+* [Find us on map](https://goo.gl/maps/pYCFMhHWW7r)
+* +91 80 4125 5708
+* contact@digit.org
 {% endhint %}
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

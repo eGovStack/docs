@@ -1,6 +1,6 @@
 # Localization
 
-### Introduction
+## Introduction
 
 Localization is a practice to localize various UI visible data into the local wordings according to the client's requirements. This practice of localization is enforced on various clients so that it becomes easier for the people using the service to understand the common terminology and make the best use of the available system.
 
@@ -14,7 +14,7 @@ The following texts \(but not limited to\) on the web page can be localized:
 The module-specific master data would already have been made available in the localized form while collecting the data for the respective module-specific configuration.
 {% endhint %}
 
-### Data Table
+## Data Table
 
 | Sr. No. | Code\* | Module\* | Message \(In English\)\* | Message \(In Local Language\)\* |
 | :--- | :--- | :--- | :--- | :--- |
@@ -26,9 +26,9 @@ The module-specific master data would already have been made available in the lo
 Data mentioned in the data table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory? | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -37,7 +37,7 @@ Data mentioned in the data table is a sample data.
 | 3 | Message\(In English\) | Text | 256 | Yes | The English language that is being displayed on the UI |
 | 4 | Message\(In Local Language\) | Text | 256 | Yes | The text in the local language that the client wants to be displayed |
 
-#### Steps to fill Data
+### Steps to fill Data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -46,7 +46,7 @@ Data mentioned in the data table is a sample data.
 5. Ask the client to fill the localized text in the last column which is the message\(local language\) column.
 6. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-### Checklist
+## Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -54,17 +54,15 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../../module-setup/common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 Not Applicable
 
-### Attachments
+## Attachments
 
 {% file src="../../../../../.gitbook/assets/configurable-data-template-localization-v1.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../../.gitbook/assets/configurable-sample-data-localization-v1.xlsx" caption="Sample Data Template" %}
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

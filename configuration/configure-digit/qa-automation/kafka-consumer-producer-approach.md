@@ -4,7 +4,7 @@
 
 This document is to provide a high-level abstraction of Kafka workflow. Same documentation would be scaled to granular technical components as and when a grouping of services can be categorised from the ecosystem.
 
- It’s important to note that we need to have closure engagements between development, solution engineering and QA automation teams to accommodate data streaming, staging and ecosystem workflows.
+It’s important to note that we need to have closure engagements between development, solution engineering and QA automation teams to accommodate data streaming, staging and ecosystem workflows.
 
 ## **Kafka Abstraction Work Flow**
 
@@ -28,15 +28,15 @@ Following are the Producer topic:
 
 **org.egov.core.notification.email** :- This topic is used to send OTP to user email id.
 
-|  SI No | **Core Services Name** | **API** | **Consumer** | **Producer** |
+| SI No | **Core Services Name** | **API** | **Consumer** | **Producer** |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | egov-indexer | - | Yes | Yes |
 | 2 | egov-notification-mail | - | Yes | - |
-| 3 | egov-notification-sms |   | Yes | Yes |
+| 3 | egov-notification-sms |  | Yes | Yes |
 | 4 | egov-persister | - | Yes | Yes |
-| 5 | egov-pg-service | Yes |   | Yes |
+| 5 | egov-pg-service | Yes |  | Yes |
 | 6 | user-otp | Yes | - | Yes |
-|    | **Business Services Name** | **API** | **Consumer** | **Producer** |
+|  | **Business Services Name** | **API** | **Consumer** | **Producer** |
 | 7 | billing-service | Yes | Yes | Yes |
 | 8 | collection-services | Yes | Yes | Yes |
 | 9 | dashboard-ingest | Yes | Yes | Yes |
@@ -61,10 +61,6 @@ The user-otp service send the OTP to user on login request, on password change r
 ### **Log Aggregation Solution**
 
 1. Log Aggregation Solution: Collect logs from a number of eGov services and then make them available to consumers in a standard format.
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

@@ -40,9 +40,9 @@ On the Search screen, the user can search a property by mobile Number, a unique 
 
 From Here on clicking view Details a user is redirected to the bill-details Screen, for the property, just as in the case of My Bills Screen.
 
-## Technical Details 
+## Technical Details
 
-**My Bills Screen** 
+**My Bills Screen**
 
 [Click here to fetch](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/common/src/payments/citizen/bills/index.js) the My Bills screen starting file
 
@@ -86,33 +86,33 @@ The configuration returns an object of structure.
 
 ```text
 {
-        "my-bill": [
-          {
-            keyValue: "CS_COMMON_AMOUNT_DUE",
-            keyPath: [
-              (d) => {
-                const overdueBy = new Date().getTime() - new Date(d.billDetails[0]?.toPeriod).getTime();
-                const days = Math.floor(overdueBy / (86400 * 1000));
-                return (
-                  <React.Fragment>
-                    {"₹" + d["totalAmount"]}
-                    {days >= 0 ? (
-                      <span className={"card-label-error"} style={{ fontSize: "16px", fontWeight: "normal" }}>{` ( ${t(
-                        "CS_PAYMENT_OVERDUE"
-                      )} ${days} ${t(days === 1 ? "CS_COMMON_DAY" : "CS_COMMON_DAYS")})`}</span>
-                    ) : null}
-                  </React.Fragment>
-                );
-              },
-            ],
-            fallback: "N/A",
-            noteStyle: { fontWeight: "bold", fontSize: "24px", paddingTop: "5px" },
-          },
-          {
-            keyValue: "PT_PROPERTY_ID",
-            keyPath: ["propertyId"],
-            fallback: "",
-          }
+        "my-bill": [
+          {
+            keyValue: "CS_COMMON_AMOUNT_DUE",
+            keyPath: [
+              (d) => {
+                const overdueBy = new Date().getTime() - new Date(d.billDetails[0]?.toPeriod).getTime();
+                const days = Math.floor(overdueBy / (86400 * 1000));
+                return (
+                  <React.Fragment>
+                    {"₹" + d["totalAmount"]}
+                    {days >= 0 ? (
+                      <span className={"card-label-error"} style={{ fontSize: "16px", fontWeight: "normal" }}>{` ( ${t(
+                        "CS_PAYMENT_OVERDUE"
+                      )} ${days} ${t(days === 1 ? "CS_COMMON_DAY" : "CS_COMMON_DAYS")})`}</span>
+                    ) : null}
+                  </React.Fragment>
+                );
+              },
+            ],
+            fallback: "N/A",
+            noteStyle: { fontWeight: "bold", fontSize: "24px", paddingTop: "5px" },
+          },
+          {
+            keyValue: "PT_PROPERTY_ID",
+            keyPath: ["propertyId"],
+            fallback: "",
+          }
         ]
 }
 ```
@@ -134,21 +134,21 @@ It checks for various payment restrictions which are fetched from the MDMS on ab
 The structure for payment rule response from the MDMS are -
 
 ```text
- {
-                   "businessService": "PropertyTax",
-                    "code": "PT",
-                    "collectionModesNotAllowed": [
-                        "DD",
-                        "OFFLINE_NEFT",
-                        "OFFLINE_RTGS",
-                        "POSTAL_ORDER"
-                    ],
-                    "partPaymentAllowed": true,
-                    "minAmountPayable": 100,
-                    "isAdvanceAllowed": false,
-                    "demandUpdateTime": 86400000,
-                    "isVoucherCreationEnabled": true,
-                    "billGineiURL": "egov-searcher/bill-genie/billswithaddranduser/_g
+ {
+                   "businessService": "PropertyTax",
+                    "code": "PT",
+                    "collectionModesNotAllowed": [
+                        "DD",
+                        "OFFLINE_NEFT",
+                        "OFFLINE_RTGS",
+                        "POSTAL_ORDER"
+                    ],
+                    "partPaymentAllowed": true,
+                    "minAmountPayable": 100,
+                    "isAdvanceAllowed": false,
+                    "demandUpdateTime": 86400000,
+                    "isVoucherCreationEnabled": true,
+                    "billGineiURL": "egov-searcher/bill-genie/billswithaddranduser/_g
 }
 ```
 
@@ -196,7 +196,7 @@ The search screen is a part of PT module and its code [can be found here.](https
 
 The Search Result screen code [can be referred to here](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/pt/src/pages/citizen/SearchResults/index.js).
 
-#### Adding a new Bill detail for the business Service <a id="Adding-a-new-Bill-detail-for-the-business-Service"></a>
+### Adding a new Bill detail for the business Service <a id="Adding-a-new-Bill-detail-for-the-business-Service"></a>
 
 The keynote config is responsible for adding the new bill UI for adding a new Bill for a business Service.
 
@@ -215,9 +215,5 @@ The whole function is exposed within the component Registry as `getBillDetailsCo
 | 8 | /pg-service/transaction/v1/\_update | 1572 | CITIZEN |
 | 9 | collection-services/payments/PT/\_search | 2029 | PTCEMP, CITIZEN |
 
-
-
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

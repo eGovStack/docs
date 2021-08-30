@@ -107,7 +107,5 @@ _\*\(Last query related to document might need little modification as values in 
 8. Phone column contains phone numbers, we are not migrating that column as it has PII data and will be already present in user service as well.
 9. If sla is not found in the old config \(will only happen if some complaint category is removed from MDMS and complaints are present in the system of that category\) default SLA value will be used.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

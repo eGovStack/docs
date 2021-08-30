@@ -12,7 +12,7 @@ Here in this Quickstart guide we'll install basic services to get the platform u
 
 ## **1. Infra Setup**
 
-**To provision a lightweight Kubernetes cluster, please follow the instructions below in context to your OS and install the k3d on your machine.** 
+**To provision a lightweight Kubernetes cluster, please follow the instructions below in context to your OS and install the k3d on your machine.**
 
 ### **H/W  or VM Size**
 
@@ -30,7 +30,7 @@ Here in this Quickstart guide we'll install basic services to get the platform u
   * Open terminal and Install k3d on Linux using the below command
 
   ```text
-  wget -q -O - https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash       
+  wget -q -O - https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
   ```
 
 * **OSX or Mac**
@@ -39,8 +39,8 @@ Here in this Quickstart guide we'll install basic services to get the platform u
   * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/) on Mac
   * Install k3d on Mac, on terminal use [Homebrew](https://brew.sh/) \(Homebrew is available for MacOS\) using the below command
 
-  ```
-  brew install k3d  
+  ```text
+  brew install k3d
   ```
 
 * **Windows 10 or above**
@@ -51,7 +51,7 @@ Here in this Quickstart guide we'll install basic services to get the platform u
   * Install [GitBash](https://git-scm.com/download/win) as an alternative command prompt that allows most of the Linux commands on windows.
   * Now open gitbash and Install k3d on Windows using the below command
 
-  ```
+  ```text
   choco install k3d
   ```
 
@@ -59,13 +59,13 @@ Here in this Quickstart guide we'll install basic services to get the platform u
 
 **Once the above prerequisites are met, run the following tasks depending upon your OS.**
 
-* [ ]  ****login/ssh into the machine, go to terminal/command prompt and run the following commands as an admin user.
+* [ ] _\*\*_login/ssh into the machine, go to terminal/command prompt and run the following commands as an admin user.
 * [ ] Create /Kube directory and change permission. To use this directory for persistent data mount. This means all the container logs, data will be stored here.
 
 ```text
  mkdir /kube
  chmod 777 /kube
- 
+
  #if you are unable to create the /kube folder in the root
  # you can create it your user directory and provide the absolue path below
 ```
@@ -92,9 +92,9 @@ OutPut:
 Kubernetes control plane is running at https://0.0.0.0:33931
 CoreDNS is running at https://0.0.0.0:33931/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 Metrics-server is running at https://0.0.0.0:33931/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
- 
- 
- 
+
+
+
 root@ip:/# k3d cluster list
 NAME          SERVERS   AGENTS   LOADBALANCER
 k3s-default   1/1       2/2      true
@@ -104,14 +104,14 @@ k3s-default   1/1       2/2      true
 
 ```text
 kubectl get nodes
- 
+
 Output:
 NAME                       STATUS   ROLES                  AGE     VERSION
 k3d-k3s-default-agent-0    Ready    <none>                 3d18h   v1.21.1+k3s1
 k3d-k3s-default-agent-1    Ready    <none>                 3d18h   v1.21.1+k3s1
 k3d-k3s-default-server-0   Ready    control-plane,master   3d18h   v1.21.1+k3s1
- 
- 
+
+
 kubectl top nodes
 
 Output:
@@ -119,8 +119,7 @@ W0625 07:56:24.588781   12810 top_node.go:119] Using json format to get metrics.
 NAME                       CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
 k3d-k3s-default-agent-0    547m         6%     1505Mi          9%        
 k3d-k3s-default-agent-1    40m          0%     2175Mi          13%       
-k3d-k3s-default-server-0   59m          0%     2286Mi          14%  
- 
+k3d-k3s-default-server-0   59m          0%     2286Mi          14%
 ```
 
 If the above steps are completed successfully, your Cluster is now up and running ready to proceed with the DIGIT Deployment.
@@ -145,23 +144,23 @@ Now that we have the Infra setup to proceed with the DIGIT Deployment. Following
 7. [Install Postman](https://www.postman.com/downloads/) to run some digit bootstrap scripts
 
 ```text
-root@ip:/# git clone -b quickstart https://github.com/egovernments/DIGIT-DevOps 
+root@ip:/# git clone -b quickstart https://github.com/egovernments/DIGIT-DevOps
 ```
 
-  6. After cloning the repo CD into the folder DIGIT-DevOps and type the "code ." command that will open the visual editor and opens all the files from the repo DIGIT-DevOps
+1. After cloning the repo CD into the folder DIGIT-DevOps and type the "code ." command that will open the visual editor and opens all the files from the repo DIGIT-DevOps
 
 ```text
 root@ip:/# cd DIGIT-DevOps
 root@ip:DIGIT-DevOps# code .
 ```
 
-  7. Have look at the [sample deployment config file](https://github.com/egovernments/DIGIT-DevOps/blob/quickstart/deploy-as-code/helm/environments/quickstart-config.yaml) that needs to be configured as per any specific values according to your needs. \(For a quick start you can run as it is\)
+1. Have look at the [sample deployment config file](https://github.com/egovernments/DIGIT-DevOps/blob/quickstart/deploy-as-code/helm/environments/quickstart-config.yaml) that needs to be configured as per any specific values according to your needs. \(For a quick start you can run as it is\)
 
 ```text
 https://github.com/egovernments/DIGIT-DevOps/blob/quickstart/deploy-as-code/helm/environments/quickstart-config.yaml
 ```
 
- 8. Add the following entries in your host file /etc/hosts depending on your OS, instructions can be found [here](https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux). 
+1. Add the following entries in your host file /etc/hosts depending on your OS, instructions can be found [here](https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux). 
 
 ```text
 127.0.0.1 quickstart.local.digit
@@ -208,19 +207,14 @@ Forwarding from 127.0.0.1:8080 -> 8080
 Forwarding from [::1]:8080 -> 8080
 ```
 
-
-
-2. Seed the sample data
-
-* Ensure you have the postman to run the following seed data api, if not [Install postman](https://www.postman.com/downloads/canary/) on your local
-* Import the following postman collection into the postman and run it, this will have the seed data that enable sample test users and localisation data.
-  * [DIGIT Bootstrap](https://raw.githubusercontent.com/egovernments/DIGIT-DevOps/quickstart/deploy-as-code/bootstrap_scripts/seed_data.json)
+1. Seed the sample data
+2. Ensure you have the postman to run the following seed data api, if not [Install postman](https://www.postman.com/downloads/canary/) on your local
+3. Import the following postman collection into the postman and run it, this will have the seed data that enable sample test users and localisation data.
+   * [DIGIT Bootstrap](https://raw.githubusercontent.com/egovernments/DIGIT-DevOps/quickstart/deploy-as-code/bootstrap_scripts/seed_data.json)
 
 ![](../.gitbook/assets/image%20%28112%29.png)
 
 ![](../.gitbook/assets/image%20%28113%29.png)
-
-
 
 To test the kubernetes operations through kubectl from you local machine, please execute the below commands.
 
@@ -256,7 +250,7 @@ pod "zuul-788bf8cd8b-9nxfl" deleted
 pod "nginx-ingress-controller-b9678869c-mkslb" deleted
 ```
 
-You have successfully completed the DIGIT application setup. You can now experience the DIGIT platform - PGR module. 
+You have successfully completed the DIGIT application setup. You can now experience the DIGIT platform - PGR module.
 
 {% hint style="info" %}
 You can try experimenting the different DIGIT modules by installing them in your cluster with your H/W or VM complying to higher level machine configuration of increased number of vCPUs. RAM and storage size.

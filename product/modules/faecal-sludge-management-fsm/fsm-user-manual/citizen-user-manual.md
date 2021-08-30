@@ -40,7 +40,7 @@ Click on **Apply for Emptying of Septic Tank/Pit** option on the home page.
 
 ![](../../../../.gitbook/assets/cit2.png)
 
-Select the relevant **Property Type**. 
+Select the relevant **Property Type**.
 
 ![](../../../../.gitbook/assets/cit3.png)
 
@@ -52,7 +52,7 @@ Select the applicable **Property Sub Type.**
 
 ![](../../../../.gitbook/assets/cit5.png)
 
-Enable the **Location** Finder to allow GPS to track current location. Or, move the pin to the location manually. Alternatively, you can also enter the location in the Search bar. 
+Enable the **Location** Finder to allow GPS to track current location. Or, move the pin to the location manually. Alternatively, you can also enter the location in the Search bar.
 
 ![](../../../../.gitbook/assets/cit6.png)
 
@@ -72,7 +72,7 @@ Select **Yes** if your property is located in a notified slum area. Else, select
 
 ![](../../../../.gitbook/assets/cit10.png)
 
-Select and enter the **Slum Name** from the available drop down list. 
+Select and enter the **Slum Name** from the available drop down list.
 
 ![](../../../../.gitbook/assets/cit11.png)
 
@@ -132,7 +132,7 @@ The system displays a payment acknowledgement message along with the **Payment R
 
 ## Rate Services
 
-Applicants can rate the services given and provide detailed feedback on their applications. 
+Applicants can rate the services given and provide detailed feedback on their applications.
 
 ![](../../../../.gitbook/assets/cit-feedback.png)
 
@@ -144,7 +144,7 @@ Scroll down the application to the **Application Timeline** section. Click on th
 
 ![](../../../../.gitbook/assets/cit-feedback2.png)
 
-Enter your ratings by clicking on the number of stars. Answer the questions on the feedback form. 
+Enter your ratings by clicking on the number of stars. Answer the questions on the feedback form.
 
 ![](../../../../.gitbook/assets/cit-feedback3.png)
 
@@ -154,7 +154,5 @@ Enter any additional insights in the **Comments** box. Click on the **Submit** b
 
 The feedback is submitted.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

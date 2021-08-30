@@ -6,15 +6,13 @@ Watch out for this space as we are constantly adding to our video library.
 
 DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. Refer to these videos for clarity and ease of understanding the different functions of the modules. Our product video library covers a wide range of functions, right from configuring DIGIT environment components to using the modules.
 
-### DIGIT Webinar Videos
+## DIGIT Webinar Videos
 
 * [DIGIT 2.1 Release Webinar](https://youtu.be/ptG2IqHk4jw)
 * [DIGIT 2.2 Release Webinar](https://youtu.be/jb6oHctAMkE)
 * [DIGIT 2.3 & 2.4 Release Webinar](https://youtu.be/8f7cp30He4U)
 
-
-
-### Module Data Templates Configuration Videos
+## Module Data Templates Configuration Videos
 
 <table>
   <thead>
@@ -126,7 +124,6 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Property Tax Configuration Videos</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="https://youtu.be/XLfhJD2X_gY">Road Type</a>
           </li>
@@ -223,7 +220,6 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">mCollect Configuration Videos</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="https://youtu.be/N-exC_4Zz-A">Service Category</a>
           </li>
@@ -235,7 +231,6 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Finance</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="https://youtu.be/9QOeBLrGZAI">Schemes</a>
           </li>
@@ -269,7 +264,7 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
   </tbody>
 </table>
 
-### Module Workflow Videos
+## Module Workflow Videos
 
 <table>
   <thead>
@@ -282,7 +277,6 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Trade License Workflow</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="https://youtu.be/aTJf5GFIQ_M">Filling and submitting TL application forms</a>
           </li>
@@ -306,7 +300,6 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">OBPAS Workflow</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="https://youtu.be/UVGa46oBSE0">Architect Registration in DIGIT OBPAS Module</a>
           </li>
@@ -328,13 +321,12 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">Finance Workflow</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="https://youtu.be/ZAVVDHxYt8U">Chart of Accounts</a>
           </li>
-          <li><a href="https://youtu.be/VbyohwHvQ2o">Deductions </a>
+          <li><a href="https://youtu.be/VbyohwHvQ2o">Deductions</a>
           </li>
-          <li><a href="https://youtu.be/Pk0Uat4wi5s">Contractors-Suppliers </a>
+          <li><a href="https://youtu.be/Pk0Uat4wi5s">Contractors-Suppliers</a>
           </li>
           <li><a href="https://youtu.be/x_ol6KurLSA">Funds</a>
           </li>
@@ -362,7 +354,6 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     <tr>
       <td style="text-align:left">PGR Workflow</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li><a href="https://youtu.be/uAPdghG-dH4">PGR Whatsapp Bill Payment</a>
           </li>
@@ -371,12 +362,6 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
     </tr>
   </tbody>
 </table>
-
-
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

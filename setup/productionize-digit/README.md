@@ -24,5 +24,3 @@ Before we can confidently productionize an installation of DIGIT, we need insigh
 
   Follow the to export DIGIT's metrics into a metric store of your choice.
 
-
-

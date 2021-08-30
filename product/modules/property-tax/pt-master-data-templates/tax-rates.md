@@ -58,9 +58,5 @@ Not Applicable
 
 [Sample Dataconfigurable-sample-data-tax-rate-v1.xlsx - 10KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG_iQW5oN4ukgXP8K%2Fsync%2Fd0e2fb07197fd6dad95155442d9f8d88edb2148b.xlsx?generation=1602050605888588&alt=media)
 
-
-
-
-
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

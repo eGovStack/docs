@@ -48,7 +48,7 @@ ServiceMaps:
             outJsonPath: $.Data.tenantData
 ```
 
-####  **The configuration file contains the following keys:-** <a id="[hardBreak]The-configuration-file-contains-following-keys:-"></a>
+## **The configuration file contains the following keys:-** <a id="[hardBreak]The-configuration-file-contains-following-keys:-"></a>
 
 | **Variable Name** | **Description** |
 | :--- | :--- |
@@ -65,14 +65,14 @@ ServiceMaps:
 | isBulk | Boolean key to identify whether the JSON received on the Queue is from a Bulk API. In simple words, whether the JSON contains a list at the top level. |
 | jsonPath | Key to be used in case of indexing a part of the input JSON and in case of indexing a custom json where the values for custom json are to be fetched from this part of the input. |
 | timeStampField | JSONPath of the field in the input which can be used to obtain the timestamp of the input. |
-| fieldsToBeMasked |  A list of JSONPaths of the fields of the input to be masked in the index. |
+| fieldsToBeMasked | A list of JSONPaths of the fields of the input to be masked in the index. |
 | customJsonMapping | Key to be used while building an entirely different object using the input JSON on the queue |
 | indexMapping | A skeleton/mapping of the JSON that is to be indexed. Note that, this JSON must always contain a key called "Data" at the top-level and the custom mapping begins within this key. This is only a convention to smoothen dashboarding on Kibana when data from multiple indexes have to be fetched for a single dashboard. |
 | fieldMapping | Contains a list of configurations. Each configuration contains keys to identify the field of the input JSON that has to be mapped to the fields of the index json which is mentioned in the key 'indexMapping' in the config. |
 | inJsonPath | JSONPath of the field from the input. |
 | outJsonPath | JSONPath of the field of the index json. |
 | externalUriMapping | Contains a list of configurations. Each configuration contains keys to identify the field of the input JSON that is to be enriched using APIs from the external services. The configuration for those APIs also is a part of this. |
-| path |  URI of the API to be used. \(it should be POST/\_search API.\) |
+| path | URI of the API to be used. \(it should be POST/\_search API.\) |
 | queryParam | Configuration of the query params to be used for the API call. It is a comma-separated key-value pair, where the key is the parameter name as per the API contract and value is the JSONPath of the field to be equated against this parameter. |
 | apiRequest | Request Body of the API. \(Since we only use \_search APIs, it should be only RequestInfo.\) |
 | uriResponseMapping | Contains a list of configuration. Each configuration contains two keys: One is a JSONPath to identify the field from response, Second is also a JSONPath to map the response field to a field of the index json mentioned in the key 'indexMapping'. |
@@ -81,12 +81,10 @@ ServiceMaps:
 | moduleName | Module Name from MDMS. |
 | masterName | Master Name from MDMS. |
 | tenantId | Tenant id to be used. |
-| filter |  Filter to be applied to the data to be fetched. |
+| filter | Filter to be applied to the data to be fetched. |
 | filterMapping | Maps the field of input json to variables in the filter |
 | variable | Variable in the filter |
 | valueJsonpath | JSONPath of the input to be mapped to the variable. |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

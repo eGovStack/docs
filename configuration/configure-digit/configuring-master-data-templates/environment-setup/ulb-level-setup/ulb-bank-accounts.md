@@ -1,10 +1,10 @@
 # ULB Bank Accounts
 
-### Introduction
+## Introduction
 
 It is a ULB bank account which is operative at least to receive or deposit the day to day revenue collection done by the ULB. It is used by online payment integrator to disburse the amount in ULBs accounts which have been collected through a payment gateway into a pool account managed by the payment gateway.
 
-### Data Table
+## Data Table
 
 Below given data table represents the excel template attached. Data given in the table is a sample data.
 
@@ -14,12 +14,12 @@ Below given data table represents the excel template attached. Data given in the
 | 2 | haridwar | Haridwar Municipal Corporation | PNB | Chauk | XXXX9820XX9 | Saving | PNBX8320 |
 
 {% hint style="info" %}
- Data given in the table is sample data.
+Data given in the table is sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Is Mandatory | Definition/ Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ Below given data table represents the excel template attached. Data given in the
 | 6 | Account Type | Text | 256 | Yes | Account type. e.g. Saving, Current etc. |
 | 7 | IFSC | Alphanumeric | 64 | Yes | IFS code of branch as per FBI guidelines |
 
-#### Steps to fill data
+### Steps to fill data
 
 1. Download the data template attached to this page.
 2. Have it open and go through all the headers and understand the meaning of them by referring 'Data Definition' section.
@@ -40,17 +40,17 @@ Below given data table represents the excel template attached. Data given in the
 5. Start filling the data starting from serial no. and complete a record at once. repeat this exercise until the entire data is filled into a template.
 6. Verify the data once again by going through the checklist and taking care of each and every checklist point/ activity mentioned in the checklist.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed after the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-### Common Checklist <a id="Common-Checklist"></a>
+## Common Checklist <a id="Common-Checklist"></a>
 
 This checklist covers all the activities which are common across the entities.
 
 To see the common checklist refer to the page [Checklist](../../module-setup/common-config/checklist.md) consisting of all the activities which are to be followed to ensure complete and quality data.
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 This checklist covers the activities which are specific to the entity.
 
@@ -59,11 +59,9 @@ This checklist covers the activities which are specific to the entity.
 | 1 | Code should not consist of any special characters | E.g. dehradun is allowed but dehradun@1 is not allowed |
 | 2 | The account number should not consist of any special characters. | As issued by the bank |
 
-### Attachments
+## Attachments
 
 {% file src="../../../../../.gitbook/assets/ulbs-bank-account-details\_template\_v1.xlsx" caption="Configuration Data Template" %}
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

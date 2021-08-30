@@ -4,11 +4,11 @@ description: PT module release details
 
 # Property Tax Release Notes
 
-### Overview <a id="Release-Highlights"></a>
+## Overview <a id="Release-Highlights"></a>
 
 This release provides revamped user experience to the citizens with improvements in the workflows and updates in the user interface while paying property tax and apply for property registration.
 
-### Release Highlights <a id="Release-Highlights"></a>
+## Release Highlights <a id="Release-Highlights"></a>
 
 This release has updated workflows and user interface for the following business cases -
 
@@ -17,7 +17,7 @@ This release has updated workflows and user interface for the following business
 * My Properties
 * My Applications
 
-### Release Features <a id="Release-Features"></a>
+## Release Features <a id="Release-Features"></a>
 
 <table>
   <thead>
@@ -57,24 +57,18 @@ This release has updated workflows and user interface for the following business
   </tbody>
 </table>
 
-### Known Issues <a id="Upgrade-Instructions"></a>
+## Known Issues <a id="Upgrade-Instructions"></a>
 
 None.
 
-### Upcoming Release Features <a id="Upcoming-Release-Features"></a>
+## Upcoming Release Features <a id="Upcoming-Release-Features"></a>
 
- Employee UX revamps and remaining citizen use cases.
+Employee UX revamps and remaining citizen use cases.
 
-### Reference Doc Links <a id="Reference-Doc-Links"></a>
+## Reference Doc Links <a id="Reference-Doc-Links"></a>
 
 | **Doc Links** | **Description** |
 | :--- | :--- |
-
-
-
-
-
-
 
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

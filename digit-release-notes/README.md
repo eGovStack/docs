@@ -4,14 +4,14 @@ description: 'New release features, enhancements, and fixes'
 
 # Release Notes
 
-### Release Summary <a id="Release-Summary"></a>
+## Release Summary <a id="Release-Summary"></a>
 
 DIGIT 2.4 is the latest release that has got new modules, a few functional changes, and non-functional changes.
 
 * Functional: eChallan module, WhatsApp Bill Payment, Property Tax Citizen flow UI/UX revamp Arrears Breakup in Property Tax Due, and Send back to Citizen feature in Fire NOC.
 * Non-functional: Platform Security Audit fixes, Hindi Localization, QA Automaton of APIs, and Technical improvements.
 
-### New ‌Feature Additions <a id="New-&#x200C;Feature-Additions"></a>
+## New ‌Feature Additions <a id="New-&#x200C;Feature-Additions"></a>
 
 <table>
   <thead>
@@ -29,7 +29,6 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
       <td style="text-align:left">1</td>
       <td style="text-align:left">eChallan module</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>Generate <b>e-challans / bill</b> for all miscellaneous / Adhoc services
             which citizens avail from ULBs</li>
@@ -46,7 +45,6 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
       <td style="text-align:left">WhatsApp Bill Payment and PGR v2 integration with redesigned Chatbot (xState)</td>
       <td
       style="text-align:left">
-        <p></p>
         <p><b>Bill Payment:</b>
         </p>
         <ol>
@@ -68,7 +66,7 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
               </li>
             </ol>
           </li>
-          <li><b>Payment </b>
+          <li><b>Payment</b>
             <ol>
               <li>Pay bills through quick payment links</li>
               <li>Payment confirmation/failure notification</li>
@@ -95,7 +93,6 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
       <td style="text-align:left">3</td>
       <td style="text-align:left">Property Tax Citizen flow UI/UX revamp</td>
       <td style="text-align:left">
-        <p></p>
         <p>Updated workflows and user interface changes in the following business
           cases -</p>
         <ul>
@@ -109,7 +106,7 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
   </tbody>
 </table>
 
-### Enhancements <a id="Enhancements"></a>
+## Enhancements <a id="Enhancements"></a>
 
 <table>
   <thead>
@@ -143,7 +140,6 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
       <td style="text-align:left">4</td>
       <td style="text-align:left">QA Automaton of APIs</td>
       <td style="text-align:left">
-        <p></p>
         <p>APIs automation for</p>
         <ul>
           <li>Core Services</li>
@@ -154,9 +150,9 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
                 Water &amp; Sewerage, Fire NOC, Building Plan Approval, FSM, and PGR.</li>
             </ul>
           </li>
-          <li>Here is the <a href="qa-automation-release-notes.md">document </a>with
-            the details of services automated and README documentation which details
-            the detailed steps to execute the automation</li>
+          <li>Here is the <a href="qa-automation-release-notes.md">document</a> with the
+            details of services automated and README documentation which details the
+            detailed steps to execute the automation</li>
         </ul>
       </td>
     </tr>
@@ -164,7 +160,6 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
       <td style="text-align:left">5</td>
       <td style="text-align:left">Platform Security Audit fixes</td>
       <td style="text-align:left">
-        <p></p>
         <p>Listed below are the security vulnerabilities identified as part of the
           security audit. Few of them are as per design and justification is provided
           for these. Others are fixed at the code level.</p>
@@ -209,7 +204,7 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
           <li>The setter method for an identifier property (id or composite-id) should
             be private</li>
         </ol>
-        <p>Here are the security fixes guidelines as a<a href="../digit-support/security-guidelines-handbook.md"> handbook </a>for
+        <p>Here are the security fixes guidelines as a <a href="../digit-support/security-guidelines-handbook.md">handbook</a> for
           best practices and guidelines.</p>
       </td>
     </tr>
@@ -217,7 +212,6 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
       <td style="text-align:left">6</td>
       <td style="text-align:left">Technical Improvements</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>PDF service refactoring for Localization API calls optimization</li>
           <li>Timezone configuration support for all the services</li>
@@ -229,7 +223,6 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
       <td style="text-align:left">7</td>
       <td style="text-align:left">eDCR Enhancements</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>Enhanced Door, to support door widths with color code. The color code
             is used to identify the type of door</li>
@@ -242,7 +235,6 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
       <td style="text-align:left">8</td>
       <td style="text-align:left">Finance</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>Hard coded sub domain formation logic changed, preparing dynamic sub domain
             url by reading env from the configuration</li>
@@ -253,9 +245,9 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
   </tbody>
 </table>
 
-### ‌Document Resources and Links <a id="&#x200C;Document-Resources-and-Links"></a>
+## ‌Document Resources and Links <a id="&#x200C;Document-Resources-and-Links"></a>
 
-#### UI Technical Documents
+### UI Technical Documents
 
 {% page-ref page="../product/modules/mcollect-mcs/echallan-ui-details/" %}
 
@@ -279,7 +271,7 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
 
 {% file src="../.gitbook/assets/digit-ui-manual \(1\).pdf" caption="DIGIT UI Manual" %}
 
-#### Backend Service Documents
+### Backend Service Documents
 
 {% page-ref page="../configuration/configure-digit/services-overview/core-services/xstate-core-chatbot/" %}
 
@@ -293,7 +285,7 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
 
 {% page-ref page="../product/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-services.md" %}
 
-#### Tech Enablement Documents
+### Tech Enablement Documents
 
 {% page-ref page="../configuration/configure-digit/services-overview/business-services/appropriation-service.md" %}
 
@@ -343,9 +335,5 @@ DIGIT 2.4 is the latest release that has got new modules, a few functional chang
 
 {% page-ref page="../digit-support/security-guidelines-handbook.md" %}
 
-
-
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

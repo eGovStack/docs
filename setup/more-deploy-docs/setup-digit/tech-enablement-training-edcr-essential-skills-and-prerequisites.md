@@ -98,7 +98,7 @@ There are knowledge assets available in the Net for general items and eGov asset
       <td style="text-align:left">
         <p><a href="https://www.postman.com/resources/videos-tutorials/">https://www.postman.com/resources/videos-tutorials/</a>
         </p>
-        <p><a href="https://www.udemy.com/course/postman-the-complete-guide/">https://www.udemy.com/course/postman-the-complete-guide/</a> 
+        <p><a href="https://www.udemy.com/course/postman-the-complete-guide/">https://www.udemy.com/course/postman-the-complete-guide/</a>
         </p>
       </td>
       <td style="text-align:left">
@@ -112,7 +112,7 @@ There are knowledge assets available in the Net for general items and eGov asset
       <td style="text-align:left">
         <p><a href="https://www.tutorialspoint.com/rest_api/index.asp">https://www.tutorialspoint.com/rest_api/index.asp</a>
         </p>
-        <p><a href="https://www.youtube.com/watch?v=rtWH70_MMHM">https://www.youtube.com/watch?v=rtWH70_MMHM</a> 
+        <p><a href="https://www.youtube.com/watch?v=rtWH70_MMHM">https://www.youtube.com/watch?v=rtWH70_MMHM</a>
         </p>
       </td>
       <td style="text-align:left">
@@ -124,7 +124,7 @@ There are knowledge assets available in the Net for general items and eGov asset
     <tr>
       <td style="text-align:left">JSON</td>
       <td style="text-align:left">
-        <p><a href="https://www.tutorialspoint.com/json/index.htm">https://www.tutorialspoint.com/json/index.htm</a> 
+        <p><a href="https://www.tutorialspoint.com/json/index.htm">https://www.tutorialspoint.com/json/index.htm</a>
         </p>
         <p><a href="https://github.com/json-path/JsonPath"><img src="https://github.com/fluidicon.png" alt/>json-path/JsonPath</a>
         </p>
@@ -142,7 +142,7 @@ There are knowledge assets available in the Net for general items and eGov asset
       <td style="text-align:left">
         <p><a href="https://www.udemy.com/course/maven-quick-start/">https://www.udemy.com/course/maven-quick-start/</a>
         </p>
-        <p><a href="https://www.tutorialspoint.com/maven/index.htm">https://www.tutorialspoint.com/maven/index.htm</a> 
+        <p><a href="https://www.tutorialspoint.com/maven/index.htm">https://www.tutorialspoint.com/maven/index.htm</a>
         </p>
       </td>
       <td style="text-align:left">
@@ -153,7 +153,7 @@ There are knowledge assets available in the Net for general items and eGov asset
     </tr>
     <tr>
       <td style="text-align:left">eDCR Approach Guide</td>
-      <td style="text-align:left"><a href="https://digit-discuss.atlassian.net/l/c/Gh0kEwC6">eDCR Approach Guide</a> 
+      <td style="text-align:left"><a href="https://digit-discuss.atlassian.net/l/c/Gh0kEwC6">eDCR Approach Guide</a>
       </td>
       <td style="text-align:left">How to configuring and customizing the eDCR engine as per the state/city
         rules and regulations.</td>
@@ -171,9 +171,5 @@ There are knowledge assets available in the Net for general items and eGov asset
   </tbody>
 </table>
 
-
-
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

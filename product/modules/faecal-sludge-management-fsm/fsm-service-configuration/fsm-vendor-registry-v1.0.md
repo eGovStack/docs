@@ -4,11 +4,11 @@ description: Details for registering new vendors
 
 # FSM Vendor Registry v1.0
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 Vendor Registry is a system that enables ULB Employees to create and search Vendor i.e Desludging Operator \(DSO\) and driver entities with appropriate vehicle Entities for FSM Application. This document contains details about how to set up the Vendor and describe the functionalities provided.
 
-### Pre-requisites <a id="Pre-requisites"></a>
+## Pre-requisites <a id="Pre-requisites"></a>
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
@@ -22,24 +22,24 @@ Before you proceed with the configuration, make sure the following pre-requisite
   * boundary-service
   * vehicle
 
-### Key Functionalities <a id="Key-Functionalities"></a>
+## Key Functionalities <a id="Key-Functionalities"></a>
 
-### Deployment Details <a id="Deployment-Details"></a>
+## Deployment Details <a id="Deployment-Details"></a>
 
 1. Deploy the latest version of FSM
 2. Add vehicle-persister.yml file in config folder in git and add that path in persister. _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
 
-### Configuration Details <a id="Configuration-Details"></a>
+## Configuration Details <a id="Configuration-Details"></a>
 
-#### MDMS Configuration
-
-NA
-
-#### Business Service / Workflow Configuration <a id="Business-Service-/-Workflow-Configuration"></a>
+### MDMS Configuration
 
 NA
 
-#### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
+### Business Service / Workflow Configuration <a id="Business-Service-/-Workflow-Configuration"></a>
+
+NA
+
+### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
 
 **Actions**
 
@@ -219,7 +219,7 @@ env: |
   {{- end }}
 ```
 
-### Data Setup <a id="Data-Setup"></a>
+## Data Setup <a id="Data-Setup"></a>
 
 DSO for FSM System is a vendor, For every city/ULB DSO should be created with the Representative details as owner, associated vehicles and drivers
 
@@ -371,51 +371,49 @@ curl --location --request POST 'https://dev.digit.org/vendor/v1/_create' \
 }'
 ```
 
-### Integration <a id="Integration"></a>
+## Integration <a id="Integration"></a>
 
-#### Integration Scope <a id="Integration-Scope"></a>
+### Integration Scope <a id="Integration-Scope"></a>
 
-Any system or digit module can ****be integrated with Vendor Service, helps to manage the Vendor with the vehicles, drivers and owner for representative and login for the representative/owner to login into the system to carry our role-specific operations.
+Any system or digit module can _\*\*_be integrated with Vendor Service, helps to manage the Vendor with the vehicles, drivers and owner for representative and login for the representative/owner to login into the system to carry our role-specific operations.
 
-#### Integration Benefits <a id="Integration-Benefits"></a>
+### Integration Benefits <a id="Integration-Benefits"></a>
 
 * Validation of DSO/Vendor availability
 * Fetch the vehicle assigned to the DSO
 * Fetch the Drivers assigned to the DSO
 
-#### Steps to Integration <a id="Steps-to-Integration"></a>
+### Steps to Integration <a id="Steps-to-Integration"></a>
 
 * FSM to call vendor/v1/\_search to fetch the DSO’s
 * FSM can call vendor/v1/\_search to fetch the DSO’s and the respective vehicles and drivers
 
-### Interaction Diagram <a id="Interaction-Diagram"></a>
+## Interaction Diagram <a id="Interaction-Diagram"></a>
 
 TBD
 
-### Reference Docs <a id="Reference-Docs"></a>
+## Reference Docs <a id="Reference-Docs"></a>
 
-#### Doc Links <a id="Doc-Links"></a>
+### Doc Links <a id="Doc-Links"></a>
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  Workflow Technical Document |  [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
-|  User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service)   |
+| Workflow Technical Document | [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
+| User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service) |
 | MDMS Technical Document | **NEEDS TO BE UPDATED** |
 | IDGen Technical Document | **NEEDS TO BE UPDATED** |
 | Localization Technical Document | **NEEDS TO BE UPDATED** |
 | Persister Technical Document | **NEEDS TO BE UPDATED** |
 | SMS Notification Technical Document | **NEEDS TO BE UPDATED** |
-| API Contract |   |
-| Postman Scripts |   |
+| API Contract |  |
+| Postman Scripts |  |
 
-#### API List <a id="API-List"></a>
+### API List <a id="API-List"></a>
 
 | Title | **Link** |
 | :--- | :--- |
 | v1/\_create | [https://www.getpostman.com/collections/2d55f98479499672a23e](https://www.getpostman.com/collections/2d55f98479499672a23e) |
 | v1/\_search | [https://www.getpostman.com/collections/2d55f98479499672a23e](https://www.getpostman.com/collections/2d55f98479499672a23e) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

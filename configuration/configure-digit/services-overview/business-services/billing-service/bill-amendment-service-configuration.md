@@ -46,7 +46,7 @@ _**1. when demand is unpaid/partially paid**_
 4. approve the amendment, the response should return an amendment with status CONSUMED.
 5. search the demand or fetch bill for the consumer-code, demand/bill should contain demand details of demand and amendment together DD1 and DD2 in the same demand/bill.
 
-_**2. when demand is completely paid,**_ 
+_**2. when demand is completely paid,**_
 
 1. create demand and make complete payment or choose a consumer-code which is fully paid.
 2. create amendment \(with demand detail → DD1\).
@@ -167,7 +167,7 @@ Amendment integration helps the respective Organization to add additional value 
 * Easy to create and simple process of updating demands
 * helps ease changes into the system which are not part of normal functionality - Amendment of bills in case of legal requirements.
 
-### Steps to Integration 
+### Steps to Integration
 
 This is integrated into the billing system by default.
 
@@ -189,9 +189,5 @@ API LIST
 | :--- | :--- |
 
 
-
-
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

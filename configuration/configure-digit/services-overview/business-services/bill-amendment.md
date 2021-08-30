@@ -4,37 +4,37 @@ description: Configure billing services to allow bill amendments
 
 # Bill Amendment
 
-### Overview
+## Overview
 
 The consumer sometimes needs additional amounts \(Amendments\) added to their bill due to reasons external to the system. The addition of amounts happen with respect to the consumer-code of the entity in the product\(PT, WS etc..,\), any unpaid demand in the system is a candidate for amendments.
 
-### **Functionality**
+## **Functionality**
 
 Amendment mainly works with two types of functionality as follows:
 
 * Amendment
 * Demand
 
-### **Objective**
+## **Objective**
 
 The main objective of the Bill-Amendment module is to create Credit/ Debit Notes against the bills for consumers who need an additional amount to be added to their bill.
 
-### **Feature List**
+## **Feature List**
 
 * Create Amendment
 * Search Amendment
 * Update Demand
 * Update Amendment
 
-### **API DEFINITION**
+## **API DEFINITION**
 
 [API SPEC FOR BILL-AMENDMENT](https://raw.githubusercontent.com/egovernments/business-services/master/Docs/billingservice/BillAmendment/v1.0.yml)
 
-### **POSTMAN-COLLECTION**
+## **POSTMAN-COLLECTION**
 
 [API COLLECTION BILL\_AMENDMENT](https://www.getpostman.com/collections/b195d3b1d354c767b6bd)
 
-### **Functionality**
+## **Functionality**
 
 Bill Amendment provides a separate flow to enable workflow and validation for the process of adding additional amount into the existing demands which were done through the respective modules only till this point in time. An amendment will be allowed only when the reason arises from out of the system to add or reduce the amount from the existing bill belonging to an entity. The reasons are as listed below -
 
@@ -44,7 +44,7 @@ Bill Amendment provides a separate flow to enable workflow and validation for th
 4. DCB correction \(Old demands in paid status\)
 5. Remission for Property Tax
 
-### **Criteria**
+## **Criteria**
 
 There are certain prerequisites to create an amendment,
 
@@ -53,7 +53,7 @@ There are certain prerequisites to create an amendment,
 3. Valid document proof for the reason
 4. No other Amendment already in workflow
 
-### **PROCEDURE**
+## **PROCEDURE**
 
 The process of adding Amendment is as follows
 
@@ -75,7 +75,7 @@ _**2. When demand is completely paid**_
 4. create new demand for the consumer -code \(with demand detail → DD3\), demand response should contain two demand details DD1 and DD2 saved to the demand.
 5. Now amendment search will return CONSUMED status after the demand is created.
 
-### IMPACT
+## IMPACT
 
 Does not impact any other functionality other than adding demand details to demands on APPROVAL.
 
@@ -83,7 +83,7 @@ IMPACTED BY:
 
 Existence of demands in the system.
 
-### **WORKFLOW CONFIG**
+## **WORKFLOW CONFIG**
 
 ```text
 {
@@ -177,7 +177,5 @@ Existence of demands in the system.
 }
 ```
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

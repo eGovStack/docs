@@ -1,17 +1,17 @@
 # Fire NOC Release Notes
 
-### Overview <a id="Overview"></a>
+## Overview <a id="Overview"></a>
 
 This release provides improvements in the workflows for the Fire NOC application. Any application can be sent back to the citizen for him/her to make some changes or respond back to queries asked by employees.
 
-### Release Highlights <a id="Release-Highlights"></a>
+## Release Highlights <a id="Release-Highlights"></a>
 
 This release has updated workflows and user interface for the following business cases -
 
 * Provisional Fire NOC send back to citizen
 * New Fire NOC send back to citizen
 
-### Release Features <a id="Release-Features"></a>
+## Release Features <a id="Release-Features"></a>
 
 <table>
   <thead>
@@ -56,19 +56,13 @@ This release has updated workflows and user interface for the following business
   </tbody>
 </table>
 
-### Known Issues <a id="Known-Issues"></a>
+## Known Issues <a id="Known-Issues"></a>
 
- None.
+None.
 
-### Upcoming Release Features <a id="Upcoming-Release-Features"></a>
+## Upcoming Release Features <a id="Upcoming-Release-Features"></a>
 
 None
-
-
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

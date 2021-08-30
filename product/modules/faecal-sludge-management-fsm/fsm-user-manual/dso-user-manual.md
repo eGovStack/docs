@@ -12,7 +12,7 @@ DSOs can -
 * Decline service requests
 * Complete service requests
 
-### Assign Vehicles
+## Assign Vehicles
 
 ![](../../../../.gitbook/assets/dso-l1%20%281%29.png)
 
@@ -40,13 +40,13 @@ Scroll down the application page and click on **Take Action** button. Click on *
 
 ![](../../../../.gitbook/assets/dso-assign.png)
 
-Select and enter the **Vehicle Registration No.** The **Vehicle Capacity \(Ltrs\)** field is auto populated depending on the selected vehicle. Click on **Assign Vehicle.** The vehicle is assigned successfully to the  listed service request.
+Select and enter the **Vehicle Registration No.** The **Vehicle Capacity \(Ltrs\)** field is auto populated depending on the selected vehicle. Click on **Assign Vehicle.** The vehicle is assigned successfully to the listed service request.
 
 ![](../../../../.gitbook/assets/dso-assign1.png)
 
-The application status changes to **DSO InProgress**. 
+The application status changes to **DSO InProgress**.
 
-### Complete Request
+## Complete Request
 
 ![](../../../../.gitbook/assets/dso-completer1%20%281%29.png)
 
@@ -62,7 +62,7 @@ The **Volume of Waste Collected \(Ltrs\)** field displays the vehicle capacity v
 
 The request is completed successfully.
 
-### Decline Request
+## Decline Request
 
 ![](../../../../.gitbook/assets/image%20%28103%29.png)
 
@@ -76,7 +76,5 @@ Select and enter the applicable **Reason for Declining.** Enter any **Comments**
 
 The service request is Declined Successfully.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

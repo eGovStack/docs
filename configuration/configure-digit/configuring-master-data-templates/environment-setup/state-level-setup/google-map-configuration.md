@@ -1,6 +1,6 @@
 # Google Map Configuration
 
-### Introduction
+## Introduction
 
 At times in the different modules, there is a need to capture the address of the user’s place of residence or where the person is doing a trade, for which the user has to enter his/her full address which creates a task. In order to simplify the process, we can have google map geolocation service in place which would help us get the exact coordinates of the place on the map and help us identify the place.
 
@@ -17,7 +17,7 @@ This service is paid and the client has to purchase the below items:
 3. **Places API for Web \(web-server\)** Turn a phone number, address, or name into a place, and provide its name and address. $17
 {% endhint %}
 
-### Data Table
+## Data Table
 
 <table>
   <thead>
@@ -41,11 +41,11 @@ This service is paid and the client has to purchase the below items:
   </tbody>
 </table>
 
-Note: 
+Note:
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 <table>
   <thead>
@@ -87,7 +87,7 @@ Note:
 The data provided is sample data
 {% endhint %}
 
-#### Steps to fill the data
+### Steps to fill the data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -96,11 +96,11 @@ The data provided is sample data
 5. Get the details for the API URL and key from the client.
 6. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -108,17 +108,15 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../../module-setup/common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 Not Applicable
 
-### Attachments
+## Attachments
 
 {% file src="../../../../../.gitbook/assets/configurable-data-template-google-map-account-configuration-v1.xlsx" caption="Configuration Data Template" %}
 
 {% file src="../../../../../.gitbook/assets/configurable-sample-data-google-map-account-configuration-v1.xlsx" caption="Sample Data Template" %}
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

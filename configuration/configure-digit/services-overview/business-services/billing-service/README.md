@@ -217,8 +217,7 @@ Tax-Period JSON
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b> </b>
-      </th>
+      <th style="text-align:left"></th>
       <th style="text-align:left"></th>
       <th style="text-align:left"></th>
     </tr>
@@ -288,18 +287,18 @@ Billing service can be integrated with any organization or system that wants a d
 
 **Doc Links**
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  Id-Gen service |  **** |
-| url-shortening |   |
-|  MDMS |   |
+| Id-Gen service | _\*\*_ |
+| url-shortening |  |
+| MDMS |  |
 
 **API List**
 
-| **Title**  | **Link** |
+| **Title** | **Link** |
 | :--- | :--- |
-|  /demand/\_create, \_update, \_search | [https://www.getpostman.com/collections/900d99a85d083fb2d377](https://www.getpostman.com/collections/900d99a85d083fb2d377) |
-|  /bill/\_fetchbill, \_search | [https://www.getpostman.com/collections/900d99a85d083fb2d377](https://www.getpostman.com/collections/900d99a85d083fb2d377) |
+| /demand/\_create, \_update, \_search | [https://www.getpostman.com/collections/900d99a85d083fb2d377](https://www.getpostman.com/collections/900d99a85d083fb2d377) |
+| /bill/\_fetchbill, \_search | [https://www.getpostman.com/collections/900d99a85d083fb2d377](https://www.getpostman.com/collections/900d99a85d083fb2d377) |
 | /amendment/\_create, \_update | [https://www.getpostman.com/collections/b195d3b1d354c767b6bd](https://www.getpostman.com/collections/b195d3b1d354c767b6bd) |
 
 ## **Apportioning FAQs**
@@ -319,90 +318,84 @@ Default order based apportioning\(Based on apportioning order adjust the receive
 
 **Principle of apportioning**
 
- The basic principle of apportioning is, if the full amount is paid for any bill then each individual tax head should get nullify with their corresponding adjusted amount.
+The basic principle of apportioning is, if the full amount is paid for any bill then each individual tax head should get nullify with their corresponding adjusted amount.
 
 **Example**:  
-**Case 1:** When there are no arrears all tax heads belong to their current purpose:  
- 
+**Case 1:** When there are no arrears all tax heads belong to their current purpose:
 
 | **TaxHead** | **Amount** | **Order** | **Full Payment\(2000\)** | **Partial Payment1\(1500\)** | **Partial payment2\(750\)** | **Partial payment2 with rebate\(500\)** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Pt\_tax | 1000 | 6 | 1000 | 1000 | 750 | 750 |
-| AdjustedAmt |   |   | 1000 | -250 | -750 | -750 |
-|   |   |   |   |    |   |   |
-| RemainingAMTfromPayableAMT |    |   | 0 | 0 | 0 | 0 |
-| Penality | 500 | 5 | 500 | 500 |   |   |
-| AdjustedAmt |   |   | 500 | -500 |   |   |
-| RemainingAMTfromPayableAMT |   |   | 1000 | 250 |   |   |
-|   |   |   |   |   |   |   |
-|   |   |   |   |    |   |   |
-| Interest | 500 | 4 | 500 | 500 |   |   |
-| AdjustedAmt |   |   | 500 | -500 |   |   |
-| RemainingAMTfromPayableAMT |   |   | 1500 | 750 |   |   |
-|   |   |   |   |   |   |   |
-| Cess | 500 | 3 | 500 | 500 |   |   |
-| AdjustedAmt |   |   | 500 | -500 |   |   |
-| RemainingAMTfromPayableAMT |   |   | 2000 | 1250 |   |   |
-|   |   |   |   |   |   |   |
-| Exm | -250 | 1 | -250 | -250 |   |   |
-| AdjustedAmt |   |   | -250 | 250 |   |   |
-| RemainingAMTfromPayableAMT |   |   | 2250 | 1750 |   |   |
-|   |   |   |   |   |   |   |
-| Rebate | -250 | 2 | -250 |   |   | -250 |
-| AdjustedAmt |   |   | -250 |   |   | 250 |
-| RemainingAMTfromPayableAMT |   |   | 2500 |   |   | 750 |
+| AdjustedAmt |  |  | 1000 | -250 | -750 | -750 |
+|  |  |  |  |  |  |  |
+| RemainingAMTfromPayableAMT |  |  | 0 | 0 | 0 | 0 |
+| Penality | 500 | 5 | 500 | 500 |  |  |
+| AdjustedAmt |  |  | 500 | -500 |  |  |
+| RemainingAMTfromPayableAMT |  |  | 1000 | 250 |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+| Interest | 500 | 4 | 500 | 500 |  |  |
+| AdjustedAmt |  |  | 500 | -500 |  |  |
+| RemainingAMTfromPayableAMT |  |  | 1500 | 750 |  |  |
+|  |  |  |  |  |  |  |
+| Cess | 500 | 3 | 500 | 500 |  |  |
+| AdjustedAmt |  |  | 500 | -500 |  |  |
+| RemainingAMTfromPayableAMT |  |  | 2000 | 1250 |  |  |
+|  |  |  |  |  |  |  |
+| Exm | -250 | 1 | -250 | -250 |  |  |
+| AdjustedAmt |  |  | -250 | 250 |  |  |
+| RemainingAMTfromPayableAMT |  |  | 2250 | 1750 |  |  |
+|  |  |  |  |  |  |  |
+| Rebate | -250 | 2 | -250 |  |  | -250 |
+| AdjustedAmt |  |  | -250 |  |  | 250 |
+| RemainingAMTfromPayableAMT |  |  | 2500 |  |  | 750 |
 
-   
 **Case 2:** Apportioning with two years of arrear:  
-If the current financial year is 2014-15. Below are the demands  
+If the current financial year is 2014-15. Below are the demands
 
 | **TaxHead** | **Amount** | **TaxPeriodFrom** | **TaxPeriodTo** | **Order** | **Purpose** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-|   |   |   |   |   |   |
+|  |  |  |  |  |  |
 | Pt\_tax | 1000 | 2014 | 2015 | 6 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
 | Penality | 500 | 2014 | 2015 | 5 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
 | Interest | 500 | 2014 | 2015 | 4 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
 | Cess | 500 | 2014 | 2015 | 3 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
 | Exm | -250 | 2014 | 2015 | 1 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
+| AdjustedAmt | 0 |  |  |  |  |
 
 if any payment is not done, and we generating demand in 2015-16 then the demand structure will as follows:
 
 | **TaxHead** | **Amount** | **TaxPeriodFrom** | **TaxPeriodTo** | **Order** | **Purpose** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-|   |   |   |   |   |   |
+|  |  |  |  |  |  |
 | Pt\_tax | 1000 | 2014 | 2015 | 6 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Pt\_tax | 1500 | 2015 | 2016 | 6 |  Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |    |   |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
+| Pt\_tax | 1500 | 2015 | 2016 | 6 | Current |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
 | Penalty | 600 | 2014 | 2015 | 5 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
 | Penalty | 500 | 2015 | 2016 | 5 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Interest | 500 | 2014 |   | 4 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Cess | 500 | 2014 |   | 3 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Exm | -250 | 2014 |   | 1 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
+| Interest | 500 | 2014 |  | 4 | Arrear |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
+| Cess | 500 | 2014 |  | 3 | Arrear |
+| AdjustedAmt | 0 |  |  |  |  |
+|  |  |  |  |  |  |
+| Exm | -250 | 2014 |  | 1 | Arrear |
+| AdjustedAmt | 0 |  |  |  |  |
 
-
-
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

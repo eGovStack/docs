@@ -4,23 +4,23 @@
 
 ## Overview <a id="Overview"></a>
 
-DSS has two sides to it. One is the process in which the Data is pooled to ElasticSearch and the other being the way it is fetched, aggregated, computed, transformed and sent across. As this revolves around a variety of Data Set, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, then it is just a configuration away from getting the newly introduced scenario involved in this flow of the process. 
+DSS has two sides to it. One is the process in which the Data is pooled to ElasticSearch and the other being the way it is fetched, aggregated, computed, transformed and sent across. As this revolves around a variety of Data Set, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, then it is just a configuration away from getting the newly introduced scenario involved in this flow of the process.
 
-This document explains the steps on how to define the configurations for both sides of DSS. Analytics and Ingest Pipeline Services. 
+This document explains the steps on how to define the configurations for both sides of DSS. Analytics and Ingest Pipeline Services.
 
 ## Abbreviations <a id="Abbreviations"></a>
 
 **Ingest:** Micro Service which runs as a pipeline and manages to validate, transform and enrich the incoming data and pushes the same to ElasticSearch Index
 
-**Analytics:** Micro Service which is responsible for building, fetching, aggregating and computing the Data on ElasticSearch to a consumable Data Response. Which shall be later used for visualizations and graphical representations. 
+**Analytics:** Micro Service which is responsible for building, fetching, aggregating and computing the Data on ElasticSearch to a consumable Data Response. Which shall be later used for visualizations and graphical representations.
 
 **JOLT:** JSON to JSON transformation library written in Java where the "specification" for the transform is itself a JSON document
 
 **Modules / Domain Level:** These are the Services in this context. Each of the services, such as Property Tax, Trade License, Water and Sewerages are considered as Modules / Domains
 
-**Chart:** Each individual graphical representation is considered as a Chart in specific. For example, a Metric of Total Collection is considered as a Chart. 
+**Chart:** Each individual graphical representation is considered as a Chart in specific. For example, a Metric of Total Collection is considered as a Chart.
 
-**Visualization:** Group of different Charts is considered as a Visualization. For example, the group of Total Collection, Target Collection and Target Achieved is considered as a Metric Collection of Charts and thus it becomes a Visualization.  
+**Visualization:** Group of different Charts is considered as a Visualization. For example, the group of Total Collection, Target Collection and Target Achieved is considered as a Metric Collection of Charts and thus it becomes a Visualization.
 
 ## Ingest Pipeline Configurations <a id="Ingest-Pipeline-Configurations"></a>
 
@@ -36,7 +36,7 @@ Below is the list of configurations -
 
 Topic Context Configurations
 
-Topic Context Configuration is an outline to define which data is received on which Kafka Topic. 
+Topic Context Configuration is an outline to define which data is received on which Kafka Topic.
 
 Indexer Service and many other services are sending out data on different Kafka Topics. If the Ingest Service is asked to receive those data and pass it through the pipeline, the context and the version of the data being received has to be set. This configuration is used to identify which kafka topic consumed the data and what is the mapping for that.
 
@@ -50,19 +50,19 @@ Indexer Service and many other services are sending out data on different Kafka 
 | dataContext | Context Name which needs to be set for further actions in the pipeline |
 | dataContextVersion | Version of the Data Structure is set here as there might be different structured data at a different point in time |
 
-2. Validator Schema
+1. Validator Schema
 
-Validator Schema is a configuration Schema Library from **Everit**By passing the data against this schema, it ensures whether the data abides by the rules and requirements of the schema which has been defined. 
+Validator Schema is a configuration Schema Library from **Everit**By passing the data against this schema, it ensures whether the data abides by the rules and requirements of the schema which has been defined.
 
 ![Figure 2](../../../../.gitbook/assets/111.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/validator_transaction_v1.json)
 
-3. JOLT Transformation Schema
+1. JOLT Transformation Schema
 
-JOLT is a JSON to JSON Transformation Library. In order to change the structure of the data and transform it in a generic way, JOLT has been used. 
+JOLT is a JSON to JSON Transformation Library. In order to change the structure of the data and transform it in a generic way, JOLT has been used.
 
-While the transformation schemas are written for each Data Context, the data is transformed against the schema to obtain a transformed data. 
+While the transformation schemas are written for each Data Context, the data is transformed against the schema to obtain a transformed data.
 
 [Follow the slide deck for JOLT Transformations](https://docs.google.com/presentation/d/1sAiuiFC4Lzz4-064sg1p8EQt2ev0o442MfEbvrpD1ls/edit#slide=id.p)
 
@@ -70,13 +70,13 @@ While the transformation schemas are written for each Data Context, the data is 
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform_collection_v1.json)
 
-4. Enrichment Domain Configuration 
+1. Enrichment Domain Configuration 
 
-This configuration defines and directs the Enrichment Process which the data goes through. 
+This configuration defines and directs the Enrichment Process which the data goes through.
 
-For example, if the Data which is incoming is belonging to a Collection Module data, then the Collection Domain Config is picked. And based on the Business Type specified in the data, the right config is picked. 
+For example, if the Data which is incoming is belonging to a Collection Module data, then the Collection Domain Config is picked. And based on the Business Type specified in the data, the right config is picked.
 
-In order to enhance the data of Collection, the domain index specified in the configuration is queried with the right arguments and the response data is obtained, transformed and set. 
+In order to enhance the data of Collection, the domain index specified in the configuration is queried with the right arguments and the response data is obtained, transformed and set.
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/DomainConfig.json)
 
@@ -120,29 +120,29 @@ In order to enhance the data of Collection, the domain index specified in the co
   </tbody>
 </table>
 
-5. JOLT Domain Transformation Schema
+1. JOLT Domain Transformation Schema
 
-As a part of Enhancement, once the domain level object is obtained, we might not need the complete document as is in the end data product. 
+As a part of Enhancement, once the domain level object is obtained, we might not need the complete document as is in the end data product.
 
-Only those parameters which should be or can be used for aggregation and representation are to be held and others are to be discarded. 
+Only those parameters which should be or can be used for aggregation and representation are to be held and others are to be discarded.
 
-In order to do that, we make use of JOLT again and write schemas to keep the required ones and discard the unwanted ones. 
+In order to do that, we make use of JOLT again and write schemas to keep the required ones and discard the unwanted ones.
 
-The above configuration is used to transform the data response in the enrichment layer. 
+The above configuration is used to transform the data response in the enrichment layer.
 
 ![Figure 4](../../../../.gitbook/assets/113.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform_tl_v1.json)
 
-6.  Use case:- JOLT Transformation Schema for collection V2
+1. Use case:- JOLT Transformation Schema for collection V2
 
- JOLT transformation schema for payment-v1 has taken as a use case to explain the context collection and context version v2. The payment records are processed/transformed with the schema. The schema supports splitting the billing records into an independent new record. So if there are 2 bill items in the collection/payment incoming data then this results in 2 collection records in turn.
+   JOLT transformation schema for payment-v1 has taken as a use case to explain the context collection and context version v2. The payment records are processed/transformed with the schema. The schema supports splitting the billing records into an independent new record. So if there are 2 bill items in the collection/payment incoming data then this results in 2 collection records in turn.
 
 ![Figure 5](../../../../.gitbook/assets/114.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform_collection_v2.json)
 
-Here: **$i**, the variable value that gets incremented for the number of records of paymentDetails 
+Here: **$i**, the variable value that gets incremented for the number of records of paymentDetails
 
 **$j**, the variable value that gets incremented for the number of records of billDetails.
 
@@ -150,7 +150,7 @@ Here: **$i**, the variable value that gets incremented for the number of records
 
 es.push.direct=false
 
-## Analytics Configurations  <a id="Analytics-Configurations"></a>
+## Analytics Configurations <a id="Analytics-Configurations"></a>
 
 Below is the list of configurations
 
@@ -162,9 +162,9 @@ Below is the list of configurations
 
 Chart API Configuration
 
-Each Visualization has its own properties. Each Visualization comes from different data sources \(Sometimes it is a combination of different data sources\) 
+Each Visualization has its own properties. Each Visualization comes from different data sources \(Sometimes it is a combination of different data sources\)
 
-In order to configure each visualization and its properties, we have Chart API Configuration Document. 
+In order to configure each visualization and its properties, we have Chart API Configuration Document.
 
 In this, Visualization Code, which happens to be the key, will be having its properties configured as a part of the configuration and are easily changeable.
 
@@ -306,9 +306,9 @@ In this, Visualization Code, which happens to be the key, will be having its pro
   </tbody>
 </table>
 
-2. Master Dashboard Configuration
+1. Master Dashboard Configuration
 
-Master Dashboard Configuration is the main configuration that defines which Dashboards that are to be painted on the screen. 
+Master Dashboard Configuration is the main configuration that defines which Dashboards that are to be painted on the screen.
 
 It includes all the Visualizations, their groups, the charts which comes within them and even their dimensions as what should be their height and width.
 
@@ -455,13 +455,13 @@ It includes all the Visualizations, their groups, the charts which comes within 
   </tbody>
 </table>
 
-3. Role Dashboard Mappings Configuration
+1. Role Dashboard Mappings Configuration
 
-Master Dashboard Configuration which was explained earlier hold the list of Dashboards that are available. Given the instance where Role Action Mapping is not maintained in the Application Service, this configuration will act as Role - Dashboard Mapping Configuration 
+Master Dashboard Configuration which was explained earlier hold the list of Dashboards that are available. Given the instance where Role Action Mapping is not maintained in the Application Service, this configuration will act as Role - Dashboard Mapping Configuration
 
 In this, each Role is mapped against the Dashboard which they are authorized to see
 
-This was used earlier when the Role Action Mapping of eGov was not integrated. Later, when the Role Action Mapping started controlling the Dashboards to be seen on the client-side, this configuration is just used to enable the Dashboards for viewing. 
+This was used earlier when the Role Action Mapping of eGov was not integrated. Later, when the Role Action Mapping started controlling the Dashboards to be seen on the client-side, this configuration is just used to enable the Dashboards for viewing.
 
 ![Figure 8](../../../../.gitbook/assets/119.png)
 
@@ -483,13 +483,13 @@ This was used earlier when the Role Action Mapping of eGov was not integrated. L
 
 Adding Roles and Dashboards :
 
-To add a new role, RoleDashboardMappingsConf.json \(**roles** node\) configuration file has to be modified as below 
+To add a new role, RoleDashboardMappingsConf.json \(**roles** node\) configuration file has to be modified as below
 
 {% hint style="info" %}
-Note: Any number of roles & dashboards can be added    
+Note: Any number of roles & dashboards can be added
 {% endhint %}
 
-Below as in Figure 9. is a sample to add a new role object, new dashboard object 
+Below as in Figure 9. is a sample to add a new role object, new dashboard object
 
 ![Figure 9](../../../../.gitbook/assets/120.png)
 
@@ -511,7 +511,7 @@ Note: vizArray is to hold multiple visualizations
 
 ## Adding charts for visualizations
 
-To add a new chart, chartApiConf.json has to be modified as shown below.  A new chartid has to be added with the chart node object.
+To add a new chart, chartApiConf.json has to be modified as shown below. A new chartid has to be added with the chart node object.
 
 **Metric chart Sample as shown in Figure 12.**
 
@@ -527,7 +527,7 @@ To add a new chart, chartApiConf.json has to be modified as shown below.  A new 
 
 \*\*\*\*
 
-**Table  chart Sample:** This chart comes **in** 2 kind - table and xtable.
+**Table chart Sample:** This chart comes **in** 2 kind - table and xtable.
 
 table \(as shown in Figure 15.\) type allows to added aggregated fields added as available in the query keys, hence to extract the values based on the key, **aggegationPaths** needs to add along with their data type as in **pathDataTypeMapping**.
 
@@ -549,13 +549,13 @@ Steps to create charts and visualise are:
 
 **Configuration Changes for DrillThrough :**
 
- 1. Example Drill through in Ward table in Property Dashboard.
+1. Example Drill through in Ward table in Property Dashboard.
 
 wardDrillDown is the visualization code for PT Drill Down. kind is the attribute that shows the type of visualization code. Apart from two things all the attributes are common.
 
 ![](../../../../.gitbook/assets/128.png)
 
- 2. Example Drill through in ComplaintList table in PGR Dashboard.
+1. Example Drill through in ComplaintList table in PGR Dashboard.
 
 complaintDrillDown is the visualization code for PGR Drill Down.
 
@@ -564,12 +564,6 @@ complaintDrillDown is the visualization code for PGR Drill Down.
 The above complaintDrillDown visualization code called in the drill chart parameter.
 
 ![](../../../../.gitbook/assets/130.png)
-
-
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

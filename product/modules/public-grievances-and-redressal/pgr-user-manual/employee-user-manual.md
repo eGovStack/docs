@@ -68,10 +68,10 @@ The Grievance Routing Officer or GRO manages the complaints queue. The role ensu
 
 GROs can
 
-1. [Assign complaints]()
-2. [Re-Assign complaints]()
-3. [Share complaints]()
-4. [Reject complaints]()
+1. [Assign complaints](employee-user-manual.md)
+2. [Re-Assign complaints](employee-user-manual.md)
+3. [Share complaints](employee-user-manual.md)
+4. [Reject complaints](employee-user-manual.md)
 5. Call citizens
 6. Comment on complaints
 
@@ -137,12 +137,12 @@ First Mile Employees or FMEs are responsible for acting on citizen complaints.
 
 FMEs can -
 
-1. [Request Re-Assign]()
-2. [Mark Resolved]()
+1. [Request Re-Assign](employee-user-manual.md)
+2. [Mark Resolved](employee-user-manual.md)
 3. Call citizens
 4. Comment on complaints
-5. [Search complaints]()
-6. [Share complaints]()
+5. [Search complaints](employee-user-manual.md)
+6. [Share complaints](employee-user-manual.md)
 
 ![](https://docs.google.com/drawings/u/0/d/szovKDR3VG6ANH92_TvpdDQ/image?w=511&h=201&rev=61&ac=1&parent=1pR9OLsrbm5UDtHSuq-Iv2BM78gUTwagbwGpCMGdeqrg)
 
@@ -186,7 +186,5 @@ Enter any additional information related to the issue resolution in the **Commen
 
 The system will display an acknowledgement message. Click on the **Go To Home** button to navigate back to the home page.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

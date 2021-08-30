@@ -28,19 +28,19 @@ Enter a brief Description for the budget. Check the Budget Group Active option t
 
 ### View Budget Group
 
-To view budget group details 
+To view budget group details
 
 Navigate to the Finance &gt; Budgeting &gt; Budget Group &gt; View Budget Group option in the sidebar. Enter the Name of the Budget Group in the Search panel.
 
 ![](https://lh6.googleusercontent.com/BzpiyHT_H5OpGqYssjc6wYxfnkSl4aEUIQO1GIvNgyh6h-Rog-YDeCtS-uzMMwu1xuLDl6E6pIvDnwTrVgrgZbJOw3ndJsAiV2DBIr_n06F1fTjpp_z01-1iyG1J71pqLBjDrCwm)
 
-Click on the Search button. Click on the Budget Group name to view the group details. 
+Click on the Search button. Click on the Budget Group name to view the group details.
 
 Click on the Print button to print the details. Click on the PDF or Excel button to generate a pdf or excel statement for the listed budget group.
 
 ### Modify Budget Group
 
-To modify budget group details 
+To modify budget group details
 
 Navigate to the Finance &gt; Budgeting &gt; Budget Group &gt; Modify Budget Group option in the sidebar. Enter the Name of the Budget Group in the Search panel.
 
@@ -58,7 +58,7 @@ Click on the Print button to print the details. Click on the PDF or Excel button
 
 Budget is defined as a tree structure which starts at department level and then adds up to the consolidated one. This master is used for defining each of the budget nodes.
 
-To create budget definition 
+To create budget definition
 
 Navigate to Finance &gt; Budgeting &gt; Budget Definition &gt; Create Budget Definition option in the sidebar. Enter a Name for the listed budget.
 
@@ -72,7 +72,7 @@ Click on the Create button to create the budget definition.
 
 ### View Budget Definition
 
-To view budget definition 
+To view budget definition
 
 Navigate to Finance &gt; Budgeting &gt; Budget Definition &gt; View Budget Definition option in the sidebar.
 
@@ -86,7 +86,7 @@ Click on the Print button to print the details. Click on the PDF or Excel button
 
 ### Modify Budget Definition
 
-To modify the budget definition 
+To modify the budget definition
 
 Navigate to Finance &gt; Budgeting &gt; Budget Definition &gt; Modify Budget Definition option in the sidebar. Select the applicable Financial Year.
 
@@ -120,8 +120,7 @@ Select the applicable Budget Group, Function, and Fund details. Enter the additi
 
 Click on the Add button to insert additional budget line items. Click on the Delete button to delete budget line items. Click on the Save button to save the details.
 
-The budget details and appropriations are reflected accordingly.  
-
+The budget details and appropriations are reflected accordingly.
 
 ### Upload Budget
 
@@ -199,7 +198,7 @@ Reopen Closed Period
 
 To reopen a closed period
 
-Navigate to Finance &gt; Period End Activities &gt; Reopen Closed Period option in the sidebar. Select the Financial Year from the drop-down and then click on the Search button. 
+Navigate to Finance &gt; Period End Activities &gt; Reopen Closed Period option in the sidebar. Select the Financial Year from the drop-down and then click on the Search button.
 
 ![](https://lh4.googleusercontent.com/c1HXDcswJSp3befVfpmM9OYkHprzWOH9Flr8Sp8pAp6E-MoGvzw1Ihu04o2kTHIgP7fR_OOcFmohzuVKkaXSttrm4mXTypfHGKxnr7nGrWDoOPmdngCxWwiiGDe5GsCPNJ4Gj9TOsqK5E5MkPA)
 
@@ -247,9 +246,7 @@ Remittance collection report provides the information on both the cheque and cas
 
 1. Remittance collection Reports
 
-Note: Users have a feature to click on the search tab on the right top and easily navigate to the desired cheque details.  
-  
-
+Note: Users have a feature to click on the search tab on the right top and easily navigate to the desired cheque details.
 
 1. Click on the Receipt Number to view individual receipt details.
 2. Click on the PDF or Excel button to download the report in pdf or excel format.
@@ -271,7 +268,7 @@ To generate cheque dishonoring report
 
 All the cheques which are dishonoured will be shown in this report with all the relevant information.
 
-1. 2. Dishonoured Cheque Report
+1. 1. Dishonoured Cheque Report
 
 ![](https://lh5.googleusercontent.com/vOOHFGyP6iCJ9pLizcaXXNmj2eK4Oy-rWBIkGNWtJqs9CcWRknxPVPvdzA5F-oeS2wZ_1zUDfWK4N9kq90-TipZ_CCc3VM3f8XYLq8ZvOntM-s66ESlMEI4CxrjgnJf9tFJvrZ6MsKN-kzrOjA)
 
@@ -296,11 +293,11 @@ All the cheques which are dishonoured will be shown in this report with all the 
 
 ![](https://lh4.googleusercontent.com/RJg2_S8fEDLLXR9PZ7d9R_chpJ9jxJrk1XKgMAj74loHV3UXBrrndvK2h3HlNbq2xGKTIX6IpKPauiAuaTaOPxoEEZktS_MvsYhFU9k_UqAnF6S-oysTz9lAVDc-ZFvarlrCKD4FqnvuZpv2vg)
 
-1. 2. Cheque Dishonouring
-   1. This feature is used for the purpose of dishonouring a cheque/DD. All the payments collected through cheque/DD \(in case it gets dishonoured\), users shall be able to use this screen to pass an entry for dishonour of cheque/DD.
-   2. To dishonour cheque
-3. Navigate to Finance &gt; Revenue/Collections &gt; Dishonour Cheque menu option in the sidebar.
-4. Select the instrument type cheque/DD in the Instrument Mode field.
+1. 1. Cheque Dishonouring
+   2. This feature is used for the purpose of dishonouring a cheque/DD. All the payments collected through cheque/DD \(in case it gets dishonoured\), users shall be able to use this screen to pass an entry for dishonour of cheque/DD.
+   3. To dishonour cheque
+2. Navigate to Finance &gt; Revenue/Collections &gt; Dishonour Cheque menu option in the sidebar.
+3. Select the instrument type cheque/DD in the Instrument Mode field.
 
 A Success message will appear and the opening balance is updated.
 
@@ -337,7 +334,7 @@ To close a financial year
 
 1. Close Financial Year
 
-System will transfer the closing balances of Asset and Liabilities account code from the selected year to the next financial year. An acknowledgment is displayed.   
+System will transfer the closing balances of Asset and Liabilities account code from the selected year to the next financial year. An acknowledgment is displayed.  
 ![](https://lh5.googleusercontent.com/kxHRr6YJNcG84zV0PjCKQ8MF9YwcUDo5NJcXoWzZZ04khPhcpaRTe7x8dFG01W5l7nwB0mLGbKgVw4Vox4NMrlBn1woUpX_e_Fvu2Q570NRUyxLhV605oh3E_7QK7tlcOByEFPb7wmbnDYxZng)
 
 1. Select the Financial Year from which the closing balance needs to be transferred.
@@ -347,7 +344,7 @@ System will transfer the closing balances of Asset and Liabilities account code 
 
 1. Navigate to Finance &gt; Period End Activities &gt; Transfer Closing Balance option in the sidebar.
 
-To transfer closing balance 
+To transfer closing balance
 
 Transfer Closing Balance
 
@@ -365,8 +362,8 @@ To edit a financial year master in the system
 1. Navigate to Finance &gt; Period End Activities &gt; Financial Year &gt; View Financial Year menu option in the sidebar.
 2. Select the applicable Financial Year from the drop-down list available.
 3. Click on the Search button to view the search result.
-4.  Click on the row for which details of the master are to be viewed. System will open a pop-up window with all information.![](https://lh3.googleusercontent.com/5N3Oocgz-mHvQhssFQm4H7BWLkVqJ4zJTSM1e8lenvhMfhDlDEjGUGuAXhxy_LD10gW3fNm3okmF3On-14JWixAafQENoGThKetQaoX0W7PUn7Un3_MxZ0tUsv9BI38TgwgJoUkASnlIuWS1dA)
-5. 6. Edit Financial Year
+4. Click on the row for which details of the master are to be viewed. System will open a pop-up window with all information.![](https://lh3.googleusercontent.com/5N3Oocgz-mHvQhssFQm4H7BWLkVqJ4zJTSM1e8lenvhMfhDlDEjGUGuAXhxy_LD10gW3fNm3okmF3On-14JWixAafQENoGThKetQaoX0W7PUn7Un3_MxZ0tUsv9BI38TgwgJoUkASnlIuWS1dA)
+5. 1. Edit Financial Year
 
 To view a financial year master in the system
 
@@ -423,8 +420,8 @@ To create a new purchase order
 3. Click on the Search button to fetch details.
 4. Click on the relevant work order to view and modify details.
 5. Make changes to the data in this screen and then click on the Update button. At the point the record will be updated with the new values.
-6. 7. Purchase Order
-8. Create Purchase Order
+6. 1. Purchase Order
+7. Create Purchase Order
 
 To modify work order
 
@@ -613,7 +610,7 @@ At this point a new master record is created in the system.
 
 To create new deductions
 
-This option is for defining a new recovery code in the system. 
+This option is for defining a new recovery code in the system.
 
 1. Create Deduction
 
@@ -656,8 +653,7 @@ To view suppliers
 
 1. View Suppliers
 
-The supplier is added to the system.  
-
+The supplier is added to the system.
 
 1. Select and enter the applicable Bank, IFSC Code, Bank Account Number, and Registration No.
 2. Select and enter the applicable Status of the supplier, PAN No., EPF No., and ESI No. details.
@@ -668,7 +664,7 @@ The supplier is added to the system.
 1. Navigate to Finance &gt; Masters &gt; Supplier &gt; Create Supplier menu option in the sidebar.
 2. Enter Supplier Code, Name, Correspondence Address, Permanent Address, Contact Person, Email, Narration, Mobile Number, GST/TIN No., and GST Registered State/UT.
 
-To add suppliers 
+To add suppliers
 
 1. After making changes, click on the Update button. This will save the changes in the Contractor masters screen.
 2. Supplier
@@ -744,7 +740,7 @@ To modify fund details
 
 ![](https://lh6.googleusercontent.com/Aijk_1J5fu-9uORi0c6Dr725EaRdxN8TyViIxINAzRcwS94sCc1Z1Xwzj9g7P_zGrwBaMwF8Xc3-L_6XbxFYoi_Yw0r9csZc-xo4hx6FEkYWx9RnUDmyDsOMhQC_Ef59lbdxf5m_3l4HCNHpvg)
 
-Click on the relevant fund to view the fund details. 
+Click on the relevant fund to view the fund details.
 
 ![](https://lh5.googleusercontent.com/KJ4TduYGlHw1tbn-8uPwLJJiZqsn7UcGt-4AUbXBLoFOskmveXVhmKo1NpMrmSqzSlGa-GcYF9s5C_Qo8urlLRHbkjft4K-YV5-GVz5YYemzblm_BdijHrjrRjum5xeetpXxjYfOExfyJB0KWA)
 
@@ -775,8 +771,7 @@ To create Funds
 1. Funds
 2. Create Funds
 
-Note: Follow the same process to Create, View and Modify Sub Schemes.  
-
+Note: Follow the same process to Create, View and Modify Sub Schemes.
 
 ![](https://lh4.googleusercontent.com/MVQCxbhTOyt5ppWqU5s1rMknP-XIJ0UqVHuYL91XPMet4JiDN9pVNTnnkEUCgL4u4MC6F9UkeYA9O17PDVcLsE3Ji65OrAz0Ipp5RXgcf5VlU8PDtVITvS-tZPmaiFYdPVBKECBPQQBhE4ioWg)
 
@@ -798,7 +793,7 @@ To modify schemes
 
 To view schemes
 
-1. 2. View Scheme
+1. 1. View Scheme
 
 This will save the Scheme related details as Masters.
 
@@ -825,8 +820,7 @@ To generate the list of chart of accounts in the system
 
 1. COA Report
 
-Note: Using this screen we can assign an account code a control code for a subledger.  
-
+Note: Using this screen we can assign an account code a control code for a subledger.
 
 1. Modify the required details and click on the Save button. 
 
@@ -856,9 +850,7 @@ To view detailed codes
 
 1. View Detailed Codes
 
-The detailed codes will help the user add detailed heads to the Chart of Accounts.  
-  
-
+The detailed codes will help the user add detailed heads to the Chart of Accounts.
 
 1. Enter the Parent Account Code, Account Code, Name, and Description of the code.
 2. Select the Purpose and the relevant Account Detail Type for the code.
@@ -881,20 +873,17 @@ To create detailed codes
 
 To configure the Chart of Accounts
 
-As per the instruction Users cannot add any codes to the list. Addition can happen only at the detailed level.  
+As per the instruction Users cannot add any codes to the list. Addition can happen only at the detailed level.
 
-
-This is standard data which needs to be set up. Chart of Accounts \(COA\) are as per the National Municipal Accounting Manual or Respective State wise manual. 
+This is standard data which needs to be set up. Chart of Accounts \(COA\) are as per the National Municipal Accounting Manual or Respective State wise manual.
 
 1. Chart of Accounts
 
-There are various master data which needs to be set up so that the same can be used for various purposes. This also decreases the chances of error.  
-
+There are various master data which needs to be set up so that the same can be used for various purposes. This also decreases the chances of error.
 
 1. Setting up masters
 
-System will show an acknowledgement message on successful cancellation.  
-
+System will show an acknowledgement message on successful cancellation.
 
 1. Mark the checkbox to select the specific voucher\(s\) you want to cancel. 
 2. Click on the Cancel Voucher button to cancel the selected voucher\(s\).
@@ -942,7 +931,7 @@ There are various master data that needs to be set up so that the same can be us
 
 ### Chart of Accounts
 
-This is standard data which needs to be set up. Chart of Accounts \(COA\) are as per the National Municipal Accounting Manual or Respective State wise manual. 
+This is standard data which needs to be set up. Chart of Accounts \(COA\) are as per the National Municipal Accounting Manual or Respective State wise manual.
 
 As per the instruction Users cannot add any codes to the list. Addition can happen only at the detailed level.
 
@@ -974,10 +963,5 @@ To view detailed codes
 
 Navigate to Finance &gt; Masters &gt; Chartofaccounts &gt; Detailed Codes &gt; View Detailed Code option in the sidebar.
 
-
-
-####  
-
-  
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

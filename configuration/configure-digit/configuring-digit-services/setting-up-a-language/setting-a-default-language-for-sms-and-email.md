@@ -1,25 +1,25 @@
 # Setting Up Default Language For SMS & Emails
 
-### Overview
+## Overview
 
 Through SMS and Emails necessary information/updates are communicated to the users on their various transactions on DIGIT applications.  
 For example, when a Trade License application is initiated or forwarded or approved or payment is done in DIGIT system, the applicant and payer \(if the payer is other than the applicant\) will be informed about the status of Trade License application through SMS/Email.  
 The language for SMS and Email can be set as per requirement/choice.
 
-### Pre-requisites
+## Pre-requisites
 
 Before proceeding with the configuration, make sure the following pre-requisites are met -
 
 * Knowledge of DIGIT applications is required.
 * User should be aware of transactional steps in the DIGIT application.
 
-### Key Functionalities
+## Key Functionalities
 
 * User can receive Emails and SMS of necessary information/updates in the decided language.
 * The language can be decided by the end-users \(either Citizen or Employee\). End-users can select the language before logging in or after logging, from inbox page.
 * If the language is not chosen by end-user, then SMS/Email is received in the language of, State requirement based state-level configured language.
 
-### Configuration Details
+## Configuration Details
 
 Sms and Email localization should be pushed to the database through the endpoints for all the languages added in the system.  
 **Localization format for SMS/Email**
@@ -72,7 +72,5 @@ The selected language key is sent as a parameter along with other required trans
 
 In the back end, to send SMS/Email logic, language key is checked and based on the language key and SMS unique key, the message is fetched from the database.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

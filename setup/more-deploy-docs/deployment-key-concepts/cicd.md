@@ -64,7 +64,7 @@ As a result of the pipeline execution, the respective app/service docker image w
 
 The Jenkins CI pipeline is configured and managed 'as code'.
 
-[New Service Integration - Example](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/111673399/New+Service+Integration+-+Example) URL - https://builds.digit.org/
+[New Service Integration - Example](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/111673399/New+Service+Integration+-+Example) URL - [https://builds.digit.org/](https://builds.digit.org/)
 
 **Job Builder** – Job Builder is a Generic Jenkins job which creates the Jenkins pipeline automatically which are then used to build the application, create the docker image of it and push the image to docker repository. The Job Builder job requires the git repository URL as a parameter. It clones the respective git repository and reads the **build/**[**build-config.yml**](https://github.com/egovernments/core-services/blob/master/build/build-config.yml) file for each git repository and uses it to create the service build job.
 
@@ -136,7 +136,5 @@ Enter a caption for this image \(optional\)
 * Generates the Kubernetes manifests files from the chart using helm template engine.
 * Execute the deployment manifest with the specified docker image\(s\) to the Kubernetes cluster.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

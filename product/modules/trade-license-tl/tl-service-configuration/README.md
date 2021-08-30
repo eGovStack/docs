@@ -23,7 +23,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 ## Interaction Diagram <a id="Interaction-Diagram"></a>
 
-![](../../../../.gitbook/assets/image%20%28101%29.png)
+![](../../../../.gitbook/assets/image%20%28101%29%20%282%29.png)
 
 ## Deployment Details <a id="Deployment-Details"></a>
 
@@ -132,10 +132,6 @@ Trade-License APIs:- [https://www.getpostman.com/collections/99f98723c45f9702483
     </tr>
   </tbody>
 </table>
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

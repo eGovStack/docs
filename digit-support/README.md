@@ -4,9 +4,9 @@ description: eGov Support Strategy for DIGIT
 
 # Partner Support
 
-### Objectives
+## Objectives
 
-eGov will enable partners to implement the DIGIT platform and products across ULBs for a State. As part of the enablement process, eGov will assist the partner by providing them product training, implementation training and training them on technical support for supporting the system. The partner is expected to provide the primary support of the overall system and will aim to resolve issues through workarounds and data fixes, as applicable. The partner will reach out to eGov if an issue is attributable to the DIGIT platform or Products. 
+eGov will enable partners to implement the DIGIT platform and products across ULBs for a State. As part of the enablement process, eGov will assist the partner by providing them product training, implementation training and training them on technical support for supporting the system. The partner is expected to provide the primary support of the overall system and will aim to resolve issues through workarounds and data fixes, as applicable. The partner will reach out to eGov if an issue is attributable to the DIGIT platform or Products.
 
 The key objectives for DIGIT support are:
 
@@ -15,18 +15,18 @@ The key objectives for DIGIT support are:
 3. Provide the partners with suitable training kits to support DIGIT. Share FAQs and knowledge assets that help the partner support teams.
 4. Provide periodic communication on upcoming DIGIT releases as well as release notes when a DIGIT release rolls out.
 
-### Scope of Support
+## Scope of Support
 
 **Version Support**
 
 eGov will support versions ‘n’ and ‘n-1’ of the DIGIT services, where ‘n’ refers to the major version number. Each service follows a major.minor.patch version number \(based on Semantic Versioning standards - [https://semver.org/](https://semver.org/)\). A change in major version number for service indicates a break in backward compatibility. Such major or minor changes are always accompanied by migration scripts to carry data over an upgrade. Support is void if the partner makes changes to the source code of the DIGIT services.
 
-Here’s an illustration for supporting ‘n’ and ‘n-1’ versions: 
+Here’s an illustration for supporting ‘n’ and ‘n-1’ versions:
 
 * Version 2.5.56 is running in a State-supported by a Partner. If they find a bug, we are required to supply a patch for 2.5.56 though the latest version is 3.2.15. Of course, the bug fix needs to be propagated to 3.2.15 as well for other environments.
 * Needless to say, if a bug was found in version 3.2.15, it would be fixed. Again, given ‘n-1’ support, we would need to backpropagate the fix to version 2.5.56.
 
-Services are combined to create the DIGIT release package. The release package includes the DIGIT platform, Municipal services and groups for each of the DIGIT products such as PT, TL, PGR, WS, OBPS etc. Inter-dependencies between different services are documented through a service mapping matrix. Changes to these DIGIT services are delivered to the partners as releases. 
+Services are combined to create the DIGIT release package. The release package includes the DIGIT platform, Municipal services and groups for each of the DIGIT products such as PT, TL, PGR, WS, OBPS etc. Inter-dependencies between different services are documented through a service mapping matrix. Changes to these DIGIT services are delivered to the partners as releases.
 
 **Communication**
 
@@ -34,7 +34,7 @@ Services are combined to create the DIGIT release package. The release package i
 2. eGov will share the DIGIT roadmap with partners every quarter. The roadmap provides enough detail that allows the partners to plan for changes at their end.
 3. EOSL \(End of Service Life\) considerations for each version. eGov will flag EOSL for each version well in advance. This will also act as triggers for upgrades.
 
-### Support Process
+## Support Process
 
 Partner is responsible for providing primary support for the DIGIT hosting for the client. When a support incident occurs, the partner support team is required to carry out the first level of diagnosis and investigate to identify where the issue lies. If this issue is found to be attributable to DIGIT services, then the incident may be raised with the eGov team. In parallel, the partner support team should aim to provide a suitable workaround to address the issue for the client.
 
@@ -54,14 +54,8 @@ Partner is responsible for providing primary support for the DIGIT hosting for t
 | Severity | Description | Response SLA |
 | :--- | :--- | :--- |
 | P1, Business Halted | Critical application outage impacting service for which the cause is unknown. No bypass or workaround available. | 4 hours |
-| P2, Business Slowed | A key component of the application is degraded, unusable or unavailable, some users affected.  | 1 day |
+| P2, Business Slowed | A key component of the application is degraded, unusable or unavailable, some users affected. | 1 day |
 | P3 and lower, Business Unaffected | A component of the application is degraded, which causes a minor inconvenience, but a workaround is available. | 2 days |
 
-
-
-
-
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
-
 

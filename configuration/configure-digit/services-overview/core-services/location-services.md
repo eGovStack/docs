@@ -1,10 +1,10 @@
 # Location Services
 
-### Overview
+## Overview
 
 A core application which provides location details of the tenant for which the services are being provided.
 
-### Pre-requisites
+## Pre-requisites
 
 Before you proceed with the documentation, make sure the following pre-requisites are met -
 
@@ -13,7 +13,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 * Knowledge of egov-mdms service
 * egov-mdms service is running and all the required mdms master are loaded in it
 
-### Key Functionalities
+## Key Functionalities
 
 * The location information is also known as boundary data of ULB
 * Boundary data can be of different hierarchies ADMIN, ELECTION hierarchy which is defined by the Administrators, Revenue hierarchy defined by the Revenue department.
@@ -27,7 +27,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 | egov.service.egov.mdms.moduleName | MDMS module which contain boundary master. |
 | egov.service.egov.mdms.masterName | MDMS master file which contain boundary detail. |
 
-### Deployment Details
+## Deployment Details
 
 1. Add/Update the mdms master file which contain boundary data of ULB’s.
 2. Add Role-Action mapping for egov-location API’s.
@@ -35,7 +35,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 4. Fill the above environment variables in egov-location with proper values.
 5. Deploy the latest version of egov-location service.
 
-### Configuration Details
+## Configuration Details
 
 The boundary data has been moved to mdms from the master tables in DB. The location service fetches the JSON from mdms and parses it to the structure of boundary object as mentioned above. A sample master would look like below.
 
@@ -82,19 +82,19 @@ The boundary data has been moved to mdms from the master tables in DB. The locat
 | code | Code of the boundary. |
 | children | Details of its sub-boundaries. |
 
-### Integration
+## Integration
 
-#### Integration Scope
+### Integration Scope
 
 The egov-location API’s can be used by any module which needs to store the location details of the tenant.
 
-#### Integration Benefits
+### Integration Benefits
 
 * Get the boundary details based on boundary type and hierarchy type within the tenant boundary structure.
 * Get the geographical boundaries by providing appropriate GeoJson.
 * Get the tenant list in the given latitude and longitude.
 
-#### Steps to Integration
+### Steps to Integration
 
 1. To integrate, host of egov-location should be overwritten in helm chart.
 2. /boundarys/\_search should be added as the search endpoint for searching boundary details based on tenant Id, Boundary Type, Hierarchy Type etc.
@@ -102,15 +102,15 @@ The egov-location API’s can be used by any module which needs to store the loc
 4. /tenant/\_search should be added as the search endpoint. This method tries to resolve a given lat, long to a corresponding tenant, provided there exists a mapping between the reverse geocoded city to tenant.
 5. The MDMS Tenant boundary master file should be loaded in MDMS service.
 
-### Reference Docs
+## Reference Docs
 
-#### Doc Links
+### Doc Links
 
 | **Title** | **Link** |
 | :--- | :--- |
 | Local setup | [ https://github.com/egovernments/core-services/blob/669c94194911ada92b6cb3c87e5fad7a7478cc6a/egov-location/LOCALSETUP.md](https://github.com/egovernments/core-services/blob/669c94194911ada92b6cb3c87e5fad7a7478cc6a/egov-location/LOCALSETUP.md) |
 
-#### API List
+### API List
 
 |  | **Link** |
 | :--- | :--- |
@@ -120,7 +120,5 @@ The egov-location API’s can be used by any module which needs to store the loc
 
 Please refer to the [Swagger API contract](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/egov-services/master/docs/egov-location/contracts/v11-0-0.yml#!/) for egov-location service to understand the structure of APIs and to have a visualisation of all internal APIs.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

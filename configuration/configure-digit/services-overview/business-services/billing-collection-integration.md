@@ -17,7 +17,6 @@ A bill collection flow consists of the following steps -
 3. Record the payment details against the bill
 4. Optional - Get Payment API to fetch the details of the receipt
 
-  
 As the in-field team of the system integrator would already be making these calls to the integrator's own system \(or a standard system like BBPS\), integration with DIGIT is a server to server integration where the backend system of the integrator will make these calls to the DIGIT platform as per the need. The following diagram depicts the high-level flow of calls between On Field devices like PoS \(On Field Device\) to Backend of the Integrator \(Integrator System\) and from Backend of the Integrator to DIGIT \(DIGIT Platform\).
 
 {% hint style="info" %}
@@ -40,26 +39,24 @@ Given below is the example of the request and response, OAuth token to be used f
 
 ```text
 curl -X POST \
-    https://egov-micro-dev.egovernments.org/user/oauth/token \
-    -H 'Authorization: Basic {Authorization Token}' \
+    https://egov-micro-dev.egovernments.org/user/oauth/token \
+    -H 'Authorization: Basic {Authorization Token}' \
     -H 'Content-Type: application/x-www-form-urlencoded' \
     -H 'Postman-Token: 81c87b4c-f69d-464a-8c9a-990e698391ec' \
     -H 'cache-control: no-cache' \
     -d 'grant_type=password&scope=read&username={username}&password={Password}&tenantId={TenantId}&userType=Employee'
-
 ```
 
 **Response Snippet**
 
 ```text
 {
-"access_token": "6cf92021-8433-4da3-9a1e-8bc511983b2f",
+"access_token": "6cf92021-8433-4da3-9a1e-8bc511983b2f",
 "token_type": "bearer",
-"refresh_token": "1f3097f3-39ab-4fd1-91a9-2ce48ac5b6bc",
+"refresh_token": "1f3097f3-39ab-4fd1-91a9-2ce48ac5b6bc",
 "expires_in": 604799,
 "scope": "read"
 }
-
 ```
 
 **2. Fetching Bill**
@@ -87,10 +84,6 @@ To create a receipt in DIGIT, please ensure that OAuth token is generated as per
 * Choose Collection Service from the dropdown
 * Go to payment
 * Go to the make payment
-
-
-
-
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
 

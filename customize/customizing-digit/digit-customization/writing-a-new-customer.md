@@ -6,7 +6,7 @@ Kafka producer publishes messages on a given topic. Kafka Consumer is a program,
 
 where persister.update.tradelicense.topic is the key for the topic name in the application.properties
 
- Whenever any new message is published on this topic the message will be consumed by the listen\(\) function and will call the function sendNotification\(\) with the message as the argument. The deserialization is controlled by the following two properties in the application.properties:`1 2` `spring.kafka.consumer.value-deserializer spring.kafka.consumer.key-deserializer`
+Whenever any new message is published on this topic the message will be consumed by the listen\(\) function and will call the function sendNotification\(\) with the message as the argument. The deserialization is controlled by the following two properties in the application.properties:`1 2` `spring.kafka.consumer.value-deserializer spring.kafka.consumer.key-deserializer`
 
 The first property sets the deserializer for value while the second one sets it for the key. Depending on the deserializer we have set we can expect the argument in that format in our consumer function. For example, if we set the value deserializer to HashMapDeserializer and key deserializer to string like below:`1 2` `spring.kafka.consumer.value-deserializer=org.egov.tracer.kafka.deserializer.HashMapDeserializer spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer`
 
@@ -14,5 +14,5 @@ Then we can write our consumer function expecting HashMap as an argument like be
 
 \`\`
 
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

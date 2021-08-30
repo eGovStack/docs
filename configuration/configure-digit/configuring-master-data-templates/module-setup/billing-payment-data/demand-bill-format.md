@@ -1,12 +1,12 @@
 # Demand Bill Format
 
-### Introduction
+## Introduction
 
 Bill format can be configured on a module level. Few components on the DIGIT sample bill can be configured on a state level and few at ULB level. Components that can be changed on a module level can be categorized as mentioned:
 
 1. Important messages: Values can be configured on a module level - state level
 
-### Data Table
+## Data Table
 
 <table>
   <thead>
@@ -35,9 +35,9 @@ Bill format can be configured on a module level. Few components on the DIGIT sam
 Data given in the table is sample data for reference.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name | Data Type | Data Size | Mandatory | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -45,7 +45,7 @@ Data given in the table is sample data for reference.
 | 2 | Particulars | Alphanumeric | 256 | Yes | Each category can have multiple entries under it, ie particulars |
 | 3 | Business | Text | 64 | Yes | The business for which the Bill format is to be configured |
 
-#### How to fill data
+### How to fill data
 
 1. Download the data template attached to this page.
 2. Get a good understanding of all the headers in the template sheet, their data type, size, and definitions by referring to the ‘Data Definition’ section of this document.
@@ -55,11 +55,11 @@ Data given in the table is sample data for reference.
 6. Map the particulars under each category with DIGIT sample bill
 7. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
 
-### Checklist
+## Checklist
 
 The checklist is a set of activities to be performed one the data is filled into a template to ensure data type, size, and format of data is as per the expectation. These activities have been divided into 2 groups as given below.
 
-#### Common Checklist
+### Common Checklist
 
 This checklist covers all the activities which are common across the entities.
 
@@ -67,11 +67,11 @@ This checklist covers all the activities which are common across the entities.
 | :--- | :--- | :--- |
 | 1 | Make sure that each and every point in this reference list has been taken care of | [Checklist](../common-config/checklist.md) |
 
-#### Entity Specific Checklist
+### Entity Specific Checklist
 
 Entity Specific Checklist is not required separately.
 
-### Attachments
+## Attachments
 
 {% file src="../../../../../.gitbook/assets/configuration-data-template-demand-bill-format.xlsx" caption="Configuration Data Template " %}
 
@@ -79,7 +79,5 @@ Entity Specific Checklist is not required separately.
 
 {% file src="../../../../../.gitbook/assets/sample\_bill.pdf" caption="Sample Bill" %}
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 

@@ -12,7 +12,7 @@ Employees can -
 6. Cancel the application
 7. Reject the application
 
-### Create Desludging Application
+## Create Desludging Application
 
 ![](../../../../.gitbook/assets/emp-l1.png)
 
@@ -26,7 +26,7 @@ Click on **New Emptying of Septic Tank / Pit Application** option.
 
 ![](../../../../.gitbook/assets/cemp2.png)
 
-Select the relevant **Application Channel** to indicate the channel that the employee is using to create a new service request. The applicant may use the telephone to raise requests or the local office counter. 
+Select the relevant **Application Channel** to indicate the channel that the employee is using to create a new service request. The applicant may use the telephone to raise requests or the local office counter.
 
 Enter the **Applicant Name** and **Applicant Mobile No.**
 
@@ -54,7 +54,7 @@ The application is submitted and an **Application No.** is generated. Click on t
 
 The system will trigger notifications to the applicant mobile number with the application number and status updates.
 
-### Update Application
+## Update Application
 
 Employees can update application details on behalf of the applicant.
 
@@ -62,7 +62,7 @@ Employees can update application details on behalf of the applicant.
 
 Search for the application by the application number or any other search filter. Scroll down the application and click on the **Take Action** button. Click on **Update Application**. Make the required changes and resubmit it.
 
-### Make Payment
+## Make Payment
 
 Employees can collect the payment for the service requested at the counter. Payments can also be collected for applications raised by citizens online.
 
@@ -80,11 +80,11 @@ Scroll down the application and click on the **Take Action** button. Click on **
 
 ![](../../../../.gitbook/assets/emp-coll4.png)
 
-The payment details are available on the screen. 
+The payment details are available on the screen.
 
 ![](../../../../.gitbook/assets/emp-coll5.png)
 
-Enter the **Payer Details** to proceed with the payment. Select the **Paid By** option as **Other** in case the payment is not made by the applicant. Enter the **Payer Name** and **Payer Mobile No.** details. Else, select **Owner**. The applicant or **Payer Name** and **Payer Mobile No.** are auto-populated  from the application. 
+Enter the **Payer Details** to proceed with the payment. Select the **Paid By** option as **Other** in case the payment is not made by the applicant. Enter the **Payer Name** and **Payer Mobile No.** details. Else, select **Owner**. The applicant or **Payer Name** and **Payer Mobile No.** are auto-populated from the application.
 
 Select the relevant **Payment Mode** and proceed with the payment details. Click on **Generate Receipt** once the payment is done.
 
@@ -94,7 +94,7 @@ The **Payment Collected** acknowledgement provides the payment **Receipt No.** C
 
 ![Payment receipt screen](../../../../.gitbook/assets/emp10.png)
 
-### Assign Requests to DSO
+## Assign Requests to DSO
 
 Employees assign the received service requests to relevant DSOs for action.
 
@@ -108,7 +108,7 @@ Scroll down the application and click on the **Take Action** button. Click on **
 
 ![](../../../../.gitbook/assets/emp-dso-assign2.png)
 
-The selected **Vehicle Type** and **Vehicle Capacity \(Ltrs\)** are auto-populated from the details entered in the application. Select the relevant DSO Name from the drop-down list. The list of DSOs is populated on the basis of the selected vehicle type. 
+The selected **Vehicle Type** and **Vehicle Capacity \(Ltrs\)** are auto-populated from the details entered in the application. Select the relevant DSO Name from the drop-down list. The list of DSOs is populated on the basis of the selected vehicle type.
 
 ![](../../../../.gitbook/assets/emp-dso-assign3.png)
 
@@ -118,7 +118,7 @@ The **Expected date of completion** shows the current date by default. Change th
 
 The request is assigned to the selected DSO.
 
-### Re-assign DSO
+## Re-assign DSO
 
 Employees can reassign to other DSOs in case the request has been rejected or declined by the DSO for some reason.
 
@@ -132,13 +132,13 @@ Scroll down the application and click on **Take Action** button. Click on **Re-a
 
 ![](../../../../.gitbook/assets/emp-dso-reassign2.png)
 
-Select the applicable **Reason for Re-assign**. Select the relevant **DSO Name**. Update the **Expected date of completion** if required. Click on the **Reassign** button. 
+Select the applicable **Reason for Re-assign**. Select the relevant **DSO Name**. Update the **Expected date of completion** if required. Click on the **Reassign** button.
 
 ![](../../../../.gitbook/assets/emp-dso-reassign3.png)
 
 The DSO is reassigned successfully.
 
-### Complete or Decline Request
+## Complete or Decline Request
 
 Employees can complete or decline service requests on behalf of the DSO.
 
@@ -150,7 +150,5 @@ Search for application with the status as **DSO InProgress**. Click on the **App
 
 Scroll down the application and click on the **Take Action** button. Click on **Complete Request** or **Decline Request**. Fill in the request details on behalf of the DSO to complete or reject the request.
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
