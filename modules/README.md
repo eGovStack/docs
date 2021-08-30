@@ -6,7 +6,7 @@ description: This section contains DIGIT product and module related documents
 
 DIGIT offers several modules. Each module is designed to automate the manual workflows for various governance units.
 
-![](../.gitbook/assets/image%20%2827%29%20%287%29%20%282%29.png)
+![](../.gitbook/assets/image%20%2827%29%20%287%29%20%284%29.png)
 
 ## Key Benefits
 

@@ -44,7 +44,7 @@ Below is a sample to add a new role object
 Dashboards array add a new dashboard as given below
 {% endhint %}
 
-![](../../.gitbook/assets/image-20201021-142630%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/image-20201021-142630%20%281%29%20%287%29%20%281%29.png)
 
 ### **3. Adding new Visualizations in existing Dashboard**
 

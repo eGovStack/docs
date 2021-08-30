@@ -1,0 +1,193 @@
+[
+    {
+        "code": "SERVICEDEFS.DAMAGEDGARBAGEBIN",
+        "message": "Damaged garbage bin",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.BURNINGOFGARBAGE",
+        "message": "Burning of garbage",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.OVERFLOWINGORBLOCKEDDRAIN",
+        "message": "Overflowing or blocked drain",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.ILLEGALDISCHARGEOFSEWAGE",
+        "message": "Illegal discharge of sewage",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.BLOCKOROVERFLOWINGSEWAGE",
+        "message": "Block or overflowing sewage",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.SHORTAGEOFWATER",
+        "message": "Shortage of water",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.NOWATERSUPPLY",
+        "message": "No water supply",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.DIRTYWATERSUPPLY",
+        "message": "Dirty water supply",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.BROKENWATERPIPEORLEAKAGE",
+        "message": "Broken water pipe or leakage",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.WATERPRESSUREISVERYLESS",
+        "message": "Water pressure is very less",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.DAMAGEDROAD",
+        "message": "Damaged road",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.WATERLOGGEDROAD",
+        "message": "Water logged road",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.MANHOLECOVERMISSINGORDAMAGED",
+        "message": "Manhole cover missing or damaged",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.DAMAGEDORBLOCKEDFOOTPATH",
+        "message": "Damaged or blocked footpath",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.CONSTRUCTIONMATERIALLYINGONTHEROAD",
+        "message": "Construction material lying on the road",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.REQUESTSPRAYINGORFOGGINGOPERATION",
+        "message": "Request spraying or fogging operation",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.STRAYANIMALS",
+        "message": "Stray animals ",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.DEADANIMALS",
+        "message": "Dead asnimals",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.DIRTYORSMELLYPUBLICTOILETS",
+        "message": "Dirty or smelly public toilets",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.PUBLICTOILETISDAMAGED",
+        "message": "Public toilet is damaged",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.NOWATERORELECTRICITYINPUBLICTOILET",
+        "message": "No water or electricity in public toilet",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.ILLEGALSHOPSONFOOTPATH",
+        "message": "Illegal shops on footpath",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.ILLEGALCONSTRUCTIONS",
+        "message": "Illegal constructions",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.ILLEGALPARKING",
+        "message": "Illegal parking",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.ILLEGALCUTTINGOFTREES",
+        "message": "Illegal cutting of trees",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.CUTTINGORTRIMMINGOFTREEREQUIRED",
+        "message": "Cutting or trimming of tree required",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.OPENDEFECATION",
+        "message": "Open defecation",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.PARKREQUIRESMAINTENANCE",
+        "message": "Park requires maintenance",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+
+
+
+    {
+        "code": "SERVICEDEFS.NONSWEEPINGOFROAD",
+        "message": "Road needs Sweeping",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.NOSTREETLIGHT",
+        "message": "No street light",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    },
+    {
+        "code": "SERVICEDEFS.STREETLIGHTNOTWORKING",
+        "message": "Streetlight not working",
+        "module": "rainmaker-pt",
+        "locale": "en_IN"
+    }
+
+
+]
