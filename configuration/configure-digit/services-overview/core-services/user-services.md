@@ -23,7 +23,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 #### Interaction Diagram
 
-![](../../../../.gitbook/assets/image%20%2875%29.png)
+![](<../../../../.gitbook/assets/image (75).png>)
 
 ### Deployment Details
 
@@ -35,21 +35,22 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 Following application properties file in user service are configurable.
 
-| **Property** | **Value** | **Remarks** |
-| :--- | :--- | :--- |
-| egov.user.search.default.size | 10 | default search record number limit |
-| citizen.login.password.otp.enabled | true | whether citizen login otp based |
-| employee.login.password.otp.enabled | false | whether employee login otp based |
-| citizen.login.password.otp.fixed.value | 123456 | fixed otp for citizen |
-| citizen.login.password.otp.fixed.enabled | false | allow fixed otp for citizen |
-| otp.validation.register.mandatory | true | whether otp compulsory for registration |
-| access.token.validity.in.minutes | 10080 | validity time of access token |
-| refresh.token.validity.in.minutes | 20160 | validity time of refresh token |
-| default.password.expiry.in.days | 90 | expiry date of a password |
-| account.unlock.cool.down.period.minutes | 60 | unlock time |
-| max.invalid.login.attempts.period.minutes | 30 | window size for counting attempts for lock |
-| max.invalid.login.attempts | 5 | max failed login attempts before account is locked |
-| egov.state.level.tenant.id | pb |  |
+|                                           |           |                                                    |
+| ----------------------------------------- | --------- | -------------------------------------------------- |
+| **Property**                              | **Value** | **Remarks**                                        |
+| egov.user.search.default.size             | 10        | default search record number limit                 |
+| citizen.login.password.otp.enabled        | true      | whether citizen login otp based                    |
+| employee.login.password.otp.enabled       | false     | whether employee login otp based                   |
+| citizen.login.password.otp.fixed.value    | 123456    | fixed otp for citizen                              |
+| citizen.login.password.otp.fixed.enabled  | false     | allow fixed otp for citizen                        |
+| otp.validation.register.mandatory         | true      | whether otp compulsory for registration            |
+| access.token.validity.in.minutes          | 10080     | validity time of access token                      |
+| refresh.token.validity.in.minutes         | 20160     | validity time of refresh token                     |
+| default.password.expiry.in.days           | 90        | expiry date of a password                          |
+| account.unlock.cool.down.period.minutes   | 60        | unlock time                                        |
+| max.invalid.login.attempts.period.minutes | 30        | window size for counting attempts for lock         |
+| max.invalid.login.attempts                | 5         | max failed login attempts before account is locked |
+| egov.state.level.tenant.id                | pb        |                                                    |
 
 ### Integration Details
 
@@ -67,7 +68,7 @@ Providing following functionality to citizen and employee type users
   * Update user details
   * Forgot password
   * Change password
-  * User role mapping\(Single ULB to multiple roles\)
+  * User role mapping(Single ULB to multiple roles)
   * Enable employee to login into DIGIT system based on a password.
 * Citizen:
   * Create user
@@ -89,27 +90,29 @@ Providing following functionality to citizen and employee type users
 
 #### Doc Links
 
-{% file src="../../../../.gitbook/assets/promotionsteps.pdf" caption="User Data Encryption Promotion Details" %}
+{% file src="../../../../.gitbook/assets/promotionsteps.pdf" %}
+User Data Encryption Promotion Details
+{% endfile %}
 
-{% file src="../../../../.gitbook/assets/encryption-service \(1\).pdf" caption="Encryption Service" %}
+{% file src="../../../../.gitbook/assets/encryption-service (1).pdf" %}
+Encryption Service
+{% endfile %}
 
 #### API List
 
-|  | **Link** |
-| :--- | :--- |
-| /citizen/\_create | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
-| /users/\_createnovalidate | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
-| /\_search | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
-| /v1/\_search | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
-| /\_details | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
-| /users/\_updatenovalidate | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
-| /profile/\_update | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
-| /password/\_update | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+|                            |                                                                                                                            |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+|                            | **Link**                                                                                                                   |
+| /citizen/\_create          | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+| /users/\_createnovalidate  | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+| /\_search                  | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+| /v1/\_search               | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+| /\_details                 | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+| /users/\_updatenovalidate  | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+| /profile/\_update          | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+| /password/\_update         | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
 | /password/nologin/\_update | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
-| /\_logout | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
-| /user/oauth/token | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+| /\_logout                  | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
+| /user/oauth/token          | [https://www.getpostman.com/collections/15443fcb25c8aacd8897](https://www.getpostman.com/collections/15443fcb25c8aacd8897) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

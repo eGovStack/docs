@@ -8,19 +8,16 @@ description: Key themes and deliverables
 
 Commitment and transparency are deeply ingrained values defining our product development approach. We are constantly developing new capabilities to facilitate the digital transformation of our cities. Take a glimpse into our DIGIT Roadmap to learn more about our upcoming tools and features.
 
-| **Theme** | **Description** |
-| :--- | :--- |
-| **Widen Urban Mission Impact** | Product feature enhancements and concentrated focus on increasing adoption  |
-| **Champion Societal Missions** | New products to address the sanitation issues facing urban areas and public finance management solutions |
-| **Promote Usability and Accessibility** | Create integrated user experience with a key focus on flexibility, accessibility, quality of service; Optimized user experience |
-| **Enhance Platform Capabilities**  | Adopt improvements on the platforms that will address some key issues like privacy, security as well as adding new capabilities like GIS |
-| **Drive Product Research and Innovation** | Identify high-impact research and product innovation areas through validation, understanding the domain, and processes involved |
+|                                           |                                                                                                                                          |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Theme**                                 | **Description**                                                                                                                          |
+| **Widen Urban Mission Impact**            | Product feature enhancements and concentrated focus on increasing adoption                                                               |
+| **Champion Societal Missions**            | New products to address the sanitation issues facing urban areas and public finance management solutions                                 |
+| **Promote Usability and Accessibility**   | Create integrated user experience with a key focus on flexibility, accessibility, quality of service; Optimized user experience          |
+| **Enhance Platform Capabilities**         | Adopt improvements on the platforms that will address some key issues like privacy, security as well as adding new capabilities like GIS |
+| **Drive Product Research and Innovation** | Identify high-impact research and product innovation areas through validation, understanding the domain, and processes involved          |
 
 ## Quarter 2 - July to September 2021
-
-| Release Date: 01/09/2021 | Beta date: | GA date: |
-| :--- | :--- | :--- |
-
 
 {% hint style="warning" %}
 **Property Tax -**
@@ -31,9 +28,9 @@ Commitment and transparency are deeply ingrained values defining our product dev
 {% endhint %}
 
 {% hint style="warning" %}
-**Public Grievances & Redressal \(PGR\) -**
+**Public Grievances & Redressal (PGR) -**
 
-* Multi-selection of complaints & bulk action - Employees can select multiple complaints and perform actions \(like allocation\) in a couple of steps
+* Multi-selection of complaints & bulk action - Employees can select multiple complaints and perform actions (like allocation) in a couple of steps
 {% endhint %}
 
 {% hint style="warning" %}
@@ -60,26 +57,22 @@ Commitment and transparency are deeply ingrained values defining our product dev
 **Knowledge assets, Tools, Documentation -**
 
 * Self-help demo setup - product videos to assist users with key module workflows
-* Product Training material - help links and how-to articles 
+* Product Training material - help links and how-to articles
 {% endhint %}
 
 ## Quarter 3 - October to December 2021
 
-| Release Date: 01/12/2021 | Beta date: | GA date: |
-| :--- | :--- | :--- |
-
-
 {% hint style="warning" %}
 **Property Tax -**
 
-* Capital rules-based assessments supporting the product 
+* Capital rules-based assessments supporting the product
 * Amalgamation of property / Bifurcation of property - feature enhancement to manage amalgamation or division of a property use cases
 {% endhint %}
 
 {% hint style="warning" %}
 **PGR -**
 
-* Third-party integration with national or local initiatives - Expand capabilities to allow complaints lodged via National Initiatives \(Like Swachta\) to be routed to DIGIT's PGR for action
+* Third-party integration with national or local initiatives - Expand capabilities to allow complaints lodged via National Initiatives (Like Swachta) to be routed to DIGIT's PGR for action
 {% endhint %}
 
 {% hint style="warning" %}
@@ -115,13 +108,11 @@ Commitment and transparency are deeply ingrained values defining our product dev
   * Product packaging
 {% endhint %}
 
-
-
 ## **Quarter 4 - January to March 2022**
 
+|                              |                |              |
+| ---------------------------- | -------------- | ------------ |
 | **Release Date: 01/03/2022** | **Beta date:** | **GA date:** |
-| :--- | :--- | :--- |
-
 
 {% hint style="warning" %}
 **Property Tax -**
@@ -134,20 +125,17 @@ Commitment and transparency are deeply ingrained values defining our product dev
 
 * Abstraction to business models - Abstracting the core components of various business models across containment/transport/treatment/reuse so that any state can use the platform
 * Marketplace - Having a marketplace model that connects desludging operators with citizens and manages the entire logistics chain
-* Open dashboards/data \(for researchers\) - Creating a one-stop solution for accessing key data points in the FSM space
+* Open dashboards/data (for researchers) - Creating a one-stop solution for accessing key data points in the FSM space
 {% endhint %}
 
 {% hint style="warning" %}
 **Adoption and Enhancements -**
 
 * BBPS integration - BBPs has multiple modes of payment - cash, transfer cheques, and electronic modes
-* Offline to online driven adoption \(QR codes, redesign of receipts, etc\) - critical in providing awareness of onboarding on the digital medium and a key catalyst for boosting online adoption
+* Offline to online driven adoption (QR codes, redesign of receipts, etc) - critical in providing awareness of onboarding on the digital medium and a key catalyst for boosting online adoption
 * Pair with Whatsapp portal - Provide an alternative channel for the citizen to avail services, eliminating the dependency on other traditional channels
 * IVRS integration - Interactive Voice Response, a phone call based channel for availing services like Grievance Redressal
 * CSC integration - Inclusion of CSC/ Sewa Kendras as a channel for providing DIGIT services to Citizens
 {% endhint %}
 
-
-
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

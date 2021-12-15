@@ -1,4 +1,4 @@
-# Employee - Mutation \(Ownership Transfer\)
+# Employee - Mutation (Ownership Transfer)
 
 **Objective:** To Provide employees with functionality to transfer Ownership of an active property.
 
@@ -6,13 +6,13 @@
 
 When a property is in Active status and has no dues to pay then Employee is given an option on the property details page to mutate a property.
 
-![](../../../../.gitbook/assets/image%20%28211%29.png)
+![](<../../../../.gitbook/assets/image (211).png>)
 
 The doc required page is shown if the property is paid for otherwise it is taken to the payment details page. It shows the employee the list of documents required in order to proceed with the form.
 
 ## **Mutate Property Form**
 
-![](../../../../.gitbook/assets/image%20%28229%29.png)
+![](<../../../../.gitbook/assets/image (229).png>)
 
 After clicking on the “Transfer of Ownership” button on the required page, the employee is redirected to the Transfer of Ownership or Mutation form. Here the Transferor details are displayed and Employee can fill the transferee details form.
 
@@ -32,15 +32,15 @@ Similar to that in employee Property create along with Mutation Documents. Which
 
 \*\*When update API is called the documents are updated according to the snippet :-
 
-```text
- documents: [
-          ...data.originalData?.documents.filter(
-            (oldDoc) => !mutationDocs?.PropertyTax?.MutationDocuments.some((mut) => oldDoc.documentType.includes(mut.code))
-          ),
-          ...data.documents.documents.map((e) =>
-            e.documentType.includes("OWNER.TRANSFERREASONDOCUMENT") ? { ...e, documentType: e.documentType.split(".")[2] } : e
-          ),
-        ],
+```
+ documents: [
+          ...data.originalData?.documents.filter(
+            (oldDoc) => !mutationDocs?.PropertyTax?.MutationDocuments.some((mut) => oldDoc.documentType.includes(mut.code))
+          ),
+          ...data.documents.documents.map((e) =>
+            e.documentType.includes("OWNER.TRANSFERREASONDOCUMENT") ? { ...e, documentType: e.documentType.split(".")[2] } : e
+          ),
+        ],
 ```
 
 Here `data.originalData` is the property before the update, while `data.documents` is the documents that were uploaded in the form, and `mutationDocs` is the MDMS response for Mutation Docs.
@@ -49,15 +49,11 @@ Here `data.originalData` is the property before the update, while `data.document
 
 If the Property Mutation is successful. then the employee is directed to this screen that shows the Acknowledgement Id and the option to download a pdf of the acknowledgement containing property details.
 
-![](../../../../.gitbook/assets/image%20%28134%29.png)
+![](<../../../../.gitbook/assets/image (134).png>)
 
 ## **Role Actions**
 
-| **Url** | **Roles** | **Action Id** |
-| :--- | :--- | :--- |
-| `property-services/property/_update` | `PT-CEMP` | `1896` |
-
-
-
-
-
+|                                      |           |               |
+| ------------------------------------ | --------- | ------------- |
+| **Url**                              | **Roles** | **Action Id** |
+| `property-services/property/_update` | `PT-CEMP` | `1896`        |

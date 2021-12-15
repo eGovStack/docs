@@ -2,7 +2,7 @@
 
 ### Overview
 
-MDMS stands for Master Data Management Service. MDMS is One of the applications in the eGov DIGIT core group of services. This service aims to reduce the time spent by developers on writing codes to store and fetch master data \( primary data needed for module functionality \) which doesn’t have any business logic associated with them.
+MDMS stands for Master Data Management Service. MDMS is One of the applications in the eGov DIGIT core group of services. This service aims to reduce the time spent by developers on writing codes to store and fetch master data ( primary data needed for module functionality ) which doesn’t have any business logic associated with them.
 
 ### Pre-requisites
 
@@ -17,7 +17,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 ### Key Functionalities
 
 * The MDMS service reads the data from a set of JSON files from a pre-specified location.
-* It can either be an online location \(readable JSON files from online\) or offline \(JSON files stored in local memory\).
+* It can either be an online location (readable JSON files from online) or offline (JSON files stored in local memory).
 * The JSON files will be in a prescribed format and store the data on a map. The **tenantID** of the file serves as a key and a map of master data details as values.
 * Once the data is stored in the map the same can be retrieved by making an API request to the MDMS service. Filters can be applied in the request to retrieve data based on the existing fields of JSON.
 
@@ -31,9 +31,9 @@ Before you proceed with the configuration, make sure the following pre-requisite
 The config JSON files to be written should follow the listed rules
 
 * The config files should have JSON extension
-* The file should mention the tenantId, module name, and the master name first before defining the data 
+* The file should mention the tenantId, module name, and the master name first before defining the data
 
-```text
+```
 {
   "tenantId": "uk",
   "moduleName": "BillingService",
@@ -41,15 +41,16 @@ The config JSON files to be written should follow the listed rules
 }
 ```
 
-| **Title** | **Description** |
-| :--- | :--- |
-| tenantId | Serves as a Key |
-| moduleName | Name of the module to which the master data belongs |
+|            |                                                                                                                                  |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**  | **Description**                                                                                                                  |
+| tenantId   | Serves as a Key                                                                                                                  |
+| moduleName | Name of the module to which the master data belongs                                                                              |
 | MasterName | The Master Name will be substituted by the actual name of the master data. The array succeeding it will contain the actual data. |
 
 Example Config JSON for “Billing Service”
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "BillingService",
@@ -71,18 +72,17 @@ Example Config JSON for “Billing Service”
 
 #### Doc Links
 
-| **Title** | **Link** |
-| :--- | :--- |
-| Reference Doc Link 1 | MDMS-Service |
+|                      |                |
+| -------------------- | -------------- |
+| **Title**            | **Link**       |
+| Reference Doc Link 1 | MDMS-Service   |
 | Reference Doc Link 2 | MDMS-Rewritten |
 
 #### API List
 
-|  | **Link** |
-| :--- | :--- |
+|                        |                                                                                                                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                        | **Link**                                                                                                                                                                                               |
 | API Contract Reference | [https://raw.githubusercontent.com/egovernments/egov-services/master/docs/mdms/contract/v1-0-0.yml](https://raw.githubusercontent.com/egovernments/egov-services/master/docs/mdms/contract/v1-0-0.yml) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

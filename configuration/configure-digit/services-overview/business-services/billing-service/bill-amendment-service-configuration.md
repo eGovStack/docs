@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-The consumer sometimes needs additional amounts \(Amendments\) added to their bill due to reasons from outside of the system. The addition of amounts happens with respect to the consumer code of the entity in the product\(PT, WS, etc..,\), any unpaid demand in the system is a candidate for amendments.
+The consumer sometimes needs additional amounts (Amendments) added to their bill due to reasons from outside of the system. The addition of amounts happens with respect to the consumer code of the entity in the product(PT, WS, etc..,), any unpaid demand in the system is a candidate for amendments.
 
 ## **Pre-requisites**
 
@@ -20,7 +20,7 @@ Bill Amendment provides a separate flow to enable workflow and validation for th
 1. Court case settlement
 2. One time waiver
 3. Write-offs
-4. DCB correction \(Old demands in paid status\)
+4. DCB correction (Old demands in paid status)
 5. Remission for Property Tax
 
 **Criteria:**
@@ -40,18 +40,18 @@ Please follow the scenarios and let me know in case of doubts. There are two sce
 
 _**1. when demand is unpaid/partially paid**_
 
-1. create a demand \(Or an existing demand can be used\) with demand detail → DD1.
+1. create a demand (Or an existing demand can be used) with demand detail → DD1.
 2. Do not pay the bill or make payment partially.
-3. Create an amendment for the same consumer-code \(with demand detail → DD2\).
+3. Create an amendment for the same consumer-code (with demand detail → DD2).
 4. approve the amendment, the response should return an amendment with status CONSUMED.
 5. search the demand or fetch bill for the consumer-code, demand/bill should contain demand details of demand and amendment together DD1 and DD2 in the same demand/bill.
 
-_**2. when demand is completely paid,**_ 
+_**2. when demand is completely paid,**_
 
 1. create demand and make complete payment or choose a consumer-code which is fully paid.
-2. create amendment \(with demand detail → DD1\).
+2. create amendment (with demand detail → DD1).
 3. Approve amendment, the response should be APPROVED this time.
-4. create new demand for the consumer -code \(with demand detail → DD3\), demand response should contain two demand details DD1 and DD2 saved to the demand.
+4. create new demand for the consumer -code (with demand detail → DD3), demand response should contain two demand details DD1 and DD2 saved to the demand.
 5. Now amendment search will return CONSUMED status after the demand is created.
 
 IMPACT: Does not impact any other functionality other than adding demand details to demands on APPROVAL.
@@ -60,11 +60,11 @@ IMPACTED BY: Existence of demands in the system.
 
 ## **Configuration Details**
 
-[Billing Service \| Configuration-Details:](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service#Configuration-Details%3A) ​Refer billing-service config for MDMS data. the amendment makes use of the same data set.
+[Billing Service | Configuration-Details:](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service#Configuration-Details%3A) ​Refer billing-service config for MDMS data. the amendment makes use of the same data set.
 
 **WORKFLOW CONFIG:**
 
-```text
+```
 {
   "RequestInfo": {
     "apiId": "Rainmaker",
@@ -167,13 +167,13 @@ Amendment integration helps the respective Organization to add additional value 
 * Easy to create and simple process of updating demands
 * helps ease changes into the system which are not part of normal functionality - Amendment of bills in case of legal requirements.
 
-### Steps to Integration 
+### Steps to Integration
 
 This is integrated into the billing system by default.
 
 1. Amendment facility can be used in case of a legal issue to add values to existing demands using /amendment/\_create and /amendment/\_update can be used to cancel the created ones or update workflow if configured.
 
-### Interaction Diagram <a id="Interaction-Diagram:"></a>
+### Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
 {yet to be addded}
 
@@ -185,13 +185,8 @@ This is integrated into the billing system by default.
 
 API LIST
 
+|                               |                                                                                                                            |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | /amendment/\_create, \_update | [https://www.getpostman.com/collections/b195d3b1d354c767b6bd](https://www.getpostman.com/collections/b195d3b1d354c767b6bd) |
-| :--- | :--- |
 
-
-
-
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

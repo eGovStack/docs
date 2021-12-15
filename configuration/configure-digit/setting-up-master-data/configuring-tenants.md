@@ -2,7 +2,7 @@
 
 ### Overview
 
-Tenant represents a body in a system. In the municipal system, a state and its ULBs \(Urban local bodies\) are tenants. ULB represents a city or a town in a state. Tenant configuration is done in MDMS.
+Tenant represents a body in a system. In the municipal system, a state and its ULBs (Urban local bodies) are tenants. ULB represents a city or a town in a state. Tenant configuration is done in MDMS.
 
 ### Pre-requisites
 
@@ -24,10 +24,10 @@ After adding the new tenant, the MDMS service needs to be restarted to read the 
 
 ### Configuration Details
 
-Tenant is added in tenant.json.  
+Tenant is added in tenant.json.\
 In MDMS, file **tenant.json**, under **tenant** folder holds the details of state and ULBs to be added in that state.
 
-```text
+```
 {
   "tenantId": "uk",  //<ReplaceWithDesiredTenantId>
   "moduleName": "tenant",
@@ -64,7 +64,7 @@ In MDMS, file **tenant.json**, under **tenant** folder holds the details of stat
 ```
 
 {% hint style="info" %}
-To enable tenant the above data should be pushed in tenant.json file. Here "ULB Grade" and City "Code" are important fields. **ULB Grade** can have a set of allowed values that determines the ULB type, \([Municipal corporation \(Nagar Nigam\)](https://en.wikipedia.org/wiki/Municipal_Corporations_in_India), Municipality \(municipal council, municipal board, municipal committee\) \(Nagar Parishad\), etc\). City "**Code**" has to be unique to each tenant. This city-specific code is used in all transactions. Not permissible to change the code. If changed we will lose the data of the previous transactions done.
+To enable tenant the above data should be pushed in tenant.json file. Here "ULB Grade" and City "Code" are important fields. **ULB Grade** can have a set of allowed values that determines the ULB type, ([Municipal corporation (Nagar Nigam)](https://en.wikipedia.org/wiki/Municipal\_Corporations\_in\_India), Municipality (municipal council, municipal board, municipal committee) (Nagar Parishad), etc). City "**Code**" has to be unique to each tenant. This city-specific code is used in all transactions. Not permissible to change the code. If changed we will lose the data of the previous transactions done.
 {% endhint %}
 
 {% hint style="info" %}
@@ -74,14 +74,14 @@ Naming Convention for **Tenants Code**
 {% endhint %}
 
 {% hint style="info" %}
-**"logoId": "**[**https://s3.ap-south-1.amazonaws.com/uk-egov-assets/uk.citya/logo.png**](https://s3.ap-south-1.amazonaws.com/pb-egov-assets/pb.citya/logo.png)**",** Here the last section of the path should be "/&lt;tenantId&gt;/logo.png". If we use anything else, logo will not be displayed on the UI. **&lt;tenantId&gt;** is the tenant code ie **“uk.citya”.**
+**"logoId": "**[**https://s3.ap-south-1.amazonaws.com/uk-egov-assets/uk.citya/logo.png**](https://s3.ap-south-1.amazonaws.com/pb-egov-assets/pb.citya/logo.png)**",** Here the last section of the path should be "/\<tenantId>/logo.png". If we use anything else, logo will not be displayed on the UI. **\<tenantId>** is the tenant code ie **“uk.citya”.**
 {% endhint %}
 
 Localization should be pushed for ULB grade and ULB name. The format is given below.
 
 **Localization for ULB Grade**
 
-```text
+```
 {
      "code": "ULBGRADE_MUNICIPAL_CORPORATION",
      "message": "MUNICIPAL CORPORATION",
@@ -92,7 +92,7 @@ Localization should be pushed for ULB grade and ULB name. The format is given be
 
 **Localization for ULB Name**
 
-```text
+```
 {
      "code": "TENANT_TENANTS_UK_HALDWANI",    
      "message": "Haldwani",
@@ -101,7 +101,7 @@ Localization should be pushed for ULB grade and ULB name. The format is given be
 }
 ```
 
-**Format of localization code for tenant name** &lt;**MDMS\_State\_Tenant\_Folder\_Name**&gt;\_&lt;**Tenants\_Fille\_Name**&gt;\_&lt;**Tenant\_Code**&gt; \(replace dot with underscore\)
+**Format of localization code for tenant name** <**MDMS\_State\_Tenant\_Folder\_Name**>\_<**Tenants\_Fille\_Name**>\_<**Tenant\_Code**> (replace dot with underscore)
 
 Boundary data should be added for the new tenant.
 
@@ -109,12 +109,10 @@ Boundary data should be added for the new tenant.
 
 #### Doc Links
 
-| **Title** | **Link** |
-| :--- | :--- |
+|                  |                                                                                                                                                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**        | **Link**                                                                                                                                              |
 | tenant json file | [![](https://github.githubassets.com/favicon.ico)tenants.json](https://github.com/egovernments/ukd-mdms-data/blob/master/data/uk/tenant/tenants.json) |
-| content | [MDMS Configuration:](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/110952456) |
+| content          | [MDMS Configuration:](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/110952456)                                                           |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

@@ -2,7 +2,6 @@
 
 ## Overview
 
-  
 eChallan system enables employees to generate the challans for Adhoc services so that the payment can be recorded into the system along with service-specific details.
 
 It also enables citizens to make payments online based on challan no.
@@ -32,7 +31,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 ![](../../../.gitbook/assets/cancel-challan.png)
 
-## ![](blob:https://digit-discuss.atlassian.net/3fa80073-753e-4531-afa0-50c26d0ceb53#media-blob-url=true&id=98d6af92-57da-4510-a906-537d4365ec88&collection=contentId-1531740173&contextId=1531740173&mimeType=image%2Fjpeg&name=flow.jpg&size=68936&width=1200&height=750)Deployment Details
+## ![](blob:https://digit-discuss.atlassian.net/3fa80073-753e-4531-afa0-50c26d0ceb53#media-blob-url=true\&id=98d6af92-57da-4510-a906-537d4365ec88\&collection=contentId-1531740173\&contextId=1531740173\&mimeType=image%2Fjpeg\&name=flow.jpg\&size=68936\&width=1200\&height=750)Deployment Details
 
 1. Add MDMS configs required for eChallan Service and calculator and restart MDMS service
 2. Deploy the latest version of eChallan Service and calculator
@@ -40,7 +39,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 4. Add Role-Action mapping for API’s
 5. Add pdf configuration file for challan and bill
 
-### Integration <a id="Integration"></a>
+### Integration <a href="#integration" id="integration"></a>
 
 ### Integration Scope
 
@@ -63,26 +62,27 @@ The eChallan service is used to generate **e-challans / bill** for all miscellan
 
 ## Reference Docs
 
-#### Doc Links <a id="Doc-Links"></a>
+#### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title**  | **Link** |
-| :--- | :--- |
+|                           |                                                                                                                                                                 |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                 | **Link**                                                                                                                                                        |
 | API Swagger Documentation | [Swagger Documentation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/develop/docs/e-Challan-v1.0.0.yaml#!/) |
 
-#### API List <a id="API-List"></a>
+#### API List <a href="#api-list" id="api-list"></a>
 
-| Title | **Link** |
-| :--- | :--- |
-|  _echallan-services/eChallan/v1/\_create_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
+|                                          |                                                                                                                            |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Title                                    | **Link**                                                                                                                   |
+| _echallan-services/eChallan/v1/\_create_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
 | _echallan-services/eChallan/v1/\_update_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
 | _echallan-services/eChallan/v1/\_search_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
-|  _echallan-services/eChallan/v1/\_count_ | [https://www.getpostman.com/collections/773565d7b5866f0851e3](https://www.getpostman.com/collections/773565d7b5866f0851e3) |
+| _echallan-services/eChallan/v1/\_count_  | [https://www.getpostman.com/collections/773565d7b5866f0851e3](https://www.getpostman.com/collections/773565d7b5866f0851e3) |
 
-_\(Note: All the API’s are in the same postman collection therefore the same link is added in each row\)_
-
-\_\_
+_(Note: All the API’s are in the same postman collection therefore the same link is added in each row)_
 
 \_\_
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+\_\_
 
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

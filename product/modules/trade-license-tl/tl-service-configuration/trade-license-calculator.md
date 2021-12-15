@@ -2,8 +2,7 @@
 
 ## Overview
 
-  
-Trade License Calculator service is used to calculate the Trade license fees / renewal fees based on the defined billing slabs. This service enables the TL admins to create billing slab with different combination of license type, trade type, structure type and accessory type.  
+Trade License Calculator service is used to calculate the Trade license fees / renewal fees based on the defined billing slabs. This service enables the TL admins to create billing slab with different combination of license type, trade type, structure type and accessory type.\
 The service is designed in such a way that it can be used to serve different type of licenses.
 
 ## Pre-requisites
@@ -22,14 +21,14 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 ## Key Functionalities
 
-* TL Admin an Employee of ULB with TL\_Admin role can create, update billing slab\(s\)
-* ULB Employee with TL\_CREATOR and TL\_ADMIN can search billing slab\(s\)
+* TL Admin an Employee of ULB with TL\_Admin role can create, update billing slab(s)
+* ULB Employee with TL\_CREATOR and TL\_ADMIN can search billing slab(s)
 * TL service internally calls tl-calculator to generate demand.
 
 ## Deployment Details
 
 1. Deploy the latest version of tl-service and tl-calculator
-2. Add tl-calculation-persister.yml & tl-billing-slab-persister.yml file in config folder in git and add that path in persister . _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
+2. Add tl-calculation-persister.yml & tl-billing-slab-persister.yml file in config folder in git and add that path in persister . _(The file path is to be added in environment yaml file in param called_ persist-yml-path _)_
 
 ## Configuration Details
 
@@ -37,7 +36,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 #### **MDMS for Penalty Calculation**
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "TradeLicense",
@@ -63,7 +62,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 #### **MDMS file for Rebate Calculation**
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "TradeLicense",
@@ -91,7 +90,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 #### **Actions**
 
-```text
+```
 [
   {
     "id": {{PLACEHOLDER1}},
@@ -142,12 +141,11 @@ Before you proceed with the configuration, make sure the following pre-requisite
     "path": ""
   }
 ]
-
 ```
 
 #### **Role Action Mapping**
 
-```text
+```
 [
   {
     "rolecode": "TL_ADMIN",
@@ -180,7 +178,6 @@ Before you proceed with the configuration, make sure the following pre-requisite
     "tenantId": "pb"
   }
 ]
-
 ```
 
 ## Integration Details
@@ -191,7 +188,7 @@ tl-calculator will be integrated with tl-services. tl-services internally invoke
 
 ### Integration Benefits
 
-Tl calculator application is used to calculate the Trade license Fees based on the different billing slabs in the DB that's why the calculation and demand generation logic will be separated out from TL services.  
+Tl calculator application is used to calculate the Trade license Fees based on the different billing slabs in the DB that's why the calculation and demand generation logic will be separated out from TL services.\
 So in future, if calculation logic needs to modify then changes can be carried out for each implementation without modifying the TL services.
 
 ### Steps to Integration
@@ -207,27 +204,28 @@ TBD
 
 ## Reference Docs
 
-#### Doc Links <a id="Doc-Links"></a>
+#### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title**  | **Link** |
-| :--- | :--- |
-| API Swagger Contract | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/egov-services/master/docs/rainmaker/trade-license/tl-calculator.yml#!/) |
-| Trade License Document | [Trade License Service](https://digit-discuss.atlassian.net/l/c/WQ1uMqaa) |
+|                        |                                                                                                                                                                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**              | **Link**                                                                                                                                                                                                                    |
+| API Swagger Contract   | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/egov-services/master/docs/rainmaker/trade-license/tl-calculator.yml#!/) |
+| Trade License Document | [Trade License Service](https://digit-discuss.atlassian.net/l/c/WQ1uMqaa)                                                                                                                                                   |
 
-#### API List <a id="API-List"></a>
+#### API List <a href="#api-list" id="api-list"></a>
 
-| Title | **Link** |
-| :--- | :--- |
+|                                    |                                                                                                                            |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Title                              | **Link**                                                                                                                   |
 | tl-calculator/billingslab/\_create | [https://www.getpostman.com/collections/a3d3bca66635df2395a3](https://www.getpostman.com/collections/a3d3bca66635df2395a3) |
 | tl-calculator/billingslab/\_search | [https://www.getpostman.com/collections/a3d3bca66635df2395a3](https://www.getpostman.com/collections/a3d3bca66635df2395a3) |
 | tl-calculator/billingslab/\_update | [https://www.getpostman.com/collections/a3d3bca66635df2395a3](https://www.getpostman.com/collections/a3d3bca66635df2395a3) |
-| tl-calculator/v1/\_calculate | [https://www.getpostman.com/collections/a3d3bca66635df2395a3](https://www.getpostman.com/collections/a3d3bca66635df2395a3) |
+| tl-calculator/v1/\_calculate       | [https://www.getpostman.com/collections/a3d3bca66635df2395a3](https://www.getpostman.com/collections/a3d3bca66635df2395a3) |
 
-_\(Note: All the API’s are in the same postman collection therefore the same link is added in each row\)_
-
-\_\_
+_(Note: All the API’s are in the same postman collection therefore the same link is added in each row)_
 
 \_\_
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+\_\_
 
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

@@ -22,25 +22,26 @@ Before you proceed with the documentation, make sure the following pre-requisite
 * **Overall SLA:** SLA for the complete processing of the application/Entity
 * **State-level SLA:** SLA for a particular state in the workflow
 
-| **Environment Variables** | **Description** |
-| :--- | :--- |
-| egov.wf.default.offset | The default value of offset in search |
-| egov.wf.default.limit | The default value of limit in search |
-| egov.wf.max.limit | The maximum number of records that are returned in search response |
-| egov.wf.inbox.assignedonly | Boolean flag if set to _true_ default search will return records assigned to the user only, if _false_ it will return all the records based on the user’s role. _\(default search is the search call when no query params are sent and based on the RequestInfo of the call, records are returned, it’s used to show applications in employee inbox\)_ |
-| egov.wf.statelevel | Boolean flag set to _true_ if a state-level workflow is required |
+|                            |                                                                                                                                                                                                                                                                                                                                                      |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Environment Variables**  | **Description**                                                                                                                                                                                                                                                                                                                                      |
+| egov.wf.default.offset     | The default value of offset in search                                                                                                                                                                                                                                                                                                                |
+| egov.wf.default.limit      | The default value of limit in search                                                                                                                                                                                                                                                                                                                 |
+| egov.wf.max.limit          | The maximum number of records that are returned in search response                                                                                                                                                                                                                                                                                   |
+| egov.wf.inbox.assignedonly | Boolean flag if set to _true_ default search will return records assigned to the user only, if _false_ it will return all the records based on the user’s role. _(default search is the search call when no query params are sent and based on the RequestInfo of the call, records are returned, it’s used to show applications in employee inbox)_ |
+| egov.wf.statelevel         | Boolean flag set to _true_ if a state-level workflow is required                                                                                                                                                                                                                                                                                     |
 
 #### Interaction Diagram
 
-![](../../../../.gitbook/assets/image%20%2874%29.png)
+![](<../../../../.gitbook/assets/image (74).png>)
 
 ### Deployment Details
 
 1. Deploy the latest version of egov-workflow-v2 service
 2. Add businessService persister yaml path in persister configuration
 3. Add Role-Action mapping for BusinessService API’s
-4. Overwrite the egov.wf.statelevel flag \( _true_ for state level and _false_ for tenant level\)
-5. Create businessService \(workflow configuration\) according to product requirements
+4. Overwrite the egov.wf.statelevel flag ( _true_ for state level and _false_ for tenant level)
+5. Create businessService (workflow configuration) according to product requirements
 6. Add Role-Action mapping for _/processInstance/\_search_ API
 7. Add workflow persister yaml path in persister configuration
 
@@ -64,33 +65,32 @@ The workflow configuration can be used by any module which performs a sequence o
 
 1. To integrate, host of egov-workflow-v2 should be overwritten in helm chart
 2. /process/\_search should be added as the search endpoint for searching workflow process Instance object.
-3. /process/\_transition should be added to perform an action on an application. _\(It’s for internal use in modules and should not be added in Role-Action mapping\)_
+3. /process/\_transition should be added to perform an action on an application. _(It’s for internal use in modules and should not be added in Role-Action mapping)_
 4. The workflow configuration can be fetched by calling _\_search_ API to check if data can be updated or not in the current state
 
 ### Reference Docs
 
 #### Doc Links
 
-| **Title** | **Link** |
-| :--- | :--- |
+|                                              |                                                                                                                                              |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                                    | **Link**                                                                                                                                     |
 | Configuring Workflows For New Product/Entity | [Configuring Workflows For New Product/Entity](../../configuring-digit-services/configuring-workflows/configuring-workflow-for-an-entity.md) |
-| Setting Up Workflows | [Setting Up Workflows](../../configuring-digit-services/configuring-workflows/setting-up-workflow.md) |
-| API Swagger Documentation | [Swagger Documentation](https://raw.githubusercontent.com/egovernments/core-services/master/docs/worfklow-2.0) |
-| Migration to Workflow 2.0 | [Workflow 2.0 Configuration doc](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/120619031/Workflow+2.0+Configuration+doc) |
+| Setting Up Workflows                         | [Setting Up Workflows](../../configuring-digit-services/configuring-workflows/setting-up-workflow.md)                                        |
+| API Swagger Documentation                    | [Swagger Documentation](https://raw.githubusercontent.com/egovernments/core-services/master/docs/worfklow-2.0)                               |
+| Migration to Workflow 2.0                    | [Workflow 2.0 Configuration doc](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/120619031/Workflow+2.0+Configuration+doc)         |
 
 #### API List
 
-| Title | **Link** |
-| :--- | :--- |
+|                             |                                                                                                                            |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Title                       | **Link**                                                                                                                   |
 | _/businessservice/\_create_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 | _/businessservice/\_update_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 | _/businessservice/\_search_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
-| _/process/\_transition_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
-| _/process/\_search_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
+| _/process/\_transition_     | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
+| _/process/\_search_         | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 
-_\(Note: All the API’s are in the same postman collection, therefore, the same link is added in each row\)_
+_(Note: All the API’s are in the same postman collection, therefore, the same link is added in each row)_
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

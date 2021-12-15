@@ -2,7 +2,7 @@
 
 ## Overview
 
-Water service is the egov application, which helps and gives flexibility to municipal and citizen to handle the water service like apply for water connection, search water connection. The application will go on different stages that the state can verify by given roles, If that role can take the action then the application will go to the next state. Based on the state, a citizen will get a notification \(SMS and in-app \). Citizens also can pay for application fees or employees can collect the fee for the application.
+Water service is the egov application, which helps and gives flexibility to municipal and citizen to handle the water service like apply for water connection, search water connection. The application will go on different stages that the state can verify by given roles, If that role can take the action then the application will go to the next state. Based on the state, a citizen will get a notification (SMS and in-app ). Citizens also can pay for application fees or employees can collect the fee for the application.
 
 ## Pre-requisites
 
@@ -19,20 +19,21 @@ Before you proceed with the documentation, make sure the following pre-requisite
 * Apply for _**a**_ water connection.
 * Searching for water connections.
 * Apply for Property creation.
-* Can take different action based on state \(Workflow\)
+* Can take different action based on state (Workflow)
 * Notification based on the application state.
 
-| **Environment Variables** | **Description** |
-| :--- | :--- |
-| egov.waterservice.createwaterconnection | This variable contains the kafka topic name which is used to create new water connection application in the system. |
-| egov.waterservice.updatewaterconnection | This variable contains the kafka topic name which is used to update the existing water connection application in the system. |
+|                                                        |                                                                                                                               |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Environment Variables**                              | **Description**                                                                                                               |
+| egov.waterservice.createwaterconnection                | This variable contains the kafka topic name which is used to create new water connection application in the system.           |
+| egov.waterservice.updatewaterconnection                | This variable contains the kafka topic name which is used to update the existing water connection application in the system.  |
 | egov.waterservice.updatewaterconnection.workflow.topic | This variable contains the kafka topic name which is used to update the process instance of the water connection application. |
-| egov.idgen.wcapid.name | This variable contain the idgen format name for water application |
-| egov.idgen.wcapid.format | This variable contain the idgen format for water application ex:- WS/\[CITY.CODE\]/\[fy:yyyy-yy\]/\[SEQ\_EGOV\_COMMON\] |
-| egov.idgen.wcid.name | This variable contain the idgen format name for water connection |
-| egov.idgen.wcid.format | This variable contain the idgen format for water connection ex:- WS\_AP/\[CITY.CODE\]/\[fy:yyyy-yy\]/\[SEQ\_EGOV\_COMMON\] |
+| egov.idgen.wcapid.name                                 | This variable contain the idgen format name for water application                                                             |
+| egov.idgen.wcapid.format                               | This variable contain the idgen format for water application ex:- WS/\[CITY.CODE]/\[fy:yyyy-yy]/\[SEQ\_EGOV\_COMMON]          |
+| egov.idgen.wcid.name                                   | This variable contain the idgen format name for water connection                                                              |
+| egov.idgen.wcid.format                                 | This variable contain the idgen format for water connection ex:- WS\_AP/\[CITY.CODE]/\[fy:yyyy-yy]/\[SEQ\_EGOV\_COMMON]       |
 
-### Interaction Diagram <a id="Interaction-Diagram:"></a>
+### Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
 To Do
 
@@ -48,7 +49,7 @@ _**M**_**DMS** _**configuration**_
 
 [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/egov-mdms-data/tree/DEV/data - Connect to preview](https://github.com/egovernments/egov-mdms-data/tree/DEV/data)\`\`
 
-```text
+```
 ws-services-calculation
 ws-services-masters
 PropertyTax
@@ -56,7 +57,7 @@ PropertyTax
 
 master-config.json for water service
 
-```text
+```
 "ws-services-masters": {
     "connectionCategory": {
       "masterName": "connectionCategory",
@@ -175,22 +176,21 @@ master-config.json for water service
       "uniqueKeys": []
     }
   }
-
 ```
 
-Property creation through WNS module  
+Property creation through WNS module\
 [https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/PropertyTax/PTWorkflow.json](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/PropertyTax/PTWorkflow.json)
 
 _**Persister configuration**_
 
-[https://github.com/egovernments/configs/blob/DEV/egov-persister/water-persist.yml](https://github.com/egovernments/configs/blob/DEV/egov-persister/water-persist.yml)  
+[https://github.com/egovernments/configs/blob/DEV/egov-persister/water-persist.yml](https://github.com/egovernments/configs/blob/DEV/egov-persister/water-persist.yml)\
 [https://github.com/egovernments/configs/blob/master/egov-persister/water-meter.yml](https://github.com/egovernments/configs/blob/master/egov-persister/water-meter.yml)
 
-#### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
+#### Actions & Role Action Mapping <a href="#actions-and-role-action-mapping" id="actions-and-role-action-mapping"></a>
 
 **Actions**
 
-```text
+```
 [
   {
       "id": {{PLACEHOLDER1}},
@@ -227,12 +227,11 @@ _**Persister configuration**_
     }
 ]
 
-
 ```
 
 **Role Action Mapping**
 
-```text
+```
 [
   {
       "rolecode": "CITIZEN",
@@ -320,15 +319,13 @@ _**Persister configuration**_
     }
 ]
 
-
 ```
 
-  
 **Workflow business service config**
 
-Create businessService \(workflow configuration\) using the  __/businessservice/\_create. Following is the product configuration for water service
+Create businessService (workflow configuration) using the \_\_/businessservice/\_create. Following is the product configuration for water service
 
-```text
+```
 {
   "RequestInfo": {
     "apiId": "Rainmaker",
@@ -560,12 +557,11 @@ Create businessService \(workflow configuration\) using the  __/businessservice/
     }
   ]
 }
-
 ```
 
 Workflow for property creation through Water and Sewerage Module
 
-```text
+```
 {
     "BusinessServices": [
     {
@@ -660,7 +656,6 @@ Workflow for property creation through Water and Sewerage Module
     }
   ]
 }
-
 ```
 
 **Indexer config for water-service**
@@ -671,7 +666,7 @@ Workflow for property creation through Water and Sewerage Module
 
 1. Write the configuration for water service. [https://github.com/egovernments/configs/blob/DEV/egov-indexer/water-service.yml](https://github.com/egovernments/configs/blob/DEV/egov-indexer/water-service.yml)[https://github.com/egovernments/configs/blob/DEV/egov-indexer/water-services-meter.yml](https://github.com/egovernments/configs/blob/DEV/egov-indexer/water-services-meter.yml)
 2. Provide the absolute path of the checked-in file to DevOps, to add it to the file-read path of egov-indexer. The file will be added to the egov-indexer's environment manifest file for it to be read at the start-up of the application.
-3. Put indexer config file to the config repo under egov-indexer folder.\([![](https://github.com/fluidicon.png)egovernments/configs](https://github.com/egovernments/configs/tree/master) \)
+3. Put indexer config file to the config repo under egov-indexer folder.([![](https://github.com/fluidicon.png)egovernments/configs](https://github.com/egovernments/configs/tree/master) )
 4. Run the egov-indexer app, Since it is a consumer, it starts listening to the configured topics and indexes the data.
 
 **Modify connection**
@@ -680,9 +675,9 @@ After connection activation or legacy connection, we can edit the connection. Th
 
 **Workflow config for edit connection**
 
-Create businessService \(workflow configuration\) using the  __/businessservice/\_create. Following is the product configuration for editing the water connection.
+Create businessService (workflow configuration) using the \_\_/businessservice/\_create. Following is the product configuration for editing the water connection.
 
-```text
+```
 {
   "RequestInfo": {
     "apiId": "Rainmaker",
@@ -792,7 +787,6 @@ Create businessService \(workflow configuration\) using the  __/businessservice/
     }
   ]
 }
-
 ```
 
 **Notification**
@@ -805,8 +799,8 @@ We can add connection holders to the water connection which will be the owner of
 
 The connection holder will get a notification based on a different state of the application. We are pushing the data of the connection holders in the user service too.
 
-**Multiple Road Type Support**  
-We can add road cutting details of multiple roads to the water connection. For each road that goes undercutting process, we have to fill their road type details and road cutting area.  
+**Multiple Road Type Support**\
+We can add road cutting details of multiple roads to the water connection. For each road that goes undercutting process, we have to fill their road type details and road cutting area.\
 Based on this information, the application one-time fee estimate is calculated.
 
 ## Deployment Details
@@ -815,7 +809,7 @@ Based on this information, the application one-time fee estimate is calculated.
 2. Deploy the latest version of ws-services service.
 3. Add water-service and water-services-meter persister yaml path in persister configuration and restart persister service.
 4. Add Role-Action mapping for API’s.
-5. Create businessService \(workflow configuration\) according for trade water connection, modify water connection
+5. Create businessService (workflow configuration) according for trade water connection, modify water connection
 6. Add ws-service indexer yaml path in indexer service configuration and restart indexer service.
 
 ## Integration Details
@@ -834,32 +828,33 @@ This ws-service module is used to manage water service connections against a pro
 ### Steps to Integration
 
 1. To integrate, host of ws-service module should be overwritten in helm chart.
-2.  /ws-services/wc/\_create should be added as the create endpoint for creating water application/connection in the system
-3.  /ws-services/wc/\_search should be added as the search endpoint. This method handles all requests to search existing records depending on different search criteria
-4.  /ws-services/wc/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update the status of the application based on workflow.
+2. /ws-services/wc/\_create should be added as the create endpoint for creating water application/connection in the system
+3. /ws-services/wc/\_search should be added as the search endpoint. This method handles all requests to search existing records depending on different search criteria
+4. /ws-services/wc/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update the status of the application based on workflow.
 
 ## Reference Docs
 
-#### Doc Links <a id="Doc-Links"></a>
+#### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title**  | **Link** |
-| :--- | :--- |
+|                           |                                                                                                                                                                       |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                 | **Link**                                                                                                                                                              |
 | API Swagger Documentation | [Swagger Documentation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/water-sewerage-services.yaml#!/) |
-| Water Calculator Service | [Water Calculator Service](https://digit-discuss.atlassian.net/l/c/9N49PrrT) |
+| Water Calculator Service  | [Water Calculator Service](https://digit-discuss.atlassian.net/l/c/9N49PrrT)                                                                                          |
 
-#### API List <a id="API-List"></a>
+#### API List <a href="#api-list" id="api-list"></a>
 
-| Title | **Link** |
-| :--- | :--- |
-|  _/ws-services/wc/\_create_ | [https://www.getpostman.com/collections/b5b7248d1aeacc9431cb](https://www.getpostman.com/collections/b5b7248d1aeacc9431cb) |
+|                            |                                                                                                                            |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Title                      | **Link**                                                                                                                   |
+| _/ws-services/wc/\_create_ | [https://www.getpostman.com/collections/b5b7248d1aeacc9431cb](https://www.getpostman.com/collections/b5b7248d1aeacc9431cb) |
 | _/ws-services/wc/\_update_ | [https://www.getpostman.com/collections/b5b7248d1aeacc9431cb](https://www.getpostman.com/collections/b5b7248d1aeacc9431cb) |
 | _/ws-services/wc/\_search_ | [https://www.getpostman.com/collections/b5b7248d1aeacc9431cb](https://www.getpostman.com/collections/b5b7248d1aeacc9431cb) |
 
-_\(Note: All the API’s are in the same postman collection therefore same link is added in each row\)_
+_(Note: All the API’s are in the same postman collection therefore same link is added in each row)_
 
 \_\_
 
 \_\_
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

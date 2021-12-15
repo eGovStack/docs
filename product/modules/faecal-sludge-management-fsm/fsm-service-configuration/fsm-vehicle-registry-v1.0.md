@@ -4,11 +4,11 @@ description: Configuration and setup details on registering vehicles in FSM modu
 
 # FSM Vehicle Registry v1.0
 
-### Overview <a id="Overview"></a>
+### Overview <a href="#overview" id="overview"></a>
 
 Vehicle Registry is a system that enables ULB Employees to create and search Vehicle Entities and schedule Vehicle Trip for FSM Application and track the VehicleTrip. This document contains the details about how to set up the Vehicle and describe the functionalities provided.
 
-### Pre-requisites <a id="Pre-requisites"></a>
+### Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
@@ -22,24 +22,24 @@ Before you proceed with the configuration, make sure the following pre-requisite
   * egov-workflow-v2
   * egov-idgen
 
-### Key Functionalities <a id="Key-Functionalities"></a>
+### Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
-### Deployment Details <a id="Deployment-Details"></a>
+### Deployment Details <a href="#deployment-details" id="deployment-details"></a>
 
 1. Deploy the latest version of the vehicle
-2. Add vehicle-persister.yml file in config folder in git and add that path in persister. _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
+2. Add vehicle-persister.yml file in config folder in git and add that path in persister. _(The file path is to be added in environment yaml file in param called_ persist-yml-path _)_
 
-### Configuration Details <a id="Configuration-Details"></a>
+### Configuration Details <a href="#configuration-details" id="configuration-details"></a>
 
-#### MDMS Configuration <a id="MDMS-Configuration[hardBreak]"></a>
+#### MDMS Configuration <a href="#mdms-configuration-hardbreak" id="mdms-configuration-hardbreak"></a>
 
-Add master data in MDMS service with the module name as Vehicle. 
+Add master data in MDMS service with the module name as Vehicle.
 
-Following is some sample master data for 
+Following is some sample master data for
 
 **SuctionType**
 
-```text
+```
 {
     "tenantId": "pb",
     "moduleName": "Vehicle",
@@ -56,12 +56,11 @@ Following is some sample master data for
         }
     ]
 }
-
 ```
 
 **VehicleMakeModel**
 
-```text
+```
 {
     "tenantId": "pb",
     "moduleName": "Vehicle",
@@ -130,11 +129,11 @@ Following is some sample master data for
 }
 ```
 
-#### Business Service / Workflow Configuration <a id="Business-Service-/-Workflow-Configuration"></a>
+#### Business Service / Workflow Configuration <a href="#business-service-workflow-configuration" id="business-service-workflow-configuration"></a>
 
-Workflow configuration for VehicleTrip of FSM 
+Workflow configuration for VehicleTrip of FSM
 
-```text
+```
 {
       "tenantId": "pb",
       "businessService": "FSM_VEHICLE_TRIP",
@@ -207,11 +206,11 @@ Workflow configuration for VehicleTrip of FSM
     }
 ```
 
-#### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
+#### Actions & Role Action Mapping <a href="#actions-and-role-action-mapping" id="actions-and-role-action-mapping"></a>
 
 **Actions**
 
-```text
+```
 {
       "id": {{PLACEHOLDER1}},
       "name": "Create Vehicle Application",
@@ -262,7 +261,7 @@ Workflow configuration for VehicleTrip of FSM
 
 **Role Action Mapping**
 
-```text
+```
 [
   {
     "rolecode": "FSM_ADMIN",
@@ -317,25 +316,26 @@ Workflow configuration for VehicleTrip of FSM
 
 **Infra Ops Configuration**
 
-Configurations that we can manage through values.yml vehicle in infraops repo as follows  
+Configurations that we can manage through values.yml vehicle in infraops repo as follows\
 values.yml for the vehicle can be found.
 
-| **Description** | **name in values.yml** | **Current Value** |
-| :--- | :--- | :--- |
-| id-gen host, to generate the application number | EGOV\_IDGEN\_HOST | egov-idgen from egov-service-host |
-| mdms service host | EGOV\_MDMS\_HOST | egov-mdms-service from egov-service-host |
-| workflow v2 service host | WORKFLOW\_CONTEXT\_PATH | egov-workflow-v2 from egov-service-host |
-| user service host, to get the locale data | EGOV\_USER\_HOST | egov-user from egov-service-host |
-| Kafka Consumer Group | SPRING\_KAFKA\_CONSUMER\_GROUP\_ID | egov-vehicle-services |
-| kafka topic to which service push data to save new vehicle application | PERSISTER\_SAVE\_VEHICLE\_TOPIC | save-vehicle-application |
-| kafka topic to which service push data of the vehicleTrip to save | PERSISTER\_SAVE\_VEHICLE\_TRIP\_TOPIC | save-vehicle-trip |
-| kafka topic to which service push data of the vehicleTrip to update | PERSISTER\_UPDATE\_VEHICLE\_TRIP\_TOPIC | update-vehicle-trip |
-| kafka topic to which service push data of the vehicleTrip to update the status | PERSISTER\_UPDATE\_VEHICLE\_TRIP\_WORKFLOW\_TOPIC | update-workflow-vehicle-trip |
-| VehicleTrip Appilcatiion Number format\` | egov.idgen.vehicle.trip.applicationNum.format | "\[CITY.CODE\]-VT-\[cy:yyyy-MM-dd\]-\[SEQ\_EGOV\_VEHICLETRIP\]" |
+|                                                                                |                                                   |                                                              |
+| ------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------ |
+| **Description**                                                                | **name in values.yml**                            | **Current Value**                                            |
+| id-gen host, to generate the application number                                | EGOV\_IDGEN\_HOST                                 | egov-idgen from egov-service-host                            |
+| mdms service host                                                              | EGOV\_MDMS\_HOST                                  | egov-mdms-service from egov-service-host                     |
+| workflow v2 service host                                                       | WORKFLOW\_CONTEXT\_PATH                           | egov-workflow-v2 from egov-service-host                      |
+| user service host, to get the locale data                                      | EGOV\_USER\_HOST                                  | egov-user from egov-service-host                             |
+| Kafka Consumer Group                                                           | SPRING\_KAFKA\_CONSUMER\_GROUP\_ID                | egov-vehicle-services                                        |
+| kafka topic to which service push data to save new vehicle application         | PERSISTER\_SAVE\_VEHICLE\_TOPIC                   | save-vehicle-application                                     |
+| kafka topic to which service push data of the vehicleTrip to save              | PERSISTER\_SAVE\_VEHICLE\_TRIP\_TOPIC             | save-vehicle-trip                                            |
+| kafka topic to which service push data of the vehicleTrip to update            | PERSISTER\_UPDATE\_VEHICLE\_TRIP\_TOPIC           | update-vehicle-trip                                          |
+| kafka topic to which service push data of the vehicleTrip to update the status | PERSISTER\_UPDATE\_VEHICLE\_TRIP\_WORKFLOW\_TOPIC | update-workflow-vehicle-trip                                 |
+| VehicleTrip Appilcatiion Number format\`                                       | egov.idgen.vehicle.trip.applicationNum.format     | "\[CITY.CODE]-VT-\[cy:yyyy-MM-dd]-\[SEQ\_EGOV\_VEHICLETRIP]" |
 
 **Configurations sample in Values.yml**
 
-```text
+```
 egov.idgen.vehicle.trip.applicationNum.format: "[CITY.CODE]-VT-[cy:yyyy-MM-dd]-[SEQ_EGOV_VEHICLETRIP]"
 
 # Additional Container Envs
@@ -401,15 +401,15 @@ env: |
   {{- end }}
 ```
 
-### Data Setup <a id="Data-Setup"></a>
+### Data Setup <a href="#data-setup" id="data-setup"></a>
 
-#### Create Vehicle <a id="Create-Vehicle"></a>
+#### Create Vehicle <a href="#create-vehicle" id="create-vehicle"></a>
 
-Create Vehicle with one of the vehicle ****types available in the VehicleMakeModel MDMS
+Create Vehicle with one of the vehicle \*\*\*\*types available in the VehicleMakeModel MDMS
 
 **Sample Curl**
 
-```text
+```
 curl --location --request POST 'https://dev.digit.org/vehicle/v1/_create' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -459,56 +459,55 @@ curl --location --request POST 'https://dev.digit.org/vehicle/v1/_create' \
 }'
 ```
 
-### Integration <a id="Integration"></a>
+### Integration <a href="#integration" id="integration"></a>
 
-#### Integration Scope <a id="Integration-Scope"></a>
+#### Integration Scope <a href="#integration-scope" id="integration-scope"></a>
 
 Integrated with Application through REST API to create, and search vehicles.
 
 For any module where vehicle Trip is required, can integrate REST API trip/v1/create, update, search
 
-#### Integration Benefits <a id="Integration-Benefits"></a>
+#### Integration Benefits <a href="#integration-benefits" id="integration-benefits"></a>
 
 * Vehicle Managed would become easy
 * Trip Management would become easy
 
-#### Steps to Integration <a id="Steps-to-Integration"></a>
+#### Steps to Integration <a href="#steps-to-integration" id="steps-to-integration"></a>
 
 * FSM Application can vehicle/v1/\_search to validate the **FSM** vehicle assignment
 * FSM Application call vehicle/trip/v1/\_create on assigning vehicle to the Application
 * FSTP operator can mark the vehicleTrip as DISPOSED.
 
-### Interaction Diagram <a id="Interaction-Diagram"></a>
+### Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
 ![](../../../../.gitbook/assets/image-20210309-103114.png)
 
-### Reference Docs <a id="Reference-Docs"></a>
+### Reference Docs <a href="#reference-docs" id="reference-docs"></a>
 
-#### Doc Links <a id="Doc-Links"></a>
+#### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title**  | **Link** |
-| :--- | :--- |
-|  Workflow Technical Document |  [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
-|  User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service)   |
-| MDMS Technical Document | **NEEDS TO BE UPDATED** |
-| IDGen Technical Document | **NEEDS TO BE UPDATED** |
-| Localization Technical Document | **NEEDS TO BE UPDATED** |
-| Persister Technical Document | **NEEDS TO BE UPDATED** |
-| SMS Notification Technical Document | **NEEDS TO BE UPDATED** |
-| API Contract | [API Contract](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/fsm/Vehicle_Registry_Contract.yaml) |
-| Postman Scripts | [Postman Collection](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
+|                                     |                                                                                                                                                                   |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                           | **Link**                                                                                                                                                          |
+| Workflow Technical Document         | [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service)                                                           |
+| User Technical Document             | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service)                                                                   |
+| MDMS Technical Document             | **NEEDS TO BE UPDATED**                                                                                                                                           |
+| IDGen Technical Document            | **NEEDS TO BE UPDATED**                                                                                                                                           |
+| Localization Technical Document     | **NEEDS TO BE UPDATED**                                                                                                                                           |
+| Persister Technical Document        | **NEEDS TO BE UPDATED**                                                                                                                                           |
+| SMS Notification Technical Document | **NEEDS TO BE UPDATED**                                                                                                                                           |
+| API Contract                        | [API Contract](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/fsm/Vehicle\_Registry\_Contract.yaml) |
+| Postman Scripts                     | [Postman Collection](https://www.getpostman.com/collections/d2541409b9570e53ed26)                                                                                 |
 
-#### API List <a id="API-List"></a>
+#### API List <a href="#api-list" id="api-list"></a>
 
-| Title | **Link** |
-| :--- | :--- |
-| vehicle/v1/\_create | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
-| vehicle/v1/\_search | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
+|                          |                                                                                                                            |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| Title                    | **Link**                                                                                                                   |
+| vehicle/v1/\_create      | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
+| vehicle/v1/\_search      | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
 | vehicle/trip/v1/\_create | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
 | vehicle/trip/v1/\_update | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
 | vehicle/trip/v1/\_search | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

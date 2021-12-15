@@ -18,52 +18,20 @@ Search
 
 Has a pagination feature
 
-![](../../../.gitbook/assets/image%20%28165%29.png)
+![](<../../../.gitbook/assets/image (165).png>)
 
 **On Hover** **of Roles Count**
 
- Logged User can able see the detail assigned roles
+Logged User can able see the detail assigned roles
 
-![](../../../.gitbook/assets/image%20%28141%29.png)
+![](<../../../.gitbook/assets/image (141).png>)
 
 On click upon Employee Id Logged User are routed to Employee Detail screen
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>SL.No</b>
-      </th>
-      <th style="text-align:left"><b>API</b>
-      </th>
-      <th style="text-align:left"><b>Paramaters</b>
-      </th>
-      <th style="text-align:left"><b>Role</b>
-      </th>
-      <th style="text-align:left"><b>Access ID</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">1</td>
-      <td style="text-align:left"><code>egov-hrms/employees/_search?</code>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li>tendantId</li>
-          <li>limit</li>
-          <li>orderby</li>
-          <li>offset</li>
-          <li>{Filter Params}</li>
-          <li>{Search Params}</li>
-        </ul>
-      </td>
-      <td style="text-align:left">HRMS_ADMIN</td>
-      <td style="text-align:left"><code>1752</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+|           |                                |                                                                                                                          |             |               |
+| --------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ----------- | ------------- |
+| **SL.No** | **API**                        | **Paramaters**                                                                                                           | **Role**    | **Access ID** |
+| 1         | `egov-hrms/employees/_search?` | <ul><li>tendantId</li><li>limit</li><li>orderby</li><li>offset</li><li>{Filter Params}</li><li>{Search Params}</li></ul> | HRMS\_ADMIN | `1752`        |
 
 Primary Files
 
@@ -80,10 +48,3 @@ Secondary Files
 [https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/ApplicationTable.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/ApplicationTable.js)
 
 [https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/ApplicationLinks.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/ApplicationLinks.js)
-
-
-
-
-
-
-

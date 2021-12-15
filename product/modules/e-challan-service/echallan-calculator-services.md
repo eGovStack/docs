@@ -55,7 +55,7 @@ echallan-calculator will be integrated with echallan-services. echallan-services
 
 ### Integration Benefits
 
-eChallan calculator application is used to calculate the eChallan Fees based on the data mentioned in echallan creation. Based on the tax amount mentioned in the echallan, demand is created.  So because of eChallan calculator, the calculation and demand generation logic will be separated out from eChallan services.  
+eChallan calculator application is used to calculate the eChallan Fees based on the data mentioned in echallan creation. Based on the tax amount mentioned in the echallan, demand is created. So because of eChallan calculator, the calculation and demand generation logic will be separated out from eChallan services.\
 So in future, if calculation logic needs to modify then changes can be carried out for each implementation without modifying the eChallan services.
 
 ### Steps to Integration
@@ -68,24 +68,19 @@ TBD
 
 ## Reference Docs
 
-#### Doc Links <a id="Doc-Links"></a>
+#### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title**  | **Link** |
-| :--- | :--- |
-| API Swagger Contract | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/develop/docs/e-Challan-v1.0.0.yaml#!/) |
-| eChallan Service Document | [eChallans Service](https://digit-discuss.atlassian.net/l/c/CHpaLj9c) |
+|                           |                                                                                                                                                                                                               |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                 | **Link**                                                                                                                                                                                                      |
+| API Swagger Contract      | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/develop/docs/e-Challan-v1.0.0.yaml#!/) |
+| eChallan Service Document | [eChallans Service](https://digit-discuss.atlassian.net/l/c/CHpaLj9c)                                                                                                                                         |
 
-#### API List <a id="API-List"></a>
+#### API List <a href="#api-list" id="api-list"></a>
 
-| Title | **Link** |
-| :--- | :--- |
+|                                    |                                                                                                                            |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Title                              | **Link**                                                                                                                   |
 | echallan-calculator/v1/\_calculate | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
 
-
-
-
-
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Sewerage Calculator Service is one of the major business logic services which is used for calculation of sewerage charge, generating demand, update existing demand, SMS & email notification to the ULB officials on-demand generation and also triggering demands\(job scheduler\) at some intervals and estimation of sewerage charge\(one-time cost\) which involves cost like road-cutting charge, form fee, scrutiny fee etc.
+Sewerage Calculator Service is one of the major business logic services which is used for calculation of sewerage charge, generating demand, update existing demand, SMS & email notification to the ULB officials on-demand generation and also triggering demands(job scheduler) at some intervals and estimation of sewerage charge(one-time cost) which involves cost like road-cutting charge, form fee, scrutiny fee etc.
 
 ## Pre-requisites
 
@@ -20,16 +20,16 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 ## Key Functionalities
 
-Sewerage calculator services present in municipal services provide multiple functionalities like calculating sewerage charges, generating demands for a particular sewerage connection, updating demands, SMS & email notification to the ULB officials on-demand generation and also triggering demands\(job scheduler\) at some intervals and estimation of sewerage charge\(one-time cost\) which involves cost like road-cutting charge, form fee, scrutiny fee etc. The different functionalities provided by sewerage calculator services are:
+Sewerage calculator services present in municipal services provide multiple functionalities like calculating sewerage charges, generating demands for a particular sewerage connection, updating demands, SMS & email notification to the ULB officials on-demand generation and also triggering demands(job scheduler) at some intervals and estimation of sewerage charge(one-time cost) which involves cost like road-cutting charge, form fee, scrutiny fee etc. The different functionalities provided by sewerage calculator services are:
 
 * Sewerage charge calculation
-* Demand generation\(here as its always non-metered demand will be generated based on time period\)
-* Sewerage charge estimation \(one-time cost which involves cost like road-cutting charge, form fee, scrutiny fee etc.\)
+* Demand generation(here as its always non-metered demand will be generated based on time period)
+* Sewerage charge estimation (one-time cost which involves cost like road-cutting charge, form fee, scrutiny fee etc.)
 
 ## Deployment Details
 
 1. Deploy the latest version of sw-service and sw-calculator
-2. Add sewerage-persist.yml file in config folder in git and add that path in persister . _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
+2. Add sewerage-persist.yml file in config folder in git and add that path in persister . _(The file path is to be added in environment yaml file in param called_ persist-yml-path _)_
 
 ## Configuration Details
 
@@ -46,7 +46,7 @@ Criteria :
 
 The combination of the above can be used to define the billing slab. Billing Slab is defined in MDMS under sw-services-calculation folder with the [SCBillingSlab](https://github.com/egovernments/egov-mdms-data/blob/QA/data/pb/sw-services-calculation/SCBillingSlab.json). The following is the sample slab.
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "sw-services-calculation",
@@ -228,7 +228,6 @@ The combination of the above can be used to define the billing slab. Billing Sla
     }
   ]
 }
-
 ```
 
 If all criteria will match for that sewerage connection this slab will use for calculation.
@@ -261,7 +260,7 @@ Sewerage charge is based on billing slab, for sewerage application charge will b
 
 Below is a sample of master data JSON for interest :
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "sw-services-calculation",
@@ -277,14 +276,13 @@ Below is a sample of master data JSON for interest :
     }
   ]
 }
-
 ```
 
 **Penalty**
 
-Below is a sample of master data JSON for penalty**:**
+Below is a sample of master data JSON for penalty\*\*:\*\*
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "sw-services-calculation",
@@ -299,7 +297,6 @@ Below is a sample of master data JSON for penalty**:**
     }
   ]
 }
-
 ```
 
 **Round Off**
@@ -310,7 +307,7 @@ If the fraction is greater than equal to 0.5 the number is round up else it’s 
 
 #### **Actions**
 
-```text
+```
 [
   {
       "id": {{PLACEHOLDER1}},
@@ -348,12 +345,11 @@ If the fraction is greater than equal to 0.5 the number is round up else it’s 
 ]
 
 
-
 ```
 
 **Role Action Mapping**
 
-```text
+```
 [
     {
       "rolecode": "SW_CEMP",
@@ -429,7 +425,6 @@ If the fraction is greater than equal to 0.5 the number is round up else it’s 
     }
 
 ]
-
 ```
 
 #### Demand Generation
@@ -440,7 +435,7 @@ Whenever \_calculate API is called demand is first searched based on the connect
 
 In the case of an update, if the tax head estimates change, the difference in amount for that tax head is added as new demand detail. For example, if the initial demand has one demand detail with SEWERAGE\_CHARGE equal to 120
 
-```text
+```
 "demandDetails": [
                 {
                     "id": "77ba1e93-a535-409c-b9d1-a312c409bd45",
@@ -458,12 +453,11 @@ In the case of an update, if the tax head estimates change, the difference in am
                     "tenantId": "pb.amritsar"
                 }
             ],
-
 ```
 
 After updating if the SEWERAGE\_CHARGE increases to 150 we add one more demand detail to account for the increased amount. The demand detail will be updated to:
 
-```text
+```
 "demandDetails": [
                 {
                     "id": "77ba1e93-a535-409c-b9d1-a312c409bd45",
@@ -496,23 +490,22 @@ After updating if the SEWERAGE\_CHARGE increases to 150 we add one more demand d
                     "tenantId": "pb.amritsar"
                 }
             ],
-
 ```
 
 RoundOff is bill based i.e every time bill is generated round off is adjusted so that the payable amount is the whole number. Individual SW\_ROUNDOFF in demand detail can be greater than 0.5 but the sum of all SW\_ROUNDOFF will always be less than 0.5.
 
-### Scheduler for generating the demand <a id="Scheduler-for-generating-the-demand:"></a>
+### Scheduler for generating the demand <a href="#scheduler-for-generating-the-demand" id="scheduler-for-generating-the-demand"></a>
 
 #### **Description**
 
 For generating the demand for non metered connection we have a feature for generating the demand in batch. The scheduler is responsible for generating the demand based on the tenant.
 
 * The scheduler can be hit by scheduler API or we can schedule cron job or we can put config to kubectl which will hit scheduler based on config.
-* After the scheduler been hit we will search the list of the tenant \(city\) present in the database.
+* After the scheduler been hit we will search the list of the tenant (city) present in the database.
 * After getting the tenants we will pick up tenant one by one and generate the demand for that tenant.
-* We will load the consumer codes for the tenant and push the calculation criteria to Kafka. Calculation criteria contain minimal information \(We are not pushing large data to Kafka\), calculation criteria contain consumer code and one boolean variable.
-* After pushing the data into Kafka we are consuming the records based on the batch configuration. Ex:-&gt; if the batch configuration is 50 so we will consume the 50 calculation criteria at a time.
-* After consuming the record\(Calculation criteria\) we will process the batch for generating the demand. If the batch is successful so will log the consumer codes which have been processed.
+* We will load the consumer codes for the tenant and push the calculation criteria to Kafka. Calculation criteria contain minimal information (We are not pushing large data to Kafka), calculation criteria contain consumer code and one boolean variable.
+* After pushing the data into Kafka we are consuming the records based on the batch configuration. Ex:-> if the batch configuration is 50 so we will consume the 50 calculation criteria at a time.
+* After consuming the record(Calculation criteria) we will process the batch for generating the demand. If the batch is successful so will log the consumer codes which have been processed.
 * If some records failed in batch so we will push the batch into dead letter batch topic. From the dead letter batch topic, we will process the batch one by one.
 * If the record is successful we will log the consumer code, If the record is failed so we will push the data into a dead letter single topic.
 * Dead letter single topic contains information about failure records in Kafka.
@@ -539,7 +532,7 @@ sw-calculator will be integrated with sw-service. sw-services internally invoke 
 
 ### Integration Benefits
 
-SW calculator application is used to calculate the sewerage application one time Fees and connection charges based on the different billing slabs that's why the calculation and demand generation logic will be separated out from SW service.  
+SW calculator application is used to calculate the sewerage application one time Fees and connection charges based on the different billing slabs that's why the calculation and demand generation logic will be separated out from SW service.\
 So in future, if calculation logic needs to modify then changes can be carried out for each implementation without modifying the SW service.
 
 ### Steps to Integration
@@ -552,28 +545,29 @@ So in future, if calculation logic needs to modify then changes can be carried o
 
 ## Reference Docs
 
-#### Doc Links <a id="Doc-Links"></a>
+#### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title**  | **Link** |
-| :--- | :--- |
-| API Swagger Contract | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/water-sewerage-services.yaml) |
-| Sewerage Service Document | [Sewerage Service](https://digit-discuss.atlassian.net/l/c/ZYtv10g0) |
+|                           |                                                                                                                                                                                                                  |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                 | **Link**                                                                                                                                                                                                         |
+| API Swagger Contract      | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/water-sewerage-services.yaml) |
+| Sewerage Service Document | [Sewerage Service](https://digit-discuss.atlassian.net/l/c/ZYtv10g0)                                                                                                                                             |
 
-#### API List <a id="API-List"></a>
+#### API List <a href="#api-list" id="api-list"></a>
 
-| Title | **Link** |
-| :--- | :--- |
-| /sw-calculator/sewerageCalculatorr/\_estimate | [https://www.getpostman.com/collections/e283373559ef0646d412](https://www.getpostman.com/collections/e283373559ef0646d412) |
-| /sw-calculator/sewerageCalculator/\_calculate | [https://www.getpostman.com/collections/e283373559ef0646d412](https://www.getpostman.com/collections/e283373559ef0646d412) |
-| /sw-calculator/sewerageCalculator/\_updateDemand | [https://www.getpostman.com/collections/e283373559ef0646d412](https://www.getpostman.com/collections/e283373559ef0646d412) |
-| /sw-calculator/sewerageCalculator/\_jobscheduler | [https://www.getpostman.com/collections/e283373559ef0646d412](https://www.getpostman.com/collections/e283373559ef0646d412) |
+|                                                   |                                                                                                                            |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Title                                             | **Link**                                                                                                                   |
+| /sw-calculator/sewerageCalculatorr/\_estimate     | [https://www.getpostman.com/collections/e283373559ef0646d412](https://www.getpostman.com/collections/e283373559ef0646d412) |
+| /sw-calculator/sewerageCalculator/\_calculate     | [https://www.getpostman.com/collections/e283373559ef0646d412](https://www.getpostman.com/collections/e283373559ef0646d412) |
+| /sw-calculator/sewerageCalculator/\_updateDemand  | [https://www.getpostman.com/collections/e283373559ef0646d412](https://www.getpostman.com/collections/e283373559ef0646d412) |
+| /sw-calculator/sewerageCalculator/\_jobscheduler  | [https://www.getpostman.com/collections/e283373559ef0646d412](https://www.getpostman.com/collections/e283373559ef0646d412) |
 | /sw-calculator/sewerageCalculator/\_applyAdhocTax | [https://www.getpostman.com/collections/e283373559ef0646d412](https://www.getpostman.com/collections/e283373559ef0646d412) |
 
-_\(Note: All the API’s are in the same postman collection therefore same link is added in each row\)_
+_(Note: All the API’s are in the same postman collection therefore same link is added in each row)_
 
 \_\_
 
 \_\_
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

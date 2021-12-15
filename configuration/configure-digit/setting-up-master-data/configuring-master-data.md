@@ -24,7 +24,7 @@ After adding the new module data, the MDMS service needs to be restarted to read
 
 The Master config file is structured as below. Each key in the Master config is a module and each key in the module is a master.
 
-```text
+```
 {
   "<module1>":{
     "<master1>":{},
@@ -50,12 +50,10 @@ Please check the link to create new master[ Adding New Master](https://digit-dis
 
 #### Doc Links
 
-| **Title** | **Link** |
-| :--- | :--- |
-| Sample Master config file | [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/playground-mdms-data/blob/master/master-config.json - Connect to preview](https://github.com/egovernments/playground-mdms-data/blob/master/master-config.json) |
-| Sample Module folder | [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/playground-mdms-data/tree/master/data/pg/TradeLicense - Connect to preview](https://github.com/egovernments/playground-mdms-data/tree/master/data/pg/TradeLicense) |
+|                           |                                                                                                                                                                                                                                                     |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                 | **Link**                                                                                                                                                                                                                                            |
+| Sample Master config file | [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/playground-mdms-data/blob/master/master-config.json - Connect to preview](https://github.com/egovernments/playground-mdms-data/blob/master/master-config.json)     |
+| Sample Module folder      | [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/playground-mdms-data/tree/master/data/pg/TradeLicense - Connect to preview](https://github.com/egovernments/playground-mdms-data/tree/master/data/pg/TradeLicense) |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

@@ -6,7 +6,7 @@
 
 A counter employee can use create an application form, to register a citizen’s property.
 
-![](../../../../.gitbook/assets/image%20%28190%29.png)
+![](<../../../../.gitbook/assets/image (190).png>)
 
 ## **Technical Implementation**
 
@@ -30,9 +30,9 @@ _for creating an application employee enters all the details of the form manuall
 
 _The MDMS data for documents is similar to that found in :_
 
-{% file src="../../../../.gitbook/assets/pt-mdms-configuration.pdf" caption="Property Tax MDMS Configuration" %}
-
-
+{% file src="../../../../.gitbook/assets/pt-mdms-configuration.pdf" %}
+Property Tax MDMS Configuration
+{% endfile %}
 
 \*\*with the noted addition of `formDataPath, formArrayAttrPath`, in `filterCondition` and `dropdownFilter` .
 
@@ -50,15 +50,11 @@ _which calls the property create API:_`1property-services/property/_create`
 
 If the Property creation is successful. then the employee is directed to this screen that shows Acknowledgement Id and the option to download a hardcopy of the acknowledgement containing property details.
 
-![](../../../../.gitbook/assets/image%20%28137%29.png)
+![](<../../../../.gitbook/assets/image (137) (5).png>)
 
 ## **Role Mapping**
 
-| **Url** | **ROLE** | **Action ID** |
-| :--- | :--- | :--- |
-| `property-services/property/_create` | `PT-CEMP` | `1895` |
-
-
-
-
-
+|                                      |           |               |
+| ------------------------------------ | --------- | ------------- |
+| **Url**                              | **ROLE**  | **Action ID** |
+| `property-services/property/_create` | `PT-CEMP` | `1895`        |

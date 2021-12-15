@@ -8,22 +8,23 @@ Logged User can able to Create Employee by providing necessary Details
 
 If a user enters a mobile number that already exists in the system - Then the application will give an error message.
 
-The Boundary is auto-filled with current `TenantId`.  The user is able to add Multiple Jurisdictions and Assignments.
+The Boundary is auto-filled with current `TenantId`. The user is able to add Multiple Jurisdictions and Assignments.
 
-![](../../../.gitbook/assets/image%20%28256%29.png)
+![](<../../../.gitbook/assets/image (256).png>)
 
-![](../../../.gitbook/assets/image%20%28258%29.png)
+![](<../../../.gitbook/assets/image (258).png>)
 
-![](../../../.gitbook/assets/image%20%28179%29.png)
+![](<../../../.gitbook/assets/image (179).png>)
 
-![](../../../.gitbook/assets/image%20%28171%29.png)
+![](<../../../.gitbook/assets/image (171).png>)
 
-| **SL No** | **API** | **ROLE** | **Access Id** |
-| :--- | :--- | :--- | :--- |
-| 1 | `/egov-hrms/employees/_create` | HRMS\_ADMIN | 1750 |
-| 2 | `/egov-hrms/employees/_search` | HRMS\_ADMIN | `1752` |
+|           |                                |             |               |
+| --------- | ------------------------------ | ----------- | ------------- |
+| **SL No** | **API**                        | **ROLE**    | **Access Id** |
+| 1         | `/egov-hrms/employees/_create` | HRMS\_ADMIN | 1750          |
+| 2         | `/egov-hrms/employees/_search` | HRMS\_ADMIN | `1752`        |
 
- Primary Files
+Primary Files
 
 [https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/createEmployee.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/createEmployee.js)
 
@@ -33,19 +34,20 @@ URL- digit-ui/employee/hrms/edit/{Employee Id}
 
 Logged User can able to Edit Employee Details. Employee Id is disabled.
 
-| **SL No** | **API** | **Role** | **Access Id** |
-| :--- | :--- | :--- | :--- |
-| 1. | `/egov-hrms/employees/_update` | HRMS\_ADMIN | `1751` |
+|           |                                |             |               |
+| --------- | ------------------------------ | ----------- | ------------- |
+| **SL No** | **API**                        | **Role**    | **Access Id** |
+| 1.        | `/egov-hrms/employees/_update` | HRMS\_ADMIN | `1751`        |
 
- Primary Files
+Primary Files
 
 [https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EditEmployee/EditForm.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EditEmployee/EditForm.js)
 
- [https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EditEmployee/index.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EditEmployee/index.js)
+[https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EditEmployee/index.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EditEmployee/index.js)
 
 ### MDMS API
 
-```text
+```
  moduleDetails: [
     {
       moduleName: "common-masters",
@@ -65,10 +67,3 @@ Logged User can able to Edit Employee Details. Employee Id is disabled.
     { moduleName: "egov-location", masterDetails: [{ name: "TenantBoundary" }] },
   ]
 ```
-
-
-
-
-
-
-

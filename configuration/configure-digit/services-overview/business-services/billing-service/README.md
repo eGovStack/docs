@@ -36,7 +36,7 @@ In the MDMS data configuration, the following master data is needed for the func
 
 Business Service JSON
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "BillingService",
@@ -84,7 +84,7 @@ Business Service JSON
 
 **TAX-Head JSON**
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "BillingService",
@@ -165,7 +165,7 @@ Business Service JSON
 
 Tax-Period JSON
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "BillingService",
@@ -214,48 +214,13 @@ Tax-Period JSON
 }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b> </b>
-      </th>
-      <th style="text-align:left"></th>
-      <th style="text-align:left"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">bs.businesscode.demand.updateurl</td>
-      <td style="text-align:left">
-        <p>{</p>
-        <p>&quot;PT&quot;:&quot;<a href="http://pt-calculator-v2:8080/pt-calculator-v2/propertytax/_updatedemand%22,%22TL%22:%22%22%7D">http://pt-calculator-v2:8080/pt-calculator-v2/propertytax/_updatedemand&quot;,</a>
-        </p>
-        <p><a href="http://pt-calculator-v2:8080/pt-calculator-v2/propertytax/_updatedemand%22,%22TL%22:%22%22%7D">&quot;TL&quot;:&quot;&quot;</a>
-        </p>
-        <p><a href="http://pt-calculator-v2:8080/pt-calculator-v2/propertytax/_updatedemand%22,%22TL%22:%22%22%7D">}</a>
-        </p>
-      </td>
-      <td style="text-align:left">Each module&#x2019;s application calculator should provide its own update
-        URL. if not present then a new bill will be generated without making any
-        changes to the demand.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">bs.bill.billnumber.format</td>
-      <td style="text-align:left">BILLNO-{module}-[SEQ_egbs_billnumber{tenantid}]</td>
-      <td style="text-align:left">IdGen format for the bill number</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">bs.amendment.idbs.bill.billnumber.format</td>
-      <td style="text-align:left">BILLNO-{module}-[SEQ_egbs_billnumber{tenantid}]</td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">is.amendment.workflow.enabled</td>
-      <td style="text-align:left">true/false</td>
-      <td style="text-align:left">enable disable workflow of bill amendment</td>
-    </tr>
-  </tbody>
-</table>
+|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                    |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                    |
+| bs.businesscode.demand.updateurl         | <p>{</p><p>"PT":"<a href="http://pt-calculator-v2:8080/pt-calculator-v2/propertytax/_updatedemand%22,%22TL%22:%22%22%7D">http://pt-calculator-v2:8080/pt-calculator-v2/propertytax/_updatedemand",</a></p><p><a href="http://pt-calculator-v2:8080/pt-calculator-v2/propertytax/_updatedemand%22,%22TL%22:%22%22%7D">"TL":""</a></p><p><a href="http://pt-calculator-v2:8080/pt-calculator-v2/propertytax/_updatedemand%22,%22TL%22:%22%22%7D">}</a></p> | Each module’s application calculator should provide its own update URL. if not present then a new bill will be generated without making any changes to the demand. |
+| bs.bill.billnumber.format                | BILLNO-{module}-\[SEQ\_egbs\_billnumber{tenantid}]                                                                                                                                                                                                                                                                                                                                                                                                       | IdGen format for the bill number                                                                                                                                   |
+| bs.amendment.idbs.bill.billnumber.format | BILLNO-{module}-\[SEQ\_egbs\_billnumber{tenantid}]                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                    |
+| is.amendment.workflow.enabled            | true/false                                                                                                                                                                                                                                                                                                                                                                                                                                               | enable disable workflow of bill amendment                                                                                                                          |
 
 ## Integration Details
 
@@ -278,7 +243,7 @@ Billing service can be integrated with any organization or system that wants a d
 5. Bills can be searched using /bill/\_search.
 6. Amendment facility can be used in case of a legal issue to add values to existing demands using /amendment/\_create and /amendment/\_update can be used to cancel the created ones or update workflow if configured.
 
-### Interaction Diagram <a id="Interaction-Diagram"></a>
+### Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
 **Interaction Diagram V1.1:**
 
@@ -288,19 +253,21 @@ Billing service can be integrated with any organization or system that wants a d
 
 **Doc Links**
 
-| **Title**  | **Link** |
-| :--- | :--- |
-|  Id-Gen service |  **** |
-| url-shortening |   |
-|  MDMS |   |
+|                |          |
+| -------------- | -------- |
+| **Title**      | **Link** |
+| Id-Gen service | \*\*\*\* |
+| url-shortening |          |
+| MDMS           |          |
 
 **API List**
 
-| **Title**  | **Link** |
-| :--- | :--- |
-|  /demand/\_create, \_update, \_search | [https://www.getpostman.com/collections/900d99a85d083fb2d377](https://www.getpostman.com/collections/900d99a85d083fb2d377) |
-|  /bill/\_fetchbill, \_search | [https://www.getpostman.com/collections/900d99a85d083fb2d377](https://www.getpostman.com/collections/900d99a85d083fb2d377) |
-| /amendment/\_create, \_update | [https://www.getpostman.com/collections/b195d3b1d354c767b6bd](https://www.getpostman.com/collections/b195d3b1d354c767b6bd) |
+|                                      |                                                                                                                            |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                            | **Link**                                                                                                                   |
+| /demand/\_create, \_update, \_search | [https://www.getpostman.com/collections/900d99a85d083fb2d377](https://www.getpostman.com/collections/900d99a85d083fb2d377) |
+| /bill/\_fetchbill, \_search          | [https://www.getpostman.com/collections/900d99a85d083fb2d377](https://www.getpostman.com/collections/900d99a85d083fb2d377) |
+| /amendment/\_create, \_update        | [https://www.getpostman.com/collections/b195d3b1d354c767b6bd](https://www.getpostman.com/collections/b195d3b1d354c767b6bd) |
 
 ## **Apportioning FAQs**
 
@@ -310,99 +277,95 @@ Adjusting the receivable amount with the individual tax head.
 
 **Types of apportioning V1.1**
 
-Default order based apportioning\(Based on apportioning order adjust the received amount with each tax head\).V1.1
+Default order based apportioning(Based on apportioning order adjust the received amount with each tax head).V1.1
 
-**Types of apportioning V1.2: \(TBD\)**
+**Types of apportioning V1.2: (TBD)**
 
-* Proportionate based apportioning \(Adjust total receivable with all the tax head equally\)
-* Order & Percentage based apportioning\(Adjust total receivable based on order and the percentage which is defined for each tax head\).
+* Proportionate based apportioning (Adjust total receivable with all the tax head equally)
+* Order & Percentage based apportioning(Adjust total receivable based on order and the percentage which is defined for each tax head).
 
 **Principle of apportioning**
 
- The basic principle of apportioning is, if the full amount is paid for any bill then each individual tax head should get nullify with their corresponding adjusted amount.
+The basic principle of apportioning is, if the full amount is paid for any bill then each individual tax head should get nullify with their corresponding adjusted amount.
 
-**Example**:  
-**Case 1:** When there are no arrears all tax heads belong to their current purpose:  
- 
+**Example**:\
+**Case 1:** When there are no arrears all tax heads belong to their current purpose:
 
-| **TaxHead** | **Amount** | **Order** | **Full Payment\(2000\)** | **Partial Payment1\(1500\)** | **Partial payment2\(750\)** | **Partial payment2 with rebate\(500\)** |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Pt\_tax | 1000 | 6 | 1000 | 1000 | 750 | 750 |
-| AdjustedAmt |   |   | 1000 | -250 | -750 | -750 |
-|   |   |   |   |    |   |   |
-| RemainingAMTfromPayableAMT |    |   | 0 | 0 | 0 | 0 |
-| Penality | 500 | 5 | 500 | 500 |   |   |
-| AdjustedAmt |   |   | 500 | -500 |   |   |
-| RemainingAMTfromPayableAMT |   |   | 1000 | 250 |   |   |
-|   |   |   |   |   |   |   |
-|   |   |   |   |    |   |   |
-| Interest | 500 | 4 | 500 | 500 |   |   |
-| AdjustedAmt |   |   | 500 | -500 |   |   |
-| RemainingAMTfromPayableAMT |   |   | 1500 | 750 |   |   |
-|   |   |   |   |   |   |   |
-| Cess | 500 | 3 | 500 | 500 |   |   |
-| AdjustedAmt |   |   | 500 | -500 |   |   |
-| RemainingAMTfromPayableAMT |   |   | 2000 | 1250 |   |   |
-|   |   |   |   |   |   |   |
-| Exm | -250 | 1 | -250 | -250 |   |   |
-| AdjustedAmt |   |   | -250 | 250 |   |   |
-| RemainingAMTfromPayableAMT |   |   | 2250 | 1750 |   |   |
-|   |   |   |   |   |   |   |
-| Rebate | -250 | 2 | -250 |   |   | -250 |
-| AdjustedAmt |   |   | -250 |   |   | 250 |
-| RemainingAMTfromPayableAMT |   |   | 2500 |   |   | 750 |
+|                            |            |           |                        |                            |                           |                                       |
+| -------------------------- | ---------- | --------- | ---------------------- | -------------------------- | ------------------------- | ------------------------------------- |
+| **TaxHead**                | **Amount** | **Order** | **Full Payment(2000)** | **Partial Payment1(1500)** | **Partial payment2(750)** | **Partial payment2 with rebate(500)** |
+| Pt\_tax                    | 1000       | 6         | 1000                   | 1000                       | 750                       | 750                                   |
+| AdjustedAmt                |            |           | 1000                   | -250                       | -750                      | -750                                  |
+|                            |            |           |                        |                            |                           |                                       |
+| RemainingAMTfromPayableAMT |            |           | 0                      | 0                          | 0                         | 0                                     |
+| Penality                   | 500        | 5         | 500                    | 500                        |                           |                                       |
+| AdjustedAmt                |            |           | 500                    | -500                       |                           |                                       |
+| RemainingAMTfromPayableAMT |            |           | 1000                   | 250                        |                           |                                       |
+|                            |            |           |                        |                            |                           |                                       |
+|                            |            |           |                        |                            |                           |                                       |
+| Interest                   | 500        | 4         | 500                    | 500                        |                           |                                       |
+| AdjustedAmt                |            |           | 500                    | -500                       |                           |                                       |
+| RemainingAMTfromPayableAMT |            |           | 1500                   | 750                        |                           |                                       |
+|                            |            |           |                        |                            |                           |                                       |
+| Cess                       | 500        | 3         | 500                    | 500                        |                           |                                       |
+| AdjustedAmt                |            |           | 500                    | -500                       |                           |                                       |
+| RemainingAMTfromPayableAMT |            |           | 2000                   | 1250                       |                           |                                       |
+|                            |            |           |                        |                            |                           |                                       |
+| Exm                        | -250       | 1         | -250                   | -250                       |                           |                                       |
+| AdjustedAmt                |            |           | -250                   | 250                        |                           |                                       |
+| RemainingAMTfromPayableAMT |            |           | 2250                   | 1750                       |                           |                                       |
+|                            |            |           |                        |                            |                           |                                       |
+| Rebate                     | -250       | 2         | -250                   |                            |                           | -250                                  |
+| AdjustedAmt                |            |           | -250                   |                            |                           | 250                                   |
+| RemainingAMTfromPayableAMT |            |           | 2500                   |                            |                           | 750                                   |
 
-   
-**Case 2:** Apportioning with two years of arrear:  
-If the current financial year is 2014-15. Below are the demands  
+**Case 2:** Apportioning with two years of arrear:\
+If the current financial year is 2014-15. Below are the demands
 
+|             |            |                   |                 |           |             |
+| ----------- | ---------- | ----------------- | --------------- | --------- | ----------- |
 | **TaxHead** | **Amount** | **TaxPeriodFrom** | **TaxPeriodTo** | **Order** | **Purpose** |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-|   |   |   |   |   |   |
-| Pt\_tax | 1000 | 2014 | 2015 | 6 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Penality | 500 | 2014 | 2015 | 5 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Interest | 500 | 2014 | 2015 | 4 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Cess | 500 | 2014 | 2015 | 3 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Exm | -250 | 2014 | 2015 | 1 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
+|             |            |                   |                 |           |             |
+| Pt\_tax     | 1000       | 2014              | 2015            | 6         | Current     |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Penality    | 500        | 2014              | 2015            | 5         | Current     |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Interest    | 500        | 2014              | 2015            | 4         | Current     |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Cess        | 500        | 2014              | 2015            | 3         | Current     |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Exm         | -250       | 2014              | 2015            | 1         | Current     |
+| AdjustedAmt | 0          |                   |                 |           |             |
 
 if any payment is not done, and we generating demand in 2015-16 then the demand structure will as follows:
 
+|             |            |                   |                 |           |             |
+| ----------- | ---------- | ----------------- | --------------- | --------- | ----------- |
 | **TaxHead** | **Amount** | **TaxPeriodFrom** | **TaxPeriodTo** | **Order** | **Purpose** |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-|   |   |   |   |   |   |
-| Pt\_tax | 1000 | 2014 | 2015 | 6 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Pt\_tax | 1500 | 2015 | 2016 | 6 |  Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |    |   |
-| Penalty | 600 | 2014 | 2015 | 5 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Penalty | 500 | 2015 | 2016 | 5 | Current |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Interest | 500 | 2014 |   | 4 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Cess | 500 | 2014 |   | 3 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
-|   |   |   |   |   |   |
-| Exm | -250 | 2014 |   | 1 | Arrear |
-| AdjustedAmt | 0 |   |   |   |   |
+|             |            |                   |                 |           |             |
+| Pt\_tax     | 1000       | 2014              | 2015            | 6         | Arrear      |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Pt\_tax     | 1500       | 2015              | 2016            | 6         | Current     |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Penalty     | 600        | 2014              | 2015            | 5         | Arrear      |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Penalty     | 500        | 2015              | 2016            | 5         | Current     |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Interest    | 500        | 2014              |                 | 4         | Arrear      |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Cess        | 500        | 2014              |                 | 3         | Arrear      |
+| AdjustedAmt | 0          |                   |                 |           |             |
+|             |            |                   |                 |           |             |
+| Exm         | -250       | 2014              |                 | 1         | Arrear      |
+| AdjustedAmt | 0          |                   |                 |           |             |
 
-
-
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

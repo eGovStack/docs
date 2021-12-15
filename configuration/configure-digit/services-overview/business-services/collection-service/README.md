@@ -33,27 +33,28 @@ The Collection service is to serve as a revenue collection platform for all the 
 
 * deploy the latest version of the collection-services docker build.
 
-## **Configuration Details** <a id="Configuration-Details:"></a>
+## **Configuration Details** <a href="#configuration-details" id="configuration-details"></a>
 
 The MDMS data configuration uses the same data updated by Billing-Service
 
-[Billing Service \| Configuration-Details:](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service#Configuration-Details%3A) Refer MDMS data config from here.
+[Billing Service | Configuration-Details:](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service#Configuration-Details%3A) Refer MDMS data config from here.
 
- Following are the properties in the application.properties
+Following are the properties in the application.properties
 
-| **Property** | **Value** | **Remarks** |
-| :--- | :--- | :--- |
-| `collection.receipts.search.paginate` | true/false | By setting this property true, show you the search result of receipt in a bucket\(page\) which contains a certain number of records. |
-| `is.payment.search.uri.modulename.mandatory=true` | TRUE/FALSE | Make module name in URI path mandatory |
-| `collection.receipts.search.default.size` | Certain number \(say 30\) | Give the 30 records at a time and next 30 results are in the next page. |
-| `collection.is.user.create.enabled` | true/false | By setting this property true, enabling the creation of user with receipt creation |
-| `receiptnumber.idname` | [receipt.id - Registered at Namecheap.com](http://receipt.id/) | This property is used for creation of receipt number using ID-GEN service |
-| `receiptnumber.servicebased` | true/false | If servicebased is set to false, use default state level format for the format of receipt number and if it is set to true the format for the receipt number has to be mentioned in MDMS |
-| `receiptnumber.state.level.format` | \[cy:MM\]/\[fy:yyyy-yy\]/\[SEQ\_COLL\_RCPT\_NUM\] | Default state level format for the receipt number. |
-| `collection.payments.search.paginate` | true/false | By setting this property true, show you the search result of payment records in a bucket\(page\) which contains a certain number of records. |
-| \`\`[`kafka.topics.payment.create.name`](http://kafka.topics.payment.create.name/)\`\` | egov.collection.payment-create | The kafka topic on which the record has to push/pull when payment is created. |
-| \`\`[`kafka.topics.payment.cancel.name`](http://kafka.topics.payment.cancel.name/)\`\` | egov.collection.payment-cancel | The kafka topic on which the record has to push/pull when payment is cancelled. |
-| [`kafka.topics.payment.update.name`](http://kafka.topics.payment.update.name/)\`\` | egov.collection.payment-update | The kafka topic on which the record has to push/pull when payment is updated. |
+|                                                                                       |                                                               |                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Property**                                                                          | **Value**                                                     | **Remarks**                                                                                                                                                                             |
+| `collection.receipts.search.paginate`                                                 | true/false                                                    | By setting this property true, show you the search result of receipt in a bucket(page) which contains a certain number of records.                                                      |
+| `is.payment.search.uri.modulename.mandatory=true`                                     | TRUE/FALSE                                                    | Make module name in URI path mandatory                                                                                                                                                  |
+| `collection.receipts.search.default.size`                                             | Certain number (say 30)                                       | Give the 30 records at a time and next 30 results are in the next page.                                                                                                                 |
+| `collection.is.user.create.enabled`                                                   | true/false                                                    | By setting this property true, enabling the creation of user with receipt creation                                                                                                      |
+| `receiptnumber.idname`                                                                | [receipt.id - Registered at Namecheap.com](http://receipt.id) | This property is used for creation of receipt number using ID-GEN service                                                                                                               |
+| `receiptnumber.servicebased`                                                          | true/false                                                    | If servicebased is set to false, use default state level format for the format of receipt number and if it is set to true the format for the receipt number has to be mentioned in MDMS |
+| `receiptnumber.state.level.format`                                                    | \[cy:MM]/\[fy:yyyy-yy]/\[SEQ\_COLL\_RCPT\_NUM]                | Default state level format for the receipt number.                                                                                                                                      |
+| `collection.payments.search.paginate`                                                 | true/false                                                    | By setting this property true, show you the search result of payment records in a bucket(page) which contains a certain number of records.                                              |
+| \`\`[`kafka.topics.payment.create.name`](http://kafka.topics.payment.create.name)\`\` | egov.collection.payment-create                                | The kafka topic on which the record has to push/pull when payment is created.                                                                                                           |
+| \`\`[`kafka.topics.payment.cancel.name`](http://kafka.topics.payment.cancel.name)\`\` | egov.collection.payment-cancel                                | The kafka topic on which the record has to push/pull when payment is cancelled.                                                                                                         |
+| [`kafka.topics.payment.update.name`](http://kafka.topics.payment.update.name)\`\`     | egov.collection.payment-update                                | The kafka topic on which the record has to push/pull when payment is updated.                                                                                                           |
 
 ## Integration
 
@@ -81,24 +82,21 @@ Collection service can be integrated with any organization or system that wants 
 
 **Doc Links**
 
-| **Title**  | **Link** |
-| :--- | :--- |
-|  Billing-service |  [Billing Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service) |
-|  Id-Gen service |   |
-| url-shortening |   |
-|  MDMS |   |
+|                 |                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------ |
+| **Title**       | **Link**                                                                                               |
+| Billing-service | [Billing Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service) |
+| Id-Gen service  |                                                                                                        |
+| url-shortening  |                                                                                                        |
+| MDMS            |                                                                                                        |
 
 **API List**
 
-| **Title**  | **Link** |
-| :--- | :--- |
-|  /payments/\_create | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
-|  /payments/\_update | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
+|                      |                                                                                                                            |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Title**            | **Link**                                                                                                                   |
+| /payments/\_create   | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
+| /payments/\_update   | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
 | /payments/\_workflow | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
 
-
-
-
-
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Water Calculator Service is used for creating meter reading, searching meter reading, updating existing meter reading, calculation of water charge, demand generation, SMS & email notification to ULB officials on-demand generation and estimation of water charge\(one-time cost\) which involves cost like road-cutting charge, form fee, scrutiny fee, etc.
+Water Calculator Service is used for creating meter reading, searching meter reading, updating existing meter reading, calculation of water charge, demand generation, SMS & email notification to ULB officials on-demand generation and estimation of water charge(one-time cost) which involves cost like road-cutting charge, form fee, scrutiny fee, etc.
 
 ## Pre-requisites
 
@@ -23,18 +23,18 @@ Before you proceed with the documentation, make sure the following pre-requisite
 * Calculate water charge and taxes based on billing slab.
 * Calculate meter reading charge for water connection
 * Generate demand
-* Scheduler for generating the demand\(for non metered connection\)
+* Scheduler for generating the demand(for non metered connection)
 
 ## Deployment Details
 
 1. Deploy the latest version of ws-service and ws-calculator
-2. Add water-persist.yml & water-meter.yml file in config folder in git and add that path in persister . _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
+2. Add water-persist.yml & water-meter.yml file in config folder in git and add that path in persister . _(The file path is to be added in environment yaml file in param called_ persist-yml-path _)_
 
 ## Configuration Details
 
-#### MDMS Configuration <a id="MDMS-Configuration"></a>
+#### MDMS Configuration <a href="#mdms-configuration" id="mdms-configuration"></a>
 
-#### **Billing Slabs:** <a id="Billing-Slabs:"></a>
+#### **Billing Slabs:** <a href="#billing-slabs" id="billing-slabs"></a>
 
 Criteria :
 
@@ -45,7 +45,7 @@ Criteria :
 
 The combination of the above can be used to define the billing slab. Billing Slab is defined in MDMS under ws-services-calculation folder with the [WCBillingSlab](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/ws-services-calculation/WCBillingSlab.json). The following is the sample slab.
 
-```text
+```
 {
       "id": "1",
       "buildingType": "RESIDENTIAL",
@@ -85,12 +85,11 @@ The combination of the above can be used to define the billing slab. Billing Sla
         }
       ]
     }
-
 ```
 
 If all criteria will match for that water connection this slab will use for calculation.
 
-#### **Estimation** <a id="Estimation:"></a>
+#### **Estimation** <a href="#estimation" id="estimation"></a>
 
 For application one-time fee, the estimation will return all the related tax head based on criteria. For estimation, all configuration is present in ws-services-calculation.
 
@@ -104,14 +103,14 @@ Following are the exemptions and taxes that are calculated:
 
 * Form fee
 * Scrutiny fee
-* Meter charge \(For metered connection\)
+* Meter charge (For metered connection)
 * Other charges
 * Road cutting charges
 * One time fee
 * Security charges
 * Tax and cess
 
-#### Water Charge and Tax <a id="Water-Charge-and-Tax:"></a>
+#### Water Charge and Tax <a href="#water-charge-and-tax" id="water-charge-and-tax"></a>
 
 Water charge is based on billing slab, for water application charge will be based on slab and tax based on master configuration.
 
@@ -119,7 +118,7 @@ Water charge is based on billing slab, for water application charge will be base
 
 Below is a sample of master data JSON for interest :
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "ws-services-calculation",
@@ -135,14 +134,13 @@ Below is a sample of master data JSON for interest :
     }
   ]
 }
-
 ```
 
 **Penalty**
 
 Below is a sample of master data JSON for penalty :
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "ws-services-calculation",
@@ -157,18 +155,17 @@ Below is a sample of master data JSON for penalty :
     }
   ]
 }
-
 ```
 
 **Round Off**
 
 If the fraction is greater than equal to 0.5 the number is round up else it’s round down. eg: 100.4 will be rounded to 100 while 100.6 will be rounded to 101.
 
-#### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
+#### Actions & Role Action Mapping <a href="#actions-and-role-action-mapping" id="actions-and-role-action-mapping"></a>
 
 **Actions**
 
-```text
+```
 [
   {
       "id": {{PLACEHOLDER1}},
@@ -227,12 +224,11 @@ If the fraction is greater than equal to 0.5 the number is round up else it’s 
     }
 ]
 
-
 ```
 
 **Role Action Mapping**
 
-```text
+```
 [
     {
       "rolecode": "WS_CEMP",
@@ -312,7 +308,7 @@ Whenever \_calculate API is called demand is first searched based on the connect
 
 In the case of an update, if the tax head estimates change, the difference in amount for that tax head is added as new demand detail. For example, if the initial demand has one demand detail with WATER\_CHARGE equal to 120
 
-```text
+```
 "demandDetails": [
                 {
                     "id": "77ba1e93-a535-409c-b9d1-a312c409bd45",
@@ -330,12 +326,11 @@ In the case of an update, if the tax head estimates change, the difference in am
                     "tenantId": "pb.amritsar"
                 }
             ],
-
 ```
 
 After updating if the WATER\_CHARGE increases to 150 we add one more demand detail to account for the increased amount. The demand detail will be updated to:
 
-```text
+```
 "demandDetails": [
                 {
                     "id": "77ba1e93-a535-409c-b9d1-a312c409bd45",
@@ -368,23 +363,22 @@ After updating if the WATER\_CHARGE increases to 150 we add one more demand deta
                     "tenantId": "pb.amritsar"
                 }
             ],
-
 ```
 
 RoundOff is bill based i.e every time bill is generated round off is adjusted so that the payable amount is the whole number. Individual WS\_ROUNDOFF in demand detail can be greater than 0.5 but the sum of all WS\_ROUNDOFF will always be less than 0.5.
 
-### Scheduler for generating the demand \(For non metered connection\): <a id="Scheduler-for-generating-the-demand(For-non-metered-connection):"></a>
+### Scheduler for generating the demand (For non metered connection): <a href="#scheduler-for-generating-the-demand-for-non-metered-connection" id="scheduler-for-generating-the-demand-for-non-metered-connection"></a>
 
 _**Description :**_
 
 For generating the demand for non metered connection we have a feature for generating the demand in batch. The scheduler is responsible for generating the demand based on the tenant.
 
 * The scheduler can be hit by scheduler API or we can schedule cron job or we can put config to kubectl which will hit scheduler based on config.
-* After the scheduler been hit we will search the list of the tenant \(city\) present in the database.
+* After the scheduler been hit we will search the list of the tenant (city) present in the database.
 * After getting the tenants we will pick up tenant one by one and generate the demand for that tenant.
-* We will load the consumer codes for the tenant and push the calculation criteria to Kafka. Calculation criteria contain minimal information \(We are not pushing large data to Kafka\), calculation criteria contain consumer code and one boolean variable.
-* After pushing the data into Kafka we are consuming the records based on the batch configuration. Ex:-&gt; if the batch configuration is 50 so we will consume the 50 calculation criteria at a time.
-* After consuming the record\(Calculation criteria\) we will process the batch for generating the demand. If the batch is successful so will log the consumer codes which have been processed.
+* We will load the consumer codes for the tenant and push the calculation criteria to Kafka. Calculation criteria contain minimal information (We are not pushing large data to Kafka), calculation criteria contain consumer code and one boolean variable.
+* After pushing the data into Kafka we are consuming the records based on the batch configuration. Ex:-> if the batch configuration is 50 so we will consume the 50 calculation criteria at a time.
+* After consuming the record(Calculation criteria) we will process the batch for generating the demand. If the batch is successful so will log the consumer codes which have been processed.
 * If some records failed in batch so we will push the batch into dead letter batch topic. From the dead letter batch topic, we will process the batch one by one.
 * If the record is successful we will log the consumer code, If the record is failed so we will push the data into a dead letter single topic.
 * Dead letter single topic contains information about failure records in Kafka.
@@ -411,12 +405,12 @@ ws-calculator will be integrated with ws-service. ws-services internally invoke 
 
 ### Integration Benefits
 
-WS calculator application is used to calculate the water application one time Fees and meter reading charges based on the different billing slabs that's why the calculation and demand generation logic will be separated out from the WS service.  
+WS calculator application is used to calculate the water application one time Fees and meter reading charges based on the different billing slabs that's why the calculation and demand generation logic will be separated out from the WS service.\
 So in future, if calculation logic needs to modify then changes can be carried out for each implementation without modifying the WS service.
 
 ### Steps to Integration
 
-1.  Once the water connection is activated for metered-connection, employee can add meter reading details using this API - /ws-calculator/meterConnection/\_createwhich in-turn will generate the demand. For the Non-Metered connections, the scheduler APIs need to be called periodically to generate the demand.
+1. Once the water connection is activated for metered-connection, employee can add meter reading details using this API - /ws-calculator/meterConnection/\_createwhich in-turn will generate the demand. For the Non-Metered connections, the scheduler APIs need to be called periodically to generate the demand.
 2. For the Metered Connection service, to get the previous meter reading /meterConnection/\_search API is used.
 3. To Activate the Water Service application, the user needs to pay the ONE\_TIME\_FEE for the connection. To calculate the ONE\_TIME\_FEE /waterCalculator/\_estimate API is used.
 4. To generate the demand for metered or non-metered water connection /waterCalculator/\_calculate API is used.
@@ -426,30 +420,31 @@ So in future, if calculation logic needs to modify then changes can be carried o
 
 ## Reference Docs
 
-#### Doc Links <a id="Doc-Links"></a>
+#### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title**  | **Link** |
-| :--- | :--- |
-| API Swagger Contract | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/water-sewerage-services.yaml) |
-| Water Service Document | [Water Service](https://digit-discuss.atlassian.net/l/c/JQVK4F1K) |
+|                        |                                                                                                                                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**              | **Link**                                                                                                                                                                                                         |
+| API Swagger Contract   | [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/water-sewerage-services.yaml) |
+| Water Service Document | [Water Service](https://digit-discuss.atlassian.net/l/c/JQVK4F1K)                                                                                                                                                |
 
-#### API List <a id="API-List"></a>
+#### API List <a href="#api-list" id="api-list"></a>
 
-| Title | **Link** |
-| :--- | :--- |
+|                                         |                                                                                                                            |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Title                                   | **Link**                                                                                                                   |
 | /ws-calculator/meterConnection/\_create | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
 | /ws-calculator/meterConnection/\_search | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
-| /waterCalculator/\_estimate | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
-| /waterCalculator/\_calculate | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
-| /waterCalculator/\_updateDemand | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
-| /waterCalculator/\_jobscheduler | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
-| /waterCalculator/\_applyAdhocTax | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
+| /waterCalculator/\_estimate             | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
+| /waterCalculator/\_calculate            | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
+| /waterCalculator/\_updateDemand         | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
+| /waterCalculator/\_jobscheduler         | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
+| /waterCalculator/\_applyAdhocTax        | [https://www.getpostman.com/collections/b9a7bde133b0e1fa465f](https://www.getpostman.com/collections/b9a7bde133b0e1fa465f) |
 
-_\(Note: All the API’s are in the same postman collection therefore same link is added in each row\)_
-
-\_\_
+_(Note: All the API’s are in the same postman collection therefore same link is added in each row)_
 
 \_\_
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+\_\_
 
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

@@ -21,15 +21,15 @@ Before you proceed with the configuration, make sure the following pre-requisite
 ### Deployment Details
 
 1. Deploy the latest version of egov-workflow-v2 service
-2. Add Role-Action mapping for BusinessService API’s \(preferably add \_create and update only for SUPERUSER. search can be added for CITIZEN and required employee roles like TL\_\_CEMP etc. \)
-3. Overwrite the egov.wf.statelevel flag \( _true_ for state level and _false_ for tenant level\)
+2. Add Role-Action mapping for BusinessService API’s (preferably add \_create and update only for SUPERUSER. search can be added for CITIZEN and required employee roles like TL\_\_CEMP etc. )
+3. Overwrite the egov.wf.statelevel flag ( _true_ for state level and _false_ for tenant level)
 4. Add businessService persister yaml path in persister configuration
 
 ### Configuration Details
 
 Create the businessService JSON based on product requirement. Following is a sample json of a simple 2 step workflow where an application can be applied by citizen or counter employee and then can be either rejected or approved by the approver.
 
-```text
+```
 {
       "tenantId": "pb",
       "businessService": "PGR",
@@ -104,7 +104,7 @@ Create the businessService JSON based on product requirement. Following is a sam
 
 Once the businessService json is created add it in the request body of _\_create_ API of workflow and call the API to create the workflow.
 
-To update the workflow first search the workflow object using _\_search_ API and then make changes in the businessService object and then call _\_update_ using the modified search result. \(States cannot be removed using _\_update_ API as it will leave applications in that state in an invalid state. In such cases first, all the applications in that state should be moved forward or backward state and then the state should be disabled through DB directly\)
+To update the workflow first search the workflow object using _\_search_ API and then make changes in the businessService object and then call _\_update_ using the modified search result. (States cannot be removed using _\_update_ API as it will leave applications in that state in an invalid state. In such cases first, all the applications in that state should be moved forward or backward state and then the state should be disabled through DB directly)
 
 ### Integration
 
@@ -119,29 +119,30 @@ Integrating with workflow service provides a way to have a dynamic workflow conf
 #### Steps to Integration
 
 1. To integrate, host of egov-workflow-v2 should be overwritten in helm chart
-2. _/egov-workflow-v2/egov-wf/businessservice/\_search_ should be added as the endpoint for searching workflow configuration. \(Other endpoints are not required once workflow configuration is created\)
+2. _/egov-workflow-v2/egov-wf/businessservice/\_search_ should be added as the endpoint for searching workflow configuration. (Other endpoints are not required once workflow configuration is created)
 3. The configuration can be fetched by calling _\_search_ API
 
 ### Reference Docs
 
 #### Doc Links
 
-| **Title** | **Link** |
-| :--- | :--- |
-| [Configuring Workflows For New Product/Entity](configuring-workflow-for-an-entity.md) |  |
-| Workflow  Service Documentation | [https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
+|                                                                                       |                                                                                                                                                                            |
+| ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                                                                             | **Link**                                                                                                                                                                   |
+| [Configuring Workflows For New Product/Entity](configuring-workflow-for-an-entity.md) |                                                                                                                                                                            |
+| Workflow Service Documentation                                                        | [https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
 
 #### API List
 
-|  | **Link** |
-| :--- | :--- |
+|            |                                                                                                                            |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------- |
+|            | **Link**                                                                                                                   |
 | _\_create_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 | _\_update_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 | _\_search_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 
-_\(Note: All the API’s are in the same postman collection therefore the same link is added in each row\)_
+_(Note: All the API’s are in the same postman collection therefore the same link is added in each row)_
 
 \_\_
 
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

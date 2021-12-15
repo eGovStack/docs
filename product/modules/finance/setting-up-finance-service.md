@@ -1,17 +1,17 @@
 # Finance Service Configuration
 
-### **Overview** <a id="Overview"></a>
+### **Overview** <a href="#overview" id="overview"></a>
 
 This document describes the steps to be followed to set up a new instance of Finance. When a new state or city is to be set up, there are some activities to be executed in a defined order. Setting up an instance of an application server and configuration changes etc are a few of the key activities.
 
-### **Technical Prerequisites** <a id="Technical-Prerequisites"></a>
+### **Technical Prerequisites** <a href="#technical-prerequisites" id="technical-prerequisites"></a>
 
 * Prior Knowledge of Java/J2EE.
 * Prior Knowledge of Spring and Hibernate
 * Prior knowledge of Maven
 * Prior knowledge of Git.
 
-### **Hardware/Software Prerequisites** <a id="Hardware/Software-Prerequisites"></a>
+### **Hardware/Software Prerequisites** <a href="#hardware-software-prerequisites" id="hardware-software-prerequisites"></a>
 
 * Maven v3.2.x
 * PostgreSQL v9.6
@@ -21,33 +21,33 @@ This document describes the steps to be followed to set up a new instance of Fin
 * Create subdomains under the main domain for each of the cities that are to be set up
 * Create a schema per city in the database
 
-### **Configurations and Setup** <a id="Configurations-and-Setup"></a>
+### **Configurations and Setup** <a href="#configurations-and-setup" id="configurations-and-setup"></a>
 
 The [Co-existence repository](https://github.com/egovernments/egov-coexistence) is the base repository for the finance product and the client-specific data needs to be defined in the [Client implementation repository](https://github.com/egovernments/eGov-Punjab-Implementation/tree/punjab-financeerp-impl)
 
-#### **How to set up a client implementation repository** <a id="How-to-set-up-a-client-implementation-repository"></a>
+#### **How to set up a client implementation repository** <a href="#how-to-set-up-a-client-implementation-repository" id="how-to-set-up-a-client-implementation-repository"></a>
 
 1. Fork and create a client implementation repository from [Client implementation repository](https://github.com/egovernments/eGov-Punjab-Implementation/tree/punjab-financeerp-impl) to keep client-specific data and configurations.
 2. Any configurations and data specific to the client should be added in the client repository.
 
-#### **Application Configuration** <a id="Application-Configuration"></a>
+#### **Application Configuration** <a href="#application-configuration" id="application-configuration"></a>
 
 * The default application configurations of the finance service are present in the [application configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file. To enable or disable any feature, either update the values in the [application configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file or the [override configuration](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/templates/override-configmap.yaml) file.
-* The [override configuration](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/templates/override-configmap.yaml) is the template and the values for the template are present either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or in the environment named yaml file. The [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml is the common file to override the default values and the changes made to this file are applicable for all environments \(dev, qa, uat, prod etc\).
+* The [override configuration](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/templates/override-configmap.yaml) is the template and the values for the template are present either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or in the environment named yaml file. The [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml is the common file to override the default values and the changes made to this file are applicable for all environments (dev, qa, uat, prod etc).
 * Any specific configuration change is required for any specific environment then update the environment named yaml file.
 
 Sample environment named yaml files for your reference
 
-```text
+```
 https://github.com/egovernments/Train-InfraOps/blob/master/helm/environments/qa.yaml
 https://github.com/egovernments/Train-InfraOps/blob/master/helm/environments/uat.yaml
 ```
 
-#### **Database configuration** <a id="Database-configuration"></a>
+#### **Database configuration** <a href="#database-configuration" id="database-configuration"></a>
 
 Add or update the db url in the [environment specific](https://github.com/egovernments/Train-InfraOps/blob/master/helm/environments/qa.yaml) file using the below property
 
-```text
+```
 erp-db-url: "jdbc:postgresql://egov-dev-db.ctm6jbmr5mnj.ap-south-1.rds.amazonaws.com:5432/finance_qa_db"
 ```
 
@@ -55,28 +55,28 @@ Update the db username and password, which are configured in the environment nam
 
 For example, for the qa environment, update the qa-secrets.yaml
 
-```text
+```
 secrets:
         db:
             username: <username value> 
             password:  <password value>
 ```
 
-#### **Set up a schema-based multi-tenant database** <a id="Set-up-a-schema-based-multi-tenant-database"></a>
+#### **Set up a schema-based multi-tenant database** <a href="#set-up-a-schema-based-multi-tenant-database" id="set-up-a-schema-based-multi-tenant-database"></a>
 
 Finance co-existence service uses schema-based multi-tenancy, this means there will be one schema present for a city. The following are the configuration changes to set up this kind of database.
 
 * Enable multi-tenancy by enabling the following property
 
-```text
+```
 multitenancy: true  
 ```
 
 * Each ULB is enabled by adding a schema name and domain name. Schema names should follow a naming standard, It should be the same as that of the city name.
-* Each ULB can be configured by adding an entry like **tenant.&lt;domain\_name&gt;=schema\_name \(city\_name\)**
+* Each ULB can be configured by adding an entry like **tenant.\<domain\_name>=schema\_name (city\_name)**
 * The default tenants are configured in the [finance service yaml](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) file using the below configuration.
 
-```text
+```
 tenants: |
  tenant.citya.egovernments.org=citya
  tenant.cityb.egovernments.org=cityb
@@ -84,7 +84,7 @@ tenants: |
 
 * To override and have separate tenants for a specific environment then update the environment-specific file like below.
 
-```text
+```
 FinanceTenants: |
  tenant.citya.egovernments.org=citya
  tenant.cityb.egovernments.org=cityb
@@ -97,16 +97,16 @@ Example [environment specific configuration](https://github.com/egovernments/Tra
 * Update the domainurl in the eg\_city table.
 * Domain URL value should be the same as configured tenant domain\_name Ex:
 
-```text
+```
 For citya, domain url should be citya.egovernments.org
 For cityb, domain url should be cityb.egovernments.org 
 ```
 
-#### **Database migration settings** <a id="Database-migration-settings"></a>
+#### **Database migration settings** <a href="#database-migration-settings" id="database-migration-settings"></a>
 
 The default database migration configurations are present in the [application configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file.
 
-```text
+```
 #Enable/Disable flyway migration
 db.migration.enabled=true
 
@@ -134,7 +134,7 @@ dev.mode=false
 
 Override the default values by updating the properties either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or the environment-specific yaml file. The following are different properties.
 
-```text
+```
 # Enable/Disable to execute the sample sql scripts.
 dev_mode: false
 # Enable/Disable flyway migration validation
@@ -145,11 +145,11 @@ statewide_migration: true
 multitenancy: true
 ```
 
-#### System Integration User Details Configuration <a id="System-Integration-User-Details-Configuration"></a>
+#### System Integration User Details Configuration <a href="#system-integration-user-details-configuration" id="system-integration-user-details-configuration"></a>
 
 Configure the following property either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or the environment-specific yaml file.
 
-```text
+```
 Systemintegration: |
  si.microservice.user=${si-microservice-user}
  si.microservice.password=${si-microservice-password}
@@ -173,7 +173,7 @@ Systemintegration: |
 * Add one user in the system for system integration - SIFINANCE mapped with role SYS\_INTEGRATOR\_FINANCE by using the user service createnovalidate API.
 * Find the createnovalidate API details below
 
-```text
+```
 {
 	"info": {
 		"_postman_id": "81469f7c-793c-43b2-8e05-9ce6c8174cd4",
@@ -217,35 +217,35 @@ Systemintegration: |
 }
 ```
 
-#### **Elastic Dashboard Configuration** <a id="Elastic-Dashboard-Configuration"></a>
+#### **Elastic Dashboard Configuration** <a href="#elastic-dashboard-configuration" id="elastic-dashboard-configuration"></a>
 
 To enable or disable an event to push the bills and vouchers to the elastic search indexer the below need to be configured either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or the environment-specific yaml file.
 
-```text
+```
 finance: true
 ```
 
-#### **File store Configuration** <a id="File-store-Configuration"></a>
+#### **File store Configuration** <a href="#file-store-configuration" id="file-store-configuration"></a>
 
 Configure the following property either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or the environment-specific yaml file.
 
-```text
+```
 filestore: /tmp/egovfilestore
 ```
 
-#### **Quartz Scheduler Configuration** <a id="Quartz-Scheduler-Configuration"></a>
+#### **Quartz Scheduler Configuration** <a href="#quartz-scheduler-configuration" id="quartz-scheduler-configuration"></a>
 
 Configure the following property either in the [finance service values](https://github.com/egovernments/Train-InfraOps/blob/master/helm/charts/business-services/egov-finance/values.yaml) yaml file or the environment-specific yaml file.
 
-```text
+```
 scheduler: true
 ```
 
-#### DIGIT integration configuration <a id="DIGIT-integration-configuration"></a>
+#### DIGIT integration configuration <a href="#digit-integration-configuration" id="digit-integration-configuration"></a>
 
 Finance service reads data from multiple other DIGIT services. The following are the different services finance system reads data from. Update the domain URL of the respective service based on the service where it is running.
 
-```text
+```
 microservice: |
   egov.default.services.endpoint=https://egov-micro-dev.egovernments.org/
   egov.hrms.service.endpoint=http://egov-hrms.egov:8080/
@@ -263,7 +263,7 @@ microservice: |
   egov.filestore.service.endpoint=http://egov-filestore.egov:8080/
 ```
 
-#### MDMS Configuration <a id="MDMS-Configuration"></a>
+#### MDMS Configuration <a href="#mdms-configuration" id="mdms-configuration"></a>
 
 * The following master data is present in the [MDMS repository](https://github.com/egovernments/egov-mdms-data).
   * Department
@@ -279,7 +279,7 @@ microservice: |
 * Define all the designations in the [Designations](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/common-masters/Designation.json) json
 * Configure finance tenants in the [Citymodule](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/tenant/citymodule.json) json to enable finance module in the ULB.
 
-```text
+```
 {
       "module": "Finance",
       "code": "Finance",
@@ -303,28 +303,26 @@ microservice: |
 
 MDMS serach url is configured in the [Application Configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file.
 
-#### Changes required to setup workspace in local machine <a id="Changes-required-to-setup-workspace-in-local-machine"></a>
+#### Changes required to setup workspace in local machine <a href="#changes-required-to-setup-workspace-in-local-machine" id="changes-required-to-setup-workspace-in-local-machine"></a>
 
 1. Setup Finance service workspace by following the instructions provided in [README](https://github.com/egovernments/egov-coexistence/blob/master/README.md).
 2. After set up is done, make the changes to the host file in the local machine, by mapping the domain URLs with a local IP address and save the changes. Restart your local machine to make the host mapping effective.
 
-```text
+```
 $ vim /etc/hosts
 
 127.0.0.1 egov-micro-dev.egovernments.org
 ```
 
-### **Reference Docs** 
+### **Reference Docs**
 
-| **Title** | **Link** |
-| :--- | :--- |
-| API Contracts | [Voucher APIs](https://github.com/egovernments/egov-coexistence/blob/master/docs/voucher_apis.yaml) |
-| Co-existence finance code available | [Co-existence repository](https://github.com/egovernments/egov-coexistence) |
-| Sample client implementation repository | [Punjab implementation repository](https://github.com/egovernments/eGov-Punjab-Implementation) |
-| Configuring MDMS | [Configuring Master Data](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/644349987/Configuring+Master+Data) |
-| Adding new service and CI/CD | [CI/CD process](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/19333450/MS+-+Adding+new+service) |
+|                                         |                                                                                                                       |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Title**                               | **Link**                                                                                                              |
+| API Contracts                           | [Voucher APIs](https://github.com/egovernments/egov-coexistence/blob/master/docs/voucher\_apis.yaml)                  |
+| Co-existence finance code available     | [Co-existence repository](https://github.com/egovernments/egov-coexistence)                                           |
+| Sample client implementation repository | [Punjab implementation repository](https://github.com/egovernments/eGov-Punjab-Implementation)                        |
+| Configuring MDMS                        | [Configuring Master Data](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/644349987/Configuring+Master+Data) |
+| Adding new service and CI/CD            | [CI/CD process](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/19333450/MS+-+Adding+new+service)          |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

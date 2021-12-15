@@ -2,7 +2,7 @@
 
 ### Overview
 
-DIGIT is API based Platform here each API is denoting to a DIGIT resource. Access Control Service \(ACS\) primary job is to authorise end-user based on their roles and provide access to the DIGIT platform resources. Access control functionality basically works based on below points:
+DIGIT is API based Platform here each API is denoting to a DIGIT resource. Access Control Service (ACS) primary job is to authorise end-user based on their roles and provide access to the DIGIT platform resources. Access control functionality basically works based on below points:
 
 **Actions:** Actions are events which are performed by a user. This can be an API end-point or Frontend event. This is MDMS master
 
@@ -19,7 +19,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 ### Key Functionalities
 
-* Serve the applicable actions for a user based on user role \(To print menu three\).
+* Serve the applicable actions for a user based on user role (To print menu three).
 * On each action which is performed by a user, access control looks at the roles for the user and validate actions mapping with the role.
 * Support tenant-level role-action. For instance, an employee from Amritsar can have a role of APPROVER for other ULB like Jalandhar and hence will be authorised to act as APPROVER in Jalandhar.
 
@@ -32,7 +32,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 Define the roles
 
-```text
+```
 {
       "code": "EMPLOYEE",
       "name": "Employee",
@@ -40,9 +40,9 @@ Define the roles
 }
 ```
 
-Add the Actions \(URL\)
+Add the Actions (URL)
 
-```text
+```
 {
       "id": {{ACTION_ID}},
       "name": "Create TradeLicense",
@@ -59,7 +59,7 @@ Add the Actions \(URL\)
 
 Add the role action mapping
 
-```text
+```
 {
       "rolecode": "EMPLOYEE",
       "actionid": {{ACTION_ID}},
@@ -68,7 +68,7 @@ Add the role action mapping
     }
 ```
 
-_\(The details about the fields in the configuration can be found in the swagger contract\)_
+_(The details about the fields in the configuration can be found in the swagger contract)_
 
 ### Integration Details
 
@@ -82,28 +82,27 @@ Any new microservice that is to be added in the platform won’t have to worry a
 
 #### Steps to Integration
 
-1. To integrate with Access Control Service the role action mapping has to be configured\(added\) in the MDMS service.
+1. To integrate with Access Control Service the role action mapping has to be configured(added) in the MDMS service.
 2. The service needs to call /actions/\_authorize API of Access Control Service to check for authorisation of any request
 
 #### Interaction Diagram
 
-![](../../../../.gitbook/assets/image%20%2878%29.png)
+![](<../../../../.gitbook/assets/image (78).png>)
 
 ### Reference Docs
 
 #### Doc Links
 
-| **Title** | **Link** |
-| :--- | :--- |
+|              |                                                                                                                                                                                                                                      |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Title**    | **Link**                                                                                                                                                                                                                             |
 | API Contract | [https://raw.githubusercontent.com/egovernments/egov-services/master/docs/egov-accesscontrol/contracts/v1-0-1.yml](https://raw.githubusercontent.com/egovernments/egov-services/master/docs/egov-accesscontrol/contracts/v1-0-1.yml) |
 
 #### API List
 
+|       |          |
+| ----- | -------- |
 | Title | **Link** |
-| :--- | :--- |
-|  |  |
+|       |          |
 
-
-
- [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

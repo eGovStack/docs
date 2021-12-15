@@ -4,9 +4,9 @@ For **overview** Please refer to the parent file -[ Property Services](./)
 
 ## **Key Functionality**
 
- The assessment set of services inside the property module is used for assessing the value of a property in a given time frame and collect taxes for the same. Assessment is a snapshot of Property for a given transaction on that Property. These APIs provide functionalities to create/update/search the assessments. An assessment cannot exist without property.
+The assessment set of services inside the property module is used for assessing the value of a property in a given time frame and collect taxes for the same. Assessment is a snapshot of Property for a given transaction on that Property. These APIs provide functionalities to create/update/search the assessments. An assessment cannot exist without property.
 
-## **Configuration Details** <a id="Configuration-Details:"></a>
+## **Configuration Details** <a href="#configuration-details" id="configuration-details"></a>
 
 MDMS CONFIG:[https://github.com/egovernments/egov-mdms-data/tree/DEV/data/pb/PropertyTax](https://github.com/egovernments/egov-mdms-data/tree/DEV/data/pb/PropertyTax)To show a preview of this link, connect your Github account.![](https://github.githubassets.com/favicon.ico)GithubConnect
 
@@ -14,17 +14,18 @@ Configs
 
 Assessment shares most of the configs with Property as mentioned above, only exclusive properties are mentioned in this section.
 
-| **name** | **value** | **description** |
-| :--- | :--- | :--- |
-| assessment id format |  PB-AS-\[cy:yyyy-MM-dd\]-\[SEQ\_EG\_PT\_ASSM\] |   |
-| kafka create assessment topic | save-pt-assessment |   |
-| kafka update assesmsent topic | update-pt-assessment |   |
-| assessment.workflow.enabled | true/false | Workflow integration can be controlled by the following two properties |
-| assessment.workflow.trigger.param | usageCategory,occupancyType,occupancyDate |   |
+|                                   |                                             |                                                                        |
+| --------------------------------- | ------------------------------------------- | ---------------------------------------------------------------------- |
+| **name**                          | **value**                                   | **description**                                                        |
+| assessment id format              | PB-AS-\[cy:yyyy-MM-dd]-\[SEQ\_EG\_PT\_ASSM] |                                                                        |
+| kafka create assessment topic     | save-pt-assessment                          |                                                                        |
+| kafka update assesmsent topic     | update-pt-assessment                        |                                                                        |
+| assessment.workflow.enabled       | true/false                                  | Workflow integration can be controlled by the following two properties |
+| assessment.workflow.trigger.param | usageCategory,occupancyType,occupancyDate   |                                                                        |
 
 **PERSISTER CONFIG**: [https://raw.githubusercontent.com/egovernments/configs/master/egov-persister/assessment-persister.yml?token=AE4Z2KFWEQBDCUY6AZLGGIK6AM3QQ](https://raw.githubusercontent.com/egovernments/configs/master/egov-persister/assessment-persister.yml?token=AE4Z2KFWEQBDCUY6AZLGGIK6AM3QQ)\`\`
 
-```text
+```
 serviceMaps:
   serviceName: property-services
   mappings:
@@ -252,16 +253,15 @@ serviceMaps:
 
       - jsonPath: $.Assessment.documents.*.auditDetails.lastModifiedTime
 
-
 ```
 
 **Workflow Config**
 
-The first property switches workflow on or off, while the second property provides a way to control which field change can trigger the workflow. A businessService needs to be created using the workflow [/egov-workflow-v2/egov-wf/businessservice/\_create](https://digit-discuss.atlassian.net/egov-workflow-v2/egov-wf/businessservice/_create) API.
+The first property switches workflow on or off, while the second property provides a way to control which field change can trigger the workflow. A businessService needs to be created using the workflow [/egov-workflow-v2/egov-wf/businessservice/\_create](https://digit-discuss.atlassian.net/egov-workflow-v2/egov-wf/businessservice/\_create) API.
 
 Sample businessService create API body for Assessment workflow:
 
-```text
+```
 {
   "RequestInfo": {
     "apiId": "Rainmaker",
@@ -469,16 +469,15 @@ Sample businessService create API body for Assessment workflow:
     }
   ]
 }	
-
 ```
 
- Other system-level configs are the same as PT-Registry as mentioned above.
+Other system-level configs are the same as PT-Registry as mentioned above.
 
 **Notification Configs**
 
 **Payment Notification**
 
-```text
+```
     {
       "code": "PT_NOTIFICATION_PAYMENT_FAIL",
       "message": "Dear Citizen, Your payment of Rs. <insert amount to pay> for Property Tax Unique ID <insert ID> has failed. Your assessment is pending. Please try again. Ignore this message if you have completed your payment. You can pay your Property Tax online here - <payLink>",
@@ -509,12 +508,11 @@ Sample businessService create API body for Assessment workflow:
       "module": "rainmaker-pt",
       "locale": "en_IN"
     }
-
 ```
 
-### Assessment Notification <a id="Assessment-Notification:"></a>
+### Assessment Notification <a href="#assessment-notification" id="assessment-notification"></a>
 
-```text
+```
     {
       "code": "ASMT_APPLIED",
       "message": "Applied",
@@ -551,12 +549,11 @@ Sample businessService create API body for Assessment workflow:
       "module": "rainmaker-pt",
       "locale": "en_IN"
     }
-
 ```
 
 For adding localization for any status append ASMT\_ prefix to the status and for adding a message for any status add ASMT\_MSG\_ before the status.
 
-Assessment ****\(Property Calculator\) -
+Assessment \*\*\*\*(Property Calculator) -
 
 The calculator service Prepares and property tax and files the demand in the billing service for payment. It has the ‘estimate’ API to give the estimated property tax without persisting data and a calculated API to create demand for payments.
 
@@ -564,7 +561,7 @@ The calculator service[ PT Calculator](pt-calculator.md)
 
 ## Integration
 
-### Integration Scope <a id="Integration-Scope"></a>
+### Integration Scope <a href="#integration-scope" id="integration-scope"></a>
 
 Assessment integration helps citizens to assess their property with ease and helps them verify their tax values by themselves which gives more control to the citizens and hep the municipality collect taxes with ease.
 
@@ -581,19 +578,15 @@ Assessment integration helps citizens to assess their property with ease and hel
 
 ## **Reference Docs**
 
-please refer to the property document[ Property Services \| Doc-Links](./)
+please refer to the property document[ Property Services | Doc-Links](./)
 
 **API LIST**
 
-| **Title**  | **Link** |
-| :--- | :--- |
-|  /assessment/\_create | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
-|  /assessment/\_update | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
+|                      |                                                                                                                            |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Title**            | **Link**                                                                                                                   |
+| /assessment/\_create | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
+| /assessment/\_update | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
 | /assessment/\_search | [https://www.getpostman.com/collections/d1a02a29203d110df289](https://www.getpostman.com/collections/d1a02a29203d110df289) |
 
-
-
-
-
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
