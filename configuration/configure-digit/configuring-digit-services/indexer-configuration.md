@@ -2,7 +2,9 @@
 
 Indexer uses a config file per module to store all the configurations pertaining to that module. Indexer reads multiple such files at start-up to support indexing for all the configured modules. In config we define source and, destination elastic search index name, custom mappings for data transformation and mappings for data enrichment. Below is the sample configuration for indexing TL application creation data into elastic search.
 
-```
+
+
+```javascript
 ServiceMaps:
   serviceName: Trade License
   version: 1.0.0
