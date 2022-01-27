@@ -22,15 +22,17 @@ DV can send the application back to the citizen for any corrections or if any vi
 
 **To send the application back to the citizen**
 
-Click on the **Application No**. hyperlink available in the list of applications **Assigned to** section of the employee dashboard.
-
-Or, enter the **Application No.** or any other search parameter to search for the application.
-
-Click on the **Application No.** link to open the application.
+Click on the **OBPS Inbox** option on the home screen.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.51.12 PM.png>)
 
+Click on the **Application No**. hyperlink available in the list of applications **Inbox** of the employee dashboard.
+
+Or, enter the **Application No.** or any other search parameter to search for the application.
+
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.53.54 PM (1).png>)
+
+Click on the **Application No.** link to open the application.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.54.52 PM.png>)
 
@@ -42,7 +44,7 @@ Scroll down the application page to review the filled in details.&#x20;
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.06.54 PM.png>)
 
-Upload relevant documents on behalf of the citizen.
+Review the documents uploaded by the citizen.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.07.07 PM.png>)
 
@@ -94,7 +96,7 @@ Applications can be revoked at any stage by the Document Verifier, Field Inspect
 
 **To revoke application**
 
-Click on the **Application No.** in the **Assigned to** section of the employee dashboard or enter the **Application No.** or any other search parameter to search for the application.
+Click on the **Application No.** in the employee **Inbox** or enter the **Application No.** or any other search parameter to search for the application.
 
 Click on the **Application No.** link to open the application. Scroll down the application page to review the filled in details.&#x20;
 
@@ -152,7 +154,7 @@ FI prepares the field inspection report and attaches the report to the applicati
 
 To prepare the inspection report
 
-Click on the **Application No.** hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard.
+Click on the **Application No.** hyperlink available in the list of applications available in the employee **Inbox**.
 
 Or, enter the **Application No.** or any other search parameter to search for the application. Click on the **Application No.** link to open the application.
 
@@ -257,7 +259,7 @@ The NOC Verifier can send the application back to the citizen in case there are 
 
 **To send the application back to the citizen**
 
-Click on the **Application No.** hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard. Or, enter the **Application No.** or any other search parameter to search for the application.
+Click on the **Application No.** hyperlink available in the list of applications in the employee **Inbox**. Or, enter the **Application No.** or any other search parameter to search for the application.
 
 Click on the **Application No.** link to open the application.
 
