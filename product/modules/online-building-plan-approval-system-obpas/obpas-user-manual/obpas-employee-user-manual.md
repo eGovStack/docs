@@ -13,8 +13,8 @@ The Document Verifier (DV) is responsible for verifying the required and support
 DV can
 
 * [Send applications back to citizen](obpas-employee-user-manual.md#send-application-back-to-citizen)
-* [Reject applications or Revoke applications](obpas-employee-user-manual.md#reject-application-or-revoke-applications)
-* [Verify and forward applications](obpas-employee-user-manual.md#verify-and-forward-application)
+* [Reject application or Revoke application](obpas-employee-user-manual.md#reject-application-or-revoke-applications)
+* [Verify and forward application](obpas-employee-user-manual.md#verify-and-forward-application)
 
 ### Send application back to citizen
 
@@ -22,13 +22,13 @@ DV can send the application back to the citizen for any corrections or if any vi
 
 **To send the application back to the citizen**
 
-Click on the **Application No**. hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard.
-
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.51.12 PM.png>)
+Click on the **Application No**. hyperlink available in the list of applications **Assigned to** section of the employee dashboard.
 
 Or, enter the **Application No.** or any other search parameter to search for the application.
 
 Click on the **Application No.** link to open the application.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.51.12 PM.png>)
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.53.54 PM (1).png>)
 
@@ -48,27 +48,29 @@ Upload relevant documents on behalf of the citizen.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.08.52 PM.png>)
 
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.09.08 PM.png>)
-
 Click on the **Take Action** button at the bottom of the application page once the review is complete.
 
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.13.45 PM.png>)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.09.08 PM.png>)
 
 Click on the **Send Back to Citizen** button if the documents do not meet the application requirements or any document is missing.
 
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.15.15 PM.png>)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.13.45 PM.png>)
 
 Select the applicable **Assignee Name**. State the reasons for sending the application back to the citizen in the **Comments** section.
 
-Click on the **Upload Files** button to upload any supporting documents. Click on the **Send Back to Citizen** button.
+Click on the **Choose File** button to upload any supporting documents. Click on the **Send Back to Citizen** button.
 
 The application is placed back in the **Citizen** queue for required edits.
 
-### **Reject** Application or **Revoke** Applications
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.15.15 PM.png>)
+
+
+
+### **Reject** Application or **Revoke** Application
 
 The DV can reject the application if the documents and information furnished by the citizen do not meet the permit or occupancy guidelines.
 
-**To reject or revoke applications**
+**To reject application**
 
 Enter the **Application No.** or any other search parameter to search for the application. Click on the **Application No.** link to open the application.
 
@@ -82,13 +84,11 @@ Click on the **Take Action** button at the bottom of the application page once t
 
 Click on the **Reject** button if the documents do not meet the application requirements or the information provided in the application is inaccurate.
 
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.18.01 PM.png>)
-
-
-
 State the reasons for rejecting the application in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Reject** button.
 
 The application is rejected and a notification is sent to the owner informing the same.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.18.01 PM.png>)
 
 Permit orders are sanctioned instantly for low-risk applications. However, the application goes through the normal workflows for document verification, field inspection, and NOC verification. The ULB authorities can revoke the permit order in case any anomalies are detected during the verification process.
 
@@ -96,9 +96,9 @@ Applications can be revoked at any stage by the Document Verifier, Field Inspect
 
 **To revoke application**
 
-Click on the **Application No.** in the **Assigned to Me** section of the employee dashboard or enter the **Application No.** or any other search parameter to search for the application.
+Click on the **Application No.** in the **Assigned to** section of the employee dashboard or enter the **Application No.** or any other search parameter to search for the application.
 
-Click on the **Application No.** link to open the application. Scroll down the application page to review the filled in details. Click on the **View File** button to open the documents uploaded in the application.
+Click on the **Application No.** link to open the application. Scroll down the application page to review the filled in details.&#x20;
 
 Click on the **Take Action** button at the bottom of the application page once the review is completed.
 
@@ -106,11 +106,11 @@ Click on the **Take Action** button at the bottom of the application page once t
 
 Click on the **Revocate** button if the application details do not meet the permit requirements.
 
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.32.46 PM.png>)
-
 Enter the reason for revoking the permit in the **Comments** field.
 
 Click on **Choose File** to attach supporting documents. Click on the **Revocate** button. The permit order is revocated.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.32.46 PM.png>)
 
 ### **Verify and forward application**
 
@@ -128,13 +128,13 @@ Scroll down the application page to review the filled in details. Click on the *
 
 Click on the **Forward** button once all documents are verified.
 
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.37.14 PM.png>)
-
 Select the applicable **Assignee Name** who will carry out the next phase of verification. Provide any additional information for the assignee in the **Comments** section.
 
 Click on the **Choose File** button to upload any supporting documents. Click on the **Forward** button.
 
 The application is forwarded to the field inspector for further processing.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.37.14 PM.png>)
 
 ## **Field Inspector (FI)**
 
@@ -144,8 +144,9 @@ The FI can
 
 * [Prepare Inspection Report](obpas-employee-user-manual.md#prepare-inspection-report)
 * [Send applications back to citizen](obpas-employee-user-manual.md#send-application-back-to-the-citizen)
-* [Reject applications](obpas-employee-user-manual.md#reject-application)
-* [Verify and forward applications](obpas-employee-user-manual.md#forward-applications)
+* [Reject application](obpas-employee-user-manual.md#reject-application)
+* [Revoke application](obpas-employee-user-manual.md#revocate-application)
+* [Verify and forward application](obpas-employee-user-manual.md#forward-applications)
 
 ### **Prepare Inspection Report**
 
@@ -163,7 +164,7 @@ Or, enter the **Application No.** or any other search parameter to search for th
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.42.47 PM.png>)
 
-Scroll down the application page to review the filled in details. Enter the **Inspection Date** and **Inspection Time** in the **Inspection Report -1** panel. FI can add multiple field inspection reports as required.
+Scroll down the application page to review the filled in details. Enter the **Inspection Date** and **Inspection Time** in the panel. FI can add multiple field inspection reports as required.
 
 Mark **Yes** or **No** as applicable for each item in the **Inspection Checklist**. Enter any additional information in the **Remarks** section available for each item in the checklist.
 
@@ -187,13 +188,13 @@ To send the application back to the citizen
 
 Click on **Send Back to Citizen** if any information or document is missing in the application.
 
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.54.47 PM.png>)
-
 Select the applicable **Assignee Name**. State the reasons for sending the application back to the citizen in the **Comments** section.
 
 Click on the **Choose File** button to upload any supporting documents. Click on the **Send Back to Citizen** button.
 
 The application is placed back in the Citizen queue for required edits.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.54.47 PM.png>)
 
 ### **Reject application**
 
@@ -209,7 +210,23 @@ State the reasons for rejecting the application in the **Comments** section. Cli
 
 The application is rejected and a notification is sent to the owner informing the same.
 
-### **Forward applications**
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.05.51 PM (1).png>)
+
+### **Revocate application**
+
+The FI can revocate an application if the documents and information furnished by the citizen do not meet the guidelines.
+
+**To revocate the application**
+
+Click on the **Take Action** button.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.05.51 PM.png>)
+
+Enter the reason for revoking the application in the **Comments** field. Click on **Choose File** to attach supporting documents. Click on the **Revocate** button.&#x20;
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.06.08 PM.png>)
+
+### **Forward application**
 
 The FI verifies and forwards the application if the documents and information provided in the application are found satisfactory and complete.
 
@@ -223,19 +240,7 @@ Select the applicable **Assignee Name** who will carry out the next phase of ver
 
 The application is forwarded to the **NOC Verifier** for further processing.
 
-### **Revocate application**
-
-The FI can revocate an application if the documents and information furnished by the citizen do not meet the application guidelines.
-
-**To revocate the application**
-
-Click on the **Take Action** button.
-
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.05.51 PM.png>)
-
-Enter the reason for revoking the application in the **Comments** field. Click on **Choose File** to attach supporting documents. Click on the **Revocate** button.&#x20;
-
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.06.08 PM.png>)
+****
 
 ## **NOC Verifier**
 
@@ -244,8 +249,9 @@ The NOC Verifier is responsible for checking the no-objection permissions obtain
 **NOC Verifier can**
 
 * [Send applications back to the citizens](obpas-employee-user-manual.md#send-back-to-citizen)
-* [Reject applications](obpas-employee-user-manual.md#reject-applications)
-* [Forward applications](obpas-employee-user-manual.md#verify-and-forward-applications)
+* [Reject application](obpas-employee-user-manual.md#reject-applications)
+* [Revocate application](obpas-employee-user-manual.md#revocate-application-1)
+* [Forward application](obpas-employee-user-manual.md#verify-and-forward-applications)
 
 ### **Send back to citizen**
 
@@ -265,19 +271,17 @@ Scroll down the application page to review the filled in details.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.15.56 PM.png>)
 
-Review the NOC documents uploaded with the application. Click on the **Choose File** button to upload NOC documents on behalf of the NOC issuing authority like Fire or Airport.
-
-Click on the **Take Action** button at the bottom of the application page once the review is complete.
+Review the inspection report and NOC documents uploaded with the application. Click on the **Choose File** button to upload NOC documents on behalf of the NOC issuing authority like Fire or Airport.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.16.20 PM.png>)
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.16.37 PM.png>)
 
+Click on the **Take Action** button at the bottom of the application page once the review is complete.
+
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.18.54 PM.png>)
 
 Click on the **Send Back to Citizen** button if the documents do not meet the application requirements or any document is missing.
-
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.21.15 PM.png>)
 
 Select the applicable **Assignee Name**. State the reasons for sending the application back to the citizen in the **Comments** section.
 
@@ -285,19 +289,43 @@ Click on the **Choose File** button to upload any supporting documents. Click on
 
 The application is placed back in the Citizen queue for required edits.
 
-### **Reject applications**
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.21.15 PM.png>)
+
+### **Reject application**
 
 The NOC Verifier can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines.
 
 **To reject the application**
 
-Click on the **Reject** button if the documents do not meet the application requirements or the information provided in the application is inaccurate.
-
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.23.02 PM.png>)
-
 State the reasons for rejecting the application in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Reject** button.
 
 The application is rejected and a notification is sent to the owner informing the same.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.23.02 PM.png>)
+
+### **Revocate application**
+
+The NOC Verifier can revocate the application if the documents and information furnished by the citizen do not meet the prescribed guidelines.
+
+**To revocate the application**
+
+Click on the **Application No.** link to open the application. Scroll down the application page to review the filled in details.&#x20;
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 4.43.31 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 4.44.30 PM.png>)
+
+Click on the **Take Action** button at the bottom of the application page once the review is completed.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 4.44.41 PM.png>)
+
+Click on the **Revocate** button if the application details do not meet the permit requirements**.**
+
+Enter the reason for revoking the permit in the **Comments** field.
+
+Click on **Choose File** to attach supporting documents. Click on the **Revocate** button.&#x20;
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 4.44.52 PM.png>)
 
 ### **Verify and forward applications**
 
@@ -311,11 +339,11 @@ The NOC Verifier cannot forward the application to the BPA Approver until and un
 
 Click on the Verify and Forward button once all details are verified and found satisfactory.
 
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.23.24 PM.png>)
-
 Select the applicable **Assignee Name** who will carry out the next phase of verification. Provide any additional information for the assignee in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Verify and Forward** button.
 
 The application is forwarded to the BPA Approval for final approval.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.23.24 PM.png>)
 
 ## **BPA Approver**
 
@@ -366,7 +394,11 @@ Click on the Take Action button at the bottom of the application page once the r
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.53.54 PM.png>)
 
-Provide any additional information for the assignee in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Approve** button once all requirements are complete.
+Provide any additional information for the assignee in the **Comments** section.&#x20;
+
+Click on the **Choose File** button to upload any supporting documents.&#x20;
+
+Click on the **Approve** button once all requirements are complete.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.54.43 PM.png>)
 
