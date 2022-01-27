@@ -64,8 +64,6 @@ The application is placed back in the **Citizen** queue for required edits.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.15.15 PM.png>)
 
-
-
 ### **Reject** Application or **Revoke** Application
 
 The DV can reject the application if the documents and information furnished by the citizen do not meet the permit or occupancy guidelines.
@@ -145,8 +143,8 @@ The FI can
 * [Prepare Inspection Report](obpas-employee-user-manual.md#prepare-inspection-report)
 * [Send applications back to citizen](obpas-employee-user-manual.md#send-application-back-to-the-citizen)
 * [Reject application](obpas-employee-user-manual.md#reject-application)
-* [Revoke application](obpas-employee-user-manual.md#revocate-application)
-* [Verify and forward application](obpas-employee-user-manual.md#forward-applications)
+* [Revocate application](obpas-employee-user-manual.md#revocate-application)
+* [Forward application](obpas-employee-user-manual.md#forward-application)
 
 ### **Prepare Inspection Report**
 
@@ -249,9 +247,9 @@ The NOC Verifier is responsible for checking the no-objection permissions obtain
 **NOC Verifier can**
 
 * [Send applications back to the citizens](obpas-employee-user-manual.md#send-back-to-citizen)
-* [Reject application](obpas-employee-user-manual.md#reject-applications)
+* [Reject application](obpas-employee-user-manual.md#reject-application-1)
 * [Revocate application](obpas-employee-user-manual.md#revocate-application-1)
-* [Forward application](obpas-employee-user-manual.md#verify-and-forward-applications)
+* Forward application
 
 ### **Send back to citizen**
 
@@ -327,7 +325,7 @@ Click on **Choose File** to attach supporting documents. Click on the **Revocate
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 4.44.52 PM.png>)
 
-### **Verify and forward applications**
+### **Forward application**
 
 The NOC Verifier verifies and forwards the application to the BPA Approver if the documents and information provided in the application are found satisfactory and complete.
 
@@ -351,10 +349,10 @@ The BPA Approver is responsible for approving or rejecting the application for b
 
 The BPA Approver can
 
-* [Approve applications](obpas-employee-user-manual.md#approve-applications)
-* [Reject applications](obpas-employee-user-manual.md#reject-applications-2)
+* [Approve application](obpas-employee-user-manual.md#approve-applications)
+* [Reject application](obpas-employee-user-manual.md#reject-applications)
 
-### **Approve applications**
+### **Approve application**
 
 The BPA Approver approves the application for a building permit or occupancy certificate once the verification is complete and prescribed guidelines are met.
 
@@ -404,7 +402,7 @@ Click on the **Approve** button once all requirements are complete.
 
 The application is approved. The citizen or the stakeholder can now download and print the building permit or occupancy certificate from their account only after paying the permit fee. There is no fee applicable for an occupancy certificate.
 
-### **Reject applications**
+### **Reject application**
 
 BPA Approver can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines.
 
