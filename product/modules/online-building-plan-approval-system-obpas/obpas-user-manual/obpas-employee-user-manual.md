@@ -234,13 +234,13 @@ The FI verifies and forwards the application if the documents and information pr
 
 Click on the **Verify and Forward** button.
 
+Select the applicable **Assignee Name** who will carry out the next phase of verification. Provide any additional information for the assignee in the **Comments** section.&#x20;
+
+Click on the **Choose File** button to upload any supporting documents. Click on the **Verify and Forward** button.
+
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.00.22 PM.png>)
 
-Select the applicable **Assignee Name** who will carry out the next phase of verification. Provide any additional information for the assignee in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Verify and Forward** button.
-
 The application is forwarded to the **NOC Verifier** for further processing.
-
-****
 
 ## **NOC Verifier**
 
