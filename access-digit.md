@@ -11,7 +11,7 @@ Access DIGIT tool is an Open Demo Instance to provide you with a first-hand expe
 {% hint style="info" %}
 **You can access DIGIT as a Citizen or an Employee.**
 
-\*\*\*\*[**Click here**](https://staging.digit.org/citizen/) **to access DIGIT as a Citizen.** Follow the steps below to register as a Citizen user.
+[**Click here**](https://staging.digit.org/citizen/) **to access DIGIT as a Citizen.** Follow the steps below to register as a Citizen user.
 
 * Enter your registered mobile number and OTP to log in to the DIGIT platform.
 * Select **City** as **City B** from the drop-down list.
@@ -48,7 +48,7 @@ We have added user assistance docs below to help you learn more about DIGIT modu
 {% hint style="info" %}
 We would love to get your feedback and suggestions on the Access DIGIT experience to help us build on this!
 
-\*\*\*\*[**Click here**](https://docs.google.com/forms/d/e/1FAIpQLSeNxbjGmCeS6Q-\_2703SV8D4s-1kYyvZrHJMa\_WLpk41KmScg/viewform) **to enter your feedback.**
+[**Click here**](https://docs.google.com/forms/d/e/1FAIpQLSeNxbjGmCeS6Q-\_2703SV8D4s-1kYyvZrHJMa\_WLpk41KmScg/viewform) **to enter your feedback.**
 
 For any further queries or feedback please write to us at [**partner@egov.org.in**](mailto:partner@egov.org.in)
 {% endhint %}
