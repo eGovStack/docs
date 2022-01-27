@@ -24,29 +24,39 @@ DV can send the application back to the citizen for any corrections or if any vi
 
 Click on the **Application No**. hyperlink available in the list of applications **Assigned to Me** section of the employee dashboard.
 
-![](https://lh4.googleusercontent.com/NQV\_dX1WoLpqnY0afsPL4KlAduycHrM3OXmQFsYMMEkrd3lzECgyuMe9RjmsabsTlQFedq17l-NhJqaI19uZi6HothMCAFt-Q9Go35Z1dSTQT3KdxJO-eT28-9Ok2kOBkdu0cZog)
-
-
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.51.12 PM.png>)
 
 Or, enter the **Application No.** or any other search parameter to search for the application.
 
 Click on the **Application No.** link to open the application.
 
-![](https://lh6.googleusercontent.com/HgKROCL50D2KVgb2xJroCIVA2l-savIxhLryfsXc6T618dwPlvnQdaOhYQXhFlC9xQDgDlfAQaEiB5ram4Yadj0KCserBVwoZmwQDqVfd8DZjiFcophtPdtklcGnMQmJNwnQplVw)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.53.54 PM (1).png>)
 
-Scroll down the application page to review the filled in details. Click on the **View File** button to open the documents uploaded in the application.
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.54.52 PM.png>)
 
-Click on the **Upload** button to upload relevant documents and NOC documents on behalf of the citizen.
+Scroll down the application page to review the filled in details.&#x20;
 
-![](https://lh6.googleusercontent.com/02GHhskIWqrBwGEWr33YJJLJTI3xHuz7ntgMDMxW1LUkcFj1D89ID5LMoVS5x7Q11VZSWD1iK-S9TO7bfBQ2F-L2Bcl1DPA5PMQYRvVjeB0fY5i22bmCLSisrvIRD9VfiQnk\_RE5)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.03.35 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.03.51 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.06.54 PM.png>)
+
+Upload relevant documents on behalf of the citizen.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.07.07 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.08.52 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.09.08 PM.png>)
 
 Click on the **Take Action** button at the bottom of the application page once the review is complete.
 
-![](https://lh5.googleusercontent.com/8e7gJrjMqcqDoCfUzYeBhNr7gVTS\_tZNoIDaJIAviKQrSC6oD5miROWE3jZ5-56bTU22K7SGA\_u\_4XrSKlj3C25H72rwfk1Fsjdecy0gve219hJM\_ASv1IAzjRx0wF0gl7AxwZAw)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.13.45 PM.png>)
 
 Click on the **Send Back to Citizen** button if the documents do not meet the application requirements or any document is missing.
 
-![](https://lh5.googleusercontent.com/J\_kYrHOfCdOGhA1MI7WFZFCCh4bswXMaonfyo6NBaOIzbFD6Z3NQWyQQ00nuzQIz9NKvinMRDpnAfTmTBAv15Tl8pizt\_vYSux7YZEcDoFO0Koq5gxDkISVGPXvOCbbEW-ky7118)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.15.15 PM.png>)
 
 Select the applicable **Assignee Name**. State the reasons for sending the application back to the citizen in the **Comments** section.
 
@@ -62,17 +72,19 @@ The DV can reject the application if the documents and information furnished by 
 
 Enter the **Application No.** or any other search parameter to search for the application. Click on the **Application No.** link to open the application.
 
-![](https://lh5.googleusercontent.com/0lDrn6jk7Ryf8GM8lhTi-\_t6EzbJBNQOC5i6OAacp6Tq1votMqf1DrUDcadjNWP2c6TlYCzuZ8oXs7QFuD3T\_1ZXs38BCSnpVqmF05KckLMss2HiSunlhoBTQHT88W0jHHjsFzZD)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.17.07 PM.png>)
 
-Scroll down the application page to review the filled in details. Click on the **View File** button to open the documents uploaded in the application.
+Scroll down the application page to review the filled in details.&#x20;
 
 Click on the **Take Action** button at the bottom of the application page once the review is complete.
 
-![](https://lh5.googleusercontent.com/8e7gJrjMqcqDoCfUzYeBhNr7gVTS\_tZNoIDaJIAviKQrSC6oD5miROWE3jZ5-56bTU22K7SGA\_u\_4XrSKlj3C25H72rwfk1Fsjdecy0gve219hJM\_ASv1IAzjRx0wF0gl7AxwZAw)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.17.32 PM.png>)
 
 Click on the **Reject** button if the documents do not meet the application requirements or the information provided in the application is inaccurate.
 
-![](https://lh6.googleusercontent.com/VBnjMmYnojydn-UyKICByWkeOTXlmGLVxtEbCsJEw\_a42RmLo4m\_NAEdigtblA4xhGTchOhRNJKTLQsqKOesVn2wiVQ2ykON7154pk1t3AETdPsV0Aj94tagLEQf8eD1sjKEs03L)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.18.01 PM.png>)
+
+
 
 State the reasons for rejecting the application in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Reject** button.
 
@@ -90,17 +102,15 @@ Click on the **Application No.** link to open the application. Scroll down the a
 
 Click on the **Take Action** button at the bottom of the application page once the review is completed.
 
-![](https://lh6.googleusercontent.com/RX8shmxe2uqTRFlYZ4nAsFur8IzABdx3wN3RtT7pBuwEi6QXEY0CfYF5aR7EzK2SLwyWU6TAbQ9WVw6Gxg61yeaf\_hJzInmt1Tc1sKMe3AgBxjbhM7iBD3YMhA\_jvssamHPbo7ER)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.32.29 PM.png>)
 
 Click on the **Revocate** button if the application details do not meet the permit requirements.
 
-![](https://lh3.googleusercontent.com/zBaTYzwEr8PY0y5T\_qWT77ARzFdAr\_rLxRYJFjcpiF2OZyOgr9DESYO\_\_jXRVlFS42Y3CdCQ2ZT-XWg6ljptHDFJDP1oj3pOrWt\_-azMwa1EzF\_9qP6b5Z4CjP4x10HVVOWIcJzm)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.32.46 PM.png>)
 
 Enter the reason for revoking the permit in the **Comments** field.
 
-Click on **Upload Files** to attach supporting documents. Click on the **Revocate** button. The permit order is revocated.
-
-![](https://lh4.googleusercontent.com/IyAPgBKE46fFgbKFj-HNgNM-QeVEOmRkvXXrk\_jLyYZKj5UOhf1qR\_TwTLnP6wnpLys0mNjU6HY-1yYZElCHlFIXvNKabeQOPvnpNoXjLKzKfdgNlm9xtVRaDli\_AfA\_TEpHzsI\_)
+Click on **Choose File** to attach supporting documents. Click on the **Revocate** button. The permit order is revocated.
 
 ### **Verify and forward application**
 
@@ -110,19 +120,19 @@ The DV verifies and forwards the application if the documents and information pr
 
 Enter the **Application No.** or any other search parameter to search for the application. Click on the **Application No.** link to open the application.
 
-![](https://lh6.googleusercontent.com/HgKROCL50D2KVgb2xJroCIVA2l-savIxhLryfsXc6T618dwPlvnQdaOhYQXhFlC9xQDgDlfAQaEiB5ram4Yadj0KCserBVwoZmwQDqVfd8DZjiFcophtPdtklcGnMQmJNwnQplVw)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.36.35 PM.png>)
 
-Scroll down the application page to review the filled in details. Click on the **View File** button to open the documents uploaded in the application. Click on the **Take Action** button at the bottom of the application page once the review is complete.
+Scroll down the application page to review the filled in details. Click on the **Take Action** button at the bottom of the application page once the review is complete.
 
-![](https://lh5.googleusercontent.com/8e7gJrjMqcqDoCfUzYeBhNr7gVTS\_tZNoIDaJIAviKQrSC6oD5miROWE3jZ5-56bTU22K7SGA\_u\_4XrSKlj3C25H72rwfk1Fsjdecy0gve219hJM\_ASv1IAzjRx0wF0gl7AxwZAw)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.36.54 PM.png>)
 
 Click on the **Forward** button once all documents are verified.
 
-![](https://lh5.googleusercontent.com/9vfdF9cg\_BeYk1L9l1zpsaBQQNRpfkgUs8BaxDbj5Wr0hAO7M1tKVbze1tPsIe65ssIr9lHfcitIaRc5E9EogP9Vu3SZ7Oh4sBA6hHbFnUvKNzM5KXLbbdw6ysfUEuFNpeVNbzGQ)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.37.14 PM.png>)
 
 Select the applicable **Assignee Name** who will carry out the next phase of verification. Provide any additional information for the assignee in the **Comments** section.
 
-Click on the **Upload Files** button to upload any supporting documents. Click on the **Verify and Forward** button.
+Click on the **Choose File** button to upload any supporting documents. Click on the **Forward** button.
 
 The application is forwarded to the field inspector for further processing.
 
@@ -147,25 +157,29 @@ Click on the **Application No.** hyperlink available in the list of applications
 
 Or, enter the **Application No.** or any other search parameter to search for the application. Click on the **Application No.** link to open the application.
 
-![](https://lh4.googleusercontent.com/extH4B78HrGYCKC7Ip8cSoL1ouaKm--joU2WAUKKAK0ZVp-ZpCNdkFq-NFIca1wEUHFbdplU0ctxXEfRDL5mfFlGNLjxSzc-j7m-7KJ3jqMV81\_KnzDCioWQM9L97hyZEWPBXPPX)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.42.13 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.42.32 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.42.47 PM.png>)
 
 Scroll down the application page to review the filled in details. Enter the **Inspection Date** and **Inspection Time** in the **Inspection Report -1** panel. FI can add multiple field inspection reports as required.
 
 Mark **Yes** or **No** as applicable for each item in the **Inspection Checklist**. Enter any additional information in the **Remarks** section available for each item in the checklist.
 
-![](https://lh6.googleusercontent.com/gJRhBJDJ2w0c9qWOl16J1hR\_556xYr\_3PBh0D3N89GmKgusHddNHTzO5Jls0z4rP3eKu4qX1cqi1cVoGhEoE-VY5xYr7k\_ErQSZbcI9wLXPeXeu9Rv4XY2wTipPVreb5JO8mYtG-)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.47.46 PM.png>)
 
 Select the applicable **Document Type** for each of the listed Documents. Click on the **Upload File** button to upload the relevant documents.
 
-![](https://lh3.googleusercontent.com/Ij4c3Vs-2oC0mvrO5woKykg7z24aH24E8DO0sFUEHfTdJARuhAASP5UNWIJn-eXyfrugGMXlishCfw5WsU\_bL1EUqDXLPIsgtXGNXQo3IW4H3GFL1\_4evcJYI49EW4mNaEfu7Y\_O)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.48.29 PM.png>)
 
 Click on **+Add Another Field Inspection Report** button to append additional inspection details.
 
-![](https://lh3.googleusercontent.com/Y1CR1BMWZ\_A0Hu\_o0qgkLvjVohA79Gwv313exCgPVFIdndE5k01-iBEZJAabF5Fknb3VqBsMoOEceoQZ9fFqiW2N77KlTGW39hYTFOWab1ZCV6a9mRipxIRAI54NFJq7n2kybrj9)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.48.47 PM.png>)
 
 Click on the **Take Action** button at the bottom of the application page once the review is complete.
 
-![](https://lh6.googleusercontent.com/LxbEWOns1Oz2KmdGEck1-UBiFmHu5nvLU6XYpIQfg87ZD2sxogkKz1iXNvyt2k4Y4sS-6b3e2tQYKE6C\_gsFyM9xMVnXZHA76ABmhFALS4cICYPM9xd05gzh\_i21nGirz-x\_KG-7)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.51.38 PM.png>)
 
 ### **Send application back to the citizen**
 
@@ -173,11 +187,11 @@ To send the application back to the citizen
 
 Click on **Send Back to Citizen** if any information or document is missing in the application.
 
-![](https://lh5.googleusercontent.com/J\_kYrHOfCdOGhA1MI7WFZFCCh4bswXMaonfyo6NBaOIzbFD6Z3NQWyQQ00nuzQIz9NKvinMRDpnAfTmTBAv15Tl8pizt\_vYSux7YZEcDoFO0Koq5gxDkISVGPXvOCbbEW-ky7118)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.54.47 PM.png>)
 
 Select the applicable **Assignee Name**. State the reasons for sending the application back to the citizen in the **Comments** section.
 
-Click on the **Upload Files** button to upload any supporting documents. Click on the **Send Back to Citizen** button.
+Click on the **Choose File** button to upload any supporting documents. Click on the **Send Back to Citizen** button.
 
 The application is placed back in the Citizen queue for required edits.
 
@@ -189,9 +203,9 @@ The FI can reject the application if the documents and information furnished by 
 
 Click on the **Reject** button if the documents do not meet the application requirements or the information provided in the application is inaccurate.
 
-![](https://lh6.googleusercontent.com/VBnjMmYnojydn-UyKICByWkeOTXlmGLVxtEbCsJEw\_a42RmLo4m\_NAEdigtblA4xhGTchOhRNJKTLQsqKOesVn2wiVQ2ykON7154pk1t3AETdPsV0Aj94tagLEQf8eD1sjKEs03L)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.00.10 PM.png>)
 
-State the reasons for rejecting the application in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Reject** button.
+State the reasons for rejecting the application in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Reject** button.
 
 The application is rejected and a notification is sent to the owner informing the same.
 
@@ -203,11 +217,25 @@ The FI verifies and forwards the application if the documents and information pr
 
 Click on the **Verify and Forward** button.
 
-![](https://lh5.googleusercontent.com/9vfdF9cg\_BeYk1L9l1zpsaBQQNRpfkgUs8BaxDbj5Wr0hAO7M1tKVbze1tPsIe65ssIr9lHfcitIaRc5E9EogP9Vu3SZ7Oh4sBA6hHbFnUvKNzM5KXLbbdw6ysfUEuFNpeVNbzGQ)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.00.22 PM.png>)
 
-Select the applicable **Assignee Name** who will carry out the next phase of verification. Provide any additional information for the assignee in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Verify and Forward** button.
+Select the applicable **Assignee Name** who will carry out the next phase of verification. Provide any additional information for the assignee in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Verify and Forward** button.
 
 The application is forwarded to the **NOC Verifier** for further processing.
+
+### **Revocate application**
+
+The FI can revocate an application if the documents and information furnished by the citizen do not meet the application guidelines.
+
+**To revocate the application**
+
+Click on the **Take Action** button.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.05.51 PM.png>)
+
+Enter the reason for revoking the application in the **Comments** field. Click on **Choose File** to attach supporting documents. Click on the **Revocate** button.&#x20;
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.06.08 PM.png>)
 
 ## **NOC Verifier**
 
@@ -229,25 +257,31 @@ Click on the **Application No.** hyperlink available in the list of applications
 
 Click on the **Application No.** link to open the application.
 
-![](https://lh4.googleusercontent.com/aJwuEynj7VHOH2QsMt8POmGruZyA07XuHAkYw5z-p\_L3weFvfr1Fq9XTCO0acFUgFgDnL8J-QPSPM0gCPt8B7UW4VAVlnBZJZXICliaq5jwTs1hzSX5N-c7d\_135UoN4mYM8fukO)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.13.11 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.13.11 PM (1).png>)
 
 Scroll down the application page to review the filled in details.
 
-![](https://lh3.googleusercontent.com/mtvRSc3CmFK2\_Ud9FOaC9mxO\_\_N6U5O9AyL4gzrIP-qAPUtriVlaIbLiP-m65zs3snAFbi0l\_GjQIQHOJLNjuR5rS3LsUfhS4U9ymFy9lbzIOGiiK5lo--VhOnjLr2s01pbha\_jp)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.15.56 PM.png>)
 
-Click on the **View File** button to review the NOC documents uploaded with the application. Click on the **Upload File** button to upload NOC documents on behalf of the NOC issuing authority like Fire or Airport.
+Review the NOC documents uploaded with the application. Click on the **Choose File** button to upload NOC documents on behalf of the NOC issuing authority like Fire or Airport.
 
 Click on the **Take Action** button at the bottom of the application page once the review is complete.
 
-![](https://lh5.googleusercontent.com/v3q9wfCsfKcihbJo6eAZukLCbt2Ny4Upz6M4cbbIGKgTAnK9GvYY4p6GMHGRPSaYy4KHQC9E8XSezgnxFymlafJ1MBXLfvv9l5Rf8frZtTzVuec\_IDYqpVmNMUvcGsr5mX4qEbyg)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.16.20 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.16.37 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.18.54 PM.png>)
 
 Click on the **Send Back to Citizen** button if the documents do not meet the application requirements or any document is missing.
 
-![](https://lh5.googleusercontent.com/J\_kYrHOfCdOGhA1MI7WFZFCCh4bswXMaonfyo6NBaOIzbFD6Z3NQWyQQ00nuzQIz9NKvinMRDpnAfTmTBAv15Tl8pizt\_vYSux7YZEcDoFO0Koq5gxDkISVGPXvOCbbEW-ky7118)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.21.15 PM.png>)
 
 Select the applicable **Assignee Name**. State the reasons for sending the application back to the citizen in the **Comments** section.
 
-Click on the **Upload Files** button to upload any supporting documents. Click on the **Send Back to Citizen** button.
+Click on the **Choose File** button to upload any supporting documents. Click on the **Send Back to Citizen** button.
 
 The application is placed back in the Citizen queue for required edits.
 
@@ -259,9 +293,9 @@ The NOC Verifier can reject the application if the documents and information fur
 
 Click on the **Reject** button if the documents do not meet the application requirements or the information provided in the application is inaccurate.
 
-![](https://lh6.googleusercontent.com/VBnjMmYnojydn-UyKICByWkeOTXlmGLVxtEbCsJEw\_a42RmLo4m\_NAEdigtblA4xhGTchOhRNJKTLQsqKOesVn2wiVQ2ykON7154pk1t3AETdPsV0Aj94tagLEQf8eD1sjKEs03L)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.23.02 PM.png>)
 
-State the reasons for rejecting the application in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Reject** button.
+State the reasons for rejecting the application in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Reject** button.
 
 The application is rejected and a notification is sent to the owner informing the same.
 
@@ -277,9 +311,9 @@ The NOC Verifier cannot forward the application to the BPA Approver until and un
 
 Click on the Verify and Forward button once all details are verified and found satisfactory.
 
-![](https://lh5.googleusercontent.com/9vfdF9cg\_BeYk1L9l1zpsaBQQNRpfkgUs8BaxDbj5Wr0hAO7M1tKVbze1tPsIe65ssIr9lHfcitIaRc5E9EogP9Vu3SZ7Oh4sBA6hHbFnUvKNzM5KXLbbdw6ysfUEuFNpeVNbzGQ)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.23.24 PM.png>)
 
-Select the applicable **Assignee Name** who will carry out the next phase of verification. Provide any additional information for the assignee in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Verify and Forward** button.
+Select the applicable **Assignee Name** who will carry out the next phase of verification. Provide any additional information for the assignee in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Verify and Forward** button.
 
 The application is forwarded to the BPA Approval for final approval.
 
@@ -289,34 +323,8 @@ The BPA Approver is responsible for approving or rejecting the application for b
 
 The BPA Approver can
 
-* [Reject applications](obpas-employee-user-manual.md#reject-applications-1)
 * [Approve applications](obpas-employee-user-manual.md#approve-applications)
-
-### **Reject applications**
-
-BPA Approver can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines.
-
-**To reject applications**
-
-Click on the **Application No.** hyperlink available in the list of applications Assigned to Me section of the employee dashboard.
-
-Or, enter the search parameter to find the application pending for approval.
-
-![](https://lh6.googleusercontent.com/h4heDpH8YyM\_S5KjBtYydG7ooALiM2ZczDeZ2yVY36PKIyOiTCA6QXnG4a12sweHRbcCjpLGl-vK-dsNueKo70hG2vuoYUE-YYOW7XXKRdzLHi\_6SyREvtwW\_upgbNxx7zD00d7A)
-
-Click on the **Application No.** link to open the application. Scroll down the application to review the filled in details. Check the applicable conditions in the **Permit Conditions** list.
-
-Enter any additional **Permit Condition** in the space given below the list. These conditions will be appended in the permit order. Click on the **+Add More** button to add more conditions.
-
-![](https://lh3.googleusercontent.com/Buy-Z7C7HiYLFemLM7L8Fi1o7Iufmd1LSPLhkjkJqOCYuq\_ccT--W\_otZeC0o9udK1LsjXrTMTVJzKeSEMGbapYxepNoB6IT1HUcKUWTbiW\_VNRNPPE\_C4X7N\_CQsNKPwwzhIvlH)
-
-Click on the **Take Action** button. Click on the **Reject** button if the documents do not meet the application requirements or the information provided in the application is inaccurate.
-
-![](https://lh6.googleusercontent.com/VBnjMmYnojydn-UyKICByWkeOTXlmGLVxtEbCsJEw\_a42RmLo4m\_NAEdigtblA4xhGTchOhRNJKTLQsqKOesVn2wiVQ2ykON7154pk1t3AETdPsV0Aj94tagLEQf8eD1sjKEs03L)
-
-State the reasons for rejecting the application in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Reject** button.
-
-The application is rejected and a notification is sent to the owner informing the same.
+* [Reject applications](obpas-employee-user-manual.md#reject-applications-2)
 
 ### **Approve applications**
 
@@ -324,16 +332,56 @@ The BPA Approver approves the application for a building permit or occupancy cer
 
 **To approve applications**
 
-Click on the **Approve** button once all requirements and verifications are complete.
+Click on the **Application No**. hyperlink available in the list of applications section of the employee dashboard.&#x20;
 
-![](https://lh3.googleusercontent.com/6lgoDhzhUOkVMYXMAzMrdYnifzbB0-h-\_DYqAfYUqoIZbe3neFuV3G7mxiwkCrNjKMYBw\_9EDqLUD4m-dU91ogzpcTsI\_kWVG7taFgl9Or7ZGC6wHM50xtp3nWhiZJ\_0qPwoSBCe)
+Or, enter the **Application No.** or any other search parameter to search for the application.&#x20;
 
-Provide any additional information for the assignee in the **Comments** section. Click on the **Upload Files** button to upload any supporting documents. Click on the **Approve** button.
+Click on the **Application No.** link to open the application.
 
-The application is approved.
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.41.10 PM.png>)
 
-![](https://lh5.googleusercontent.com/aFxu2F8ap2fI-SyAwev\_N5F1U8IxJ0fVzdtIKnbe42uzCF96RosugJ8CA0k\_9wvv6yFVH4tW-zm2nAR0oCuh2rygAoPo0pDKuAVnfqU54XI7k6BuGXX4OuInG9DXpg2kL0ucBtV3)
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.41.22 PM.png>)
 
-The citizen or the stakeholder can now download and print the building permit or occupancy certificate from their account only after paying the permit fee. There is no fee applicable for an occupancy certificate.
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.41.34 PM.png>)
+
+Scroll down the application to review the filled in details.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.46.39 PM.png>)
+
+Review the documents uploaded with the application
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.47.55 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.48.09 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.48.26 PM.png>)
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.51.21 PM.png>)
+
+Check the applicable conditions in the **Permit Conditions** list.&#x20;
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.53.01 PM.png>)
+
+Click on the Take Action button at the bottom of the application page once the review is complete.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.53.54 PM.png>)
+
+Provide any additional information for the assignee in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Approve** button once all requirements are complete.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.54.43 PM.png>)
+
+The application is approved. The citizen or the stakeholder can now download and print the building permit or occupancy certificate from their account only after paying the permit fee. There is no fee applicable for an occupancy certificate.
+
+### **Reject applications**
+
+BPA Approver can reject the application if the documents and information furnished by the citizen do not meet the prescribed guidelines.
+
+**To reject applications**
+
+State the reasons for rejecting the application in the **Comments** section. Click on the **Choose File** button to upload any supporting documents. Click on the **Reject** button.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.29.00 PM.png>)
+
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
