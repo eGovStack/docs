@@ -13,7 +13,7 @@ The Document Verifier (DV) is responsible for verifying the required and support
 DV can
 
 * [Send applications back to citizen](obpas-employee-user-manual.md#send-application-back-to-citizen)
-* [Reject application or Revoke application](obpas-employee-user-manual.md#reject-application-or-revoke-applications)
+* [Reject application or Revoke application](obpas-employee-user-manual.md#reject-application-or-revoke-application)
 * [Verify and forward application](obpas-employee-user-manual.md#verify-and-forward-application)
 
 ### Send application back to citizen
