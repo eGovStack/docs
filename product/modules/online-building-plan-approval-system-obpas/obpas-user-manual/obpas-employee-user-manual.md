@@ -12,7 +12,7 @@ The Document Verifier (DV) is responsible for verifying the required and support
 
 DV can
 
-* [Send applications back to citizens ](obpas-employee-user-manual.md#send-application-back-to-citizen)
+* [Send applications back to citizens ](obpas-employee-user-manual.md#send-applications-back-to-citizens)
 * [Reject application or Revoke application](obpas-employee-user-manual.md#reject-application-or-revoke-application)
 * [Verify and forward application](obpas-employee-user-manual.md#verify-and-forward-application)
 
@@ -143,7 +143,7 @@ The field inspector or FI is responsible for conducting the field inspection of 
 The FI can
 
 * [Prepare Inspection Report](obpas-employee-user-manual.md#prepare-inspection-report)
-* [Send applications back to citizens](obpas-employee-user-manual.md#send-application-back-to-the-citizen)
+* [Send applications back to citizens](obpas-employee-user-manual.md#send-applications-back-to-citizens-1)
 * [Reject application](obpas-employee-user-manual.md#reject-application)
 * [Revocate application](obpas-employee-user-manual.md#revocate-application)
 * [Forward application](obpas-employee-user-manual.md#forward-application)
@@ -248,12 +248,12 @@ The NOC Verifier is responsible for checking the no-objection permissions obtain
 
 **NOC Verifier can**
 
-* [Send applications back to the citizens](obpas-employee-user-manual.md#send-back-to-citizen)
+* Send applications back to citizens
 * [Reject application](obpas-employee-user-manual.md#reject-application-1)
 * [Revocate application](obpas-employee-user-manual.md#revocate-application-1)
 * [Forward application](obpas-employee-user-manual.md#forward-application-1)
 
-### **Send back to citizen**
+### **Send applications back to citizens**
 
 The NOC Verifier can send the application back to the citizen in case there are some details missing in the form.
 
