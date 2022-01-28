@@ -12,11 +12,11 @@ The Document Verifier (DV) is responsible for verifying the required and support
 
 DV can
 
-* [Send applications back to citizen](obpas-employee-user-manual.md#send-application-back-to-citizen)
+* [Send applications back to citizens ](obpas-employee-user-manual.md#send-application-back-to-citizen)
 * [Reject application or Revoke application](obpas-employee-user-manual.md#reject-application-or-revoke-application)
 * [Verify and forward application](obpas-employee-user-manual.md#verify-and-forward-application)
 
-### Send application back to citizen
+### Send applications back to citizens
 
 DV can send the application back to the citizen for any corrections or if any vital document has not been uploaded. The DV can also upload the documents on behalf of the citizens.
 
@@ -143,7 +143,7 @@ The field inspector or FI is responsible for conducting the field inspection of 
 The FI can
 
 * [Prepare Inspection Report](obpas-employee-user-manual.md#prepare-inspection-report)
-* [Send applications back to citizen](obpas-employee-user-manual.md#send-application-back-to-the-citizen)
+* [Send applications back to citizens](obpas-employee-user-manual.md#send-application-back-to-the-citizen)
 * [Reject application](obpas-employee-user-manual.md#reject-application)
 * [Revocate application](obpas-employee-user-manual.md#revocate-application)
 * [Forward application](obpas-employee-user-manual.md#forward-application)
@@ -182,7 +182,7 @@ Click on the **Take Action** button at the bottom of the application page once t
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.51.38 PM.png>)
 
-### **Send application back to the citizen**
+### **Send applications back to citizens**
 
 To send the application back to the citizen
 
@@ -251,7 +251,7 @@ The NOC Verifier is responsible for checking the no-objection permissions obtain
 * [Send applications back to the citizens](obpas-employee-user-manual.md#send-back-to-citizen)
 * [Reject application](obpas-employee-user-manual.md#reject-application-1)
 * [Revocate application](obpas-employee-user-manual.md#revocate-application-1)
-* Forward application
+* [Forward application](obpas-employee-user-manual.md#forward-application-1)
 
 ### **Send back to citizen**
 
@@ -356,7 +356,7 @@ The BPA Approver is responsible for approving or rejecting the application for b
 The BPA Approver can
 
 * [Approve application](obpas-employee-user-manual.md#approve-applications)
-* [Reject application](obpas-employee-user-manual.md#reject-applications)
+* [Reject application](obpas-employee-user-manual.md#reject-application-2)
 
 ### **Approve application**
 
@@ -364,7 +364,7 @@ The BPA Approver approves the application for a building permit or occupancy cer
 
 **To approve applications**
 
-Click on the **OBPS Inbox** option on the home page.
+Click on the **OBPS Inbox** option on the home screen.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.41.10 PM.png>)
 
