@@ -259,6 +259,10 @@ The NOC Verifier can send the application back to the citizen in case there are 
 
 **To send the application back to the citizen**
 
+Click on the **OBPS Inbox** option on the home screen.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-28 at 10.12.39 AM.png>)
+
 Click on the **Application No.** hyperlink available in the list of applications in the employee **Inbox**. Or, enter the **Application No.** or any other search parameter to search for the application.
 
 Click on the **Application No.** link to open the application.
@@ -360,13 +364,15 @@ The BPA Approver approves the application for a building permit or occupancy cer
 
 **To approve applications**
 
+Click on the **OBPS Inbox** option on the home page.
+
+![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.41.10 PM.png>)
+
 Click on the **Application No**. hyperlink available in the list of applications section of the employee dashboard.&#x20;
 
 Or, enter the **Application No.** or any other search parameter to search for the application.&#x20;
 
 Click on the **Application No.** link to open the application.
-
-![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.41.10 PM.png>)
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.41.22 PM.png>)
 
