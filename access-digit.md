@@ -4,6 +4,10 @@ description: Explore DIGIT platform
 
 # Access DIGIT
 
+{% hint style="danger" %}
+**Server Maintenance scheduled from 7th Feb 2022 10 AM to 14th Feb 2022 10 AM. The Demo Instance is temporarily unavailable due to system upgrades & maintenance.**
+{% endhint %}
+
 Access DIGIT tool is an Open Demo Instance to provide you with a first-hand experience of the DIGIT platform. Use this facility to navigate all the features & workflows of DIGIT Platform Applications.
 
 ## Steps To Access DIGIT
