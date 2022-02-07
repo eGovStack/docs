@@ -4,32 +4,30 @@ description: Explore DIGIT platform
 
 # Access DIGIT
 
-{% hint style="danger" %}
-<mark style="color:red;">**Server Maintenance scheduled from 7th Feb 2022 10 AM to 14th Feb 2022 10 AM. The Demo Instance is temporarily unavailable due to system upgrades & maintenance.**</mark>
-{% endhint %}
+![](.gitbook/assets/2.jpg)
 
 Access DIGIT tool is an Open Demo Instance to provide you with a first-hand experience of the DIGIT platform. Use this facility to navigate all the features & workflows of DIGIT Platform Applications.
 
 ## Steps To Access DIGIT
 
-{% hint style="info" %}
-**You can access DIGIT as a Citizen or an Employee.**
+### **Access DIGIT in Citizen Role**
 
-[**Click here**](https://staging.digit.org/citizen/) **to access DIGIT as a Citizen.** Follow the steps below to register as a Citizen user.
+* [x] [Click here](https://staging.digit.org/citizen/language-selection) to access DIGIT as Citizen.&#x20;
+* [x] Fill in the user registration details as prompted on-screen.&#x20;
 
-* Enter your registered mobile number and OTP to log in to the DIGIT platform.
-* Select **City** as **City B** from the drop-down list.
+![](<.gitbook/assets/image (39).png>)![](<.gitbook/assets/image (41).png>)
 
-You are now registered as a Citizen user.
+* [x] To log in enter your registered mobile number and OTP.&#x20;
+* [x] Select City as <mark style="color:blue;">**City B**</mark> from the drop-down list.
 
-[**Click here**](https://staging.digit.org/employee) **to access DIGIT as an Employee.**
+### **Access DIGIT in Employee Role**
 
-* **First time users -** [**click here**](https://www.digit.org/access-digit/) **to generate your role-based credentials.**
-* Use the credentials generated and sent to your registered email ID to log in as an employee.
-* Select **City** as **City B**.
+* [x] [Click here](https://staging.digit.org/employee/language-selection) to access DIGIT in an employee role.&#x20;
 
-Use the role-based credentials to explore the features and functions specific to the given role.
-{% endhint %}
+![](<.gitbook/assets/image (47).png>)
+
+* [x] Use the credentials generated and sent to your registered email ID to log in as an employee. _(Fill in the details on_ [_this page_](https://www.digit.org/access-digit/) _to generate your role-based credentials)_.&#x20;
+* [x] Select City as <mark style="color:blue;">**City B**</mark>.
 
 ## Demo Scripts
 
