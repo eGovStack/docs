@@ -10,11 +10,11 @@ description: >-
 
 Citizens represent individuals, communities, or business entities who are the system end-users. The PT module allows property owners to register their property details online. These details are then used for various property-related transactions.
 
-The citizen can also approach the Counter Employee (CE) to register new property, assess property or pay property tax.![](https://docs.google.com/drawings/u/0/d/seSp91QR2XSdophhuwmkCJA/image?w=425\&h=232\&rev=266\&ac=1\&parent=1q5Qmal\_ywLqWn-MBuGYWdfkTLSyN9MnVg4tEXL4D9es)
+The citizen can also approach the Counter Employee (CE) to register new property, assess property or pay property tax.
 
 **The Citizen or CE role can -**
 
-* ​[Add new property](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#add-new-property)​
+* ​[Add new property](citizen-user-manual.md#add-new-property)​
 * ​[Edit property](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#edit-property)​
 * ​[Search property](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#search-property)​
 * ​[Assess property](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#assess-property)​
@@ -23,27 +23,74 @@ The citizen can also approach the Counter Employee (CE) to register new property
 * ​[Pay property tax](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#pay-property-tax)​
 * ​[Download payment receipts](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#pay-property-tax)​
 
-### **Add New Property** <a href="#add-new-property" id="add-new-property"></a>
+### **Register New Property** <a href="#add-new-property" id="add-new-property"></a>
 
-Citizens or CE can add new property details through the DIGIT web portal or the DIGIT mobile app.
+Login into the system to land on the home page and choose Create Property. This will display the Required Documents list. Note the list of documents valid for address, identity, registration, usage, special category, and occupancy proofs.&#x20;
 
-To add a new property click on the **Property Tax** card available in the **Citizen Services** section of the Home page.![](https://docs.google.com/drawings/u/0/d/seDWOsUhRoTzs1JxJAujc0Q/image?w=624\&h=290\&rev=7\&ac=1\&parent=1q5Qmal\_ywLqWn-MBuGYWdfkTLSyN9MnVg4tEXL4D9es)
+![](https://lh5.googleusercontent.com/OLweHo9\_FRNbQX6iwZ-LBMYVALolKf9VjBGjNLZFvVoJZ5yTNXdHWxinq3Ix\_2c\_-\_dmRaq5AVlcCSrw7MLCYVf1jDpDRcDbuEvaGM6IpE2NTHFX2VGeonisYQYgk7WeIVbt8vO\_)![](https://lh3.googleusercontent.com/vncdBevSf1g\_SOTmaIZVISbQVzcJ9haCwZqeg6V-ao8P5aQbSDDieeBrxTs6QuvhKWTPx0XIMCKxFVYfvenRC0KfbrvaOArNFrBh5nEoxluP\_-ZfTVzz2KRk53ekW6nHUHQHsnuC)
 
-Click on the **Add New Property** button on the screen. This will open a new form page.![](https://docs.google.com/drawings/u/0/d/sGXT\_05YQYLufoBH-h-j6Xg/image?w=624\&h=352\&rev=11\&ac=1\&parent=1q5Qmal\_ywLqWn-MBuGYWdfkTLSyN9MnVg4tEXL4D9es)
+Click on Next to move on to the next screen, read the questions displayed carefully and answer them correctly, keep moving to the next screen by clicking on Next button.
 
-The system will display the **Required Documents - Property Tax** list. Note the list of documents valid for address, identity, registration, usage, special category, and occupancy proofs.
+Is this a Residential Property? - Yes/ No Type of Property - Select the correct option out of the option provided.
 
-![](https://lh4.googleusercontent.com/avJIPMSxsehU02dTK8QvpZbJoeSHU7xdRQNe304PMqHAiVZNofim7-P8fs7lvKTOrkQk-jYzdHSLIF8IjpqwXOfbLp2iBNYvDiLKbtC0fBr2aoIjoYaPU7ByyabBUWIDVcD\_C-pQ)
+![](https://lh6.googleusercontent.com/y4v\_A99voVTlPgh10Nrnc-pUJuMlIa5B1jX3usa\_8wQ59rLObdco9C1qZp6TsZhVRIwsEgDTjzPn45J8IUvb9Sz2C49JsBjjkkOGhul6nZr0HYmPXj9vG7yBF056kk\_RBEoNLQu1)![](https://lh5.googleusercontent.com/jyMX9Zv-yhMniO5EqoLdqw2OsjCvDWBodYNf1VvjMIo\_oj7-a\_rfzdg5-zVTRkQbsLYIfo\_7irqNcMMFw2kiRSO0w2gyXbd6ig7HokksgBwByXzRBHh\_lmIMh-jjcNm6tnOmOJGF)
 
-Click on the **Print** button to get a hard copy of the documents list for reference. Click on the **Apply** button to proceed with adding your property. The form sections are available on the top of the page.
+Next, provide the below information. Number Of Floors - Select the correct option out of the option provided. Number of Basements - Select the correct option out of the option provided.
 
-![](https://lh4.googleusercontent.com/rknBMmpi-TvKiA9-BIEf8LQjAr9eGVeHQsVclqPuTozHvicGhl2dV8YDY0Ogh3rrqGKvPu1UZlpXFiAsiuJyClZ\_pq3dKDTBl2Sst48WVtng5m6h9i774zh9aQzbbQj2pul05Qqb)
+![](https://lh6.googleusercontent.com/U2NYfBOOlqttRlWupFw996UR3RYA7KBVjhPz\_coFUs4jJDC24W0q54tGPgfcgRWg2SdqR6iz3nmjDDPb-rmjUGQRnXo2i1RIeIaOawlfp5C-eJIcRePF\_6Ku37hKfzRYIyrNOm7k)![](https://lh6.googleusercontent.com/QFE2gV0KLRUNwUB7tJTwte3IhYmT2TTi5tpDHdQMZhwaCVZLfvckNtZIzTi2UlEYqpDa3aPUpIGq5AhW9pPOt4V28bGjCM3afXED657iqrJNhMwv-hqMbWHj4atGmpn8XK-4Trir)
 
-**Add Property Form Sections**
+Next, provide the information on. **** Ground Floor Details Plot Size - Enter the area of plot in the unit displayed on the screen. Built Up Area - Enter the total built-up area of the property in the unit displayed on the screen. Is this floor Self occupied? - Select the correct option out of the option provided.
 
-The add property form page contains various sections that include
+![](https://lh3.googleusercontent.com/DIw3XwrtMBnElRMYOOuAud9o7OVy49yod8\_-2GwlTaD2uit73B4sn-9XNSvMPUAH3fC9cTsXhHL80FLyigImNgPrF0tvdSyvhbmQTbK6SiJa9rkXFvJ9cZjEkslpu6pv2\_jYI1tY)![](https://lh3.googleusercontent.com/zKegSDRZx8wH\_yM766vTQLq93v37xGfLzrio3QpLOORFhmcMPQXtQ2q6wUU5dwBEWT1f9DMmEdg0FQwQ6Y4L3sFFDGa0qgnER95wNcsBsNs0KqSotgBblCf-BiIsyaYlxHMEVVwu)
 
-* **Property Address**
+Next, provide the below information.
+
+Is any part of this floor unoccupied? - Yes/ No Pin Property Location - Pin the property location on map if you are at the building applying for registration.
+
+![](https://lh6.googleusercontent.com/-Ps2ThgrO28\_nr55XUnFBEA6F3oHelYTVIsUDISCYHXPVksGX5bs0s1UlmIFnoB6ZZH1UrPIyOJMYzlzaS1XI6gjRhLIe8DS-SyEKjNs8stJajh8ceedRkvYdDJcLQIl6\_35xD2X)![](https://lh6.googleusercontent.com/TiiDZiIeL7xil90s3U6AhWQyzNCl9GLJUIriYK53Nt4ibbwMnjCMIq9DrF9plD3kQTRygsKN05KPrmEJ6v2f\_jp-wiv512S9xRYf15egYCjqp2vM34mI6mHytByangnbytOlu3Hi)
+
+Next, provide the below information.
+
+Do you know the pincode? - Enter the pincode of the area if you are aware of it. Provide Property address City - Choose the city where the property is located. Locality - Choose the locality of the city where the property is located.
+
+![](https://lh6.googleusercontent.com/oDi1zO9VkcAg2VKSf40nCp8yEOozjP1JdZLVawDjfKZWbKUU\_o4aYhwdRtQIFDipMgTq1QUUCdEU1jiNPtAzb1U2qQD1Ul4harG7b82UyStHlWAGBAgHHpJI9LSdUJkeJ7BJ02Yc)![](https://lh6.googleusercontent.com/8njPCSM6gIwScGZ-EYS1kl8Fgj\_ztiKINNYgURcj7uvCLiGbXDgsHJ-C\_W8IO95YS9hOQDm9ZzBEAGuBBsB2aSpYZ896juaWWT1DK1h7k\_GodCL4HqG7rRaS0irptUOcMTjuIhG3)
+
+Next, provide the information on.
+
+Provide property address Street Name - Enter the name of the street if known where the property is located. Door/ House No. - Enter the Door/ House No. of the building. Provide Landmark - Enter the landmark of the property.
+
+![](https://lh3.googleusercontent.com/DF2hw124dWWvqq61cUSPw1CvTW-YuqBzfmfabZFsuLvsDrpF46iMpc\_XkqI5Ca\_aLdFe3FJ4H6PHyfQav46sgBH5TjofDTFD5JvS6OkvegCyAbtvOvHb8onW2Tb1TUruEsVyeSYZ)![](https://lh6.googleusercontent.com/2NWJYS-WDMjUL4mIvhlInPGp9qQZ4H0fgMqbgF01BRDVa\_TQ54Roarbe7af6nlMEEUa7vdlWVJx5swDcjuiIFfCDt1gwdjMgbmV6lTWBQ-VeJz9QKkLBczHjgVwuN-VXfBBz9\_l5)
+
+Next, provide the information on.
+
+Proof of Address Document Type - Choose the name of the document out of the options provided you are willing to attach as address proof. Choose File - Attach the scanned copy of the document chosen above. Provide Ownership details - Choose the type of ownership this property has from the options provided.
+
+![](https://lh5.googleusercontent.com/A3nXy\_E3tRfL4D-c-qmd30GVm6d59xUA53TJX3xmvHfRimaJ1GoDg0gXDl1sy-y339bI\_rOCQxjFcc09R-df4xTR8068EGAVcCQFh7JgJTdq-im-hljp0mUltMfC3AVmcvSIXOcx)![](https://lh6.googleusercontent.com/qD0X0gbfYul6BtrrXyoVFrfPIn1\_Dx5a8f1z1WT9ADWH-eUxQESEEHDrqO12n5AUULoXjM5xXitaFDW\_cA2Kr19N5sJB-oGkOdJTKPPPUnm\_TjLfzl21rnyg\_nYmDQvSX4PtAD4D)
+
+Next, provide the below information. Owner Details Name - Enter the name of owner(s). Multiple owners can be added if ownership type was selected so above.. Gender - Choose the gender of the owner from the option provided. Mobile No. - Enter the mobile number of the owner. Guardian - Enter the guardian name of the owner. Relationship - Choose the relationship of the owner with the guardian.
+
+![](https://lh5.googleusercontent.com/-XA1l0G6YH9rOtFYnVawL1EEiOrnGIqfkSC7S2psd5tEUf9nZcG1m4zc4dO\_XxNvwYPt3L2oloei-01KcNpwMZnyqYhy4UXGqycEQLYODAHamq2UvCF4LkhsTRrzWattmLUvg3qw)![](https://lh3.googleusercontent.com/5upDZ-GX60gsxpGH6KPB3vSeZxS9t8kJ8ocrL5lW89qIzgyqsYRDg6-Sl9l55Z3IYGhhb2znBBbOofKudjOftO2E3QhACd8QGaB\_jD8kDpv2\_aA96BWHLD0zrFKylIOd5etmZbLs)
+
+Next, provide the below information.
+
+Special owner category - Select the correct option out of the option provided. Owner’s Address - Enter the correspondent address of the owner else check the checkbox if the address is the same as property address.
+
+![](https://lh3.googleusercontent.com/4jrfc-IkDJQgZIcnMYugtHjaCN4\_aB2MCIyxdxeLDBu-Ljy\_TKCXs\_7HKbV0616jp56w12tg9f\_zCwthu1QEqRc4eOUjDKsJp8sGCacFfd6t3dzOnRBjP\_VrsTk53Xtzqi4Evd0\_)![](https://lh5.googleusercontent.com/EvJzYacJESOY7tuR2lmX\_0gtbBjw6NlizkB1SYfafLfbcwQm9xPl1thUifXRz85nCarVdrgretlTb6C6Hj27IUWITUiY4NIAywXYI1QiIDG1D5tNvRmi3qrCR13wsiAHZ06WNO0F)
+
+Next, provide the information on.
+
+Proof of identity Document Type - Choose the name of the document from the options provided you want to attach as the proof of identity. Choose File - Attach the scanned copy of the document which has been chosen above.
+
+![](https://lh6.googleusercontent.com/8KaDgyKhw6JiDpC3tAirWso07tfSMjM3TwKsr\_XhTp27Ikwh-lq1ZaUHYhGi6fdPglzlx-TObdZNwY39PkhnX4\_FoGSqx8NvthdbWI\_mE4NYBeFpw7usOsoQh7IKaBvIqO5C3e3e)![](https://lh6.googleusercontent.com/8D2J1alo3LY6hnrvKIV3gp1u9L5bxJ15UjJqhv0W4dFKeeCuG3ucCyvCS1RHfVwgAT1dmE4GeGfEbtrdObXn1JK7E\_RlDK2SdET03qc9SJLILzifeyVS--enkNVvxlNXl6hgbo96)
+
+Check the declaration box and then submit the application. A success message is displayed along with application no. and unique property ID.
+
+![](https://lh6.googleusercontent.com/A0Oo4C8XZVVlkZv7BiRZLmnsJviet8Y3S-uPRGmGnGccGAqkztPszZMuV1nR53yNxRGAk23l5qFUIxkh24Op8V9LjqdKa9Zd6v4P\_hj1oyU2P0fMaeTVjOVtfUyse\_3KQOWQ4Ngs)![](https://lh5.googleusercontent.com/-JHFygMzG\_iXxrK1Bn224xlEfqWBIxbVifB5R3gvZX8UFahOAfSqQs3UvbdRmDPICxH1mXplaIToSWnMIU\_KvshwjKOdaSjUQYMUMhJX6m3wlt-JS\_plqMwukKuGGWvDGUOujIZ6)
+
+
+
+
+
 * **Property Details**
 * **Owner Details**
 * **Document Info**
@@ -53,222 +100,122 @@ Enter the following information in the **Property Address** section.
 
 The system will display the New Property form page.![](https://docs.google.com/drawings/u/0/d/sH7DsvB9k7W2f1N2DERQplg/image?w=624\&h=328\&rev=1\&ac=1\&parent=1q5Qmal\_ywLqWn-MBuGYWdfkTLSyN9MnVg4tEXL4D9es)
 
-The **City** field displays the registered city by default. Click on the drop-down list to select a different city. Enter the **House/Shop No.**, **Building/Colony Name**, **Street Name**, **Locality/Mohalla**, and the **Pincode**. Enter the **Existing Property ID** in case there is a legacy property ID available for the listed property.
+### **Search & Pay**  <a href="#search-property" id="search-property"></a>
 
-Click on the **Next** button to move to the next section.
+Citizens access the citizen portal via the ULB portal and land on the home page displayed below. Click on the Search and Pay option on the property tax panel to search for a property and pay the property tax dues. Note: Users can search and pay the property taxes even without logging in to the application.
 
-Enter the following details in the Property Details section
+![](https://lh3.googleusercontent.com/o0AiOrpCcg5LkgJ0vSIxB-Po12PdwkfzHn5gfmkIFu5rTooWJMzAEhwnEhrrqlA9glmdSc2iRR17tJ-QVNFwCHL-DefikTAmVv9phLopxBQDI9my7sW7RoXLIWbQZEUG-Zl94dT\_)
 
-Select the applicable **Property Usage Type** and the **Property Type** from the drop-down list available.
+Enter the Owner Mobile Number or Unique Property ID or Existing Property ID to search for listed properties. Click on the Search button to fetch the list of the filtered properties. Click on the View Detail button to see the tax details of the selected property and proceed with payment.
 
-![](https://lh3.googleusercontent.com/ed-f8D4t\_UWDuuixclY9-qEsWFf0W\_Y2q9dI79zEHsXqdRBbFBni-PXKndENVMcHqc2WSVY9-sDy94QZ9QmKqbA3trWn4GNbZC2Rq19-Q3PKXSMGqC-r1b0PU5SLQ6hdFhXnNFkL)
+![](https://lh3.googleusercontent.com/Fx9p16ORM8g5-DLNRGlFUXz7Rz5ty9IrDllT0rFaO1JyHEpynPzdBL9QRx5pmNqOmD4YicTTH4P88rVhn6xywD0GIWpEnYRwsUzQcFUOyj0k09S3MZlvbo-2SrEXlzkYuIsmh27G)![](https://lh5.googleusercontent.com/E4Yq0Sx3qGs-cbRLqhOx1\_bLl2PNr1sn14O52dB0KnY3o3YYX3xh5WF1-Myq9KZ9my49bDoKTQtjweo0zGPPg-P5HH86oOVjB1O8mVLtaQHTne\_BPh5xdWOEYBzy-WWddJJmq4JF)
 
-Check **Yes** or **No** to indicate **Whether rainwater harvesting structure provided on the property?** Enter **Vasika No.** and **Vasika Date** if applicable. Enter **Allotment Letter No.** and **Allotment Date** if applicable.
+Verify the tax details displayed on the screen. Select Full Amount to pay full tax amount. Else, select Custom Amount option to make partial payment. Enter the Amount you are going to pay. Click on Proceed To Pay.
 
-![](https://lh5.googleusercontent.com/CgVWTR3yGwL-7F5v9FXuK8IBn\_4e6mwyXk5B1DC4r59dp0dcEUVPzifBTMJz7LD-SV4GyGtePWFU7oa7Yckfxa\_xPa4kZsLYQaZeWbv5aY54ZROICaEUGQGnETwze7oX40pJAV4A)
+![](https://lh4.googleusercontent.com/Di7YOL\_ljcQHT1MOZdfNYY-Vql5pjUKFjQJSf-3AobSy8V7XkrCnjq4WNTaZGGYcUQhEG9mJLBjjgjdztq9meOVW2H0JNff9RbH7YUFci7GIRCZ7B3JBtlnz2xiXZzNKFOe\_4dC9)![](https://lh3.googleusercontent.com/fu2AVuLD72a6P7P4Rb9bfRn72zheet2h4Jizj8L4ONSRYmI\_xQyoX6AtGN0VHQhx1kP4PfwXhZDxbSriZzjV2gV59-zN0eLoZ9eJVVz05ebSTGQz018xedmZEwzMLmB89KcZ2ZIi)
 
-Enter **Firm/Business Name** if the property is listed as commercial or institutional. Enter any information in the **Remarks** field. Check the box **Do you have any inflammable material stored on your property?** if it is true. Check the box adjacent to **Height of property more than 36 feet?** if it is true. Fill in the **Unit** details if the selected property usage type is **Commercial**, **Institutional**, **Other Non-Residential**, or **Residential**.
+Select Payment Method as appropriate and then click on Pay.
 
-![](https://lh4.googleusercontent.com/da9LgCwWYkIa7o9\_elF2O9IYBBtGcPLY7Y9VbhPWF56nF7avjIee63vydNKOEbGSWUcv0aJ1bE6ucy1dHlVkNQ9PXctQov8VuXnCeZT8FicqPUn1O2onmRInxeJ9p7DhAg5Inq7k)
+![](https://lh4.googleusercontent.com/FUFKhvKSGByncbST2QDa-0-XU7etvvgwRjHji2z6AlXpqUKnVgZ\_H5oby-c3jyo9uX6GR38ycySJ68QFwaYXWMffzA1b3c6VA1doULEa-12EYfgXlGnEh6eMuELa\_uXg4lkICwHf)![](https://lh4.googleusercontent.com/6kWqjYivFa4WnNfJpXNr03ZeFgDrcX4v\_zbJd3k9jjx3eN1zIrI3gLvDD3NusAb7337bpMsIUhXeCg\_qIn4gaMaVczCuKEhEZ\_L4ZVbKmKoZTums4Nw7-2Pnjq66tOENkHtmGo3w)
 
-The **Unit Usage Type** by default accepts the **Property Usage Type** value. Select the applicable **Sub Usage Type** for the listed property in case of **Commercial** or **Institutional** properties. Select the most applicable option for the type of **Occupancy**. Enter the **Built-up-area (sq ft)** value of the property. **Select Floor** to identify the relevant floor of the property. Click on **+Add One More Unit** button to add more units.
+Payment transaction is completed by payment gateway.
 
-Click on the **Next** button to proceed to enter the **Owner Details**.
+![](https://lh4.googleusercontent.com/UspJChMtGGIPLLyukgJHbKt3QPuVKVND3ipZ9FfmShg4NdGyinT5qeQTmUl64P5LyC0sju1tu7\_nHdn8JhyOItxBf9ep4HzJENrDjPdeRTPcRB-VXFj9sW5f61KgEXQm7aml11Jg)![](https://lh5.googleusercontent.com/fV1EU2pgWGCLm2ukxQjlxVA-wzCDTNf-IPfNWTTj0EOuc2dHchAtOWL3qT5BoO2ent5tPpt5PQ2LEVtJjWrr-lJ4QQBZpM-qeBtep77wJq8FdWeSHjmJKYJVd5FJiBeUHyEXeH3w)
 
-Enter the following information in the **Owner Details** section. Select the relevant **Type of Ownership**. Enter the **Owner’s Name**.
+According to the response received from payment gateway success/failure message is displayed with the option to download the payment receipt.
 
-![](https://lh3.googleusercontent.com/lxO2AMspTiXmE4Ye6M9gtEQmUmkon-vwGyHRE0gMgWsV8Teq4dsrQb7sdF-CI2YobtUD0FYVFihUgqN3kmx6D4XZ1qAIhKI2o4wjHznI2V3iDzllw94UvhGZjR2RDLl8OvdJMku8)
+![](https://lh4.googleusercontent.com/DL3BjEAw\_IMqeymkADBAz5w-2MphByhJbmgZCi8QD3xegIKPlFvB6yHEu4-9kU\_xInY8tF1gN7tlNw59O-abDxcM\_JlSlh5Q0h8v4Z3N8LLIrHdc8fgAzFZ0MlV5sakhiReobOMd)![](https://lh3.googleusercontent.com/MtWlkeJKD-aB1A9UWTnPbAXUyeSK3Oc52nApCQba9haa8SPPzkpQvEQeDfE2ZZpyTK1umI0vL0PPiCjpJ8kfXgkMrUt5vaPocx-gO4gBazx-N1xMrCvD1d51wVF9t0orTf60IXCp)
 
-Check the applicable Gender of the owner. Enter the owner’s **Mobile No.** and **Guardian’s Name**. Select **Relationship** of the owner with the guardian. Enter the applicable **Special Category**. Enter the owner’s **Email Id** and the **Correspondence Address**. Check the **Same as property address** box if the correspondence address is the same as the address of the listed property. The **Correspondence Address** field is auto-populated in that case.
+### **View & Pay Bills**
 
-Click on the **Next** button to move to the **Documents** section.
+Log in into the system to land on the home page and click on My Bills. All bills pending for payment are displayed.
 
-Upload the required documents in the **Documents** section of the application form. In the **Select Document** field, select the type of document you are uploading for **Address Proof**, **Identity Proof**, **Registration Proof**, **Usage Proof**, and **Construction Proof**.
+![](https://lh5.googleusercontent.com/UTxddDoP0QwpRP72MtGH\_uVXiplURgKwP0ICGPu3-DoZZV-mhwogR7fOCYeYOF5EqYu01onWe7PHTRVWvlfZ6Wrux6m-HJ4-JSWZeTv0G1n\_jVS5h5L78nKbkJ4tmmtrU4TwSC2i)![](https://lh5.googleusercontent.com/xqvbn4MdzXXAASHZ3Crq2LCvehLmoDqkNg68kOHaeUoNZhrOTiljGHiBf8IqfOwnD6KYP5\_dgwftva3Bez9B3h\_LPwTBzWw3t01DoPLZ8Y9KAToBF7YeJz8uQk\_X6jMlxzsGtQdT)
 
-![](https://lh4.googleusercontent.com/qKE-yjtQ3e\_6egULk3hb7wlMgf6WN2nx7EVVVT\_fmbiphre5LYU9fAIhrXQGzE5zfIhyiZnp0C-9Whl6TqaJTjwG1brk2n2T4cENRxjGGD-wcGifcYG9ImXZrReBwcfVHYQc-GZB)
+Click on View Detail to see the tax details for the selected bill and then click on Proceed To Pay. It redirects users to the payment gateway page. Navigation from here is the same as detailed in Search and Pay.
 
-Click on the **Upload File** button to upload the documents.
+![](https://lh4.googleusercontent.com/G44F1Db49j6dEhj8lvPzmUmELfVj4BIZpoNd8MBwDRtvvCw7oZhI5ls1aTXAAYrzFN1s8SlN3u4DYoGAK2fsfdm5DEp1MIP6YR7xuHxOesAWRtrI3X0KvYk\_pk5KAv89xoalGCOP)![](https://lh3.googleusercontent.com/JuPNrJuMHvA2tD3rYZLpGksgKDMHkjOMs7JVhL--GcKla9uBsmi4iy0laQihxIbsYpcmlTijsf58HJaLO5YvlD5hY1tMMZVNYkTKIrqM3xT9IYxZRai82dsTnTnGa2Eoo1irCcCw)
 
-Click on the **Next** button to proceed to the next section.
+### **View Registered Properties**
 
-The **Application Summary** page provides all the information filled in by the applicant. Click on the **Edit** icon ![](https://lh5.googleusercontent.com/GWZgkD\_fJ\_h5mpX5dL-uypyhPaNjo8AsKD80Xu3EeextT7nDW0z3Z6GQDRsmLEIa9k3C5y-zL1qsVaNpoWG7pzVRP6IJ\_bOcAW-RVoF1blCqAJMZFTxlVyDSv\_Okoi2ri235oyUG) to make any changes to the application.
+Login into the system to land on the home page and choose My Properties. It will display all the properties owned by logged in citizens.
 
-![](https://lh3.googleusercontent.com/6Sd6gL52tJiRKx1qiZTByO1DIeb9Y8HzR8GAYcND1UkjPOE4deKt2bv48KebjBi1VvFvF9x\_5bR1O5FjJlBYt0fVdfClcPrYygOeTZFvW1OILXFC7cWMc9yFfNsKNQ3a36gXIWMD)
+![](https://lh6.googleusercontent.com/83Zq6pSQaV5kOjcrJOqHksY1afu8WhuPdAAvmEKIOeIGN\_ogah6dRbsRdIIr7vQLDZQraG4KHcKHQzCwS0x9aNpGPsaEe4q5z\_BTDJfS1vWAq6EI4sgBG9idn17OmiTWy3VDbDID)![](https://lh3.googleusercontent.com/15yFjAmpiivZvPGzgrkres6adfLFPLtM1nNtvMDxMYwUj6QRWJi3ravNzfNL6D76LfYJjoTrWoFauM5-aHO4o8zeVAtONnwjOymz3sDjCZvpMVwjJfdNaPgTroZtjoc7Ys5SH1Mk)
 
-Click on the **Add Property** button once the details are reviewed and corrected. The system displays the New Property Successfully Added acknowledgement message.
+Click on View Detail to view the complete detail of the property. It will display the property detail.
 
-The **Property ID** is available along with this message.
+![](https://lh4.googleusercontent.com/YOCEn1RQ0pZr-\_StlWpO-NI2REfGX\_tmAkK5q6tbKMBo5Sfji3DJsW2jzikPN21UtAmraogTrBu2xzOLUA3wcJ-su8PoO23oW9Dtfs2kweeqwxO2pJ2Cn2KpYsq\_RpFy7GafesFx)
 
-![](https://lh6.googleusercontent.com/reDjopRtDZbg0L5SK2uz1j8wYowD5a8HI9BJcBhCVKnmUWpvUhj1rAdAt7BE\_wdsFdfJKIzoLy92Xr8sIiXN1Sx62VACXaByJonT95H5hGiBYLcRop8tJzRaC8JAR7xo\_r8D-afy)
+### **View Applications**
 
-Click on the **Download** button on top of the message box to download the application. Click on the **Print** button to print the application.
+Login into the system to land on the home page and choose My Applications. It will list all the applications applied so far related to property tax service.
 
-### **Search Property** <a href="#search-property" id="search-property"></a>
+![](https://lh6.googleusercontent.com/0z6gplQKl3OE1u1iPKdGvXq9nmxdROSQgV-ECUxu-so9Aej8\_6DfIcJqOaG-Xdh7iSW9OJn-\_tUNwW1qkk7thMymo91JcqSI\_CKiCboO6EAzXs0fZlue8E-3\_XjjyW1z6sJ7QOC4)![](https://lh4.googleusercontent.com/uPe5gVBSPFzNUt3b9CRWB3AT9nFI3omYPxWEUvsCT\_tKF74Yz5wYH9AoN\_z-3zDOxlWOdZq2X2F-jLyfBfpyyNeM51-sxcnxGF7v7wHmgHwTcFRM3kArCf6UXl9lp9JKsOcJTBXJ)
 
-To search for a submitted application or track the status of submitted applications navigate to the **Property Tax** home page. There are two search options available. Users can search by property or application.
+Click on the Track to view the application details and its current status.
 
-![](https://lh6.googleusercontent.com/FHUQwQLSOAp3sEDD8Ek\_rFvpzMrMgEouz325KF5bXUkqdHV6itXzTJl\_exRddHDzbyL0mV\_0JvotM6NgOd55Ge3hN5og5O3WOZkGO\_PIJxIUqDKQQpjDH5C8Pb06IuAXf52SVAxS)
+![](https://lh3.googleusercontent.com/8OTyjXmGpF4zUrDbH54Z390l4BqZcVmkOGfDPBTkooZQsU9qF2GPxvwFoqCrNj5xkN4JMzOIr9l5vDoW53nduT5Ba8CvAnUWastBsWqKmZCCeH-FXFhsexJbI4KoU1bBakRcJeMM)![](https://lh6.googleusercontent.com/J-GSv3bspI0vJqKA6IQwRT025h2CJms274Lt26-vrrsQW5Nm1TMRCiX3SlWtMUCOgxfpZ9S\_zFCuh4Lg2nxgOBOqCx8RlBD66IyqWTEnSE9ijKMBDOjhyJfpSifcEbXMKjfaWyzc)
 
-To Search by Property click on the **Search Property** tab. Enter the **ULB**. The system displays the registered City or ULB details by default. Enter any of the following search parameters or combinations to refine the search for property. Enter the **Owner Mobile No**. or the **Unique Property ID** allotted by the system. Enter the **Existing Property ID** if there is any legacy ID linked to the property.
+### **Update Property**
 
-Click on the **Search** button to view the results. Click on the **Reset** button to renew search with different parameters.
+Login into the system to land on the home page and choose My Properties. It will display properties owned by the logged in citizen.
 
-To Search by Application click on the **Search Application** tab.
+![](https://lh6.googleusercontent.com/fnn9aq-FYbJj7xHAX6Su6I2Q4fcu0MFD9K8vjrqj0SpvDYT1bqvaBslGt1\_ysBxlxGFk4KrJjygM21pWK0WeGdIJMJQ\_vjOL4\_YiEJ2w\_h\_9cueI3QdaqeLlRCgpZPElbU3Rrqzq)![](https://lh3.googleusercontent.com/wPb\_m9Jj6yEhCsw85dRPOZqP6AjY\_58AcudDkIwJpW9AqnDsgD9DtRpStb\_SDT8CEk254o2OB3krDTdZDYr4p3JUN\_1N4Svz2eNrnwxFWLC9aid5ahmfFzCKOH7DIi3jxpG89mxZ)
 
-![](https://lh6.googleusercontent.com/vjL27TvS3qFDTf4pxpCzVRQBw9A3U4uh7ZzWCjNVGt-m80GxWVBFadXw9YDtfRBKbPD6ZmAyIDmQAIdqnmIyMBupjSPO0SlTWrZSCpbKiiJ3cKBUFxGYGe3PoS-o45rTHFPzYMM8)
+Click on View Detail to see the detail of property currently available in municipal record.  Click on UPDATE PROPERTY to initiate an application to update the property details.
 
-Enter any of the following search parameters or combinations to refine the search for property. Enter the **Application No.** or the **Owner Mobile No.** or the **Unique Property ID**.
+![](https://lh4.googleusercontent.com/mlmOzGUlCkIWCvxQRKgYx1cBBXk8SKiHN0uxj4PVD1IIa5lWRovWvLRpGutdGocnDBocsmP8A75KNnyoZ2j-OL7hiXnqM7MNJl7U\_gQ3D822PCog01DZo88aQTjT-GBYo45t-3Be)![](https://lh6.googleusercontent.com/AFudJ4ZmsM2ZlGGV9F6oqZErW-5LhC\_Xhac1m4NxYtrTCV55ChAQ0Q6qwK4ULudMfwvHKKEhNWJODZMvxkmX17LBjxSns\_MFwWHdoJFRXUxp5QFGmwTiifquD-v1EVJJFcZJvcam)
 
-Click on the **Search** button to view the search results. Click on the **Reset** button to renew search with different parameters.
+From here onward the navigation is the same as creating a new property application.
 
-The search results show the filtered list of property entries along with the application **Status.**
+![](https://lh3.googleusercontent.com/4Jy1SigSe3obL5wxDpFdB\_XdHKS2IpgNKZ--Fj\_VaupiQ\_Dlvh\_1c661pAffLWFsvT6YYThzcaS97OrAEqhyUcZtyEOlwwSBiKKN6h4dSRBvIeWQIuwAzdiWVYD1znkqGBetaekK)![](https://lh4.googleusercontent.com/d10ENG7EMw5cN06Pt6JPrRt\_QrH\_-JYUhJSR9BtobjtGoUnC9n-U8xJDKN9zW4sodSOvUUJf2rbvWtFuvkWwdisPKPXgC6gwKqG8QpXpLGl83xgu6hCo0L2WMaUFuyxbZBltizDZ)
 
-![](https://lh3.googleusercontent.com/rd4FhXx12OniH-A7WcIm5uJVHI3fkIOyyu\_TA47tvhkQR3Qa56VmnixiF0RS3YHTik2SzXT1uXpLD5assNNtFfLts1joJfXndT\_CCQW5cPFh4ZGbvZ6p6rzUkYy61FCUowIjSw7U)
+### Transfer Property Ownership&#x20;
 
-An **Active** Status means the listed property is pending for further action. **Inworkflow** status means there is some action going on for the listed property and hence it is not accessible for any other action. Once the action is complete the status will change to **Active**.
+A property can be transferred from person to person or from organization to organization or from organization to person or vice versa due any of the reasons like sale, gift, will, succession etc. Whenever such transfers hannen the transferee is required to get it done in the municipal record. To apply for transfer of property ownership.
 
-Click on the **Unique Property ID** or **Application No.** hyperlink to access the property details.
+Login into the system to land on the home page and choose Transfer Property Ownership/ Mutation. It will take you to the search property screen. Search a property by entering the correct search parameters and search will display your desired property.
 
-### **Assess Property** <a href="#assess-property" id="assess-property"></a>
+![](https://lh3.googleusercontent.com/TIwHljmZJnvsvKmY2bGHXKBDgdpkuG5gm5UH7UxOS\_c4mA0DA1N8uEHmOEl9NJ-aWnMfdWRAdHBhzcieQM00hur3l92RI5JArcHsmJDV0gu9Yh1KV3z2CjHHrBcQPETcnBqVkij3)![](https://lh6.googleusercontent.com/PxazV9I7kPHW2PfVLTKR8Chk0RWiy8DwF6w0X-LlDzdX75mPvt4RUOBgyMQMQDQ3TzJehgv9KukyURsXNPtiHJzhe35d2wWDq77kIytqozbNEIdPejZ6V-3V6L5o0bdyLpusnw\_k)
 
-Listed properties are assessed every financial year to calculate the property tax amount.
+Click on TRANSFER OWNERSHIP and it will show the page with a list of documents which are needed to apply for it. Keep the document scanned before proceeding next.
 
-To assess property navigate to the **Property Tax >> Assess & Search** menu option on the sidebar. Alternatively, click on the **Property Tax** card on the Home page. Enter the required search parameter to refine your search for properties.
+![](https://lh5.googleusercontent.com/dRUrLXhKRg5A5eCxBi-tKb3bD85OoJGLETu2saav3wqsraDwijPTh9o-Yu2ZkOuz4MNYi91PcXK70UuvLKSLeBS7yOYpl4q0thS83e\_OEBCohYk-NG7S6FtLHgbpbngYF9BCg2vk)![](https://lh5.googleusercontent.com/PajPSOYQElnijCDlpEOHGRquQzTBMDOgYLO01T8s4A0kxe9I3Tj6nB7wnp-Bj0v-b0Z9gkVpND9JVgVtk7rMszdkNTQM7h-lSV6YNS8vzo9XlnJGgkBjkXZxFfuu8I1hpK4c9-pn)
 
-![](https://lh5.googleusercontent.com/YQIKrJvAIcU6yE-5MOQWXbWTJOy1WGS1dk8NDMn-xzj4qB79oGnep2G5wzoPaZAOLc2\_an4nU9-g4G9jy0hREZBDdV2l0eORNNwFAPUvnUA9bJ0TUB09zVk5Tmf9oJrYYIjiBX7n)
+**Next, it will display the transferor detail.**
 
-Click on the **Search** button to view the results. Click on the relevant **Unique Property ID**.
+![](https://lh4.googleusercontent.com/X9GQyK3GfbAqK17m8IeNJxcnEeNdhqF7WKz8aEH8uj31WNcqNd7P-olWqyflpg7sAYcDP7amTahJCnsjHNKHVEk\_uBw7-WgmtKsHi1xF0Ji88Yuje0zaIL9LM\_Jj1GmkZACcEPpa)![](https://lh4.googleusercontent.com/95UzoE9pvVnvERMHw0\_feygvv3znBch6PiVsjCHph4fh13C6XQ-cR1EVAyG4WnKWitZxnhAIpiSfMnCS24hw3SxfXeeq1HOV6AbnLXs7fUBO4ciI4gMd\_ELTPLNLGjYKVIjnVcWS)
 
-![](https://lh6.googleusercontent.com/6iPTZJK92wv0yS3kMkB2NXop4teyS\_6UXwH1C841IPokf-jHjvBXgH-9Hmrougtjd-kzhfPx3UUPdD4xUlZ0m4Pm2\_R9uRTktwCSkMixMPOd9OtsUGarbJLBvFPjY4U4nqYqtj5K)
+Next, enter transferee details. Ownership Detail - Choose the correct one from the options displayed on the screen. Owner Detail Name - Enter the name of the person to whom the property is transferred. Gender - Gender of the person to whom the property is transferred. Mobile Number - Mobile number of the person to whom property is transferred. Guardian - Guardian name of the person to whom property is transferred. Relationship - Relationship with the guardian.
 
-Scroll down the **Property Information** page to view the property details. Expand the **Assessment History** panel to view the previous assessment details.
+![](https://lh6.googleusercontent.com/8ZIVQpkaKIwoQzAqELhGflXAVP3xIUykgFpzzeHIynmDqcfWPnzRvvBpFN4qoWWkzMQMgRtCDZSwZ87hsNipB9GwR7FH3nzj7-v9soBBJdqHGUsr3nmu0MzKW9vxVd2HHcJQ5oSb)![](https://lh6.googleusercontent.com/9cfiMyulxqUaVk2Q924dDkjUOJGHrCmTn2cZ4tf1i4wZuQcYw4tdO1od1z0lLJYPO6\_my2E-9FqpdwlVsp0\_oeZ0C4svc0tRjZKnpMvseb2nwyX7w5MSO2zfwUq7MdI1zeViQrX9)
 
-![](https://lh5.googleusercontent.com/uY8Wqdz6KdY2X1vGa-MK3m\_SDIfQsKK-9P1zRLTOkkedWtddU4DxM6n\_X8wa4XBPD9Hs11ypr1lEde8Ia7We\_TfSPj8vyhiXmbgktTjk\_JIhLRMbmMtVI9eCiy3W-FHgM07hgxH4)
+Next, provide the information on. Special owner category - Choose the correct one from the options displayed on the screen. Owner’s Address - Enter the correspondence address of the person to whom property is transferred, else check the checkbox if it is the same as property address.
 
-Click on the **Re-Assess** button if you want to reassess the property. Expand the **Payment History** panel to view earlier payments made for the listed property.
+![](https://lh4.googleusercontent.com/sI6KHsxeviTg9LJoSWM-eLzVcXow3WJxYqOBuZDz41jMaAQf9bNns7kdJ--6kH3bx-U-XMradzoeGUThU1X-12LMo1BaWksP8oHlzx4U1vWupQIney8kZickEhMyS\_bBv0GuVd--)![](https://lh6.googleusercontent.com/tCfZRZN6tj8wwgYfJZsXXJQHaBLsb2rNk4tsBIH-jk3KgaNQLoXQX7P1q2rZepsLtdCu7ODxNfydGmdr12gMs-yJZP5njVUqMUSwTIQSphzPPTpE4RplVTvq6BAgufI9tKPGOhav)
 
-![](https://lh4.googleusercontent.com/bNWAla1ISv-bwzTrhuVHrYM4QWYjL-ZEXd\_2KIuVV3v4lz\_x5STPNRbmZ94ibM4QJBnit-cSiewgER1GcFRWzdmtmKZl9hFqCRyQDsNRE6Uvcynzs4YZyluQNXv-OQX-7ebq3xSZ)
+Next, provide the information on. Proof of identity Document Type - Choose the name of the document to be provided as identity proof. Choose File - Attach the scanned copy of the document chosen above. Is mutation pending in court? Yes/ No If Yes - Detail of court case
 
-Click on the **Download Receipt** button to get a soft copy of the listed payment. Expand the **Application History** panel to view the property application details.
+![](https://lh3.googleusercontent.com/moHxeR-2p-Z14jvEzQpbBXbz4ZLoK2u1mPxhrhVZXvYcXV5nuo1My7LpPcLToe\_whJq-Lj2NZdXdmjQdfuHhTABeB38Ywj5e9Hys87PETxsl75E1OdhPyS13RKFcEc8HfjN7zWXc)![](https://lh4.googleusercontent.com/aE3OgLjH7vVa1RMFXRHq7ctZxDw09\_pw\_yZzDm\_9M2KNT7W-PpWkUXPtrfLUQUFkx3woe5upbD3DoX97MQ9dwRBX\_BimoGWksmKaDZcKj74Np6aDFzrWRzBJ66c\_oO6MFmq6hWpR)
 
-![](https://lh6.googleusercontent.com/1USYixM9oeKX25VvYTVCHIDGYcTvYle\_KhgiVe8y3Gfe\_BqxEe\_F5igMG-suYVAoDvU4pnNDChdwD4S8hiUpx51975POaG0JGgPbb-iLHWWcytt7-\_PkWdO67AgioHrRdYEbF-hg)
+Next, provide the information on. Is property or part of property under the state/central government acquisition? Yes/ No If Yes - Detail of government acquisition. Reason for the property transfer - Choose the correct one from the options displayed in the drop down.
 
-Click on the **View Details** button to fetch application details. Click on the **Assess Property** button.
+![](https://lh4.googleusercontent.com/o8EjNVAe6jGmGl0dDLGaqpUCHrcTmsu4Mf5i-rlvL4lC36Zc55Z2BNaCI03bD0V6cqbpezJUiR-DswE08kYGwHVe186BMyJrbXV8667YmIR3Z796O8HQBBW0aeP85ohB52py\_8em)![](https://lh4.googleusercontent.com/1JvmkyOQb-hi6PEmepxh75uJMSAYAJGLi04nqcbpOWMCnpbjHGkjWe5jPgS2fOTQg----mew5BBdGgPbnI-5bcI0ou7r4nKwlb7cUfy9esgEwFXlzdd8XWoyfpDqngSEwlMYgCdu)
 
-![](https://lh5.googleusercontent.com/tZATKna3N\_8B6tXfvKcgb-XCM9ATi9vZCVmmrMumZMdSK4h2zrHXqAi0BA5eNhzbU19vYQ7qK5TSxSysn7qHFPx2w9QyG4JXxUoUXHOn0enziITozvJ5fyl5PomDLCIZyyqnZ36t)
+Next, provide the information on. Property market value - Enter the market value of property.
 
-Select the relevant **Financial Year**.
+![](https://lh5.googleusercontent.com/j4PjamXrE2dmSrfUCsim\_jowCg-ncvF2zhk5ZZhV4noMnk23AmVAac1LZdNfwjGAQTkQsOFZagHZIKHon3Zmog1oK2txELbeB4b1K6NhrzCxxtSCFKEEOliCpCBr9WqgwJrs1LCW)![](https://lh4.googleusercontent.com/PdVx3p7DVCHkYOiLdEHnJ4YVMD7jHKrMO0g2s3u61sDqm-X1BlxE1v9DpjjShYO-BXe\_-C-G6T0b5hXY2LZ4R7rZVxGlK7MSoIx\_ZkWAmZVQ5QGLGpXttYNcuVOPo97SxHfp-CH8)
 
-![](https://lh6.googleusercontent.com/7pvJgswJnSaiQUF8hIbSvllw9foHlKxZtWFmzIMPvwX3OIRc9QQryqwvzEKME00xLHwD2nnAoLIuFwpvxXAPxjbl7drABENtT5RzBKVe-KWG8poluGt726a0rgsrYJR9O-UizTQU)
+Next, provide the information on. Registration document details Registration document no. - Enter the registration document no. Registration document value - Enter the registration document value. Registration document date - Enter the registration document date. Remarks - Enter the additional remarks if any.
 
-The panel will display the **Property Tax** Amount details.
+![](https://lh4.googleusercontent.com/Swc4Ift7WJfZNt2AkW6Spl4wpy-0A7-cLBcKyjtS8z93uTTaw6\_ZTtnANbUghy6Hj\_DBEPZHeAkJGzMDxztlRXLQDTm-PPcOAICAAZ12oxJt4Ul73dsR06e4mMQGeb6Ee6aaq936)![](https://lh4.googleusercontent.com/La6K6fZK\_JLUPf\_-tXkiKLiZNO-6oJNfdkuU11K8wy\_MwcBa8oWEaEUULyBVynfhjyqvK0RuCIVbem33g4HCxeigZ182kASHff450tQIvA-EmrPj2qjtapTEv3P2OmCGNuUE79pW)
 
-![](https://lh4.googleusercontent.com/wHL08KYdLXfFkZcDKL2TG1-1-HnEhA\_h68Jcg86qENZR70VGqIcHTmngILGR7QJDU9kaLvndKlsyipZWeDXx9az\_gBu5Z2LBKM9NxTlDhqCY2vbS2L3cLQnhgH\_KSwSvoxZIH4Ir)
+Next, provide the information on. Registration document detail Document Type - Choose the correct document name from the options provided. Choose File - Attach the scanned copy of the document chosen above. Proof of address Document Type - Choose the correct document name from the options provided. Choose File - Attach the scanned copy of the document chosen above.
 
-Click on the **Add Rebate** button to apply any rebates or discounts on the tax amount. This feature is not available for the citizens.
+![](https://lh5.googleusercontent.com/-WApJSq7FZ6kx0bk5Y-rAVjqyhVoztB9bSDA8HvugqkM9lriv-MsbMk76\_9AW2Eog-VTQHwN20Lj2wRwV3\_cSby8QznHbW0rBCV17-bnc8OvkHrY8yVyF1gPesS\_MOrPkDej7OTR)![](https://lh6.googleusercontent.com/nXHi2fGRA3h6GpFSP2whLWlwj01pYaPcLpwKZXivukB9dpis4j1ZPqOFYgmDIXGJaNRBub5Xejs3cyjy2Z\_Z7kqMUiI0iLHWXheUrEXF6YMsV0IBbs380HXoIbQkairDn-an3SrY)
 
-![](https://lh4.googleusercontent.com/ybq1uI3TJnFWutfB7Sl2XDNDa40zBJorF5rw0Bxif4AZP6LTUdCde1TPYcgsZzU-ACpmkopxXvg-4BME4zckR7hmURWR--5e9Srv4Y0sWmkTIov4oRwvwycbH7fzntWYj\_sVF4v6)
+**Next, the application gets submitted and a success message is displayed along with an option to download the acknowledgement form.**
 
-Enter any **Additional Charges** amount, if applicable. Select the appropriate **Reason for Charges**. Enter any **Additional Rebate** amount, if applicable. Select the appropriate **Reason for Rebate**.
-
-Click on the **Submit** button to apply the rebate or charges to the tax amount. Click on the **Calculation Details** button to view the calculation logic applied for calculating the tax amount.
-
-![](https://lh6.googleusercontent.com/8ObFHMDJk5Us3RsKPtsHIVyflPp3hBjC4iB4rcVuTNsLorTMF3zVqBB6-j7DclRJmv1tlzLEAuGujvwodxt8pAxymKxe7EQG7bhsahZs7l1mDxEZTqbZEiKCTBAn5ZiAg9SNmGOK)
-
-Click on the **OK** button to move back to the Assessment page.
-
-Click on **Assess Property** once you complete reviewing all details. The system will display the assessment success acknowledgement message.
-
-![](https://lh6.googleusercontent.com/0tFvRflW44Rsa-iB3EnJeBF3ylH1EBDR1fdkm\_sVy2JrOFw6JlhTVeD38co-sF5ZNAR1rvTNGralI2SLVH77Yv1OM\_gOt9400JDuvpaEPf1Vh8SDod5fzBSMJjUdDMQON6-vaWdh)
-
-Click on the **Proceed to Payment** button to pay the property tax. Else click on the **Home** button to navigate back to the home page.
-
-### **Pay Property Tax** <a href="#pay-property-tax" id="pay-property-tax"></a>
-
-Applicants have to pay the property tax once the property is assessed for the specified financial year.
-
-To make payment for property tax click on the **Proceed to Payment** button after the property assessment is complete. The **Payment Collection** Details panel displays the tax **Fee Details**.
-
-![](https://lh4.googleusercontent.com/jNGXHfB7V0ULF4vurJ9\_uvVsLv45gT8iU8pxfwl3FPGBoTDvYplxCRlnUik1IL\_q6JZdK2l47S93noNAPbzGbrXi-CXSJB4nMuoNqkwgaXnA1\_o0MDinJD8ebczBl0TaLs9JMd3y)
-
-Enter the payment details. The system allows you to pay by cash, cheque, or credit/debit card. Click on the **Cash**, **Cheque**, **Credit/Debit Card** tab depending on the preferred payment method.
-
-![](https://lh6.googleusercontent.com/RAS\_nMy-XzjGV4jgrlDt\_4Z9tPgOhg9xv1VYD0gxyD1YDIU5BsTk0wG3VoUCo5ZxRM\_IoKhrodDLEXPscTSEqOwgK4FxL6hv-YAv9gL7arhCRYzQGH9M\_0C1E-o-ouiahrESJudx)
-
-Enter payment details as requested on the screen. Click on the **Generate Receipt** button to confirm the payment. The screen displays the success acknowledgement message along with the **Payment Receipt No.**
-
-![](https://lh4.googleusercontent.com/BU-xErD0A1R3VFG5JXXrnbVtLRi6vXW-xdgMDINCjPXj8gLBmVszFBYNXLv5YS82W9bqkTbWANOd3ElJQHdKvkjtuCitxrjS-vKCCqxsCQC6o0NKt36mMMvbkoxhJZFFPSoYjJU\_)
-
-Once the payment is complete the **Property Tax Receipt** is issued. Click on the **Download** or **Print** button to download or print the tax Payment Receipt.
-
-### **Transfer Property Ownership** <a href="#transfer-property-ownership" id="transfer-property-ownership"></a>
-
-The PT module allows users to transfer the ownership of property.
-
-To transfer the ownership of property search for the property by entering the **Unique Property ID** or any other search parameter. Click on the **Unique Property ID** to open the application. Scroll down the **Property Information** page. Click on the **Transfer Ownership** button available in the **Owner Details** panel.
-
-![](https://lh4.googleusercontent.com/6dtWmonW-iVq01CEaDyxqcKx-BHLc6vl\_LPQ7b2MpOehJTdHuaQgPJRHam-ybLxlt-7ayY\_AaM2uOTqiLF0ei2sJKEZZDATEpz0J3FYhtEsEuMSwFWPwvIF1rRTevn4vtvU7hH\_q)
-
-The system will display the list of **Required Documents - Transfer to Ownership**.
-
-![](https://lh4.googleusercontent.com/T8cgKoAm-ImI6zmXpSCeJEytjbY3xnYjQ-Mh\_u5Fzx0N\_EXihIjVIg0844Mf9TrGawZehBoWj-DINauCRZWIo3SfmsfsjLVQZbKXskadd0xDEKTt8OGX4XeLcechY-WSrZhBmFGw)
-
-![](https://lh3.googleusercontent.com/GqFf3jzNE86DEkP5I0YoxtXohoqWTLs2gTETNhKeOHaJ4jwLZ3Law\_S41frAMT\_ZrrS-upunUD9vVnEACgnfzCM0QbjvWKkhJBR9WKf0uKq\_N1SykvoBLUUCUjj17WMRadOpbrNs)
-
-Click on the **Print** button to print the list of documents. Click on the **Transfer Ownership** button to proceed with the mutation process. The **Transfer of Ownership** form page is displayed.
-
-![](https://lh4.googleusercontent.com/oOa1-k5wm6m3uBQIrxrhUbC-NSIik90F7c0EIuRWA9uI8\_C\_g4snuT8xaefHQi-RYqclnrCW6-7Am79SYJyNuBKLR-p\_YTj9xdLC6arjOoLhTftvVsUN01J07e8RPVGYWczf49Dv)
-
-The application timeline shows three sections -
-
-1. **Transfer Details**
-2. **Document Upload**
-3. **Summary**
-
-The Transfer Details page includes three panels -
-
-**Transferor Details** - This panel displays the current owner details.
-
-![](https://lh6.googleusercontent.com/-9hzOXmyYV2\_Ly1s6JMiMtiHHJk\_qJIVrLQmfm6i\_9VjxGhtYCP5dC9VGtLw9LN2yvjcOtG6wJvRxL-G7MSgWUZwT7c-toWVygvdIekkDhr3ZEO0XWmoDJMsdq78HHjNRll-soiV)
-
-**Transferee Details** - This panel requires the user to input the details of the individual to whom the property is to be transferred.
-
-![](https://lh3.googleusercontent.com/iImFmw944uN6LzcSkRYD8hrZ3FJfjqx6KvBKBAbAHo1GFhGIXbu0X6TIOJ\_xFbc-FospbkKLRU5i7-BgC8jKUsCG9tDqrIvFcVfxVF1yn06tm9K5Mrb3Z8nlXEk05zmdlSbOfr\_a)
-
-Enter the following details in the form -
-
-Select applicable **Ownership Type**. Enter the **Name**, **Gender**, and **Mobile No.** of the transferee. Enter **Guardian’s Name** of the transferee and the **Relationship with Guardian**. Enter the **Email** address of the transferee. Select the relevant **Special Applicant Category**. Enter the **Correspondence Address** of the transferee.
-
-**Registration Details** - This panel requires the user to input the registration details in context to the transfer of the property ownership.
-
-![](https://lh3.googleusercontent.com/1ctDCpWc4mt9YfbGLdZezDrRB9Azl9-QmQgkooQFqh3BpHFtJrbRWZOpBAG-uKWw0XyFqvJcQP85kwpcrAZ-B1-zEQH6d3Pg8WipXNm9leQvX9Ssgraz8-XCXoXnbiPtb-6B4DAS)
-
-Enter the following details in the form.
-
-Select **Reason for Property Transfer**. Enter **Property Market Value**, the **Registration Document No.** and the **Registration Document Issue Date**. Enter the **Registration Document Value**. Enter any **Remarks**.
-
-Click on the **Next** Step button to move to the **Document Upload** section.
-
-![](https://lh4.googleusercontent.com/049i\_rSz\_pe0UA1OuEPg0uKoaaNmAYp\_FFaV-qyG-eaG18P42n-QA\_52S2PpzTQQN7DCcmntCKkhF0k0-OY8oD-2KDuyAvBFa4xLW9brAHUnMhdnqHe95hP\_inb2uc8XBrE55WaI)
-
-**Select Document** you want to upload for **Address Proof**, **Identity Proof**, and **Registration Proof**. Click on the **Upload File** button to upload the copy of scanned documents.
-
-Click on the **Next Step** button to move to the **Summary** section.
-
-![](https://lh3.googleusercontent.com/Md0jGktoVEPKOz\_wgxlOVtMEfo465oW1k2zLOdtXWaJ\_opmk\_tyEya2wnUzNJkVXDfwGrXHO1eELOwOK-LdeonsTIk6CjoUmIlcOLJll82-HG77nG51B0td8SiSlImxkmnemanO9)
-
-The **Summary** page will display the filled-in application details. Scroll down the page to review the information entered. Click on the **Previous Step** button to go back and make any changes in the form.
-
-Click on the **Submit** button once all details are reviewed. The screen will display the application success message. Click on the **Download** button on top of the message box to download the application. Click on the **Print** button to print the application.
-
-### **Edit Property** <a href="#edit-property" id="edit-property"></a>
-
-To make any changes in the application navigate to the **Home** page. Search for the application you want to verify by entering any of the search parameters. Click on the **Application No.** to open the application. Scroll down the form to review the filled in details.
-
-![](https://lh6.googleusercontent.com/cv9YddYgtCY9fMs06J\_1s94F7NHI\_wwJwNb3cHzDjfGfSvNj6k3iH4pygQmtZvkQ5jD31XzouFvLjeSNFacFe46v3\_2BvD0DHTSEsSASdCzd9iG4k4K7R2oV3SgPdM0C83hFcP9v)
-
-Click on the **Edit Property** button available at the bottom of the page. Change any details in the form as required. Click on the **Update Property** button once all changes are complete.
-
-![](https://lh6.googleusercontent.com/XtsThM4bEc0a60zbxxolazcaz12HF8-\_b6LnFhL283sUwkbzlZhtvfAehFSdOlvrebWfbr1sqcq4-haLIRjjYbivtc14pFNMDwfzuXguuiRTJOoo86Ok-ic6P6RsZm917gPXA-u5)
+![](https://lh5.googleusercontent.com/\_f-RMqbSCoyRsfVIXb5XqMor3LovBlWER6CN67Eg\_GCpUznMIrLc--CNQyCbgptlrGs96ZegvSrGbREyypFwE3fdC3oniTByZPz8rqh3xC4AMKbzhUnM6t2swqPS-fmVqYan6AkU)
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
