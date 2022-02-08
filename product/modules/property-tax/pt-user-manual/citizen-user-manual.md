@@ -14,72 +14,64 @@ The citizen can also approach the Counter Employee (CE) to register new property
 
 **The Citizen or CE role can -**
 
-* ​[Add new property](citizen-user-manual.md#add-new-property)​
-* ​[Edit property](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#edit-property)​
-* ​[Search property](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#search-property)​
-* ​[Assess property](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#assess-property)​
-* ​[Re-assess property](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#assess-property)​
-* ​[Transfer property](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#transfer-property-ownership)​
-* ​[Pay property tax](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#pay-property-tax)​
-* ​[Download payment receipts](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-citizen-manual#pay-property-tax)​
+* ​[Register New Property](citizen-user-manual.md#add-new-property)​
+* [Search & Pay​](citizen-user-manual.md#search-property)
+* [​View & Pay Bills](citizen-user-manual.md#view-and-pay-bills)​
+* [​View Registered Properties](citizen-user-manual.md#view-registered-properties)
+* [​View Applications](citizen-user-manual.md#view-applications)
+* [Update Property](citizen-user-manual.md#update-property)
+* ​​[Transfer Property Ownership​](citizen-user-manual.md#transfer-property-ownership)
+* ​Update Mobile Number & Alternate Mobile Number​
 
 ### **Register New Property** <a href="#add-new-property" id="add-new-property"></a>
 
-Login into the system to land on the home page and choose Create Property. This will display the Required Documents list. Note the list of documents valid for address, identity, registration, usage, special category, and occupancy proofs.&#x20;
+Log in to the system. Click on **Create Property** option on the home page. This displays the **Required Documents** list. Note the list of documents that are valid for address, identity, registration, usage, special category, and occupancy proofs.&#x20;
 
 ![](https://lh5.googleusercontent.com/OLweHo9\_FRNbQX6iwZ-LBMYVALolKf9VjBGjNLZFvVoJZ5yTNXdHWxinq3Ix\_2c\_-\_dmRaq5AVlcCSrw7MLCYVf1jDpDRcDbuEvaGM6IpE2NTHFX2VGeonisYQYgk7WeIVbt8vO\_)![](https://lh3.googleusercontent.com/vncdBevSf1g\_SOTmaIZVISbQVzcJ9haCwZqeg6V-ao8P5aQbSDDieeBrxTs6QuvhKWTPx0XIMCKxFVYfvenRC0KfbrvaOArNFrBh5nEoxluP\_-ZfTVzz2KRk53ekW6nHUHQHsnuC)
 
-Click on Next to move on to the next screen, read the questions displayed carefully and answer them correctly, keep moving to the next screen by clicking on Next button.
+Click on **Next** to move on to the next screen. Answer Yes or No to the question **Is this a Residential Property?** Click on the **Next** button.
 
-Is this a Residential Property? - Yes/ No Type of Property - Select the correct option out of the option provided.
+Select the relevant option on the screen to indicate the **Type of Property**.
 
 ![](https://lh6.googleusercontent.com/y4v\_A99voVTlPgh10Nrnc-pUJuMlIa5B1jX3usa\_8wQ59rLObdco9C1qZp6TsZhVRIwsEgDTjzPn45J8IUvb9Sz2C49JsBjjkkOGhul6nZr0HYmPXj9vG7yBF056kk\_RBEoNLQu1)![](https://lh5.googleusercontent.com/jyMX9Zv-yhMniO5EqoLdqw2OsjCvDWBodYNf1VvjMIo\_oj7-a\_rfzdg5-zVTRkQbsLYIfo\_7irqNcMMFw2kiRSO0w2gyXbd6ig7HokksgBwByXzRBHh\_lmIMh-jjcNm6tnOmOJGF)
 
-Next, provide the below information. Number Of Floors - Select the correct option out of the option provided. Number of Basements - Select the correct option out of the option provided.
+Select the correct option to indicate the **Number Of Floors** and the **Number of Basements**.
 
 ![](https://lh6.googleusercontent.com/U2NYfBOOlqttRlWupFw996UR3RYA7KBVjhPz\_coFUs4jJDC24W0q54tGPgfcgRWg2SdqR6iz3nmjDDPb-rmjUGQRnXo2i1RIeIaOawlfp5C-eJIcRePF\_6Ku37hKfzRYIyrNOm7k)![](https://lh6.googleusercontent.com/QFE2gV0KLRUNwUB7tJTwte3IhYmT2TTi5tpDHdQMZhwaCVZLfvckNtZIzTi2UlEYqpDa3aPUpIGq5AhW9pPOt4V28bGjCM3afXED657iqrJNhMwv-hqMbWHj4atGmpn8XK-4Trir)
 
-Next, provide the information on. **** Ground Floor Details Plot Size - Enter the area of plot in the unit displayed on the screen. Built Up Area - Enter the total built-up area of the property in the unit displayed on the screen. Is this floor Self occupied? - Select the correct option out of the option provided.
+Enter the **Ground Floor Details** like the **Plot Size (sq yd)** and **Built Up Area (sq yd)**.&#x20;
+
+Select the correct option to answer the question **Is this floor Self-Occupied?**&#x20;
 
 ![](https://lh3.googleusercontent.com/DIw3XwrtMBnElRMYOOuAud9o7OVy49yod8\_-2GwlTaD2uit73B4sn-9XNSvMPUAH3fC9cTsXhHL80FLyigImNgPrF0tvdSyvhbmQTbK6SiJa9rkXFvJ9cZjEkslpu6pv2\_jYI1tY)![](https://lh3.googleusercontent.com/zKegSDRZx8wH\_yM766vTQLq93v37xGfLzrio3QpLOORFhmcMPQXtQ2q6wUU5dwBEWT1f9DMmEdg0FQwQ6Y4L3sFFDGa0qgnER95wNcsBsNs0KqSotgBblCf-BiIsyaYlxHMEVVwu)
 
-Next, provide the below information.
+Select Yes or No to answer **if any part of this floor is unoccupied?**
 
-Is any part of this floor unoccupied? - Yes/ No Pin Property Location - Pin the property location on map if you are at the building applying for registration.
+Provide the **Pin Property Location** on the map if you are at the building location while submitting the application for registration. You can **Skip and Continue** if you are not at the location.
 
 ![](https://lh6.googleusercontent.com/-Ps2ThgrO28\_nr55XUnFBEA6F3oHelYTVIsUDISCYHXPVksGX5bs0s1UlmIFnoB6ZZH1UrPIyOJMYzlzaS1XI6gjRhLIe8DS-SyEKjNs8stJajh8ceedRkvYdDJcLQIl6\_35xD2X)![](https://lh6.googleusercontent.com/TiiDZiIeL7xil90s3U6AhWQyzNCl9GLJUIriYK53Nt4ibbwMnjCMIq9DrF9plD3kQTRygsKN05KPrmEJ6v2f\_jp-wiv512S9xRYf15egYCjqp2vM34mI6mHytByangnbytOlu3Hi)
 
-Next, provide the below information.
-
-Do you know the pincode? - Enter the pincode of the area if you are aware of it. Provide Property address City - Choose the city where the property is located. Locality - Choose the locality of the city where the property is located.
+Enter the Pincode of the area in response to the question **Do you know the pincode?** Click on **Skip and Continue** option if you do not know the pincode. Select the relevant **City** and the **Locality** from the drop-down list in the Provide Property Address screen to pinpoint the location of the property.
 
 ![](https://lh6.googleusercontent.com/oDi1zO9VkcAg2VKSf40nCp8yEOozjP1JdZLVawDjfKZWbKUU\_o4aYhwdRtQIFDipMgTq1QUUCdEU1jiNPtAzb1U2qQD1Ul4harG7b82UyStHlWAGBAgHHpJI9LSdUJkeJ7BJ02Yc)![](https://lh6.googleusercontent.com/8njPCSM6gIwScGZ-EYS1kl8Fgj\_ztiKINNYgURcj7uvCLiGbXDgsHJ-C\_W8IO95YS9hOQDm9ZzBEAGuBBsB2aSpYZ896juaWWT1DK1h7k\_GodCL4HqG7rRaS0irptUOcMTjuIhG3)
 
-Next, provide the information on.
-
-Provide property address Street Name - Enter the name of the street if known where the property is located. Door/ House No. - Enter the Door/ House No. of the building. Provide Landmark - Enter the landmark of the property.
+Enter the **Street Name**, **Door/House No.** of the property in the **Provide Property Address** screen.  Enter a suitable **Landmark** detail in the **Provide Landmark** screen to identify the property location.
 
 ![](https://lh3.googleusercontent.com/DF2hw124dWWvqq61cUSPw1CvTW-YuqBzfmfabZFsuLvsDrpF46iMpc\_XkqI5Ca\_aLdFe3FJ4H6PHyfQav46sgBH5TjofDTFD5JvS6OkvegCyAbtvOvHb8onW2Tb1TUruEsVyeSYZ)![](https://lh6.googleusercontent.com/2NWJYS-WDMjUL4mIvhlInPGp9qQZ4H0fgMqbgF01BRDVa\_TQ54Roarbe7af6nlMEEUa7vdlWVJx5swDcjuiIFfCDt1gwdjMgbmV6lTWBQ-VeJz9QKkLBczHjgVwuN-VXfBBz9\_l5)
 
-Next, provide the information on.
-
-Proof of Address Document Type - Choose the name of the document out of the options provided you are willing to attach as address proof. Choose File - Attach the scanned copy of the document chosen above. Provide Ownership details - Choose the type of ownership this property has from the options provided.
+Choose the applicable **Document Type** as a declaration of the document you want to upload as **Proof of Address**. Click on the **Choose File** button to attach the scanned copy of the selected document.  Select the applicable option in the **Provide Ownership Details** screen to indicate the ownership type of the property.
 
 ![](https://lh5.googleusercontent.com/A3nXy\_E3tRfL4D-c-qmd30GVm6d59xUA53TJX3xmvHfRimaJ1GoDg0gXDl1sy-y339bI\_rOCQxjFcc09R-df4xTR8068EGAVcCQFh7JgJTdq-im-hljp0mUltMfC3AVmcvSIXOcx)![](https://lh6.googleusercontent.com/qD0X0gbfYul6BtrrXyoVFrfPIn1\_Dx5a8f1z1WT9ADWH-eUxQESEEHDrqO12n5AUULoXjM5xXitaFDW\_cA2Kr19N5sJB-oGkOdJTKPPPUnm\_TjLfzl21rnyg\_nYmDQvSX4PtAD4D)
 
-Next, provide the below information. Owner Details Name - Enter the name of owner(s). Multiple owners can be added if ownership type was selected so above.. Gender - Choose the gender of the owner from the option provided. Mobile No. - Enter the mobile number of the owner. Guardian - Enter the guardian name of the owner. Relationship - Choose the relationship of the owner with the guardian.
+Enter details like **Name**, **Gender**, **Mobile Number**, **Guardian** and **Relationship** with the guardian in the **Owner Details** screen.&#x20;
 
 ![](https://lh5.googleusercontent.com/-XA1l0G6YH9rOtFYnVawL1EEiOrnGIqfkSC7S2psd5tEUf9nZcG1m4zc4dO\_XxNvwYPt3L2oloei-01KcNpwMZnyqYhy4UXGqycEQLYODAHamq2UvCF4LkhsTRrzWattmLUvg3qw)![](https://lh3.googleusercontent.com/5upDZ-GX60gsxpGH6KPB3vSeZxS9t8kJ8ocrL5lW89qIzgyqsYRDg6-Sl9l55Z3IYGhhb2znBBbOofKudjOftO2E3QhACd8QGaB\_jD8kDpv2\_aA96BWHLD0zrFKylIOd5etmZbLs)
 
-Next, provide the below information.
-
-Special owner category - Select the correct option out of the option provided. Owner’s Address - Enter the correspondent address of the owner else check the checkbox if the address is the same as property address.
+Select the applicable option in the **Special owner category** screen to indicate if the owner belongs to a specific category. Enter the **Owner's Address**. Check the **Same As Property Address** box if the correspondence address of the owner is the same as the property address. The property address is auto-populated as the owner's address.&#x20;
 
 ![](https://lh3.googleusercontent.com/4jrfc-IkDJQgZIcnMYugtHjaCN4\_aB2MCIyxdxeLDBu-Ljy\_TKCXs\_7HKbV0616jp56w12tg9f\_zCwthu1QEqRc4eOUjDKsJp8sGCacFfd6t3dzOnRBjP\_VrsTk53Xtzqi4Evd0\_)![](https://lh5.googleusercontent.com/EvJzYacJESOY7tuR2lmX\_0gtbBjw6NlizkB1SYfafLfbcwQm9xPl1thUifXRz85nCarVdrgretlTb6C6Hj27IUWITUiY4NIAywXYI1QiIDG1D5tNvRmi3qrCR13wsiAHZ06WNO0F)
 
-Next, provide the information on.
-
-Proof of identity Document Type - Choose the name of the document from the options provided you want to attach as the proof of identity. Choose File - Attach the scanned copy of the document which has been chosen above.
+Select the applicable **Document Type** that you want to upload as **Proof of identity**. Choose the name of the document from the options provided you want to attach as the proof of identity. Choose File - Attach the scanned copy of the document which has been chosen above.
 
 ![](https://lh6.googleusercontent.com/8KaDgyKhw6JiDpC3tAirWso07tfSMjM3TwKsr\_XhTp27Ikwh-lq1ZaUHYhGi6fdPglzlx-TObdZNwY39PkhnX4\_FoGSqx8NvthdbWI\_mE4NYBeFpw7usOsoQh7IKaBvIqO5C3e3e)![](https://lh6.googleusercontent.com/8D2J1alo3LY6hnrvKIV3gp1u9L5bxJ15UjJqhv0W4dFKeeCuG3ucCyvCS1RHfVwgAT1dmE4GeGfEbtrdObXn1JK7E\_RlDK2SdET03qc9SJLILzifeyVS--enkNVvxlNXl6hgbo96)
 
