@@ -71,26 +71,13 @@ Select the applicable option in the **Special owner category** screen to indicat
 
 ![](https://lh3.googleusercontent.com/4jrfc-IkDJQgZIcnMYugtHjaCN4\_aB2MCIyxdxeLDBu-Ljy\_TKCXs\_7HKbV0616jp56w12tg9f\_zCwthu1QEqRc4eOUjDKsJp8sGCacFfd6t3dzOnRBjP\_VrsTk53Xtzqi4Evd0\_)![](https://lh5.googleusercontent.com/EvJzYacJESOY7tuR2lmX\_0gtbBjw6NlizkB1SYfafLfbcwQm9xPl1thUifXRz85nCarVdrgretlTb6C6Hj27IUWITUiY4NIAywXYI1QiIDG1D5tNvRmi3qrCR13wsiAHZ06WNO0F)
 
-Select the applicable **Document Type** that you want to upload as **Proof of identity**. Choose the name of the document from the options provided you want to attach as the proof of identity. Choose File - Attach the scanned copy of the document which has been chosen above.
+Select the applicable **Document Type** that you want to upload as **Proof of identity**. Click on **Choose File** button to attach and upload a scanned copy of the selected document. Review your application details before submitting it. In case of any changes to the submitted details click on the **Change** button adjacent to the filled-in details.
 
 ![](https://lh6.googleusercontent.com/8KaDgyKhw6JiDpC3tAirWso07tfSMjM3TwKsr\_XhTp27Ikwh-lq1ZaUHYhGi6fdPglzlx-TObdZNwY39PkhnX4\_FoGSqx8NvthdbWI\_mE4NYBeFpw7usOsoQh7IKaBvIqO5C3e3e)![](https://lh6.googleusercontent.com/8D2J1alo3LY6hnrvKIV3gp1u9L5bxJ15UjJqhv0W4dFKeeCuG3ucCyvCS1RHfVwgAT1dmE4GeGfEbtrdObXn1JK7E\_RlDK2SdET03qc9SJLILzifeyVS--enkNVvxlNXl6hgbo96)
 
-Check the declaration box and then submit the application. A success message is displayed along with application no. and unique property ID.
+Check mark the declaration box and then click on the **Submit** button. A success message is displayed along with the application no. and unique property ID. Click on the **Download Acknowledgement Form** button to download a copy of the acknowledgement.&#x20;
 
 ![](https://lh6.googleusercontent.com/A0Oo4C8XZVVlkZv7BiRZLmnsJviet8Y3S-uPRGmGnGccGAqkztPszZMuV1nR53yNxRGAk23l5qFUIxkh24Op8V9LjqdKa9Zd6v4P\_hj1oyU2P0fMaeTVjOVtfUyse\_3KQOWQ4Ngs)![](https://lh5.googleusercontent.com/-JHFygMzG\_iXxrK1Bn224xlEfqWBIxbVifB5R3gvZX8UFahOAfSqQs3UvbdRmDPICxH1mXplaIToSWnMIU\_KvshwjKOdaSjUQYMUMhJX6m3wlt-JS\_plqMwukKuGGWvDGUOujIZ6)
-
-
-
-
-
-* **Property Details**
-* **Owner Details**
-* **Document Info**
-* **Summary**
-
-Enter the following information in the **Property Address** section.
-
-The system will display the New Property form page.![](https://docs.google.com/drawings/u/0/d/sH7DsvB9k7W2f1N2DERQplg/image?w=624\&h=328\&rev=1\&ac=1\&parent=1q5Qmal\_ywLqWn-MBuGYWdfkTLSyN9MnVg4tEXL4D9es)
 
 ### **Search & Pay**  <a href="#search-property" id="search-property"></a>
 
