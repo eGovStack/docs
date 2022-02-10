@@ -16,33 +16,49 @@ The CSR or counter employees can perform the following actions on PGR -
 2. Search or Track Complaints
 3. Reopen Complaints
 
-![](https://docs.google.com/drawings/u/0/d/sU6rjcwIb9fCKVVn6TmBleg/image?w=425\&h=156\&rev=18\&ac=1\&parent=1pR9OLsrbm5UDtHSuq-Iv2BM78gUTwagbwGpCMGdeqrg)
-
 ### File Complaints
 
-To file complaints on behalf of the citizen navigate to the Home page and click on the **Complaints** card. Else, click on the **Complaints** menu option in the sidebar. Click on the **File Complaint** tab on the screen. This will open the complaint form page.
+To file complaints on behalf of the citizen navigate to the **Complaints Inbox** and click on the **New Complaint** option. This will open the complaint form page.
 
-![](https://lh4.googleusercontent.com/llPFd12TlabRIESvIJXz2\_vz4TApCLaeJ7eNHiVO2ewXD6-m-V\_q\_hKab0CrqEXTQ-bYjLVktaIKM5fMq3VRhdoE9sA4epGjS\_9BLM3lfw5jRqJX80g4QPcR1-xLwVd7elGtYcvT)
+![](https://lh5.googleusercontent.com/cZhy3Qqw9fmW6q30u1yksHZZzsm7XpL9EXKh3yRj22Y9IOBO1iufVXfozNtVopmfPaqBnBRyRDbRDM2\_I68HTikcViE\_9\_HEqop76oDySCWfTJxR9hHNz-TuWZLAKCtoyqdX8wwl)
 
-Enter the **Citizen Name**. and the **Citizen Mobile No.** Select the relevant **Complaint Type** and the subtype from the drop-down list of options. Refer to the list of complaint types available in PGR. Enter any additional information in the **Complaint Additional Details** field. The **City** field will display the city specified in your profile by default. You can change the city if required. Choose the applicable **Locality/Mohalla** from the drop-down list. Enter the **House No.** and **Street Name**. Enter any **Landmark** to identify the exact location for the listed complaint.
+Enter the **Citizen Mobile Number** and **Citizen Name**.&#x20;
 
-Click on **File Complaint** button once you have finished filling in all the details. The system will display the Complaint Registered Successfully message along with the Complaint No.
+![](https://lh5.googleusercontent.com/bjMpDNVT2pdkseH9Z8CW5bgeNEBt0OHPSgb74bniOjlRnIzSrKlgB2\_TNQ1B7l3Z3aXqN8l6MViM105B0GtAmDxD9sZCd\_2EgITkGUclvrHaEeKW8cAvGMclVfzRYHZ8lgIjEca-)
 
-![](https://lh6.googleusercontent.com/MsZIJ3A2-bTvvv\_NpxWb3t3u6O9VbdnC\_jcZV64AMOlBOHd6Q2l2dBsJo6Lp2cfCuC8z3GDPrUkwT68GfQnc8ls76GsoGeg1dCO48k4Shw0Tv69n-jWKD-5CN6pTwM1jabhtgCbk)
+Select the **Complaint Type** and **Complaint Sub Type** from the drop-down list.
 
-Click on the **Continue** button. Your complaint details are available on the dashboard. Click on the complaint to view the complaint details.
+![](https://lh6.googleusercontent.com/U\_ShYgWWqJCAWOKNW7jGRIvKKy2Zi7KJXoWMGHFf20SnYXaWsM4uZXakPA-GE3cFtq4ixYnHjBQeiyD8xNFBWeyaUQy9fV6howMr-r85sSNv0P0Jz3bgrbYFLgagP9RTxUT-VEH9)
+
+Enter the **Pincode**, **City**, **Mohalla**, and **Landmark** details to specify the complaint location.
+
+![](https://lh6.googleusercontent.com/EDAa3r91mRu0NsrO3oBfPc5GWwCspbgBMoYr\_nux4vsDPx5F-zcfaKnvRZqEQgq1ZDHMGu5v0lQxAWmBOTfGx7ZAi\_8E\_-BXkgUkPZeOiw8\_3l1TWlvwARsdMGeMzMIr2rxCxp3d)
+
+Enter any **Additional Details** as required to provide more information about the complaint
+
+![](https://lh3.googleusercontent.com/y7q1ll7iVLpXRRL7YxSvc4V938c1w9GyEyIly5FB7937WMZU-DzYztu8ahF-TjnVWAi93YkNo1Xn69eYOJXZoWyQ2wyjkBByp-t\_rWp1pBlQ-In96gC1RMvkGAVrvfHvpYn60pyw)
+
+Click on the **File Complaint** button.
+
+![](https://lh4.googleusercontent.com/0JPVCUNd5GlljorayIK-SZPHIu52oCEY1tpwm0eAy5S5fAugiOPtHlTyjjii1LJx7bmxvMgSgisX96gBehJbd4XRvq2cVbN\_mQsT4MXIOkbDb5txqFMRSOW4SlHraDqW29edfJRa)
+
+The system displays the Complaint Registered Successfully message along with the Complaint No.
 
 ### Search Complaints
 
 Employees can search for specific complaints using the registered mobile number of citizens or by entering the last few digits of the complaint number.
 
-To search complaints navigate to Complaints Home page. Enter **Citizen Mobile No.** Or, enter the last 6 digits of the Complaint No.
+![](https://lh4.googleusercontent.com/ia\_YmtCk7dI0r8rRqcAUBf-QWZHw3KysBiIGszG2sStEoPwAYLW\_OZ3RUMpfAkIt3L0FQJovdzHC1lQFGfvF\_er\_alsfCS8e\_JTtNEz4fg6nB5fUnKoeABHXJKzpCAZiSay8IV2D)
 
-![](https://lh4.googleusercontent.com/qh822UDOWboq\_Ju\_HgXnXavD4X3g86gj3EJU29avURDeUK-z-wONTFroyDniyw98-wOUDxnklOQZuDSDskSnHqgFhLpWqUpRGGU86gO0CKXgfdr-9BOO33cc-ENuwwTT9AtX1JY8)
+Navigate to the homepage and click on the **Inbox** option to view the registered complaint. The employee inbox contains the list of complaints assigned to the logged-in employees for further action.
 
-Click on the **Search** button. The system will retrieve and display the matching records. Click on the **Clear Search** button to initiate a fresh search.
+![](https://lh6.googleusercontent.com/2Tle4aM9UQwKPHdIOGsiJKt-wb-QdmOhgDeZENeyJqBzVvTOkeDNqPIO3WMgSVDLe1XOHEJLomr\_3EZzHdbZyNErDAcI60eM43otmos86kO-UszdaHD7-eZxAEulQmPlxM6ob6he)
 
-![](https://lh6.googleusercontent.com/OUsA9G3Jh6SN9J3fxUz8JCJ59tc4-w2OK9EqxYNkKsU4wbGNFrbfw\_FyPXLsR90C64v\_CX-nNKE83ZJ7YCRuCad2HgciR-In2Fx2qt94RJvlb-p5grwHPPib6FxkPVanHXj359DL)
+To search complaints navigate to the **Complaints** home page. Enter citizen **Mobile No.** Or, enter the last 6 digits of **Complaint No.**&#x20;
+
+![](https://lh4.googleusercontent.com/j0JnZRs9mPr5N\_JUPjQBkg00CRyMNj\_hrXKJDRp82FgLEfbmc3Rih51d4zijL87tkfH9iIxV6ef1mxRt6lSNJ4krjrZ3wLv0WrHLsglqUwznDq\_aLJylY5L\_tB\_dT\_x7ngNUgijK)
+
+Click on the **Search** button. You can also use the **Filter By** parameters in the left panel of the screen to narrow down your search. The available filters include **Complaint SubType**, **Locality**, and **Status**. The system retrieves and displays the matching records.&#x20;
 
 ### Reopen Complaints
 
@@ -64,8 +80,6 @@ The system displays an acknowledgement message stating the complaint is reopened
 
 The Grievance Routing Officer or GRO manages the complaints queue. The role ensures the complaints are routed to the appropriate employees for prompt action.
 
-![](https://docs.google.com/drawings/u/0/d/seDcaL8vC1txsB-nX-fjHdQ/image?w=550\&h=183\&rev=117\&ac=1\&parent=1pR9OLsrbm5UDtHSuq-Iv2BM78gUTwagbwGpCMGdeqrg)
-
 GROs can
 
 1. [Assign complaints](employee-user-manual.md)
@@ -79,29 +93,29 @@ GROs can
 
 Grievances filed by citizens are assigned to specific employees who are responsible for acting on and resolving the complaints.
 
-To assign complaints, navigate to the Home page and click on the Complaints card. Or, navigate to **Complaints > Open Complaints.** The GRO Complaint page contains two tabs - **Unassigned** and **Assigned** complaints.
+To assign complaints, navigate to the Inbox and search for the complaints waiting to be assigned. Click on a complaint to open and view the complaint details.
 
-![](https://lh5.googleusercontent.com/-P3BKRAfx7ULwO19jjfo4XTgmNmXP8sSdTqNb4DqUnB9pcp6nIqxEIWsJUBEWBWfUTInqAce9\_IfvMSxVhsbzJJymSzVnz3zuhU5LC4BEhLXDJ7YVXj\_2vYTf\_wTXgm7JgK3\_0YA)
+![](https://lh3.googleusercontent.com/l\_X2sCpQMHQwAVn8p1ld0fSyTztM2RTy7sdBB3gRPXXxn2jDtJCravCnn0Gy-a4kpEBL1iDVKYc8fDciHgEenm3n72VFIXBS8\_Ftk6lrKzfphOAo8uZy7kVoTRcWBQ5Gnrg8k6Yt)
 
-Click on the **Unassigned** tab. The list of unassigned complaints is available on the screen. Click on the **Complaint** you want to assign. This will open the **Complaint Summary** page.
+To assign the complaint to any employee click on the **Take Action** button and click on **Assign Complaint**.
 
-![](https://lh6.googleusercontent.com/tQ-aPaGuXMR3lY05sOgW0dQF\_yAsSP9i-5Cuz1o9rTV8RLZv1R21g4BLQkSu2-WfkNUHcHyiQNySOfSoy5fZ3Cbt5kfWbi6M642K2aqSwvkMcGaJ1xLJylVmJfj-E6lEeKlHPJja)
+![](https://lh3.googleusercontent.com/YV7NXgWgAFRfe02jW44F\_44JT7HCxfA73H5w2HgfVVLn-4hN9useSrLyHtFvw-Qfh2Qfdr18pSzUJeG7X4rPX-aQGCW4LR34p7BJZ8FABllM6epD4qxrC-BKXhF3w35UWgC0Zvmq)
 
-Click on the **Assign** button available in the bottom right corner of the screen. This will display the list of employees. Select an employee.
+Select an LME who will attend to this complaint. Enter any additional comments or information as required. Upload any files in context to the complaint if required.
 
-![](https://lh4.googleusercontent.com/CPZcAOizrd2\_jW6\_Lk1s5KwAQSgfIRvHbiEafVD7aJM0E8DCUy8GP1Nzy0muVsJRT1rbRktfwAmhA33d6Ro5VUM-9nmkemeaZVXllKBvOPjnBFY0x1s7aQuHVRrtg38-XUk6Djcz)
+Click on the **Assign** button to assign the complaint.
 
-Click on the **Assign** button.
+![](https://lh4.googleusercontent.com/5fTPBRGgKnVnTJKCfflEGln6mdg-QNvOSS\_Gh56KSltqQjljsfL-xgXkEn9STqZBkKt5SQUI1pMVT0\_z8\_geZG9QNNkQod0rk48dQoOpf4Aup87qM7RQpt-NF8NT7Luji5sT60d-)
 
 The complaint is assigned to the selected employee.
 
 ### Re-Assign Complaints
 
-Assigned complaints can be re-assigned by the GRO depending on the situation and requirements.
+Assigned complaints can be re-assigned by the GRO depending on the situation and requirements. Or, Employees can request the GRO to reassign complaints due to various reasons.
 
-To re-assign complaints navigate to the Home page and click on the **Complaints** card. Click on the **Assigned** tab. Click on the complaint you want to re-assign. Click on the **Re-Assign** button available on the bottom right corner of the screen. Select the employee to whom the complaint should be assigned. Click on the **Assign** button.
 
-![](https://lh3.googleusercontent.com/g2wsvH-\_uJJBNBnWfhja8DkRoMJRIhHYuIWVXmQxiQ9CJFLzvpj-sIuefUQdHdA0JEizKLg2ucCSDy8uAozQd3BCdun662mDCBXEY0WgekODHtiT9SaFVtySFx6bJQQPaWEkinG6)
+
+
 
 The Complaint is re-assigned to the selected employee.
 
@@ -125,11 +139,15 @@ The complaint is shared with the selected recipients.
 
 In certain cases, the GRO might reject registered complaints. This usually happens when the complaint is beyond the operational scope of the department or the complaint is invalid.
 
-To reject complaints navigate to the Home page and click on the **Complaints** card. Click on the relevant **Complaint**. This will open the **Complaint Summary** page. Click on the **Reject** button available in the bottom right corner of the screen. Select the appropriate **Reason to Reject**.
+To reject complaints, navigate to the Inbox and search for the complaints waiting to be assigned. Click on a complaint to open and view the complaint details.
 
-![](https://lh3.googleusercontent.com/yR9fMB96HvC0C0tvWtN-AEJezqJ9mqE99RKlx0zcxMkmZ6OS1-x94CfD9f4SFErh3pMtSoE6Z3WNDaOEGmjL-bcpLBvT7OvNeNGdY31AZa0Uqwa\_wvktQHzJpFB11217k5jlcmGQ)
+![](https://lh3.googleusercontent.com/l\_X2sCpQMHQwAVn8p1ld0fSyTztM2RTy7sdBB3gRPXXxn2jDtJCravCnn0Gy-a4kpEBL1iDVKYc8fDciHgEenm3n72VFIXBS8\_Ftk6lrKzfphOAo8uZy7kVoTRcWBQ5Gnrg8k6Yt)
 
-Add any additional information in the **Comments** space. Click on the **Submit** button. The complaint is rejected.
+Click on the **Take Action** button and then click on the **Reject Complaint** option in case the complaint does not look valid or relevant.
+
+![](https://lh3.googleusercontent.com/YV7NXgWgAFRfe02jW44F\_44JT7HCxfA73H5w2HgfVVLn-4hN9useSrLyHtFvw-Qfh2Qfdr18pSzUJeG7X4rPX-aQGCW4LR34p7BJZ8FABllM6epD4qxrC-BKXhF3w35UWgC0Zvmq)
+
+Select a reason for rejection and add additional comments if any. Upload files to support the reason for the rejection. Click on the **Reject** button. The complaint is rejected.
 
 ## **FME**
 
@@ -144,46 +162,42 @@ FMEs can -
 5. [Search complaints](employee-user-manual.md)
 6. [Share complaints](employee-user-manual.md)
 
-![](https://docs.google.com/drawings/u/0/d/szovKDR3VG6ANH92\_TvpdDQ/image?w=511\&h=201\&rev=61\&ac=1\&parent=1pR9OLsrbm5UDtHSuq-Iv2BM78gUTwagbwGpCMGdeqrg)
-
 ### **Request Re-Assign**
 
 FMEs work on the assigned complaints. In some cases, the FMEs may request complaints to be reassigned to some other employee.
 
-To request reassign navigate to the **Complaints** menu option in the sidebar. Click on **Open Complaints**. Search for a specific complaint using the **Citizen Mobile No**. or inputting the last 6 digits of the **Complaint No.**
+To re-assign complaints Search for the complaint using the complaint number. Open the complaint assigned to you.
 
-![](https://lh3.googleusercontent.com/Vv8ny3w8w0sZAikd4m6IBOX88tVLqRbzBRUVaAbK6OkNuPFGr62Z3BaDoWsEZd8-8PVHGL\_r3DOipAuquLM2QHkMIvzozxMy-2OgMRC338fK5YPUotfakHleUBnyvupXsjkAffU4)
+![](https://lh5.googleusercontent.com/7Cy5hfyiTQlnJt5eUmu0PRrnJEHIRMHq0\_fiHx06L7EMKy8y4vJVKSrt0eyKc8aWRKTJLBMU3GOVLlLB2oM1g3040lSNrPt-os7q0NbKv5atoXa4Fl8C0k36d-7utE82UzuFX9dv)
 
-Else, click on the relevant complaint from the list of open complaints. Click on the **Request Re-Assign** button available in the bottom right corner of the screen.
+Click on the **Take Action** button and then click on **Reassign** option.
 
-![](https://lh5.googleusercontent.com/T7WDN\_gtW0hKtf4hIgBwlbmDmyxyMEgxWGIiACKWM9ufmVaeCeb1SHtNQvWwnfjeg\_UoCZ-QPzQiZEtiAWb5rZMFDl22hOpyWZY4FQwyvCssMK-FkUgAgdRVj9Rfc6fBFkGj0uTm)
+![](https://lh4.googleusercontent.com/8-QPcpvMWKujijeczPWywwCxDiCQ6nLXYiuJErEqEwRv9Jj\_Q\_TxniIvNYaC3L1QBbbEYT9lYpbdzbaU-lS63z\_3gujphQF3JhtLeY-YqUxG1k0qy5NjiLs4DPg1lT4krdcwLYa0)
 
-Select a specific reason for requesting a re-assign.
+Click on the **Reassign** button to complete the request. Select the employee (GRO in this case) to send the complaint back in the assignment queue. Enter any **Comments** and upload files as evidence as required.
 
-![](https://lh3.googleusercontent.com/r2XYgPDVi1clkK7pGV--aX2b1hdE\_YKGav1rpDurKhiJD3SUHctZJ4\_-oQ1U9yY0ybSWgDGi7ef9cKTrH-frc4QszzovLw6fcdifQw50QrgKRvhYNQ9yvZzQBHCd9nr5h5Su4qe-)
+![](https://lh6.googleusercontent.com/SKBP9JpE3lrPVnuLPzXmnetbeNZnjiyPNWdf530bdoZyXKKcu2\_SAlWCaRG54COuzR\_oa3nHj7WN5JljnrC\_tkFQqBt7ji3eOmcV3W60Bv8xniGggE-Z1\_eQINR\_VF18jWh688h0)
 
-Enter any additional information in the **Comments** section. Click on the **Request Re-Assign** button.
+The complaint is redirected to the GRO Inbox for reassignment.
 
 ### Resolve Complaints
 
-Once the complaints are actioned on the FME marks the issue resolved. The complaint is closed subsequently.
+Once the complaints are actioned on, the FME marks the issue as resolved. The complaint is closed subsequently.
 
-To mark the complaint resolved, navigate to the **Complaints** menu option in the sidebar. Click on **Open Complaints**. Search for a specific complaint using the **Citizen Mobile No.** or inputting the last 6 digits of the **Complaint No.**
+To mark the complaint resolved, Search for the complaint using the complaint number**.** Or, the list of complaints assigned to the LME is available on the panel - click on the specific complaint
 
-![](https://lh3.googleusercontent.com/Vv8ny3w8w0sZAikd4m6IBOX88tVLqRbzBRUVaAbK6OkNuPFGr62Z3BaDoWsEZd8-8PVHGL\_r3DOipAuquLM2QHkMIvzozxMy-2OgMRC338fK5YPUotfakHleUBnyvupXsjkAffU4)
+![](https://lh5.googleusercontent.com/7Cy5hfyiTQlnJt5eUmu0PRrnJEHIRMHq0\_fiHx06L7EMKy8y4vJVKSrt0eyKc8aWRKTJLBMU3GOVLlLB2oM1g3040lSNrPt-os7q0NbKv5atoXa4Fl8C0k36d-7utE82UzuFX9dv)
 
-Else, click on the relevant complaint from the list of open complaints. **\*\*Click on the** Mark Resolved\*\* button available in the bottom right corner of the screen.
+Click on the Take Action button and then click on Resolve. Enter any comments and upload files as evidence as required.
 
-![](https://lh5.googleusercontent.com/T7WDN\_gtW0hKtf4hIgBwlbmDmyxyMEgxWGIiACKWM9ufmVaeCeb1SHtNQvWwnfjeg\_UoCZ-QPzQiZEtiAWb5rZMFDl22hOpyWZY4FQwyvCssMK-FkUgAgdRVj9Rfc6fBFkGj0uTm)
+![](https://lh4.googleusercontent.com/8-QPcpvMWKujijeczPWywwCxDiCQ6nLXYiuJErEqEwRv9Jj\_Q\_TxniIvNYaC3L1QBbbEYT9lYpbdzbaU-lS63z\_3gujphQF3JhtLeY-YqUxG1k0qy5NjiLs4DPg1lT4krdcwLYa0)
 
-Click on the camera icon to upload photos as evidence that the issue has been resolved.
+Click on the Resolved button to close the complaint. The complaint timeline is updated to Resolved. A notification is also sent to the citizen stating that the complaint is resolved.
 
-![](https://lh3.googleusercontent.com/gftZ8mTmU0sjjwpXDC967oJ2ef\_Yyxo8COLkzTzdElyPkp1SKJ6SG\_QeDwBlE6X2b\_dc8KiLKx4Kz2s1LDMCrJWZ0LrS82BHn0WNwq0v5riuP3bsDMlTdYwL\_4D2gf-gfTLIqwC1)
-
-Enter any additional information related to the issue resolution in the **Comments** section. Click on the **Mark Resolved** button.
-
-![](https://lh4.googleusercontent.com/Z5Ff0K7osHhExaqw8-XiqbWEM4xroEHOthwPyMMFglXLzKBZ\_w7M9SJvgA6aARzFsLsO0E4gMuHrGgi3KKbqXn\_nCXzH\_\_jePIzBYsLA2Y0n3r8PPj0maItO2b7oSH39eqT\_LWtD)
+![](https://lh4.googleusercontent.com/8-QPcpvMWKujijeczPWywwCxDiCQ6nLXYiuJErEqEwRv9Jj\_Q\_TxniIvNYaC3L1QBbbEYT9lYpbdzbaU-lS63z\_3gujphQF3JhtLeY-YqUxG1k0qy5NjiLs4DPg1lT4krdcwLYa0)
 
 The system will display an acknowledgement message. Click on the **Go To Home** button to navigate back to the home page.
+
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
