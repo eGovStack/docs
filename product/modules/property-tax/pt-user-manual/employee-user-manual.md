@@ -10,8 +10,6 @@ description: >-
 
 DV is responsible for verifying the supporting documents uploaded by the property applicants or the counter employee on behalf of the applicants.
 
-![](https://docs.google.com/drawings/u/0/d/ssjByWbt4ZhFtc\_JSzb898A/image?w=425\&h=141\&rev=1\&ac=1\&parent=1q5Qmal\_ywLqWn-MBuGYWdfkTLSyN9MnVg4tEXL4D9es)
-
 **The DV can**
 
 * ​[Reject applications](https://docs.digit.org/v/v2.2/modules/user-manuals/pt-manual/pt-employee-manual#reject-applications)​
@@ -40,11 +38,11 @@ The DV verifies and forwards the property applications to the Field Inspector if
 
 To verify and forward the application navigate to the Home page. Search for the application you want to verify by entering any of the search parameters. Click on the **Application No.** to open the application. Scroll down the form to review the filled in details.
 
-![](https://lh6.googleusercontent.com/IKibaRZvBvTUPqIrcz3NkCzlRoVs7DY\_OS-pB5pe\_mrupKdZbp3I-wIsVZJGpi7\_WDNEgsgXmOm7b-fDHcCqGNiLjuhbITkKKmnULj2QUkRZnHPE3oeDfS2plZhOwZLVWLyv5Xgs)
+![](https://lh6.googleusercontent.com/XAIdnZsnqm0m\_mJAbEqx56c946bbdaWhOxzNEoY1SQ4Hx9YLubEc0eU4C2kUDU5MQi6he4AGDbDbb4fEeMgY87EqBt9s8FvDcgcD93zYH\_mZQ5KrvjJx2d7GDHczWy33NnICqNIu)
 
 Click on the **Take Action** button available at the bottom of the page. Click on the **Verify and Forward** button. Select the relevant **Assignee Name** from the list of available employees for subsequent processing.
 
-![](https://lh4.googleusercontent.com/gO3C\_nMkBmlMkAhsF8cDfgeoIU7UTUBwwGoAqax7y4pzrRWxpCzt33jx7zqFYSGXBVFIqJ067GS0tyv6RlJYt91VDdKe3nYGS65ia7ZOz-pLuKoOnXOlL9D52fvpeakS7HfwGZa2)
+![](https://lh6.googleusercontent.com/T0DAVAyLsdVCbzOrLlWWtrSEmzXtEK-WqNk7gyCzEJFJ3nTksYGTmPTR4LC4qQZuUIij\_gHqqHVduksv1QY9yaMdDQ\_-ka5RsBvFHbDxNLCiFbSv4HVP5gQR8p\_FWb7BGN9CId00)
 
 Enter any additional information in the **Comments** field in context to the application for the assignee’s knowledge. Click on **Upload Files** to upload any supporting documents for the application. Click on the **Verify and Forward** button.
 
