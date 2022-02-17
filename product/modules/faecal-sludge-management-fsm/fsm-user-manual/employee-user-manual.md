@@ -14,7 +14,7 @@ Employees can -
 
 ### Create Desludging Application
 
-![](../../../../.gitbook/assets/emp-l1.png)
+![](<../../../../.gitbook/assets/5 (2).png>)
 
 Log in as employee FSM Creator role.
 

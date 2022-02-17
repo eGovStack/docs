@@ -4,8 +4,6 @@ description: Explore DIGIT platform
 
 # Access DIGIT
 
-![](<.gitbook/assets/2 (1).jpg>)
-
 Access DIGIT tool is an Open Demo Instance to provide you with a first-hand experience of the DIGIT platform. Use this facility to navigate all the features & workflows of DIGIT Platform Applications.
 
 ## Steps To Access DIGIT
