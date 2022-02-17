@@ -18,21 +18,17 @@ The citizens can -
 
 ## Apply for Desludging Services
 
-![](../../../../.gitbook/assets/rcr1.png)
+Enter **Mobile Number**, **Name**, and **City** details. Click on the **Continue** button.
 
-Enter **Mobile Number**, **Name**, and **City** details. Click on **Continue** button.
-
-![](../../../../.gitbook/assets/rcr2.png)
+![](<../../../../.gitbook/assets/1 (3).png>) ![](<../../../../.gitbook/assets/2 (3).png>)
 
 Enter the **OTP** received on the given mobile number. Click on **Continue**. The system validates the details and allows the user to log in to the system with the registered mobile number.
 
-![](../../../../.gitbook/assets/rcl1.png)
+![](<../../../../.gitbook/assets/3 (3).png>) ![](<../../../../.gitbook/assets/4 (2).png>)
 
-Enter your registered mobile number and the OTP received on the mobile to log in. Click on **Continue with Whatsapp** button to register your service request using the whatsapp channel.
+Enter your registered mobile number and the OTP received on the mobile to log in. Click on **Continue with Whatsapp** button to register your service request using the Whatsapp channel.
 
-![](../../../../.gitbook/assets/rcl2.png)
-
-Click on **Continue** button.
+Click on the **Continue** button.
 
 ![](../../../../.gitbook/assets/cit1.png)
 
