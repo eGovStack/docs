@@ -16,6 +16,14 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
 * [DIGIT 2.2 Release Webinar](https://youtu.be/jb6oHctAMkE)
 * [DIGIT 2.3 & 2.4 Release Webinar](https://youtu.be/8f7cp30He4U)
 * [DIGIT 2.5 Release Webinar](https://youtu.be/bxOyscs-uPE)
+* [DIGIT Training Webinar Jan 2022 Series](https://youtu.be/ue064Ethkjs)
+  * [Platform Overview](https://youtu.be/oAId3\_893pM)
+  * [DevOps for DIGIT](https://youtu.be/yuMZsIVXp0M)
+  * [mCollect & Finance Product Demo](https://youtu.be/O-NCCIKt0rA)
+  * [OBPS & Property Tax Product Demo](https://youtu.be/jS1tpdzDVAQ)
+  * [DIGIT Customization & Configuration](https://youtu.be/UolbLIBH7vA)
+  * [DIGIT Extensions - eChallan Case Study](https://youtu.be/nbPhcemcFi8)
+* [DIGIT 2.6 Release Webinar](https://youtu.be/WyAr67E4SI4)
 
 ### Module Data Templates Configuration Videos
 
