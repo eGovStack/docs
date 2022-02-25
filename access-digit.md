@@ -17,8 +17,8 @@ Access DIGIT tool is an Open Demo Instance to provide you with a first-hand expe
 
 ### **Access DIGIT in Employee Role**
 
-* [x] [Click here](https://staging.digit.org/employee/language-selection) to access DIGIT in an employee role. ![](.gitbook/assets/ad1.png)
-* [x] Use the credentials generated and sent to your registered email ID to log in as an employee. _(Fill in the details on_ [_this page_](https://www.digit.org/access-digit/) _to generate your role-based credentials)_. ![](.gitbook/assets/ad3.png)
+* [x] [Click here](https://staging.digit.org/employee/language-selection) to access DIGIT in an employee role.             ![](.gitbook/assets/ad1.png)
+* [x] Use the credentials to log in as an employee. _(If you do not have the credentials, visit_ [_this page_](https://www.digit.org/access-digit/) _to generate your role-based credentials)_.                       ![](.gitbook/assets/ad3.png)
 * [x] Select City as <mark style="color:blue;">**City B**</mark>.
 
 ## Demo Scripts
