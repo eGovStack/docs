@@ -12,19 +12,13 @@ Access DIGIT tool is an Open Demo Instance to provide you with a first-hand expe
 
 * [x] [Click here](https://staging.digit.org/citizen/language-selection) to access DIGIT as Citizen.&#x20;
 * [x] Fill in the user registration details as prompted on-screen.&#x20;
-
-![](<.gitbook/assets/image (39).png>)![](<.gitbook/assets/image (41).png>)
-
 * [x] To log in enter your registered mobile number and OTP.&#x20;
 * [x] Select City as <mark style="color:blue;">**City B**</mark> from the drop-down list.
 
 ### **Access DIGIT in Employee Role**
 
-* [x] [Click here](https://staging.digit.org/employee/language-selection) to access DIGIT in an employee role.&#x20;
-
-![](<.gitbook/assets/image (47).png>)
-
-* [x] Use the credentials generated and sent to your registered email ID to log in as an employee. _(Fill in the details on_ [_this page_](https://www.digit.org/access-digit/) _to generate your role-based credentials)_.&#x20;
+* [x] [Click here](https://staging.digit.org/employee/language-selection) to access DIGIT in an employee role. ![](.gitbook/assets/ad1.png)
+* [x] Use the credentials generated and sent to your registered email ID to log in as an employee. _(Fill in the details on_ [_this page_](https://www.digit.org/access-digit/) _to generate your role-based credentials)_. ![](.gitbook/assets/ad3.png)
 * [x] Select City as <mark style="color:blue;">**City B**</mark>.
 
 ## Demo Scripts
