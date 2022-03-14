@@ -16,8 +16,8 @@ Here in this Quickstart guide we'll install basic services to get the platform u
 
 ### **H/W or VM Size**
 
-* min 4 vCPUs (recommended 8)
-* min 8GiB of RAM (recommended 16)
+* min 8 vCPUs (recommended 8+)
+* min 16GiB of RAM (recommended 16+)
 * min 30GiB of HDD (recommended 30+)
 
 ### **Tools**
