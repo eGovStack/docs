@@ -192,6 +192,8 @@ curl -Is http://quickstart.local.digit/employee/login |  head -n 1
 HTTP/2 200
 ```
 
+**Note**: pgr-services would be in crashloopbackoff state, but after performing below Post Deployment Steps pgr-services will start running.&#x20;
+
 ## 3. Post Deployment Steps
 
 Post deployment, now the application will be accessible from the configured domain.
@@ -242,12 +244,12 @@ zuul-788bf8cd8b-9nxfl                                   1/1     Running   0     
 
 #Delete the pods so that it gets restarted automatically
 
-kubectl delete pods zuul-788bf8cd8b-9nxfl nginx-ingress-controller-b9678869c-mkslb -n egov
+kubectl delete pods zuul-788bf8cd8b-9nxfl egov-workflow-v2-5cdb96bcf5-dcgmf -n egov
 
 Output:
 
 pod "zuul-788bf8cd8b-9nxfl" deleted
-pod "nginx-ingress-controller-b9678869c-mkslb" deleted
+pod "egov-workflow-v2-5cdb96bcf5-dcgmf" deleted
 ```
 
 You have successfully completed the DIGIT application setup. You can now experience the DIGIT platform - PGR module.
