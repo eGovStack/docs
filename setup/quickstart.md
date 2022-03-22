@@ -244,12 +244,13 @@ zuul-788bf8cd8b-9nxfl                                   1/1     Running   0     
 
 #Delete the pods so that it gets restarted automatically
 
-kubectl delete pods zuul-788bf8cd8b-9nxfl egov-workflow-v2-5cdb96bcf5-dcgmf -n egov
+kubectl delete pods zuul-788bf8cd8b-9nxfl egov-workflow-v2-5cdb96bcf5-dcgmf pgr-services-b9f4ffdbf-5h5kd -n egov
 
 Output:
 
 pod "zuul-788bf8cd8b-9nxfl" deleted
 pod "egov-workflow-v2-5cdb96bcf5-dcgmf" deleted
+pod "pgr-services-b9f4ffdbf-5h5kd" deleted
 ```
 
 You have successfully completed the DIGIT application setup. You can now experience the DIGIT platform - PGR module.
