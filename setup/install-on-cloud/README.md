@@ -70,7 +70,7 @@ Post infra setup (Kubernetes Cluster), the deployment has got 2 stages and 2 mod
 
 &#x20;     2\. Create KMS keys [https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html)
 
-&#x20;      3\. Once you generate your encryption key, Update that same in .sops.yaml by referring to[**`updatekeys` command**](https://github.com/mozilla/sops#id13)**.**
+&#x20;      3\. Once you generate your encryption key, Update that same in .sops.yaml by referring to[**`updatekeys` command**](https://github.com/mozilla/sops#updatekeys-command)**.**
 
 &#x20;   &#x20;
 
