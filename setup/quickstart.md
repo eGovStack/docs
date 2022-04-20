@@ -159,7 +159,13 @@ root@ip:DIGIT-DevOps# code .
 https://github.com/egovernments/DIGIT-DevOps/blob/quickstart/deploy-as-code/helm/environments/quickstart-config.yaml
 ```
 
-1. Add the following entries in your host file /etc/hosts depending on your OS, instructions can be found [here](https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux).
+1. Add the following entries in your host file /etc/hosts depending on your OS, instructions can be found below.
+
+* [ ] [Ubuntu](http://manpages.ubuntu.com/manpages/trusty/man5/hosts.5.html)
+* [ ] [Windows](https://www.groovypost.com/howto/edit-hosts-file-windows-10/)
+* [ ] [MacOS](https://www.imore.com/how-edit-your-macs-hosts-file-and-why-you-would-want#page1)
+
+&#x20;   When you find it add following lines:
 
 ```
 127.0.0.1 quickstart.local.digit
