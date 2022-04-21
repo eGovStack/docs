@@ -49,10 +49,10 @@ Post infra setup (Kubernetes Cluster), the deployment has got 2 stages and 2 mod
 
 ### The 2 Stages
 
-**Stage 1: Prepare an <**[**env.yaml> master config file**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample.yaml)**, you can name this file as you wish which will have the following configurations, this env file need to be in line with your cluster name.**
+**Stage 1:**  Prepare an <[env.yaml> master config file](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample.yaml), you can name this file as you wish which will have the following configurations, this env file needs to be in line with your cluster name.
 
-* each service global, local env variables
 * credentials, secrets (You need to encrypt using [sops](https://github.com/mozilla/sops#updatekeys-command) and create a [**\<env>-secret.yaml**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample-secrets.yaml) separately)
+* **Note**: For demo purposes, you can use the [egov-demo-secrets.yaml](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-secrets.yaml) as it is. But we would urge you to use the [sops](https://github.com/mozilla/sops#updatekeys-command) to encrypt your secrets.
 * Number of replicas/scale of individual services (Depending on whether dev or prod)
 * mdms, config repos (Master Data, ULB, Tenant details, Users, etc)
 * sms g/w, email g/w, payment g/w
@@ -62,15 +62,13 @@ Post infra setup (Kubernetes Cluster), the deployment has got 2 stages and 2 mod
 * SSL Certificate for the above URL
 * End-points configs (Internal/external)
 
-**SOPS Configuration:**
-
-&#x20;      ****       Update .sops.yaml conf with selected encryption method KMS/PGP for a [**\<env>-secret.yaml**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample-secrets.yaml)&#x20;
+****[**SOPS Configuration**](https://github.com/mozilla/sops#2usage)**:**
 
 &#x20;     1\. Generate PGP keys [https://fedingo.com/how-to-generate-pgp-key-in-ubuntu/](https://fedingo.com/how-to-generate-pgp-key-in-ubuntu/)
 
-&#x20;     2\. Create KMS keys [https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html)
+&#x20;      **Optional**: 2. Create KMS keys [https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html)
 
-&#x20;      3\. Once you generate your encryption key, Update that same in .sops.yaml by referring to[**`updatekeys` command**](https://github.com/mozilla/sops#updatekeys-command)**.**
+&#x20;      3\. Once you generate your encryption key,  create a **.sops.yaml** configuration file at the helm directory to define which keys are used for which filename. refer to the sops [doc](https://github.com/mozilla/sops#211using-sopsyaml-conf-to-select-kmspgp-for-new-files) for info.
 
 &#x20;   &#x20;
 
