@@ -216,46 +216,53 @@ output "es_data_v1_storage_ids" {
 
 5\. Create the Kubernetes cluster
 
-1. In this section, you see how to use the terraform init command to create the resources defined in the configuration files you created in the previous steps.
+&#x20;     1\.  In this section, you see how to use the terraform init command to create the resources defined in the configuration files you created in the previous steps.
 
 The **terraform init** command displays the success of initializing the backend and provider plug-in:
 
+![](<../../.gitbook/assets/image (51).png>)
 
-
-2\. Run the **terraform plan** command to create the Terraform plan that defines the infrastructure elements.
+&#x20;    2\. Run the **terraform plan** command to create the Terraform plan that defines the infrastructure elements.
 
 The terraform plan command displays the resources that will be created when you run the terraform apply command
 
-![](blob:https://digit-discuss.atlassian.net/4a136152-b54f-4c5b-952f-fa847241148e#media-blob-url=true\&id=8398f034-9a1a-42c9-a38f-34335a4d8887\&collection=contentId-700874796\&contextId=700874796\&mimeType=image%2Fpng\&name=XpuPsG0uv0\_qBASimBSQsirCJSFhhPF9vkDLRyS4sSXjnnJYP-tBYvZRVG6KleBZ7tODv3sHMnesK8PBfcDdIrQSHv1T7s1LuwSgq0GlZUVntXFHPgOaJ21iNGSIvmzdu5xzAihz\&size=104187\&height=566\&width=1225\&alt=)
+![](<../../.gitbook/assets/image (52).png>)
 
-3\. Run the **terraform apply** command to apply the plan to create the Kubernetes cluster and other resources.
+&#x20;    3\. Run the **terraform apply** command to apply the plan to create the Kubernetes cluster and other resources.
 
 The process to create a Kubernetes cluster can take several minutes.&#x20;
 
-`1terraform apply out.plan`
+```
+terraform apply out.plan
+```
 
-The terraform apply command displays the results of creating the resources  defined in your configuration files:\
-\
+The terraform apply command displays the results of creating the resources defined in your configuration files:
+
+![](<../../.gitbook/assets/image (40).png>)
+
+&#x20;      4\. In the Azure portal, select All resources in the left menu to see the resources created for your ![](<../../.gitbook/assets/image (42).png>)new Kubernetes cluster.
 
 
-![](blob:https://digit-discuss.atlassian.net/33c7b24e-9537-4668-b7d2-f8a737780ca5#media-blob-url=true\&id=2ff51560-4590-40f6-9142-fe54a5694dfb\&collection=contentId-700874796\&contextId=700874796\&mimeType=image%2Fpng\&name=Qi9PmgXdMLPO729YFVxAaUV21PthaiStFWdLYxjfgrZjRzF1EhzN4CTb4EgpR-Pz9ld327ztoL3E04OYOwQ25awgOY45upR8OzrBBiaCOM5E7645fpuU7\_5J9XLR8Kdfp2zBbpYG\&size=343301\&height=854\&width=867\&alt=)
 
-4\. In the Azure portal, select All resources in the left menu to see the resources created for your new\
-Kubernetes cluster.
-
-4\. Test the Kubernetes cluster
+6\. Test the Kubernetes cluster
 
 The Kubernetes tools can be used to verify the newly created cluster.
 
-1. Once **terraform apply** execution is done it will generate the Kubernetes configuration file or you can get it from Terraform state.
+&#x20;   1\. Once **terraform apply** execution is done it will generate the Kubernetes configuration file or you can get it from Terraform state.
 
-&#x20; 2\.  Set an environment variable so that kubectl picks up the correct config.
+&#x20;  2\.  Set an environment variable so that kubectl picks up the correct config.
 
-`1export KUBECONFIG=./kube_config_file_name`
+```
+export KUBECONFIG=./kube_config_file_name 
+```
 
-3\. Verify the health of the cluster.
+&#x20;`3.` Verify the health of the cluster.
 
-`1kubectl get nodes`
+```
+kubectl get nodes
+```
 
 &#x20;   You should see the details of your worker nodes, and they should all have a status Ready, as shown in the following image:
+
+
 

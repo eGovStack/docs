@@ -127,7 +127,7 @@ The FI verifies and forwards the property applications to the Approver if the in
 
 To verify and forward the application navigate to the **Home** page. Search for the application you want to verify by entering any of the search parameters. Click on **Application No.** to open the application. Scroll down the form to review the filled in details.
 
-![](<../../../../.gitbook/assets/image (51).png>)
+![](<../../../../.gitbook/assets/image (51) (1).png>)
 
 Click on the **Take Action** button available at the bottom of the page. Click on the **Verify and Forward** button. Select the relevant **Approver** name from the list of available employees for subsequent processing.
 
