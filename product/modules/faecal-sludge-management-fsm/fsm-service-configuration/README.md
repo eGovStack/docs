@@ -1431,7 +1431,7 @@ As of now we are providing fsm as adhoc service. In order to avoid multiple time
 
 As we mentioned above, we need to define the time parameter, in order to create a periodic application. For that we added the periodic service master where we configure the time limit and whether the schedular is enabled or not. Please find the below configuration and location.
 
-[![](https://github.com/fluidicon.png)egov-mdms-data/PeriodicService.json at DEV · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/amritsar/FSM/PeriodicService.json)
+[<img src="https://github.com/fluidicon.png" alt="" data-size="line">egov-mdms-data/PeriodicService.json at DEV · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/amritsar/FSM/PeriodicService.json)
 
 `{ "tenantId": "pb.amritsar",`
 
@@ -1453,7 +1453,7 @@ As we mentioned above, we need to define the time parameter, in order to create 
 
 cronjob will read the cron job’s configured in the cronjobapiconfig.json and based on the schedular time it will call the API which is configured. Please find the below configuration and file location.
 
-[![](https://github.com/fluidicon.png)egov-mdms-data/CronJobAPIConfig.json at DEV · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/common-masters/CronJobAPIConfig.json)
+[<img src="https://github.com/fluidicon.png" alt="" data-size="line">egov-mdms-data/CronJobAPIConfig.json at DEV · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/common-masters/CronJobAPIConfig.json)
 
 `{ "jobName": "daily",`
 
@@ -1479,7 +1479,7 @@ cronjob will read the cron job’s configured in the cronjobapiconfig.json and b
 
 We added a new chart called mdms-read-cronjob. Please find the below chart location.
 
-[![](https://github.com/fluidicon.png)DIGIT-DevOps/deploy-as-code/helm/charts/utilities/mdms-read-cronjob at master · egovernments/DIGIT-DevOps](https://github.com/egovernments/DIGIT-DevOps/tree/master/deploy-as-code/helm/charts/utilities/mdms-read-cronjob)
+[<img src="https://github.com/fluidicon.png" alt="" data-size="line">DIGIT-DevOps/deploy-as-code/helm/charts/utilities/mdms-read-cronjob at master · egovernments/DIGIT-DevOps](https://github.com/egovernments/DIGIT-DevOps/tree/master/deploy-as-code/helm/charts/utilities/mdms-read-cronjob)
 
 ### Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 

@@ -299,8 +299,8 @@ This request to report service is used to get data for the report. Inputs given 
 ## Deployment Details <a href="#deployment-details" id="deployment-details"></a>
 
 1. Write configuration as per your requirement. The structure of the config file is explained in the Configuration Details section.
-2. Check-in the config file to a remote location preferably Github. Currently, the files are checked into this folder - [![](https://github.com/fluidicon.png)configs/reports/config at DEV · egovernments/configs](https://github.com/egovernments/configs/tree/DEV/reports/config) for dev and QA environment.
-3. Add module name and corresponding report path in the same format as used in [![](https://github.com/fluidicon.png)configs/reportFileLocationsv1.txt at DEV · egovernments/configs](https://github.com/egovernments/configs/blob/DEV/reports/reportFileLocationsv1.txt)
+2. Check-in the config file to a remote location preferably Github. Currently, the files are checked into this folder - [<img src="https://github.com/fluidicon.png" alt="" data-size="line">configs/reports/config at DEV · egovernments/configs](https://github.com/egovernments/configs/tree/DEV/reports/config) for dev and QA environment.
+3. Add module name and corresponding report path in the same format as used in [<img src="https://github.com/fluidicon.png" alt="" data-size="line">configs/reportFileLocationsv1.txt at DEV · egovernments/configs](https://github.com/egovernments/configs/blob/DEV/reports/reportFileLocationsv1.txt)
 4. Provide the absolute path of the file mentioned in Point 3  to DevOps, to add it to the file-read path of the report service. The file is added to the environment manifest file for it to be read at the start-up of the application.
 5. Deploy the latest version of the report service app.
 6. Add Role-Action mapping for APIs.

@@ -71,7 +71,7 @@ Any Kafka topic containing data that has to be bulk persisted should have **'-ba
 
 #### Persister Config Versioning <a href="#persister-config-versioning" id="persister-config-versioning"></a>
 
-* Each persister config has a version attribute which signifies the service version, this version can contain custom DSL; defined here, [![](https://github.com/fluidicon.png)GitHub - zafarkhaja/jsemver: Java implementation of the SemVer Specification](https://github.com/zafarkhaja/jsemver#external-dsl)
+* Each persister config has a version attribute which signifies the service version, this version can contain custom DSL; defined here, [<img src="https://github.com/fluidicon.png" alt="" data-size="line">GitHub - zafarkhaja/jsemver: Java implementation of the SemVer Specification](https://github.com/zafarkhaja/jsemver#external-dsl)
 * Every incoming request \[via kafka] is expected to have a version attribute set, \[jsonpath, $.RequestInfo.ver] if versioning is to be applied.
 * If the request version is absent or invalid \[not semver] in the incoming request, then a default version is defined by the following property in the application.properties`default.version=1.0.0` is used.
 * The request version is then matched against the loaded persister configs and applied appropriately.

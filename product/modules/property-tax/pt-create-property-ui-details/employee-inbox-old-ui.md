@@ -10,7 +10,7 @@ Route - [mSeva](https://qa.digit.org/employee/inbox)
 
 ## **Technical Implementation Details**
 
-Inbox screen is loaded based on the file [![](https://github.com/fluidicon.png)frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/packages/employee/src/modules/employee/Inbox/index.js)
+Inbox screen is loaded based on the file [<img src="https://github.com/fluidicon.png" alt="" data-size="line">frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/packages/employee/src/modules/employee/Inbox/index.js)
 
 Inbox screen can be divided into 4 sub components as listed below:
 
@@ -23,19 +23,19 @@ Inbox screen can be divided into 4 sub components as listed below:
 
 Action Menu is the component that shows the menu items in the sidebar based on the response from the `access/v1/actions/mdms/_get` API .
 
-Action Menu component file is present in[![](https://github.com/fluidicon.png)frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/common/common/ActionMenu/index.js). Based on the response the actions gets filtered based on the condition in `navigationURL`
+Action Menu component file is present in[<img src="https://github.com/fluidicon.png" alt="" data-size="line">frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/common/common/ActionMenu/index.js). Based on the response the actions gets filtered based on the condition in `navigationURL`
 
 ### **Quick action**
 
 Quick Action button which shows the menu based on the response from the `access/v1/actions/mdms/_get` API.
 
-The quick Action button is present in [![](https://github.com/fluidicon.png)frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/dev-packages/egov-ui-framework-core/src/ui-molecules/MenuButton/index.js). Based on the response the actions get filtered based on the condition `item.url === "quickAction"`
+The quick Action button is present in [<img src="https://github.com/fluidicon.png" alt="" data-size="line">frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/dev-packages/egov-ui-framework-core/src/ui-molecules/MenuButton/index.js). Based on the response the actions get filtered based on the condition `item.url === "quickAction"`
 
 ### **Service List**
 
 Service List is the component that shows the menu based on the response from the `access/v1/actions/mdms/_get` API.
 
-[![](https://github.com/fluidicon.png)frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/common/common/ServiceList/index.js) based on the response the actions get filtered based on the condition `item.url === "card"`
+[<img src="https://github.com/fluidicon.png" alt="" data-size="line">frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/common/common/ServiceList/index.js) based on the response the actions get filtered based on the condition `item.url === "card"`
 
 ### **Inbox Worklist**
 
@@ -85,7 +85,7 @@ Table and Table pagination can be accessed from this file link below.
 
 ## MDMS config
 
-[![](https://github.com/fluidicon.png)egov-mdms-data/TablePaginationOptions.json at 77f19c91861fab275c1b22d5063f69b4099bda15 · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/77f19c91861fab275c1b22d5063f69b4099bda15/data/pb/common-masters/TablePaginationOptions.json)
+[<img src="https://github.com/fluidicon.png" alt="" data-size="line">egov-mdms-data/TablePaginationOptions.json at 77f19c91861fab275c1b22d5063f69b4099bda15 · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/77f19c91861fab275c1b22d5063f69b4099bda15/data/pb/common-masters/TablePaginationOptions.json)
 
 ```
 {
@@ -106,7 +106,7 @@ Table and Table pagination can be accessed from this file link below.
 
 In every row, there is an option to view or perform an action on the record and this redirects users to the relevant module.
 
-These details are configured in `CommonInboxConfig` MDMS [![](https://github.com/fluidicon.png)egov-mdms-data/CommonInboxConfig.json at e8b7bad5ad7c4e17816dedb673b2f4085c92c8a6 · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/e8b7bad5ad7c4e17816dedb673b2f4085c92c8a6/data/pb/common-masters/CommonInboxConfig.json)
+These details are configured in `CommonInboxConfig` MDMS [<img src="https://github.com/fluidicon.png" alt="" data-size="line">egov-mdms-data/CommonInboxConfig.json at e8b7bad5ad7c4e17816dedb673b2f4085c92c8a6 · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/e8b7bad5ad7c4e17816dedb673b2f4085c92c8a6/data/pb/common-masters/CommonInboxConfig.json)
 
 Refer to the Config below.
 
@@ -135,7 +135,7 @@ Here in Escalated tab, it makes an escalation search, using `egov-workflow-v2/eg
 
 On View History - It shows which state has it got escalated using flag. `isEscalatedApplication`based on it it shows a red mark for the corresponding state.
 
-Functionality file path: [![](https://github.com/fluidicon.png)frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/packages/employee/src/modules/employee/Inbox/components/Table/index.js)
+Functionality file path: [<img src="https://github.com/fluidicon.png" alt="" data-size="line">frontend/index.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/packages/employee/src/modules/employee/Inbox/components/Table/index.js)
 
 ![](../../../../.gitbook/assets/image-20210728-070241.png)
 

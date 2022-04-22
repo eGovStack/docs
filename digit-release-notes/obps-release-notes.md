@@ -22,9 +22,9 @@ There is no change in the functionality, it is only the UI / UX upgrade. For the
 
 ### Known Issues <a href="#known-issues" id="known-issues"></a>
 
-[![](https://developers.google.com/drive/images/drive\_icon.png)https://docs.google.com/document/d/1lM4W3qH96muLgyRqI1CJNbk48u40vWvABpAqxnEJNr0/edit#heading=h.6d9k8xbnp4lw - Connect to preview](https://docs.google.com/document/d/1lM4W3qH96muLgyRqI1CJNbk48u40vWvABpAqxnEJNr0/edit#heading=h.6d9k8xbnp4lw)
+[<img src="https://developers.google.com/drive/images/drive_icon.png" alt="" data-size="line">https://docs.google.com/document/d/1lM4W3qH96muLgyRqI1CJNbk48u40vWvABpAqxnEJNr0/edit#heading=h.6d9k8xbnp4lw - Connect to preview](https://docs.google.com/document/d/1lM4W3qH96muLgyRqI1CJNbk48u40vWvABpAqxnEJNr0/edit#heading=h.6d9k8xbnp4lw)
 
-[![](https://developers.google.com/drive/images/drive\_icon.png)https://docs.google.com/spreadsheets/d/1KeODFf4U9klSjjBPAvsQ1Zb\_Zfy6LgctT5RDq4SXtnA/edit#gid=0 - Connect to preview](https://docs.google.com/spreadsheets/d/1KeODFf4U9klSjjBPAvsQ1Zb\_Zfy6LgctT5RDq4SXtnA/edit#gid=0)
+[<img src="https://developers.google.com/drive/images/drive_icon.png" alt="" data-size="line">https://docs.google.com/spreadsheets/d/1KeODFf4U9klSjjBPAvsQ1Zb\_Zfy6LgctT5RDq4SXtnA/edit#gid=0 - Connect to preview](https://docs.google.com/spreadsheets/d/1KeODFf4U9klSjjBPAvsQ1Zb\_Zfy6LgctT5RDq4SXtnA/edit#gid=0)
 
 ### Upcoming Release Features <a href="#upcoming-release-features" id="upcoming-release-features"></a>
 

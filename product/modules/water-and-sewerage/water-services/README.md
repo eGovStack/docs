@@ -666,7 +666,7 @@ Workflow for property creation through Water and Sewerage Module
 
 1. Write the configuration for water service. [https://github.com/egovernments/configs/blob/DEV/egov-indexer/water-service.yml](https://github.com/egovernments/configs/blob/DEV/egov-indexer/water-service.yml)[https://github.com/egovernments/configs/blob/DEV/egov-indexer/water-services-meter.yml](https://github.com/egovernments/configs/blob/DEV/egov-indexer/water-services-meter.yml)
 2. Provide the absolute path of the checked-in file to DevOps, to add it to the file-read path of egov-indexer. The file will be added to the egov-indexer's environment manifest file for it to be read at the start-up of the application.
-3. Put indexer config file to the config repo under egov-indexer folder.([![](https://github.com/fluidicon.png)egovernments/configs](https://github.com/egovernments/configs/tree/master) )
+3. Put indexer config file to the config repo under egov-indexer folder.([<img src="https://github.com/fluidicon.png" alt="" data-size="line">egovernments/configs](https://github.com/egovernments/configs/tree/master) )
 4. Run the egov-indexer app, Since it is a consumer, it starts listening to the configured topics and indexes the data.
 
 **Modify connection**

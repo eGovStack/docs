@@ -302,7 +302,7 @@ Make a note of the required documents to complete and submit the OC application.
 
 ![](https://lh3.googleusercontent.com/h2d6AkMixAVSKEX7g7mbpP5ViSaW7t0EpjAJKHZgxdMz3xQasRtNgO58YiuS\_4\_XG-FEeiPYp6pQO\_0NEUO4bfvvY\_MpFYy\_4AOzT00iPoxoLCKsd\_g\_WFcPvQa6BOks-aVTmPyI)![](https://lh5.googleusercontent.com/drVgvi2VYCUNZBBLJmwtGsyopUqSE49AXFNrizOrzNy0PaR-YnkcpmyBPequkg-RGuWQnt1Uyxs-Zb68VPkD2bWiSi-bJeCp6XYFUzluBDEd0gfkKzv2SQyc5LbCqIFfmY6KfsxL)
 
-Enter the **eDCR Scrutiny Number**. Click on the **Search** icon![](https://lh5.googleusercontent.com/zHZ9x\_\_sXeRLFEzF7FktiqcqgJ5dIj4dWUguvXsHLk0Jr\_hPov30fmbiQTGGg9n3BMufiANvUcpd8hl0Caxe\_Dop-RYeOx5GblnvF1kDdLPJnu5J-j8hF0Rtuxy5PaNszhRgKO1U). This fetches the building and application details from the scrutiny report.&#x20;
+Enter the **eDCR Scrutiny Number**. Click on the **Search** icon<img src="https://lh5.googleusercontent.com/zHZ9x__sXeRLFEzF7FktiqcqgJ5dIj4dWUguvXsHLk0Jr_hPov30fmbiQTGGg9n3BMufiANvUcpd8hl0Caxe_Dop-RYeOx5GblnvF1kDdLPJnu5J-j8hF0Rtuxy5PaNszhRgKO1U" alt="" data-size="line">. This fetches the building and application details from the scrutiny report.&#x20;
 
 ![](https://lh3.googleusercontent.com/5Of5LI-OjI8PLQ4fnBJKdUOb7s5Y-gmknnJsRU5T5P91aHBFqOLpmmoX32ZJiA-wXL20uuMDoGtPReklPVhJYUV9ylTfPryVMfQ5tYwYxVY\_PexT\_YTRsXKTP5aO3HETbgms6WJ3)
 

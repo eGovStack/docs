@@ -137,20 +137,20 @@ The download service is a common service used by all the chart components to fac
 
 #### Recharts <a href="#recharts" id="recharts"></a>
 
-[![](https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png)npm: recharts](https://www.npmjs.com/package/recharts)
+[<img src="https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png" alt="" data-size="line">npm: recharts](https://www.npmjs.com/package/recharts)
 
 #### JSPDF <a href="#jspdf" id="jspdf"></a>
 
-[![](https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png)npm: npm-install-peers](https://www.npmjs.com/package/jspdf)
+[<img src="https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png" alt="" data-size="line">npm: npm-install-peers](https://www.npmjs.com/package/jspdf)
 
 #### HTML2Canvas <a href="#html2canvas" id="html2canvas"></a>
 
-[![](https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png)npm: html2canvas](https://www.npmjs.com/package/html2canvas)
+[<img src="https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png" alt="" data-size="line">npm: html2canvas](https://www.npmjs.com/package/html2canvas)
 
 #### XLXS <a href="#xlxs" id="xlxs"></a>
 
-[![](https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png)npm: xlsx](https://www.npmjs.com/package/xlsx)
+[<img src="https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png" alt="" data-size="line">npm: xlsx](https://www.npmjs.com/package/xlsx)
 
 #### DateRangePicker <a href="#daterangepicker" id="daterangepicker"></a>
 
-[![](https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png)npm: daterangepicker](https://www.npmjs.com/package/daterangepicker)
+[<img src="https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png" alt="" data-size="line">npm: daterangepicker](https://www.npmjs.com/package/daterangepicker)

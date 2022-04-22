@@ -47,7 +47,7 @@ The objective of egov-searcher service is listed below.
     Eg: \
     `{"alias": [{"name": "egov", "age": "20"},{"name": "egov", "age": "20"},{"name": "egov", "age": "20"}]}`
 
-    For more details about JSONQuery, please check: [![](https://www.postgresql.org/favicon.ico)JSON Functions and Operators](https://www.postgresql.org/docs/9.4/functions-json.html)
+    For more details about JSONQuery, please check: [<img src="https://www.postgresql.org/favicon.ico" alt="" data-size="line">JSON Functions and Operators](https://www.postgresql.org/docs/9.4/functions-json.html)
 2. Provides an easy way to set up search APIs on the fly just by adding configurations without any coding effort.
 3. Provides flexibility to build where clause as per requirement, with config keys for operators, conditional blocks and other query clauses.
 4. Designed to use a specific URI for every search request thereby making it easy for role-based access control.

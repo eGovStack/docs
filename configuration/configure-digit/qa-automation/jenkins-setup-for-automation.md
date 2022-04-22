@@ -15,7 +15,7 @@ Connect to the remote machine using SSH and follow the steps mentioned below.
 ## Install Jenkins
 
 * sudo wget -q -O - [https://pkg.jenkins.io/debian-stable/jenkins.io.key](https://pkg.jenkins.io/debian-stable/jenkins.io.key) | sudo apt-key add -
-* sudo sh -c 'echo deb[ ![](https://www.jenkins.io/sites/default/files/jenkins\_favicon.ico)Debian Jenkins Packages](http://pkg.jenkins.io/debian-stable) binary/ > /etc/apt/sources.list.d/jenkins.list'
+* sudo sh -c 'echo deb[ <img src="https://www.jenkins.io/sites/default/files/jenkins_favicon.ico" alt="" data-size="line">Debian Jenkins Packages](http://pkg.jenkins.io/debian-stable) binary/ > /etc/apt/sources.list.d/jenkins.list'
 * sudo apt update
 * sudo apt install jenkins
 * sudo systemctl start jenkins

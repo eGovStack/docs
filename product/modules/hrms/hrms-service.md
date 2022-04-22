@@ -493,7 +493,7 @@ Following are the list of masters required for HRMS:&#x20;
 
 #### persister configuration: <a href="#persister-configuration" id="persister-configuration"></a>
 
-[![](https://github.com/fluidicon.png)configs/hrms-employee-persister.yml at qa · egovernments/configs](https://github.com/egovernments/configs/blob/qa/egov-persister/hrms-employee-persister.yml)
+[<img src="https://github.com/fluidicon.png" alt="" data-size="line">configs/hrms-employee-persister.yml at qa · egovernments/configs](https://github.com/egovernments/configs/blob/qa/egov-persister/hrms-employee-persister.yml)
 
 #### Localization: <a href="#localization" id="localization"></a>
 

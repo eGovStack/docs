@@ -156,15 +156,15 @@ All the screens have been developed using the new-UI structure followed previous
 
 The links for the BPA & EDCR Main Index are given below. These help in understanding the starting point of the flow:
 
-[![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/EDCR - Connect to preview](https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/EDCR)
+[<img src="https://github.githubassets.com/favicon.ico" alt="" data-size="line">https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/EDCR - Connect to preview](https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/EDCR)
 
-[![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/NewBuildingPermit - Connect to preview](https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/NewBuildingPermit)
+[<img src="https://github.githubassets.com/favicon.ico" alt="" data-size="line">https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/NewBuildingPermit - Connect to preview](https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/NewBuildingPermit)
 
 The links for the OCBPA & OCEDCR Main Index are given below. These help in understanding the starting point of the flow:
 
-[![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCEDCR - Connect to preview](https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCEDCR)
+[<img src="https://github.githubassets.com/favicon.ico" alt="" data-size="line">https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCEDCR - Connect to preview](https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCEDCR)
 
-[![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit - Connect to preview](https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit)
+[<img src="https://github.githubassets.com/favicon.ico" alt="" data-size="line">https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit - Connect to preview](https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit)
 
 The OBPS Module is segregated into a specified structure. All the screen configurations are available inside the PageComponent Folder and the configuration for routing of the pages are available within the config folder which is common for both Citizen as well as Employees. New components like TimeLine is defined within the component folder. Below is the snippet for folder structure and routing configuration.
 

@@ -16,7 +16,7 @@ Document uploader is used by ULB employees to upload documents that will then be
 
 Employees can perform all four operations i.e. creating, searching, updating and deleting the documents whereas the citizens can only search for the created documents. For creating documents in a particular ULB, the document category that needs to be provided in the create API cURL has to be present in the document category MDMS file for the tenantId for which the document is getting uploaded.&#x20;
 
-A sample MDMS document category configuration file can be viewed here - [![](https://github.com/fluidicon.png)egov-mdms-data/DocumentUploader.json at DEV · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/DocumentUploader/DocumentUploader.json)
+A sample MDMS document category configuration file can be viewed here - [<img src="https://github.com/fluidicon.png" alt="" data-size="line">egov-mdms-data/DocumentUploader.json at DEV · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/DocumentUploader/DocumentUploader.json)
 
 In this MDMS configuration file, ULB keys can be added and the allowed category types can be added in categoryList key.
 
