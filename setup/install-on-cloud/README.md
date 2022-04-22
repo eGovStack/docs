@@ -49,14 +49,16 @@ Post infra setup (Kubernetes Cluster), the deployment has got 2 stages and 2 mod
 
 ### The 2 Stages
 
-**Stage 1:**  Prepare an <[env.yaml> master config file](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample.yaml), you can name this file as you wish which will have the following configurations, this env file needs to be in line with your cluster name.
+**Stage 1:** I**t's important to prepare an <**[**env.yaml> master config file**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample.yaml) **and** [**\<env-secrets.yaml>**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample-secrets.yaml) **file before starting DIGIT deployment, you can name this file as you wish which will have the following configurations, this env file needs to be in line with your cluster name**.
 
 * credentials, secrets (You need to encrypt using [sops](https://github.com/mozilla/sops#updatekeys-command) and create a [**\<env>-secret.yaml**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample-secrets.yaml) separately)
-* **Note**: For demo purposes, you can use the [egov-demo-secrets.yaml](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-secrets.yaml) as it is. But we would urge you to use the [sops](https://github.com/mozilla/sops#updatekeys-command) to encrypt your secrets.
+* **Note**: For demo purposes, you can use the [egov-demo-secrets.yaml](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-secrets.yaml) as it is, By changing the file name and adding your respective secret details. But we would urge you to use the [sops](https://github.com/mozilla/sops#updatekeys-command) to encrypt your secrets.
 * Number of replicas/scale of individual services (Depending on whether dev or prod)
-* mdms, config repos (Master Data, ULB, Tenant details, Users, etc)
-* sms g/w, email g/w, payment g/w
-* GMap key (In case you are using Google Map services in your PGR, PT, TL, etc)
+* It is important you [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the [mdms](https://github.com/egovernments/egov-mdms-data), and [config](https://github.com/egovernments/configs) repos (Master Data, ULB, Tenant details, Users, etc) to your respective github account.
+* Once you fork the repos, Create one [github user account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account), and for ssh authentication [generate new SSH key ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)and [add it to your account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+* New github user should have the access to earlier forked repo's and add you ssh private key which you generated in an earlier stape to [**\<env-secrets.yaml>**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample-secrets.yaml#L36)****
+* Update sms g/w, email g/w, payment g/w
+* Update GMap key (In case you are using Google Map services in your PGR, PT, TL, etc)
 * S3 Bucket for Filestore
 * URL/DNS on which the DIGIT will be exposed
 * SSL Certificate for the above URL
