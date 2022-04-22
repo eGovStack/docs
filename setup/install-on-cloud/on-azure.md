@@ -16,7 +16,7 @@ description: Provision infra for DIGIT on Azure using Terraform
 
 ### **Provision Kubernetes cluster stapes** <a href="#provision-kubernetes-cluster-stapes" id="provision-kubernetes-cluster-stapes"></a>
 
-1. &#x20; Clone the following repository:
+1. &#x20; **Clone the following repository:**
 
 ```
 git clone --branch release https://github.com/egovernments/DIGIT-DevOps.git
@@ -150,7 +150,7 @@ module "postgres-db" {
 }
 ```
 
-3\. Declare the variables in [variables.tf](https://github.com/egovernments/DIGIT-DevOps/blob/release/infra-as-code/terraform/sample-azure/variables.tf)
+3\. **Declare the variables in** [**variables.tf**](https://github.com/egovernments/DIGIT-DevOps/blob/release/infra-as-code/terraform/sample-azure/variables.tf)****
 
 ```
 variable "environment" {
@@ -186,7 +186,7 @@ variable "client_secret" {
 
 Save the file and exit the editor&#x20;
 
-4\. Create a Terraform output file ([output.tf](https://github.com/egovernments/DIGIT-DevOps/blob/release/infra-as-code/terraform/sample-azure/outputs.tf)) and Paste the following code into file.
+4\. **Create a Terraform output file (**[**output.tf**](https://github.com/egovernments/DIGIT-DevOps/blob/release/infra-as-code/terraform/sample-azure/outputs.tf)**) and Paste the following code into file.**
 
 ```
 output "zookeeper_storage_ids" {
@@ -214,7 +214,7 @@ output "es_data_v1_storage_ids" {
 }
 ```
 
-5\. Create the Kubernetes cluster
+5\. **Create the Kubernetes cluster**
 
 &#x20;     1\.  In this section, you see how to use the terraform init command to create the resources defined in the configuration files you created in the previous steps.
 
@@ -240,11 +240,11 @@ The terraform apply command displays the results of creating the resources defin
 
 ![](<../../.gitbook/assets/image (40).png>)
 
-&#x20;      4\. In the Azure portal, select All resources in the left menu to see the resources created for your ![](<../../.gitbook/assets/image (42).png>)new Kubernetes cluster.
+&#x20;      4\. In the Azure portal, select All resources in the left menu to see the resources created for your new Kubernetes cluster.
 
 
 
-6\. Test the Kubernetes cluster
+**6. Test the Kubernetes cluster**
 
 The Kubernetes tools can be used to verify the newly created cluster.
 
@@ -264,5 +264,5 @@ kubectl get nodes
 
 &#x20;   You should see the details of your worker nodes, and they should all have a status Ready, as shown in the following image:
 
-
+![](<../../.gitbook/assets/image (42).png>)
 
