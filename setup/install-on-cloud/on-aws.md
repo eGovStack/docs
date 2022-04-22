@@ -369,11 +369,19 @@ variable "iam_keybase_user" {
 variable "db_password" {}
 ```
 
-### **Important: Create your own keybase key before you run the terraform**
+### **Optional: Create your own keybase key before you run the terraform**
 
-* Use this URL [https://keybase.io/](https://keybase.io) to [create your own PGP key](https://pgpkeygen.com), this will create both public and private key in your machine, upload the public key into the [keybase](https://keybase.io) account that you have just created, and give a name to it and ensure that you mention that in your terraform. This allows to encrypt all the sensitive information.
+*   Use this URL [https://keybase.io/](https://keybase.io) to [create your own PGP key](https://pgpkeygen.com), this will create both public and private key in your machine, upload the public key into the [keybase](https://keybase.io) account that you have just created, and give a name to it and ensure that you mention that in your terraform. This allows to encrypt all the sensitive information.
+
+    * Example user keybase user in eGov case is "_egovterraform_" needs to be created and has to uploaded his public key here - [https://keybase.io/egovterraform/pgp\_keys.asc](https://keybase.io/egovterraform/pgp\_keys.asc)
+    * you can use this [portal](https://8gwifi.org/pgpencdec.jsp) to Decrypt your secret key. To decrypt PGP Message, Upload the PGP Message, PGP Private Key and Passphrase.
+
+
+* **IAM users auth:** using keybase to create admin, deployer, the user. Use this URL [https://keybase.io/](https://keybase.io) to [create your own PGP key](https://pgpkeygen.com), this will create both public and private key in your machine, upload the public key into the [keybase](https://keybase.io) account that you have just created, and give a name to it and ensure that you mention that in your terraform. This allows to encrypt all the sensitive information.
   * Example user keybase user in eGov case is "_egovterraform_" needs to be created and has to uploaded his public key here - [https://keybase.io/egovterraform/pgp\_keys.asc](https://keybase.io/egovterraform/pgp\_keys.asc)
   * you can use this [portal](https://8gwifi.org/pgpencdec.jsp) to Decrypt your secret key. To decrypt PGP Message, Upload the PGP Message, PGP Private Key and Passphrase.
+* **EKS cluster:** with master(s) & worker node(s).
+* **Storage(s):** for es-master, es-data-v1, es-master-infra, es-data-infra-v1, zookeeper, kafka, kafka-infra.
 
 ## Run terraform
 
@@ -400,13 +408,8 @@ Upon Successful execution following resources gets created which can be verified
 
 * **s3 bucket:** to store terraform state.
 * **Network:** VPC, security groups.
-* **IAM users auth:** using keybase to create admin, deployer, the user. Use this URL [https://keybase.io/](https://keybase.io) to [create your own PGP key](https://pgpkeygen.com), this will create both public and private key in your machine, upload the public key into the [keybase](https://keybase.io) account that you have just created, and give a name to it and ensure that you mention that in your terraform. This allows to encrypt all the sensitive information.
-  * Example user keybase user in eGov case is "_egovterraform_" needs to be created and has to uploaded his public key here - [https://keybase.io/egovterraform/pgp\_keys.asc](https://keybase.io/egovterraform/pgp\_keys.asc)
-  * you can use this [portal](https://8gwifi.org/pgpencdec.jsp) to Decrypt your secret key. To decrypt PGP Message, Upload the PGP Message, PGP Private Key and Passphrase.
-* **EKS cluster:** with master(s) & worker node(s).
-* **Storage(s):** for es-master, es-data-v1, es-master-infra, es-data-infra-v1, zookeeper, kafka, kafka-infra.
 
-1. Use this link to [get the kubeconfig from EKS](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) to get the kubeconfig file and being able to connect to the cluster from your local machine so that you should be able to deploy DIGIT services to the cluster.
+2\. Use this link to [get the kubeconfig from EKS](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) to get the kubeconfig file and being able to connect to the cluster from your local machine so that you should be able to deploy DIGIT services to the cluster.
 
 ```
 aws sts get-caller-identity
@@ -415,7 +418,7 @@ aws sts get-caller-identity
 aws eks --region <region-code> update-kubeconfig --name <cluster_name>
 ```
 
-1. Finally, Verify that you are able to connect to the cluster by running the following command
+3\. Finally, Verify that you are able to connect to the cluster by running the following command
 
 ```
 kubectl config use-context <your cluster name>
