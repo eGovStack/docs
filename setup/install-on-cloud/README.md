@@ -56,10 +56,11 @@ Post infra setup (Kubernetes Cluster), the deployment has got 2 stages and 2 mod
 * Number of replicas/scale of individual services (Depending on whether dev or prod)
 * It is important to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the [mdms](https://github.com/egovernments/egov-mdms-data), and [config](https://github.com/egovernments/configs) repos (Master Data, ULB, Tenant details, Users, etc) to your respective github account.
 * Once you fork the repos, Create one [github user account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account), and for ssh authentication [generate new SSH key ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)and [add it to your account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
-* New github user should have the access to earlier forked repo's and add your ssh private key which you generated in previous step to [**\<env-secrets.yaml>**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample-secrets.yaml#L36)****
-* Update sms g/w, email g/w, payment g/w
+* New github user should have the access to earlier forked repo's and add your ssh private key which you generated in the previous step to [\<env-secrets.yaml>](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample-secrets.yaml#L36)
+* You must update sms g/w, email g/w, payment g/w details <[env.yaml>](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample.yaml) and [\<env-secrets.yaml>](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample-secrets.yaml) to work the notifaction and payment gateway services.
 * Update GMap key (In case you are using Google Map services in your PGR, PT, TL, etc)
-* S3 Bucket for Filestore
+* You must create one private s3 Bucket for Filestore and one public bucket for logs and add the bucket details to [\<env.yaml>](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample.yaml#L94)and [\<env.yaml>](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample.yaml#L20) respectively and create an IAM user with the s3 bucket access. Add IAM user details to [\<env-secrets.yaml>](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample-secrets.yaml#L11).
+* Terraform output provides you the ebs volumes id's for kafka-v2, zookeeper-v2, elasticsearch-data-v1 ,and elasticsearch-master-v1 add those volumes id's in [\<env.yaml>](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/egov-demo-sample.yaml#L290-L546)
 * URL/DNS on which the DIGIT will be exposed
 * SSL Certificate for the above URL
 * End-points configs (Internal/external)
@@ -93,6 +94,8 @@ All Done.
 ```
 
 All Done, wait and watch for 10 min, you'll have the DIGIT setup completed and the application will be running on the given URL.
+
+**Once deployment is done, Create** [**cname**](https://in.godaddy.com/help/add-a-cname-record-19236) **record with load balancer id and domain.**
 
 ### The 2 Modes of Deployment
 
