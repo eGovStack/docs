@@ -337,7 +337,7 @@ variable "availability_zones" {
 }
 
 variable "kubernetes_version" {
-  default = "1.18"
+  default = "1.20"
 }
 
 # instance type for your worker nodes like r5a.large is 8 vCPU and 16GB RAM
