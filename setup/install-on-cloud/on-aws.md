@@ -47,7 +47,7 @@ The [**Amazon Elastic Kubernetes Service (EKS)**](https://docs.aws.amazon.com/ek
 
 Before we provision the cloud resources, we need to understand and be sure about what resources need to be provisioned by terraform to deploy DIGIT. The following picture shows the various key components. (EKS, Worker Nodes, PostGres DB, EBS Volumes, Load Balancer)
 
-![EKS Architecture for DIGIT Setup](<../../../.gitbook/assets/image (109).png>)
+![EKS Architecture for DIGIT Setup](<../../.gitbook/assets/image (109).png>)
 
 Considering the above deployment architecture, the following is the resource graph that we are going to provision using terraform in a standard way so that every time and for every env, it'll have the same infra.
 
@@ -432,4 +432,4 @@ ip-192-168-xx-3.ap-south-1.compute.internal   Ready  45d   v1.15.10-eks-bac369  
 ip-192-168-xx-4.ap-south-1.compute.internal   Ready  45d   v1.15.10-eks-bac369   Amazon Linux 2 
 ```
 
-Whola! All set and now you can go [**Deploy DIGIT**](../#2-deploy-digit)...
+Whola! All set and now you can go [**Deploy DIGIT**](./#2-deploy-digit)...

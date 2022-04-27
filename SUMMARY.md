@@ -273,9 +273,11 @@
 
 ## ⏹ Setup
 
-* [Quickstart](setup/quickstart.md)
+* [Quickstart](setup/quickstart/README.md)
+  * [1. Infra Local Setup (k3d)](setup/quickstart/1.-infra-local-setup-k3d.md)
+  * [2. Deployment](setup/quickstart/2.-deployment.md)
 * [Full Installation](setup/install-on-cloud/README.md)
-  * [On AWS](setup/install-on-cloud/on-aws/README.md)
+  * [On AWS](setup/install-on-cloud/on-aws.md)
     * [4. Post Deployment](setup/install-on-cloud/on-aws/4.-post-deployment.md)
     * [1. Pre-requisites](setup/install-on-cloud/on-aws/1.-pre-requisites.md)
   * [On Azure](setup/install-on-cloud/on-azure.md)

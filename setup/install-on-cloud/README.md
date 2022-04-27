@@ -6,7 +6,7 @@ description: >-
 
 # Full Installation
 
-While [**Quickstart Guide**](../quickstart.md) \*\*\*\*would have helped you to get your hands dirty and build the Kubernetes cluster on a local/single VM instance, which you can consider for either local development, or to understand the details involved in infra and deployment.
+While [**Quickstart Guide**](../quickstart/) \*\*\*\*would have helped you to get your hands dirty and build the Kubernetes cluster on a local/single VM instance, which you can consider for either local development, or to understand the details involved in infra and deployment.
 
 However, DIGIT is a [**cloud-native**](https://www.appdynamics.com/topics/what-is-cloud-native-architecture#\~3-challenges) platform at the same time [**cloud agnostic**](https://looker.com/definitions/cloud-agnostic#:\~:text=Cloud%2Dagnostic%20platforms%20are%20environments,different%20features%20and%20price%20structures.), depending on the scale and performance running **DIGIT on production** requires advanced capabilities like HA, DRS, autoscaling, resiliency, etc.. all these capabilities are provided out of the box by the commercial clouds like **AWS, Google, Azure, VMware, OpenStack, etc..** and also the private clouds like **NIC** and **few SDCs implemented clouds**, all these cloud providers provide the **kubernetes-as-a-managed-service** that makes the entire infra setup and management seamless and automated, like **infra-as-code, config-as-code**.
 
@@ -23,8 +23,8 @@ However, DIGIT is a [**cloud-native**](https://www.appdynamics.com/topics/what-i
 
 Choose you cloud and follow the Instruction to setup a Kubernetes cluster before moving on to the Deployment.
 
-{% content-ref url="on-aws/" %}
-[on-aws](on-aws/)
+{% content-ref url="on-aws.md" %}
+[on-aws.md](on-aws.md)
 {% endcontent-ref %}
 
 {% content-ref url="on-azure.md" %}
