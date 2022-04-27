@@ -273,7 +273,7 @@
 
 ## ⏹ Setup
 
-* [Quickstart](setup/quickstart/README.md)
+* [Quickstart](setup/quickstart.md)
   * [1. Infra Local Setup (k3d)](setup/quickstart/1.-infra-local-setup-k3d.md)
   * [2. Deployment](setup/quickstart/2.-deployment.md)
 * [Full Installation](setup/install-on-cloud/README.md)
