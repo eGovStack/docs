@@ -6,124 +6,117 @@ description: >-
 
 # Quickstart
 
-DIGIT is a distributed microservice-based platform that comprises many services which are containerized, depending upon the required features we can run only those services on any container supported orchestration platform like docker compose, Kubernetes, etc.
+## Demo/Evaluation Installations
 
-Here in this Quickstart guide we'll install basic services to get the platform up and running along with the PGR module, before we setup DIGIT, we'll create a lightweight Kubernetes cluster called [k3d](https://github.com/rancher/k3d) on a local machine with specified H/W requirement. The H/W requirements are listed below to ensure before we proceed further.
+Quickstart solutions that you give you the ability to try setting up DIGIT Infra quickly. These are not meant for production use as is.
 
-## **1. Infra Setup**
+If you want to install DIGIT on Lightweight Kubernetes ([k3d](https://github.com/rancher/k3d) ) for proofs of concept, see the open source project [k3d](https://github.com/rancher/k3d).  You can install DIGIT in a local or cloud VM when you have all the below pre-requisites and hardware requirement.
 
-**To provision a lightweight Kubernetes cluster, please follow the instructions below in context to your OS and install the k3d on your machine.**
+### Requirements
 
-### **H/W or VM Size**
+To use k3d, make sure your instance meets the following requirements:
 
-* min 8 vCPUs (recommended 8+)
-* min 16GiB of RAM (recommended 16+)
-* min 30GiB of HDD (recommended 30+)
+* **Linux distribution** running in a VM or bare metal
+  * Ubuntu 18.04 or Debian 10 (VM or bare metal)
+  * 2 vCPUs (recommend 4)
+  * 8GiB of RAM (recommend 16)
+  * 30GiB of HDD (recommend 40+)
+  * NAT or Bridged networking with access to the internet
+  * Install `curl`, `wget` `git`, and `tar` (if they're not already installed):
+    * `sudo apt-get install curl git wget tar`
+  * Install [Docker](https://docs.docker.com/engine/install/ubuntu/)
+  * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) on Linux
+  * Open terminal and Install k3d(v4.4.8) on Linux using the below command
+    * `wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | TAG=v4.4.8 bash`           &#x20;
+*   **OSX**
 
-### **Tools**
-
-*   **Linux distribution running in a VM or bare metal**
-
-    * Ubuntu 18.04 or Debian 10 (VM or bare metal)
-    * Install [Docker](https://docs.docker.com/engine/install/ubuntu/)
-    * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) on Linux
-    * Open terminal and Install k3d(v4.0.0) on Linux using the below command
-
-    ```
-    wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | TAG=v4.0.0 bash              
-    ```
-*   **OSX or Mac**
-
-    * [Docker Desktop](https://docs.docker.com/docker-for-mac/install/) local Kubernetes cluster enabled
+    * Docker Desktop local Kubernetes cluster enabled
+    * At least 6 GiB of memory allocated to Docker Desktop
+    * Install [Docker Desktop](https://docs.docker.com/docker-for-mac/install/) and local Kubernetes cluster enabled
     * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/) on Mac
-    * Install k3d(v4.0.0) on Mac, on terminal use [Homebrew](https://brew.sh) (Homebrew is available for MacOS) using the below command
+    * Install k3d(v4.4.8) on Mac, on terminal use [Homebrew](https://brew.sh) (Homebrew is available for MacOS) using the below command
+      * `brew install k3d` &#x20;
 
-    ```
-    brew install k3d  
-    ```
-*   **Windows 10 or above**
+    ****
+* **Windows 10 or above**
+  * [Docker Desktop for windows](https://docs.docker.com/docker-for-windows/install/#system-requirements-for-wsl-2-backend) need to be installed
+  * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/) on Windows
+  * [Install Chocolatey](https://chocolatey.org) package manager for windows
+  * Install [GitBash](https://git-scm.com/download/win) as an alternative command prompt that allows most of the Linux commands on windows.
+  * Now open gitbash and Install k3d(v4.4.8) on Windows using the below command
+    * `choco install k3d`
 
-    * [Docker Desktop for windows](https://docs.docker.com/docker-for-windows/install/#system-requirements-for-wsl-2-backend) need to be installed
-    * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/) on Windows
-    * [Install Chocolatey](https://chocolatey.org) package manager for windows
-    * Install [GitBash](https://git-scm.com/download/win) as an alternative command prompt that allows most of the Linux commands on windows.
-    * Now open gitbash and Install k3d(v4.0.0) on Windows using the below command
+## **1. Infra (Kubernetes Cluster) Creation**
 
-    ```
-    choco install k3d
-    ```
+**When the above prerequisites are met and the docker is up and running, run the following tasks depending upon your OS.**
 
-### **Infra (Kubernetes Cluster) Creation**
+1. &#x20;login/ssh into the machine and run the following in terminal/command prompt.
+2. Create /Kube directory and change permission. This will be used as k3d cluster persistent storage to store metadata and container logs .&#x20;
+   1.  ```
+       mkdir /kube
+       chmod 777 /kube
 
-**Once the above prerequisites are met, run the following tasks depending upon your OS.**
+       if you are unable to create the /kube folder in the root, you can create it your user directory and provide the absolue path below
+       ```
 
-* [ ] \*\*\*\*login/ssh into the machine, go to terminal/command prompt and run the following commands as an admin user.
-* [ ] Create /Kube directory and change permission. To use this directory for persistent data mount. This means all the container logs, data will be stored here.
 
-```
- mkdir /kube
- chmod 777 /kube
- 
- #if you are unable to create the /kube folder in the root
- # you can create it your user directory and provide the absolue path below
-```
+3. Create a k3d cluster with a single master node and 2 agents (Worker Nodes) and mount the above created directory (for data persistence).
+   1. `k3d cluster create --k3s-server-arg "--no-deploy=traefik" --agents 2 -v "/kube:/kube@agent[0,1]" -v "/kube:/kube@server[0]" --port "80:80@loadbalancer"`
+4. When cluster creation is successful, Get the kubeconfig file, which will allow you to connect the to the cluster.
+   1. `k3d kubeconfig get k3s-default > myk3dconfig`
+   2. `kubectl config use-context k3d-k3s-default --kubeconfig=myk3dconfig`
+5. Verify the Cluster creation by running the following commands from your local machine where the kubectl is installed. It gives you the sample output as below if everything works fine.
+   1.  `root@ip:/# kubectl cluster-info`
 
-* [ ] Create a cluster with a single master node and 2 agents (Worker Nodes) and mount the pre\*\*-\*\*created directory (for data persistence).
+       `OutPut`
 
-```
-k3d cluster create --k3s-server-arg "--no-deploy=traefik" --agents 2 -v "/kube:/kube@agent[0,1]" -v "/kube:/kube@server[0]" --port "80:80@loadbalancer"
-```
+       ```
+       Kubernetes control plane is running at https://0.0.0.0:33931
+       CoreDNS is running at https://0.0.0.0:33931/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+       Metrics-server is running at https://0.0.0.0:33931/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
+       ```
 
-* [ ] When cluster creation is successful, Get the kubeconfig file, which will allow you to connect the to the cluster at any time.
 
-```
-k3d kubeconfig get k3s-default > k3dconfig
-kubectl config use-context k3d-k3s-default --kubeconfig=k3dconfig
-```
+   2.  `root@ip:/# k3d cluster list`
 
-* [ ] Verify the Cluster creation by running the following commands from your local machine where the kubectl is installed. It gives you the sample output as below
+       `OutPut:`
 
-```
-root@ip:/# kubectl cluster-info
+       ```
+       NAME          SERVERS   AGENTS   LOADBALANCER
+       k3s-default   1/1       2/2      true
+       ```
 
-OutPut:
-Kubernetes control plane is running at https://0.0.0.0:33931
-CoreDNS is running at https://0.0.0.0:33931/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
-Metrics-server is running at https://0.0.0.0:33931/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
- 
- 
- 
-root@ip:/# k3d cluster list
-NAME          SERVERS   AGENTS   LOADBALANCER
-k3s-default   1/1       2/2      true
-```
 
-* [ ] You can verify the workers' nodes created by using the following command.
+   3.  `root@ip:/# kubectl get nodes`
 
-```
-kubectl get nodes
- 
-Output:
-NAME                       STATUS   ROLES                  AGE     VERSION
-k3d-k3s-default-agent-0    Ready    <none>                 3d18h   v1.21.1+k3s1
-k3d-k3s-default-agent-1    Ready    <none>                 3d18h   v1.21.1+k3s1
-k3d-k3s-default-server-0   Ready    control-plane,master   3d18h   v1.21.1+k3s1
- 
- 
-kubectl top nodes
+       `OutPut:`
 
-Output:
-W0625 07:56:24.588781   12810 top_node.go:119] Using json format to get metrics. Next release will switch to protocol-buffers, switch early by passing --use-protocol-buffers flag
-NAME                       CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
-k3d-k3s-default-agent-0    547m         6%     1505Mi          9%        
-k3d-k3s-default-agent-1    40m          0%     2175Mi          13%       
-k3d-k3s-default-server-0   59m          0%     2286Mi          14%  
- 
-```
+       ```
+       NAME                       STATUS   ROLES                  AGE     VERSION
+       k3d-k3s-default-agent-0    Ready    <none>                 3d18h   v1.21.1+k3s1
+       k3d-k3s-default-agent-1    Ready    <none>                 3d18h   v1.21.1+k3s1
+       k3d-k3s-default-server-0   Ready    control-plane,master   3d18h   v1.21.1+k3s1
+
+       ```
+
+
+   4.  `root@ip:/# kubectl top nodes`
+
+       `OutPut:`
+
+       ```
+       W0625 07:56:24.588781   12810 top_node.go:119] Using json format to get metrics. Next release will switch to protocol-buffers, switch early by passing --use-protocol-buffers flag
+       NAME                       CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+       k3d-k3s-default-agent-0    547m         6%     1505Mi          9%        
+       k3d-k3s-default-agent-1    40m          0%     2175Mi          13%       
+       k3d-k3s-default-server-0   59m          0%     2286Mi          14%  
+       ```
+
+
 
 If the above steps are completed successfully, your Cluster is now up and running ready to proceed with the DIGIT Deployment.
 
-## **2. DIGIT Setup**
+## **2. DIGIT Deployment on k3d**
 
 Now that we have the Infra setup to proceed with the DIGIT Deployment. Following are the tools that need to be installed on the machine before proceeding with the DIGIT Services deployment.
 
@@ -139,41 +132,35 @@ Now that we have the Infra setup to proceed with the DIGIT Deployment. Following
 3. [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) is a CLI to connect to the kubernetes cluster from your machine
 4. Install [CURL](https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux) for making api calls
 5. [Install Visualstudio](https://code.visualstudio.com/download) IDE Code for better code/configuration editing capabilities
-6. All the DIGIT services deployment configurations are in [GitRepo](https://github.com/egovernments/DIGIT-DevOps) which you would need to [install git](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) and then [git clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) it to your local.
-7. [Install Postman](https://www.postman.com/downloads/) to run some digit bootstrap scripts
+6. [Install Postman](https://www.postman.com/downloads/) to run digit bootstrap scripts
 
-```
-root@ip:/# git clone -b quickstart https://github.com/egovernments/DIGIT-DevOps 
-```
+### Prepare Deployment Configs
 
-1. After cloning the repo CD into the folder DIGIT-DevOps and type the "code ." command that will open the visual editor and opens all the files from the repo DIGIT-DevOps
-
-```
-root@ip:/# cd DIGIT-DevOps
-root@ip:DIGIT-DevOps# code .
-```
-
-1. Have look at the [sample deployment config file](https://github.com/egovernments/DIGIT-DevOps/blob/quickstart/deploy-as-code/helm/environments/quickstart-config.yaml) that needs to be configured as per any specific values according to your needs. (For a quick start you can run as it is)
-
-```
-https://github.com/egovernments/DIGIT-DevOps/blob/quickstart/deploy-as-code/helm/environments/quickstart-config.yaml
-```
-
-1. Add the following entries in your host file /etc/hosts depending on your OS, instructions can be found below.
-
-* [ ] [Ubuntu](http://manpages.ubuntu.com/manpages/trusty/man5/hosts.5.html)
-* [ ] [Windows](https://www.groovypost.com/howto/edit-hosts-file-windows-10/)
-* [ ] [MacOS](https://www.imore.com/how-edit-your-macs-hosts-file-and-why-you-would-want#page1)
-
-&#x20;   When you find it add following lines:
-
-```
-127.0.0.1 quickstart.local.digit
-```
+1. Clone the following [GitRepo](https://github.com/egovernments/DIGIT-DevOps), you may need to [install git](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) and then run [git clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) it to your machine.
+   * ```
+     root@ip:/# git clone -b quickstart https://github.com/egovernments/DIGIT-DevOps 
+     ```
+2. After cloning the repo CD into the folder DIGIT-DevOps and type the "code ." command that will open the visual editor and opens all the files from the repo DIGIT-DevOps
+   * ```
+     root@ip:/# cd DIGIT-DevOps
+     root@ip:DIGIT-DevOps# code .
+     ```
+3. Create your deployment config file, you can use the following template  [sample deployment config file](https://github.com/egovernments/DIGIT-DevOps/blob/quickstart/deploy-as-code/helm/environments/quickstart-config.yaml) and update the required details if needed. (For a quick start you can run as it is)
+   1. ```
+      https://github.com/egovernments/DIGIT-DevOps/blob/quickstart/deploy-as-code/helm/environments/quickstart-config.yaml
+      ```
+4. Add the following entries in your host file /etc/hosts depending on your OS, instructions can be found below.
+   * [ ] [Ubuntu](http://manpages.ubuntu.com/manpages/trusty/man5/hosts.5.html)
+   * [ ] [Windows](https://www.groovypost.com/howto/edit-hosts-file-windows-10/)
+   * [ ] [MacOS](https://www.imore.com/how-edit-your-macs-hosts-file-and-why-you-would-want#page1)
+5. When you find it, add following lines to the hosts file, save and close the file.
+   * `127.0.0.1 quickstart.local.digit`
 
 ### Deployment
 
-Once all the prerequisites set up is complete, go to the following repo, run the command and follow the instructions.
+Now we have all the deployments configs ready, we can now run the following command and provide the necessary details asked and this interactive installer will take care of the rest.
+
+1. Run the egov-deployer go script&#x20;
 
 ```
 root@ip:# cd DIGIT-DevOps/deploy-as-code/egov-deployer
@@ -191,14 +178,16 @@ root@ip:# go run digit_setup.go
 All Done.
 ```
 
-You can now test the Digit application status in command prompt/terminal by using the below command.
+2\. You can now test the Digit application status in command prompt/terminal by using the below command.
 
 ```
 curl -Is http://quickstart.local.digit/employee/login |  head -n 1
+
+OutPut:
 HTTP/2 200
 ```
 
-**Note**: pgr-services would be in crashloopbackoff state, but after performing below Post Deployment Steps pgr-services will start running.&#x20;
+**Note**: Initially pgr-services would be in crashloopbackoff state, but after performing below Post Deployment Steps pgr-services will start running.&#x20;
 
 ## 3. Post Deployment Steps
 
@@ -214,7 +203,7 @@ Forwarding from 127.0.0.1:8080 -> 8080
 Forwarding from [::1]:8080 -> 8080
 ```
 
-1. Seed the sample data
+2\. Seed the sample data
 
 * Ensure you have the postman to run the following seed data api, if not [Install postman](https://www.postman.com/downloads/canary/) on your local
 * Import the following postman collection into the postman and run it, this will have the seed data that enable sample test users and localisation data.
@@ -259,7 +248,7 @@ pod "egov-workflow-v2-5cdb96bcf5-dcgmf" deleted
 pod "pgr-services-b9f4ffdbf-5h5kd" deleted
 ```
 
-You have successfully completed the DIGIT application setup. You can now experience the DIGIT platform - PGR module.
+You have successfully completed the DIGIT Infra, Deployment setup and Installed a DIGIT - PGR module.
 
 {% hint style="info" %}
 You can try experimenting the different DIGIT modules by installing them in your cluster with your H/W or VM complying to higher level machine configuration of increased number of vCPUs. RAM and storage size.

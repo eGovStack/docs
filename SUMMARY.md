@@ -275,7 +275,9 @@
 
 * [Quickstart](setup/quickstart.md)
 * [Full Installation](setup/install-on-cloud/README.md)
-  * [On AWS](setup/install-on-cloud/on-aws.md)
+  * [On AWS](setup/install-on-cloud/on-aws/README.md)
+    * [4. Post Deployment](setup/install-on-cloud/on-aws/4.-post-deployment.md)
+    * [1. Pre-requisites](setup/install-on-cloud/on-aws/1.-pre-requisites.md)
   * [On Azure](setup/install-on-cloud/on-azure.md)
   * [On GCP](setup/install-on-cloud/on-gcp.md)
   * [On SDC](setup/install-on-cloud/on-sdc.md)
