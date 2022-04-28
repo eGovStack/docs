@@ -282,7 +282,7 @@
     * [2. Understanding EKS](setup/install-on-cloud/on-aws/2.-understanding-eks.md)
     * [3. Setup AWS account](setup/install-on-cloud/on-aws/3.-setup-aws-account.md)
     * [4. Infra-as-code (Terraform)](setup/install-on-cloud/on-aws/4.-infra-as-code-terraform.md)
-    * [5. Prepare Deployment](setup/install-on-cloud/on-aws/5.-prepare-deployment.md)
+    * [5. Prepare Deployment](setup/install-on-cloud/on-aws/4.-post-deployment.md)
     * [6. Deploy DIGIT](setup/install-on-cloud/on-aws/6.-deploy-digit.md)
     * [7. Bootstrap DIGIT](setup/install-on-cloud/on-aws/7.-bootstrap-digit.md)
   * [On Azure](setup/install-on-cloud/on-azure.md)
