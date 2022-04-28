@@ -1,5 +1,6 @@
 ---
 description: Provision infra for DIGIT on AWS using Terraform
+layout: landing
 ---
 
 # On AWS
@@ -29,8 +30,8 @@ The [**Amazon Elastic Kubernetes Service (EKS)**](https://docs.aws.amazon.com/ek
 [4.-infra-as-code-terraform.md](on-aws/4.-infra-as-code-terraform.md)
 {% endcontent-ref %}
 
-{% content-ref url="on-aws/5.-prepare-deployment-config.md" %}
-[5.-prepare-deployment-config.md](on-aws/5.-prepare-deployment-config.md)
+{% content-ref url="on-aws/4.-post-deployment.md" %}
+[4.-post-deployment.md](on-aws/4.-post-deployment.md)
 {% endcontent-ref %}
 
 {% content-ref url="on-aws/6.-deploy-digit.md" %}
