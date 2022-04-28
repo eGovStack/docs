@@ -58,3 +58,6 @@ When the above prerequisites are met, please proceed with the following steps
 [2.-deployment.md](quickstart/2.-deployment.md)
 {% endcontent-ref %}
 
+{% content-ref url="quickstart/faq.md" %}
+[faq.md](quickstart/faq.md)
+{% endcontent-ref %}
