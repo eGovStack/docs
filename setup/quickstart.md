@@ -46,6 +46,15 @@ To use k3d, make sure your instance meets the following requirements:
   * Now open gitbash and Install k3d(v4.4.8) on Windows using the below command
     * `choco install k3d`
 
-## ****
+## Quickstart Setup
 
-## ****
+When the above prerequisites are met, please proceed with the following steps
+
+{% content-ref url="quickstart/1.-infra-local-setup-k3d.md" %}
+[1.-infra-local-setup-k3d.md](quickstart/1.-infra-local-setup-k3d.md)
+{% endcontent-ref %}
+
+{% content-ref url="quickstart/2.-deployment.md" %}
+[2.-deployment.md](quickstart/2.-deployment.md)
+{% endcontent-ref %}
+
