@@ -8,9 +8,9 @@ description: >-
 
 ## Demo/Evaluation Installations
 
-Quickstart solutions that you give you the ability to try setting up DIGIT Infra quickly. These are not meant for production use as is.
+Quickstart solutions that you give you the ability to try setting up DIGIT Infra quickly. These are not meant for production use as is. However this quickstart can further ease out to setup production  infra.
 
-If you want to install DIGIT on Lightweight Kubernetes ([k3d](https://github.com/rancher/k3d) ) for proofs of concept, see the open source project [k3d](https://github.com/rancher/k3d).  You can install DIGIT in a local or cloud VM when you have all the below pre-requisites and hardware requirement.
+Quicksetup is when you want to install DIGIT on Lightweight Kubernetes ([k3d](https://github.com/rancher/k3d) ) for proofs of concept, see the open source project [k3d](https://github.com/rancher/k3d).  You can install k3d on a local or on a cloud VM when you have all the below pre-requisites and hardware requirement.
 
 ### Requirements
 
