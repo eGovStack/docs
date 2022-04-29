@@ -8,13 +8,15 @@ description: >-
 
 ## Demo/Evaluation Installations
 
-Quickstart solutions that you give you the ability to try setting up DIGIT Infra quickly. These are not meant for production use as is. However this quickstart can further ease out to setup production  infra.
+DIGIT Quickstart setup give you the ability to try setting up DIGIT Infra on a local machine/VM quickly. These are not meant for production use as is. However this quickstart flow can make you familiar with most of the production grade setup.
 
-Quicksetup is when you want to install DIGIT on Lightweight Kubernetes ([k3d](https://github.com/rancher/k3d) ) for proofs of concept, see the open source project [k3d](https://github.com/rancher/k3d).  You can install k3d on a local or on a cloud VM when you have all the below pre-requisites and hardware requirement.
+
+
+Quickstart is recommended for a basic infra types like local machine, setting up on a single VM, etc. Here we would still create a Lightweight Kubernetes ([k3d](https://github.com/rancher/k3d) ) cluster which does not really need full fledged cloud setup. See the open source project [k3d](https://github.com/rancher/k3d) to understand more.  You can install k3d on a local or on a VM when you have all the below pre-requisites and hardware requirement met.
 
 ### Requirements
 
-To use k3d, make sure your instance meets the following requirements:
+To use k3d, make sure your instance meets the following h/w requirements:
 
 * [ ] **Linux distribution** running in a VM or bare metal
   * Ubuntu 18.04 or Debian 10 (VM or bare metal)
@@ -46,7 +48,7 @@ To use k3d, make sure your instance meets the following requirements:
   * Now open gitbash and Install k3d(v4.4.8) on Windows using the below command
     * `choco install k3d`
 
-## Quickstart Setup
+## Let's start Quickstart Setup
 
 When the above prerequisites are met, please proceed with the following steps
 
