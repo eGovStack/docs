@@ -16,7 +16,7 @@ Quickstart is recommended for a basic infra types like local machine, setting up
 
 ### Requirements
 
-To use k3d, make sure your instance meets the following h/w requirements:
+To install k3d, make sure your instance meets the following h/w requirements:
 
 * [ ] **Linux distribution** running in a VM or bare metal
   * Ubuntu 18.04 or Debian 10 (VM or bare metal)
