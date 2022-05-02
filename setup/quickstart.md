@@ -39,7 +39,8 @@ To install k3d, make sure your instance meets the following h/w requirements:
 
     * [Docker Desktop](https://docs.docker.com/docker-for-mac/install/) local Kubernetes cluster enabled
     * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/) on Mac
-    * Install k3d on Mac, on terminal use curl command.
+    * Install k3d on Mac, on terminal use curl command.&#x20;
+    * &#x20;[Homebrew](https://brew.sh) (Homebrew is available for MacOS) using the below command to install curl.
 
     ```
     brew install curl
