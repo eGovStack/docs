@@ -10,59 +10,25 @@ description: >-
 
 DIGIT Quickstart setup give you the ability to try setting up DIGIT Infra on a local machine/VM quickly. These are not meant for production use as is. However this quickstart flow can make you familiar with most of the production grade setup.
 
+Quickstart is recommended for a basic infra types like local machine, setting up on a single VM, etc. Here we would create a Lightweight Kubernetes ([k3d](https://github.com/rancher/k3d) ) cluster which does not really need full fledged cloud setup or multiple VMs. See the open source project [k3d](https://github.com/rancher/k3d) to understand more.  You can install k3d on a local or on a VM when you have all the below pre-requisites and hardware requirement met.
 
+### H/W Requirements
 
-Quickstart is recommended for a basic infra types like local machine, setting up on a single VM, etc. Here we would still create a Lightweight Kubernetes ([k3d](https://github.com/rancher/k3d) ) cluster which does not really need full fledged cloud setup. See the open source project [k3d](https://github.com/rancher/k3d) to understand more.  You can install k3d on a local or on a VM when you have all the below pre-requisites and hardware requirement met.
+To install k3d, make sure your instance meets the following h/w requirements, and You must have a admin/[sudoer](https://medium.com/kernel-space/linux-fundamentals-a-to-z-of-a-sudoers-file-a5da99a30e7f) access before you proceed.
 
-### Requirements
-
-To install k3d, make sure your instance meets the following h/w requirements:
-
-*   [ ] **Linux distribution** running in a VM or bare metal
-
-    * Ubuntu 18.04 or Debian 10 (VM or bare metal)
-    * 2 vCPUs (recommend 4)
-    * 8GiB of RAM (recommend 16)
-    * 30GiB of HDD (recommend 40+)
-    * NAT or Bridged networking with access to the internet
-    * Install `curl`, `wget` `git`, and `tar` (if they're not already installed):
-      * `sudo apt-get install curl git wget tar`
-    * Install [Docker](https://docs.docker.com/engine/install/ubuntu/)
-    * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) on Linux
-    *   Open terminal and Install k3d(v4.4.8) on Linux using the below command
-
-        * `wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | TAG=v4.4.8 bash`           &#x20;
-
-        ****
-
-    **OSX or Mac**
-
-    * [Docker Desktop](https://docs.docker.com/docker-for-mac/install/) local Kubernetes cluster enabled
-    * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/) on Mac
-    * Install k3d on Mac, on terminal use curl command.&#x20;
-    * &#x20;[Homebrew](https://brew.sh) (Homebrew is available for MacOS) using the below command to install curl.
-
-    ```
-    brew install curl
-    curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | TAG=v4.4.8 bash
-    ```
-
-
-
-* [ ] Windows 10 or above
-  * [Docker Desktop for windows](https://docs.docker.com/docker-for-windows/install/#system-requirements-for-wsl-2-backend) need to be installed
-  * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/) on Windows
-  * [Install Chocolatey](https://chocolatey.org) package manager for windows
-  * Install [GitBash](https://git-scm.com/download/win) as an alternative command prompt that allows most of the Linux commands on windows.
-  * Now open gitbash and Install k3d(v4.4.8) on Windows using the below command
-    * `choco install k3d`
+* OS: Ubuntu 18.04 or Debian 10 or Windows 10 or Mac OSX&#x20;
+* Local machine or VM or bare metal
+* 2 vCPUs (recommend 4)
+* 8GiB of RAM (recommend 16)
+* 30GiB of HDD (recommend 40+)
+* NAT or Bridged networking with access to the internet
 
 ## Let's start Quickstart Setup
 
 When the above prerequisites are met, please proceed with the following steps
 
-{% content-ref url="quickstart/1.-infra-local-setup-k3d.md" %}
-[1.-infra-local-setup-k3d.md](quickstart/1.-infra-local-setup-k3d.md)
+{% content-ref url="quickstart/1.-infra-setup.md" %}
+[1.-infra-setup.md](quickstart/1.-infra-setup.md)
 {% endcontent-ref %}
 
 {% content-ref url="quickstart/2.-deployment.md" %}

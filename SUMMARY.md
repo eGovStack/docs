@@ -274,7 +274,7 @@
 ## ⏹ Setup
 
 * [Quickstart](setup/quickstart.md)
-  * [1. Infra Local Setup (k3d)](setup/quickstart/1.-infra-local-setup-k3d.md)
+  * [1. Infra Setup](setup/quickstart/1.-infra-setup.md)
   * [2. Deployment](setup/quickstart/2.-deployment.md)
   * [3. Launching VM/Instance](setup/quickstart/3.-launching-vm-instance.md)
   * [FAQ](setup/quickstart/faq.md)
