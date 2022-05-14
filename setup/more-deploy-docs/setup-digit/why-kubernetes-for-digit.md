@@ -177,7 +177,7 @@ Figure 11: Helm and Kubeapps Hub
 
 The Kubernetes community initiated a separate project for implementing a package manager for Kubernetes called Helm. This allows Kubernetes resources such as deployments, services, config maps, ingresses, etc to be templated and packaged using a resource called chart and allow them to be configured at the installation time using input parameters. More importantly, it allows existing charts to be reused when implementing installation packages using dependencies. Helm repositories can be hosted in public and private cloud environments for managing application charts. Helm provides a CLI for installing applications from a given Helm repository into a selected Kubernetes environment.
 
-A wide range of stable Helm charts for well-known software applications can be found in it’s [Github repository](https://github.com/kubernetes/charts/tree/master/stable) and also in the central Helm server: [Kubeapps Hub](https://hub.kubeapps.com).
+A wide range of stable Helm charts for well-known software applications can be found in it’s [Github repository](https://github.com/kubernetes/charts/tree/master/stable) and also in the central Helm server: [Kubeapps Hub](https://hub.kubeapps.com/).
 
 ### Conclusion
 
@@ -215,4 +215,4 @@ Kubernetes has been designed with over a decade of experience on running contain
 
 \[15] Deploying Apache Zookeeper using StatefulSets: [https://github.com/kubernetes/contrib/tree/master/statefulsets/zookeeper](https://github.com/kubernetes/contrib/tree/master/statefulsets/zookeeper)
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

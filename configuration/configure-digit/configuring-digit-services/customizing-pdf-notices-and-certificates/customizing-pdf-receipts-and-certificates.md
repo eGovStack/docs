@@ -30,7 +30,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 **Config file:** A json config file which contains the configuration for pdf requirement. For any pdf requirements, we have to add two configs file to the service.
 
-* **Format Config file:** This config file define the format of PDF. In format config, we define the UI structure ex: css, layout etc. for pdf as per PDFMake syntax of pdf. In PDF UI, the places where values are to be picked from the request body are written as “{{variableName}}” as per ‘mustache.js’ standard and are replaced by this templating engine. ex:[ ![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/configs/tree/master/pdf-service/format-config - Connect to preview](https://github.com/egovernments/configs/tree/master/pdf-service/format-config)
+* **Format Config file:** This config file define the format of PDF. In format config, we define the UI structure ex: css, layout etc. for pdf as per PDFMake syntax of pdf. In PDF UI, the places where values are to be picked from the request body are written as “\{{variableName\}}” as per ‘mustache.js’ standard and are replaced by this templating engine. ex:[ ![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/configs/tree/master/pdf-service/format-config - Connect to preview](https://github.com/egovernments/configs/tree/master/pdf-service/format-config)
 * **Data Config file:** This file contains a mapping to pick data from request body, external service call body if there is any and the variable which defines where this value is to be replaced in format by the templating engines (mustache.js). The variable which is declared in the format config file must be defined in the data config file. ex:[ ![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/configs/tree/master/pdf-service/data-config - Connect to preview](https://github.com/egovernments/configs/tree/master/pdf-service/data-config)
 
 PDF generation service read these such files at start-up to support PDF generation for all configured module.
@@ -216,4 +216,4 @@ _(Note: All the API’s are in the same postman collection, therefore, the same 
 
 \_\_
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

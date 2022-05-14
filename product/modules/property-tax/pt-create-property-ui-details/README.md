@@ -146,4 +146,4 @@ Localization keys are added under the ‘_rainmaker-pt_’ locale module. In fut
 | [Edit/Update Property](edit-update-property.md)                                              | Edit or update property details         |
 | [Quick Pay and Search Property](property-tax-quick-pay-for-citizen.md)                       | Make payment or search property details |
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

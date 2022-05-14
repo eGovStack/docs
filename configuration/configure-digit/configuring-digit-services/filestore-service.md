@@ -28,7 +28,7 @@ The **Application** is present among the core group of applications available in
 &#x20;In case of intellij, the plugin can be installed directly, for eclipse the lombok jar location has to be added in eclipse.ini file in this format **-javaagent:lombok.jar**.
 
 For the API information please refer to the swagger yaml \
-GOTO : [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io)   and click on file -> import url\
+GOTO : [![](https://editor.swagger.io/dist/favicon-32x32.png)Swagger Editor](https://editor.swagger.io/)   and click on file -> import url\
 Then add the raw url of the API doc in the pop up\
 \---> add url here&#x20;
 
@@ -46,7 +46,7 @@ Following are the variables that needs to be populated based on the aws/azure ac
 
 **How to enable Minio SDC**
 
-minio.url=[http://minio](http://minio).backbone:9000(Minio server end point)
+minio.url=[http://minio](http://minio/).backbone:9000(Minio server end point)
 
 isS3Enabled=true(Should be true)
 
@@ -60,7 +60,7 @@ minio.source=minio
 
 **How to enable AWS S3**
 
-minio.url=[https://s3.amazonaws.com](https://s3.amazonaws.com)
+minio.url=[https://s3.amazonaws.com](https://s3.amazonaws.com/)
 
 isS3Enabled=true(Should be true)
 
@@ -97,7 +97,7 @@ minio.source=minio
 
 \# the default format of the allowed file formats goes in a set bracket with string inside it - {"jpg","png"} - please follow the same.
 
-_**allowed.formats.map**_={jpg:{'image/jpg','image/jpeg'},jpeg:{'image/jpeg','image/jpg'},png:{'image/png'},pdf:{'application/pdf'},odt:{'application/vnd.oasis.opendocument.text'},ods:{'application/vnd.oasis.opendocument.spreadsheet'},docx:{'application/x-tika-msoffice','application/x-tika-ooxml','application/vnd.oasis.opendocument.text'},doc:{'application/x-tika-msoffice','application/x-tika-ooxml','application/vnd.oasis.opendocument.text'},dxf:{'text/plain'},csv:{'text/plain'},txt:{'text/plain'},xlsx:{'application/x-tika-ooxml','application/x-tika-msoffice'},xls:{'application/x-tika-ooxml','application/x-tika-msoffice'}}
+_**allowed.formats.map**_={jpg:{'image/jpg','image/jpeg'},jpeg:{'image/jpeg','image/jpg'},png:{'image/png'},pdf:{'application/pdf'},odt:{'application/vnd.oasis.opendocument.text'},ods:{'application/vnd.oasis.opendocument.spreadsheet'},docx:{'application/x-tika-msoffice','application/x-tika-ooxml','application/vnd.oasis.opendocument.text'},doc:{'application/x-tika-msoffice','application/x-tika-ooxml','application/vnd.oasis.opendocument.text'},dxf:{'text/plain'},csv:{'text/plain'},txt:{'text/plain'},xlsx:{'application/x-tika-ooxml','application/x-tika-msoffice'},xls:{'application/x-tika-ooxml','application/x-tika-msoffice'\}}
 
 The key in the map is the visible extension of the file types, the values on the right in curly braces are the respective tika types of the file. these values can be found on the tika website or by passing the file through the tika functions.
 
@@ -135,4 +135,4 @@ The filestore service is used to upload and store documents that citizens add wh
 
 {% embed url="https://www.getpostman.com/collections/1b448834735adf1acc4a" %}
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

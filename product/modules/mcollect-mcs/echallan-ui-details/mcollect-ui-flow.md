@@ -68,13 +68,13 @@ On search Results we can click on challan number to update/cancel any challan, i
 
 ## **Role Action Mapping**
 
-|                         |                                         |           |               |
-| ----------------------- | --------------------------------------- | --------- | ------------- |
-| [**S.NO**](http://s.no) | **API**                                 | **ROLES** | **ACTION ID** |
-| 1                       | `egov-mdms-service/v1/_search`          |           | `954`         |
-| 2                       | `echallan-services/eChallan/v1/_create` | `UC_EMP`  | `2112`        |
-| 3                       | `egov-pdf/download/UC/mcollect-challan` | `UC_EMP`  | `2115`        |
-| 4                       | `echallan-services/eChallan/v1/_count`  | `UC_EMP`  | `2192`        |
+|                          |                                         |           |               |
+| ------------------------ | --------------------------------------- | --------- | ------------- |
+| [**S.NO**](http://s.no/) | **API**                                 | **ROLES** | **ACTION ID** |
+| 1                        | `egov-mdms-service/v1/_search`          |           | `954`         |
+| 2                        | `echallan-services/eChallan/v1/_create` | `UC_EMP`  | `2112`        |
+| 3                        | `egov-pdf/download/UC/mcollect-challan` | `UC_EMP`  | `2115`        |
+| 4                        | `echallan-services/eChallan/v1/_count`  | `UC_EMP`  | `2192`        |
 
 ## **Related Links**
 

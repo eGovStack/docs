@@ -40,11 +40,11 @@ Apply TradeLicence
 
 ## **Role Action Mapping**
 
-|                         |                                             |                                                                       |               |
-| ----------------------- | ------------------------------------------- | --------------------------------------------------------------------- | ------------- |
-| [**S.NO**](http://s.no) | **API**                                     | **ROLES**                                                             | **ACTION ID** |
-| 1                       | `egov-mdms-service/v1/_search`              | `CR_PT`                                                               | `954`         |
-| 2                       | `/tl-services/v1/_update`                   | `TL_APPROVER, TL_CEMP, EMPLOYEE, TL_DOC_VERIFIER, TL_FIELD_INSPECTOR` | `2029`        |
-| 3                       | `/egov-workflow-v2/egov-wf/process/_search` | `EMPLOYEE`                                                            | `1730`        |
-| 4                       | `/tl-services/v1/_search`                   | `EMPLOYEE`, `TL_APPROVER`, `TL_CEMP`                                  | `1687`        |
-| 5                       | `/egov-hrms/employees/_search`              | `TL_APPROVER, TL_CEMP, EMPLOYEE, TL_DOC_VERIFIER, TL_FIELD_INSPECTOR` | `1752`        |
+|                          |                                             |                                                                       |               |
+| ------------------------ | ------------------------------------------- | --------------------------------------------------------------------- | ------------- |
+| [**S.NO**](http://s.no/) | **API**                                     | **ROLES**                                                             | **ACTION ID** |
+| 1                        | `egov-mdms-service/v1/_search`              | `CR_PT`                                                               | `954`         |
+| 2                        | `/tl-services/v1/_update`                   | `TL_APPROVER, TL_CEMP, EMPLOYEE, TL_DOC_VERIFIER, TL_FIELD_INSPECTOR` | `2029`        |
+| 3                        | `/egov-workflow-v2/egov-wf/process/_search` | `EMPLOYEE`                                                            | `1730`        |
+| 4                        | `/tl-services/v1/_search`                   | `EMPLOYEE`, `TL_APPROVER`, `TL_CEMP`                                  | `1687`        |
+| 5                        | `/egov-hrms/employees/_search`              | `TL_APPROVER, TL_CEMP, EMPLOYEE, TL_DOC_VERIFIER, TL_FIELD_INSPECTOR` | `1752`        |

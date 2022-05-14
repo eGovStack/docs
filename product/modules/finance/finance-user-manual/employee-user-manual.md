@@ -568,4 +568,4 @@ Enter Voucher Date From and Voucher Date To details to fetch vouchers for the sp
 
 Click on the relevant Voucher Number to open the voucher. Click on the Approve button to approve the voucher or the Reject button to reject the voucher. Provide the reason for rejection in the Comments section.
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

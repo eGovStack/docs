@@ -27,4 +27,4 @@ APIs developed on digit follow certain conventions and principles. The aim of th
 * For receiving files in an API, don’t use binary file data. Instead, accept the file store ids
 * If there is only one file to be uploaded and no persistence is needed, and no additional json data is to be posted, you can consider using direct file upload instead of using filestore id
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

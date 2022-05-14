@@ -33,11 +33,11 @@ Enables the user to create a mutation and transfer the ownership to the new owne
 
 **Workflow config:**
 
-|                                                         |             |                               |
-| ------------------------------------------------------- | ----------- | ----------------------------- |
-| **name**                                                | **value**   | **description**               |
-| is.mutation.workflow.enabled                            | true/false  | enables/disbales the workflow |
-| [mutation.workflow.name](http://mutation.workflow.name) | PT.MUTATION | workfow config name           |
+|                                                          |             |                               |
+| -------------------------------------------------------- | ----------- | ----------------------------- |
+| **name**                                                 | **value**   | **description**               |
+| is.mutation.workflow.enabled                             | true/false  | enables/disbales the workflow |
+| [mutation.workflow.name](http://mutation.workflow.name/) | PT.MUTATION | workfow config name           |
 
 In Addition to property information and the extra owner information being added, some other information is required for workflow
 
@@ -319,4 +319,4 @@ Please refer to the parent for external services:[ Property Services | Doc-Links
 | API list to create Mutation Slabs mutation/\_create, \_search, \_update | [API COLLECTION MT\_SLABS](https://www.getpostman.com/collections/02965abc6345b5e1a633)                                                                                         |
 | API list for MT-Calculator mutation/\_calculate                         | [POSTMAN API COLLECTION - MT-CALCULATE](https://www.getpostman.com/collections/e044d1f64feeafe82f70)                                                                            |
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

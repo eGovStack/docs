@@ -10,9 +10,9 @@ An Urban Local Body (ULB) is defined as a tenant. The information which describe
 | ------ | ----------------------- | ---------- | ----------- | ----------- | --------------- | --------------- | --------------- | ----------- | ----------- |
 | 1      | Sonepur Nagar Panchayat | 47         | Corp        | Sonepur     | Sonepur         | Banka           | BN47            | Bihar       | BBD47       |
 
-| Contact Number\* | Address\*          | ULB Website\*                                         | Latitude   | Longitude  | Email Address    | GIS Location Link | Call Center No. | Facebook Link | Twitter Link | Logo file Path\*                                                                  |
-| ---------------- | ------------------ | ----------------------------------------------------- | ---------- | ---------- | ---------------- | ----------------- | --------------- | ------------- | ------------ | --------------------------------------------------------------------------------- |
-| 98362532657      | Main Hall, Sonepur | [nagarsewa.sonepur.com](http://nagarsewa.sonepur.com) | 24.8874° N | 86.9198° E | snp@bihar.gov.in |                   |                 |               |              | [Logo](https://drive.google.com/drive/folders/1mDosChmhu-RO6O3Z5FlmSJR\_VWbb8oxR) |
+| Contact Number\* | Address\*          | ULB Website\*                                          | Latitude   | Longitude  | Email Address    | GIS Location Link | Call Center No. | Facebook Link | Twitter Link | Logo file Path\*                                                                  |
+| ---------------- | ------------------ | ------------------------------------------------------ | ---------- | ---------- | ---------------- | ----------------- | --------------- | ------------- | ------------ | --------------------------------------------------------------------------------- |
+| 98362532657      | Main Hall, Sonepur | [nagarsewa.sonepur.com](http://nagarsewa.sonepur.com/) | 24.8874° N | 86.9198° E | snp@bihar.gov.in |                   |                 |               |              | [Logo](https://drive.google.com/drive/folders/1mDosChmhu-RO6O3Z5FlmSJR\_VWbb8oxR) |
 
 {% hint style="info" %}
 Data given in the table is a sample data.
@@ -74,4 +74,4 @@ This checklist covers the activities which are specific to the entity. There are
 Sample Data Template
 {% endfile %}
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

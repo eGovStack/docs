@@ -49,14 +49,14 @@ rainmaker-uc
 
 ## **Role Action Mapping**
 
-|                         |                                        |           |               |
-| ----------------------- | -------------------------------------- | --------- | ------------- |
-| [**S.NO**](http://s.no) | **API**                                | **ROLES** | **ACTION ID** |
-| 1                       | egov-mdms-service/v1/\_search          |           | 954           |
-| 2                       | echallan-services/eChallan/v1/\_update | UC\_EMP   | 2117          |
-| 3                       | egov-pdf/download/UC/mcollect-challan  | UC\_EMP   | 2115          |
-| 4                       | echallan-services/eChallan/v1/\_search | UC\_EMP   | 2114          |
-| 5                       | billing-service/bill/v2/\_search       |           | 1861          |
+|                          |                                        |           |               |
+| ------------------------ | -------------------------------------- | --------- | ------------- |
+| [**S.NO**](http://s.no/) | **API**                                | **ROLES** | **ACTION ID** |
+| 1                        | egov-mdms-service/v1/\_search          |           | 954           |
+| 2                        | echallan-services/eChallan/v1/\_update | UC\_EMP   | 2117          |
+| 3                        | egov-pdf/download/UC/mcollect-challan  | UC\_EMP   | 2115          |
+| 4                        | echallan-services/eChallan/v1/\_search | UC\_EMP   | 2114          |
+| 5                        | billing-service/bill/v2/\_search       |           | 1861          |
 
 ## **Documents and Resources Links**
 
@@ -67,4 +67,4 @@ rainmaker-uc
 | MCollect Search Challan | [Search Challan and Pay Challan](search-and-pay-challan.md)                                |
 | MCollect Pay Challan    | [BillGenie](https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/436502610/BillGenie) |
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

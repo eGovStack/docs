@@ -36,7 +36,7 @@ Other configuration details are mentioned as part of the [XState-Chatbot Integra
 
 ## Overall Philosophy of Chatbot
 
-This chatbot solves the basic form filling aspect of a chat flow. By collecting the information from the user, an API call can be made to the rainmaker backend services to fulfill what the user wants to do. It uses the concept of [StateCharts](https://statecharts.github.io) (similar to State Machines) to maintain the state of the user in a chat flow and store the information provided by the user. [XState](https://xstate.js.org/docs/) is a JavaScript implementation of StateCharts. All chat flows are coded inside the XState framework.
+This chatbot solves the basic form filling aspect of a chat flow. By collecting the information from the user, an API call can be made to the rainmaker backend services to fulfill what the user wants to do. It uses the concept of [StateCharts](https://statecharts.github.io/) (similar to State Machines) to maintain the state of the user in a chat flow and store the information provided by the user. [XState](https://xstate.js.org/docs/) is a JavaScript implementation of StateCharts. All chat flows are coded inside the XState framework.
 
 This chatbot does not have any Natural Language Processing component. In the future, we can extend the chatbot to add such features.
 
@@ -89,4 +89,4 @@ Apart from the chat flow and its backend service API calls, few other components
    2. Outgoing message
    3. Transition of state
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

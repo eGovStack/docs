@@ -20,6 +20,6 @@ The eGov suit is released under version 3.0 of the [GPL](http://www.gnu.org/lice
 
 ![](https://badges.gitter.im/Join%20Chat.svg)
 
-([https://gitter.im/egovernments/eGov?utm\_source=badge\&utm\_medium=badge\&utm\_campaign=pr-badge\&utm\_content=badge)](https://gitter.im/egovernments/eGov)
+([https://gitter.im/egovernments/eGov?utm\_source=badge\&utm\_medium=badge\&utm\_campaign=pr-badge\&utm\_content=badge)](https://gitter.im/egovernments/eGov?utm\_source=badge\&utm\_medium=badge\&utm\_campaign=pr-badge\&utm\_content=badge%29)
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

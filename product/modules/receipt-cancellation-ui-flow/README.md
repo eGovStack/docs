@@ -87,8 +87,8 @@ rainmaker-receipts
 
 Only the Role CR\_PT is allowed to use this module.
 
-|                         |                                           |           |               |
-| ----------------------- | ----------------------------------------- | --------- | ------------- |
-| [**S.NO**](http://s.no) | **API**                                   | **ROLES** | **ACTION ID** |
-| 1                       | `egov-mdms-service/v1/_search`            | `CR_PT`   | `954`         |
-| 2                       | `collection-services/payments/PT/_search` | `CR_PT`   | `2029`        |
+|                          |                                           |           |               |
+| ------------------------ | ----------------------------------------- | --------- | ------------- |
+| [**S.NO**](http://s.no/) | **API**                                   | **ROLES** | **ACTION ID** |
+| 1                        | `egov-mdms-service/v1/_search`            | `CR_PT`   | `954`         |
+| 2                        | `collection-services/payments/PT/_search` | `CR_PT`   | `2029`        |

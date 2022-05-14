@@ -10,7 +10,7 @@ description: >-
 
 Distributed tracing is a method used to profile and monitor applications, especially those built using a microservices architecture. Distributed tracing helps pinpoint where failures occur and what causes poor performance.
 
-[OpenTracing](https://opentracing.io) has been a key capability when it comes to microservices-based distributed systems like DIGIT. We’ll start with the introduction of OpenTracing, explaining what it is and why it is important We shall also set up Jaeger and learn to use it for monitoring and troubleshooting.
+[OpenTracing](https://opentracing.io/) has been a key capability when it comes to microservices-based distributed systems like DIGIT. We’ll start with the introduction of OpenTracing, explaining what it is and why it is important We shall also set up Jaeger and learn to use it for monitoring and troubleshooting.
 
 ## Drift to Microservice Architecture
 
@@ -56,7 +56,7 @@ _Jaeger_ is used for monitoring and troubleshooting microservices-based distribu
 
 ### Major Components of Jaeger
 
-**Jaeger Client Libraries** — Jaeger clients are language-specific implementations of the [OpenTracing API](http://opentracing.io).
+**Jaeger Client Libraries** — Jaeger clients are language-specific implementations of the [OpenTracing API](http://opentracing.io/).
 
 **Agent** — The Jaeger agent is a network daemon that listens for spans sent over UDP, which it batches and sends to the collector. It is designed to be deployed to all hosts as an infrastructure component. The agent abstracts the routing and discovery of the collectors away from the client.
 
@@ -73,7 +73,7 @@ _Jaeger_ is used for monitoring and troubleshooting microservices-based distribu
 
 **TIP**: To check if the docker container is running, use: _**Docker ps.**_
 
-Once the container starts, open [_http://localhost:16686/_](http://127.0.0.1:16686) to access the Jaeger UI. The container runs the Jaeger backend with an in-memory store, which is initially empty, so there is not much we can do with the UI right now since the store has no traces.
+Once the container starts, open [_http://localhost:16686/_](http://127.0.0.1:16686/) to access the Jaeger UI. The container runs the Jaeger backend with an in-memory store, which is initially empty, so there is not much we can do with the UI right now since the store has no traces.
 
 ## Creating Traces on Jaeger UI
 
@@ -114,4 +114,4 @@ In this blog, we’ve described the importance and benefits of OpenTracing, one 
 * [https://www.jaegertracing.io/docs/1.9/](https://www.jaegertracing.io/docs/1.9/)
 * [https://opentracing.io/docs/](https://opentracing.io/docs/)
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

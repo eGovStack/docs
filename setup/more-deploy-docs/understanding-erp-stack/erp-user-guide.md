@@ -130,9 +130,9 @@ This section is to be referred to only if you want the application to run using 
 
 **2. To access the application using the domain name:**
 
-* Have an entry in eg\_city table in the database with the domain name (for ex: domainurl= "[www.egoverpphoenix.org](http://www.egoverpphoenix.org)") to access the application using the domain name.
-* Add the entry in the host file of your system with details as 172.16.2.164 [www.egoverpphoenix.org](http://www.egoverpphoenix.org) (This needs to be done both in server machine as well as the machines in which the application needs to be accessed since this is not a public domain).
-* Access the application using an URL [http://www.egoverpphoenix.org:8080/egi/](http://www.egoverpphoenix.org:8080/egi/) where [www.egoverpphoenix.org](http://www.egoverpphoenix.org) is the domain name and 8080 is the port of the machine where the application server is running.
+* Have an entry in eg\_city table in the database with the domain name (for ex: domainurl= "[www.egoverpphoenix.org](http://www.egoverpphoenix.org/)") to access the application using the domain name.
+* Add the entry in the host file of your system with details as 172.16.2.164 [www.egoverpphoenix.org](http://www.egoverpphoenix.org/) (This needs to be done both in server machine as well as the machines in which the application needs to be accessed since this is not a public domain).
+* Access the application using an URL [http://www.egoverpphoenix.org:8080/egi/](http://www.egoverpphoenix.org:8080/egi/) where [www.egoverpphoenix.org](http://www.egoverpphoenix.org/) is the domain name and 8080 is the port of the machine where the application server is running.
 
 Always start the wildfly server with the below command to access the application using IP address or domain name.`1 nohup ./standalone.sh -b 0.0.0.0 &`
 
@@ -206,4 +206,4 @@ Browser:-
 * Firefox
 * Internet Explorer
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

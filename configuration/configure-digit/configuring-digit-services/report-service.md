@@ -63,7 +63,7 @@ As mentioned above, report service uses a config file per module to store all th
   * **searchClause:** SQL search clause for corresponding search params to filter results, to be appended in base query Ex:- AND fnoc.tenantId IN ($ulb)\
     Here $ulb will be replaced by user inputs
   * **Pattern:** This field will be used only when ‘type’ is set to ‘singlevaluelist’. It is the external service URL combined with JSON Paths separated by ‘|’. The first JSON path is for codes and the second for values. Values will be shown to the user in drop down. And codes corresponding to user selected value will be sent to the report service and will be used in searchClauses mentioned in the last point.\
-    Ex:-[http://egov-mdms-service:8080/egov-mdms-service/v1/\_get?tenantId=$tenantid\&moduleName=tenant\&masterName=tenants|$.MdmsRes.tenant.tenants.\*.code|$.MdmsRes.tenant.tenants.\*.name](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/226557957/Report+Framework#)
+    Ex:-[http://egov-mdms-service:8080/egov-mdms-service/v1/\_get?tenantId=$tenantid\&moduleName=tenant\&masterName=tenants|$.MdmsRes.tenant.tenants.\*.code|$.MdmsRes.tenant.tenants.\*.name](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/226557957/Report+Framework)
 * **Query:** Main/base query clause for fetching report data from DB and custom tables formed after fetching data from external service&#x20;
 * **Orderby:** order by clause to be appended into base query
 * **Groupby:** group by clause to be appended into base query
@@ -74,7 +74,7 @@ As mentioned above, report service uses a config file per module to store all th
 1. Configuring the post object in the yaml itself like below.\
    externalService:
    * entity: $.MdmsRes.egf-master.FinancialYear
-     * apiURL: [http://](http://localhost:8094/egov-mdms-service/v1/\_search)[egov-mdms-service:8080](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/226557957/Report+Framework#)[/egov-mdms-service/v1/\_search](http://localhost:8094/egov-mdms-service/v1/\_search)
+     * apiURL: [http://](http://localhost:8094/egov-mdms-service/v1/\_search)[egov-mdms-service:8080](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/226557957/Report+Framework)[/egov-mdms-service/v1/\_search](http://localhost:8094/egov-mdms-service/v1/\_search)
      * keyOrder: finYearRange,startingDate,endingDate,tenantId
      * tableName: tbl\_financialyear
      * stateData: true
@@ -384,4 +384,4 @@ The report service provides a common framework to generate reports and show the 
 
 
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

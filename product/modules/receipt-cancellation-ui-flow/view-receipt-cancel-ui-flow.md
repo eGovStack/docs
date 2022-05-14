@@ -51,9 +51,9 @@ File details,\
 
 ## **Role Action Mapping**
 
-|                         |                                              |           |               |
-| ----------------------- | -------------------------------------------- | --------- | ------------- |
-| [**S.NO**](http://s.no) | **API**                                      | **ROLES** | **ACTION ID** |
-| 1                       | `egov-mdms-service/v1/_search`               | `CR_PT`   | `954`         |
-| 2                       | `collection-services/payments/PT/_search`    | `CR_PT`   | `2029`        |
-| 3                       | `/collection-services/payments/PT/_workflow` | `CR_PT`   | `2028`        |
+|                          |                                              |           |               |
+| ------------------------ | -------------------------------------------- | --------- | ------------- |
+| [**S.NO**](http://s.no/) | **API**                                      | **ROLES** | **ACTION ID** |
+| 1                        | `egov-mdms-service/v1/_search`               | `CR_PT`   | `954`         |
+| 2                        | `collection-services/payments/PT/_search`    | `CR_PT`   | `2029`        |
+| 3                        | `/collection-services/payments/PT/_workflow` | `CR_PT`   | `2028`        |

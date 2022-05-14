@@ -28,6 +28,6 @@ _(Note: The above structure image is for reference only)_
   * Kafka producer and the consumer configuration value
   * Kafka topic
   * External service path and many more. Whatever changes are done in application.properties file the same changes need to be reflected in the [values.yaml](https://digit-discuss.atlassian.net/wiki/spaces/EPE/overview) file (for reference only) of a particular service.
-* After enhancing the service, the details about the new feature must be mentioned in [README.md](http://readme.md), [LOCALSETUP.md](http://localsetup.md) and [CHANGELOG.md](http://changelog.md) file. And the version of service in the pom.xml file need to be increment. **Eg:** 1.0.0 to 1.0.1 or 1.0.0 to 1.1.0 depend upon the level of the enhancement.
+* After enhancing the service, the details about the new feature must be mentioned in [README.md](http://readme.md/), [LOCALSETUP.md](http://localsetup.md/) and [CHANGELOG.md](http://changelog.md/) file. And the version of service in the pom.xml file need to be increment. **Eg:** 1.0.0 to 1.0.1 or 1.0.0 to 1.1.0 depend upon the level of the enhancement.
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

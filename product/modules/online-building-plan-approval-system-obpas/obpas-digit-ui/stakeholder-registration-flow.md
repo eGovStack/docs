@@ -184,17 +184,17 @@ Localization keys are added in the ‘_rainmaker-bpareg_’ locale module. In fu
 
 **API Call Role Action Mapping**
 
-| [**S.No**](http://s.no)**.** | <p><strong>API</strong></p><p> </p>   | **Action id** | **Roles** |
-| ---------------------------- | ------------------------------------- | ------------- | --------- |
-| 1                            | `/egov-mdms-service/v1/_search`       | `954`         | `CITIZEN` |
-| 2                            | `/tl-services/v1/BPAREG/_create`      |               | `CITIZEN` |
-| 3                            | `/filestore/v1/files/url`             | `1528`        | `CITIZEN` |
-| 4                            | `/billing-service/bill/v2/_fetchbill` | `1862`        | `CITIZEN` |
-| 5                            | `/tl-calculator/billingslab/_search`  | `1684`        | `CITIZEN` |
-| 6                            | `/tl-services/v1/BPAREG/_update`      |               | `CITIZEN` |
-| 7                            | `/localization/messages/v1/_search`   | `1531`        | `CITIZEN` |
-| 8                            | `/tl-calculator/v1/BPAREG/_getbill`   |               | `CITIZEN` |
+| [**S.No**](http://s.no/)**.** | <p><strong>API</strong></p><p> </p>   | **Action id** | **Roles** |
+| ----------------------------- | ------------------------------------- | ------------- | --------- |
+| 1                             | `/egov-mdms-service/v1/_search`       | `954`         | `CITIZEN` |
+| 2                             | `/tl-services/v1/BPAREG/_create`      |               | `CITIZEN` |
+| 3                             | `/filestore/v1/files/url`             | `1528`        | `CITIZEN` |
+| 4                             | `/billing-service/bill/v2/_fetchbill` | `1862`        | `CITIZEN` |
+| 5                             | `/tl-calculator/billingslab/_search`  | `1684`        | `CITIZEN` |
+| 6                             | `/tl-services/v1/BPAREG/_update`      |               | `CITIZEN` |
+| 7                             | `/localization/messages/v1/_search`   | `1531`        | `CITIZEN` |
+| 8                             | `/tl-calculator/v1/BPAREG/_getbill`   |               | `CITIZEN` |
 
 
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

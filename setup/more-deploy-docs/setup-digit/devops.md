@@ -104,7 +104,7 @@ It does not stop with just issuing separate user accounts and using TLS to authe
 
 Set up an automated system that periodically revokes the old TLS certificates and issues new ones to your user. That helps as you don’t want attackers to get hold of a TLS cert or a token and then make use of it indefinitely.
 
-A bootstrap token, for example, needs to be revoked as soon as you finish with your activity. You can also make use of a credential management system such as [HashiCorp Vault](https://www.vaultproject.io) which can issue you with credentials when you need them and revoke them when you finish with your work.
+A bootstrap token, for example, needs to be revoked as soon as you finish with your activity. You can also make use of a credential management system such as [HashiCorp Vault](https://www.vaultproject.io/) which can issue you with credentials when you need them and revoke them when you finish with your work.
 
 ### Use a Partitioned Approach to Secure Secrets
 
@@ -156,4 +156,4 @@ As a cluster-admin dealing with a security incident, the last thing you would wa
 
 Remember that the above are just some general best practices and they are not exhaustive. You are free to adjust and make changes based on your use case and ways of working for your team.
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

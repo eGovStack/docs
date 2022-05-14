@@ -154,13 +154,13 @@ Localization keys are added under the ‘_rainmaker-tl_’ locale module. In fut
 
 ## **API Call Role Action Mapping**
 
-|                              |                                       |               |           |
-| ---------------------------- | ------------------------------------- | ------------- | --------- |
-| [**S.No**](http://s.no)**.** | **API**                               | **Action id** | **Roles** |
-| 1                            | `/egov-mdms-service/v1/_search`       | `954`         | `CITIZEN` |
-| 2                            | `/tl-services/v1/_create`             | `1685`        | `CITIZEN` |
-| 3                            | `/filestore/v1/files/url`             | `1528`        | `CITIZEN` |
-| 4                            | `/billing-service/bill/v2/_fetchbill` | `1862`        | `CITIZEN` |
-| 5                            | `/tl-calculator/billingslab/_search`  | `1684`        | `CITIZEN` |
-| 6                            | `/tl-services/v1/_update`             | `1686`        | `CITIZEN` |
-| 7                            | `/localization/messages/v1/_search`   | `1531`        | `CITIZEN` |
+|                               |                                       |               |           |
+| ----------------------------- | ------------------------------------- | ------------- | --------- |
+| [**S.No**](http://s.no/)**.** | **API**                               | **Action id** | **Roles** |
+| 1                             | `/egov-mdms-service/v1/_search`       | `954`         | `CITIZEN` |
+| 2                             | `/tl-services/v1/_create`             | `1685`        | `CITIZEN` |
+| 3                             | `/filestore/v1/files/url`             | `1528`        | `CITIZEN` |
+| 4                             | `/billing-service/bill/v2/_fetchbill` | `1862`        | `CITIZEN` |
+| 5                             | `/tl-calculator/billingslab/_search`  | `1684`        | `CITIZEN` |
+| 6                             | `/tl-services/v1/_update`             | `1686`        | `CITIZEN` |
+| 7                             | `/localization/messages/v1/_search`   | `1531`        | `CITIZEN` |

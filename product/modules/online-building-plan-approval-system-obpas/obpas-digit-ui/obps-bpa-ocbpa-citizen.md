@@ -129,23 +129,23 @@ Localisation keys are added under the ‘_rainmaker-bpa_’ and ‘rainmaker-bpa
 
 ## **API Call Role Action Mapping**
 
-| [**S.No**](http://s.no)**.** | <p><strong>API</strong></p><p> </p>                       | **Action id** | **Roles** |
-| ---------------------------- | --------------------------------------------------------- | ------------- | --------- |
-| 1                            | `/egov-mdms-service/v1/_search`                           | `954`         | `CITIZEN` |
-| 2                            | `/edcr/rest/dcr/scrutinydetails`                          |               | `CITIZEN` |
-| 3                            | `/filestore/v1/files/url`                                 | `1528`        | `CITIZEN` |
-| 4                            | `/billing-service/bill/v2/_fetchbill`                     | `1862`        | `CITIZEN` |
-| 5                            | `collection-services/payments/{businessService}/_search/` | `1864`        | `CITIZEN` |
-| 6                            | `/noc-services/v1/noc/_search`                            |               | `CITIZEN` |
-| 7                            | `/localization/messages/v1/_search`                       | `1531`        | `CITIZEN` |
-| 8                            | `/noc-services/v1/noc/_update`                            |               | `CITIZEN` |
-| 9                            | `/bpa-services/v1/bpa/_update`                            |               | `CITIZEN` |
-| 10                           | `/bpa-services/v1/bpa/_search`                            |               | `CITIZEN` |
-| 11                           | `/egov-workflow-v2/egov-wf/process/_search`               |               | `CITIZEN` |
-| 12                           | `/egov-workflow-v2/egov-wf/businessservice/_search`       |               | `CITIZEN` |
-| 13                           | `/tl-services/v1/BPAREG/_search`                          |               | `CITIZEN` |
+| [**S.No**](http://s.no/)**.** | <p><strong>API</strong></p><p> </p>                       | **Action id** | **Roles** |
+| ----------------------------- | --------------------------------------------------------- | ------------- | --------- |
+| 1                             | `/egov-mdms-service/v1/_search`                           | `954`         | `CITIZEN` |
+| 2                             | `/edcr/rest/dcr/scrutinydetails`                          |               | `CITIZEN` |
+| 3                             | `/filestore/v1/files/url`                                 | `1528`        | `CITIZEN` |
+| 4                             | `/billing-service/bill/v2/_fetchbill`                     | `1862`        | `CITIZEN` |
+| 5                             | `collection-services/payments/{businessService}/_search/` | `1864`        | `CITIZEN` |
+| 6                             | `/noc-services/v1/noc/_search`                            |               | `CITIZEN` |
+| 7                             | `/localization/messages/v1/_search`                       | `1531`        | `CITIZEN` |
+| 8                             | `/noc-services/v1/noc/_update`                            |               | `CITIZEN` |
+| 9                             | `/bpa-services/v1/bpa/_update`                            |               | `CITIZEN` |
+| 10                            | `/bpa-services/v1/bpa/_search`                            |               | `CITIZEN` |
+| 11                            | `/egov-workflow-v2/egov-wf/process/_search`               |               | `CITIZEN` |
+| 12                            | `/egov-workflow-v2/egov-wf/businessservice/_search`       |               | `CITIZEN` |
+| 13                            | `/tl-services/v1/BPAREG/_search`                          |               | `CITIZEN` |
 
 \
 
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

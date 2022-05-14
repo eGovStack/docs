@@ -28,7 +28,7 @@ The whole implementation cycle requires a Team of individuals with specific skil
 
 ### Budgetary Requirement For Implementation
 
-Based on close deliberations with various stakeholders, it is recommended that the budgetary allocation for the implementation of the initiative should be around 3 crores to 3.8 crores1 for statewide implementation and Operation and Maintenance Cost (per Year )for the initiative will be approximately 1.35 crores to 2.0 crores2. The budget allocated needs to be utilised for human resources requirements primarily. The budgetary allocation is recommended as per the NICSI standards published on [https://www.nicsi.com/](https://www.nicsi.com) (Check Annexure 1 for NICSI standard rates). The estimation of the budget will increase or decrease based on the rates applicable to the resources required. (For details on budgetary allocation guidelines refer to Section 5).
+Based on close deliberations with various stakeholders, it is recommended that the budgetary allocation for the implementation of the initiative should be around 3 crores to 3.8 crores1 for statewide implementation and Operation and Maintenance Cost (per Year )for the initiative will be approximately 1.35 crores to 2.0 crores2. The budget allocated needs to be utilised for human resources requirements primarily. The budgetary allocation is recommended as per the NICSI standards published on [https://www.nicsi.com/](https://www.nicsi.com/) (Check Annexure 1 for NICSI standard rates). The estimation of the budget will increase or decrease based on the rates applicable to the resources required. (For details on budgetary allocation guidelines refer to Section 5).
 
 ### Critical Success Factors For Implementation
 

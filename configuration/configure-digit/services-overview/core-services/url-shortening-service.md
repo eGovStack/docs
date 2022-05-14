@@ -47,4 +47,4 @@ This shortened urls contains path to this endpoint. The service uses id used in 
 | Swagger API Contract | [API Contract](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/core-services/master/docs/url-shortening\_contract.yml#!/) |
 | Local Setup          | [URL Shortening Local Setup](https://github.com/egovernments/core-services/blob/master/egov-url-shortening/LOCALSETUP.md)                               |
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

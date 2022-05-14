@@ -44,8 +44,8 @@ for these modules, we are re-using the “rainmaker-ws” and “rainmaker-abg�
 
 ## **API Call Role Action Mapping**
 
-|                              |                                       |               |                                   |
-| ---------------------------- | ------------------------------------- | ------------- | --------------------------------- |
-| [**S.No**](http://s.no)**.** | **API**                               | **Action id** | **Roles**                         |
-| 1                            | `billing-service/bill/v2/_cancelbill` | `1936`        | `SUPERUSER`, `SW_CEMP`, `WS_CEMP` |
-| 2                            | `egov-mdms-service/v1/_search`        | `954`         |                                   |
+|                               |                                       |               |                                   |
+| ----------------------------- | ------------------------------------- | ------------- | --------------------------------- |
+| [**S.No**](http://s.no/)**.** | **API**                               | **Action id** | **Roles**                         |
+| 1                             | `billing-service/bill/v2/_cancelbill` | `1936`        | `SUPERUSER`, `SW_CEMP`, `WS_CEMP` |
+| 2                             | `egov-mdms-service/v1/_search`        | `954`         |                                   |

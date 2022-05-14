@@ -18,7 +18,7 @@ To configure form data or json api set sms.provider.contentType=application/x-ww
 To configure which data needs to be sent to the API below property can be configured:
 
 * sms.config.map={'uname':'$username', 'pwd': '$password', 'sid':'$senderid', 'mobileno':'$mobileno', 'content':'$message', 'smsservicetype':'unicodemsg', 'myParam': '$extraParam' , 'messageType': '$mtype'}
-* sms.category.map={'mtype': {'\*': 'abc', 'OTP': 'def'}}
+* sms.category.map={'mtype': {'\*': 'abc', 'OTP': 'def'\}}
 * sms.extra.config.map={'extraParam': 'abc'}
 
 sms.extra.config.map is not used currently and is only kept for custom implementation which requires data that doesn't need to be directly passed to the REST API call
@@ -63,4 +63,4 @@ sms.blacklist.numbers=5\*,9999999999,88888888XX will blacklist any phone number 
 
 Few 3rd parties require a prefix of 0 or 91 or +91 with the mobile number. In such a case you can use sms.mobile.prefix to automatically add the prefix to the mobile number coming in the message queue.
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

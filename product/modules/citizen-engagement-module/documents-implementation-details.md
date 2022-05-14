@@ -152,14 +152,14 @@ Localization keys are added under the ‘_rainmaker-common_’ locale module. In
 
 ## **API Call Role Action Mapping**
 
-| [**S.No**](http://s.no)**.** | <p><strong>API</strong></p><p> </p> | **Action id** | **Roles**             |
-| ---------------------------- | ----------------------------------- | ------------- | --------------------- |
-| 1                            | `/egov-mdms-service/v1/_search`     | `954`         | `CITIZEN`             |
-| 2                            | `/egov-document-uploader`           | `1685`        | `EMPLOYEE`            |
-| 3                            | `/filestore/v1/files/url`           | `1528`        | `CITIZEN`, `EMPLOYEE` |
-| 7                            | `/localization/messages/v1/_search` | `1531`        | `CITIZEN`, `EMPLOYEE` |
+| [**S.No**](http://s.no/)**.** | <p><strong>API</strong></p><p> </p> | **Action id** | **Roles**             |
+| ----------------------------- | ----------------------------------- | ------------- | --------------------- |
+| 1                             | `/egov-mdms-service/v1/_search`     | `954`         | `CITIZEN`             |
+| 2                             | `/egov-document-uploader`           | `1685`        | `EMPLOYEE`            |
+| 3                             | `/filestore/v1/files/url`           | `1528`        | `CITIZEN`, `EMPLOYEE` |
+| 7                             | `/localization/messages/v1/_search` | `1531`        | `CITIZEN`, `EMPLOYEE` |
 
 \
 
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

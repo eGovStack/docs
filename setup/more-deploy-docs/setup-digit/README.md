@@ -21,7 +21,7 @@ Before proceeding to set up DIGIT, it is essential to know some of the key techn
 5. DIGIT Deployment configuration, customization is done through Helm Charts.
 6. Kubernetes cluster setup is done through code like terraform/ansible suitably.
 
-### Why [OpenAPI](https://medium.com/@ratrosy/building-apis-with-openapi-ac3c24e33ee3#:\~:text=OpenAPI%20helps%20developers%20specify%20the,and%20framework%20of%20your%20choice.)
+### Why [OpenAPI](https://medium.com/@ratrosy/building-apis-with-openapi-ac3c24e33ee3)
 
 The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic. Similar to what interface descriptions have done for lower-level programming, the OpenAPI Specification removes guesswork in calling a service.
 
@@ -29,7 +29,7 @@ The OpenAPI Specification (OAS) defines a standard, programming language-agnosti
 
 Microservices are nothing but breaking big beast into smaller units that can independently be developed, enhanced and scaled as a categorized and layered stack that gives better control over each component of an application that exists in its own container, independently managed and updated. This means that developers can build applications from multiple components and program each component in the language best suited to its function, rather than having to choose a single less-than-ideal language to use for everything. Optimizing software all the way down to the components of the application helps you increase the quality of your products. No time and resources are wasted managing the effects updating one application have on another.
 
-### Why [Containerized/Dockerized](https://medium.com/@pablo.iorio/container-based-architecture-i-iii-technical-advantages-7176195456c5#:\~:text=Using%20containers%20facilitates%20the%20development,complexity%2C%20network%20latency%2C%20monitoring.)
+### Why [Containerized/Dockerized](https://medium.com/@pablo.iorio/container-based-architecture-i-iii-technical-advantages-7176195456c5)
 
 Comparatively the best infra choice for running a microservices application architecture is application containers. Containers encapsulate a lightweight runtime environment for the application, presenting a consistent environment that can follow the application from the developer's desktop to testing to final production deployment, and you can run containers on cloud infra with physical or virtual machines.
 
@@ -92,4 +92,4 @@ For being successful in the DIGIT Setup, here are certain requirements that need
 6. Setting up Jenkins Job to build, bake images and deploy the components for the rolling updates
 7. Setup [Application monitoring](https://medium.com/@Alibaba\_Cloud/system-monitoring-using-prometheus-and-grafana-8007d3aaf400), [Distributed Tracing](https://medium.com/velotio-perspectives/a-comprehensive-tutorial-to-implementing-opentracing-with-jaeger-a01752e1a8ce), [Alert management](https://medium.com/@abhishekbhardwaj510/alertmanager-integration-in-prometheus-197e03bfabdf)
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

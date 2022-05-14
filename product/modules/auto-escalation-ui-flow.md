@@ -62,7 +62,7 @@ Employee Inbox
 
 **Role Action Mapping**
 
-|                         |                                              |            |               |
-| ----------------------- | -------------------------------------------- | ---------- | ------------- |
-| [**S.NO**](http://s.no) | **API**                                      | **ROLES**  | **ACTION ID** |
-| 1                       | `/egov-workflow-v2/egov-wf/escalate/_search` | `EMPLOYEE` | `2150`        |
+|                          |                                              |            |               |
+| ------------------------ | -------------------------------------------- | ---------- | ------------- |
+| [**S.NO**](http://s.no/) | **API**                                      | **ROLES**  | **ACTION ID** |
+| 1                        | `/egov-workflow-v2/egov-wf/escalate/_search` | `EMPLOYEE` | `2150`        |

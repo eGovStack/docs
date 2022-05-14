@@ -216,4 +216,4 @@ The whole function is exposed within the component Registry as `getBillDetailsCo
 | 8          | /pg-service/transaction/v1/\_update      | 1572          | CITIZEN         |
 | 9          | collection-services/payments/PT/\_search | 2029          | PTCEMP, CITIZEN |
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

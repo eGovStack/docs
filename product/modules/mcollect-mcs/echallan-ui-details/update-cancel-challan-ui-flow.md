@@ -78,18 +78,18 @@ Click on Print Receipt, `qa.digit.org/collection-services/payments/{challanBusin
 
 ## **Role Action Mapping**
 
-|                         |                                                                       |           |               |
-| ----------------------- | --------------------------------------------------------------------- | --------- | ------------- |
-| [**S.NO**](http://s.no) | **API**                                                               | **ROLES** | **ACTION ID** |
-| 1                       | `egov-mdms-service/v1/_search`                                        |           | `954`         |
-| 2                       | `echallan-services/eChallan/v1/_update`                               | `UC_EMP`  | `2117`        |
-| 3                       | `egov-pdf/download/UC/mcollect-challan`                               | `UC_EMP`  | `2115`        |
-| 4                       | `echallan-services/eChallan/v1/_search`                               | `UC_EMP`  | `2114`        |
-| 5                       | `billing-service/bill/v2/_search`                                     | `UC_EMP`  | `1861`        |
-| 6                       | `billing-service/bill/v2/_fetchbill`                                  | `UC_EMP`  |               |
-| 7                       | `collection-services/payments/ADVT.Gas_Balloon_Advertisement/_search` | `UC_EMP`  | `2138`        |
-| 8                       | `collection-services/payments/_create`                                | `UC_EMP`  | `1862`        |
-| 9                       | `pdf-service/v1/_create`                                              | `UC_EMP`  | `1834`        |
+|                          |                                                                       |           |               |
+| ------------------------ | --------------------------------------------------------------------- | --------- | ------------- |
+| [**S.NO**](http://s.no/) | **API**                                                               | **ROLES** | **ACTION ID** |
+| 1                        | `egov-mdms-service/v1/_search`                                        |           | `954`         |
+| 2                        | `echallan-services/eChallan/v1/_update`                               | `UC_EMP`  | `2117`        |
+| 3                        | `egov-pdf/download/UC/mcollect-challan`                               | `UC_EMP`  | `2115`        |
+| 4                        | `echallan-services/eChallan/v1/_search`                               | `UC_EMP`  | `2114`        |
+| 5                        | `billing-service/bill/v2/_search`                                     | `UC_EMP`  | `1861`        |
+| 6                        | `billing-service/bill/v2/_fetchbill`                                  | `UC_EMP`  |               |
+| 7                        | `collection-services/payments/ADVT.Gas_Balloon_Advertisement/_search` | `UC_EMP`  | `2138`        |
+| 8                        | `collection-services/payments/_create`                                | `UC_EMP`  | `1862`        |
+| 9                        | `pdf-service/v1/_create`                                              | `UC_EMP`  | `1834`        |
 
 ## **Related Links**
 

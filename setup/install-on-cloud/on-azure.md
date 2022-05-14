@@ -10,7 +10,7 @@ description: Provision infra for DIGIT on Azure using Terraform
 
 ### **Prerequisites** <a href="#prerequisites" id="prerequisites"></a>
 
-* Azure subscription: If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?ref=microsoft.com) before you begin.
+* Azure subscription: If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?ref=microsoft.com\&utm\_source=microsoft.com\&utm\_medium=docs\&utm\_campaign=visualstudio) before you begin.
 * Configure Terraform: Follow the directions in the article, [Terraform and configure access to Azure](https://docs.microsoft.com/en-us/azure/developer/terraform/get-started-cloud-shell)
 * Azure service principal: Follow the directions in the Create the service principal section in the article, [Create an Azure service principal with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest). Take note of the values for the appId, displayName, password, and tenant.
 
@@ -241,8 +241,6 @@ The terraform apply command displays the results of creating the resources defin
 ![](<../../.gitbook/assets/image (40).png>)
 
 &#x20;      4\. In the Azure portal, select All resources in the left menu to see the resources created for your new Kubernetes cluster.
-
-
 
 **6. Test the Kubernetes cluster**
 

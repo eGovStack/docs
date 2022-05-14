@@ -23,4 +23,4 @@ Because of heavy reports, the following things will impact the platform
 * Some times when running huge queries, because of time taken by the query will lead to broken pipe issue which causes more memory leaks and out of heap memory type issues. Because of this, the service will frequently restart automatically.
 * If a query returns huge data, the browser will become unresponsive and application will become unresponsive.
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

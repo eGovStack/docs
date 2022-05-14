@@ -19,7 +19,7 @@ The key objectives for DIGIT support are:
 
 **Version Support**
 
-eGov will support versions ‘n’ and ‘n-1’ of the DIGIT services, where ‘n’ refers to the major version number. Each service follows a major.minor.patch version number (based on Semantic Versioning standards - [https://semver.org/](https://semver.org)). A change in major version number for service indicates a break in backward compatibility. Such major or minor changes are always accompanied by migration scripts to carry data over an upgrade. Support is void if the partner makes changes to the source code of the DIGIT services.
+eGov will support versions ‘n’ and ‘n-1’ of the DIGIT services, where ‘n’ refers to the major version number. Each service follows a major.minor.patch version number (based on Semantic Versioning standards - [https://semver.org/](https://semver.org/)). A change in major version number for service indicates a break in backward compatibility. Such major or minor changes are always accompanied by migration scripts to carry data over an upgrade. Support is void if the partner makes changes to the source code of the DIGIT services.
 
 Here’s an illustration for supporting ‘n’ and ‘n-1’ versions:
 
@@ -57,4 +57,4 @@ Partner is responsible for providing primary support for the DIGIT hosting for t
 | P2, Business Slowed               | A key component of the application is degraded, unusable or unavailable, some users affected.                    | 1 day        |
 | P3 and lower, Business Unaffected | A component of the application is degraded, which causes a minor inconvenience, but a workaround is available.   | 2 days       |
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

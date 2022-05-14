@@ -10,9 +10,9 @@ This domain name is ideally chosen by the state/client since its a product which
 
 Following is the table through which the information can be shared.
 
-| Sr. No.            | Domain Name                               | EXTERNAL-IP  |
-| ------------------ | ----------------------------------------- | ------------ |
-| <ol><li></li></ol> | [pcwebopedia.com](http://pcwebopedia.com) | 192.78.98.12 |
+| Sr. No.            | Domain Name                                | EXTERNAL-IP  |
+| ------------------ | ------------------------------------------ | ------------ |
+| <ol><li></li></ol> | [pcwebopedia.com](http://pcwebopedia.com/) | 192.78.98.12 |
 
 {% hint style="info" %}
 Data given in the table is a sample data.
@@ -59,4 +59,4 @@ This checklist covers the activities which are specific to the entity:
 
 ### Attachments
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

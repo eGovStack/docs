@@ -100,4 +100,4 @@ Fig.3.0: AWS 3-Tier Architecture Diagram
 
 ![](https://digit-discuss.atlassian.net/wiki/download/thumbnails/8716301/worddav4faa0e315d2eb20c1297023c7aa65d51.png?version=1\&modificationDate=1553666611915\&cacheVersion=1\&api=v2\&width=649\&height=459)
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

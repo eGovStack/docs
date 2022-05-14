@@ -4,7 +4,7 @@
 
 ### **Objective**
 
-Reap benefit system is one of the vendors that provide the chatbot services using the[ ![](https://images.squarespace-cdn.com/content/v1/5eb455d61e1add207522fffc/1591612739969-PES60R7VHOQ9YRQDXBA8/favicon.ico?format=100w)turn](http://turn.io) as backend services to communicate with citizen through chatbot. As part of the requirement, we need to create a complaint in digit platform when ever citizen has raised the complaint through reap benefit chatbot.
+Reap benefit system is one of the vendors that provide the chatbot services using the[ ![](https://images.squarespace-cdn.com/content/v1/5eb455d61e1add207522fffc/1591612739969-PES60R7VHOQ9YRQDXBA8/favicon.ico?format=100w)turn](http://turn.io/) as backend services to communicate with citizen through chatbot. As part of the requirement, we need to create a complaint in digit platform when ever citizen has raised the complaint through reap benefit chatbot.
 
 ## Overview
 
@@ -45,7 +45,7 @@ Please deploy the following builds
 
 ## Infra Configuration Details
 
-1\) turn-io-adapter: "[http://turn-io-adapter.egov:8080/](http://turn-io-adapter.egov:8080)" (In service host configuration)
+1\) turn-io-adapter: "[http://turn-io-adapter.egov:8080/](http://turn-io-adapter.egov:8080/)" (In service host configuration)
 
 `2) Add /turn-io-adapter/_transform in egov-mixed-mode-endpoints-whitelist configuration`
 

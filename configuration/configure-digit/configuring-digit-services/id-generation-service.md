@@ -72,7 +72,7 @@ If you want a state-level sequence, then you need to use a fixed sequence name
 
 "format": "PT/\[CITY.CODE]/\[fy:yyyy-yy]/\[SEQ\_RCPT\_PT\_RECEIPT]",
 
-"idname": "[pt.receipt.id](http://pt.receipt.id)"
+"idname": "[pt.receipt.id](http://pt.receipt.id/)"
 
 }
 
@@ -82,7 +82,7 @@ But if you want a ULB level sequence, the sequence name should be dynamic based 
 
 "format": "PT/\[CITY.CODE]/\[fy:yyyy-yy]/\[SEQ\_RCPT\_PT\_\[TENANT\_ID]]",
 
-"idname": "[pt.receipt.id](http://pt.receipt.id)"
+"idname": "[pt.receipt.id](http://pt.receipt.id/)"
 
 }
 

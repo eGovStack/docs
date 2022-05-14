@@ -41,7 +41,7 @@ Automation is accomplished by building a custom framework using Karate Framework
 | **Title**        | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Karate Framework | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">intuit/karate](https://github.com/intuit/karate)                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Gherkin Language | <ul><li>Gherkin is the format for cucumber specifications</li><li>Gherkin is line-oriented language just like YAML and Python</li><li>Gherkin Scripts connects the human concept of cause and effect to the software concept of input/process and output</li><li>Feature, Background, Scenario, Given, When, Then, And But are importantly used in Gherkin</li><li>In Gherkin, each scenario should execute separately</li><li>The biggest advantage of Gherkin is simple enough for non-programmers to understand</li></ul> |
-| Cucumber         | [<img src="https://cucumber.io/cucumber/assets/img/favicon.png" alt="" data-size="line">BDD Testing & Collaboration Tools for Teams \| Cucumber](https://cucumber.io)                                                                                                                                                                                                                                                                                                                                                        |
+| Cucumber         | [<img src="https://cucumber.io/cucumber/assets/img/favicon.png" alt="" data-size="line">BDD Testing & Collaboration Tools for Teams \| Cucumber](https://cucumber.io/)                                                                                                                                                                                                                                                                                                                                                       |
 | MDMS             | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data)                                                                                                                                                                                                                                                                                                                                                                            |
 | Kafka Rest Proxy | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">confluentinc/kafka-rest](https://github.com/confluentinc/kafka-rest)                                                                                                                                                                                                                                                                                                                                                                                    |
 
@@ -53,12 +53,12 @@ Automation is accomplished by building a custom framework using Karate Framework
 * [Cucumber](https://cucumber.io/docs/cucumber/api/)
 * [JUnit](https://junit.org/junit4/)
 * [Kafka Rest Proxy](https://github.com/confluentinc/kafka-rest)
-* [Maven](https://maven.apache.org/#:\~:text=Apache%20Maven%20is%20a%20software,a%20central%20piece%20of%20information.)
+* [Maven](https://maven.apache.org)
 
 ### Environments currently working on
 
-* [https://qa.digit.org/](https://qa.digit.org)
-* [https://uat.digit.org/](https://uat.digit.org)
+* [https://qa.digit.org/](https://qa.digit.org/)
+* [https://uat.digit.org/](https://uat.digit.org/)
 
 ### Observations
 
@@ -78,4 +78,4 @@ Automation is accomplished by building a custom framework using Karate Framework
 | Kafka Approach Document                               | [Kafka Consumer Producer Approach](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1540587710/Kafka+Consumer+Producer+Approach)                                                                                                           |
 | Sample Config File (for passing to execution command) | [<img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png" alt="" data-size="line">config.yaml](https://drive.google.com/file/d/19XDqJErhGrNegrmI2AxL9dsDqubxaWdo/view?usp=sharing)                                      |
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

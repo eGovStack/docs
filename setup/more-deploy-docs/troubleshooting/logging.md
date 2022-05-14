@@ -43,7 +43,7 @@ Bear in mind that, logging system is not only for developers. It’s also used b
 
 ## **5. Consider storing Personally identifiable information (PII) of your end-users**
 
-Sometimes, you log requests from end-users that contain PII. We need to be careful, it might violate [GDPR](https://gdpr-info.eu).
+Sometimes, you log requests from end-users that contain PII. We need to be careful, it might violate [GDPR](https://gdpr-info.eu/).
 
 ## Logging approaches in MSA
 
@@ -65,4 +65,4 @@ If you don’t want to implement logging in each service separately. You can con
 
 This approach might help to reduce the complexity of your application. However, you might get lost your log data if that service is down.
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

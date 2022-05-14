@@ -110,8 +110,8 @@ Bill details document is available here[ Bill Details](bill-details-ui-flow.md)
 
 ## **Role Action Mapping**
 
-|                         |                                                      |                          |               |
-| ----------------------- | ---------------------------------------------------- | ------------------------ | ------------- |
-| [**S.NO**](http://s.no) | **API**                                              | **ROLES**                | **ACTION ID** |
-| 1                       | `egov-mdms-service/v1/_search`                       |                          | `954`         |
-| 2                       | `egov-searcher/bill-genie/billswithaddranduser/_get` | `SUPERUSER` , `EMPLOYEE` | `1804`        |
+|                          |                                                      |                          |               |
+| ------------------------ | ---------------------------------------------------- | ------------------------ | ------------- |
+| [**S.NO**](http://s.no/) | **API**                                              | **ROLES**                | **ACTION ID** |
+| 1                        | `egov-mdms-service/v1/_search`                       |                          | `954`         |
+| 2                        | `egov-searcher/bill-genie/billswithaddranduser/_get` | `SUPERUSER` , `EMPLOYEE` | `1804`        |

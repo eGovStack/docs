@@ -57,13 +57,13 @@ Each flow in property has a workflow associated with it, which can be controlled
 
 The Boolean field which can enable/disable Workflow - same field controls the update and create the workflow
 
-|                                                                                       |               |                                                                            |
-| ------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------- |
-| **name**                                                                              | **value**     | **description**                                                            |
-| **is.workflow.enabled**                                                               | true/false    | enable disbale workflow                                                    |
-| [**property.workflow.name**](http://property.workflow.name)                           | **PT.CREATE** | the name should match the config name in the workflow businessservice JSON |
-| [**property.legacy.entry.workflow.name**](http://property.legacy.entry.workflow.name) | **PT.LEGACY** |                                                                            |
-| [**property.update.workflow.name**](http://property.update.workflow.name)             | **PT.UPDATE** |                                                                            |
+|                                                                                        |               |                                                                            |
+| -------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------- |
+| **name**                                                                               | **value**     | **description**                                                            |
+| **is.workflow.enabled**                                                                | true/false    | enable disbale workflow                                                    |
+| [**property.workflow.name**](http://property.workflow.name/)                           | **PT.CREATE** | the name should match the config name in the workflow businessservice JSON |
+| [**property.legacy.entry.workflow.name**](http://property.legacy.entry.workflow.name/) | **PT.LEGACY** |                                                                            |
+| [**property.update.workflow.name**](http://property.update.workflow.name/)             | **PT.UPDATE** |                                                                            |
 
 Workflow Config for property create if the source is from **WATER CONNECTION** module
 
@@ -653,4 +653,4 @@ API LIST:
 | /Property/\_update | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
 | /property/\_search | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

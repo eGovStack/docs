@@ -66,11 +66,11 @@ This checklist covers all the activities which are common across the entities.
 
 This checklist covers the activities which are specific to the entity.
 
-| Sr. No. | Activity                                                                                                                                                                           | Example                                                        |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| 1       | The Name should not have any special character                                                                                                                                     | <p>Pooja : [Allowed]</p><p>#Pooja! : [Not allowed]</p>         |
-| 2       | The date should be in DD/MM/YYYY format                                                                                                                                            | <p>DD/MM/YYYY : [Allowed]</p><p>YYYY/DD/MM : [Not allowed]</p> |
-| 3       | The Email ID should be valid Id, email Id should contain the Company/Firm name or an individual personal name before the “@” and the “[XXXXX.com](http://xxxxx.com)” after the “@” | [ABCLtd@xeror.com](mailto:ABCLtd@xeror.com)                    |
+| Sr. No. | Activity                                                                                                                                                                            | Example                                                        |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1       | The Name should not have any special character                                                                                                                                      | <p>Pooja : [Allowed]</p><p>#Pooja! : [Not allowed]</p>         |
+| 2       | The date should be in DD/MM/YYYY format                                                                                                                                             | <p>DD/MM/YYYY : [Allowed]</p><p>YYYY/DD/MM : [Not allowed]</p> |
+| 3       | The Email ID should be valid Id, email Id should contain the Company/Firm name or an individual personal name before the “@” and the “[XXXXX.com](http://xxxxx.com/)” after the “@” | [ABCLtd@xeror.com](mailto:ABCLtd@xeror.com)                    |
 
 ### Attachments
 
@@ -82,4 +82,4 @@ Configuration Data Template&#x20;
 Sample Data&#x20;
 {% endfile %}
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

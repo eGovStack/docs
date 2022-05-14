@@ -57,10 +57,10 @@ This checklist covers all the activities which are common across the entities.
 
 This checklist covers the activities which are specific to the entity.
 
-| Sr. No. | Activity                                                                                                                                                                           | Example                                                 |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| 1       | The Supplier Code should be alphanumeric and unique                                                                                                                                | ABC134                                                  |
-| 2       | The Email ID should be valid Id, email Id should contain the Company/Firm name or an individual personal name before the “@” and the “[XXXXX.com](http://xxxxx.com)” after the “@” | ​[abcsupplies@gmail.com](mailto:abcsupplies@gmail.com)​ |
+| Sr. No. | Activity                                                                                                                                                                            | Example                                                 |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 1       | The Supplier Code should be alphanumeric and unique                                                                                                                                 | ABC134                                                  |
+| 2       | The Email ID should be valid Id, email Id should contain the Company/Firm name or an individual personal name before the “@” and the “[XXXXX.com](http://xxxxx.com/)” after the “@” | ​[abcsupplies@gmail.com](mailto:abcsupplies@gmail.com)​ |
 
 ## Attachments <a href="#attachments" id="attachments"></a>
 
@@ -68,4 +68,4 @@ This checklist covers the activities which are specific to the entity.
 
 [Sample Datasample-confugration-data-supplier.xlsx - 10KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2Fc7f2c8a90b1ad0c87985fd60468f2cd8c0c46ca3.xlsx?generation=1602050611597129\&alt=media)
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

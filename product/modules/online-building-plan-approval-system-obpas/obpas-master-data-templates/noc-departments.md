@@ -57,4 +57,4 @@ There is no separate entity-specific checklist for this entity.
 [Sample Datanoc-department-sample.xlsx - 10KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2F2d5f4218da09b30fbe52fec5aaf8502d436cc000.xlsx?generation=1602050612588742\&alt=media)[\
 ](https://docs.digit.org/configure-digit/configuring-master-data-templates/module-setup/obpas-data/town-planning-schemes)
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

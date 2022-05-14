@@ -58,7 +58,7 @@ Including different Kubernetes plugins can help build a secure, cloud-like exper
 
 When designing on-premise clusters you’ll have to decide where to draw the line. To really harden your cluster’s security you can add plugins like:
 
-* [istio](https://istio.io): provides the underlying secure communication channel, and manages authentication, authorization, and encryption of service communication at scale
+* [istio](https://istio.io/): provides the underlying secure communication channel, and manages authentication, authorization, and encryption of service communication at scale
 * [gVisor](https://github.com/google/gvisor): is a user-space kernel, written in Go, that implements a substantial portion of the Linux system surface
 * [vault](https://www.vaultproject.io/docs/): secure, store and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets and other sensitive data
 
@@ -74,4 +74,4 @@ We’ll leave you with a few other things the team should be thinking of:
 * Running applications across clusters in an active-active configuration to allow for zero-downtime updates
 * Running game days like deleting the CNI to measure and improve time-to-recovery
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

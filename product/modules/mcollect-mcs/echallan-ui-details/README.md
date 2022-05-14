@@ -115,12 +115,12 @@ Challan’s can be downloaded through this API `egov-pdf/download/UC/mcollect-ch
 
 ## **Role Action Mapping**
 
-|                         |                                         |           |               |
-| ----------------------- | --------------------------------------- | --------- | ------------- |
-| [**S.NO**](http://s.no) | **API**                                 | **ROLES** | **ACTION ID** |
-| 1                       | `egov-mdms-service/v1/_search`          |           | 954           |
-| 2                       | `echallan-services/eChallan/v1/_create` | UC\_EMP   | 2112          |
-| 3                       | `egov-pdf/download/UC/mcollect-challan` | UC\_EMP   | 2115          |
+|                          |                                         |           |               |
+| ------------------------ | --------------------------------------- | --------- | ------------- |
+| [**S.NO**](http://s.no/) | **API**                                 | **ROLES** | **ACTION ID** |
+| 1                        | `egov-mdms-service/v1/_search`          |           | 954           |
+| 2                        | `echallan-services/eChallan/v1/_create` | UC\_EMP   | 2112          |
+| 3                        | `egov-pdf/download/UC/mcollect-challan` | UC\_EMP   | 2115          |
 
 ## **Document Resources and Links**
 
@@ -131,4 +131,4 @@ Challan’s can be downloaded through this API `egov-pdf/download/UC/mcollect-ch
 | MCollect Pay Challan           | [BillGenie](https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/436502610/BillGenie) |
 | MCollect Edit / Update Challan | [Edit/Cancel Challan](edit-cancel-challan.md)                                              |
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

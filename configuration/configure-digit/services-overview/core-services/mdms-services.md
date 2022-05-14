@@ -58,4 +58,4 @@ The MDMS service provides ease of access to master data for any service.
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | egov-mdms-service/v1/\_search | [https://www.getpostman.com/collections/fcc9a71375b674de1308](https://www.getpostman.com/collections/fcc9a71375b674de1308) |
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

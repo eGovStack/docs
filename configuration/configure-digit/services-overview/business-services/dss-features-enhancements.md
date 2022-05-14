@@ -130,16 +130,16 @@ A DSS\_EVENT\_DURATION\_GRAPH was added in the PGR config
 
 ## **API Call Role Action Mapping**
 
-|                      |                                                                |           |                                                                        |
-| -------------------- | -------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- |
-| [S.No](http://s.no). | API                                                            | Action id | Roles                                                                  |
-| 1                    | /localization/messages/v1/\_search                             | 1531      | SUPERUSER,EMPLOYEE,CITIZEN,GRO,DGRO,                                   |
-| 2                    | /egov-mdms-service/v1/\_search                                 | 954       | LOA\_CREATOR,SUPERUSER,WO\_CREATOR,AE\_CREATOR,WORKS\_MASTER\_CREATOR, |
-| 3                    | /dashboard-analytics/dashboard/getDashboardConfig/propertytax  | 1892      | STADMIN                                                                |
-| 4                    | /dashboard-analytics/dashboard/getDashboardConfig/home         | 1889      | STADMIN                                                                |
-| 5                    | /dashboard-analytics/dashboard/getDashboardConfig/tradelicense | 1893      | STADMIN                                                                |
-| 6                    | /dashboard-analytics/dashboard/getDashboardConfig/pgr          | 1894      | STADMIN                                                                |
-| 7                    | /dashboard-analytics/dashboard/getDashboardConfig/ws           | 2010      | STADMIN                                                                |
-| 8                    | /dashboard-analytics/dashboard/getChartV2                      | 1890      | STADMIN, EMPLOYEE                                                      |
+|                       |                                                                |           |                                                                        |
+| --------------------- | -------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- |
+| [S.No](http://s.no/). | API                                                            | Action id | Roles                                                                  |
+| 1                     | /localization/messages/v1/\_search                             | 1531      | SUPERUSER,EMPLOYEE,CITIZEN,GRO,DGRO,                                   |
+| 2                     | /egov-mdms-service/v1/\_search                                 | 954       | LOA\_CREATOR,SUPERUSER,WO\_CREATOR,AE\_CREATOR,WORKS\_MASTER\_CREATOR, |
+| 3                     | /dashboard-analytics/dashboard/getDashboardConfig/propertytax  | 1892      | STADMIN                                                                |
+| 4                     | /dashboard-analytics/dashboard/getDashboardConfig/home         | 1889      | STADMIN                                                                |
+| 5                     | /dashboard-analytics/dashboard/getDashboardConfig/tradelicense | 1893      | STADMIN                                                                |
+| 6                     | /dashboard-analytics/dashboard/getDashboardConfig/pgr          | 1894      | STADMIN                                                                |
+| 7                     | /dashboard-analytics/dashboard/getDashboardConfig/ws           | 2010      | STADMIN                                                                |
+| 8                     | /dashboard-analytics/dashboard/getChartV2                      | 1890      | STADMIN, EMPLOYEE                                                      |
 
-> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

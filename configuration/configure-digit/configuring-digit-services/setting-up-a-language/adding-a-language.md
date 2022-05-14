@@ -158,4 +158,4 @@ Any one language from the multiple added language, can be set as default. For ex
 | **Title**      | **Link**                                                                                                                                                                                     |
 | StateInfo.json | [https://github.com/egovernments/ukd-mdms-data/blob/DEV/data/uk/common-masters/StateInfo.json](https://github.com/egovernments/ukd-mdms-data/blob/DEV/data/uk/common-masters/StateInfo.json) |
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

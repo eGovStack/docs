@@ -510,4 +510,4 @@ For any module where vehicle Trip is required, can integrate REST API trip/v1/cr
 | vehicle/trip/v1/\_update | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
 | vehicle/trip/v1/\_search | [https://www.getpostman.com/collections/d2541409b9570e53ed26](https://www.getpostman.com/collections/d2541409b9570e53ed26) |
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

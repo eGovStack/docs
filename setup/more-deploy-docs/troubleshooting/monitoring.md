@@ -1,6 +1,6 @@
 # Monitoring & Alerts
 
-​[Prometheus](https://github.com/prometheus) is an open-source system monitoring and alerting toolkit originally built at [SoundCloud](https://soundcloud.com).
+​[Prometheus](https://github.com/prometheus) is an open-source system monitoring and alerting toolkit originally built at [SoundCloud](https://soundcloud.com/).
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MERG\_iQW5oN4ukgXP8K%2F-MGrw8HGOm3l\_f8x\_z\_k%2F-MGrwL-4kKqpAxJeuFs6%2Fimage.png?alt=media\&token=5abd97b1-ed7e-4431-8b19-05990306b7c6)
 
@@ -61,4 +61,4 @@ go run main.go deploy -e   -c 'prometheus-operator,grafana,prometheues-kafka-exp
 
 ​
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
