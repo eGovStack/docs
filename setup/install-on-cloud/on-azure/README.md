@@ -220,13 +220,13 @@ output "es_data_v1_storage_ids" {
 
 The **terraform init** command displays the success of initializing the backend and provider plug-in:
 
-![](<../../.gitbook/assets/image (51).png>)
+![](<../../../.gitbook/assets/image (51).png>)
 
 &#x20;    2\. Run the **terraform plan** command to create the Terraform plan that defines the infrastructure elements.
 
 The terraform plan command displays the resources that will be created when you run the terraform apply command
 
-![](<../../.gitbook/assets/image (52).png>)
+![](<../../../.gitbook/assets/image (52).png>)
 
 &#x20;    3\. Run the **terraform apply** command to apply the plan to create the Kubernetes cluster and other resources.
 
@@ -238,7 +238,7 @@ terraform apply out.plan
 
 The terraform apply command displays the results of creating the resources defined in your configuration files:
 
-![](<../../.gitbook/assets/image (40).png>)
+![](<../../../.gitbook/assets/image (40).png>)
 
 &#x20;      4\. In the Azure portal, select All resources in the left menu to see the resources created for your new Kubernetes cluster.
 
@@ -262,5 +262,5 @@ kubectl get nodes
 
 &#x20;   You should see the details of your worker nodes, and they should all have a status Ready, as shown in the following image:
 
-![](<../../.gitbook/assets/image (42).png>)
+![](<../../../.gitbook/assets/image (42).png>)
 
