@@ -29,8 +29,8 @@ Choose your cloud and follow the Instruction to setup a Kubernetes cluster befor
 [on-aws.md](on-aws.md)
 {% endcontent-ref %}
 
-{% content-ref url="on-azure/" %}
-[on-azure](on-azure/)
+{% content-ref url="on-azure.md" %}
+[on-azure.md](on-azure.md)
 {% endcontent-ref %}
 
 {% content-ref url="on-gcp.md" %}
