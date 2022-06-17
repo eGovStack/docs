@@ -21,6 +21,18 @@ Before we jump into the supported cloud providers, it is important to know DIGIT
 * Know how to port forward to a pod running inside k8s cluster and work locally [https://www.youtube.com/watch?v=TT3nd5n5Yus](https://www.youtube.com/watch?v=TT3nd5n5Yus)
 * Know sops to secure your keys/creds: [https://www.youtube.com/watch?v=DWzJ87KbwxA](https://www.youtube.com/watch?v=DWzJ87KbwxA)
 
+
+
+## Prerequisites:
+
+* Unlike quickstart, full installation requires state/user specific configurations ready before proceeding with the deployment.
+* You need to have the fully qualified DNS (URL) (Should not be dummy)
+* Persistent storage depending on the cloud you are using for the Kafka, ES, etc.
+* Either a standalone or a hosted PostGres DB above v11.x
+* MDMS with the master data like Roles, Access, Actions, tenants, etc. Sample is [here](https://github.com/egovernments/egov-mdms-data)
+* Gov services specific Configs like persister, searcher configs etc. Sample is [here](https://github.com/egovernments/configs) &#x20;
+* GeoLocation provider configs (Google Location API), SMS Gateway, Payment Gateway, etc.
+
 ## 1. Choose the Cloud
 
 Choose your cloud and follow the Instruction to setup a Kubernetes cluster before moving on to the Deployment.
