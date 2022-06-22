@@ -422,14 +422,14 @@ Post infra setup (Kubernetes Cluster), We start with deploying the Jenkins and k
 * [Docker hub account details](https://hub.docker.com/signup) (username and password)
 * SSL Certificate for the sub-domain
 
-**Prepare an <**[**ci.yaml> master config file**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/ci-demo.yaml) **and <**[**ci-secrets.yaml**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/ci-demo-secrets.yaml)**>, you can name this file as you wish which will have the following configurations.**
+**Prepare an <**[**ci.yaml> master config file**](https://github.com/egovernments/DIGIT-DevOps/blob/release/config-as-code/environments/ci-demo.yaml) **and <**[**ci-secrets.yaml**](https://github.com/egovernments/DIGIT-DevOps/blob/release/config-as-code/environments/ci-demo-secrets.yaml)**>, you can name this file as you wish which will have the following configurations.**
 
 * credentials, secrets (You need to encrypt using [sops](https://github.com/mozilla/sops#updatekeys-command) and create a **ci-secret.yaml** separately)
-* Check and Update [**ci-secrets.yaml**](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/ci-demo-secrets.yaml) \*\*\*\*details (like githuh Oauth app clientId and clientSecret, GitHub user details gitReadSshPrivateKey and gitReadAccessToken etc..)
-* To create Jenkins namespace mark this [flag](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/ci-demo.yaml#L5) **true**
-* Add your env's kubconfigs under kubConfigs like [https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/ci-demo-secrets.yaml#L12](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/environments/ci-demo-secrets.yaml#L12)
+* Check and Update [**ci-secrets.yaml**](https://github.com/egovernments/DIGIT-DevOps/blob/release/config-as-code/environments/ci-demo-secrets.yaml) \*\*\*\*details (like githuh Oauth app clientId and clientSecret, GitHub user details gitReadSshPrivateKey and gitReadAccessToken etc..)
+* To create Jenkins namespace mark this [flag](https://github.com/egovernments/DIGIT-DevOps/blob/release/config-as-code/environments/ci-demo.yaml#L7) **true**
+* Add your env's kubconfigs under kubConfigs like [https://github.com/egovernments/DIGIT-DevOps/blob/release/config-as-code/environments/ci-demo-secrets.yaml#L50](https://github.com/egovernments/DIGIT-DevOps/blob/release/config-as-code/environments/ci-demo-secrets.yaml#L50)
 * KubeConfig env's name and deploymentJobs name from ci.yaml should be the same
-* Update the [CIOps](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/charts/backbone-services/jenkins/values.yaml#L419) and [DIGIT-DevOps](https://github.com/egovernments/DIGIT-DevOps/blob/release/deploy-as-code/helm/charts/backbone-services/jenkins/values.yaml#L484) repo name with your forked repo name and provide read-only access to github user to those repo's.
+* Update the [CIOps](https://github.com/egovernments/DIGIT-DevOps/blob/release/config-as-code/helm/charts/backbone-services/jenkins/values.yaml#L419) and [DIGIT-DevOps](https://github.com/egovernments/DIGIT-DevOps/blob/release/config-as-code/helm/charts/backbone-services/jenkins/values.yaml#L484) repo name with your forked repo name and provide read-only access to github user to those repo's.
 * SSL Certificate for the sub-domain
 
 ```
@@ -438,7 +438,7 @@ cd DIGIT-DevOps/tree/release/deploy-as-code
 
 ```
 kubectl config use-context <your cluster name>
-go run main.go deploy -c -e ci 'jenkins,kaniko-cache-warmer,nginx-ingress'
+go run main.go deploy -c -e ci 'jenkins,kaniko-cache-warmer,nginx-ingress,cert-manager'
 ```
 
 You have launch the Jenkins, Same you can access through your sub-domain which you configured in ci.yaml
