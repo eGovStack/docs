@@ -8,16 +8,16 @@ description: >-
 
 ## Demo/Evaluation Installations
 
-DIGIT Quickstart setup give you the ability to try setting up DIGIT Infra on a local machine/VM quickly. These are not meant for production use as is. However this quickstart flow can make you familiar with most of the production grade setup.
+DIGIT Quickstart setup gives you the ability to set up DIGIT Infra on a local machine/VM quickly. These are not meant for production use as is. However, this quickstart flow can make you familiar with most of the production-grade setup.
 
-Quickstart is recommended for a basic infra types like local machine, setting up on a single VM, etc. Here we would create a Lightweight Kubernetes ([k3d](https://github.com/rancher/k3d) ) cluster which does not really need full fledged cloud setup or multiple VMs. See the open source project [k3d](https://github.com/rancher/k3d) to understand more.  You can install k3d on a local or on a VM when you have all the below pre-requisites and hardware requirement met.
+Quickstart is recommended for basic infra types like a local machine, setting up on a single VM, etc. We need to create a Lightweight Kubernetes ([k3d](https://github.com/rancher/k3d) ) cluster which does not really need a full-fledged cloud setup or multiple VMs. See the open source project [k3d](https://github.com/rancher/k3d) to learn more.  You can install k3d on a local or on a VM when you have all the below pre-requisites and hardware requirements met.
 
-### H/W Prerequisites:
+### H/W Prerequisites
 
-To install k3d, make sure your instance meets the following h/w requirements that has sufficient CPU and Memory for both your default systems and for the DIGIT Setup requirement
+To install k3d, make sure your instance meets the following h/w requirements that have sufficient CPU and Memory for both your default systems and for the DIGIT Setup requirement
 
 * Apart from the regular system usage, DIGIT should have a dedicated CPU/Memory requirement as below.&#x20;
-* You must have a admin/[sudoer](https://medium.com/kernel-space/linux-fundamentals-a-to-z-of-a-sudoers-file-a5da99a30e7f) access before you proceed.
+* You must have admin/[sudoer](https://medium.com/kernel-space/linux-fundamentals-a-to-z-of-a-sudoers-file-a5da99a30e7f) access before you proceed.
 * OS: Ubuntu 18.04 or Debian 10 or Windows 10 or Mac OSX&#x20;
 * Local machine or VM or bare metal
 * 8 vCPUs (recommend 8+)
@@ -25,7 +25,7 @@ To install k3d, make sure your instance meets the following h/w requirements tha
 * 30 GiB of HDD (recommend 40+)
 * NAT or Bridged networking with access to the internet
 
-**Before proceeding with DIGIT quickstart. Check the machine's remaining CPU/Memory capacity, To check the same you can use the following commands to determine, the commands vary from an OS to OS, so do choose your OS specific Instructions.**&#x20;
+**Before proceeding with DIGIT quickstart. Check the machine's remaining CPU/Memory capacity. To check the same you can use the following commands to determine - the commands vary from OS to OS, so select the OS-specific instructions.**&#x20;
 
 <details>
 
@@ -66,7 +66,7 @@ Here the CPU is sufficient where >30% is left over for the DIGIT setup to be don
 </details>
 
 {% hint style="info" %}
-**Note:** The **above** commands output will provide you with the total memory/cpu and unused/free/available memory/cpu details. **Make sure your unused/free/available** **memory should meet the following**
+**Note:** The **above** commands output provides you with the total memory/CPU and unused/free/available memory/CPU details. **Make sure your unused/free/available** **memory meets the following:**
 
 * Memory: 8GB
 * CPU: >30%
@@ -76,7 +76,7 @@ Here the CPU is sufficient where >30% is left over for the DIGIT setup to be don
 
 ## Let's start Quickstart Setup
 
-When the above prerequisites are met, please proceed with the following steps
+Once the above prerequisites are met, proceed with the following steps
 
 {% content-ref url="quickstart/1.-infra-setup.md" %}
 [1.-infra-setup.md](quickstart/1.-infra-setup.md)
@@ -89,3 +89,7 @@ When the above prerequisites are met, please proceed with the following steps
 {% content-ref url="quickstart/faq.md" %}
 [faq.md](quickstart/faq.md)
 {% endcontent-ref %}
+
+
+
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
