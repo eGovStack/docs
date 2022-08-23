@@ -1,6 +1,6 @@
 # Table of contents
 
-* [DIGIT](README.md)
+* [DIGIT Urban](README.md)
 * [Access DIGIT](access-digit.md)
 * [Architecture](architecture.md)
 * [Roadmap](roadmap.md)
