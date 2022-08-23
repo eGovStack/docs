@@ -1,8 +1,8 @@
-# What’s New in DIGIT 2.1?
+# What’s New in DIGIT Urban 2.1?
 
-The new features additions and enhancements in [DIGIT 2.1](modules-features/release-notes/) simplify the user experience. The updates serve to fulfil the overall goal of integrating various services in an effort to simplify citizen interaction with government agencies while improving the service delivery capabilities of individual departments.
+The new features additions and enhancements in [DIGIT Urban 2.1](modules-features/release-notes/) simplify the user experience. The updates serve to fulfil the overall goal of integrating various services in an effort to simplify citizen interaction with government agencies while improving the service delivery capabilities of individual departments.
 
-## A brief overview of What's New in DIGIT 2.1.👇
+## A brief overview of What's New in DIGIT Urban 2.1.👇
 
 DIGIT 2.1 release offers several feature enhancements, innovations in application design, and integrations. The upgraded release version helps you achieve more in lesser time.
 
@@ -10,13 +10,13 @@ DIGIT 2.1 release offers several feature enhancements, innovations in applicatio
 
 **For States & ULBs** - DIGIT 2.1 delivers accurate insights into department and ULB performance, customizations to configure the view of key analytics, and integrated module features that support streamlined workflows.
 
-* [x] Check out the [DIGIT 2.1 Release Notes](modules-features/release-notes/) for more details.
+* [x] Check out the [DIGIT Urban 2.1 Release Notes](modules-features/release-notes/) for more details.
 * [x] Explore our upgraded and illustrative [User Manuals](modules-features/user-guides/) to learn operational details.
 * [x] We have added more videos to our [Training ](training-and-demo/)repository.
 
 ## Quick Links to 2.1 docs
 
-* [MDMS \(Master Data Management Service\)](modules-features/technical-documentation/core-service/mdms-master-data-management-service.md)
+* [MDMS (Master Data Management Service)](modules-features/technical-documentation/core-service/mdms-master-data-management-service.md)
 * [Setting Up Workflows](install-digit/configuring-workflows/setting-up-workflow.md)
 * [Configuring Workflows For New Product/Entity](install-digit/configuring-workflows/configuring-workflow-for-an-entity.md)
 * [PDF Generation Service](modules-features/technical-documentation/core-service/pdf-generation-service.md)
@@ -33,4 +33,3 @@ DIGIT 2.1 release offers several feature enhancements, innovations in applicatio
 * [PGR Services ](modules-features/technical-documentation/municipal-service/pgr-services/)
 
 Visit our [Support](digit-support/) pages for details on our partner support strategy.
-

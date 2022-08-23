@@ -1,18 +1,16 @@
 ---
-description: The Digital Governance Platform
+description: The Digital Urban Governance Platform
 ---
 
-# DIGIT
+# DIGIT Urban
 
-![](.gitbook/assets/digit-website_updated-03.png)
+![](.gitbook/assets/digit-website\_updated-03.png)
 
-DIGIT Urban Stack is a set of Open APIs, services, and reference implementations, setup as a public good, to allow government entities, businesses, startups, and civil society to use a unique digital Infrastructure and build solutions for urban India at a large scale. It provides a set of open standards, specifications and documentation to create a level playing field and enable ecosystem players to innovate on the stack. As a public good, the platform is provided without profit or restriction to all members of society.
+DIGIT Urban Platform is a set of Open APIs, services, and reference implementations, setup as a public good, to allow government entities, businesses, startups, and civil society to use a unique digital Infrastructure and build solutions for urban India at a large scale. It provides a set of open standards, specifications and documentation to create a level playing field and enable ecosystem players to innovate on the stack. As a public good, the platform is provided without profit or restriction to all members of society.
 
-![](.gitbook/assets/image%20%2894%29.png)
+![](<.gitbook/assets/image (94).png>)
 
-![](.gitbook/assets/image%20%2892%29.png)
-
-* **Open Source** - DIGIT is Open Source and has been built using the best in class Open Source technology stacks powering the most advanced companies in the world. DIGIT is able to provide the lowest total cost of ownership and helps ensure that governments retain strategic control of their systems and data. 
+* **Open Source** - DIGIT is Open Source and has been built using the best in class Open Source technology stacks powering the most advanced companies in the world. DIGIT is able to provide the lowest total cost of ownership and helps ensure that governments retain strategic control of their systems and data.&#x20;
 * **Mobile-Enabled** - DIGIT has adopted a mobile-first approach, with robust mobile applications enabling citizens to easily access government services through their phones. Government officials and field workers are also empowered with mobile applications that enable them to deliver 24×7 governance with ease.
 * **Real-time Dashboards** - DIGIT’s real-time dashboards provide governments with actionable insights on demand. Administrators and department heads are empowered with verified data that enables them to manage their work and budgets better. Field level employee reports enable effective performance management and ensure efficient usage of government resources.
 
@@ -25,4 +23,3 @@ DIGIT focuses on inclusion and is designed on the principle of enhancing both pl
 ![](.gitbook/assets/landing-page-12.png)
 
 [Know more about our Ecosystem](https://egov.org.in/innovation-ecosystem/) or [Contact Us](https://egov.org.in/contact-us/) for more details.
-
