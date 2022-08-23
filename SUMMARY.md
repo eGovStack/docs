@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What Is DIGIT?](README.md)
+* [What Is DIGIT Urban?](README.md)
 * [DIGIT Architecture](architecture.md)
 * [Product & Modules](modules-features/README.md)
   * [Brochures](modules-features/product-brochures.md)
@@ -26,7 +26,7 @@
       * [User Services](modules-features/technical-documentation/core-service/user-service.md)
       * [Access Control Services](modules-features/technical-documentation/core-service/access-control-service.md)
       * [PDF Generation Service](modules-features/technical-documentation/core-service/pdf-generation-service.md)
-      * [MDMS \(Master Data Management Service\)](modules-features/technical-documentation/core-service/mdms-master-data-management-service.md)
+      * [MDMS (Master Data Management Service)](modules-features/technical-documentation/core-service/mdms-master-data-management-service.md)
       * [Payment Gateway Service](modules-features/technical-documentation/core-service/payment-gateway-service.md)
     * [Business Service](modules-features/technical-documentation/business-service.md)
     * [Municipal Service](modules-features/technical-documentation/municipal-service/README.md)
@@ -159,8 +159,8 @@
       * [Water Charges Data Templates](install-digit/configuring-master-data-templates/module-setup/untitled-5/README.md)
         * [Pipe Size Types](install-digit/configuring-master-data-templates/module-setup/untitled-5/pipe-size-types.md)
         * [Water Source Types](install-digit/configuring-master-data-templates/module-setup/untitled-5/water-source-types.md)
-        * [Water Rates \(Metered\)](install-digit/configuring-master-data-templates/module-setup/untitled-5/water-rates-metered.md)
-        * [Water Rates \(Non-Metered\)](install-digit/configuring-master-data-templates/module-setup/untitled-5/water-rates-non-metered.md)
+        * [Water Rates (Metered)](install-digit/configuring-master-data-templates/module-setup/untitled-5/water-rates-metered.md)
+        * [Water Rates (Non-Metered)](install-digit/configuring-master-data-templates/module-setup/untitled-5/water-rates-non-metered.md)
         * [Water Penalty Rates](install-digit/configuring-master-data-templates/module-setup/untitled-5/water-penalty-rates.md)
         * [Water Interest Rates](install-digit/configuring-master-data-templates/module-setup/untitled-5/water-interest-rates.md)
       * [Sewerage Charges Data Templates](install-digit/configuring-master-data-templates/module-setup/untitled-4/README.md)
@@ -253,4 +253,3 @@
 * [DIGIT Support](digit-support/README.md)
   * [eGov Enablement Support for DIGIT](digit-support/egov-enablement-support-for-digit.md)
   * [Troubleshooting Guides](digit-support/troubleshooting-guides.md)
-
