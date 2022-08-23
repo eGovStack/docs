@@ -1,7 +1,7 @@
 # Table of contents
 
 * [What Is DIGIT Urban?](README.md)
-* [DIGIT Architecture](architecture.md)
+* [DIGIT Urban Architecture](architecture.md)
 * [Product & Modules](modules-features/README.md)
   * [Brochures](modules-features/product-brochures.md)
   * [User Manuals](modules-features/user-guides/README.md)
