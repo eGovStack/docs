@@ -1,0 +1,22 @@
+# Fire NOC Functional Specifications
+
+## Introduction
+
+The Fire NoC provides a digital interface to apply for pre-construction (provisional) and post-construction (new) NoC, pay NoC fees, track the status of the application, generate payment receipts, NoC certificates, multilevel workflow as well as generate reports for collection, employee performance etc. It can be used by stakeholders like a citizen, employee (document verifier, field inspectors, approver, ULB administrators) to accomplish specific tasks.
+
+## Functional Scope
+
+The high-level feature set based on the user type is listed below.
+
+| User Type         | Features                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Citizens          | <p>Apply for Pre-construction and Post-construction NoC </p><p>Submit required documents online </p><p>Track application status </p><p>View applicable fees and calculation breakup details </p><p>Pay online and offline through multiple channels </p><p>Download payment receipt and an application confirmation form </p><p>Download QR code-enabled No Objection Certificate/ Rejection Certificate</p>                   |
+| Counter Employee  | <p>Apply for Pre-construction and Post-construction NoC on behalf of citizens </p><p>View calculation breakup details </p><p>Apply Ad-hoc rebate/penalty </p><p>Collect NoC fees </p><p>Generate and print payment receipt/ application confirmation form </p><p>Download and print multiple copies - employee and citizen copy </p><p>Search and download QR code-enabled No Objection Certificate/ Rejection Certificate</p> |
+| Document Verifier | <p>Verify attached documents </p><p>Forward or reject applications </p><p>Send back application for clarification </p><p>Refer applications for an opinion to other employees </p><p>Provide comments or remarks</p>                                                                                                                                                                                                           |
+| Field Inspector   | <p>Verify and inspect the details given in NoC forms physically </p><p>Forward or reject applications </p><p>Send back applications for clarification </p><p>Refer applications for an opinion to other employees </p><p>Provide comments or remarks </p><p>Upload inspection reports and photos if required</p>                                                                                                               |
+| Approver          | <p>Approve or Reject Application </p><p>Send back application for clarification </p><p>Refer applications for an opinion to other employees </p><p>Provide comments or remarks </p><p>Access collection reports and employee performance reports</p>                                                                                                                                                                           |
+| ULB Admin         | Access collection reports and employee performance reports                                                                                                                                                                                                                                                                                                                                                                     |
+
+
+
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
