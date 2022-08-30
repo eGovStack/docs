@@ -12,7 +12,7 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
 
 **On this page:**
 
-* [DIGIT quickstart walkthrough videos](training-videos.md#undefined)
+* [DIGIT quickstart walkthrough videos](training-videos.md#quickstart)
 * [DIGIT training videos](training-videos.md#undefined)
 * [DIGIT webinar videos](training-videos.md#digit-webinar-videos)
 * [Module data templates configuration videos](training-videos.md#module-data-templates-configuration-videos)
