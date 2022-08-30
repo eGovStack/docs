@@ -18,7 +18,7 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
 * [Module data templates configuration videos](training-videos.md#module-data-templates-configuration-videos)
 * [Product demo & walkthrough videos](training-videos.md#module-workflow-videos)
 
-### DIGIT Quickstart Walkthrough
+### DIGIT Quickstart Walkthrough <a href="#quickstart" id="quickstart"></a>
 
 * [Introduction to DIGIT](https://youtu.be/gtRcG9WEFok)
 * [Pre-requisites for installation](https://youtu.be/WsL9Ij5Llv4)
