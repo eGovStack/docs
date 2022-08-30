@@ -1,19 +1,9 @@
 # Installation
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+{% embed url="https://core.digit.org/guides/installation-guide" %}
 
 {% content-ref url="open-source-tools-used-in-digit.md" %}
 [open-source-tools-used-in-digit.md](open-source-tools-used-in-digit.md)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="jenkins-setup/" %}
