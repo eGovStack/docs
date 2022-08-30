@@ -569,6 +569,6 @@
 
 * [Roadmap](community/roadmap.md)
 * [Open Events](https://core.digit.org/open-events)
-* [Source Code](https://app.gitbook.com/o/-MEQmzNGXk5ajuZujG7E/s/X13sH0e4xi7bV1juDmGX/\~/changes/6MX9B9s7regtvLs0Q7De/community/roadmap)
+* [Source Code](https://github.com/egovernments/DIGIT-OSS)
 * [Resources](community/resources.md)
 * [Discussion Forum](community/discussion-forum.md)
