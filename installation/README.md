@@ -1,19 +1,19 @@
 # Installation
 
-{% content-ref url="quickstart/" %}
-[quickstart](quickstart/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="install-on-cloud/" %}
-[install-on-cloud](install-on-cloud/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="open-source-tools-used-in-digit.md" %}
 [open-source-tools-used-in-digit.md](open-source-tools-used-in-digit.md)
 {% endcontent-ref %}
 
-{% content-ref url="productionize-digit/" %}
-[productionize-digit](productionize-digit/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="jenkins-setup/" %}

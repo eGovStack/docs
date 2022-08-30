@@ -8,13 +8,13 @@ description: Explore our docs by topics
 
 <summary>Setup DIGIT</summary>
 
-* [I want a Quickstart Guide to install and deploy DIGIT](../installation/quickstart/)
-* [Steps to install DIGIT on AWS](../installation/install-on-cloud/on-aws/)
-* [Steps to install DIGIT on Azure](../installation/install-on-cloud/on-azure/)
-* [Steps to install DIGIT on GCP](../installation/install-on-cloud/on-gcp.md)
-* [Steps to install DIGIT on SDC](../installation/install-on-cloud/on-sdc/)
-* [Steps to install DIGIT on NIC](../installation/install-on-cloud/on-nic.md)
-* [How do I build on DIGIT?](../installation/productionize-digit/)
+* [I want a Quickstart Guide to install and deploy DIGIT](broken-reference)
+* [Steps to install DIGIT on AWS](broken-reference)
+* [Steps to install DIGIT on Azure](broken-reference)
+* [Steps to install DIGIT on GCP](broken-reference)
+* [Steps to install DIGIT on SDC](broken-reference)
+* [Steps to install DIGIT on NIC](broken-reference)
+* [How do I build on DIGIT?](broken-reference)
 * [What are the open-source tools used in DIGIT?](../installation/open-source-tools-used-in-digit.md)
 * Setup Videos
 

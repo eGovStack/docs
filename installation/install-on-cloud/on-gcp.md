@@ -1,3 +1,0 @@
-# On GCP
-
-Coming soon ...
