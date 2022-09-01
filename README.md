@@ -71,8 +71,8 @@ Explore the DIGIT Ecosystem
 [configure-digit](configure-digit/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="customizing-digit/" %}
+[customizing-digit](customizing-digit/)
 {% endcontent-ref %}
 
 ## Contact Us
