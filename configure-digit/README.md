@@ -28,8 +28,8 @@ Learn how to configure the DIGIT Urban platform. Partner with us to enhance and 
 [configuring-workflows](configuring-digit-services/configuring-workflows/)
 {% endcontent-ref %}
 
-{% content-ref url="../exemplar/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md" %}
-[setting-up-edcr-service.md](../exemplar/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md)
+{% content-ref url="../products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md" %}
+[setting-up-edcr-service.md](../products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md)
 {% endcontent-ref %}
 
 {% content-ref url="configuration-faqs.md" %}

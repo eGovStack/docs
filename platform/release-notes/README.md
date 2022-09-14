@@ -49,142 +49,142 @@ DIGIT 2.7 release has got new modules, a few functional changes, and non-functio
 
 ### UI Technical Documents
 
-{% content-ref url="../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/" %}
-[pt-create-property-ui-details](../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/)
+{% content-ref url="../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/" %}
+[pt-create-property-ui-details](../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/edit-update-property.md" %}
-[edit-update-property.md](../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/edit-update-property.md)
+{% content-ref url="../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/edit-update-property.md" %}
+[edit-update-property.md](../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/edit-update-property.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/employee-search-property-property-details-page-and-assessment.md" %}
-[employee-search-property-property-details-page-and-assessment.md](../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/employee-search-property-property-details-page-and-assessment.md)
+{% content-ref url="../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/employee-search-property-property-details-page-and-assessment.md" %}
+[employee-search-property-property-details-page-and-assessment.md](../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/employee-search-property-property-details-page-and-assessment.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/employee-inbox-and-application-details.md" %}
-[employee-inbox-and-application-details.md](../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/employee-inbox-and-application-details.md)
+{% content-ref url="../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/employee-inbox-and-application-details.md" %}
+[employee-inbox-and-application-details.md](../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/employee-inbox-and-application-details.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-search-applications.md" %}
-[property-tax-search-applications.md](../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-search-applications.md)
+{% content-ref url="../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-search-applications.md" %}
+[property-tax-search-applications.md](../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-search-applications.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-search-and-pay-my-bills.md" %}
-[property-tax-search-and-pay-my-bills.md](../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-search-and-pay-my-bills.md)
+{% content-ref url="../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-search-and-pay-my-bills.md" %}
+[property-tax-search-and-pay-my-bills.md](../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-search-and-pay-my-bills.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-my-payments.md" %}
-[property-tax-my-payments.md](../../exemplar/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-my-payments.md)
+{% content-ref url="../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-my-payments.md" %}
+[property-tax-my-payments.md](../../products/modules/property-tax/property-tax-service/pt-create-property-ui-details/property-tax-my-payments.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/trade-license-tl/tl-service-configuration/tl-apply-flow-ui-details/" %}
-[tl-apply-flow-ui-details](../../exemplar/modules/trade-license-tl/tl-service-configuration/tl-apply-flow-ui-details/)
+{% content-ref url="../../products/modules/trade-license-tl/tl-service-configuration/tl-apply-flow-ui-details/" %}
+[tl-apply-flow-ui-details](../../products/modules/trade-license-tl/tl-service-configuration/tl-apply-flow-ui-details/)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/common-ui-docs/troubleshoot-using-browser-network-tab.md" %}
-[troubleshoot-using-browser-network-tab.md](../../exemplar/modules/common-ui-docs/troubleshoot-using-browser-network-tab.md)
+{% content-ref url="../../products/modules/common-ui-docs/troubleshoot-using-browser-network-tab.md" %}
+[troubleshoot-using-browser-network-tab.md](../../products/modules/common-ui-docs/troubleshoot-using-browser-network-tab.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/common-ui-docs/user-profile/" %}
-[user-profile](../../exemplar/modules/common-ui-docs/user-profile/)
+{% content-ref url="../../products/modules/common-ui-docs/user-profile/" %}
+[user-profile](../../products/modules/common-ui-docs/user-profile/)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/common-ui-docs/update-number-and-invalid-number.md" %}
-[update-number-and-invalid-number.md](../../exemplar/modules/common-ui-docs/update-number-and-invalid-number.md)
+{% content-ref url="../../products/modules/common-ui-docs/update-number-and-invalid-number.md" %}
+[update-number-and-invalid-number.md](../../products/modules/common-ui-docs/update-number-and-invalid-number.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/property-tax/property-tax-service/common-pt.md" %}
-[common-pt.md](../../exemplar/modules/property-tax/property-tax-service/common-pt.md)
+{% content-ref url="../../products/modules/property-tax/property-tax-service/common-pt.md" %}
+[common-pt.md](../../products/modules/property-tax/property-tax-service/common-pt.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-ui-technical-doc.md" %}
-[national-dashboard-ui-technical-doc.md](../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-ui-technical-doc.md)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-ui-technical-doc.md" %}
+[national-dashboard-ui-technical-doc.md](../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-ui-technical-doc.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/birth-and-death/birth-and-death-service-configuration/" %}
-[birth-and-death-service-configuration](../../exemplar/modules/birth-and-death/birth-and-death-service-configuration/)
+{% content-ref url="../../products/modules/birth-and-death/birth-and-death-service-configuration/" %}
+[birth-and-death-service-configuration](../../products/modules/birth-and-death/birth-and-death-service-configuration/)
 {% endcontent-ref %}
 
 ### Backend Service Documents
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/w-and-s-national-dashboard.md" %}
-[w-and-s-national-dashboard.md](../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/w-and-s-national-dashboard.md)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/w-and-s-national-dashboard.md" %}
+[w-and-s-national-dashboard.md](../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/w-and-s-national-dashboard.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/property-tax-national-dashboard.md" %}
-[property-tax-national-dashboard.md](../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/property-tax-national-dashboard.md)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/property-tax-national-dashboard.md" %}
+[property-tax-national-dashboard.md](../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/property-tax-national-dashboard.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/obps-national-dashboard.md" %}
-[obps-national-dashboard.md](../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/obps-national-dashboard.md)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/obps-national-dashboard.md" %}
+[obps-national-dashboard.md](../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/obps-national-dashboard.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/pgr-national-dashboard.md" %}
-[pgr-national-dashboard.md](../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/pgr-national-dashboard.md)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/pgr-national-dashboard.md" %}
+[pgr-national-dashboard.md](../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/pgr-national-dashboard.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/mcollect-national-dashboard.md" %}
-[mcollect-national-dashboard.md](../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/mcollect-national-dashboard.md)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/mcollect-national-dashboard.md" %}
+[mcollect-national-dashboard.md](../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/mcollect-national-dashboard.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-overview.md" %}
-[national-dashboard-overview.md](../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-overview.md)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-overview.md" %}
+[national-dashboard-overview.md](../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-overview.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/" %}
-[national-urban-real-time-dashboard](../../exemplar/modules/national-urban-real-time-dashboard/)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/" %}
+[national-urban-real-time-dashboard](../../products/modules/national-urban-real-time-dashboard/)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-api-performance-testing-and-benchmark.md" %}
-[national-dashboard-api-performance-testing-and-benchmark.md](../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-api-performance-testing-and-benchmark.md)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-api-performance-testing-and-benchmark.md" %}
+[national-dashboard-api-performance-testing-and-benchmark.md](../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-api-performance-testing-and-benchmark.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-index-creation-steps.md" %}
-[national-dashboard-index-creation-steps.md](../../exemplar/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-index-creation-steps.md)
+{% content-ref url="../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-index-creation-steps.md" %}
+[national-dashboard-index-creation-steps.md](../../products/modules/national-urban-real-time-dashboard/national-dashboard-service-configuration/national-dashboard-index-creation-steps.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/water-and-sewerage/water-services/state-dss-water-and-sewerage.md" %}
-[state-dss-water-and-sewerage.md](../../exemplar/modules/water-and-sewerage/water-services/state-dss-water-and-sewerage.md)
+{% content-ref url="../../products/modules/water-and-sewerage/water-services/state-dss-water-and-sewerage.md" %}
+[state-dss-water-and-sewerage.md](../../products/modules/water-and-sewerage/water-services/state-dss-water-and-sewerage.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/state-dss-obps.md" %}
-[state-dss-obps.md](../../exemplar/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/state-dss-obps.md)
+{% content-ref url="../../products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/state-dss-obps.md" %}
+[state-dss-obps.md](../../products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/state-dss-obps.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/mcollect-mcs/mcs-service-configuration/state-dss-mcollect.md" %}
-[state-dss-mcollect.md](../../exemplar/modules/mcollect-mcs/mcs-service-configuration/state-dss-mcollect.md)
+{% content-ref url="../../products/modules/mcollect-mcs/mcs-service-configuration/state-dss-mcollect.md" %}
+[state-dss-mcollect.md](../../products/modules/mcollect-mcs/mcs-service-configuration/state-dss-mcollect.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/fire-noc/fire-noc-service/state-dss-fire-noc.md" %}
-[state-dss-fire-noc.md](../../exemplar/modules/fire-noc/fire-noc-service/state-dss-fire-noc.md)
+{% content-ref url="../../products/modules/fire-noc/fire-noc-service/state-dss-fire-noc.md" %}
+[state-dss-fire-noc.md](../../products/modules/fire-noc/fire-noc-service/state-dss-fire-noc.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/birth-and-death/birth-and-death-service-configuration/state-dss-birth-and-death.md" %}
-[state-dss-birth-and-death.md](../../exemplar/modules/birth-and-death/birth-and-death-service-configuration/state-dss-birth-and-death.md)
+{% content-ref url="../../products/modules/birth-and-death/birth-and-death-service-configuration/state-dss-birth-and-death.md" %}
+[state-dss-birth-and-death.md](../../products/modules/birth-and-death/birth-and-death-service-configuration/state-dss-birth-and-death.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/mcollect-mcs/mcs-service-configuration/re-indexing-the-mcollect-service.md" %}
-[re-indexing-the-mcollect-service.md](../../exemplar/modules/mcollect-mcs/mcs-service-configuration/re-indexing-the-mcollect-service.md)
+{% content-ref url="../../products/modules/mcollect-mcs/mcs-service-configuration/re-indexing-the-mcollect-service.md" %}
+[re-indexing-the-mcollect-service.md](../../products/modules/mcollect-mcs/mcs-service-configuration/re-indexing-the-mcollect-service.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/legacy-re-indexing-for-obps.md" %}
-[legacy-re-indexing-for-obps.md](../../exemplar/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/legacy-re-indexing-for-obps.md)
+{% content-ref url="../../products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/legacy-re-indexing-for-obps.md" %}
+[legacy-re-indexing-for-obps.md](../../products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/legacy-re-indexing-for-obps.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/fire-noc/fire-noc-service/re-indexing-the-fire-noc-service.md" %}
-[re-indexing-the-fire-noc-service.md](../../exemplar/modules/fire-noc/fire-noc-service/re-indexing-the-fire-noc-service.md)
+{% content-ref url="../../products/modules/fire-noc/fire-noc-service/re-indexing-the-fire-noc-service.md" %}
+[re-indexing-the-fire-noc-service.md](../../products/modules/fire-noc/fire-noc-service/re-indexing-the-fire-noc-service.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/water-and-sewerage/water-services/legacy-re-indexing-the-water-and-sewerage-service.md" %}
-[legacy-re-indexing-the-water-and-sewerage-service.md](../../exemplar/modules/water-and-sewerage/water-services/legacy-re-indexing-the-water-and-sewerage-service.md)
+{% content-ref url="../../products/modules/water-and-sewerage/water-services/legacy-re-indexing-the-water-and-sewerage-service.md" %}
+[legacy-re-indexing-the-water-and-sewerage-service.md](../../products/modules/water-and-sewerage/water-services/legacy-re-indexing-the-water-and-sewerage-service.md)
 {% endcontent-ref %}
 
 {% content-ref url="../../configure-digit/configuring-digit-services/document-uploader-service.md" %}
 [document-uploader-service.md](../../configure-digit/configuring-digit-services/document-uploader-service.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../exemplar/modules/events-and-notifications/user-events-services.md" %}
-[user-events-services.md](../../exemplar/modules/events-and-notifications/user-events-services.md)
+{% content-ref url="../../products/modules/events-and-notifications/user-events-services.md" %}
+[user-events-services.md](../../products/modules/events-and-notifications/user-events-services.md)
 {% endcontent-ref %}
 
 &#x20;

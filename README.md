@@ -2,7 +2,7 @@
 description: The Digital Urban Governance Platform
 ---
 
-# DIGIT Urban
+# Introducing DIGIT Urban
 
 ![](.gitbook/assets/digit-website\_updated-03.png)
 
@@ -59,8 +59,8 @@ Explore the DIGIT Ecosystem
 [architecture.md](platform/architecture.md)
 {% endcontent-ref %}
 
-{% content-ref url="exemplar/modules/" %}
-[modules](exemplar/modules/)
+{% content-ref url="products/modules/" %}
+[modules](products/modules/)
 {% endcontent-ref %}
 
 {% content-ref url="installation/" %}

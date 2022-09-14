@@ -16,7 +16,7 @@ This note consists of common UI/UX elements revamped for employee and citizen Pr
 
 **Detailed user Manuals**
 
-Common UI/UX: [Common UI/UX](../../exemplar/modules/common-ui-docs/)
+Common UI/UX: [Common UI/UX](../../products/modules/common-ui-docs/)
 
 | **Document Title**   | **Document Link**    |
 | -------------------- | -------------------- |

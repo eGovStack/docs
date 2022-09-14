@@ -4,23 +4,23 @@ Master data templates allow users to configure the key parameters and details re
 
 The individual master data templates for specific modules are availed in the Product & Modules section of our docs. Click on the links given below to navigate to view the specific module setup details.
 
-[Property Tax Master Data Templates](../../../exemplar/modules/property-tax/pt-master-data-templates/)
+[Property Tax Master Data Templates](../../../products/modules/property-tax/pt-master-data-templates/)
 
-[Trade License Master Data Templates](../../../exemplar/modules/trade-license-tl/tl-master-data-templates/)
+[Trade License Master Data Templates](../../../products/modules/trade-license-tl/tl-master-data-templates/)
 
-[PGR Master Data Templates](../../../exemplar/modules/public-grievances-and-redressal/pgr-master-data-templates/)
+[PGR Master Data Templates](../../../products/modules/public-grievances-and-redressal/pgr-master-data-templates/)
 
-[Water Charges Master Data Templates](../../../exemplar/modules/water-and-sewerage/water-charges-master-data-templates/)
+[Water Charges Master Data Templates](../../../products/modules/water-and-sewerage/water-charges-master-data-templates/)
 
-[Sewerage Charges Master Data Templates](../../../exemplar/modules/water-and-sewerage/sewerage-charges-master-data-templates/)
+[Sewerage Charges Master Data Templates](../../../products/modules/water-and-sewerage/sewerage-charges-master-data-templates/)
 
-[mCollect Master Data Templates](../../../exemplar/modules/mcollect-mcs/mcollect-master-data-templates/)
+[mCollect Master Data Templates](../../../products/modules/mcollect-mcs/mcollect-master-data-templates/)
 
-[OBPAS Master Data Templates](../../../exemplar/modules/online-building-plan-approval-system-obpas/obpas-master-data-templates/)
+[OBPAS Master Data Templates](../../../products/modules/online-building-plan-approval-system-obpas/obpas-master-data-templates/)
 
-[Finance Master Data Templates](../../../exemplar/modules/finance/finance-master-data-templates/)
+[Finance Master Data Templates](../../../products/modules/finance/finance-master-data-templates/)
 
-[Fire NOC Master Data Templates](../../../exemplar/modules/fire-noc/fire-noc-master-data-templates/)
+[Fire NOC Master Data Templates](../../../products/modules/fire-noc/fire-noc-master-data-templates/)
 
 {% content-ref url="web-portal-data/" %}
 [web-portal-data](web-portal-data/)
