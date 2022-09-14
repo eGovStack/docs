@@ -19,7 +19,7 @@ Access DIGIT tool is an Open Demo Instance designed to provide you with first-ha
 ### **Access DIGIT in Employee Role**
 
 * [x] [Click here](https://staging.digit.org/employee/language-selection) to access DIGIT in an employee role.            &#x20;
-* [x] Use the credentials to log in as an employee. _(If you do not have the credentials, visit_ [_this page_](https://www.digit.org/access-digit/) _to generate your role-based credentials)_.                      &#x20;
+* [x] Use the credentials to log in as an employee. _(If you do not have the credentials, visit_ [_this page_](https://egov.org.in/access-digit/) _to generate your role-based credentials)_.                      &#x20;
 * [x] Select City as <mark style="color:blue;">**City B**</mark>.
 
 </details>
