@@ -88,7 +88,7 @@ Providing the following functionality to citizen and employee-type users
 
 ### Reference Docs
 
-#### Doc Links
+### Doc Links
 
 {% file src="../../../.gitbook/assets/promotionsteps.pdf" %}
 User Data Encryption Promotion Details
@@ -98,7 +98,7 @@ User Data Encryption Promotion Details
 Encryption Service
 {% endfile %}
 
-#### API List
+### API List
 
 |                            |                                                                                                                            |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------------------- |

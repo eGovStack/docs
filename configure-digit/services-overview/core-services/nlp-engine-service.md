@@ -2,7 +2,7 @@
 
 ## Overview
 
-In the existing version of the chatbot, for PGR complaint creation feature, the user has to select his/her city from a drop-down menu by visiting the mseva website. This significantly reduces user convenience as the user is required to constantly switch pages.\
+In the existing version of the chatbot, for the PGR complaint creation feature, the user has to select his/her city from a drop-down menu by visiting the mSeva website. This significantly reduces user convenience as the user is required to constantly switch pages.\
 To overcome the above inconvenience, nlp-engine service is used. The service has an algorithm that uses _**fuzzy matching**_ and _**pattern recognition**_ to recognise the city provided by the user as input. Based on the user input, the cities having the highest match ratio with the input are being returned as the output list. A list comprising all the city names in English, Punjabi and Hindi was used as a reference tool for this service.
 
 ## Pre-requisites
@@ -10,7 +10,7 @@ To overcome the above inconvenience, nlp-engine service is used. The service has
 Before you proceed with the documentation, make sure the following pre-requisites are met -
 
 * _Python._
-* egov-mdms service is running and all the data related to the service are added in the mdms repository.
+* egov-mdms service is running and all the data related to the service are added to the MDMS repository.
 * egov-running service is running.
 
 ## Key Functionalities
@@ -43,7 +43,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 1. Add mdms configs required for nlp-engine service ([mdms folder](https://github.com/egovernments/egov-mdms-data/tree/QA/data/pb/Chatbot)) and restart mdms service.
 2. Deploy the latest version of nlp-engine service.
-3. Whitelist the city and locality fuzzy search API’s.
+3. Whitelist the city and locality fuzzy search APIs.
 
 ## Integration
 
@@ -66,10 +66,10 @@ The nlp-engine service is used to locate the user city and locality by using fuz
 
 #### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-|             |                                                                                                                                                                                                      |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Title**   | **Link**                                                                                                                                                                                             |
-| NLP Chatbot | [![](https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico)Documentation on NLP Chatbot](https://docs.google.com/document/d/1Z3IgyjlZzAchlMPfURmUrgVfcSqU316R\_0Z6KNrRbLo/edit?usp=sharing) |
+|             |                                                                                                                                                                                                                                     |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**   | **Link**                                                                                                                                                                                                                            |
+| NLP Chatbot | [<img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico" alt="" data-size="line">Documentation on NLP Chatbot](https://docs.google.com/document/d/1Z3IgyjlZzAchlMPfURmUrgVfcSqU316R\_0Z6KNrRbLo/edit?usp=sharing) |
 
 ## API List
 
@@ -79,4 +79,4 @@ The nlp-engine service is used to locate the user city and locality by using fuz
 | _/nlp-engine/fuzzy/city_     | [https://www.getpostman.com/collections/9cd7600909d4ed16c173](https://www.getpostman.com/collections/9cd7600909d4ed16c173) |
 | _/nlp-engine/fuzzy/locality_ | [https://www.getpostman.com/collections/9cd7600909d4ed16c173](https://www.getpostman.com/collections/9cd7600909d4ed16c173) |
 
-_(Note: All the API’s are in the same postman collection therefore same link is added in each row)_
+_(Note: All the APIs are in the same postman collection therefore the same link is added in each row)_

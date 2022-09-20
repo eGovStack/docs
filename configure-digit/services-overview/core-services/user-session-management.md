@@ -1,10 +1,12 @@
 # User Session Management In DIGIT
 
+## Overview
+
+Whenever any user logs an authorization token and a refresh token is generated for him. Using the auth token the client can make the rest API calls to the server to fetch data. The auth token has an expiry period. Once the auth token is expired it cannot be used to make API calls. The client will have to generate a new authorization token. This is done by authenticating the refresh token with the server which then generates and sends a new authorization token to the client. The refresh token avoids the need for the client to again login whenever Auth token expires.
+
 ![](../../../.gitbook/assets/user-session.png)
 
-Whenever any user logs an authorization token and a refresh token is generated for him. Using the auth token the client can make rest API calls to the server to fetch data. The auth token has an expiry period. Once the auth token is expired it cannot be used to make API calls. The client will have to generate a new authorization token. This is done by authenticating the refresh token with the server which then generates and sends new authorization token to the client. The refresh token avoids the need for the client to again login whenever Auth token expires.
-
-Refresh token also has an expiry period and once it gets expired it cannot be used to generate new authorization token and the user will have to login again to get a new pair of authorization token and refresh token. Generally, the duration before the expiry of the refresh token is much longer compared to that of auth token. If the user logs out of the account both Auth token and the refresh token will become invalid.
+Refresh token also has an expiry period and once it gets expired it cannot be used to generate a new authorization token and the user will have to log in again to get a new pair of authorization tokens and refresh tokens. Generally, the duration before the expiry of the refresh token is much longer compared to that of auth token. If the user logs out of the account both Auth token and the refresh token will become invalid.
 
 #### Environment variables to configure expiry time <a href="#environment-variables-to-configure-expiry-time" id="environment-variables-to-configure-expiry-time"></a>
 
