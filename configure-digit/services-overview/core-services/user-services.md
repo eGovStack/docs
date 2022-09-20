@@ -1,39 +1,39 @@
 # User Services
 
-### Overview
+## Overview
 
-User service is responsible for user data management and providing functionality to login and logout into Digit system
+User service is responsible for user data management and providing functionality to login and logout into DIGIT system
 
-### Pre-requisites
+## Pre-requisites
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
 * Java 8
 * Kafka server is up and running
 * Encryption and MDMS services are running
-* PSQL server is running and database
+* PSQL server is running and a database
 * Redis is running
 
-### Key Functionalities
+## Key Functionalities
 
 * Store, update and search user data
 * Provide authentication
-* Provide login, logout functionality into DIGIT platform
+* Provide login and logout functionality into the DIGIT platform
 * Store user data PIIs in encrypted form
 
-#### Interaction Diagram
+## Interaction Diagram
 
 ![](<../../../.gitbook/assets/image (75) (1).png>)
 
-### Deployment Details
+## Deployment Details
 
 1. Setup latest version of egov-enc-service and egov-mdms- service
 2. Deploy the latest version of egov-user service
 3. Add Role-Action mapping for API’s
 
-### Configuration Details
+## Configuration Details
 
-Following application properties file in user service are configurable.
+The following application properties file in user service are configurable.
 
 |                                           |           |                                                    |
 | ----------------------------------------- | --------- | -------------------------------------------------- |
@@ -52,15 +52,15 @@ Following application properties file in user service are configurable.
 | max.invalid.login.attempts                | 5         | max failed login attempts before account is locked |
 | egov.state.level.tenant.id                | pb        |                                                    |
 
-### Integration Details
+## Integration Details
 
-#### Integration Scope
+### Integration Scope
 
 User data management and functionality to login and logout into Digit system using OTP and password.
 
-#### Integration Benefits
+### Integration Benefits
 
-Providing following functionality to citizen and employee type users
+Providing the following functionality to citizen and employee-type users
 
 * Employee:
   * User registration
