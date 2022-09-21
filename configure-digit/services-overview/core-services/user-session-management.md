@@ -8,6 +8,8 @@ Whenever any user logs an authorization token and a refresh token is generated f
 
 Refresh token also has an expiry period and once it gets expired it cannot be used to generate a new authorization token and the user will have to log in again to get a new pair of authorization tokens and refresh tokens. Generally, the duration before the expiry of the refresh token is much longer compared to that of auth token. If the user logs out of the account both Auth token and the refresh token will become invalid.
 
+## Variable List <a href="#environment-variables-to-configure-expiry-time" id="environment-variables-to-configure-expiry-time"></a>
+
 #### Environment variables to configure expiry time <a href="#environment-variables-to-configure-expiry-time" id="environment-variables-to-configure-expiry-time"></a>
 
 |                                   |                                                                |
@@ -16,7 +18,7 @@ Refresh token also has an expiry period and once it gets expired it cannot be us
 | access.token.validity.in.minutes  | Duration in minutes for which the authorization token is valid |
 | refresh.token.validity.in.minutes | Duration in minutes for which the refresh token is valid       |
 
-#### API <a href="#api" id="api"></a>
+## API Details <a href="#api" id="api"></a>
 
 |                   |                                                                                                                                                                                                                                                                                                    |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
