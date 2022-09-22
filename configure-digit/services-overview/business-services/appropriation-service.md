@@ -23,7 +23,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 | **Environment Variables**            | **Description**                                                                           |
 | `egov.apportion.default.value.order` | If set to true will apportion of the negative amount first irrespective of tax head order |
 
-## ![](blob:https://digit-discuss.atlassian.net/018f514c-9da6-4242-ac5b-bd91de04413d#media-blob-url=true\&id=64163d40-059e-418c-955d-97bd506369af\&collection=contentId-1656717351\&contextId=1656717351\&mimeType=image%2Fpng\&name=Bill%20Apportion%20Flow%20.png\&size=29437\&width=1102\&height=381)Deployment Details
+## Deployment Details
 
 1. Deploy the latest version of egov-apportion-service&#x20;
 2. Add apportion persister yaml path in persister configuration

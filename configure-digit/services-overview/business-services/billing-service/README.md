@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-The main objective of the billing module is to serve the Bill for all revenue Business services. To serve the Bill, Billing-Service requires demand. Demands will be prepared by Revenue modules and stored by billing based on which it will generate the Bill.
+The main objective of the billing module is to generate the bill for all revenue-based business services. To serve the bill, the Billing-Service requires demand. Demands will be prepared by the revenue modules and stored by billing based on which it generates the Bill.
 
 ## **Pre-requisites**
 
@@ -10,8 +10,8 @@ The main objective of the billing module is to serve the Bill for all revenue Bu
 * Prior Knowledge of Spring Boot.
 * Prior Knowledge of KAFKA
 * Prior Knowledge of REST APIs and related concepts like path parameters, headers, JSON, etc.
-* Prior knowledge of the demand-based systems.
-* Following services should be up and running:
+* Prior knowledge of demand-based systems.
+* The following services should be up and running:
   * user
   * MDMS
   * Id-Gen
@@ -236,14 +236,14 @@ Billing service can be integrated with any organization or system that wants a d
 
 ### Steps to Integration
 
-1. Customer can create a demand using the /demand/\_create
-2. Organization or System can search the demand using /demand/\_searchendpoint
+1. Customers can create a demand using the /demand/\_create
+2. Organizations or Systems can search the demand using /demand/\_searchendpoint
 3. Once the demand is raised the system can call /demand/\_update endpoint to update the demand as per need.
 4. Bills can be generated using, which is a self-managing API that generates a new bill only when the old one expires /bill/\_fetchbill.
 5. Bills can be searched using /bill/\_search.
 6. Amendment facility can be used in case of a legal issue to add values to existing demands using /amendment/\_create and /amendment/\_update can be used to cancel the created ones or update workflow if configured.
 
-### Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
+## Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
 **Interaction Diagram V1.1:**
 
