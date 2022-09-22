@@ -6,7 +6,7 @@ Goal: To onboard developers onto the XState-Chatbot code base so that they can m
 
 This document sticks to explaining the chatbot's core features and does not dive into the use cases implemented by the chatbot. There is another document dedicated to it.
 
-## Prerequisites
+## Pre-requisites
 
 * NodeJS
 * [XState](https://xstate.js.org/docs/)
@@ -34,15 +34,15 @@ This document sticks to explaining the chatbot's core features and does not dive
 
 Other configuration details are mentioned as part of the [XState-Chatbot Integration Document](https://digit-discuss.atlassian.net/l/c/gg4EmH3k).
 
-## Overall Philosophy of Chatbot
+## Chatbot Fundamentals
 
-This chatbot solves the basic form filling aspect of a chat flow. By collecting the information from the user, an API call can be made to the rainmaker backend services to fulfill what the user wants to do. It uses the concept of [StateCharts](https://statecharts.github.io/) (similar to State Machines) to maintain the state of the user in a chat flow and store the information provided by the user. [XState](https://xstate.js.org/docs/) is a JavaScript implementation of StateCharts. All chat flows are coded inside the XState framework.
+This chatbot solves the basic form-filling aspect of a chat flow. By collecting the information from the user, an API call is made to the rainmaker backend services to fulfil the user requirements. It uses the concept of [StateCharts](https://statecharts.github.io/) (similar to State Machines) to maintain the state of the user in a chat flow and store the information provided by the user. [XState](https://xstate.js.org/docs/) is a JavaScript implementation of StateCharts. All chat flows are coded inside the XState framework.
 
 This chatbot does not have any Natural Language Processing component. In the future, we can extend the chatbot to add such features.
 
 ## Basic Introduction to XState
 
-XState is a JavaScript implementation of StateCharts. There is detailed documentation available to study XState. Few of the concepts of XState that are used in Chatbot are listed below. Basic knowledge of these concepts is necessary. It can also be learned while going through the chat flow implementation of pilot use cases of PGR and Bills.
+XState is a JavaScript implementation of StateCharts. There is detailed documentation available to study XState. Some concepts of XState used in the Chatbot are listed below. Basic knowledge of these concepts is necessary. It can also be learned while going through the chat flow implementation of pilot use cases of PGR and Bills.
 
 1. [State](https://xstate.js.org/docs/guides/states.html)
    1. [State Nodes](https://xstate.js.org/docs/guides/statenodes.html)
@@ -55,8 +55,8 @@ XState is a JavaScript implementation of StateCharts. There is detailed document
 Few tips about using XState. These have been followed throughout the pilot chat flows.
 
 1. If we want to move to any state which is not at the same hierarchical level, then we should assign it a unique id value. If it has an id value, we can address it using the # qualifier in the target attribute.
-2. As id should be unique, please make sure there aren’t multiple states with the same id value. If there is a duplicate, the machine won’t function as expected.
-3. Any actions(like onEntry) should be surrounded by assign.
+2. Since the ID should be unique, please make sure there aren’t multiple states with the same ID value. If there is a duplicate, the machine won’t function as expected.
+3. Any actions (like onEntry) should be surrounded by assign.
 
 ```
 assign( (context, event) => { ... } )
