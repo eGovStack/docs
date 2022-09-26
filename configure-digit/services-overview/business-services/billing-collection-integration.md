@@ -1,13 +1,13 @@
 # Billing Collection Integration
 
-![](../../../.gitbook/assets/108.png)
-
-## Introduction <a href="#introduction" id="introduction"></a>
+## Overview <a href="#introduction" id="introduction"></a>
 
 DIGIT is India's largest open-source platform for Urban Governance. It provides API-based access to government functions enabling the government to provide facilities via integration with relevant service players.\
-This document is aimed at System Integrators looking to provide bill collection facilities to their government customers using DIGIT as their governance platform. It outlines the integration approach with Billing and Collections services to enable fetching bill dues to Citizens and recording their payments into the system.
+This document provides the details of how system integrators enable bill collection facilities to customers using DIGIT as the governance platform. It outlines the integration approach with Billing and Collections services to enable fetching bill dues to Citizens and recording their payments into the system.
 
-## High-Level Approach <a href="#high-level-approach" id="high-level-approach"></a>
+![](../../../.gitbook/assets/108.png)
+
+### High-Level Approach <a href="#high-level-approach" id="high-level-approach"></a>
 
 DIGIT is completely API driven and allows for data exchange with disparate systems using REST API calls. Most functional APIs are protected resources that can be accessed after proper authentication with the platform. The platform also checks for the right level of access for the given credentials.\
 A bill collection flow consists of the following steps -
@@ -25,8 +25,9 @@ Note: The process of calling payment API results in a receipt creation.
 
 ## Integration Details <a href="#integration-details" id="integration-details"></a>
 
-DIGIT uses Swagger 2.0 as its API standard and all its APIs are documented in Swagger. Wherever needed this document will provide a link to our API documentation online. An example of typical request/response snippets necessary for integration is provided below in the respective sections.\
-Please note that DIGIT is a multi-tenanted system, all APIs in DIGIT expect tenantid passed either in the query param or RequestBody (Please refer to detailed API documentation as indicated in sections below). The tenantid represents the modular operating unit for the operation of an API, e.g. in a municipal governance use case, a tenantid will represent one ULB. Your platform contact will help you access the configured list for your use case.\
+DIGIT uses Swagger 2.0 as its API standard and all its APIs are documented in Swagger. Wherever needed this document will provide a link to our API documentation online. An example of typical request/response snippets necessary for integration is provided below in the respective sections.
+
+DIGIT is a multi-tenanted system - hence all APIs in DIGIT except tenantid are passed either in the query param or RequestBody (Please refer to detailed API documentation as indicated in sections below). The tenantid represents the modular operating unit for the operation of an API, e.g. in a municipal governance use case. A tenantid represents one ULB. Your platform contact will help you access the configured list for your use case.\
 Authentication API also expects tenantid (Your platform contact will help you with which one to use), however, based on the role as an integrator the OAUTH token in response can be used for unit/ULB level tenants in subsequent API calls (meaning you may not need one authentication per unit/ULB level tenant).
 
 1. **Authentication**
