@@ -1,28 +1,28 @@
 # Configuring Tenants
 
-### Overview
+## Overview
 
 Tenant represents a body in a system. In the municipal system, a state and its ULBs (Urban local bodies) are tenants. ULB represents a city or a town in a state. Tenant configuration is done in MDMS.
 
-### Pre-requisites
+## Pre-requisites
 
 Before proceeding with the configuration, the following pre-requisites are met -
 
 * Knowledge of json and how to write a json is required.
 * Knowledge of MDMS is required.
-* User with permissions to edit the git repository where MDMS data is configured.
+* User with permission to edit the git repository where MDMS data is configured.
 
-### Key Functionalities
+## Key Functionalities
 
-* For login page city name selection is required. Tenant added in MDMS shows in city drop-down of the login page.
+* For the login page city name selection is required. Tenant added in MDMS shows in city drop-down of the login page.
 * In reports or in the employee inbox page the details related to ULB is displayed from the fetched ULB data which is added in MDMS.
 * Modules i.e., TL, PT, MCS can be enabled based on the requirement for the tenant.
 
-### Deployment Details
+## Deployment Details
 
 After adding the new tenant, the MDMS service needs to be restarted to read the newly added data.
 
-### Configuration Details
+## Configuration Details
 
 Tenant is added in tenant.json.\
 In MDMS, file **tenant.json**, under **tenant** folder holds the details of state and ULBs to be added in that state.
@@ -64,7 +64,7 @@ In MDMS, file **tenant.json**, under **tenant** folder holds the details of stat
 ```
 
 {% hint style="info" %}
-To enable tenant the above data should be pushed in tenant.json file. Here "ULB Grade" and City "Code" are important fields. **ULB Grade** can have a set of allowed values that determines the ULB type, ([Municipal corporation (Nagar Nigam)](https://en.wikipedia.org/wiki/Municipal\_Corporations\_in\_India), Municipality (municipal council, municipal board, municipal committee) (Nagar Parishad), etc). City "**Code**" has to be unique to each tenant. This city-specific code is used in all transactions. Not permissible to change the code. If changed we will lose the data of the previous transactions done.
+To enable tenants the above data should be pushed in tenant.json file. Here "ULB Grade" and City "Code" are important fields. **ULB Grade** can have a set of allowed values that determines the ULB type, ([Municipal corporation (Nagar Nigam)](https://en.wikipedia.org/wiki/Municipal\_Corporations\_in\_India), Municipality (municipal council, municipal board, municipal committee) (Nagar Parishad), etc). City "**Code**" has to be unique to each tenant. This city-specific code is used in all transactions. Not permissible to change the code. If changed we will lose the data of the previous transactions done.
 {% endhint %}
 
 {% hint style="info" %}
@@ -105,13 +105,12 @@ Localization should be pushed for ULB grade and ULB name. The format is given be
 
 Boundary data should be added for the new tenant.
 
-### Reference Docs
+## Reference Docs
 
-#### Doc Links
+### Doc Links
 
-|                  |                                                                                                                                                       |
+| Description      | Link                                                                                                                                                  |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Title**        | **Link**                                                                                                                                              |
 | tenant json file | [![](https://github.githubassets.com/favicon.ico)tenants.json](https://github.com/egovernments/ukd-mdms-data/blob/master/data/uk/tenant/tenants.json) |
 | content          | [MDMS Configuration:](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/110952456)                                                           |
 
