@@ -36,6 +36,17 @@ DIGIT video tutorials provide a step-by-step guide to using the DIGIT modules. R
 * [DIGIT Customization & Configuration](https://youtu.be/UolbLIBH7vA)
 * [DIGIT Extensions - eChallan Case Study](https://youtu.be/nbPhcemcFi8)
 
+DIGIT Training Webinar Sep 2022 series
+
+* [DIGIT Overview](https://youtu.be/UxOl6a69BLc)
+* [Platform Overview](https://youtu.be/QDkxBMQWdPo)
+* [DIGIT DevOps ](https://youtu.be/dNBww3dh5DM)
+* [mGramSeva and Property Tax Demo](https://youtu.be/gOVPJBvhiEQ)
+* [OBPS Product Demo](https://youtu.be/FypsSMbADis)
+* [DIGIT - Platform Configuration & Customisation](https://youtu.be/39h8X13EcjM)
+* [Building New Modules On DIGIT](https://youtu.be/cdspxo3VO1A)
+* [Building New Domains On DIGIT](https://youtu.be/-AbeFzPtvQQ)
+
 ### DIGIT Webinar Videos
 
 * [DIGIT 2.7 Release Webinar](https://www.youtube.com/watch?v=QBHsOhcXB2I\&list=PLyQ2-xBpWNe5r2Fse7gsqIEtoGb8kjZJ2\&index=12)
