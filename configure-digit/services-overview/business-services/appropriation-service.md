@@ -18,9 +18,8 @@ Before you proceed with the documentation, make sure the following pre-requisite
 * Apportion payment in tax heads of bill
 * Apportion advance amount in tax heads of demand during demand creation
 
-|                                      |                                                                                           |
+| Environmental Variables              | Description                                                                               |
 | ------------------------------------ | ----------------------------------------------------------------------------------------- |
-| **Environment Variables**            | **Description**                                                                           |
 | `egov.apportion.default.value.order` | If set to true will apportion of the negative amount first irrespective of tax head order |
 
 ## Deployment Details
@@ -56,18 +55,16 @@ Any payment service which wants to divide the paid amount into different tax hea
 
 ### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-|                           |                                                                                                                    |
+| Description               | Link                                                                                                               |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Title**                 | **Link**                                                                                                           |
 | Collection Service        | [Collection Service V2](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620574288/Collection+Service+V2) |
 | Billing Service           | [Billing Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service)             |
 | API Swagger Documentation |                                                                                                                    |
 
 ### API List <a href="#api-list" id="api-list"></a>
 
-|                                            |                                                                                                                            |
+| Description                                | Link                                                                                                                       |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| Title                                      | **Link**                                                                                                                   |
 | _/apportion-service/v2/bill/\_apportion_   | [https://www.getpostman.com/collections/142983a40e95da157b45](https://www.getpostman.com/collections/142983a40e95da157b45) |
 | _/apportion-service/v2/demand/\_apportion_ | [https://www.getpostman.com/collections/142983a40e95da157b45](https://www.getpostman.com/collections/142983a40e95da157b45) |
 

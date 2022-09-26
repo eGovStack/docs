@@ -1,3 +1,0 @@
-# Setting Up SSL Certificate
-
-Details coming soon...

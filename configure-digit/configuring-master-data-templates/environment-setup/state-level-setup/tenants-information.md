@@ -1,10 +1,10 @@
 # Tenants Information
 
-### Introduction
+## Introduction
 
 An Urban Local Body (ULB) is defined as a tenant. The information which describes the various attributes of a ULB is known as tenant information. This detail is required to add the ULB into the system.
 
-### Data Table
+## Data Table
 
 | S. No. | ULB Name\*              | ULB Code\* | ULB Grade\* | City Name\* | City Local Name | District Name\* | District Code\* | Region Name | Region Code |
 | ------ | ----------------------- | ---------- | ----------- | ----------- | --------------- | --------------- | --------------- | ----------- | ----------- |
@@ -18,9 +18,9 @@ An Urban Local Body (ULB) is defined as a tenant. The information which describe
 Data given in the table is a sample data.
 {% endhint %}
 
-### Procedure
+## Procedure
 
-#### Data Definition
+### Data Definition
 
 | Sr. No. | Column Name       | Data Type    | Data Size | Is Mandatory? | Definition/ Description                                                                                                                                            |
 | ------- | ----------------- | ------------ | --------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -68,7 +68,7 @@ To see common checklist refer to the page [Checklist](../../module-setup/common-
 
 This checklist covers the activities which are specific to the entity. There are no checklist activities exists which are specific to the entity.
 
-### Attachments
+## Attachments
 
 {% file src="../../../../.gitbook/assets/sample-configuration-data-tenant-information.xlsx" %}
 Sample Data Template

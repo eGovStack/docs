@@ -175,7 +175,7 @@ This is integrated into the billing system by default.
 
 ### Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
-{yet to be addded}
+{yet to be added}
 
 ## **Docs and Resource Links**
 
@@ -183,9 +183,9 @@ This is integrated into the billing system by default.
 
 [API SPEC FOR BILL-AMENDMENT](https://raw.githubusercontent.com/egovernments/business-services/master/Docs/billingservice/BillAmendment/v1.0.yml)
 
-API LIST
+**API List**
 
-|                               |                                                                                                                            |
+| Description                   | Link                                                                                                                       |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | /amendment/\_create, \_update | [https://www.getpostman.com/collections/b195d3b1d354c767b6bd](https://www.getpostman.com/collections/b195d3b1d354c767b6bd) |
 

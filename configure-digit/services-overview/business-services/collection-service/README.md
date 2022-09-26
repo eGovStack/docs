@@ -41,9 +41,8 @@ The MDMS data configuration uses the same data updated by Billing-Service
 
 Following are the properties in the application.properties
 
-|                                                                                        |                                                                |                                                                                                                                                                                         |
+| Property                                                                               | Value                                                          | Remarks                                                                                                                                                                                 |
 | -------------------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Property**                                                                           | **Value**                                                      | **Remarks**                                                                                                                                                                             |
 | `collection.receipts.search.paginate`                                                  | true/false                                                     | By setting this property true, show you the search result of receipt in a bucket(page) which contains a certain number of records.                                                      |
 | `is.payment.search.uri.modulename.mandatory=true`                                      | TRUE/FALSE                                                     | Make module name in URI path mandatory                                                                                                                                                  |
 | `collection.receipts.search.default.size`                                              | Certain number (say 30)                                        | Give the 30 records at a time and next 30 results are in the next page.                                                                                                                 |
@@ -82,9 +81,8 @@ Collection service can be integrated with any organization or system that wants 
 
 **Doc Links**
 
-|                 |                                                                                                        |
+| Description     | Link                                                                                                   |
 | --------------- | ------------------------------------------------------------------------------------------------------ |
-| **Title**       | **Link**                                                                                               |
 | Billing-service | [Billing Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service) |
 | Id-Gen service  |                                                                                                        |
 | url-shortening  |                                                                                                        |
@@ -92,9 +90,8 @@ Collection service can be integrated with any organization or system that wants 
 
 **API List**
 
-|                      |                                                                                                                            |
+| Description          | Link                                                                                                                       |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **Title**            | **Link**                                                                                                                   |
 | /payments/\_create   | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
 | /payments/\_update   | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |
 | /payments/\_workflow | [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4) |

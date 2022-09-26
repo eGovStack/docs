@@ -12,10 +12,6 @@ Learn how to configure the DIGIT Urban platform. Partner with us to enhance and 
 [git-repos.md](git-repos.md)
 {% endcontent-ref %}
 
-{% content-ref url="setting-up-digit/" %}
-[setting-up-digit](setting-up-digit/)
-{% endcontent-ref %}
-
 {% content-ref url="setting-up-master-data/" %}
 [setting-up-master-data](setting-up-master-data/)
 {% endcontent-ref %}
