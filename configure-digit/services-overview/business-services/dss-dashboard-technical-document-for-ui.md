@@ -31,7 +31,7 @@ There are two types of cards, i.e, the overview card and the module-level card.
 The overview and the module level cards are differentiated by vizType,
 
 1. Overview card: Clicking on the overview card navigates to the overview page. vizType for Overview is a collection.
-2. Module Level card: Clicking on the module level card navigates to the module level dahsboards. vizType is a module (i.e Property Tax, Trade License etc).
+2. Module Level card: Clicking on the module level card navigates to the module level dahsboard. vizType is a module (i.e Property Tax, Trade License etc).
 
 **Request Payload for dashboardConfig**
 
@@ -120,7 +120,7 @@ Each row contains the visual details like name,vizType,noUnit,isCollapsible,char
 
 ![](../../../.gitbook/assets/148.png)
 
-**ULB Dashboard**
+### **ULB Dashboard**
 
 ULB Dashboard is having different filters, i.e ULBs and Wards/Blocks. The data to the filters are loaded from below MDMS API -
 
@@ -129,7 +129,7 @@ ULB Dashboard is having different filters, i.e ULBs and Wards/Blocks. The data t
 1. Each ULB dashboard, overview Dashboard and module-level pages contain different filters and are identified by roleName in configs API.
 2. The Wards/Blocks filter is a dependable filter, which gets loaded on ULB selection.
 3. In the ULB dashboard, the On-page ULB filter will be applied across all the charts and for the Performance chart, the default ULB filter will not be applied.
-4. Overview and all module level page is having a ULB dashboard.
+4. Overview and all module level pages is having a ULB dashboard.
 
 **GLOBAL Filters (refer to figure 2.8)**
 
@@ -155,7 +155,7 @@ The Denomination filter has three options to display the amount and number in a 
 2. Lack
 3. Unit
 
-Denomination filter will not be applied to the percentage and text (refer to **figure 2.10**). The type of data is identified by a symbol in the plots of charts API.
+The denomination filter will not be applied to the percentage and text (refer to **figure 2.10**). The type of data is identified by a symbol in the plots of charts API.
 
 ![](../../../.gitbook/assets/149.png)
 
@@ -184,12 +184,12 @@ Tabs are identified by name in visualizations of config API.
 
 Table chart visualization is having normal material UI data table features like search, sort etc.![](blob:https://digit-discuss.atlassian.net/fce20f0d-51d9-4203-9659-cd7dbb911fbd#media-blob-url=true\&id=95fea73d-71fd-4ef2-b291-e6bcd063bd71\&collection=contentId-1639153669\&contextId=1639153669\&mimeType=image%2Fpng\&name=1636171788\&size=33302\&width=468\&height=210)
 
-In table response, filter key & drillDownChartId is having value means its Drill down table.
+In table response, filter key & drillDownChartId is having value means its Drill down the table.
 
 **Cards**
 
-1. Each card header is localized and having an info icon with a tooltip option that displays the header and can display a description.
-2. The number of cards in a row and in a page is driven by the backend. Backend provides the row number to each card where it should be displayed.
+1. Each card header is localized and has an info icon with a tooltip option that displays the header and can display a description.
+2. The number of cards in a row and in a page is driven by the backend. The backend provides the row number to each card where it should be displayed.
 3. Card containing option icon which contains Image download and Image share option.
 4. Image download and share user id from vizArray in order to differentiate each card in a page.
 
