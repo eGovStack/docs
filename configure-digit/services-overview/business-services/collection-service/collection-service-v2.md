@@ -33,7 +33,7 @@ The Collection service is to serve as a revenue collection platform for all the 
 
 The MDMS data configuration uses the same data updated by Billing-Service
 
-[Billing Service | Configuration-Details: ](../billing-service/)Refer to the MDMS data config from here.
+[Billing Service | Configuration-Details: ](../billing-service/)Refer to MDMS data config from here.
 
 Following are the properties in the application.properties
 
@@ -64,16 +64,16 @@ Collection service can be integrated with any organization or system that wants 
 
 ### Steps to Integration
 
-* Customers can create a payment using the `/payments/_create`
-* Actors on the system can keep track of payments using `/payments/_search`endpoint
-* Once the payment is done but it encounters a technical issue outside of the system then it can be cancelled with `/payments/_workflow`
-* For employees to access the payments API the respective module name should be appended after the payment API path - `/payments/PT/_workflow` - here PT refers to the property module.
+1. Customers can create a payment using the `/payments/_create`
+2. Actors on the system can keep track of payments using `/payments/_search`endpoint
+3. Once the payment is done but it encounters a technical issue outside of the system then it can be cancelled with `/payments/_workflow`
+4. For employees to access the payments API the respective module name should be appended after the payment API path - `/payments/PT/_workflow` - here PT refers to the property module.
 
 ### **IFSC Code Migration - Collection Service**
 
-* Port forward the collection service to the current environment where the IFSC CODE bank details data is to be migrated. Find the sample command below. `1kubectl port-forward collection-services-76b775f976-xcbt2 8055:8080 -n egov`
-* Import postman collection from API list which refers as `/preexistpayments/_update` and runs with the same localhost to where we port forwarded using the above command.
-*   Expected result.\
+1. Port forward the collection service to the current environment where the IFSC CODE bank details data is to be migrated. Find the sample command below. `1kubectl port-forward collection-services-76b775f976-xcbt2 8055:8080 -n egov`
+2. Import postman collection from API list which refers as `/preexistpayments/_update` and runs with the same localhost to where we port forwarded using the above command.
+3.  Expected result.\
     In the EGCL\_PAYMET table where IFSCODE data is present for those record, EGCL\_PAYMET.ADDITIONALDETAILS bankdetails will be updated.
 
     Ex: For IFSCCODE : UCBA0003047\
