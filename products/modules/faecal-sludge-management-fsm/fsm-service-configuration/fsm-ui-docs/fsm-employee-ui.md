@@ -4,7 +4,7 @@
 
 Details of components added to the employee's new application screen are given below.
 
-![](../../../../../.gitbook/assets/image.png)
+![](<../../../../../.gitbook/assets/image (16).png>)
 
 * **Payment Type:** Employees can select the mode of payment while creating a new application.
 

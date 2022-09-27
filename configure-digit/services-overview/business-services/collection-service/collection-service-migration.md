@@ -10,9 +10,11 @@ According to the new collection service, which follows the payment structure for
 
 ![](../../../../.gitbook/assets/109.png)
 
-In the old collection service, for every transaction, the receipt number is generated on the bill detail level, as the bill contains multiple bill details each transaction is mapped to multiple receipt numbers. So after payment of a single bill, multiple receipt numbers are generated. The mapping of the transactions to the receipt number is changed in the new collection service.
+## Migration Details
 
-In the new collection service, the receipt number is generated on the bill level, so for every transaction for each bill, one receipt number is generated. So each bill for a consumer code and business service have one receipt number.
+In the old collection service, for every transaction, the receipt number is generated on the bill detail level. Since the bill contains multiple bill details each transaction is mapped to multiple receipt numbers. So after payment of a single bill, multiple receipt numbers are generated. The mapping of the transactions to the receipt number is changed in the new collection service.
+
+In the new collection service, the receipt number is generated at the bill level. For each bill transaction, one receipt number is generated. So each bill for a consumer code and business service have one receipt number.
 
 The records from tables **egcl\_receiptheader**, **egcl\_receiptdetails**, **egcl\_instrument**, **egcl\_instrumentheader** need to be transferred into tables **egcl\_payment**, **egcl\_paymentdetail**, **egcl\_bill**, **egcl\_billdetial**, **egcl\_billaccountdetail.**
 
@@ -24,7 +26,7 @@ The table below provides the mapping between receipt and payment structure with 
 | ------------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Payments.**Id**                                        | <ul><li>---</li></ul>                            | Set as UUID                                                                                                                                                                                                                                      |
 | Payments.**tenantId**                                  | Receipt.**tenantId**                             |                                                                                                                                                                                                                                                  |
-| Payments.**totalDue**                                  | <ul><li>---</li></ul>                            | Total Due for payment is calculated by subtracting totalAmount from bill and amount from Receipt.instrument                                                                                                                                      |
+| Payments.**totalDue**                                  | <ul><li>---</li></ul>                            | Total due for payment is calculated by subtracting totalAmount from bill and amount from Receipt.instrument                                                                                                                                      |
 | Payments.**totalAmountPaid**                           | Receipt.instrument.**amount**                    |                                                                                                                                                                                                                                                  |
 | Payments.**transactionNumber**                         | Receipt.instrument.**transactionNumber**         |                                                                                                                                                                                                                                                  |
 | Payments.**transactionDate**                           | Receipt.**receiptDate**                          |                                                                                                                                                                                                                                                  |
@@ -47,7 +49,7 @@ The table below provides the mapping between receipt and payment structure with 
 | Payments.auditDetails.**lastModifiedTime**             | Receipt.auditDetails.**lastModifiedTime**        |                                                                                                                                                                                                                                                  |
 | Payments.paymentDetails.**Id**                         | <ul><li>---</li></ul>                            | Set as UUID                                                                                                                                                                                                                                      |
 | Payments.paymentDetails.**tenantId**                   | Receipt.**tenantId**                             |                                                                                                                                                                                                                                                  |
-| Payments.paymentDetails.**totalDue**                   | <ul><li>---</li></ul>                            | Total Due for paymentDetails is calculated by subtracting totalAmount from bill and amount from Receipt.instrument                                                                                                                               |
+| Payments.paymentDetails.**totalDue**                   | <ul><li>---</li></ul>                            | Total due for paymentDetails is calculated by subtracting totalAmount from bill and amount from Receipt.instrument                                                                                                                               |
 | Payments.paymentDetails.**totalAmountPaid**            | Receipt.instrument.**amount**                    |                                                                                                                                                                                                                                                  |
 | Payments.paymentDetails.**receiptNumber**              | Receipt.**receiptNumber**                        |                                                                                                                                                                                                                                                  |
 | Payments.paymentDetails.**manualReceiptNumber**        | Receipt.Bill.billDetails.**manualReceiptNumber** |                                                                                                                                                                                                                                                  |
@@ -61,7 +63,7 @@ The table below provides the mapping between receipt and payment structure with 
 | Payments.paymentDetails.**bill**                       | <ul><li>---</li></ul>                            | Based on the billid, tenantid and service the bill is search by calling the Billing service API and set it to Payments.paymentDetails.bill                                                                                                       |
 | Payments.paymentDetails.bil.billDetails.**amountPaid** | Receipt.instrument.**amount**                    | For each amountPaid in billDetails, its value is set from Receipt.instrument.amount                                                                                                                                                              |
 
-After the creation of payment response with receipt data, it has been pushed into kafka topic **“egov.collection.migration-batch”** and with the persister, payment data is inserted into tables **egcl\_payment**, **egcl\_paymentdetail**, **egcl\_bill**, **egcl\_billdetial**, **egcl\_billaccountdetail.**
+After the creation of payment response with receipt data, it has been pushed into the Kafka topic **“egov.collection.migration-batch”** and with the persister, payment data is inserted into tables **egcl\_payment**, **egcl\_paymentdetail**, **egcl\_bill**, **egcl\_billdetial**, **egcl\_billaccountdetail.**
 
 Indexer config for the legacy data index and new payments.
 
@@ -73,7 +75,7 @@ Indexer config for the legacy data index and new payments.
 
 Please get these promoted before initiating the migration process. Migration happens through an API call, add role-actions based on your requirement. Otherwise, port-forwarding should work.
 
-Find the API details below:
+## API Details
 
 Endpoint: /collection-services/payments/\_migrate?batchSize=100\&offset=\
 Body:\
@@ -94,5 +96,7 @@ While restarting migration due to any failure, take the value of _**offset**_ an
 **/collection-services/payments/\_migrate?batchSize=100\&offset=200\&tenantId='pb.tenantId'**
 
 **Collection-service build:-** collection-services-db:9-COLLECTION\_MIGRATION-e9701c4
+
+
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
