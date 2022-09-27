@@ -78,7 +78,7 @@ Any microservice which requires authorisation can leverage the functionalities p
 
 ### Integration Benefits
 
-Any new microservice that is to be added in the platform won’t have to worry about authorisation. It can just add it’s role action mapping in the master data and Access Control Service will perform authorisation whenever API for the microservice is called.
+Any new microservice that is to be added to the platform won’t have to worry about authorisation. It can just add its role action mapping in the master data and Access Control Service will perform authorisation whenever API for the microservice is called.
 
 ### Steps to Integration
 
@@ -93,14 +93,13 @@ Any new microservice that is to be added in the platform won’t have to worry a
 
 ### Doc Links
 
-|              |                                                                                                                                                                                                                                      |
+| Title        | Link                                                                                                                                                                                                                                 |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Title**    | **Link**                                                                                                                                                                                                                             |
 | API Contract | [https://raw.githubusercontent.com/egovernments/egov-services/master/docs/egov-accesscontrol/contracts/v1-0-1.yml](https://raw.githubusercontent.com/egovernments/egov-services/master/docs/egov-accesscontrol/contracts/v1-0-1.yml) |
 
 ### API List
 
-|       |          |
+| Title | Link     |
 | ----- | -------- |
 | Title | **Link** |
 |       |          |
