@@ -1,12 +1,12 @@
 # DSS Dashboard - Technical Document for UI
 
-## **Description**
+## **Overview**
 
-A decision support system (DSS) is a composite tool that collects, organizes and analyzes business data to facilitate quality decision-making for management, operations and planning. A well-designed DSS aids decision makers in compiling a variety of data from many sources: raw data, documents, personal knowledge from employees, management, executives and business models. DSS analysis helps organizations to identify and solve problems, and make decisions.
+A decision support system (DSS) is a composite tool that collects, organizes and analyzes business data to facilitate quality decision-making for management, operations and planning. A well-designed DSS aids decision makers in compiling a variety of data from many sources: raw data, documents, personal knowledge from employees, management, executives and business models. DSS analysis helps organizations identify and solve problems, and make decisions.
 
 Code Git Repos: [https://github.com/egovernments/frontend/tree/master/web/dss-dashboard](https://github.com/egovernments/frontend/tree/master/web/dss-dashboard)
 
-## **Type of users**
+## **Type Of Users**
 
 1. State-Level Admin
 2. Commissioner
@@ -26,18 +26,18 @@ The home page contains multiple cards, each card is clickable.
 
 ![](../../../.gitbook/assets/133.png)
 
-There are two types of cards, i.e, Overview card and module-level card.
+There are two types of cards, i.e, the overview card and the module-level card.
 
-Overview and Module level card is differentiated by vizType,
+The overview and the module level cards are differentiated by vizType,
 
-1. Overview card: On click of overview card, it will navigate to overview page. vizType for Overview is collection.
-2. Module Level card: On Click of Module level card, it will navigate to Module level dahsboard. vizType is module (i.e Property Tax, Trade License etc).
+1. Overview card: Clicking on the overview card navigates to the overview page. vizType for Overview is a collection.
+2. Module Level card: Clicking on the module level card navigates to the module level dahsboards. vizType is a module (i.e Property Tax, Trade License etc).
 
-**Request Payload for dashboardConfig:**
+**Request Payload for dashboardConfig**
 
 ![](../../../.gitbook/assets/134.png)
 
-**auth-token** : which is for authenticate the request and it will fetch from a local storage key called **“Employee.token”**
+**auth-token**: authenticate the request and it fetches from a local storage key called **“Employee.token”**
 
 **DashboardConfig API Response**
 
@@ -47,7 +47,7 @@ Overview and Module level card is differentiated by vizType,
 
 roleName: Which type of user.
 
-Visualizations: Key contains all configuration for displaying the visualization like rows with charts etc please refer to **figure 1.3**.
+Visualizations: The key contains all configurations for displaying the visualization like rows with charts etc please refer to **figure 1.3**.
 
 In Figure 1.3, **vizType** key will define the module UI like
 
@@ -57,22 +57,20 @@ Collection Chart & Module Chart **refer the figure 1**
 
 ![](../../../.gitbook/assets/137.png)
 
-\*\*\*\*
-
 ### **3. Module Level Dashboard**
 
 ![](<../../../.gitbook/assets/138 (7).png>)
 
 **Visualizations List**
 
-In dashboardConfig response **visualizations** key contains all rows & charts details(refer **figure 1.3**).
+In dashboardConfig response, the **visualization** key contains all rows & charts details(refer **figure 1.3**).
 
-1.Each row contains the visual details like name,vizType,noUnit,isCollapsible,charts etc \*\*\*\*(refer **figure 1.3**).
+Each row contains the visual details like name,vizType,noUnit,isCollapsible,charts etc (refer **figure 1.3**).
 
 1. name - Name of visualization.
-2. vizType - type of visualization like COLLECTION,MODULE,METRIC-COLLECTION, PERFORMING-METRIC, CHART.
-   1. COLLECTION - In home page, contains the collection data (refer **figure 1**).
-   2. MODULE - In home page, contains the module level data (refer **figure 1**).
+2. vizType - type of visualization like COLLECTION, MODULE, METRIC-COLLECTION, PERFORMING-METRIC, CHART.
+   1. COLLECTION - The home page, contains the collection data (refer **figure 1**).
+   2. MODULE - The home page, contains the module-level data (refer **figure 1**).
    3. METRIC-COLLECTION - In Overview/Module Level Page, contains the collection data (refer **figure 2.1**).
    4. PERFORMING-METRIC -In Overview/Module Level Page, contains the top/bottom performing data (refer **figure 2.2).**
    5. CHART - In Overview/Module Level Page, contains the below visualizations (refer **figure 2.3 to figure 2.7).**
@@ -82,23 +80,23 @@ In dashboardConfig response **visualizations** key contains all rows & charts de
       4. HORIZONTAL BAR CHART (refer **figure 2.6**)
       5. TABLE CHART (refer **figure 2.7**)
 
-### **List of visualizations**
+### **Visualization List**
 
 ![](../../../.gitbook/assets/139.png)
 
-**Figure : 2.1 - Metric-collection.**
+**Figure: 2.1 - Metric-collection**
 
 ![](../../../.gitbook/assets/140.png)
 
-**Figure : 2.2 - PERFORMING-METRIC**
+**Figure: 2.2 - PERFORMING-METRIC**
 
 ![](../../../.gitbook/assets/141.png)
 
-**Figure : 2.3 - CHART - PIE**
+**Figure: 2.3 - CHART - PIE**
 
 ![](../../../.gitbook/assets/142.png)
 
-**Figure : 2.4 - Chart - LINE**
+**Figure: 2.4 - Chart - LINE**
 
 ![](../../../.gitbook/assets/143.png)
 
@@ -124,7 +122,7 @@ In dashboardConfig response **visualizations** key contains all rows & charts de
 
 **ULB Dashboard**
 
-ULB Dashboard is having different filters, i.e ULB’s and Wards/Blocks. The data to the filters are loaded from below MDMS API -
+ULB Dashboard is having different filters, i.e ULBs and Wards/Blocks. The data to the filters are loaded from below MDMS API -
 
 [https://dev.digit.org/egov-mdms-service/v1/\_search](https://dev.digit.org/egov-mdms-service/v1/\_search)
 
@@ -149,9 +147,9 @@ Commissioner role: For the Module level page, Date, ULB and Wards/Blocks filters
 
 For the Overview page, Date, ULB and Service filters will be loaded.
 
-3.Denomination filter:
+3\. Denomination filter:
 
-Denomination filter having three option to display amount and number in a particular format.
+The Denomination filter has three options to display the amount and number in a particular format.
 
 1. Crore
 2. Lack
