@@ -2,15 +2,15 @@
 
 ## **Overview**
 
-The Collection service is to serve as a revenue collection platform for all the billing systems through cash, cheque, dd, swipe machine. It enables payment for all services provided by the eGov platform at a single point for the Citizen and counter collection in municipal alike.
+The Collection service is to serve as a revenue collection platform for all the billing systems through cash, cheque, demand draft, and swipe machines. It enables payment for all services provided by the eGov platform at a single point for the citizen and counter collection in municipal alike.
 
 ## **Pre-requisites**
 
-* Prior Knowledge of Java/J2EE
-* Prior Knowledge of SpringBoot
-* Prior Knowledge of REST APIs and related concepts like path parameters, headers, JSON, etc
-* Prior Knowledge of Kafka and related concepts like Producer, Consumer, Topic, etc.
-* Following services should be up and running:
+* Prior knowledge of Java/J2EE
+* Prior knowledge of SpringBoot
+* Prior knowledge of REST APIs and related concepts like path parameters, headers, JSON, etc
+* Prior knowledge of Kafka and related concepts like Producer, Consumer, Topic, etc.
+* The following services should be up and running:
   * egov-localization
   * egov-mdms
   * egov-idgen
@@ -21,19 +21,19 @@ The Collection service is to serve as a revenue collection platform for all the 
 
 * Allows citizens to create a payment.
 * Allows employees to create the payment for the citizen indirectly.
-* provides facilities to capture partial and advanced payment based on configs.
+* provides facilities to capture partial and advanced payments based on configs.
 * allows payment cancellation to help with scenarios of bad checks and other failed payment scenarios.
-* Integrates with billing-service for demand back-update of payment.
+* Integrates with billing service for demand back-update of payment.
 
 ## **Deployment Details**
 
-* deploy the latest version of the collection-services docker build.
+* deploy the latest version of the collection-services docker builds.
 
 ## **Configuration Details**
 
 The MDMS data configuration uses the same data updated by Billing-Service
 
-[Billing Service | Configuration-Details: ](../billing-service/)Refer MDMS data config from here.
+[Billing Service | Configuration-Details: ](../billing-service/)Refer to MDMS data config from here.
 
 Following are the properties in the application.properties
 
@@ -64,25 +64,25 @@ Collection service can be integrated with any organization or system that wants 
 
 ### Steps to Integration
 
-1. Customer can create a payment using the `/payments/_create`
+1. Customers can create a payment using the `/payments/_create`
 2. Actors on the system can keep track of payments using `/payments/_search`endpoint
 3. Once the payment is done but it encounters a technical issue outside of the system then it can be cancelled with `/payments/_workflow`
-4. For employees to access the payments API the respective module name should be appended after the payment API path - `/payments/PT/_workflow` - here PT refers to property module.
+4. For employees to access the payments API the respective module name should be appended after the payment API path - `/payments/PT/_workflow` - here PT refers to the property module.
 
-### **IFSC Code Migration in Collection Service**
+### **IFSC Code Migration - Collection Service**
 
-1. Port foward the collection-service to current environment where the IFSCCODE bankdetails data to be migrated. Find the sample command below. `1kubectl port-forward collection-services-76b775f976-xcbt2 8055:8080 -n egov`
-2. Import postman collection from API list which refers as `/preexistpayments/_update` and run with the same localhost to where we port forwarded using above command.
+1. Port forward the collection service to the current environment where the IFSC CODE bank details data is to be migrated. Find the sample command below. `1kubectl port-forward collection-services-76b775f976-xcbt2 8055:8080 -n egov`
+2. Import postman collection from API list which refers as `/preexistpayments/_update` and runs with the same localhost to where we port forwarded using the above command.
 3.  Expected result.\
-    In EGCL\_PAYMET table where IFSCODE data is present for those record, EGCL\_PAYMET.ADDITIONALDETAILS bankdetails will be updated.
+    In the EGCL\_PAYMET table where IFSCODE data is present for those record, EGCL\_PAYMET.ADDITIONALDETAILS bankdetails will be updated.
 
     Ex: For IFSCCODE : UCBA0003047\
-    Response from API [https://ifsc.razorpay.com/UCBA0003047](https://ifsc.razorpay.com/UCBA0003047) will be update in EGCL\_PAYMET.ADDITIONALDETAILS\
+    Response from API [https://ifsc.razorpay.com/UCBA0003047](https://ifsc.razorpay.com/UCBA0003047) is updated in EGCL\_PAYMET.ADDITIONALDETAILS\
     as {"bankDetails": {"UPI": true, "BANK": "UCO Bank", "CITY": "BHIKHI", "IFSC": "UCBA0003047", "IMPS": true, "MICR": "151028452", "NEFT": true, "RTGS": true, "STATE": "PUNJAB", "SWIFT": "", "BRANCH": "BHIKHI", "CENTRE": "MANSA", "ADDRESS": "ADJOINING HP PETROL PUMP MANSA ROADDISTRICT MANSA","BANKCODE":"UCBA","DISTRICT":"MANSA","CONTACT":"+918288822548"}
 
 ## **Interaction Diagram**
 
-[Billing-Collection-Integration](../billing-collection-integration.md) Refer integration with details and explanation.
+[Billing-Collection-Integration](../billing-collection-integration.md) Refer to the integration with details and explanation.
 
 ## **Reference Docs**
 
