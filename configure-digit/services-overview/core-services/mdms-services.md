@@ -17,11 +17,10 @@ One of the applications in the DIGIT core group of services aims to reduce the t
 * Adds master data for usage without the need to create master data APIs in every module.
 * Reads data from GIT directly with no dependency on any database services.
 
-|                           |                                                                       |
-| ------------------------- | --------------------------------------------------------------------- |
-| **Environment Variables** | **Description**                                                       |
-| egov.mdms.conf.path       | The default value of folder where master data files are stored        |
-| masters.config.url        | The default value of the file URL which contains master-config values |
+| Environment Variables | Description                                                           |
+| --------------------- | --------------------------------------------------------------------- |
+| egov.mdms.conf.path   | The default value of folder where master data files are stored        |
+| masters.config.url    | The default value of the file URL which contains master-config values |
 
 ## Deployment Details <a href="#deployment-details" id="deployment-details"></a>
 
@@ -41,7 +40,7 @@ The MDMS service provides ease of access to master data for any service.
 
 ### Steps to Integration <a href="#steps-to-integration" id="steps-to-integration"></a>
 
-1. To integrate, host of egov-mdms-service should be overwritten in helm chart
+1. To integrate, host of egov-mdms-service should be overwritten in the helm chart
 2. _egov-mdms-service/v1/\_search_ should be added as the search endpoint for searching master data.
 3. Mdms client from eGov snapshots should be added as mvn entity in pom.xml for ease of access since it provides mdms request pojos.
 
@@ -49,10 +48,10 @@ The MDMS service provides ease of access to master data for any service.
 
 ### Docs
 
-| Title                 | Link                                                                                                                                                                                                                          |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| egov-mdms sample data | [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/egov-mdms-data/tree/DEV/data - Connect to preview](https://github.com/egovernments/egov-mdms-data/tree/DEV/data)                             |
-| master-config.json    | [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/egov-mdms-data/blob/DEV/master-config.json - Connect to preview](https://github.com/egovernments/egov-mdms-data/blob/DEV/master-config.json) |
+| Title                 | Link                                                                                                                                                                                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| egov-mdms sample data | [<img src="https://github.githubassets.com/favicon.ico" alt="" data-size="line">https://github.com/egovernments/egov-mdms-data/tree/DEV/data - Connect to preview](https://github.com/egovernments/egov-mdms-data/tree/DEV/data)                             |
+| master-config.json    | [<img src="https://github.githubassets.com/favicon.ico" alt="" data-size="line">https://github.com/egovernments/egov-mdms-data/blob/DEV/master-config.json - Connect to preview](https://github.com/egovernments/egov-mdms-data/blob/DEV/master-config.json) |
 
 ### API List <a href="#api-list" id="api-list"></a>
 

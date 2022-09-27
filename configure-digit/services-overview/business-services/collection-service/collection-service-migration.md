@@ -4,13 +4,15 @@ description: Migration details from v1 to v2
 
 # Collection Service Migration
 
-According to the new collection service, which follows the payment structure for storing the information about payments and payment details, it is necessary to migrate the old collection structure into the payment structure.
+## Overview
+
+According to the new collection service, which follows the payment structure for storing information about payments and payment details, it is necessary to migrate the old collection structure into the payment structure.
 
 ![](../../../../.gitbook/assets/109.png)
 
-In the old collection service, for every transaction, the receipt number is generated on the bill detail level, as the bill contains multiple bill details each transaction is mapped to multiple receipt number. So after payment of a single bill, multiple receipt numbers are generated for it. The mapping of the transactions to the receipt number is changed in the new collection service.
+In the old collection service, for every transaction, the receipt number is generated on the bill detail level, as the bill contains multiple bill details each transaction is mapped to multiple receipt numbers. So after payment of a single bill, multiple receipt numbers are generated. The mapping of the transactions to the receipt number is changed in the new collection service.
 
-In the new collection service, the receipt number is generated on bill level, so for every transaction for each bill, one receipt number is generated. So each bill for a consumer code and business service have one receipt number.
+In the new collection service, the receipt number is generated on the bill level, so for every transaction for each bill, one receipt number is generated. So each bill for a consumer code and business service have one receipt number.
 
 The records from tables **egcl\_receiptheader**, **egcl\_receiptdetails**, **egcl\_instrument**, **egcl\_instrumentheader** need to be transferred into tables **egcl\_payment**, **egcl\_paymentdetail**, **egcl\_bill**, **egcl\_billdetial**, **egcl\_billaccountdetail.**
 

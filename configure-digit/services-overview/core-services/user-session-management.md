@@ -12,17 +12,15 @@ Refresh token also has an expiry period and once it gets expired it cannot be us
 
 #### Environment variables to configure expiry time <a href="#environment-variables-to-configure-expiry-time" id="environment-variables-to-configure-expiry-time"></a>
 
-|                                   |                                                                |
+| Param                             | Description                                                    |
 | --------------------------------- | -------------------------------------------------------------- |
-| **Param**                         | **Description**                                                |
 | access.token.validity.in.minutes  | Duration in minutes for which the authorization token is valid |
 | refresh.token.validity.in.minutes | Duration in minutes for which the refresh token is valid       |
 
 ## API Details <a href="#api" id="api"></a>
 
-|                   |                                                                                                                                                                                                                                                                                                    |
+| API               | Description                                                                                                                                                                                                                                                                                        |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **API**           | **Description**                                                                                                                                                                                                                                                                                    |
 | /user/oauth/token | Used to start the session by generating Auth token and refresh token from username and password using grant\_type as password. The same API can be used to generate new auth token from refresh token by using grant\_type as refresh\_token and sending the refresh token with key refresh\_token |
 | /user/\_logout    | This API is used to end the session. The access token and refresh token will become invalid once this API is called. Auth token is sent as param in the API call                                                                                                                                   |
 

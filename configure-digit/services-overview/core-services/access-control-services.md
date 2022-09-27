@@ -93,15 +93,14 @@ Any new microservice that is to be added to the platform won’t have to worry a
 
 ### Doc Links
 
-| Title        | Link                                                                                                                                                                                                                                 |
+| Description  | Link                                                                                                                                                                                                                                 |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | API Contract | [https://raw.githubusercontent.com/egovernments/egov-services/master/docs/egov-accesscontrol/contracts/v1-0-1.yml](https://raw.githubusercontent.com/egovernments/egov-services/master/docs/egov-accesscontrol/contracts/v1-0-1.yml) |
 
 ### API List
 
-| Title | Link     |
-| ----- | -------- |
-| Title | **Link** |
-|       |          |
+| Description | Link |
+| ----------- | ---- |
+|             |      |
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

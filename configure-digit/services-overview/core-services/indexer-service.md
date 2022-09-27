@@ -30,10 +30,10 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 ## Deployment Details <a href="#deployment-details" id="deployment-details"></a>
 
-* Step 1: Write the configuration as per your requirement. The structure of the config file is explained later in the same doc.
-* Step 2: Check in the config file to a remote location, preferably Github. Currently, the files are checked into the folder here - [https://github.com/egovernments/configs/tree/DEV/egov-indexer](https://github.com/egovernments/configs/tree/DEV/egov-indexer) -for dev
-* Step 3: Provide the absolute path of the checked-in file to DevOps. This file path is added to the file-read path of the egov-indexer. The file is added to the egov-indexer's environment manifest file for it to be read at the start-up of the application.
-* Step 4: Run the egov-indexer app, Since it is a consumer, it starts listening to the configured topics and indexes the data.
+* **Step 1:** Write the configuration as per your requirement. The structure of the config file is explained later in the same doc.
+* **Step 2:** Check in the config file to a remote location, preferably Github. Currently, the files are checked into the folder here - [https://github.com/egovernments/configs/tree/DEV/egov-indexer](https://github.com/egovernments/configs/tree/DEV/egov-indexer) -for dev
+* **Step 3:** Provide the absolute path of the checked-in file to DevOps. This file path is added to the file-read path of the egov-indexer. The file is added to the egov-indexer's environment manifest file for it to be read at the start-up of the application.
+* **Step 4:** Run the egov-indexer app, Since it is a consumer, it starts listening to the configured topics and indexes the data.
 
 ## Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
@@ -74,5 +74,7 @@ Indexer Configuration
 {% endfile %}
 
 {% embed url="https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/core-services/master/docs/indexer-contract.yml#!/" %}
+
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

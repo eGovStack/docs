@@ -142,7 +142,7 @@ Code snippet for schedule window:
         );
 ```
 
-![](<../../../../../.gitbook/assets/image (10).png>)
+![](<../../../../../.gitbook/assets/image (10) (2).png>)
 
 ScheduleDso.js is the file responsible for the schedule window pop up.&#x20;
 

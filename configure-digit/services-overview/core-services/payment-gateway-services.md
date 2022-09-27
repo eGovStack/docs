@@ -83,21 +83,21 @@ The egov-pg-service acts as communication/contact between eGov apps and external
 
 ### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-|                      |                                                                                                                                                                                                                                                                                                  |
+| Title                | Link                                                                                                                                                                                                                                                                                             |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Title**            | **Link**                                                                                                                                                                                                                                                                                         |
 | Swagger API Contract | [https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/egov-services/master/core/egov-pg-service/egov-pg-service.yml#!/](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/egov-services/master/core/egov-pg-service/egov-pg-service.yml#!/) |
 
 ### API List <a href="#api-list" id="api-list"></a>
 
-|                                     |                                                                                                                            |
+| Title                               | Link                                                                                                                       |
 | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **Title**                           | **Link**                                                                                                                   |
 | /pg-service/transaction/v1/\_create | [https://www.getpostman.com/collections/a0dfce4274235164c520](https://www.getpostman.com/collections/a0dfce4274235164c520) |
 | /pg-service/transaction/v1/\_update | [https://www.getpostman.com/collections/a0dfce4274235164c520](https://www.getpostman.com/collections/a0dfce4274235164c520) |
 | /pg-service/transaction/v1/\_search | [https://www.getpostman.com/collections/a0dfce4274235164c520](https://www.getpostman.com/collections/a0dfce4274235164c520) |
 | /pg-service/gateway/v1/\_search     | [https://www.getpostman.com/collections/a0dfce4274235164c520](https://www.getpostman.com/collections/a0dfce4274235164c520) |
 
 (Note: All the APIs are in the same postman collection, therefore, the same link is added in each row)
+
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

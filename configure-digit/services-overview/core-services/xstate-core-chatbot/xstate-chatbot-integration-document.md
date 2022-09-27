@@ -2,7 +2,7 @@
 
 ## Overview
 
-[XState-Chatbot](https://github.com/egovernments/core-services/tree/xstate-chatbot/xstate-chatbot) is a revamped version of the [chatbot](https://github.com/egovernments/core-services/tree/master/chatbot), which provides functionality to the user to access PGR module services like file complaints, track complaints, notifications from whats app,\
+The [XState-Chatbot](https://github.com/egovernments/core-services/tree/xstate-chatbot/xstate-chatbot) is a revamped version of the [chatbot](https://github.com/egovernments/core-services/tree/master/chatbot), which provides functionality to the user to access PGR module services like file complaints, track complaints, notifications from whats app,\
 It allows the user to view receipts and pay the bills for Property, Trade Licence, FireNOC, Water and Sewerage and BPA service module.
 
 ## Key Functionalities
@@ -20,7 +20,7 @@ It allows the user to view receipts and pay the bills for Property, Trade Licenc
 
 ### Integration Scope <a href="#integration-scope" id="integration-scope"></a>
 
-XState chatbot can be integrated with any other module to improve the ease of search and view bills/past payment receipts and to improve speed and convenience for bill payment. It can be integrated with the PGR module for easiness of creation and tracking of the complaint.
+The XState chatbot can be integrated with any other module to improve the ease of search and view bills/past payment receipts and to improve speed and convenience for bill payment. It can be integrated with the PGR module for easiness of creation and tracking of the complaint.
 
 ### Integration Benefits
 
@@ -38,7 +38,7 @@ Whatsapp provider is a third-party service that works in the middle of a user's 
 
 If any new WhatsApp provider is to be used with a chatbot, code must be written to convert the provider’s incoming messages to the format that the chatbot understands and also final output from the chatbot should be converted to the WhatsApp provider’s API request format.
 
-Currently, the XState-Chatbot service is using ValueFirst as the WhatsApp Provider. This will require provider-specific environment variables to be configured. If the provider changes then, all these environment variables will also change. Few of those environment variables are stored as secrets, so these values need to be configured in _env_-secrets.yaml.
+Currently, the XState-Chatbot service is using ValueFirst as the WhatsApp Provider. This will require provider-specific environment variables to be configured. If the provider changes then, all these environment variables will also change. A few of those environment variables are stored as secrets, so these values need to be configured in _env_-secrets.yaml.
 
 As this is a revamped version of the chatbot service, all of the secrets should already be present. There is no need to create new secrets.
 
@@ -109,14 +109,13 @@ To configure the list of modules to appear as an option for payment and receipt,
 
 **For example:**\
 If `bill-supported-modules: "WS, PT, TL"`\
-then Water and Sewerage, Property, Trade license module would appear for bill payment and\
+then Water and Sewerage, Property, and Trade license module would appear for bill payment and\
 receipt search.
 
 Also add the message bundle, validation and service code for locality searcher in [egov-bill](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/egov-bill.js) and [egov-receipt](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/egov-receipts.js) file.
 
-|                                   |                                                                                                                                                                        |
+| Environmental Variables           | Description                                                                                                                                                            |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Environment Variables**         | **Description**                                                                                                                                                        |
 | `WHATSAPP_BUSINESS_NUMBER`        | The mobile number to be used on server                                                                                                                                 |
 | `VALUEFIRST_USERNAME`             | Username for configured number for sending messages to user through whatsapp provider API calls                                                                        |
 | `VALUEFIRST_PASSWORD`             | Password for configured number for sending messages to user through whatsapp provider API calls                                                                        |
@@ -134,7 +133,7 @@ Also add the message bundle, validation and service code for locality searcher i
 | `USER_SERVICE_HARDCODED_PASSWORD` | This variable contain fixed value of login password and otp. This value has to configured in _env_-secrets.yaml.                                                       |
 | `GEO_SEARCH`                      | Boolean flag to enable and disable city / locality nlp search                                                                                                          |
 
-Configuration of Telemetry File
+**Configuration of Telemetry File**
 
 Add this [telemetry file](https://github.com/egovernments/configs/pull/629/files) in [config repo](https://github.com/egovernments/configs/tree/DEV/egov-indexer) and mention the filename in respective [environment yaml file](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L263).
 
@@ -146,9 +145,9 @@ Add this [telemetry file](https://github.com/egovernments/configs/pull/629/files
 
 [<img src="https://github.com/fluidicon.png" alt="" data-size="line">RAIN-2768 Added entry in cron job api config file · egovernments/egov-mdms-data@30881ab](https://github.com/egovernments/egov-mdms-data/commit/30881ab4f759c8b607417be2047b46865ec953ef)
 
-### **Localisation for PGR service** <a href="#hardbreak-localisation-for-pgr-service-hardbreak" id="hardbreak-localisation-for-pgr-service-hardbreak"></a>
+#### **Localisation for PGR service** <a href="#hardbreak-localisation-for-pgr-service-hardbreak" id="hardbreak-localisation-for-pgr-service-hardbreak"></a>
 
-**Information Images for PGR and Open Search**
+Information Images for PGR and Open Search
 
 ![Location Share Image](<../../../../.gitbook/assets/image (280).png>)
 
@@ -158,17 +157,15 @@ Add this [telemetry file](https://github.com/egovernments/configs/pull/629/files
 
 ### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-|                              |                                                                                                                                                                                                                        |
+| Title                        | Link                                                                                                                                                                                                                   |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Title**                    | **Link**                                                                                                                                                                                                               |
 | Chatbot Message Localisation | [Chatbot Message Localisation Doc](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1174306907/Xstate-Chatbot+Message+Localisation?atlOrigin=eyJpIjoiOTg3NTVmYTRhYTgzNDE3ODliODIzN2E1ODIxNmFkNmYiLCJwIjoiYyJ9) |
 | nlp-search engine            | [NLP Engine Service](../nlp-engine-service.md)                                                                                                                                                                         |
 
 ### API List
 
-|                          |                                                                                                                            |
+| Title                    | Link                                                                                                                       |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| **Title**                | **Link**                                                                                                                   |
 | /xstate-chatbot/message  | [https://www.getpostman.com/collections/57615217a846330672c6](https://www.getpostman.com/collections/57615217a846330672c6) |
 | /xstate-chatbot/reminder | [https://www.getpostman.com/collections/47c10d1bc82a7133c269](https://www.getpostman.com/collections/47c10d1bc82a7133c269) |
 | /xstate-chatbot/status   | [https://www.getpostman.com/collections/47c10d1bc82a7133c269](https://www.getpostman.com/collections/47c10d1bc82a7133c269) |

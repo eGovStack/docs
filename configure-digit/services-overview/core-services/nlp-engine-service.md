@@ -3,7 +3,7 @@
 ## Overview
 
 In the existing version of the chatbot, for the PGR complaint creation feature, the user has to select his/her city from a drop-down menu by visiting the mSeva website. This significantly reduces user convenience as the user is required to constantly switch pages.\
-To overcome the above inconvenience, nlp-engine service is used. The service has an algorithm that uses _**fuzzy matching**_ and _**pattern recognition**_ to recognise the city provided by the user as input. Based on the user input, the cities having the highest match ratio with the input are being returned as the output list. A list comprising all the city names in English, Punjabi and Hindi was used as a reference tool for this service.
+To overcome the above inconvenience, the nlp-engine service is used. The service has an algorithm that uses _**fuzzy matching**_ and _**pattern recognition**_ to recognise the city provided by the user as input. Based on the user input, the cities having the highest match ratio with the input are being returned as the output list. A list comprising all the city names in English, Punjabi and Hindi was used as a reference tool for this service.
 
 ## Pre-requisites
 
@@ -19,13 +19,12 @@ Before you proceed with the documentation, make sure the following pre-requisite
 * City fuzzy search can support input data in _English, Hindi and Punjabi_ language.
 * Provides locality fuzzy search feature which returns the list of localities having the highest match ratio with the input.
 
-|                           |                                                                                                                            |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **Environment Variables** | **Description**                                                                                                            |
-| `MDMS_MODULE_NAME`        | Contains the module name of mdms required for nlp-engine.                                                                  |
-| `CITY_MASTER`             | Contains the file name of mdms master file which contains the city names in various locale.                                |
-| `CITY_LOCALE_MASTER`      | Contains the file name of mdms master file which contains the tenantid of the cities present in `CityNames.json` mdms file |
-| `STATE_LEVEL_TENANTID`    | Contains the state level tenantid                                                                                          |
+| Environment Variables  | Description                                                                                                                |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `MDMS_MODULE_NAME`     | Contains the module name of mdms required for nlp-engine.                                                                  |
+| `CITY_MASTER`          | Contains the file name of mdms master file which contains the city names in various locale.                                |
+| `CITY_LOCALE_MASTER`   | Contains the file name of mdms master file which contains the tenantid of the cities present in `CityNames.json` mdms file |
+| `STATE_LEVEL_TENANTID` | Contains the state level tenantid                                                                                          |
 
 ## Interaction Diagram
 
@@ -33,11 +32,11 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 ![](<../../../.gitbook/assets/image (284).png>)
 
-![](<../../../.gitbook/assets/image (298).png>)
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/image (293).png>)
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/image (299) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ## Deployment Details
 
@@ -66,17 +65,19 @@ The nlp-engine service is used to locate the user city and locality by using fuz
 
 #### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-|             |                                                                                                                                                                                                                                     |
+| Description | Link                                                                                                                                                                                                                                |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Title**   | **Link**                                                                                                                                                                                                                            |
 | NLP Chatbot | [<img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico" alt="" data-size="line">Documentation on NLP Chatbot](https://docs.google.com/document/d/1Z3IgyjlZzAchlMPfURmUrgVfcSqU316R\_0Z6KNrRbLo/edit?usp=sharing) |
 
 ## API List
 
-|                              |                                                                                                                            |
+| Description                  | Link                                                                                                                       |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-|                              | **Link**                                                                                                                   |
 | _/nlp-engine/fuzzy/city_     | [https://www.getpostman.com/collections/9cd7600909d4ed16c173](https://www.getpostman.com/collections/9cd7600909d4ed16c173) |
 | _/nlp-engine/fuzzy/locality_ | [https://www.getpostman.com/collections/9cd7600909d4ed16c173](https://www.getpostman.com/collections/9cd7600909d4ed16c173) |
 
 _(Note: All the APIs are in the same postman collection therefore the same link is added in each row)_
+
+__
+
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
