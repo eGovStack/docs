@@ -1,12 +1,6 @@
 # Indexer Configuration
 
-## Overview
-
-Indexer uses a config file per module to store all the configurations pertaining to that module. Indexer reads multiple such files at start-up to support indexing for all the configured modules. In config we define source and, destination elastic search index name, custom mappings for data transformation and mappings for data enrichment.&#x20;
-
-## Sample Configuration
-
-Below is the sample configuration for indexing TL application creation data into elastic search.
+Indexer uses a config file per module to store all the configurations pertaining to that module. Indexer reads multiple such files at start-up to support indexing for all the configured modules. In config we define source and, destination elastic search index name, custom mappings for data transformation and mappings for data enrichment. Below is the sample configuration for indexing TL application creation data into elastic search.
 
 
 
@@ -56,12 +50,11 @@ ServiceMaps:
             outJsonPath: $.Data.tenantData
 ```
 
-## **Variable List** <a href="#hardbreak-the-configuration-file-contains-following-keys" id="hardbreak-the-configuration-file-contains-following-keys"></a>
+#### **The configuration file contains the following keys:-** <a href="#hardbreak-the-configuration-file-contains-following-keys" id="hardbreak-the-configuration-file-contains-following-keys"></a>
 
-The table below lists the key configuration variables.
-
-| Variable Name      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Variable Name**  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | serviceName        | Name of the module to which this configuration belongs.                                                                                                                                                                                                                                                                                                                                                                                                |
 | summary            | Summary of the module.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | version            | Version of the configuration.                                                                                                                                                                                                                                                                                                                                                                                                                          |

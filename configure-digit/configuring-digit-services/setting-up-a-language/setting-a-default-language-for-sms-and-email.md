@@ -19,7 +19,7 @@ Before proceeding with the configuration, make sure the following pre-requisites
 * The language can be decided by the end-users (citizens or employees). End-users can select the language before logging in or after logging in from the inbox page.
 * If the language is not chosen by the end-user, then SMS/Email is received in the language of, State requirement-based state-level configured language.
 
-### Configuration Details
+## Configuration Details
 
 Sms and Email localization are pushed to the database through the endpoints for all the languages added to the system.\
 **Localization format for SMS/Email**
