@@ -6,7 +6,7 @@ description: DSS Backend Configuration Manual
 
 ## Overview <a href="#overview" id="overview"></a>
 
-DSS has two sides to it. One is the process in which the Data is pooled to ElasticSearch and the other is the way it is fetched, aggregated, computed, transformed and sent across. As this revolves around a variety of data sets, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, then it is just a configuration away from getting the newly introduced scenario involved in this flow of the process.
+DSS has two sides to it. One is the process in which the data is pooled to ElasticSearch and the other is the way it is fetched, aggregated, computed, transformed and sent across. As this revolves around a variety of data sets, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, then it is just a configuration away from getting the newly introduced scenario involved in this flow of the process.
 
 This document explains the steps on how to define the configurations for both sides of DSS. Analytics and Ingest Pipeline Services.
 

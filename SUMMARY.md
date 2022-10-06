@@ -139,7 +139,6 @@
         * [Collection Service Migration](configure-digit/services-overview/business-services/collection-service/collection-service-migration.md)
         * [Collection Service V2](configure-digit/services-overview/business-services/collection-service/collection-service-v2.md)
       * [Billing Collection Integration](configure-digit/services-overview/business-services/billing-collection-integration.md)
-      * [Bill Amendment](configure-digit/services-overview/business-services/bill-amendment.md)
       * [Dashboard Analytics - Backend](configure-digit/services-overview/business-services/dashboard-analytics-backend.md)
         * [DSS Features Enhancements](configure-digit/services-overview/business-services/dss-features-enhancements.md)
         * [DSS Dashboard - Technical Document for UI](configure-digit/services-overview/business-services/dss-dashboard-technical-document-for-ui.md)

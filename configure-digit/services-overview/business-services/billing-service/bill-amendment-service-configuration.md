@@ -6,7 +6,7 @@ The consumer sometimes needs additional amounts (Amendments) added to their bill
 
 ## **Pre-requisites**
 
-* Prior Knowledge of Billing-Service in Digit framework.
+* Prior knowledge of billing-service in the DIGIT framework.
 
 ## **Key Functionalities**
 
