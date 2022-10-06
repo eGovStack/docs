@@ -72,9 +72,8 @@ The workflow configuration can be used by any module which performs a sequence o
 
 ### Doc Links
 
-|                                              |                                                                                                                                              |
+| Title                                        | Link                                                                                                                                         |
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Title**                                    | **Link**                                                                                                                                     |
 | Configuring Workflows For New Product/Entity | [Configuring Workflows For New Product/Entity](../../configuring-digit-services/configuring-workflows/configuring-workflow-for-an-entity.md) |
 | Setting Up Workflows                         | [Setting Up Workflows](../../configuring-digit-services/configuring-workflows/setting-up-workflow.md)                                        |
 | API Swagger Documentation                    | [Swagger Documentation](https://raw.githubusercontent.com/egovernments/core-services/master/docs/worfklow-2.0)                               |
@@ -82,9 +81,8 @@ The workflow configuration can be used by any module which performs a sequence o
 
 ### API List
 
-|                             |                                                                                                                            |
+| Title                       | Link                                                                                                                       |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Title                       | **Link**                                                                                                                   |
 | _/businessservice/\_create_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 | _/businessservice/\_update_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 | _/businessservice/\_search_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
@@ -92,5 +90,7 @@ The workflow configuration can be used by any module which performs a sequence o
 | _/process/\_search_         | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 
 _(Note: All the APIs are in the same postman collection, therefore, the same link is added in each row)_
+
+__
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

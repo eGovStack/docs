@@ -20,9 +20,8 @@ Before you proceed with the documentation, make sure the following pre-requisite
 * The election hierarchy has the locations divided into several types like zone, election ward, block, street and locality. The Revenue hierarchy has the locations divided into a zone, ward, block and locality.
 * The model which defines the localities like zone, ward and etc is a boundary object which contains information like name, lat, long, parent or children boundary if any. The boundaries come under each other in a hierarchy - a zone contains wards, a ward contains blocks, and a block contains locality. The order in which the boundaries are contained in each other will differ based on the tenants.
 
-|                                     |                                                 |
+| Environmental Variables             | Description                                     |
 | ----------------------------------- | ----------------------------------------------- |
-| **Environment Variables**           | **Description**                                 |
 | egov.services.egov\_mdms.hostname   | Host name for MDMS service.                     |
 | egov.services.egov\_mdms.searchpath | MDMS Search URL.                                |
 | egov.service.egov.mdms.moduleName   | MDMS module which contain boundary master.      |
@@ -67,9 +66,8 @@ The boundary data has been moved to mdms from the master tables in DB. The locat
 }
 ```
 
-|                                   |                                                                               |
+| Attribute Name                    | Description                                                                   |
 | --------------------------------- | ----------------------------------------------------------------------------- |
-| **Attribute Name**                | **Description**                                                               |
 | tenantId                          | The tenantId (ULB code) for which the boundary data configuration is defined. |
 | moduleName                        | The name of the module where TenantBoundary master is present.                |
 | TenantBoundary.hierarchyType.code | Unique code of the hierarchy type.                                            |
@@ -108,16 +106,14 @@ The egov-location API’s can be used by any module which needs to store the loc
 
 ### Doc Links
 
-|             |                                                                                                                                                                                                                                                    |
+| Title       | Link                                                                                                                                                                                                                                               |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Title**   | **Link**                                                                                                                                                                                                                                           |
 | Local setup | [https://github.com/egovernments/core-services/blob/669c94194911ada92b6cb3c87e5fad7a7478cc6a/egov-location/LOCALSETUP.md](https://github.com/egovernments/core-services/blob/669c94194911ada92b6cb3c87e5fad7a7478cc6a/egov-location/LOCALSETUP.md) |
 
 ### API List
 
-|                     |                                                                                                                                                                                                                                                                                |
+| Title               | Link                                                                                                                                                                                                                                                                           |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|                     | **Link**                                                                                                                                                                                                                                                                       |
 | /boundarys/\_search | [https://github.com/egovernments/core-services/blob/master/egov-location/postman/BoundaryNewVersion11Endpoint.postman\_collection.json](https://github.com/egovernments/core-services/blob/master/egov-location/postman/BoundaryNewVersion11Endpoint.postman\_collection.json) |
 | /geography/\_search | [https://github.com/egovernments/core-services/blob/master/egov-location/postman/BoundaryNewVersion11Endpoint.postman\_collection.json](https://github.com/egovernments/core-services/blob/master/egov-location/postman/BoundaryNewVersion11Endpoint.postman\_collection.json) |
 | /tenant/\_search    | [https://github.com/egovernments/core-services/blob/master/egov-location/postman/BoundaryNewVersion11Endpoint.postman\_collection.json](https://github.com/egovernments/core-services/blob/master/egov-location/postman/BoundaryNewVersion11Endpoint.postman\_collection.json) |

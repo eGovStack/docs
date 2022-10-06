@@ -55,7 +55,7 @@ The MDMS service provides ease of access to master data for any service.
 
 ### API List <a href="#api-list" id="api-list"></a>
 
-|                               |                                                                                                                            |
+| Title                         | Link                                                                                                                       |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | egov-mdms-service/v1/\_search | [https://www.getpostman.com/collections/fcc9a71375b674de1308](https://www.getpostman.com/collections/fcc9a71375b674de1308) |
 
