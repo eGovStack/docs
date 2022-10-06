@@ -1,6 +1,12 @@
 # Persister Configuration
 
-Persister Service persists data in the database in a sync manner providing very low latency. The queries which have to be used to insert/update data in the database are written in yaml file. The values which have to be inserted are extracted from the json using jsonPaths defined in the same yaml configuration. Below is a sample configuration which inserts data in a couple of tables.
+## Overview
+
+Persister Service persists data in the database in a sync manner providing very low latency. The queries which have to be used to insert/update data in the database are written in yaml file. The values which have to be inserted are extracted from the json using jsonPaths defined in the same yaml configuration.&#x20;
+
+## Sample Configuration
+
+Below is a sample configuration which inserts data in a couple of tables.
 
 ```
 serviceMaps:
@@ -103,20 +109,23 @@ The above configuration is used to insert data published on the kafka topic save
       - jsonPath: $.service.address.id
 ```
 
-The above configuration is used to update the data in tables. Similarly, the upsert operation can be done using ON CONFLICT() function in psql. Following table describe each field in the configuration.
+The above configuration is used to update the data in tables. Similarly, the upsert operation can be done using ON CONFLICT() function in psql.&#x20;
 
-|                   |                                                                  |
-| ----------------- | ---------------------------------------------------------------- |
-| **Variable Name** | **Description**                                                  |
-| serviceName       | The module name to which the configuration belongs               |
-| version           | Version of the config                                            |
-| description       | Detailed description of the operations performed by the config   |
-| fromTopic         | Kafka topic from which data has to be persisted in DB            |
-| isTransaction     | Flag to enable/disable perform operations in Transaction fashion |
-| query             | Prepared Statements to insert/update data in DB                  |
-| basePath          | JsonPath of the object that has to be inserted/updated.          |
-| jsonPath          | JsonPath of the fields that has to be inserted in table columns  |
-| type              | Type of field                                                    |
-| dbType            | DB Type of the column in which field is to be inserted           |
+## Variable List
+
+The table below describes each field variable in the configuration.
+
+| Variable Name | Description                                                      |
+| ------------- | ---------------------------------------------------------------- |
+| serviceName   | The module name to which the configuration belongs               |
+| version       | Version of the config                                            |
+| description   | Detailed description of the operations performed by the config   |
+| fromTopic     | Kafka topic from which data has to be persisted in DB            |
+| isTransaction | Flag to enable/disable perform operations in Transaction fashion |
+| query         | Prepared Statements to insert/update data in DB                  |
+| basePath      | JsonPath of the object that has to be inserted/updated.          |
+| jsonPath      | JsonPath of the fields that has to be inserted in table columns  |
+| type          | Type of field                                                    |
+| dbType        | DB Type of the column in which field is to be inserted           |
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

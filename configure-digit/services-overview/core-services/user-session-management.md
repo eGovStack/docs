@@ -12,7 +12,7 @@ Refresh token also has an expiry period and once it gets expired it cannot be us
 
 #### Environment variables to configure expiry time <a href="#environment-variables-to-configure-expiry-time" id="environment-variables-to-configure-expiry-time"></a>
 
-| Param                             | Description                                                    |
+| Parameter                         | Description                                                    |
 | --------------------------------- | -------------------------------------------------------------- |
 | access.token.validity.in.minutes  | Duration in minutes for which the authorization token is valid |
 | refresh.token.validity.in.minutes | Duration in minutes for which the refresh token is valid       |

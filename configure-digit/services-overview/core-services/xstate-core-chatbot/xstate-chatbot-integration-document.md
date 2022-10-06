@@ -16,7 +16,7 @@ It allows the user to view receipts and pay the bills for Property, Trade Licenc
 * Allow users to change the language of their choice to have a better experience.
 * Put user interactions on an elastic search for Telemetry.
 
-## Integration
+## Integration Details
 
 ### Integration Scope <a href="#integration-scope" id="integration-scope"></a>
 
@@ -30,7 +30,7 @@ The XState chatbot can be integrated with any other module to improve the ease o
 * Creating an additional channel for payment.
 * Remove dependency on mobile/web apps or counters.
 
-### Integration Details <a href="#integration-details" id="integration-details"></a>
+### Integration Approach <a href="#integration-details" id="integration-details"></a>
 
 #### Integration of New Whatsapp Provider <a href="#integration-of-new-whatsapp-provider" id="integration-of-new-whatsapp-provider"></a>
 
@@ -46,6 +46,8 @@ As this is a revamped version of the chatbot service, all of the secrets should 
 
 The integration of PGR with a chatbot can be enabled and disabled by making changes in this [file](https://github.com/egovernments/core-services/blob/xstate-chatbot/xstate-chatbot/nodejs/src/machine/service/service-loader.js).\
 By exporting the respective PGR service file, the PGR service feature can be sable and vice versa.
+
+## Configuration Details
 
 **Configuration of PGR version in chatbot**
 
@@ -70,7 +72,7 @@ To configure the filestoreid for an informational image follow the steps mention
 1. Download the images from the section _**Information Images for PGR and Open Search**_
 2. Upload the image into filestore server. Use the upload file API from this postman collection([https://www.getpostman.com/collections/bdb059c5af698f0d81d6)](https://www.getpostman.com/collections/bdb059c5af698f0d81d6)
 3. For PGR information image mention the filestore id [here](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L219) in the environment file.
-4. For open search information image mention the filestore id [here](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L220) in the environment file.
+4. For open search, the information image mentions the filestore id [here](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L220) in the environment file.
 
 **For example:**
 
@@ -82,7 +84,7 @@ b) if supportedLocales: process.env.SUPPORTED\_LOCALES || 'hi\_IN,en\_IN'
 
 then valuefirst-notification-resolved-templateid: "6789,12345"
 
-_(Note: Both the list should not be empty, it must contain at least one element)_
+_(Note: Both lists should not be empty - they must contain at least one element)_
 
 #### **Configuration of push notification template messages** with a button <a href="#hardbreak-configuration-of-push-notification-template-messages-with-button" id="hardbreak-configuration-of-push-notification-template-messages-with-button"></a>
 
@@ -93,26 +95,24 @@ There are two types of button message
 * Quick Reply
 * Call To Action
 
-More details can be found in the value first document.
+The Value First document below provides more details.&#x20;
 
 {% file src="../../../../.gitbook/assets/userguide-valuefirst-whatsapp-v1.0.4-190421-1-.pdf" %}
 Value First Whatsapp User Guide
 {% endfile %}
 
-#### Integration of Bill Payment and Receipt Search feature in Xstate-Chatbot: <a href="#integration-of-bill-payment-and-receipt-search-feature-in-xstate-chatbot" id="integration-of-bill-payment-and-receipt-search-feature-in-xstate-chatbot"></a>
+#### Integration of Bill Payment and Receipt Search feature in Xstate-Chatbot <a href="#integration-of-bill-payment-and-receipt-search-feature-in-xstate-chatbot" id="integration-of-bill-payment-and-receipt-search-feature-in-xstate-chatbot"></a>
 
-The integration of the Bill payment and receipt search feature with the chatbot can be enabled and disabled by making changes in this [file](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/service-loader.js). By exporting the respective bill service and receipt service file, the payment and receipt search feature can be enable**d** and vice versa.
+The integration of the Bill payment and receipt search feature with the chatbot is enabled and disabled by making changes in this [file](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/service-loader.js). The payment and receipt search feature can be enabled and vice versa by exporting the respective bill service and receipt service file.
 
 **Configuration of module for Bill payment and Receipt search**
 
 To configure the list of modules to appear as an option for payment and receipt, Add the module business service code in the list present in the [environment](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L216) file.
 
 **For example:**\
-If `bill-supported-modules: "WS, PT, TL"`\
-then Water and Sewerage, Property, and Trade license module would appear for bill payment and\
-receipt search.
+If the applicable modules are defined in the variable - `bill-supported-modules: "WS, PT, TL" -`the defined modules will appear in the bill payment and receipt search. In the given example,  the modules Water and Sewerage, Property Tax, and Trade license will appear for bill payment and receipt search.
 
-Also add the message bundle, validation and service code for locality searcher in [egov-bill](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/egov-bill.js) and [egov-receipt](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/egov-receipts.js) file.
+Add the message bundle, validation and service code for locality searcher in [egov-bill](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/egov-bill.js) and [egov-receipt](https://github.com/egovernments/core-services/blob/develop/xstate-chatbot/nodejs/src/machine/service/egov-receipts.js) file.
 
 | Environmental Variables           | Description                                                                                                                                                            |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -135,7 +135,7 @@ Also add the message bundle, validation and service code for locality searcher i
 
 **Configuration of Telemetry File**
 
-Add this [telemetry file](https://github.com/egovernments/configs/pull/629/files) in [config repo](https://github.com/egovernments/configs/tree/DEV/egov-indexer) and mention the filename in respective [environment yaml file](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L263).
+Add this [telemetry file](https://github.com/egovernments/configs/pull/629/files) in [config repo](https://github.com/egovernments/configs/tree/DEV/egov-indexer) and mention the filename in the respective [environment yaml file](https://github.com/egovernments/DIGIT-DevOps/blob/master/deploy-as-code/helm/environments/qa.yaml#L263).
 
 #### **Searcher config file:** <a href="#hardbreak-searcher-config-file" id="hardbreak-searcher-config-file"></a>
 

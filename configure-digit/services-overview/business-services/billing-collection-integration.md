@@ -83,7 +83,7 @@ To create a receipt in DIGIT, please ensure that OAuth token is generated as per
 * [https://www.getpostman.com/collections/824d6b50b728bccd86d4](https://www.getpostman.com/collections/824d6b50b728bccd86d4)
 * [https://raw.githubusercontent.com/egovernments/business-services/master/Docs/collection-services/V-2-0.yml](https://raw.githubusercontent.com/egovernments/business-services/master/Docs/collection-services/V-2-0.yml)
 * Choose Collection Service from the dropdown
-* Go to payment
-* Go to the make payment
+* Go to Payment
+* Go to Make Payment
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

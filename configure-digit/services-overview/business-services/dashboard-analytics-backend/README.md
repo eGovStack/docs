@@ -1,10 +1,12 @@
-# Dashboard Analytics - Backend
+---
+description: DSS Backend Configuration Manual
+---
 
-## DSS Backend Configuration Manual <a href="#dss-backend-configuration-manual" id="dss-backend-configuration-manual"></a>
+# Dashboard Analytics - Backend
 
 ## Overview <a href="#overview" id="overview"></a>
 
-DSS has two sides to it. One is the process in which the Data is pooled to ElasticSearch and the other being the way it is fetched, aggregated, computed, transformed and sent across. As this revolves around a variety of Data Set, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, then it is just a configuration away from getting the newly introduced scenario involved in this flow of the process.
+DSS has two sides to it. One is the process in which the Data is pooled to ElasticSearch and the other is the way it is fetched, aggregated, computed, transformed and sent across. As this revolves around a variety of data sets, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, then it is just a configuration away from getting the newly introduced scenario involved in this flow of the process.
 
 This document explains the steps on how to define the configurations for both sides of DSS. Analytics and Ingest Pipeline Services.
 
@@ -36,44 +38,43 @@ Below is the list of configurations -
 
 Topic Context Configurations
 
-Topic Context Configuration is an outline to define which data is received on which Kafka Topic.
+Topic context configuration is an outline to define which data is received on which Kafka Topic.
 
-Indexer Service and many other services are sending out data on different Kafka Topics. If the Ingest Service is asked to receive those data and pass it through the pipeline, the context and the version of the data being received has to be set. This configuration is used to identify which kafka topic consumed the data and what is the mapping for that.
+Indexer Service and many other services are sending out data on different Kafka Topics. If the Ingest Service receives the data and passes it through the pipeline, the context and the version of the data received have to be set. This configuration is used to identify which Kafka topic consumed the data and the mapping details.
 
-![Figure 1](../../../.gitbook/assets/110.png)
+![Figure 1](../../../../.gitbook/assets/110.png)
 
-[Click here for Full Configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/TopicContextConfiguration.json)
+[Click here for the full configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/TopicContextConfiguration.json)
 
-|                    |                                                                                                                    |
+| Parameter Name     | Description                                                                                                        |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| **Parameter Name** | **Description**                                                                                                    |
 | topic              | Holds the name of the Kafka Topic on which the data is being received                                              |
 | dataContext        | Context Name which needs to be set for further actions in the pipeline                                             |
 | dataContextVersion | Version of the Data Structure is set here as there might be different structured data at a different point in time |
 
-1. Validator Schema
+Validator Schema
 
-Validator Schema is a configuration Schema Library from **Everit**By passing the data against this schema, it ensures whether the data abides by the rules and requirements of the schema which has been defined.
+Validator schema is a configuration schema library from **Everit.** By passing the data against this schema, it ensures whether the data abides by the rules and requirements of the schema which has been defined.
 
-![Figure 2](../../../.gitbook/assets/111.png)
+![Figure 2](../../../../.gitbook/assets/111.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/validator\_transaction\_v1.json)
 
-1. JOLT Transformation Schema
+JOLT Transformation Schema
 
-JOLT is a JSON to JSON Transformation Library. In order to change the structure of the data and transform it in a generic way, JOLT has been used.
+JOLT is a JSON to JSON transformation library. In order to change the structure of the data and transform it in a generic way, JOLT has been used.
 
-While the transformation schemas are written for each Data Context, the data is transformed against the schema to obtain a transformed data.
+While the transformation schemas are written for each data context, the data is transformed against the schema to obtain transformed data.
 
 [Follow the slide deck for JOLT Transformations](https://docs.google.com/presentation/d/1sAiuiFC4Lzz4-064sg1p8EQt2ev0o442MfEbvrpD1ls/edit#slide=id.p)
 
-![Figure 3](../../../.gitbook/assets/112.png)
+![Figure 3](../../../../.gitbook/assets/112.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform\_collection\_v1.json)
 
-1. Enrichment Domain Configuration
+Enrichment Domain Configuration
 
-This configuration defines and directs the Enrichment Process which the data goes through.
+This configuration defines and directs the enrichment process that the data goes through.
 
 For example, if the Data which is incoming is belonging to a Collection Module data, then the Collection Domain Config is picked. And based on the Business Type specified in the data, the right config is picked.
 
@@ -81,16 +82,15 @@ In order to enhance the data of Collection, the domain index specified in the co
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/DomainConfig.json)
 
-|                                               |                                                                                                                                                                        |
+| Parameter Name                                | Description                                                                                                                                                            |
 | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Paremter Name**                             | **Description**                                                                                                                                                        |
 | id                                            | Unique Identifier for the Configuration within the configuration document                                                                                              |
 | businessType                                  | This defines as in which kind of Domain / Service is the data related to. Based on this business type, query and enhancements are decided                              |
 | indexName                                     | Based on Business Type, Index Name is defined as to which index has to be queried to get the enhancements done from                                                    |
 | query                                         | Query to execute to get the Domain Level Object is defined here.                                                                                                       |
 | <p>targetReferences</p><p>sourceReference</p> | Fields which are variables in order to get the domain level objects are defined here. The variables and where all the values has to be picked from are documented here |
 
-1. JOLT Domain Transformation Schema
+JOLT Domain Transformation Schema
 
 As a part of Enhancement, once the domain level object is obtained, we might not need the complete document as is in the end data product.
 
@@ -100,23 +100,23 @@ In order to do that, we make use of JOLT again and write schemas to keep the req
 
 The above configuration is used to transform the data response in the enrichment layer.
 
-![Figure 4](../../../.gitbook/assets/113.png)
+![Figure 4](../../../../.gitbook/assets/113.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform\_tl\_v1.json)
 
-1. Use case:- JOLT Transformation Schema for collection V2
+Use case:- JOLT Transformation Schema for collection V2
 
-JOLT transformation schema for payment-v1 has taken as a use case to explain the context collection and context version v2. The payment records are processed/transformed with the schema. The schema supports splitting the billing records into an independent new record. So if there are 2 bill items in the collection/payment incoming data then this results in 2 collection records in turn.
+JOLT transformation schema for payment-v1 has been taken as a use case to explain the context collection and context version v2. The payment records are processed/transformed with the schema. The schema supports splitting the billing records into an independent new record. So if there are 2 bill items in the collection/payment incoming data then this results in 2 collection records in turn.
 
-![Figure 5](../../../.gitbook/assets/114.png)
+![Figure 5](../../../../.gitbook/assets/114.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform\_collection\_v2.json)
 
 Here: **$i**, the variable value that gets incremented for the number of records of paymentDetails
 
-**$j**, the variable value that gets incremented for the number of records of billDetails.
+**$j**, the variable value that gets incremented for the number of records of bill details.
 
-**Note:** For kafka connect to work, Ingest pipeline application properties or in environments direct push must be disabled.
+**Note:** For Kafka connect to work, Ingest pipeline application properties or in environments direct push must be disabled.
 
 es.push.direct=false
 
@@ -138,13 +138,12 @@ In order to configure each visualization and its properties, we have Chart API C
 
 In this, Visualization Code, which happens to be the key, will be having its properties configured as a part of the configuration and are easily changeable.
 
-![Figure 6](../../../.gitbook/assets/115.png)
+![Figure 6](../../../../.gitbook/assets/115.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/ChartApiConfig.json)
 
-|                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Parameter Name              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameter Name**          | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Key (e.g: totalApplication) | This is the Visualization Code. This key will be referred to in further visualization configurations. This is the key that will be used by the client application to indicate which visualization is needed for display.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | chartName                   | The name of the Chart has to be used as a label on the Dashboard. The name of the Chart will be a detailed name. In this configuration, the Name of the Chart will be the code of Localization which will be used by Client Side                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | queries                     | Some visualizations are derived from a specific data source. While some others are derived from different data sources and are combined together to get a meaningful representation. The queries of aggregation which are to be used to fetch out the right data in the right aggregated format are configured here.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -161,19 +160,18 @@ In this, Visualization Code, which happens to be the key, will be having its pro
 | aggregationPaths            | All the queries will be having Aggregation names in it. In order to fetch the value out of each Aggregation Responses, the name of the aggregation in the query will be an easy bet. These aggregation paths will have the names of Aggregation in it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | \_comment                   | In order to display information on the “i” symbol of each visualization, Visualization Information is maintained in this field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-1. Master Dashboard Configuration
+Master Dashboard Configuration
 
-Master Dashboard Configuration is the main configuration that defines which Dashboards that are to be painted on the screen.
+Master dashboard configuration is the main configuration that defines which Dashboards that are to be painted on the screen.
 
-It includes all the Visualizations, their groups, the charts which comes within them and even their dimensions as what should be their height and width.
+It includes all the visualizations, their groups, the charts which come within them and even their dimensions as what should be their height and width.
 
-![Figure 7](../../../.gitbook/assets/116.png)
+![Figure 7](../../../../.gitbook/assets/116.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/MasterDashboardConfig.json)
 
-|                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Parameter Name                                                                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Parameter Name**                                                                                                  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | name                                                                                                                | Name of the Dashboard which has to be displayed as Page Heading                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | id                                                                                                                  | Unique Identifier of the Dashboard which should be used later for Querying each of these Visualizations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | isActive                                                                                                            | Active Indicator which can be used to quickly disable a dashboard if required.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -195,21 +193,20 @@ It includes all the Visualizations, their groups, the charts which comes within 
 | visualizations.vizArray.charts.filters                                                                              | Filters that can be applied to the Visualization and what are the fields which are filterable are mentioned here.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | visualizations.vizArray.charts.headers                                                                              | In some cases, there are headers which can be a title or additional information for the Chart Data which gets represented. This field is kept open to accommodate the information which can be sent along with the Chart Data in itself.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-1. Role Dashboard Mappings Configuration
+Role Dashboard Mappings Configuration
 
-Master Dashboard Configuration which was explained earlier hold the list of Dashboards that are available. Given the instance where Role Action Mapping is not maintained in the Application Service, this configuration will act as Role - Dashboard Mapping Configuration
+Master dashboard configuration which was explained earlier holds the list of dashboards that are available. Given the instance where role action mapping is not maintained in the application service, this configuration will act as a Role - Dashboard Mapping Configuration
 
 In this, each Role is mapped against the Dashboard which they are authorized to see
 
 This was used earlier when the Role Action Mapping of eGov was not integrated. Later, when the Role Action Mapping started controlling the Dashboards to be seen on the client-side, this configuration is just used to enable the Dashboards for viewing.
 
-![Figure 8](../../../.gitbook/assets/119.png)
+![Figure 8](../../../../.gitbook/assets/119.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/RoleDashboardMappingsConf.json)
 
-|                                                        |                                                                                                                                                                 |
+| Parameter Name                                         | Description                                                                                                                                                     |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameter Name**                                     | **Description**                                                                                                                                                 |
 | roles                                                  | List of Roles that are available in the system                                                                                                                  |
 | roles.\_comment                                        | Role Description and comment on why does this role has an entry in this configuration and sums up the summary as to what are the things that are to be enabled. |
 | roles.roleId                                           | Unique Identifier of the Role for which Access is being given                                                                                                   |
@@ -222,7 +219,7 @@ This was used earlier when the Role Action Mapping of eGov was not integrated. L
 
 ## Adding Configurations <a href="#adding-configurations" id="adding-configurations"></a>
 
-Adding Roles and Dashboards :
+Adding Roles and Dashboards
 
 To add a new role, RoleDashboardMappingsConf.json (**roles** node) configuration file has to be modified as below
 
@@ -230,9 +227,9 @@ To add a new role, RoleDashboardMappingsConf.json (**roles** node) configuration
 Note: Any number of roles & dashboards can be added
 {% endhint %}
 
-Below as in Figure 9. is a sample to add a new role object, new dashboard object
+Below as in Figure 9. is a sample to add a new role object, a new dashboard object
 
-![Figure 9](../../../.gitbook/assets/120.png)
+![Figure 9](../../../../.gitbook/assets/120.png)
 
 To add a new dashboard, MasterDashboardConfig.json (**dashboards** node) has to be modified as below in Figure 10.
 
@@ -240,45 +237,43 @@ To add a new dashboard, MasterDashboardConfig.json (**dashboards** node) has to 
 Note: dashboards array add a new dashboard as given below
 {% endhint %}
 
-![Figure 10](../../../.gitbook/assets/121.png)
+![Figure 10](../../../../.gitbook/assets/121.png)
 
-## Adding Visualizations in existing Dashboard
+## Adding Visualizations To Existing Dashboards
 
 To add new visualisations, again MasterDashboardConfig.json (**vizArray** node) has to be modified as below as shown in Figure 11.
 
 Note: vizArray is to hold multiple visualizations
 
-![Figure 11](../../../.gitbook/assets/122.png)
+![Figure 11](../../../../.gitbook/assets/122.png)
 
-## Adding charts for visualizations
+## Adding Charts For Visualizations
 
 To add a new chart, chartApiConf.json has to be modified as shown below. A new chartid has to be added with the chart node object.
 
 **Metric chart Sample as shown in Figure 12.**
 
-![Figure 12](../../../.gitbook/assets/123.png)
+![Figure 12](../../../../.gitbook/assets/123.png)
 
 **Pie chart Sample as shown in Figure 13.**
 
-![Figure 13](../../../.gitbook/assets/124.png)
+![Figure 13](../../../../.gitbook/assets/124.png)
 
 **Line chart Sample as shown in Figure 14.**
 
-![Figure 14](../../../.gitbook/assets/125.png)
+![Figure 14](../../../../.gitbook/assets/125.png)
 
-\*\*\*\*
-
-**Table chart Sample:** This chart comes **in** 2 kind - table and xtable.
+**Table chart Sample:** This chart is of 2 types - table and xtable.
 
 table (as shown in Figure 15.) type allows to added aggregated fields added as available in the query keys, hence to extract the values based on the key, **aggegationPaths** needs to add along with their data type as in **pathDataTypeMapping**.
 
-![Figure 15](../../../.gitbook/assets/126.png)
+![Figure 15](../../../../.gitbook/assets/126.png)
 
-xtable(as shown in Figure 16.) type allows to add multiple computed fields with the aggregated fields dynamically added.
+xtable(as shown in Figure 16.) type allows the addition of multiple computed fields with the aggregated fields dynamically added.
 
 To add multiple computed columns, **computedFields** \[] where actionName (IComputedField\<T> interface), fields \[] names as in existing in query key, newField as name to appear for computation must be defined.
 
-![Figure 16](../../../.gitbook/assets/127.png)
+![Figure 16](../../../../.gitbook/assets/127.png)
 
 [https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/ChartApiConfig.json](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/ChartApiConfig.json) for the full configuration in detail.
 
@@ -288,22 +283,22 @@ Steps to create charts and visualise are:
 * Add a visualization for the existing dashboard in MasterDashboardConfig.json as defined above.
 * Or in order to create/add a new dashboard create the dashboard in MasterDashboardConfig.json and create a role in RoleDashboardConfig.json
 
-**Configuration Changes for DrillThrough :**
+**Configuration Changes For DrillThroughs :**
 
-1. Example Drill through in Ward table in Property Dashboard.
+Example Drill through in Ward table in Property Dashboard.
 
 wardDrillDown is the visualization code for PT Drill Down. kind is the attribute that shows the type of visualization code. Apart from two things all the attributes are common.
 
-![](../../../.gitbook/assets/128.png)
+![](../../../../.gitbook/assets/128.png)
 
-1. Example Drill through in ComplaintList table in PGR Dashboard.
+Example Drill through in ComplaintList table in PGR Dashboard.
 
 complaintDrillDown is the visualization code for PGR Drill Down.
 
-![](../../../.gitbook/assets/129.png)
+![](../../../../.gitbook/assets/129.png)
 
 The above complaintDrillDown visualization code called in the drill chart parameter.
 
-![](../../../.gitbook/assets/130.png)
+![](../../../../.gitbook/assets/130.png)
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

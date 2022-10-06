@@ -8,51 +8,51 @@ The consumer sometimes needs additional amounts (Amendments) added to their bill
 
 * Prior Knowledge of Billing-Service in Digit framework.
 
-## **Key Functionality**
+## **Key Functionalities**
 
 Amendment mainly works with two types of functionality as follows:
 
 * Amendment
 * Demand
 
-Bill Amendment provides a separate flow to enable workflow and validation for the process of adding additional amounts into the existing demands which were done through the respective modules only till this point in time. An amendment will be allowed only when the reason arises from out of the system to add or reduce the amount from the existing bill belonging to an entity. The reasons are as listed
+Bill Amendment provides a separate flow that triggers the workflow for validating the process of adding additional amounts to existing demands. This validation was earlier available only to the respective modules. An amendment is allowed only when there is a need to add or reduce the amount from the existing bill belonging to an entity. The reasons for such cases could be:
 
 1. Court case settlement
 2. One time waiver
 3. Write-offs
-4. DCB correction (Old demands in paid status)
-5. Remission for Property Tax
+4. DCB correction (old demands in paid status)
+5. Property tax remission
 
 **Criteria:**
 
-There are certain prerequisites to create an amendment,
+Below are certain prerequisites to creating an amendment,
 
 1. presence of demand in the billing system
-2. One of the Reason as Listed above
-3. Valid document proof for the reason
-4. No other Amendment already in workflow
+2. any one of the reasons listed above
+3. valid document proof for the reason
+4. there is no other amendment already in the workflow
 
 **Procedure:**
 
-The process of adding Amendment is as follows
+The process of adding an amendment in specific scenarios is given below.
 
-Please follow the scenarios and let me know in case of doubts. There are two scenarios on how an amendment will be completed which is based on the paid status of the existing demands in the system.
+There are two scenarios on how an amendment is completed based on the paid status of the existing demands in the system.
 
 _**1. when demand is unpaid/partially paid**_
 
-1. create a demand (Or an existing demand can be used) with demand detail → DD1.
-2. Do not pay the bill or make payment partially.
-3. Create an amendment for the same consumer-code (with demand detail → DD2).
-4. approve the amendment, the response should return an amendment with status CONSUMED.
-5. search the demand or fetch bill for the consumer-code, demand/bill should contain demand details of demand and amendment together DD1 and DD2 in the same demand/bill.
+1. Create a demand (Or an existing demand can be used) with demand detail → DD1.
+2. Do not pay the bill or make a partial payment.
+3. Create an amendment for the same consumer code (with demand detail → DD2).
+4. Approve the amendment - the response should return an amendment with the status CONSUMED.
+5. Search the demand or fetch the bill for the consumer code. The demand/bill should contain demand details of the demand and amendment together with DD1 and DD2 in the same demand/bill.
 
-_**2. when demand is completely paid,**_
+_**2. when demand is completely paid**_
 
-1. create demand and make complete payment or choose a consumer-code which is fully paid.
-2. create amendment (with demand detail → DD1).
-3. Approve amendment, the response should be APPROVED this time.
-4. create new demand for the consumer -code (with demand detail → DD3), demand response should contain two demand details DD1 and DD2 saved to the demand.
-5. Now amendment search will return CONSUMED status after the demand is created.
+1. Create demand and make complete payment or choose a consumer code which is fully paid.
+2. Create amendment (with demand detail → DD1).
+3. Approve amendment - the response should be APPROVED.
+4. Create new demand for the consumer code (with demand detail → DD3). The demand response should contain two demand details DD1 and DD2 saved to the demand.
+5. The amendment search returns CONSUMED status after the demand is created.
 
 IMPACT: Does not impact any other functionality other than adding demand details to demands on APPROVAL.
 
@@ -60,7 +60,7 @@ IMPACTED BY: Existence of demands in the system.
 
 ## **Configuration Details**
 
-[Billing Service | Configuration-Details:](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service#Configuration-Details%3A) ​Refer billing-service config for MDMS data. the amendment makes use of the same data set.
+[Billing Service | Configuration-Details:](./#configuration-details) ​Refer to billing-service config for MDMS data. The amendment makes use of the same data set.
 
 **WORKFLOW CONFIG:**
 
@@ -160,24 +160,24 @@ IMPACTED BY: Existence of demands in the system.
 
 ### Integration Scope
 
-Amendment integration helps the respective Organization to add additional value to the demand without any change in the system.
+Amendment integration helps organizations add additional value to the demand without any change in the system.
 
 ### Integration Benefits
 
 * Easy to create and simple process of updating demands
-* helps ease changes into the system which are not part of normal functionality - Amendment of bills in case of legal requirements.
+* Helps ease changes into the system which are not part of normal functionality - Amendment of bills in case of legal requirements.
 
 ### Steps to Integration
 
 This is integrated into the billing system by default.
 
-1. Amendment facility can be used in case of a legal issue to add values to existing demands using /amendment/\_create and /amendment/\_update can be used to cancel the created ones or update workflow if configured.
+1. The amendment facility can be used in case of a legal issue to add values to existing demands using /amendment/\_create. The parameter /amendment/\_update is used to cancel the created updates or update configured workflows.
 
 ### Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
 {yet to be added}
 
-## **Docs and Resource Links**
+## **Doc Links**
 
 **API Definition**
 

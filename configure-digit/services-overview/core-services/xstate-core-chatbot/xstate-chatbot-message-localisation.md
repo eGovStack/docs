@@ -12,7 +12,7 @@ Click on the link to the google sheet below to access all the messages with the 
 
 The project is organised such that all the messages are contained within the files present inside the /machine directory. /service directory, which is present inside it, also includes files that could contain localization messages.
 
-Guidelines to be followed by developers
+Guidelines to be followed by developers:
 
 _(According to the standard pattern followed in the project, all the localization messages will be present near the end of the file in a JavaScript object named “messages”.)_
 

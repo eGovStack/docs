@@ -6,7 +6,7 @@ description: v2 configuration details
 
 ## **Overview**
 
-The Collection service is to serve as a revenue collection platform for all the billing systems through cash, cheque, dd, swipe machine. It enables payment for all services provided by the eGov platform at a single point for the Citizen and counter collection in municipal alike.
+The Collection Service serves as a revenue collection platform for all the billing systems through cash, cheque, demand drafts, or the swipe machine. It enables payment for all services provided by the eGov platform at a single point directly from the citizen or over-the-counter collection within municipalities.
 
 ## **Pre-requisites**
 
@@ -14,7 +14,7 @@ The Collection service is to serve as a revenue collection platform for all the 
 * Prior Knowledge of SpringBoot
 * Prior Knowledge of REST APIs and related concepts like path parameters, headers, JSON, etc
 * Prior Knowledge of Kafka and related concepts like Producer, Consumer, Topic, etc.
-* Following services should be up and running:
+* The following services must be up and running:
   * egov-localization
   * egov-mdms
   * egov-idgen
@@ -25,21 +25,21 @@ The Collection service is to serve as a revenue collection platform for all the 
 
 * Allows citizens to create a payment.
 * Allows employees to create the payment for the citizen indirectly.
-* provides facilities to capture partial and advanced payment based on configs.
-* allows payment cancellation to help with scenarios of bad checks and other failed payment scenarios.
-* Integrates with billing-service for demand back-update of payment.
+* Provides facilities to capture partial and advanced payments based on configs.
+* Allows payment cancellation to help with scenarios of bad checks and other failed payment scenarios.
+* Integrates with billing service for demand back-update of payment.
 
 ## **Deployment Details**
 
-* deploy the latest version of the collection-services docker build.
+* deploy the latest version of the collection-services docker builds.
 
 ## **Configuration Details** <a href="#configuration-details" id="configuration-details"></a>
 
-The MDMS data configuration uses the same data updated by Billing-Service
+The MDMS data configuration uses the same data updated by the Billing-Service.
 
-[Billing Service | Configuration-Details:](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620672528/Billing+Service#Configuration-Details%3A) Refer MDMS data config from here.
+[Billing Service | Configuration-Details:](../billing-service/#configuration-details) Refer to the MDMS data configuration here.
 
-Following are the properties in the application.properties
+The table below lists the application properties.
 
 | Property                                                                               | Value                                                          | Remarks                                                                                                                                                                                 |
 | -------------------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -59,7 +59,7 @@ Following are the properties in the application.properties
 
 ### Integration Scope
 
-Collection service can be integrated with any organization or system that wants a payment system to keep track of its payments. Organizations can customize part of the application or its functionality based on their requirements.
+Collection service can be integrated with any organization or system that requires a payment system to keep track of its payments. Organizations can customize part of the application or its functionalities based on their requirements.
 
 ### Integration Benefits
 
@@ -68,14 +68,14 @@ Collection service can be integrated with any organization or system that wants 
 
 ### Steps to Integration
 
-1. Customer can create a payment using the /payments/\_create
+1. Customers can create a payment using the /payments/\_create
 2. Actors on the system can keep track of payments using /payments/\_searchendpoint
-3. Once the payment is done but it encounters a technical issue outside of the system then it can be cancelled with /payments/\_workflow
-4. For employees to access the payments API the respective module name should be appended after the payment API path - /payments/PT/\_workflow - here PT refers to property module.
+3. Once the payment is done and it encounters a technical issue that is beyond the system - the payment can be cancelled with /payments/\_workflow
+4. For employees to access the payments API the respective module name should be appended to the payment API path - /payments/PT/\_workflow. Here PT refers to the property module.
 
 ### **Interaction Diagram**
 
-[Billing-Collection-Integration](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1620377975/Billing-Collection-Integration) Refer integration with details and explanation.
+[Billing-Collection-Integration](../billing-collection-integration.md#integration-details) - Refer to the integration details.
 
 ## **Reference Docs**
 

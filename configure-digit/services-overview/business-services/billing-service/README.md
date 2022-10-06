@@ -18,7 +18,7 @@ The main objective of the billing module is to generate the bill for all revenue
   * URL-Shortening
   * notification-sms
 
-## **Key Functionality**
+## **Key Functionalities**
 
 * **eGov** billing service creates and maintains demands.
 * Generates bills based on demands.
@@ -274,19 +274,21 @@ Adjusting the receivable amount with the individual tax head.
 
 **Types of apportioning V1.1**
 
-Default order based apportioning(Based on apportioning order adjust the received amount with each tax head).V1.1
+Default order-based apportioning(Based on apportioning order adjust the received amount with each tax head).V1.1
 
 **Types of apportioning V1.2: (TBD)**
 
-* Proportionate based apportioning (Adjust total receivable with all the tax head equally)
-* Order & Percentage based apportioning(Adjust total receivable based on order and the percentage which is defined for each tax head).
+* Proportionate-based apportioning (Adjust total receivable with all the tax heads equally)
+* Order & percentage-based apportioning (Adjust total receivable based on order and the percentage which is defined for each tax head).
 
 **Principle of apportioning**
 
-The basic principle of apportioning is, if the full amount is paid for any bill then each individual tax head should get nullify with their corresponding adjusted amount.
+The basic principle of apportioning holds that if the full amount is paid for any bill then each individual tax head should get nullified with their corresponding adjusted amount.
 
 **Example**:\
-**Case 1:** When there are no arrears all tax heads belong to their current purpose:
+**Case 1:** When there are no arrears all tax heads belong to their current purpose.
+
+Example: given below
 
 | Tax Head                   | Amount | Order | Full Payment (2000) | Partial Payment (1500) | Partial Payment (750) | Partial Payment With Rebate (500) |
 | -------------------------- | ------ | ----- | ------------------- | ---------------------- | --------------------- | --------------------------------- |
@@ -310,7 +312,7 @@ The basic principle of apportioning is, if the full amount is paid for any bill 
 | RemainingAMTfromPayableAMT |        |       | 2500                |                        |                       | 750                               |
 
 **Case 2:** Apportioning with two years of arrear:\
-If the current financial year is 2014-15. Below are the demands
+Example: The apportioning details for the financial year 2014-15 are given below.&#x20;
 
 | Tax Head    | Amount | Tax Period From | Tax Period To | Order | Purpose |
 | ----------- | ------ | --------------- | ------------- | ----- | ------- |
@@ -325,7 +327,7 @@ If the current financial year is 2014-15. Below are the demands
 | Exm         | -250   | 2014            | 2015          | 1     | Current |
 | AdjustedAmt | 0      |                 |               |       |         |
 
-if any payment is not done, and we generating demand in 2015-16 then the demand structure will as follows:
+The table below illustrates the demand structure generated in case there are no payments for the specified financial year (2015-16).
 
 | Tax Head    | Amount | Tax Period From | Tax Period To | Order | Purpose |
 | ----------- | ------ | --------------- | ------------- | ----- | ------- |

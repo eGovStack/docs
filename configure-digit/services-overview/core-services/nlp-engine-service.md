@@ -2,7 +2,7 @@
 
 ## Overview
 
-In the existing version of the chatbot, for the PGR complaint creation feature, the user has to select his/her city from a drop-down menu by visiting the mSeva website. This significantly reduces user convenience as the user is required to constantly switch pages.\
+In the existing version of the chatbot, for the PGR complaint creation feature, the user has to select the city from a drop-down menu by visiting the mSeva website. This significantly reduces user convenience as the user is required to constantly switch pages.\
 To overcome the above inconvenience, the nlp-engine service is used. The service has an algorithm that uses _**fuzzy matching**_ and _**pattern recognition**_ to recognise the city provided by the user as input. Based on the user input, the cities having the highest match ratio with the input are being returned as the output list. A list comprising all the city names in English, Punjabi and Hindi was used as a reference tool for this service.
 
 ## Pre-requisites
@@ -48,7 +48,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 ### Integration Scope
 
-The nlp-engine service is used to locate the user city and locality by using fuzzy string matching and pattern recognition.
+The nlp-engine service is used to locate user city and locality by using fuzzy string matching and pattern recognition.
 
 ### Integration Benefits
 

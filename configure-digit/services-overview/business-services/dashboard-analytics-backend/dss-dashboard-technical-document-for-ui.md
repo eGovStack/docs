@@ -24,7 +24,7 @@ There are three types of dashboards -
 
 The home page contains multiple cards, each card is clickable.
 
-![](../../../.gitbook/assets/133.png)
+![](../../../../.gitbook/assets/133.png)
 
 There are two types of cards, i.e, the overview card and the module-level card.
 
@@ -35,15 +35,15 @@ The overview and the module level cards are differentiated by vizType,
 
 **Request Payload for dashboardConfig**
 
-![](../../../.gitbook/assets/134.png)
+![](../../../../.gitbook/assets/134.png)
 
 **auth-token**: authenticate the request and it fetches from a local storage key called **“Employee.token”**
 
 **DashboardConfig API Response**
 
-![](../../../.gitbook/assets/135.png)
+![](../../../../.gitbook/assets/135.png)
 
-![](../../../.gitbook/assets/136.png)
+![](../../../../.gitbook/assets/136.png)
 
 roleName: Which type of user.
 
@@ -55,11 +55,11 @@ Collection Chart & Module Chart **refer the figure 1**
 
 ### **2. Overview Dashboard**
 
-![](../../../.gitbook/assets/137.png)
+![](../../../../.gitbook/assets/137.png)
 
 ### **3. Module Level Dashboard**
 
-![](<../../../.gitbook/assets/138 (7).png>)
+![](<../../../../.gitbook/assets/138 (7).png>)
 
 **Visualizations List**
 
@@ -82,43 +82,43 @@ Each row contains the visual details like name,vizType,noUnit,isCollapsible,char
 
 ### **Visualization List**
 
-![](../../../.gitbook/assets/139.png)
+![](../../../../.gitbook/assets/139.png)
 
 **Figure: 2.1 - Metric-collection**
 
-![](../../../.gitbook/assets/140.png)
+![](../../../../.gitbook/assets/140.png)
 
 **Figure: 2.2 - PERFORMING-METRIC**
 
-![](../../../.gitbook/assets/141.png)
+![](../../../../.gitbook/assets/141.png)
 
 **Figure: 2.3 - CHART - PIE**
 
-![](../../../.gitbook/assets/142.png)
+![](../../../../.gitbook/assets/142.png)
 
 **Figure: 2.4 - Chart - LINE**
 
-![](../../../.gitbook/assets/143.png)
+![](../../../../.gitbook/assets/143.png)
 
 **Figure : 2.5 - Chart - BAR**
 
-![](../../../.gitbook/assets/144.png)
+![](../../../../.gitbook/assets/144.png)
 
 **Figure: 2.6 - Chart - HORIZONTAL BAR**
 
-![](../../../.gitbook/assets/145.png)
+![](../../../../.gitbook/assets/145.png)
 
 **Figure: 2.7 - Chart - TABLE**
 
-![](../../../.gitbook/assets/146.png)
+![](../../../../.gitbook/assets/146.png)
 
 **Figure: 2.8 - GLOBAL FILTERS**
 
-![](../../../.gitbook/assets/147.png)
+![](../../../../.gitbook/assets/147.png)
 
 **Figure: 2.9 - DOWNLOAD & SHARE BUTTON**
 
-![](../../../.gitbook/assets/148.png)
+![](../../../../.gitbook/assets/148.png)
 
 ### **ULB Dashboard**
 
@@ -157,7 +157,7 @@ The Denomination filter has three options to display the amount and number in a 
 
 The denomination filter will not be applied to the percentage and text (refer to **figure 2.10**). The type of data is identified by a symbol in the plots of charts API.
 
-![](../../../.gitbook/assets/149.png)
+![](../../../../.gitbook/assets/149.png)
 
 **Figure 2.10**
 
@@ -178,7 +178,7 @@ Currently, the dashboard is having two types of tabs,
 
 Tabs are identified by name in visualizations of config API.
 
-![](../../../.gitbook/assets/150.png)
+![](../../../../.gitbook/assets/150.png)
 
 **Table Chart with drill-down**
 
@@ -215,7 +215,7 @@ Each S3 image will be shortened using below API
 
 Github link for config: [https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/config/configs.js](https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/config/configs.js)
 
-![](../../../.gitbook/assets/132.png)
+![](../../../../.gitbook/assets/132.png)
 
 **BASE URL**: End point of REST API for dashboard.
 
@@ -235,7 +235,7 @@ Github link for config: [https://github.com/egovernments/frontend/blob/master/we
 
 **6. Upload Localization keys:**
 
-![](../../../.gitbook/assets/131.png)
+![](../../../../.gitbook/assets/131.png)
 
 **code:** pre-defined key for back-end.
 

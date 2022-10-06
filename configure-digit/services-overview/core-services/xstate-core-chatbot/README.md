@@ -63,7 +63,7 @@ This includes almost all functions except the guard condition code snippets.
 
 Other configuration details are mentioned in the [XState-Chatbot Integration Document](https://digit-discuss.atlassian.net/l/c/gg4EmH3k).
 
-## Understanding the Chat Flow
+## Chat Flow&#x20;
 
 All the interactions with the user - sending a message to the user and processing an incoming message from the user are coded as a state in the State Machine. It would be a nice start to test any chat flow with the supplementary react-app provided for the developers to execute the state machine locally. (Please follow the guidelines in the README of the react-app.)
 
