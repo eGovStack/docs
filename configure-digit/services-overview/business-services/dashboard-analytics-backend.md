@@ -257,13 +257,17 @@ To add a new chart, chartApiConf.json has to be modified as shown below. A new c
 
 ![Figure 14](../../../.gitbook/assets/125.png)
 
-**Table chart Sample:** This chart is of 2 types - table and xtable.table (as shown in Figure 15.) Type allows the addition of aggregated fields as available in the query keys. To extract the values based on the key, **aggegationPaths** has to be added along with their data type as in **pathDataTypeMapping**.
+**Table chart Sample:** This chart is of 2 types - table and xtable.table (as shown in Figure 15.) Type allows the addition of aggregated fields as available in the query keys. To extract the values based on the key, **aggegationPaths** have to be added along with their data type as in **pathDataTypeMapping**.
 
 ![Figure 15](../../../.gitbook/assets/126.png)
 
-xtable(as shown in Figure 16) type allows the addition of multiple computed fields with the aggregated fields dynamically added.
+xtable (as shown in Figure 16) type allows the addition of multiple computed fields with the aggregated fields added dynamically.
 
-To add multiple computed columns, **computedFields** \[] where actionName (IComputedField\<T> interface), fields \[] names as in existing in query key, newField as name to appear for computation must be defined.
+To add multiple computed columns, define the following params within **computedFields** \[]&#x20;
+
+* actionName - (IComputedField\<T> interface),&#x20;
+* fields - \[] names as existing in the query key,&#x20;
+* newField - name to appear for the computation
 
 ![Figure 16](../../../.gitbook/assets/127.png)
 
@@ -277,13 +281,13 @@ Steps to create charts and visualise are:
 
 **Configuration Changes For DrillThroughs:**
 
-Example Drill through in Ward table in Property Dashboard.
+Example - drill through in ward table in the property tax dashboard.
 
-wardDrillDown is the visualization code for PT Drill Down. kind is the attribute that shows the type of visualization code. Apart from two things all the attributes are common.
+wardDrillDown is the visualization code for PT Drill Down. The 'kind' attribute shows the type of visualization code. Apart from two things all the attributes are common.
 
 ![](../../../.gitbook/assets/128.png)
 
-Example Drill through in ComplaintList table in PGR Dashboard.
+Example - Drill through in the ComplaintList table in the PGR Dashboard.
 
 complaintDrillDown is the visualization code for PGR Drill Down.
 
