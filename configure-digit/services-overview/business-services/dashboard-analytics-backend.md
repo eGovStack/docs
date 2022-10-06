@@ -42,7 +42,7 @@ Topic context configuration is an outline to define which data is received on wh
 
 Indexer Service and many other services are sending out data on different Kafka Topics. If the Ingest Service receives the data and passes it through the pipeline, the context and the version of the data received have to be set. This configuration is used to identify which Kafka topic consumed the data and the mapping details.
 
-![Figure 1](../../../../.gitbook/assets/110.png)
+![Figure 1](../../../.gitbook/assets/110.png)
 
 [Click here for the full configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/TopicContextConfiguration.json)
 
@@ -56,7 +56,7 @@ Validator Schema
 
 Validator schema is a configuration schema library from **Everit.** By passing the data against this schema, it ensures whether the data abides by the rules and requirements of the schema which has been defined.
 
-![Figure 2](../../../../.gitbook/assets/111.png)
+![Figure 2](../../../.gitbook/assets/111.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/validator\_transaction\_v1.json)
 
@@ -68,7 +68,7 @@ While the transformation schemas are written for each data context, the data is 
 
 [Follow the slide deck for JOLT Transformations](https://docs.google.com/presentation/d/1sAiuiFC4Lzz4-064sg1p8EQt2ev0o442MfEbvrpD1ls/edit#slide=id.p)
 
-![Figure 3](../../../../.gitbook/assets/112.png)
+![Figure 3](../../../.gitbook/assets/112.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform\_collection\_v1.json)
 
@@ -100,7 +100,7 @@ In order to do that, we make use of JOLT again and write schemas to keep the req
 
 The above configuration is used to transform the data response in the enrichment layer.
 
-![Figure 4](../../../../.gitbook/assets/113.png)
+![Figure 4](../../../.gitbook/assets/113.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform\_tl\_v1.json)
 
@@ -108,7 +108,7 @@ Use case:- JOLT Transformation Schema for collection V2
 
 JOLT transformation schema for payment-v1 has been taken as a use case to explain the context collection and context version v2. The payment records are processed/transformed with the schema. The schema supports splitting the billing records into an independent new record. So if there are 2 bill items in the collection/payment incoming data then this results in 2 collection records in turn.
 
-![Figure 5](../../../../.gitbook/assets/114.png)
+![Figure 5](../../../.gitbook/assets/114.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform\_collection\_v2.json)
 
@@ -138,7 +138,7 @@ In order to configure each visualization and its properties, we have Chart API C
 
 In this, Visualization Code, which happens to be the key, will be having its properties configured as a part of the configuration and are easily changeable.
 
-![Figure 6](../../../../.gitbook/assets/115.png)
+![Figure 6](../../../.gitbook/assets/115.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/ChartApiConfig.json)
 
@@ -166,7 +166,7 @@ Master dashboard configuration is the main configuration that defines which Dash
 
 It includes all the visualizations, their groups, the charts which come within them and even their dimensions as what should be their height and width.
 
-![Figure 7](../../../../.gitbook/assets/116.png)
+![Figure 7](../../../.gitbook/assets/116.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/MasterDashboardConfig.json)
 
@@ -201,7 +201,7 @@ In this, each Role is mapped against the Dashboard which they are authorized to 
 
 This was used earlier when the Role Action Mapping of eGov was not integrated. Later, when the Role Action Mapping started controlling the Dashboards to be seen on the client-side, this configuration is just used to enable the Dashboards for viewing.
 
-![Figure 8](../../../../.gitbook/assets/119.png)
+![Figure 8](../../../.gitbook/assets/119.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/RoleDashboardMappingsConf.json)
 
@@ -229,7 +229,7 @@ Note: Any number of roles & dashboards can be added
 
 Below as in Figure 9. is a sample to add a new role object, a new dashboard object
 
-![Figure 9](../../../../.gitbook/assets/120.png)
+![Figure 9](../../../.gitbook/assets/120.png)
 
 To add a new dashboard, MasterDashboardConfig.json (**dashboards** node) has to be modified as below in Figure 10.
 
@@ -237,7 +237,7 @@ To add a new dashboard, MasterDashboardConfig.json (**dashboards** node) has to 
 Note: dashboards array add a new dashboard as given below
 {% endhint %}
 
-![Figure 10](../../../../.gitbook/assets/121.png)
+![Figure 10](../../../.gitbook/assets/121.png)
 
 ## Adding Visualizations To Existing Dashboards
 
@@ -245,7 +245,7 @@ To add new visualisations, again MasterDashboardConfig.json (**vizArray** node) 
 
 Note: vizArray is to hold multiple visualizations
 
-![Figure 11](../../../../.gitbook/assets/122.png)
+![Figure 11](../../../.gitbook/assets/122.png)
 
 ## Adding Charts For Visualizations
 
@@ -253,27 +253,27 @@ To add a new chart, chartApiConf.json has to be modified as shown below. A new c
 
 **Metric chart Sample as shown in Figure 12.**
 
-![Figure 12](../../../../.gitbook/assets/123.png)
+![Figure 12](../../../.gitbook/assets/123.png)
 
 **Pie chart Sample as shown in Figure 13.**
 
-![Figure 13](../../../../.gitbook/assets/124.png)
+![Figure 13](../../../.gitbook/assets/124.png)
 
 **Line chart Sample as shown in Figure 14.**
 
-![Figure 14](../../../../.gitbook/assets/125.png)
+![Figure 14](../../../.gitbook/assets/125.png)
 
 **Table chart Sample:** This chart is of 2 types - table and xtable.
 
 table (as shown in Figure 15.) type allows to added aggregated fields added as available in the query keys, hence to extract the values based on the key, **aggegationPaths** needs to add along with their data type as in **pathDataTypeMapping**.
 
-![Figure 15](../../../../.gitbook/assets/126.png)
+![Figure 15](../../../.gitbook/assets/126.png)
 
 xtable(as shown in Figure 16.) type allows the addition of multiple computed fields with the aggregated fields dynamically added.
 
 To add multiple computed columns, **computedFields** \[] where actionName (IComputedField\<T> interface), fields \[] names as in existing in query key, newField as name to appear for computation must be defined.
 
-![Figure 16](../../../../.gitbook/assets/127.png)
+![Figure 16](../../../.gitbook/assets/127.png)
 
 [https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/ChartApiConfig.json](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-analytics/ChartApiConfig.json) for the full configuration in detail.
 
@@ -289,16 +289,16 @@ Example Drill through in Ward table in Property Dashboard.
 
 wardDrillDown is the visualization code for PT Drill Down. kind is the attribute that shows the type of visualization code. Apart from two things all the attributes are common.
 
-![](../../../../.gitbook/assets/128.png)
+![](../../../.gitbook/assets/128.png)
 
 Example Drill through in ComplaintList table in PGR Dashboard.
 
 complaintDrillDown is the visualization code for PGR Drill Down.
 
-![](../../../../.gitbook/assets/129.png)
+![](../../../.gitbook/assets/129.png)
 
 The above complaintDrillDown visualization code called in the drill chart parameter.
 
-![](../../../../.gitbook/assets/130.png)
+![](../../../.gitbook/assets/130.png)
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

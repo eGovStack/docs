@@ -7,4 +7,4 @@ This section provides technical details about business service setup, configurat
 * [Collection Service](collection-service/)
 * [Billing Collection Integration](billing-collection-integration.md)
 * [Bill Amendment](bill-amendment.md)
-* [DSS - Analytics Backend](dashboard-analytics-backend/)
+* [DSS - Analytics Backend](dashboard-analytics-backend.md)

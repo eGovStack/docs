@@ -51,7 +51,7 @@ Following are the properties in the application.properties
 | [kafka.topics.payment.cancel.name](http://kafka.topics.payment.cancel.name/) | egov.collection.payment-cancel                                 | The kafka topic on which the record has to push/pull when payment is cancelled.                                                                                                         |
 | [kafka.topics.payment.update.name](http://kafka.topics.payment.update.name/) | egov.collection.payment-update                                 | The kafka topic on which the record has to push/pull when payment is updated.                                                                                                           |
 
-## Integration
+## Integration Details
 
 ### Integration Scope
 
@@ -60,21 +60,21 @@ Collection service can be integrated with any organization or system that wants 
 ### Integration Benefits
 
 * Easy payments and tracking of payments.
-* Configurable functionalities according to client requirement
+* Configurable functionalities according to client requirements.
 
 ### Steps to Integration
 
-* Customers can create a payment using the `/payments/_create`
-* Actors on the system can keep track of payments using `/payments/_search`endpoint
-* Once the payment is done but it encounters a technical issue outside of the system then it can be cancelled with `/payments/_workflow`
+* Customers can create a payment using the `/payments/_create.`
+* Actors on the system can keep track of payments using `/payments/_search`endpoint.
+* Once the payment is done but it encounters a technical issue outside of the system then it can be cancelled with `/payments/_workflow.`
 * For employees to access the payments API the respective module name should be appended after the payment API path - `/payments/PT/_workflow` - here PT refers to the property module.
 
 ### **IFSC Code Migration - Collection Service**
 
-* Port forward the collection service to the current environment where the IFSC CODE bank details data is to be migrated. Find the sample command below. `1kubectl port-forward collection-services-76b775f976-xcbt2 8055:8080 -n egov`
+* Port forward the collection service to the current environment where the IFSC CODE bank details data is to be migrated. Sample command - `1kubectl port-forward collection-services-76b775f976-xcbt2 8055:8080 -n egov`
 * Import postman collection from API list which refers as `/preexistpayments/_update` and runs with the same localhost to where we port forwarded using the above command.
 *   Expected result.\
-    In the EGCL\_PAYMET table where IFSCODE data is present for those record, EGCL\_PAYMET.ADDITIONALDETAILS bankdetails will be updated.
+    In the EGCL\_PAYMET table where IFSCODE data is present for those records, EGCL\_PAYMET.ADDITIONALDETAILS bankdetails will be updated.
 
     Ex: For IFSCCODE : UCBA0003047\
     Response from API [https://ifsc.razorpay.com/UCBA0003047](https://ifsc.razorpay.com/UCBA0003047) is updated in EGCL\_PAYMET.ADDITIONALDETAILS\
