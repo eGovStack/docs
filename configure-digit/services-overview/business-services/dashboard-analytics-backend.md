@@ -6,11 +6,11 @@ description: DSS Backend Configuration Manual
 
 ## Overview <a href="#overview" id="overview"></a>
 
-DSS has two sides to it. One is the process in which the data is pooled to ElasticSearch and the other is the way it is fetched, aggregated, computed, transformed and sent across. As this revolves around a variety of data sets, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, then it is just a configuration away from getting the newly introduced scenario involved in this flow of the process.
+DSS has two sides to it. One is the process in which the data is pooled to ElasticSearch and the other is the way it is fetched, aggregated, computed, transformed and sent across. DSS must be configurable since the entire process involves playing around with a variety of data sets. This ensures easy configuration of data sets in new scenarios.
 
-This document explains the steps on how to define the configurations for both sides of DSS. Analytics and Ingest Pipeline Services.
+This document explains the steps on how to define the configurations for both sides of DSS Analytics and Ingest Pipeline Services.
 
-## Abbreviations <a href="#abbreviations" id="abbreviations"></a>
+## Commonly Used Terms <a href="#abbreviations" id="abbreviations"></a>
 
 **Ingest:** Micro Service which runs as a pipeline and manages to validate, transform and enrich the incoming data and pushes the same to ElasticSearch Index
 
@@ -24,9 +24,9 @@ This document explains the steps on how to define the configurations for both si
 
 **Visualization:** Group of different Charts is considered as a Visualization. For example, the group of Total Collection, Target Collection and Target Achieved is considered as a Metric Collection of Charts and thus it becomes a Visualization.
 
-## Ingest Pipeline Configurations <a href="#ingest-pipeline-configurations" id="ingest-pipeline-configurations"></a>
+## Configuration Details <a href="#ingest-pipeline-configurations" id="ingest-pipeline-configurations"></a>
 
-Below is the list of configurations -
+Discussed below are the ingest pipeline configuration details -
 
 1. Topic Context Configurations
 2. Validator Schema
@@ -34,9 +34,7 @@ Below is the list of configurations -
 4. Enrichment Domain Configuration
 5. JOLT Domain Transformation Schema
 
-**Descriptions**
-
-Topic Context Configurations
+### Topic Context Configurations
 
 Topic context configuration is an outline to define which data is received on which Kafka Topic.
 
@@ -52,15 +50,15 @@ Indexer Service and many other services are sending out data on different Kafka 
 | dataContext        | Context Name which needs to be set for further actions in the pipeline                                             |
 | dataContextVersion | Version of the Data Structure is set here as there might be different structured data at a different point in time |
 
-Validator Schema
+### Validator Schema
 
-Validator schema is a configuration schema library from **Everit.** By passing the data against this schema, it ensures whether the data abides by the rules and requirements of the schema which has been defined.
+Validator schema is a configuration schema library from **Everit.** By passing the data against this schema, it ensures whether the data abides by the rules and requirements of the schema that has been defined.
 
 ![Figure 2](../../../.gitbook/assets/111.png)
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/validator\_transaction\_v1.json)
 
-JOLT Transformation Schema
+### JOLT Transformation Schema
 
 JOLT is a JSON to JSON transformation library. In order to change the structure of the data and transform it in a generic way, JOLT has been used.
 
@@ -72,13 +70,13 @@ While the transformation schemas are written for each data context, the data is 
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/transform\_collection\_v1.json)
 
-Enrichment Domain Configuration
+### Enrichment Domain Configuration
 
 This configuration defines and directs the enrichment process that the data goes through.
 
-For example, if the Data which is incoming is belonging to a Collection Module data, then the Collection Domain Config is picked. And based on the Business Type specified in the data, the right config is picked.
+For example, if the data which is incoming is belonging to a collection module data, then the collection domain config is picked. And based on the specified business type the right config is picked.
 
-In order to enhance the data of Collection, the domain index specified in the configuration is queried with the right arguments and the response data is obtained, transformed and set.
+In order to enhance the data of collection, the domain index specified in the configuration is queried with the right arguments and the response data is obtained, transformed and set.
 
 [Click here for an example configuration](https://github.com/egovernments/configs/blob/master/egov-dss-dashboards/dashboard-ingest/DomainConfig.json)
 
@@ -90,9 +88,9 @@ In order to enhance the data of Collection, the domain index specified in the co
 | query                                         | Query to execute to get the Domain Level Object is defined here.                                                                                                       |
 | <p>targetReferences</p><p>sourceReference</p> | Fields which are variables in order to get the domain level objects are defined here. The variables and where all the values has to be picked from are documented here |
 
-JOLT Domain Transformation Schema
+### JOLT Domain Transformation Schema
 
-As a part of Enhancement, once the domain level object is obtained, we might not need the complete document as is in the end data product.
+As a part of enhancement, once the domain level object is obtained, we might not need the complete document as is in the end data product.
 
 Only those parameters which should be or can be used for aggregation and representation are to be held and others are to be discarded.
 
@@ -128,9 +126,7 @@ Below is the list of configurations
 2. Master Dashboard Configuration
 3. Role Dashboard Mappings Configuration
 
-**Description**
-
-Chart API Configuration
+### Chart API Configuration
 
 Each Visualization has its own properties. Each Visualization comes from different data sources (Sometimes it is a combination of different data sources)
 
@@ -160,11 +156,11 @@ In this, Visualization Code, which happens to be the key, will be having its pro
 | aggregationPaths            | All the queries will be having Aggregation names in it. In order to fetch the value out of each Aggregation Responses, the name of the aggregation in the query will be an easy bet. These aggregation paths will have the names of Aggregation in it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | \_comment                   | In order to display information on the “i” symbol of each visualization, Visualization Information is maintained in this field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-Master Dashboard Configuration
+### Master Dashboard Configuration
 
-Master dashboard configuration is the main configuration that defines which Dashboards that are to be painted on the screen.
+Master dashboard configuration defines the dashboards that are to be painted on the screen.
 
-It includes all the visualizations, their groups, the charts which come within them and even their dimensions as what should be their height and width.
+It includes all the visualizations, their groups, the charts and even their dimensions in terms of height and width.
 
 ![Figure 7](../../../.gitbook/assets/116.png)
 
@@ -193,13 +189,9 @@ It includes all the visualizations, their groups, the charts which come within t
 | visualizations.vizArray.charts.filters                                                                              | Filters that can be applied to the Visualization and what are the fields which are filterable are mentioned here.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | visualizations.vizArray.charts.headers                                                                              | In some cases, there are headers which can be a title or additional information for the Chart Data which gets represented. This field is kept open to accommodate the information which can be sent along with the Chart Data in itself.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-Role Dashboard Mappings Configuration
+### Role Dashboard Mappings Configuration
 
-Master dashboard configuration which was explained earlier holds the list of dashboards that are available. Given the instance where role action mapping is not maintained in the application service, this configuration will act as a Role - Dashboard Mapping Configuration
-
-In this, each Role is mapped against the Dashboard which they are authorized to see
-
-This was used earlier when the Role Action Mapping of eGov was not integrated. Later, when the Role Action Mapping started controlling the Dashboards to be seen on the client-side, this configuration is just used to enable the Dashboards for viewing.
+Role dashboard mapping ensures that each role is mapped against the dashboards that they are authorized to see.&#x20;
 
 ![Figure 8](../../../.gitbook/assets/119.png)
 
@@ -219,19 +211,19 @@ This was used earlier when the Role Action Mapping of eGov was not integrated. L
 
 ## Adding Configurations <a href="#adding-configurations" id="adding-configurations"></a>
 
-Adding Roles and Dashboards
+### Adding Roles and Dashboards
 
-To add a new role, RoleDashboardMappingsConf.json (**roles** node) configuration file has to be modified as below
+To add a new role, modify the RoleDashboardMappingsConf.json (**roles** node) configuration file as given below.
 
 {% hint style="info" %}
 Note: Any number of roles & dashboards can be added
 {% endhint %}
 
-Below as in Figure 9. is a sample to add a new role object, a new dashboard object
+Below as in Figure 9 is a sample to add a new role object, a new dashboard object.
 
 ![Figure 9](../../../.gitbook/assets/120.png)
 
-To add a new dashboard, MasterDashboardConfig.json (**dashboards** node) has to be modified as below in Figure 10.
+To add a new dashboard, modify the MasterDashboardConfig.json (**dashboards** node) as shown below in Figure 10.
 
 {% hint style="info" %}
 Note: dashboards array add a new dashboard as given below
@@ -239,15 +231,17 @@ Note: dashboards array add a new dashboard as given below
 
 ![Figure 10](../../../.gitbook/assets/121.png)
 
-## Adding Visualizations To Existing Dashboards
+## Adding Visualizations&#x20;
 
-To add new visualisations, again MasterDashboardConfig.json (**vizArray** node) has to be modified as below as shown in Figure 11.
+To add new visualisations, modify the MasterDashboardConfig.json (**vizArray** node) as shown in Figure 11.
 
-Note: vizArray is to hold multiple visualizations
+{% hint style="info" %}
+**Note:** vizArray is used to hold multiple visualizations.
+{% endhint %}
 
 ![Figure 11](../../../.gitbook/assets/122.png)
 
-## Adding Charts For Visualizations
+## Adding Charts&#x20;
 
 To add a new chart, chartApiConf.json has to be modified as shown below. A new chartid has to be added with the chart node object.
 
@@ -263,13 +257,11 @@ To add a new chart, chartApiConf.json has to be modified as shown below. A new c
 
 ![Figure 14](../../../.gitbook/assets/125.png)
 
-**Table chart Sample:** This chart is of 2 types - table and xtable.
-
-table (as shown in Figure 15.) type allows to added aggregated fields added as available in the query keys, hence to extract the values based on the key, **aggegationPaths** needs to add along with their data type as in **pathDataTypeMapping**.
+**Table chart Sample:** This chart is of 2 types - table and xtable.table (as shown in Figure 15.) Type allows the addition of aggregated fields as available in the query keys. To extract the values based on the key, **aggegationPaths** has to be added along with their data type as in **pathDataTypeMapping**.
 
 ![Figure 15](../../../.gitbook/assets/126.png)
 
-xtable(as shown in Figure 16.) type allows the addition of multiple computed fields with the aggregated fields dynamically added.
+xtable(as shown in Figure 16) type allows the addition of multiple computed fields with the aggregated fields dynamically added.
 
 To add multiple computed columns, **computedFields** \[] where actionName (IComputedField\<T> interface), fields \[] names as in existing in query key, newField as name to appear for computation must be defined.
 
@@ -283,7 +275,7 @@ Steps to create charts and visualise are:
 * Add a visualization for the existing dashboard in MasterDashboardConfig.json as defined above.
 * Or in order to create/add a new dashboard create the dashboard in MasterDashboardConfig.json and create a role in RoleDashboardConfig.json
 
-**Configuration Changes For DrillThroughs :**
+**Configuration Changes For DrillThroughs:**
 
 Example Drill through in Ward table in Property Dashboard.
 
@@ -297,7 +289,7 @@ complaintDrillDown is the visualization code for PGR Drill Down.
 
 ![](../../../.gitbook/assets/129.png)
 
-The above complaintDrillDown visualization code called in the drill chart parameter.
+The above complaintDrillDown visualization code is called in the drill chart parameter.
 
 ![](../../../.gitbook/assets/130.png)
 
