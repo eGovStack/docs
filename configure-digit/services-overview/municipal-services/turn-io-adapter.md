@@ -2,46 +2,44 @@
 
 ## **Transform API**
 
-### **Objective**
-
-Reap benefit system is one of the vendors that provide the chatbot services using the[ ![](https://images.squarespace-cdn.com/content/v1/5eb455d61e1add207522fffc/1591612739969-PES60R7VHOQ9YRQDXBA8/favicon.ico?format=100w)turn](http://turn.io/) as backend services to communicate with citizen through chatbot. As part of the requirement, we need to create a complaint in digit platform when ever citizen has raised the complaint through reap benefit chatbot.
+**Objective:** Reap Benefit system is one of the vendors that provide the chatbot services using the[ <img src="https://images.squarespace-cdn.com/content/v1/5eb455d61e1add207522fffc/1591612739969-PES60R7VHOQ9YRQDXBA8/favicon.ico?format=100w" alt="" data-size="line">turn](http://turn.io/) as backend services to communicate with citizen through chatbot. As part of the requirement, we need to create a complaint in digit platform when ever citizens raise the complaint through Reap Benefit chatbot.
 
 ## Overview
 
-turn-io-adapter service is a wrapper to transform reap benfit request format to digit pgr request format. this service will have \_transform api and it will construct requried pgr request from the request message sent by reap benfit system. Reap benfit system will consume \_tranform api to communicate with digit pgr mdoule.
+The turn-io-adapter service is a wrapper to transform Reap Benefit request format to DIGIT PGR request format. This service has transform API that constructs the required PGR request from the request message sent from the Reap Benefit system. Reap Benefit system consumes the tranform API to communicate with the DIGIT PGR module.
 
-In this process, once a complaint is created it sends a Whatsapp message to the citizen with a track link. Whenever some action taken by ULB employes on complaint, we will send whatsapp message to citizen.
+In this process, once a complaint is created it sends a WhatsApp message to the citizen with a track link. Whenever some action is taken by ULB employees on complaint, a WhatsApp message is sent to citizen.
 
 ## Pre-requisites
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
-* _Java 8_
+* Java 8
 * Rainmaker-PGR service is running
 
 ## Key Functionalities
 
-* Complaint can create in digit platform from reapbenfit system chatbot
-* message will sent to citizen through whatsapp when employee perform some action on complaint
+* Complaints are generated on the DIGIT platform using the Reap Benefit system chatbot.
+* Messages are sent to citizen through WhatsApp when employees perform some action on the complaint.
 
 ## Deployment Details
 
-Please deploy the following builds
+Deploy the following builds
 
 * **rainmaker-pgr-db:v1.1.3-bb2961cf-13**
 * **turn-io-adapter:v1.1.3-bb2961cf-19**
 * **egov-searcher:v1.1.3-d43c421c-5**
 * **nlp-engine:v1.0.0-c3889d14-10**
 
-**Note:** Please refer to the following url for nlp-engine techical documentation.
-
-[NLP Engine Service](../core-services/nlp-engine-service.md)
+{% hint style="info" %}
+**Note:** Please refer to the following url for nlp-engine technical documentation - [NLP Engine Service](../core-services/nlp-engine-service.md)
+{% endhint %}
 
 **Frontend commits**
 
-[![](https://github.com/fluidicon.png)RAIN-2852 : PGR complaint details to show the complaint category issu… · egovernments/frontend@b7aa519](https://github.com/egovernments/frontend/commit/b7aa5196eb4d15cc5d76268d76a5a8a82adb15c7)
+[<img src="https://github.com/fluidicon.png" alt="" data-size="line">RAIN-2852 : PGR complaint details to show the complaint category issu… · egovernments/frontend@b7aa519](https://github.com/egovernments/frontend/commit/b7aa5196eb4d15cc5d76268d76a5a8a82adb15c7)
 
-[![](https://github.com/fluidicon.png)RAIN2851 : Citizen Otp screen fix to get previous logged session · egovernments/frontend@da2da15](https://github.com/egovernments/frontend/commit/da2da150d8a9bd04143ab4d48546adbdcb95ed93)
+[<img src="https://github.com/fluidicon.png" alt="" data-size="line">RAIN2851 : Citizen Otp screen fix to get previous logged session · egovernments/frontend@da2da15](https://github.com/egovernments/frontend/commit/da2da150d8a9bd04143ab4d48546adbdcb95ed93)
 
 ## Infra Configuration Details
 
@@ -53,13 +51,13 @@ Please deploy the following builds
 
 ### **MDMS Data**
 
-We need to add name filed in complaint category master in pgr. Please find the below link for data.
+Add name filed in complaint category master in PGR. Link for the data -&#x20;
 
 [https://raw.githubusercontent.com/egovernments/egov-mdms-data/DEV/data/pb/RAINMAKER-PGR/ServiceDefs.json](https://raw.githubusercontent.com/egovernments/egov-mdms-data/DEV/data/pb/RAINMAKER-PGR/ServiceDefs.json)
 
-### **LOCALIZATION DATA**
+### **Localisation Data**
 
-Push the localization data for all the locality data with module as rainmaker-chatbot. Please find the below sample localization object.
+Push the localisation data for all the locality data with module as rainmaker-chatbot. Sample localisation object -
 
 **{ "code": "SC1", "message": "Azad Nagar - WARD\_1", "module": "rainmaker-chatbot", "locale": "en\_IN" }**
 
@@ -496,12 +494,12 @@ curl --location --request POST 'https://dev.digit.org/turn-io-adapter/_transform
 }'
 ```
 
-## Integration
+## Integration Details
 
 ### Integration Scope
 
-Turn-io-adapter will be integrated with Rainmaker-pgr Application. Turn-io-adapter Application internally invokes the rainmaker-pgr service to generate the complaint.
+Turn-io-adapter is integrated with Rainmaker-pgr application. Turn-io-adapter application internally invokes the rainmaker-pgr service to generate complaints.
 
 ### Steps to Integration
 
-1. Turn-Io-adapter application to call `turn-io-adapter/_transform` to generate the complaint and takes the data from the pgr.
+1. Turn-Io-adapter application to call `turn-io-adapter/_transform` to generate the complaint and takes the data from the PGR.
