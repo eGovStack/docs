@@ -1,12 +1,6 @@
 # Workflow Auto Escalation
 
-## Overview
-
-The objective of this functionality is to provide a mechanism to trigger action on applications that satisfy certain predefined criteria.&#x20;
-
-## Sample Configuration
-
-Looking at sample use cases, the majority of use cases can be summarised as performing action ‘X’ on applications in state ‘Y’ and have exceeded the state SLA by ‘Z’ days. We can write one query builder which takes this state ‘Y’ and SLA exceeded by ‘Z’ as search params and then we can perform action X on the search response. This has been achieved by defining an MDMS config like below:
+The objective of this functionality is to provide a mechanism to trigger action on applications that satisfy certain predefined criteria. Looking at sample use cases provided by the product team, the majority of use cases can be summarised as performing action ‘X’ on applications in state ‘Y’ and have exceeded the state SLA by ‘Z’ days. We can write one query builder which takes this state ‘Y’ and SLA exceeded by ‘Z’ as search params and then we can perform action X on the search response. This has been achieved by defining an MDMS config like below:
 
 ```
 {
@@ -27,7 +21,7 @@ Looking at sample use cases, the majority of use cases can be summarised as perf
 }
 ```
 
-In the above configuration, we define the condition for triggering the escalation of applications. The above configuration triggers escalation for applications in `RESOLVED` state which have exceeded stateSLA by more than `1.0` day and it will trigger the escalation by performing `CLOSERESOLVEDCOMPLAIN` on the applications. Once the applications are escalated the processInstances are pushed on the `pgr-auto-escalation` topic. We have done a sample implementation for pgr-services, where we have updated the persister configuration to listen on this topic and update the complaint status accordingly.
+In the above configuration, we define the condition for triggering the escalation of applications. The above configuration triggers escalation for applications in `RESOLVED` state which have exceeded stateSLA by more than `1.0` day and it will trigger the escalation by performing `CLOSERESOLVEDCOMPLAIN` on the applications. Once the applications are escalated the processInstances are pushed on the `pgr-auto-escalation` topic. We have done a sample implementation for pgr-services, where we have updated persister configuration to listen on this topic and update the complaint status accordingly.
 
 ```
   - version: 1.0
@@ -92,9 +86,9 @@ curl --location --request POST 'http://localhost:8081/egov-workflow-v2/egov-wf/a
 
 Note that the businessService is a path param. (For example, if the escalation has to be done for tl-services NewTL workflow the URL will be '`http://egov-workflow-v2.egov:8080/egov-workflow-v2/egov-wf/auto/NewTL/_escalate`').
 
-These APIs have to be configured in the cron job config so that they can be triggered periodically according to the requirements. Only users with role `AUTO_ESCALATE` can trigger auto-escalation so first create users with statelevel `AUTO_ESCALATE` roles first and then add that user in the userInfo of the requestInfo. This step has to be done because the cron job does internal API calls and Zuul won’t enrich the userInfo.
+These APIs have to be configured in cron job config so that they can be triggered periodically according to the requirements. Only users with role `AUTO_ESCALATE` can trigger auto-escalation so first create users with statelevel `AUTO_ESCALATE` roles first and then add that user in the userInfo of the requestInfo. This step has to be done because cron job does internal API calls and zuul won’t enrich the userInfo.
 
-For setting up autoescalation trigger the workflow also needs to be updated. For example to add auto escalate trigger on `RESOLVED` state with action `CLOSERESOLVEDCOMPLAIN` in `PGR` businessService, we will have to search the businessService and add the following action in the Actions array of `RESOLVED` state and call update API.
+For setting up autoescalation trigger the workflow also needs to be updated. For example to add auto escalate trigger on `RESOLVED` state with action `CLOSERESOLVEDCOMPLAIN` in `PGR` businessService, we will have to search the businessService add the following action in actions array of `RESOLVED` state and call update API
 
 ```
 {
@@ -106,7 +100,7 @@ For setting up autoescalation trigger the workflow also needs to be updated. For
 }
 ```
 
-Suppose an application gets auto-escalated from state ‘X' to state 'Y’, employees can look at these escalated applications through the escalate search API. The following sample cURL can be used to search auto-escalated applications of the PGR module belonging to Amritsar tenant -
+Suppose an application gets auto-escalated from state ‘X' to state 'Y’, employees can look at these escalated applications through the escalate search API. The following sample cURL can be used to search auto-escalated applications of PGR module belonging to Amritsar tenant -
 
 ```
 curl --location --request POST 'https://dev.digit.org/egov-workflow-v2/egov-wf/escalate/_search?tenantId=pb.amritsar&businessService=PGR' \
@@ -125,7 +119,3 @@ curl --location --request POST 'https://dev.digit.org/egov-workflow-v2/egov-wf/e
     }
 }'
 ```
-
-
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

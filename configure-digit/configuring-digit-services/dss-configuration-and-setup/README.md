@@ -1,12 +1,12 @@
 # DSS Configuration And Setup
 
-## Overview <a href="#overview" id="overview"></a>
+### Overview <a href="#overview" id="overview"></a>
 
-A decision support system (DSS) is a composite tool that collects, organizes, and analyzes business data to facilitate quality decision-making for management, operations, and planning. A well-designed DSS aids decision-makers in compiling a variety of data from many sources: raw data, documents, and personal knowledge from employees, management, executives, and business models. DSS analysis helps organizations to identify and solve problems, and make decisions
+A decision support system (DSS) is a composite tool that collects, organizes, and analyzes business data to facilitate quality decision-making for management, operations, and planning. A well-designed DSS aids decision-makers in compiling a variety of data from many sources: raw data, documents, personal knowledge from employees, management, executives, and business models. DSS analysis helps organizations to identify and solve problems, and make decisions
 
 This document explains the steps on how to define the configurations & set up for the new dashboard in the DSS.
 
-## Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
+### Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
@@ -17,7 +17,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 * Prior Knowledge of EQL (Elastic Query Language)
 * Prior Knowledge of JSON
 
-## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
+### Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
 1. Creating a DSS dashboard schema
 2. DSS ingest service APIs
@@ -80,8 +80,8 @@ http://dashboard-ingest.egov:8080/dashboard-ingest/ingest/migrate/paymentsindex-
 
     **$j**, the variable value that gets incremented for the number of records of billDetails.
 * Enrichment Domain Configuration
-  * This configuration defines and directs the Enrichment Process that the data goes through.
-  * For example, if the data which is incoming is belonging to a Collection Module data, then the Collection Domain config is picked. And based on the Business Type specified in the data, the right config is picked.
+  * This configuration defines and directs the Enrichment Process which the data goes through.
+  * For example, if the Data which is incoming is belonging to a Collection Module data, then the Collection Domain Config is picked. And based on the Business Type specified in the data, the right config is picked.
   * In order to enhance the data of Collection, the domain index specified in the configuration is queried with the right arguments and the response data is obtained, transformed and set.
 
 ![](../../../.gitbook/assets/image-20201010-145024.png)
@@ -90,7 +90,7 @@ http://dashboard-ingest.egov:8080/dashboard-ingest/ingest/migrate/paymentsindex-
 
 * Topic Context Configuration
   * Topic Context Configuration is an outline to define which data is received on which Kafka Topic.
-  * Indexer Service and many other services are sending out data on different Kafka Topics. If the Ingest Service is asked to receive those data and pass it through the pipeline, the context and the version of the data being received have to be set. This configuration is used to identify as in which Kafka topic consumed the data and what is the mapping for that.
+  * Indexer Service and many other services are sending out data on different Kafka Topics. If the Ingest Service is asked to receive those data and pass it through the pipeline, the context and the version of the data being received has to be set. This configuration is used to identify as in which Kafka topic consumed the data and what is the mapping for that.
 
 ![](../../../.gitbook/assets/image-20201011-062132.png)
 
@@ -106,14 +106,14 @@ http://dashboard-ingest.egov:8080/dashboard-ingest/ingest/migrate/paymentsindex-
 [Click here for an example configuration](https://github.com/egovernments/punjab-rainmaker-customization/blob/UAT\_V2/configs/egov-dss-dashboards/dashboard-ingest/transform\_tl\_v1.json)
 
 * Validator Schema
-  * Validator Schema is a configuration Schema Library from **Everit** Bypassing the data against this schema, it ensures that the data abides by the rules and requirements of the schema which has been defined.
+  * Validator Schema is a configuration Schema Library from **Everit** Bypassing the data against this schema, it ensures whether the data abides by the rules and requirements of the schema which has been defined.
 
 ![](<../../../.gitbook/assets/image (91).png>)
 
 [Click here for an example configuration](https://github.com/egovernments/punjab-rainmaker-customization/blob/UAT\_V2/configs/egov-dss-dashboards/dashboard-ingest/validator\_transaction\_v1.json)
 
 * Enhance Domain configuration
-  * This configuration defines and directs the Enrichment Process that the data goes through.
+  * This configuration defines and directs the Enrichment Process which the data goes through.
   * For example, if the Data which is incoming is belonging to a Collection Module data, then the Collection Domain Config is picked. And based on the Business Type specified in the data, the right config is picked and the final data is placed inside the domain object.
   * In order to enhance the data of Collection, the domain index specified in the configuration is queried with the right arguments and the response data is obtained, transformed and set.
 
@@ -189,12 +189,13 @@ curl -X POST \
 curl --location --request DELETE 'http://kafka-connect.kafka-cluster:8080/connectors/dss-collection_v2-es-sink'
 ```
 
-## Reference Docs <a href="#reference-docs" id="reference-docs"></a>
+### Reference Docs <a href="#reference-docs" id="reference-docs"></a>
 
 #### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| Description                               | Link                                                                                                                                                                                                                           |
+|                                           |                                                                                                                                                                                                                                |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Title**                                 | **Link**                                                                                                                                                                                                                       |
 | DSS Backend Configuration Manual          | [DSS Backend Configuration Manual](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/117244081/DSS+Backend+Configuration+Manual)                                                                                       |
 | DSS Dashboard - Technical Document for UI | [https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/283017217/DSS+Dashboard+-+Technical+Document+for+UI](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/283017217/DSS+Dashboard+-+Technical+Document+for+UI) |
 | DSS Technical Documentation               | [DSS Technical Documentation](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/118521886/DSS+Technical+Documentation)                                                                                                 |

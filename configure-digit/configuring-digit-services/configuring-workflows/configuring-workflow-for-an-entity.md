@@ -1,24 +1,25 @@
 # Configuring Workflows For An Entity
 
-## Overview
+### Overview
 
 Workflow is defined as a sequence of tasks that has to be performed on an application/Entity to process it. The _egov-workflow-v2_ is a workflow engine which helps in performing these operations seamlessly using a predefined configuration. We will discuss how to create this configuration for a new product in this document.
 
-## Pre-requisites
+### Pre-requisites
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
 * _egov-workflow-v2 service is up and running_
-* Role-Action mapping is added for business Service APIs
+* Role-Action mapping are added for business Service API’s
 
-## Key Functionalities
+### Key Functionalities
 
 * Create and modify workflow configuration according to the product requirements
 * Configure State level as well BusinessService level SLA to efficiently track the progress of the application
 * Control access to perform actions through configuration
 
-| Attribute Name     | Description                                                                                                                                                      |
+|                    |                                                                                                                                                                  |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Attribute Name** | **Description**                                                                                                                                                  |
 | tenantId           | The tenantId (ULB code) for which the workflow configuration is defined                                                                                          |
 | businessService    | The name of the workflow                                                                                                                                         |
 | business           | The name of the module which uses this workflow configuration                                                                                                    |
@@ -34,20 +35,20 @@ Before you proceed with the configuration, make sure the following pre-requisite
 | roles              | A list containing the roles which can perform the actions                                                                                                        |
 | auditDetails       | Contains fields to audit edits on the data. _(createdTime, createdBy,lastModifiedTIme,lastModifiedby)_                                                           |
 
-## Deployment Details
+### Deployment Details
 
 1. Deploy the latest version of egov-workflow-v2 service
 2. Add businessService persister yaml path in persister configuration
-3. Add Role-Action mapping for BusinessService APIs
+3. Add Role-Action mapping for BusinessService API’s
 4. Overwrite the egov.wf.statelevel flag ( _true_ for state level and _false_ for tenant level)
 
-## Configuration Details
+### Configuration Details
 
 The Workflow configuration has 3 levels of hierarchy:\
 a. BusinessService\
 b. State\
 c. Action\
-The top-level object is BusinessService, it contains fields describing the workflow and a list of States that are part of the workflow. The businessService can be defined at the tenant level like pb.amritsar or at the state level like pb. All objects maintain an audit sub-object which keeps track of who is creating and updating and the time of it.
+The top-level object is BusinessService, it contains fields describing the workflow and list of States that are part of the workflow. The businessService can be defined at tenant level like pb.amritsar or at the state level like pb. All objects maintain an audit sub-object which keeps track of who is creating and updating and the time of it.
 
 ```
 {
@@ -59,7 +60,7 @@ The top-level object is BusinessService, it contains fields describing the workf
     }
 ```
 
-Each State object is a valid status for the application. The State object contains information about the state and what actions can be performed on it.
+Each State object is a valid status for the application. The State object contains the information of the state and what actions can be performed on it.
 
 ```
 {
@@ -111,34 +112,36 @@ The workflow should always start from the null state as the service treats new a
                 }
 ```
 
-In the action object whatever nextState is defined, the application will be sent to that state. It can be to another forward state or even some backward state from where the application has already passed\
+In action object whatever nextState is defined, the application will be sent to that state. It can be to another forward state or even some backward state from where the application has already passed\
 _(generally, such actions are named SENDBACK)_
 
-SENDBACKTOCITIZEN is a special keyword for an action name. This action sends back the application to the citizen’s inbox for him to take action. A new State should be created on which Citizens can take action and should be the nextState of this action. While calling this action from the module _assignees_ should be enriched by the module with the UUIDs of the owners of the application
+SENDBACKTOCITIZEN is a special keyword for action name. This action sends back the application to the citizen’s inbox for him to take action. A new State should be created on which Citizen can take action and should be the nextState of this action. While calling this action from module _assignees_ should be enriched by the module with the uuids of the owners of the application
 
-## Integration Details
+### Integration
 
 For integration-related steps please refer to the document [**Setting Up Workflows**](setting-up-workflow.md).
 
-## Reference Docs
+### Reference Docs
 
 #### Doc Links
 
-| Description                    | Link                                                                                                                                                                              |
+|                                |                                                                                                                                                                                   |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**                      | **Link**                                                                                                                                                                          |
 | Workflow Service Documentation | [https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service)        |
 | Setting Up Workflows           | [ttps://digit-discuss.atlassian.net/wiki/spaces/DD/pages/644546619/Setting+Up+Workflows](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/644546619/Setting+Up+Workflows) |
 
 #### API List
 
-| Description | Link                                                                                                                       |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------- |
-| _\_create_  | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
-| _\_update_  | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
-| _\_search_  | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
+|            |                                                                                                                            |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------- |
+|            | **Link**                                                                                                                   |
+| _\_create_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
+| _\_update_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
+| _\_search_ | [https://www.getpostman.com/collections/8552e3de40c819e34190](https://www.getpostman.com/collections/8552e3de40c819e34190) |
 
-_(Note: All the APIs are in the same postman collection therefore the same link is added in each row)_
+_(Note: All the API’s are in the same postman collection therefore same link is added in each row)_
 
-
+\_\_
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
