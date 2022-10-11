@@ -28,10 +28,10 @@ Create integrated user experience with a key focus on flexibility, accessibility
 {% endtab %}
 {% endtabs %}
 
-Download and explore our urban roadmap detailed view below.
+Explore our urban roadmap detailed view below.
 
-{% file src="../.gitbook/assets/Urban (Part -1).pdf" %}
+<figure><img src="../.gitbook/assets/15f6e1e4e1914842aa94bf5fa2e9d271-0001.jpg" alt=""><figcaption></figcaption></figure>
 
-{% file src="../.gitbook/assets/Urban (Part -2).pdf" %}
+<figure><img src="../.gitbook/assets/f68137bde91943fc97f6f4a5b04cddd4-0001.jpg" alt=""><figcaption></figcaption></figure>
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
