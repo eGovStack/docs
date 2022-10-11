@@ -24,24 +24,14 @@ Identify areas  and scope for improving mission outcomes and increasing adoption
 {% tab title="Adoption" %}
 Product feature enhancements and concentrated focus on increasing adoption
 
-Create integrated user experience with a key focus on flexibility, accessibility, quality of service; Optimized user experience
+Create integrated user experience with a key focus on flexibility, accessibility, and quality of service; Optimized user experience
 {% endtab %}
 {% endtabs %}
 
-## 1st Quarter - April to June 2022
+Download and explore our urban roadmap detailed view below.
 
-{% hint style="warning" %}
-Features & Enhancements
+{% file src="../.gitbook/assets/Urban (Part -1).pdf" %}
 
-* Reports on new UX
-* Receipts & bills UI revamp
-* Add Help & FAQ section in citizen UI
-* Enhance DSS to drive adoption
-* Enhancements in National Dashboard
-* Amalgamation of property/Bifurcation of property feature enhancement
-* Advance collection for property tax
-* Standard reports for Water & Sewerage
-* Standardization of labels & UI text
-{% endhint %}
+{% file src="../.gitbook/assets/Urban (Part -2).pdf" %}
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

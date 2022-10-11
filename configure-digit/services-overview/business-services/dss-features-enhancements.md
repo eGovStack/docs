@@ -22,9 +22,7 @@ _Technical Implementation Details_
 
 It Works based on the Current Route URL and previous Route URL
 
-File Details
-
-[https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/Breadcrumbs.js](https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/Breadcrumbs.js)
+File Details - [https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/Breadcrumbs.js](https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/Breadcrumbs.js)
 
 ### **Drill through options in tables and charts**
 
@@ -60,7 +58,7 @@ The following method along with parameters is used to fetch the previous year's 
 getLastYearRequest(calledFrom, visualcode, active, filterList) 
 ```
 
-After receiving last year's data it is compared with the current year's data. The comparison is shown as insight data. The comparison logic is present in uiTable.js
+After receiving last year's data it is compared with the current year's data. The comparison is shown as insight data. The comparison logic is present in uiTable.js -&#x20;
 
 [https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/components/common/UiTable/UiTable.js](https://github.com/egovernments/frontend/blob/master/web/dss-dashboard/src/components/common/UiTable/UiTable.js)
 
