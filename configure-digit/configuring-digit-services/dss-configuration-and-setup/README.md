@@ -2,27 +2,27 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-A decision support system (DSS) is a composite tool that collects, organizes, and analyzes business data to facilitate quality decision-making for management, operations, and planning. A well-designed DSS aids decision-makers in compiling a variety of data from many sources: raw data, documents, and personal knowledge from employees, management, executives, and business models. DSS analysis helps organizations to identify and solve problems, and make decisions
+A decision support system (DSS) is a composite tool that collects, organizes, and analyzes business data to facilitate quality decision-making for management, operations, and planning. A well-designed DSS aids decision-makers in compiling a variety of data from many sources: raw data, documents, and personal knowledge from employees, management, executives, and business models. DSS analysis helps organizations identify and solve problems, and make decisions
 
-This document explains the steps on how to define the configurations & set up for the new dashboard in the DSS.
+This document explains the steps on how to define the configurations & set up the new dashboard in the DSS.
 
 ## Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
-* Prior Knowledge of Spring boot
-* Prior Knowledge of Kafka
-* Prior Knowledge of Elastic Search
-* Prior Knowledge of Kibana
-* Prior Knowledge of EQL (Elastic Query Language)
-* Prior Knowledge of JSON
+* Prior knowledge of Spring boot
+* Prior knowledge of Kafka
+* Prior knowledge of Elastic Search
+* Prior knowledge of Kibana
+* Prior knowledge of EQL (Elastic Query Language)
+* Prior knowledge of JSON
 
 ## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
 1. Creating a DSS dashboard schema
 2. DSS ingest service APIs
 3. Ingest service configurations
-4. Creating Kafka sync connector to push the data to Elastic search
+4. Creating a Kafka sync connector to push the data to elastic search
 
 #### 1. Creating a DSS dashboard schema <a href="#1.-creating-a-dss-dashboard-schema" id="1.-creating-a-dss-dashboard-schema"></a>
 
