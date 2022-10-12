@@ -154,7 +154,7 @@
     * [Setting up a Language](configure-digit/configuring-digit-services/setting-up-a-language/README.md)
       * [Adding New Language](configure-digit/configuring-digit-services/setting-up-a-language/adding-a-language.md)
       * [Setting Up Default Language For SMS & Emails](configure-digit/configuring-digit-services/setting-up-a-language/setting-a-default-language-for-sms-and-email.md)
-    * [API Dos and Don'ts](configure-digit/configuring-digit-services/api-dos-and-donts.md)
+    * [API Checklist](configure-digit/configuring-digit-services/api-dos-and-donts.md)
     * [Setting Up SMS Gateway](configure-digit/configuring-digit-services/setting-up-sms-gateway/README.md)
       * [Using The Generic GET & POST SMS Gateway Interface](configure-digit/configuring-digit-services/setting-up-sms-gateway/using-the-generic-get-and-post-sms-gateway-interface.md)
     * [Setting Up Service Locally](configure-digit/configuring-digit-services/setting-up-service-locally.md)
