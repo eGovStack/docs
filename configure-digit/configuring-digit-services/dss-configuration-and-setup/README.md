@@ -2,27 +2,27 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-A decision support system (DSS) is a composite tool that collects, organizes, and analyzes business data to facilitate quality decision-making for management, operations, and planning. A well-designed DSS aids decision-makers in compiling a variety of data from many sources: raw data, documents, and personal knowledge from employees, management, executives, and business models. DSS analysis helps organizations identify and solve problems, and make decisions
+A decision support system (DSS) is a composite tool that collects, organizes, and analyzes business data to facilitate quality decision-making for management, operations, and planning. A well-designed DSS aids decision-makers in compiling a variety of data from many sources: raw data, documents, and personal knowledge from employees, management, executives, and business models. DSS analysis helps organizations to identify and solve problems, and make decisions
 
-This document explains the steps on how to define the configurations & set up the new dashboard in the DSS.
+This document explains the steps on how to define the configurations & set up for the new dashboard in the DSS.
 
 ## Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
-* Prior knowledge of Spring boot
-* Prior knowledge of Kafka
-* Prior knowledge of Elastic Search
-* Prior knowledge of Kibana
-* Prior knowledge of EQL (Elastic Query Language)
-* Prior knowledge of JSON
+* Prior Knowledge of Spring boot
+* Prior Knowledge of Kafka
+* Prior Knowledge of Elastic Search
+* Prior Knowledge of Kibana
+* Prior Knowledge of EQL (Elastic Query Language)
+* Prior Knowledge of JSON
 
 ## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
 1. Creating a DSS dashboard schema
 2. DSS ingest service APIs
 3. Ingest service configurations
-4. Creating a Kafka sync connector to push the data to elastic search
+4. Creating Kafka sync connector to push the data to Elastic search
 
 #### 1. Creating a DSS dashboard schema <a href="#1.-creating-a-dss-dashboard-schema" id="1.-creating-a-dss-dashboard-schema"></a>
 
@@ -30,7 +30,7 @@ When we are going to start indexing the DSS collection v2 index. We should creat
 
 **2. DSS ingest service API**
 
-Micro Service which runs as a pipeline and manages to validate, transform and enrich the incoming data and pushes the same to ElasticSearch Index. Ingest service will fetch the data from the index (paymentsindex-v1) which is specified in the indexing service API as below. The ingest service will read the configuration files which are there with v1. All the configuration files will be there [here](https://github.com/egovernments/punjab-rainmaker-customization/tree/UAT\_V2/configs/egov-dss-dashboards/dashboard-ingest).
+Micro Service which runs as a pipeline and manages to validate, transform and enrich the incoming data and pushes the same to ElasticSearch Index. Ingest service will fetch the data from the index`(`paymentsindex-v1) which is specified in the indexing service API as below. The ingest service will read the configuration files which are there with v1. All the configuration files will be there [here](https://github.com/egovernments/punjab-rainmaker-customization/tree/UAT\_V2/configs/egov-dss-dashboards/dashboard-ingest).
 
 ```
 curl -X POST \
@@ -70,7 +70,7 @@ http://dashboard-ingest.egov:8080/dashboard-ingest/ingest/migrate/paymentsindex-
 **3. Ingest service configurations**
 
 * Transform collection schema for V2
-  * This transform collection v1 configuration file is used to map the incoming data. This mapped data will go inside the data object in the DSS collection v2 index.
+  * This transform collection v1 configuration file is used to map with the incoming data. This mapped data will go inside the data object in the DSS collection v2 index.
 
 ![](../../../.gitbook/assets/image-20201010-143543.png)
 
@@ -122,7 +122,7 @@ http://dashboard-ingest.egov:8080/dashboard-ingest/ingest/migrate/paymentsindex-
 [Click here for an example configuration](https://github.com/egovernments/punjab-rainmaker-customization/blob/UAT\_V2/configs/egov-dss-dashboards/dashboard-ingest/EnhanceDomainConfig.json)
 
 {% hint style="info" %}
-For the Kafka connect to work, Ingest pipeline application properties or in environments direct push must be disabled.
+For Kafka connect to work, Ingest pipeline application properties or in environments direct push must be disabled.
 
 es.push.direct=false
 {% endhint %}
@@ -139,7 +139,7 @@ es.push.direct=true
 
 ![](../../../.gitbook/assets/image-20201011-055814.png)
 
-* To start the indexing we will create a connecter that will take data from the topic and push it to the index we have mentioned in the "transforms.TopicNameRouter.replacement" and mention the ES host in the Kafka connection we have to mention the host URL in “connection.url”.
+* To Start the indexing we will create a connecter that will take data from the topic and push it to the index we have mentioned in the "transforms.TopicNameRouter.replacement" and mention the ES host in the Kafka connection we have to mention the host URL in “connection.url”.
 * To create the Kafka connector run the below curl command inside the playground pod:
 
 ```

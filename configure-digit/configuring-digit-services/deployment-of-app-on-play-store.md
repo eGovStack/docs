@@ -1,53 +1,53 @@
 # Deployment Of App on Play Store
 
-### Overview <a href="#overview" id="overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
-In this document, we are coming to learn how to upload apk to play store and available to the end user to download and use from play store.
+In this document, we are coming to learn how to upload APK to the play store and make it available to the end user to download and use it from the play store.
 
-### Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
+## Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
-Before starting the process of upload the apk to play store the following requirements are a must.
+Before starting the process of uploading the apk to the play store the following requirements are a must.
 
-* Make sure that signed apk (signed apk has key generated, which is used to release different versions of the apk ) is generated for the application that you want to upload to play store.
-* Make sure that you have account for google play console by agreeing to terms and conditions, also payment shd have been done for the account and is ready for uploading an apk to play store.
+* Make sure that the signed apk (signed apk has a key generated, which is used to release different versions of the apk) is generated for the application that you want to upload to the play store.
+* Make sure that you have a Google Play account and agree to the stated terms and conditions. The payment must be completed for the account before it is ready for uploading an apk to the play store.
 * two **screenshots** of your app and they must be at least 320 pixels wide and be in a PNG or JPEG format.
-* You must also add your **high resolution app icon**. It must be 512 by 512 pixels and it must be in 32-bit PNG format. This icon will be visible on the Google Play app’s page and in search results.
-* Next, a Feature Graphic image, which will be visible at the top of the Google Play app’s page. This image must be 1024 by 500 pixels, and maybe in JPEG or 24-bit PNG format.
-* Also, prepare a small description about app in four to five lines.
+* You must also add your **high-resolution app icon**. It must be 512 by 512 pixels and it must be in 32-bit PNG format. This icon will be visible on the Google Play app’s page and in search results.
+* Upload a feature graphic image, that will be visible at the top of the Google Play app’s page. This image must be 1024 by 500 pixels, and maybe in JPEG or 24-bit PNG format.
+* Also, prepare a small description of the app in four to five lines.
 
-### Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
+## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
-The use of deploying the apk to the play store is to enable the user to download the apk from the play store and use whenever needed. By uploading the apk to play store our app will be available to all end-users around the world just on the fingertips.
+The use of deploying the apk to the play store is to enable the user to download the apk from the play store and use it whenever needed. By uploading the apk to the play store our app will be available to all end-users around the world at their fingertips.
 
-### Deployment Details <a href="#deployment-details" id="deployment-details"></a>
+## Deployment Details <a href="#deployment-details" id="deployment-details"></a>
 
-Now, we are going to learn step by step procedure of uploading apk to play store.
+Now, we are going to learn step by step procedure of uploading apk to the play store.
 
-Open google play console by entering the url ([https://play.google.com/apps/publish/](https://play.google.com/apps/publish/)) and log in with the user credentials.
+Open the Google Play console by entering the URL ([https://play.google.com/apps/publish/](https://play.google.com/apps/publish/)) and log in with the user credentials.
 
 After login in the following screen can be seen.
 
 ![](<../../.gitbook/assets/1 (2).png>)
 
-Now on the top-right click on create Application button and you get a popup to enter the title of the apk. Refer the screenshot below and click on create.
+Now on the top-right click on the Create Application button and you get a popup to enter the title of the apk. Refer to the screenshot below and click on create.
 
 ![](<../../.gitbook/assets/2 (2).png>)
 
-After clicking the create you will be redirected to the page where we need to enter the product details, graphics assets, Categorization ..etc.![](blob:https://digit-discuss.atlassian.net/7d00ded1-de39-498a-a17b-4b811aadce50#media-blob-url=true\&id=550ffd33-cb91-4bac-b2fc-7ff4774feeb4\&collection=contentId-805372042\&contextId=805372042\&mimeType=image%2Fpng\&name=3.png\&size=115919\&width=1028\&height=467)
+After clicking the create you will be redirected to the page where we need to enter the product details, graphics assets, categorization ..etc
 
 ![](<../../.gitbook/assets/3 (2).png>)
 
-Under product details section, enter the description that we have prepared in the beginning.
+Under the Product Details section, enter the description that we have prepared in the beginning.
 
-Under the assets section, we need to attach at-least two screenshots of the application, high-resolution thumbnail icon and Feature Graphic image.
+Under the assets section, we need to attach at-least two screenshots of the application, a high-resolution thumbnail icon and a feature graphic image.
 
-Under Categorization, select the application type, category
+Under categorization, select the application type and category.
 
-Coming to the contact section, add website URL, email and also phone number if you wish to add one.
+Coming to the contact section, add the website URL, email and also phone number if you wish to add one.
 
-After next comes the privacy policy section where you can enter the link of the privacy and policy page and save it as a draft.
+After next comes the privacy policy section where you can enter the link to the privacy and policy page and save it as a draft.
 
-After saving as a draft on the “right side menu” select the option “App Release”. In the app release page under the “production Track” click on the manage, then click on create a release in the next screen. Then in the next page under the “ App signing by google play” click the continue.
+After saving as a draft on the “right side menu” select the option “App Release”. In the app release page under the “production track” click on Manage. Click on create a release on the next screen. Click on Continue on the next page under the “ App signing by google play”.
 
 ![](<../../.gitbook/assets/4 (1) (1).png>)
 
