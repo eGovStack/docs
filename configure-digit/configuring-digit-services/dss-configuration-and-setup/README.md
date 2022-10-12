@@ -30,7 +30,7 @@ When we are going to start indexing the DSS collection v2 index. We should creat
 
 **2. DSS ingest service API**
 
-Micro Service which runs as a pipeline and manages to validate, transform and enrich the incoming data and pushes the same to ElasticSearch Index. Ingest service will fetch the data from the index`(`paymentsindex-v1) which is specified in the indexing service API as below. The ingest service will read the configuration files which are there with v1. All the configuration files will be there [here](https://github.com/egovernments/punjab-rainmaker-customization/tree/UAT\_V2/configs/egov-dss-dashboards/dashboard-ingest).
+Micro Service which runs as a pipeline and manages to validate, transform and enrich the incoming data and pushes the same to ElasticSearch Index. Ingest service will fetch the data from the index (paymentsindex-v1) which is specified in the indexing service API as below. The ingest service will read the configuration files which are there with v1. All the configuration files will be there [here](https://github.com/egovernments/punjab-rainmaker-customization/tree/UAT\_V2/configs/egov-dss-dashboards/dashboard-ingest).
 
 ```
 curl -X POST \
@@ -70,7 +70,7 @@ http://dashboard-ingest.egov:8080/dashboard-ingest/ingest/migrate/paymentsindex-
 **3. Ingest service configurations**
 
 * Transform collection schema for V2
-  * This transform collection v1 configuration file is used to map with the incoming data. This mapped data will go inside the data object in the DSS collection v2 index.
+  * This transform collection v1 configuration file is used to map the incoming data. This mapped data will go inside the data object in the DSS collection v2 index.
 
 ![](../../../.gitbook/assets/image-20201010-143543.png)
 
@@ -122,7 +122,7 @@ http://dashboard-ingest.egov:8080/dashboard-ingest/ingest/migrate/paymentsindex-
 [Click here for an example configuration](https://github.com/egovernments/punjab-rainmaker-customization/blob/UAT\_V2/configs/egov-dss-dashboards/dashboard-ingest/EnhanceDomainConfig.json)
 
 {% hint style="info" %}
-For Kafka connect to work, Ingest pipeline application properties or in environments direct push must be disabled.
+For the Kafka connect to work, Ingest pipeline application properties or in environments direct push must be disabled.
 
 es.push.direct=false
 {% endhint %}
@@ -139,7 +139,7 @@ es.push.direct=true
 
 ![](../../../.gitbook/assets/image-20201011-055814.png)
 
-* To Start the indexing we will create a connecter that will take data from the topic and push it to the index we have mentioned in the "transforms.TopicNameRouter.replacement" and mention the ES host in the Kafka connection we have to mention the host URL in “connection.url”.
+* To start the indexing we will create a connecter that will take data from the topic and push it to the index we have mentioned in the "transforms.TopicNameRouter.replacement" and mention the ES host in the Kafka connection we have to mention the host URL in “connection.url”.
 * To create the Kafka connector run the below curl command inside the playground pod:
 
 ```

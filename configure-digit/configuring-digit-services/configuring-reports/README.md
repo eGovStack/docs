@@ -32,7 +32,7 @@ Once the changes have been done in the report configuration file we have to rest
 * To add a new report first add the file path in the reportFileLocationsv1\[[https://raw.githubusercontent.com/egovernments/configs/DEV/reports/reportFileLocationsv1.txt\]](https://raw.githubusercontent.com/egovernments/configs/DEV/reports/reportFileLocationsv1.txt]) (In this file, the path of the report configuration files get stored).
   * \<Module Name>=file:///work-dir/configs/reports/config/\<report file name>.yml
   * ex: pgr=file:///work-dir/configs/reports/config/pgr-reports.yml
-* Once file path is added in the file reportFileLocationsv1, go to the folder /configs/reports/config \[[![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/configs/tree/DEV/reports/config%5D. - Connect to preview](https://github.com/egovernments/configs/tree/DEV/reports/config].) Create a new file and name the file that you have given in file reportFileLocationsv1.
+* Once file path is added in the file reportFileLocationsv1, go to the folder /configs/reports/config \[[<img src="https://github.githubassets.com/favicon.ico" alt="" data-size="line">https://github.com/egovernments/configs/tree/DEV/reports/config%5D. - Connect to preview](https://github.com/egovernments/configs/tree/DEV/reports/config].) Create a new file and name the file that you have given in file reportFileLocationsv1.
 * Write the report configuration. Once it is done commit those changes.
 * Add the role and actions for the new report.
 * Restart the MDMS and report service.
