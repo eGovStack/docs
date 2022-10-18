@@ -6,7 +6,7 @@ This toolkit helps partners evaluate the DIGIT Urban Platform for any demand. Th
 * do [functional mapping](../../products/modules/#product-functional-specifications) for all DIGIT urban products
 * view the [demo videos](../../products/training-and-demo/training-videos.md) for all products
 * use the [public sandbox ](../access-digit.md)to experience the platform first-hand and perform demos for clients
-* view the [technology skillset and DIGIT stack ](../../platform/installation/more-deploy-docs/setup-digit/tech-enablement-training-essential-skills-and-pre-requisites.md)details
+* view the [technology skillset and DIGIT stack ](../../installation/more-deploy-docs/setup-digit/tech-enablement-training-essential-skills-and-pre-requisites.md)details
 * estimate the [resource requirement ](resource-calculator.md)for DIGIT urban applications
 * estimate the [infra requirement](infra-calculator.md) for DIGIT urban applications
 * access the open-source DIGIT [codebase](https://github.com/egovernments/DIGIT-OSS)

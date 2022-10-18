@@ -2389,8 +2389,8 @@ TBD
 
 | **Title**                           | **Link**                                                                                                                                                                        |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  Workflow Technical Document        |  [Workflow Service](../../../../platform/configure-digit/services-overview/core-services/workflow-services.md)                                                                  |
-|  User Technical Document            | [User Service  ](../../../../platform/configure-digit/services-overview/core-services/user-services.md)                                                                         |
+|  Workflow Technical Document        |  [Workflow Service](../../../../configure-digit/services-overview/core-services/workflow-services.md)                                                                           |
+|  User Technical Document            | [User Service  ](../../../../configure-digit/services-overview/core-services/user-services.md)                                                                                  |
 | MDMS Technical Document             | **NEEDS TO BE UPDATED**                                                                                                                                                         |
 | IDGen Technical Document            | **NEEDS TO BE UPDATED**                                                                                                                                                         |
 | Localization Technical Document     | **NEEDS TO BE UPDATED**                                                                                                                                                         |

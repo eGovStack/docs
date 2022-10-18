@@ -485,7 +485,7 @@ coming up....
 |                                     |                                                                                                                                                                   |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Title**                           | **Link**                                                                                                                                                          |
-| Workflow Technical Document         | [Workflow Service](../../../../platform/configure-digit/services-overview/core-services/workflow-services.md)                                                     |
+| Workflow Technical Document         | [Workflow Service](../../../../configure-digit/services-overview/core-services/workflow-services.md)                                                              |
 | User Technical Document             | User Service                                                                                                                                                      |
 | MDMS Technical Document             | **NEEDS TO BE UPDATED**                                                                                                                                           |
 | IDGen Technical Document            | **NEEDS TO BE UPDATED**                                                                                                                                           |

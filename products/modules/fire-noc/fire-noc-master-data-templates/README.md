@@ -35,12 +35,12 @@ Features offered to the Employees-
 1. [Fire Stations Master](fire-station-master.md)
 2. [Building Usage Type](building-usage-type.md)
 3. [Building Usage Subtype](building-sub-usage-type.md)
-4. [Application Workflow](../../../../platform/configure-digit/configuring-master-data-templates/module-setup/workflow-data/workflow-actions.md)
+4. [Application Workflow](../../../../configure-digit/configuring-master-data-templates/module-setup/workflow-data/workflow-actions.md)
 5. [Area Master](areas-served-master.md)
 
 ### ULB Level
 
-1. [Boundry Data](../../../../platform/configure-digit/configuring-master-data-templates/environment-setup/ulb-level-setup/boundary-data.md)
+1. [Boundry Data](../../../../configure-digit/configuring-master-data-templates/environment-setup/ulb-level-setup/boundary-data.md)
 
 ## Module Reports
 
