@@ -15,7 +15,7 @@ description: Explore our docs by topics
 * [Steps to install DIGIT on SDC](broken-reference)
 * [Steps to install DIGIT on NIC](broken-reference)
 * [How do I build on DIGIT?](broken-reference)
-* [What are the open-source tools used in DIGIT?](../installation/open-source-tools-used-in-digit.md)
+* [What are the open-source tools used in DIGIT?](broken-reference)
 * Setup Videos
 
 </details>
