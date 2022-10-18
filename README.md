@@ -63,16 +63,16 @@ Explore the DIGIT Ecosystem
 [modules](products/modules/)
 {% endcontent-ref %}
 
-{% content-ref url="installation/" %}
-[installation](installation/)
+{% content-ref url="platform/installation/" %}
+[installation](platform/installation/)
 {% endcontent-ref %}
 
-{% content-ref url="configure-digit/" %}
-[configure-digit](configure-digit/)
+{% content-ref url="platform/configure-digit/" %}
+[configure-digit](platform/configure-digit/)
 {% endcontent-ref %}
 
-{% content-ref url="customizing-digit/" %}
-[customizing-digit](customizing-digit/)
+{% content-ref url="platform/customizing-digit/" %}
+[customizing-digit](platform/customizing-digit/)
 {% endcontent-ref %}
 
 ## Contact Us

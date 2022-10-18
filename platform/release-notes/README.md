@@ -179,8 +179,8 @@ DIGIT 2.7 release has got new modules, a few functional changes, and non-functio
 [legacy-re-indexing-the-water-and-sewerage-service.md](../../products/modules/water-and-sewerage/water-services/legacy-re-indexing-the-water-and-sewerage-service.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../configure-digit/configuring-digit-services/document-uploader-service.md" %}
-[document-uploader-service.md](../../configure-digit/configuring-digit-services/document-uploader-service.md)
+{% content-ref url="../configure-digit/configuring-digit-services/document-uploader-service.md" %}
+[document-uploader-service.md](../configure-digit/configuring-digit-services/document-uploader-service.md)
 {% endcontent-ref %}
 
 {% content-ref url="../../products/modules/events-and-notifications/user-events-services.md" %}
