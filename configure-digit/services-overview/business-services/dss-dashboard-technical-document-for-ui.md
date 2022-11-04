@@ -211,7 +211,7 @@ for more details eGov team to be documented
 
 Module name: rainmaker-dss
 
-**NPM Module Used -** [https://docs.google.com/spreadsheets/d/1AdwSGxUZoSmVcSc3PtujGMRCKpNaAEYgAn\_8XNTF2vM/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1AdwSGxUZoSmVcSc3PtujGMRCKpNaAEYgAn\_8XNTF2vM/edit?usp=sharing)
+**NPM Module Used -** [**https://github.com/egovernments/DIGIT-OSS/blob/master/frontend/mono-ui/web/dss-dashboard/package.json**](https://github.com/egovernments/DIGIT-OSS/blob/master/frontend/mono-ui/web/dss-dashboard/package.json)****
 
 **Steps to setup DSS in Local**
 
