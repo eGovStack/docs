@@ -1898,293 +1898,302 @@ curl --location --request POST 'https://qa.digit.org/national-dashboard/metric/_
         }
     },
     "Data": [
-      {
-            "date": "20-02-2022",
-            "module": "WS",
+        {
+            "date": "01-06-2022",
+            "module": "PGR",
             "ward": "Ward 1",
             "ulb": "pb.amritsar",
             "region": "Amritsar-MC",
             "state": "Punjab",
             "metrics": {
-                "transactions": 2345,
-                "connectionsCreated": [
+                "slaAchievement": [
                     {
-                        "groupBy": "connectionType",
+                        "groupBy": "department",
                         "buckets": [
                             {
-                                "name": "WATER.METERED",
-                                "value": 110
+                                "name": "DEPT1",
+                                "value": 2
                             },
                             {
-                                "name": "WATER.NONMETERED",
-                                "value": 50
+                                "name": "DEPT2",
+                                "value": 0
                             },
                             {
-                                "name": "SEWERAGE",
-                                "value": 50
-                            }
-                        ]
-                    },
-                    {
-                        "groupBy": "channelType",
-                        "buckets": [
-                            {
-                                "name": "Counter",
-                                "value": 60
-                            },
-                            {
-                                "name": "Online",
-                                "value": 70
-                            },
-                            {
-                                "name": "System",
-                                "value": 50
-                            },
-                            {
-                                "name": "CSC",
-                                "value": 30
+                                "name": "DEPT3",
+                                "value": 6
                             }
                         ]
                     }
                 ],
-                "todaysCollection": [
+                "completionRate": [
                     {
-                        "groupBy": "usageType",
+                        "groupBy": "department",
                         "buckets": [
                             {
-                                "name": "Domestic",
-                                "value": 11000
+                                "name": "DEPT1",
+                                "value": 2
                             },
                             {
-                                "name": "Commercial",
-                                "value": 5000
+                                "name": "DEPT2",
+                                "value": 0
                             },
                             {
-                                "name": "Institutional",
-                                "value": 5600
-                            },
-                            {
-                                "name": "Domestic SLC",
-                                "value": 7200
-                            },
-                            {
-                                "name": "Domestic Exempted",
-                                "value": 3800
-                            },
-                            {
-                                "name": "Commercial Motor",
-                                "value": 4800
-                            }
-                        ]
-                    },
-                    {
-                        "groupBy": "paymentChannelType",
-                        "buckets": [
-                            {
-                                "name": "System",
-                                "value": 8000
-                            },
-                            {
-                                "name": "Paytm",
-                                "value": 7000
-                            },
-                            {
-                                "name": "Field",
-                                "value": 3700
-                            },
-                            {
-                                "name": "Razorpay",
-                                "value": 2200
-                            },
-                            {
-                                "name": "PayU",
-                                "value": 1000
-                            },
-                            {
-                                "name": "BBPS",
-                                "value": 1400
-                            },
-                            {
-                                "name": "POS",
-                                "value": 5100
-                            },
-                            {
-                                "name": "Sewakendra",
-                                "value": 5600
-                            },
-                            {
-                                "name": "Freecharge",
-                                "value": 3400
-                            }
-                        ]
-                    },
-                    {
-                        "groupBy": "taxHeads",
-                        "buckets": [
-                            {
-                                "name": "INTEREST",
-                                "value": 7000
-                            },
-                            {
-                                "name": "LATE.CHARGES",
-                                "value": 8500
-                            },
-                            {
-                                "name": "ADVANCE",
-                                "value": 3700
-                            },
-                            {
-                                "name": "CURRENT.CHARGES",
-                                "value": 12422
-                            },
-                            {
-                                "name": "ARREAR.CHARGES",
-                                "value": 5778
-                            }
-                        ]
-                    },
-                    {
-                        "groupBy": "connectionType",
-                        "buckets": [
-                            {
-                                "name": "WATER.METERED",
-                                "value": 18700
-                            },
-                            {
-                                "name": "WATER.NONMETERED",
-                                "value": 8500
-                            },
-                            {
-                                "name": "SEWERAGE",
-                                "value": 10200
+                                "name": "DEPT3",
+                                "value": 6
                             }
                         ]
                     }
                 ],
-                "sewerageConnections": [
+                "uniqueCitizens": 22,
+                "todaysComplaints": [
                     {
-                        "groupBy": "channelType",
+                        "groupBy": "status",
                         "buckets": [
                             {
-                                "name": "ONLINE",
-                                "value": 30
+                                "name": "reopened",
+                                "value": 15
                             },
                             {
-                                "name": "CSC",
-                                "value": 11
+                                "name": "open",
+                                "value": 20
                             },
                             {
-                                "name": "SYSTEM",
-                                "value": 9
-                            }
-                        ]
-                    },
-                    {
-                        "groupBy": "usageType",
-                        "buckets": [
-                            {
-                                "name": "Domestic",
-                                "value": 11
+                                "name": "assigned",
+                                "value": 16
                             },
                             {
-                                "name": "Commercial",
-                                "value": 10
-                            },
-                            {
-                                "name": "Residential",
+                                "name": "rejected",
                                 "value": 14
                             },
                             {
-                                "name": "Institutional",
-                                "value": 6
-                            },
-                            {
-                                "name": "Domestic Exempted",
-                                "value": 9
-                            }
-                        ]
-                    }
-                ],
-                "waterConnections": [
-                    {
-                        "groupBy": "channelType",
-                        "buckets": [
-                            {
-                                "name": "Counter",
-                                "value": 47
-                            },
-                            {
-                                "name": "ONLINE",
-                                "value": 53
-                            },
-                            {
-                                "name": "CSC",
-                                "value": 15
-                            },
-                            {
-                                "name": "SYSTEM",
-                                "value": 45
+                                "name": "reassign",
+                                "value": 10
                             }
                         ]
                     },
                     {
-                        "groupBy": "usageType",
+                        "groupBy": "channel",
                         "buckets": [
                             {
-                                "name": "Domestic",
-                                "value": 123
+                                "name": "MOBILE",
+                                "value": 10
                             },
                             {
-                                "name": "Commercial",
-                                "value": 22
-                            },
-                            {
-                                "name": "Domestic Exempted",
-                                "value": 15
+                                "name": "WEB",
+                                "value": 90
                             }
                         ]
                     },
                     {
-                        "groupBy": "meterType",
+                        "groupBy": "department",
                         "buckets": [
                             {
-                                "name": "METERED",
-                                "value": 110
+                                "name": "DEPT1",
+                                "value": 20
                             },
                             {
-                                "name": "NON.METERED",
+                                "name": "DEPT2",
                                 "value": 50
+                            },
+                            {
+                                "name": "DEPT3",
+                                "value": 30
+                            }
+                        ]
+                    },
+                    {
+                        "groupBy": "category",
+                        "buckets": [
+                            {
+                                "name": "Street Lights",
+                                "value": 20
+                            },
+                            {
+                                "name": "Road Repair",
+                                "value": 60
+                            },
+                            {
+                                "name": "Garbage Cleaning",
+                                "value": 10
+                            },
+                            {
+                                "name": "Drainage Issue",
+                                "value": 10
                             }
                         ]
                     }
                 ],
-                "pendingConnections": [
+                "todaysReopenedComplaints": [
                     {
-                        "groupBy": "duration",
+                        "groupBy": "department",
                         "buckets": [
                             {
-                                "name": "0to3Days",
-                                "value": 11
+                                "name": "DEPT1",
+                                "value": 20
                             },
                             {
-                                "name": "3to7Days",
-                                "value": 50
-                            },
-                            {
-                                "name": "7to15Days",
+                                "name": "DEPT2",
                                 "value": 5
                             },
                             {
-                                "name": "MoreThan15Days",
+                                "name": "DEPT3",
+                                "value": 3
+                            }
+                        ]
+                    }
+                ],
+                "todaysOpenComplaints": [
+                    {
+                        "groupBy": "department",
+                        "buckets": [
+                            {
+                                "name": "DEPT1",
+                                "value": 2
+                            },
+                            {
+                                "name": "DEPT2",
+                                "value": 7
+                            },
+                            {
+                                "name": "DEPT3",
+                                "value": 11
+                            }
+                        ]
+                    }
+                ],
+                "todaysAssignedComplaints": [
+                    {
+                        "groupBy": "department",
+                        "buckets": [
+                            {
+                                "name": "DEPT1",
+                                "value": 1
+                            },
+                            {
+                                "name": "DEPT2",
+                                "value": 0
+                            },
+                            {
+                                "name": "DEPT3",
                                 "value": 2
                             }
                         ]
                     }
                 ],
-                "slaCompliance": 24,
-                "todaysTotalApplications": 35,
-                "todaysClosedApplications": 33,
-                "todaysCompletedApplicationsWithinSLA": 46
+                "averageSolutionTime": [
+                    {
+                        "groupBy": "department",
+                        "buckets": [
+                            {
+                                "name": "DEPT1",
+                                "value": 2
+                            },
+                            {
+                                "name": "DEPT2",
+                                "value": 4
+                            },
+                            {
+                                "name": "DEPT3",
+                                "value": 3
+                            }
+                        ]
+                    }
+                ],
+                "todaysRejectedComplaints": [
+                    {
+                        "groupBy": "department",
+                        "buckets": [
+                            {
+                                "name": "DEPT1",
+                                "value": 2
+                            },
+                            {
+                                "name": "DEPT2",
+                                "value": 0
+                            },
+                            {
+                                "name": "DEPT3",
+                                "value": 6
+                            }
+                        ]
+                    }
+                ],
+                "todaysReassignedComplaints": [
+                    {
+                        "groupBy": "department",
+                        "buckets": [
+                            {
+                                "name": "DEPT1",
+                                "value": 1
+                            },
+                            {
+                                "name": "DEPT2",
+                                "value": 3
+                            },
+                            {
+                                "name": "DEPT3",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ],
+                "todaysReassignRequestedComplaints": [
+                    {
+                        "groupBy": "department",
+                        "buckets": [
+                            {
+                                "name": "DEPT1",
+                                "value": 1
+                            },
+                            {
+                                "name": "DEPT2",
+                                "value": 3
+                            },
+                            {
+                                "name": "DEPT3",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ],
+                "todaysClosedComplaints": [
+                    {
+                        "groupBy": "department",
+                        "buckets": [
+                            {
+                                "name": "DEPT1",
+                                "value": 1
+                            },
+                            {
+                                "name": "DEPT2",
+                                "value": 3
+                            },
+                            {
+                                "name": "DEPT3",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ],
+                "todaysResolvedComplaints": [
+                    {
+                        "groupBy": "department",
+                        "buckets": [
+                            {
+                                "name": "DEPT1",
+                                "value": 1
+                            },
+                            {
+                                "name": "DEPT2",
+                                "value": 3
+                            },
+                            {
+                                "name": "DEPT3",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
             }
         }
     ]
