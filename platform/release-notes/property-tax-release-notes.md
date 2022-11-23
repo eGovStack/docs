@@ -6,8 +6,6 @@ This release provides features which are identified as GAP between old UI and Ne
 
 ### Release Highlights <a href="#release-highlights" id="release-highlights"></a>
 
-
-
 UI audit of property tax covers the features given below.
 
 #### Citizen <a href="#citizen" id="citizen"></a>
@@ -34,11 +32,9 @@ UI audit of property tax covers the features given below.
 
 ### Release Features <a href="#release-features" id="release-features"></a>
 
-
-
 | Key Feature               | Description                                                      |
 | ------------------------- | ---------------------------------------------------------------- |
-| CITIZEN                   |                                                                  |
+| **CITIZEN**               |                                                                  |
 | Property Registration     | The change in information flow, ADD UNIT.                        |
 | Property Update           | The same changes which are applied for property registration.    |
 | Search Property           | Search by Door no. and Owner’s Name.                             |
@@ -49,7 +45,7 @@ UI audit of property tax covers the features given below.
 | View Mutation Application | Display of information changes.                                  |
 | Pay Mutation Fee          | Collect mutation fee is changed to view missing details.         |
 | Update Mobile No.         | Revamp of UI.                                                    |
-| EMPLOYEE                  |                                                                  |
+| **EMPLOYEE**              |                                                                  |
 | View Payment History      | Payment history is added to view property details.               |
 | Search Property           | Search by Door No. and Owner’s Name is added.                    |
 | Search Application        | It was missing and added in this release.                        |

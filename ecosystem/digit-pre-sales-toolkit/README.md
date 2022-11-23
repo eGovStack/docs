@@ -2,7 +2,7 @@
 
 This toolkit helps partners evaluate the DIGIT Urban Platform for any demand. This section contains all information & resources required to -&#x20;
 
-* understand the [DIGIT platform features](../../platform/features.md)
+* understand the [DIGIT platform features](../../platform/platform-features.md)
 * do [functional mapping](../../products/modules/#product-functional-specifications) for all DIGIT urban products
 * view the [demo videos](../../products/training-and-demo/training-videos.md) for all products
 * use the [public sandbox ](../access-digit.md)to experience the platform first-hand and perform demos for clients

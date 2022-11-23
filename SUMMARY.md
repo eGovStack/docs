@@ -14,7 +14,7 @@
     * [Birth & Death Release Notes](platform/release-notes/birth-and-death-release-notes.md)
     * [Common Features UI/UX Revamp](platform/release-notes/common-features-ui-ux-revamp.md)
     * [Property Tax Release Notes](platform/release-notes/property-tax-release-notes.md)
-  * [Features](platform/features.md)
+  * [Platform Features](platform/platform-features.md)
   * [Architecture](platform/architecture.md)
   * [Specifications](https://standards.digit.org/)
   * [Installation](installation/README.md)
