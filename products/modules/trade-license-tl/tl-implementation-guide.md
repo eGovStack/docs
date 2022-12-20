@@ -1,26 +1,32 @@
 # TL Implementation Guide
 
-## Executive Summary
+## Section 1: Executive Summary
 
 ### Overview of the Product
 
-The computerized and automatic Trade License system offered by eGov, facilitates citizens who seek to apply for a Trade License within any Urban Local Body with a transparent, speedy, hassle-free and user-friendly procedure. Trade License (TL) is one of the components of a smart city that ensures a check on all the trade practices and increases the ease of conducting business within the state. Keeping in mind the benefits associated with the product offered, the proposed system is about to be implemented in 500+ ULBs across the country in 15 states. (For details on product features refer to Section-2)
+The computerized and automatic Trade License system offered by eGov, facilitates citizens who seek to apply for a Trade License within any Urban Local Body with a transparent, speedy, hassle-free and user-friendly procedure. Trade License (TL) is one of the components of a smart city that ensures a check on all the trade practices and increases the ease of conducting business within the state. Keeping in mind the benefits associated with the product offered, the proposed system is about to be implemented in 500+ ULBs across the country in 15 states. (For details on product features refer to [Section 2](tl-implementation-guide.md#overview-of-the-product))
 
 ### Implementation Methodology for TL
 
-For the offered product, the implementation process can be divided into seven major distinctive stages. Each stage has a predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision making for the overall success of the engagement. The whole implementation lifecycle is typical of 38-42 weeks for the State, keeping in mind the entry and exit criteria defined at the beginning and end of each stage are met on time recommended.
+For the offered product, the implementation process can be divided into seven major distinctive stages. Each stage has predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision-making for the overall success of the engagement. The whole implementation lifecycle is typical of 38-42 weeks for the State, keeping in mind the entry and exit criteria defined at the beginning and end of each stage are met on time recommended.
 
 ![](https://lh6.googleusercontent.com/gqJprz2QBk0EE3cVJuHdRlj-6kkRDt-v8uJmhUw0PtN5cnl6Ekf2zAqfok8\_-8JNLH8u9xwBpY7yTA5e3NI495b7PCXY\_BjYHM6l4ady\_DBZTe6jLOocdMhMUqT-IhTwzievJeQ)
 
 Exhibit 1: Phases of Implementation.
 
-Stage Zero is that of program setup and onboarding which is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One requires scoping of the initiative and decisions on the priorities for implementation by the State Implementation Team. In stage two, the State Team will work upon identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State. Configuration and customization of the product offered is the primary objective of stage four. This involves working on various aspects of State-specific needs and incorporating them into the product offered. In stage five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State level (Go Live) from a couple of ULBs to pan State coverage in batches. Finally, in stage 6 sustenance and ongoing improvements are worked upon while the product is already functioning in the State. (For details on implementation plan refer to Section-3)
+Stage Zero **** is that of program setup and onboarding which is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process.&#x20;
 
-### Critical Success Factors for implementation
+Stage One requires scoping of the initiative and decisions on the priorities for implementation by the State Implementation Team.&#x20;
 
-Implementation of Trade License (TL) requires meticulous planning and close coordination between various stakeholders at the center and State level. The success of the initiative is dependent upon many factors like strong Program governance, availability of the trained resource, financial planning, targeted Implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to Urban center. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Trade License System in the State.
+Stage Two - the State Team works on identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State. Stage Three - involves the Configuration and customization of the product offered. This involves working on various aspects of State-specific needs and incorporating them into the product offered.&#x20;
 
-## Product-Overview
+Stage Four - is about doing a pilot launch in UAT and including all the necessary feedback on the product. Stage Five - the roll-out of the product is done at the State level (Go Live) from a couple of ULBs to pan State coverage in batches. Finally, in Stage Six sustenance and ongoing improvements are worked upon while the product is already functioning in the State. (For details on the implementation plan refer to Section 3)
+
+### Critical Success Factors For Implementation
+
+Implementation of the Trade License (TL) module requires meticulous planning and close coordination between various stakeholders at the centre and State levels. The success of the initiative is dependent upon many factors like strong Program governance, availability of trained resources, financial planning, targeted Implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to the Urban centre. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Trade License System in the State.
+
+## Section 2: Product-Overview
 
 The purpose of this document is to give an overview of the Trade License System (TLS). The Trade License product provides a digital interface, allowing citizens to apply for the Trade License and subsequently make the payment online.
 
@@ -44,17 +50,19 @@ The TL product features can be broadly classified as the following modules:
 
 [Click here](tl-module-functional-specifications.md) to view module capabilities and product functional specifications.
 
-## Trade License (TL) Implementation Methodology
+## Section 3: Trade License (TL) Implementation Methodology
 
-This section provides an overview of the methodology for State-wide implementation of TL. The Implementation of TL is distributed across seven distinct stages. Each stage has a predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision making for the overall success of the program. Details of each stage are defined in this section.
+This section provides an overview of the methodology for State-wide implementation of TL. The Implementation of TL is distributed across seven distinct stages. Each stage has predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision-making for the overall success of the program. Details of each stage are defined in this section.
 
 ![](https://lh4.googleusercontent.com/pYYmHAIeOJLerU7cHb-uPszewRSebMjf6\_nxB80Rb-TmNDqsDEAHce5nAQUve0Nizl87dDt42EfcqEZcZkyk0RUmA-MeX4Xc6x8w0-UzsRxbwLvyyK\_kCy5OK0TAP5a0mRTTIM4)
 
-Note: This document is specific for States that have more than 30 ULBs
+{% hint style="info" %}
+**Note:** This document is specific for States that have more than 30 ULBs
+{% endhint %}
 
 TL implementation program is expected to be completed approximately between 38- 42 weeks with the resource deployment by the State and System Integrator (SI) Team (as defined below). However, it is critical that activities and exit criteria set for each stage are achieved to adhere to this timeline.
 
-### Seven Stages of Implementation for Trade License
+### Seven Stages of Implementation For Trade License
 
 ### Stage 0 - Program Setup/Onboarding
 
@@ -88,7 +96,7 @@ This stage envisages the in-person interaction of crucial State officials and im
 \#Details of TL cell is mentioned in section 4 of the handbook
 
 {% hint style="info" %}
-State Baseline Data: A Baseline Template is provided to collect certain vital information like no. of transactions, revenue collected in the last FYs, collection mode, budget data, etc. This data must be collected pre-rollout
+**State Baseline Data:** A Baseline Template is provided to collect certain vital information like no. of transactions, revenue collected in the last FYs, collection mode, budget data, etc. This data must be collected pre-rollout
 {% endhint %}
 
 ### Stage 2 - Solution Design
@@ -108,7 +116,7 @@ Pilot ULBs Specific Product Data Configuration: Master data is required from the
 
 ### Stage 3 - Configuration & Customization
 
-This stage consists of a series of developments in accordance with the detailed project plan to ensure smooth functioning of the customised product. Master Data Collection & Environment Setup will be achieved in this phase. Further monitoring and maintenance strategies are put in place.
+This stage consists of a series of developments in accordance with the detailed project plan to ensure the smooth functioning of the customised product. Master Data Collection & Environment Setup will be achieved in this phase. Further monitoring and maintenance strategies are put in place.
 
 | Stage 3 – Configuration & Customization |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -119,7 +127,7 @@ This stage consists of a series of developments in accordance with the detailed 
 
 ### Stage 4 - UAT & Go Live
 
-During this stage, demonstration of the product followed by a hands-on session is conducted for the ULB officials. Necessary training of ULB officials and resources required for UAT is conducted and identified respectively. The establishment of the State support Team and required processes are initiated in this stage.
+During this stage, a demonstration of the product followed by a hands-on session is conducted for the ULB officials. Necessary training of ULB officials and resources required for UAT is conducted and identified respectively. The establishment of the State Support Team and required processes are initiated in this stage.
 
 | Stage 4 – UAT & Go Live |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -129,31 +137,31 @@ During this stage, demonstration of the product followed by a hands-on session i
 | Exit Criteria           | <ul><li>UAT Sign-off &#x26; Go Live for Pilot ULBs</li><li>Setup of review and monitoring cadence</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 {% hint style="info" %}
-Note: The Nodal Officer is responsible to identify the ULB officials who are associated with the TL process on ground and will be working with the technological Product in the respective ULBs
+**Note:** The Nodal Officer is responsible to identify the ULB officials who are associated with the TL process on the ground and will be working with the technological Product in the respective ULBs
 {% endhint %}
 
 ### Stage 5 – Rollout
 
-On successful Go-Live in the Pilot ULBs, and further fine tuning to stabilize the product, the solution will be rolled out to the rest of the ULBs in phases. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.
+On successful Go-Live in the Pilot ULBs, and further fine-tuning to stabilize the product, the solution will be rolled out to the rest of the ULBs in phases. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.
 
 {% hint style="info" %}
-Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches.
+**Note:** The rollout phase needs to be detailed for iterative activities of onboarding ULBs in batches.
 {% endhint %}
 
 | Stage 5 – Rollout |                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Duration          | 5-6 weeks                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Entry Criteria    | <ul><li>Pilot has been successful in the State</li><li>there are less than 3 open critical incidents (issues) with respect to product, implementation and data</li></ul>                                                                                                                                                                                                                                                      |
+| Entry Criteria    | <ul><li>A pilot has been successful in the State</li><li>there are less than 3 open critical incidents (issues) with respect to product, implementation and data</li></ul>                                                                                                                                                                                                                                                    |
 | Key Activities    | <ul><li>ULB configurations phase wise as per the Project Plan</li><li>Verification and migration of ULB data phase wise as per the Data Agreement Sign Off provided by the State</li><li>Establishment of bug ticketing tool for resolving ground level issues by the state team</li><li>Training the Users at the district level</li><li><p>Pan State Roll Out - Phase wise</p><ul><li>Stabilise product</li></ul></li></ul> |
 | Exit Criteria     | <p>State-wide Rollout in batches:</p><ul><li>Adoption tracking &#x26; Review Cadence operational</li><li>Help Desk Effectiveness assured</li><li>Critical Bugs fixed</li><li>Program Success Metrics Tracking Kick-started</li></ul>                                                                                                                                                                                          |
 
 {% hint style="info" %}
-Note: Only once all the stages are complete in one batch of rollout of around 30 ULBs, the next batch begins. There are multiple phases of rollout. The second batch begins after the first batch has successfully fulfilled all the criteria of the Rollout Phase. Typical timeline for closure of rollout in each batch is 5-6 weeks (in a batch of 30 ULBs)
+**Note:** Only once all the stages are complete in one batch of the rollout of around 30 ULBs, the next batch begins. There are multiple phases of rollout. The second batch begins after the first batch has successfully fulfilled all the criteria of the Rollout Phase. A typical timeline for the closure of rollout in each batch is 5-6 weeks (in a batch of 30 ULBs)
 {% endhint %}
 
 ### Stage 6 – Sustenance and Ongoing Improvement
 
-The final stage consists of strategies to ensure the sustenance of the product in the State. Systems are put in place to ensure the continuous tracking of data and provisions are made to improve the product if new data suggests.
+The final stage consists of strategies to ensure the sustenance of the product in the State. Systems are put in place to ensure the continuous tracking of data and provisions are made to improve the product if new data suggest.
 
 | Stage 6- Sustenance and Ongoing Improvement |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -161,9 +169,9 @@ The final stage consists of strategies to ensure the sustenance of the product i
 | Entry Criteria                              | <ul><li>Rollout Phase 1(First set of ULBs where rollout will happen after Pilot)</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Key Ongoing Activities                      | <ul><li>Adoption Review Meetings as per the vision defined for the program.</li><li>Meetings are chaired by the Program Head</li><li>Need to be conducted weekly</li><li><p>TL Cell Focuses on Using data for:</p><ul><li>tracking field issues and performance data to identify improvements</li><li>identify additional Integrations around TL to make processes more robust towards enhancing TL revenues (e.g. Upstream and downstream Processes)</li></ul></li><li>Plans of ongoing Sustenance in Place with respect to:</li><li>Funding</li><li>IT support</li><li>Process Effectiveness and Improvements</li></ul> |
 
-## Roles and Responsibilities - TL Cell, eGov Team & System Integrator (SI)Team
+## Section 4: Roles and Responsibilities - TL Cell, eGov Team & System Integrator (SI)Team
 
-This section outlines the activities involved in each stage of the implementation along with responsibility and accountability of critical stakeholders - State, eGov Team and System Integrator Team onboard.
+This section outlines the activities involved in each stage of the implementation along with the responsibility and accountability of critical stakeholders - State, eGov Team and System Integrator Team onboard.
 
 TL Cell: TL Cell is the government-appointed body chaired by the Principal Secretary/Secretary, Urban Development Department with members from Urban Development Department etc.
 
@@ -179,18 +187,18 @@ Resource requirements for the TL cell required to be formed by the State
 {% hint style="info" %}
 Note:
 
-* Designation mentioned above are as per designations already driving TLs implementation at the State level.
+* Designations mentioned above are as per designations already driving TLs implementation at the State level.
 * The description of each designation is explained below.
-* These are the preferred figures. In the case of Domain Expert, 2 people is subject to availability
+* These are the preferred figures. In the case of Domain Expert, 2 people are subject to the availability
 {% endhint %}
 
 {% hint style="info" %}
 Description of resource persons:
 
 * Project Head: Is the Head of the TL Cell who will drive the project from the State’s Side
-* Domain Expert: Person who is well aware of the on-ground scenario, well versed with the act, GOs passed, Prevalent Business processes, Deviations from the acts, TL Rates/ slabs applicable
-* Nodal officer (EO/Commissioner/ Senior Official): the project coordinator in each district to drive the project centrally. Monitor usage post Go Live- point of escalation for Implementation Team, Seasoned and worked in Multiple ULBs on various modules and has a good understanding of TL, Facilitate and Track data collection Post Go Live, Monitors and facilitates adoption of application. point of contact for eGov, SI and at the HQ level.
-* MIS Expert: Day to day tracking of the data specific to ULBs, data entry, reporting and review to senior officials
+* Domain Expert: A person who is well aware of the on-ground scenario, well versed with the act, GOs passed, Prevalent Business processes, Deviations from the acts, TL Rates/ slabs applicable
+* Nodal officer (EO/Commissioner/ Senior Official): the project coordinator in each district to drive the project centrally. Monitor usage post Go Live- point of escalation for Implementation Team, Seasoned and worked in Multiple ULBs on various modules and has a good understanding of TL, Facilitates and Tracks data collection Post Go Live, Monitors and facilitates the adoption of the application. point of contact for eGov, SI and at the HQ level.
+* MIS Expert: Day-to-day tracking of the data specific to ULBs, data entry, reporting and review to senior officials
 {% endhint %}
 
 eGOv Team: eGov Team is the technical partner of the project which will provide all necessary support to the State concerning the implementation, Program Designing etc.
@@ -215,7 +223,7 @@ Consult - One who may initiate, guide and in the process, handhold the execution
 | Finalise Trade License Program Vision         | Consult | Execute          |
 
 {% hint style="info" %}
-Note: Stage 0 is where the TL cell and SI team is formed, hence there are only two entities playing a role which is that of eGov and the state leadership. Once the TL cell and SI team is finalised, their role begins in the following stages.
+**Note:** Stage 0 is where the TL cell and SI team is formed, hence there are only two entities playing a role which are that of eGov and the state leadership. Once the TL cell and SI team are finalised, their role begins in the following stages.
 {% endhint %}
 
 | Stage 1 - Program kick-off                                                                                                |         |         |         |
@@ -298,7 +306,7 @@ Note: Stage 0 is where the TL cell and SI team is formed, hence there are only t
 | <p>TL Cell Focuses on Using data for:</p><ul><li>tracking field issues and performance data to identify improvements</li><li>identify additional Integrations around TL to make processes more robust towards enhancing TL revenues (e.g Upstream and downstream Processes)</li></ul> |         | Execute | Consult |
 | <p>Plans of ongoing Sustenance in Place with respect to:</p><ul><li>Funding</li><li>IT support (infra, helpdesk, ongoing enhancements)</li><li>Process Effectiveness and Improvements</li></ul>                                                                                       | Consult | Execute | Consult |
 
-## Overall Program Assumptions
+## Section 5: Overall Program Assumptions
 
 | Areas          | Assumptions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -311,96 +319,52 @@ Note: Stage 0 is where the TL cell and SI team is formed, hence there are only t
 
 ## Glossary
 
-Vision:
+Vision: Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets
 
-Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets
+Project Plan: A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance is required.
 
-Project Plan:
+System Integrator: The Entity/Company collates all the subsystems required for the project and integrates them to achieve the program objective
 
-A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required.
+Program Charter: Outline of implementation plan agreement with priority applications and broad timelines, program governance model, program success metrics and capacity building.
 
-System Integrator:
+Acceptance Letter/MOU: Formal Acceptance/Sign Off of the Client State with a clear mandate of the Program
 
-The Entity/Company which collates all the subsystem required for the project and integrates them to achieve the program objective
+Program Success Metrics: Defining the parameters (which are measurable) prior to the program, on which the success of the program is to be measured on the completion of the program
 
-Program Charter:
+Project steering committee: The key body within the governance structure is responsible for the business issues associated with the project that are essential in ensuring the delivery of the project outputs and the attainment of project outcomes.
 
-Outline of implementation plan agreement with priority applications and broad timelines, program governance model, program success metrics and capacity building.
+Project governance: Set of policies, regulations, functions, processes, procedures and responsibilities that define the establishment, management and control of projects, programmes and portfolios.
 
-Acceptance Letter/MOU:
+Scoping: List of activities measured against the time taken to complete them in accordance with the project goals
 
-Formal Acceptance/Sign Off of the Client State with a clear mandate of the Program
+Baseline data: Set of information that serves as a foundation to compare other data acquired afterwards
 
-Program Success Metrics:
+Project Kick-off meeting: Meeting with the project team and the client of the project. This meeting would follow the definition of the base elements for the project and other project planning activities
 
-Defining the parameters (which are measurable) prior to the program, on which the success of the program is to be measured on the completion of the program
+Fitment Study: GAP Study of the Existing/Required Field Process Vs Product
 
-Project steering committee:
+Data migration: Existing Records of the functional activities need to be moved into the Database of the newly released Application
 
-The key body within the governance structure which is responsible for the business issues associated with the project that are essential in ensuring the delivery of the project outputs and the attainment of project outcomes.
+Data collection: Required data for the roll-out of the applications, which needs to be collected from the existing functional process
 
-Project governance:
+Data validation approach: This approach enables the sanctity of the Data with built-in validation by the Design
 
-Set of policies, regulations, functions, processes, procedures and responsibilities that define the establishment, management and control of projects, programmes and portfolios.
+Data synchronization: The process of establishing consistency among data from a source to a target data storage and vice versa and the continuous harmonization of the data over time.
 
-Scoping:
+Pilot Implementation: Any new process is tested out as a pilot in one or two instances before pan implementation
 
-List of activities measured against time taken to complete them in accordance with the project goals
+Pilot ULB: The ULBs selected for the pilot implementation are called pilot ULBs.
 
-Baseline data:
+Roll out: On successful clearance of the Pilot, the Process/Application/Services are implemented across all Offices/ULBs
 
-Set of information that serves as a foundation to compare other data acquired afterwards
+Deployment: Deployment defines the complete package of Software components set up in a particular environment
 
-Project Kick off meeting:
+Customization: Details of changes to be made in the Product to comply with the needed field process
 
-Meeting with the project team and the client of the project. This meeting would follow definition of the base elements for the project and other project planning activities
+Configuration: Defining existing content such as Options and Variables based on the requirements on the ground
 
-Fitment Study:
+Product walkthrough: Explaining to the users step-by-step through a set of actions that they need to take to achieve a specific outcome
 
-GAP Study of the Existing/Required Field Process Vs Product
 
-Data migration:
-
-Existing Records of the functional activities need to be moved into the Database of the newly released Application
-
-Data collection:
-
-Required data for the roll-out of the applications, which needs to be collected from the existing functional process
-
-Data validation approach:
-
-This approach enables the sanctity of the Data with built-in validation by Design
-
-Data synchronization:
-
-The process of establishing consistency among data from a source to a target data storage and vice versa and the continuous harmonization of the data over time.
-
-Pilot Implementation:
-
-Any new process is tested out as pilot in one or two instances before pan implementation
-
-Pilot ULB:
-
-The ULB's Selected for the pilot implementation are called pilot ULB’s.
-
-Roll out:
-
-On successful clearance of the Pilot, the Process/Application/Services are implemented across all Offices/ULB's
-
-Deployment:
-
-Deployment defines the complete package of Software components set up in a particular environment
-
-Customization:
-
-Details of changes to be made in the Product to comply with the needed field process
-
-Configuration:
-
-Defining existing content such as Options and Variables based on the requirements on the ground
-
-Product walkthrough:
-
-Explaining the users step-by-step through a set of actions that they need to take to achieve a specific outcome
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
