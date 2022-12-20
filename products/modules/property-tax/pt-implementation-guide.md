@@ -14,9 +14,9 @@ For the offered product, the implementation process can be divided into seven ma
 
 Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One requires scoping of the initiative and decisions on the priorities for implementation by the State Implementation Team.&#x20;
 
-Stage two - the State Team works on identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State. Stage Three - involves the Configuration and customization of the product offered.  This involves working on various aspects of State-specific needs and incorporating them into the product offered.&#x20;
+Stage Two - the State Team works on identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State. Stage Three - involves the Configuration and customization of the product offered.  This involves working on various aspects of State-specific needs and incorporating them into the product offered.&#x20;
 
-Stage Four - is about doing a pilot launch in UAT and including all the necessary feedback on the product. Stage Five - the roll-out of the product is done at the State level (Go Live) from a couple of ULBs to pan State coverage in batches. Finally, in stage 6 sustenance and ongoing improvements are worked upon while the product is already functioning in the State. (For details on the implementation plan refer to Section 3)
+Stage Four - is about doing a pilot launch in UAT and including all the necessary feedback on the product. Stage Five - the roll-out of the product is done at the State level (Go Live) from a couple of ULBs to pan State coverage in batches. Finally, in stage 6 sustenance and ongoing improvements are worked upon while the product is already functioning in the State. (For details on the implementation plan refer to [Section 3](pt-implementation-guide.md#section-3-property-tax-pt-implementation-methodology))
 
 ### Critical Success Factors For Implementation
 
@@ -53,16 +53,18 @@ With this feature, a citizen and employee can perform a self-assessment of a new
 This module provides enables the following capabilities:
 
 * Citizen/CSC can Assess New Property (By Different Financial Years).
-* Citizen/CSC can capture Addresses, Assessment, and Owner information for all types of properties like residential houses, flats and commercial buildings.
-  * Sample Details captured:
-* Door Number,
-* Mutation number,
-* Number of floors,
-* Area covered,
-* Owner and co-owner,
-* Mailing & permanent address,
-* Built year
-* Individual room measurements
+*   Citizen/CSC can capture Addresses, Assessment, and Owner information for all types of properties like residential houses, flats and commercial buildings.
+
+    Sample Details captured:
+
+    * Door Number,
+    * Mutation number,
+    * Number of floors,
+    * Area covered,
+    * Owner and co-owner,
+    * Mailing & permanent address,
+    * Built year
+    * Individual room measurements
 * The system computes the property taxes automatically as per the process and rules of the state.
 * The system has a facility to make entries in the system by inspector after a site visit and assessment of the same by the superintendent.
 * The system supports the dynamic calculation for late fees, interest, rebates, etc. as on the day of demand generation.
@@ -88,11 +90,13 @@ This module provides the following capabilities:
   * Property Tax Unique ID
 * Citizens/ CSC can view Incomplete Assessments
 * Citizen/CSC can reassess Searched Property
-* View Property details and pending dues
+* View Property Details and pending dues
 
 ### Module 4: Modifications to a Property
 
-The PT system provides the ability to capture mutation and transfer of ownership. It reduces interfaces between the user and the State and thus promotes greater transparency. It also helps in reducing the time taken for mutation after registration. The system provides the ability for alteration of assessment after verification and inspection. Any structural changes like addition/extension/reduction of existing built-up area or construction type OR utility changes like usage or occupancy have an impact on the increase/decrease in a property tax demand. These changes can be handled by the ‘Additional/Alteration of Assessment’ feature. The System provides the ability for bifurcation/ amalgamation of property. The property bifurcation/ amalgamation undergoes an approval process. The parent property needs to be modified accordingly, which can be done in the system.
+The PT system provides the ability to capture mutation and transfer of ownership. It reduces interfaces between the user and the State and thus promotes greater transparency. It also helps in reducing the time taken for mutation after registration. The system provides the ability for alteration of assessment after verification and inspection.&#x20;
+
+Any structural changes like addition/extension/reduction of existing built-up area or construction type OR utility changes like usage or occupancy have an impact on the increase/decrease in a property tax demand. These changes can be handled by the ‘Additional/Alteration of Assessment’ feature. The System provides the ability for bifurcation/ amalgamation of property. The property bifurcation/ amalgamation undergoes an approval process. The parent property needs to be modified accordingly, which can be done in the system.
 
 This module provides the following capabilities:
 
@@ -171,7 +175,9 @@ This section provides an overview of the methodology for State-wide implementati
 
 ![](https://lh4.googleusercontent.com/ghE5J\_YGs1X1DSgwTdwh-j0meXtcHsvY2TEXy7875jmmRzZlZolKJi6\_airBN5zN2yAn067iIFi0yZTyxtC4xm-S4ytmWmZFwqJocm8TFKGryqMBorHnVrxokgImW-zff02qLR8)
 
-Note: This document is specific for States that have more than 30 ULBs
+{% hint style="info" %}
+**Note:** This document is specific for States that have more than 30 ULBs
+{% endhint %}
 
 PT implementation program is expected to be completed approximately between 38- 42 weeks depending on the variety of Processes, Integration and the Disparate legacy data systems involved. This is done with the resource deployment by the State and System Integrator (SI) Team. However, it is critical that activities and exit criteria set for each stage are achieved to adhere to this timeline.
 
@@ -247,7 +253,9 @@ During this stage, a demonstration of the product followed by a hands-on session
 
 On successful Go-Live in the Pilot ULBs, and further fine-tuning to stabilize the product, the solution will be rolled out to the rest of the ULBs in phases. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.
 
-Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches.
+{% hint style="info" %}
+**Note:** The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches.
+{% endhint %}
 
 |                       |                                                                                                                                                                                                                                                                                                                                                                                   |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -257,7 +265,9 @@ Note: The rollout phase needs to be detailed out for iterative activities of onb
 | **Key Activities**    | <ul><li>ULB configurations phase wise as per the Project Plan</li><li>Migration and verification of ULB data</li><li>Logistics planning for training</li><li>Establishment of bug ticketing tool for resolving ground level issues by the state team</li><li>Training the Users at the district level</li><li>Pan State Roll Out - Phase wise</li><li>Stabilise product</li></ul> |
 | **Exit Criteria**     | <p>State-wide Rollout in batches:</p><ul><li>Adoption tracking &#x26; Review Cadence operational</li><li>Help Desk Effectiveness assured</li><li>Critical Bugs fixed</li><li>Program Success Metrics Tracking Kick-started</li></ul>                                                                                                                                              |
 
-Note: Only once all the stages are complete in one batch of the rollout of around 30 ULBs, the next batch begins. There are multiple phases of rollout. The second batch begins after the first batch has successfully fulfilled all the criteria of the Rollout Phase. A typical timeline for the closure of rollout in each batch is 5-6 weeks (in a batch of 30 ULBs)
+{% hint style="info" %}
+**Note:** Only once all the stages are complete in one batch of the rollout of around 30 ULBs, the next batch begins. There are multiple phases of rollout. The second batch begins after the first batch has successfully fulfilled all the criteria of the Rollout Phase. A typical timeline for the closure of rollout in each batch is 5-6 weeks (in a batch of 30 ULBs)
+{% endhint %}
 
 ### Stage 6 – Sustenance and Ongoing Improvement
 
@@ -287,7 +297,8 @@ Resource requirements for the PT cell required to be formed by the State
 | District Nodal Officer | 1 per district                                            |
 | MIS Expert             | 1 per district                                            |
 
-Note:
+{% hint style="info" %}
+**Note:**
 
 * The designations mentioned above are in accordance with those already driving PT implementation at the State level.
 * The description of each designation is explained below.
@@ -295,10 +306,9 @@ Note:
 * Domain Expert: A person who is well aware of the on-ground scenario, well versed with the act, GOs passed, Prevalent Business processes, Deviations from the acts, and PT Rates/ slabs applicable. In addition, provisions may be made to include External Domain Consultants/Advisors.
 * Nodal officer (EO/Commissioner/ Senior Official): the product coordinator to drive the project centrally. Monitor usage post Go Live- point of escalation for Implementation Team, Seasoned and worked in Multiple ULBs on various modules and has a good understanding of PT, Facilitates and Tracks data collection Post Go Live, Monitors and facilitates the adoption of the application. Point of contact for the Management team, SI and at the HQ level.
 * MIS Expert: Data Preparation for ULBs, Day to day tracking of the data specific to ULBs, data collection/validation for correctness and comprehensiveness, reporting and review to senior officials
-
-**eGOv Team:** eGov Team is the technical partner of the project which will provide all necessary support to the State/UT concerning the implementation, Program Designing etc.
-
-**System Integrator (SI)Team:** SI Team will be responsible for consulting, program management and the implementation of the state-specific customized and configured products in the ULBs in close collaboration with the PT cell, technical partner (eGov) and various other stakeholders.
+* **eGOv Team:** eGov Team is the technical partner of the project which will provide all necessary support to the State/UT concerning the implementation, Program Designing etc.
+* **System Integrator (SI)Team:** SI Team will be responsible for consulting, program management and the implementation of the state-specific customized and configured products in the ULBs in close collaboration with the PT cell, technical partner (eGov) and various other stakeholders.
+{% endhint %}
 
 #### Guidelines to read the tables below:
 
@@ -315,7 +325,11 @@ Note:
 | System Integrator(SI) Team sign-up/onboarding | Consult | Execute          |
 | Finalise Property Tax Program Vision          | Consult | Execute          |
 
-Note: Stage 0 is where the PT cell and SI team is formed, hence there are only two entities playing a role which is that of eGov and the state leadership. Once the PT cell and SI team is finalised, their role begins in the following stages.
+{% hint style="info" %}
+**Note:** Stage 0 is where the PT cell and SI team is formed, hence there are only two entities playing a role which are that of eGov and the state leadership.&#x20;
+{% endhint %}
+
+Once the PT cell and SI team are finalised, their role begins in the following stages.
 
 | Stage 1 - Program kick-off                                                                                                                  |         |         |         |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------- | ------- |
@@ -404,10 +418,6 @@ Note: Stage 0 is where the PT cell and SI team is formed, hence there are only t
 
 ## Glossary
 
-|             |
-| ----------- |
-| **PROGRAM** |
-
 Vision: Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets
 
 Project Plan: A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required.
@@ -452,7 +462,7 @@ Customisation: Details of changes to be made in the Product to comply with the n
 
 Configuration: Defining existing content such as Options and Variables based on the requirements on the ground
 
-Product walkthrough: Explaining to the users step-by-step through a set of actions that they need to take to achieve a specific outcome
+Product walkthrough: Explaining to the users step-by-step a set of actions that they need to take to achieve a specific outcome
 
 
 
