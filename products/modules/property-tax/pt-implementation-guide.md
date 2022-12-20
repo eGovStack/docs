@@ -12,15 +12,19 @@ For the offered product, the implementation process can be divided into seven ma
 
 ![Exhibit 1: Phases of Implementation.](https://lh4.googleusercontent.com/YbdylRaOH65fQXr1Rx9jOLbo4RCaoCdiKyjDGXVp0LsXILVc0-SA-UBFL--XMm2\_MHs0LOKVee2zzTq2ctMzH2F0ewG9y7MQJmXv8CSwnur9EfHaUTiqC5tEYfbCNGWkaOZU-aI)
 
-Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One requires scoping of the initiative and decisions on the priorities for implementation by the State Implementation Team. In stage two, the State Team will work on identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State. Configuration and customization of the product offered is the primary objective of stage four. This involves working on various aspects of State-specific needs and incorporating them into the product offered. In stage five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State level (Go Live) from a couple of ULBs to pan State coverage in batches. Finally, in stage 6 sustenance and ongoing improvements are worked upon while the product is already functioning in the State. (For details on implementation plan refer to Section-3)
+Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick off and requires setup of the governance model, implementation Team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One requires scoping of the initiative and decisions on the priorities for implementation by the State Implementation Team.&#x20;
 
-### Critical Success Factors for implementation
+Stage two - the State Team works on identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State. Stage Three - involves the Configuration and customization of the product offered.  This involves working on various aspects of State-specific needs and incorporating them into the product offered.&#x20;
 
-Implementation of Property Tax (PT) requires meticulous planning and close coordination between various stakeholders at the center and State level. The success of the initiative is dependent upon many factors like strong Program governance, availability of the trained resource, financial planning, targeted Implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to Urban center. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Property Tax System in the State.
+Stage Four - is about doing a pilot launch in UAT and including all the necessary feedback on the product. Stage Five - the roll-out of the product is done at the State level (Go Live) from a couple of ULBs to pan State coverage in batches. Finally, in stage 6 sustenance and ongoing improvements are worked upon while the product is already functioning in the State. (For details on the implementation plan refer to Section 3)
 
-## Property Tax (PT) Product - Overview
+### Critical Success Factors For Implementation
 
-The Property Tax System(PT) provides a digital interface to make property assessments, pay property tax, generate payment receipts and monitor tax collection. It can be used by the citizens, Urban Local Body (ULB) counter and field employees, and ULB Administrators to accomplish their specific tasks. It is available as a mobile and web-based application. The PT product features can be broadly classified as the following modules:
+Implementation of Property Tax (PT) requires meticulous planning and close coordination between various stakeholders at the centre and State levels. The success of the initiative is dependent upon many factors like strong Program governance, availability of trained resources, financial planning, targeted Implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to the Urban centre. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Property Tax System in the State.
+
+## Section 2: Property Tax (PT) Product - Overview
+
+The Property Tax System(PT) provides a digital interface to make property assessments, pay property tax, generate payment receipts and monitor tax collection. It can be used by the citizens, Urban Local Body (ULB) counter and field employees and ULB Administrators to accomplish their specific tasks. It is available as a mobile and web-based application. The PT product features can be broadly classified as the following modules:
 
 1. Registration, Login and Creation of User Profile
 2. Filling an Assessment for a Property
@@ -35,21 +39,21 @@ The Property Tax System(PT) provides a digital interface to make property assess
 
 This module provides enables the following capabilities
 
-* OTP Based Login for Citizen via Web/Mobile App
-* OTP Based Login for Employee via Web/Mobile App
-* Provision for language selection during first time registration for both Employee and citizens
-* Provision of creating a personalized Profile for Citizens and employees on Web App
-* Login Credentials for various hierarchy of employees
-* Role based access for performing different actions relating to property tax modules
+* OTP Based Login for Citizens via Web/Mobile App
+* OTP Based Login for Employees via Web/Mobile App
+* Provision for language selection during first-time registration for both Employees and citizens
+* Provision of creating a personalized Profile for Citizens and employees on the Web App
+* Login Credentials for various hierarchies of employees
+* Role-based access for performing different actions relating to property tax modules
 
 ### Module 2: Filing an Assessment for a Property
 
-With this feature, a citizen and employee can perform self assessment of a new property for a financial year. This feature helps in registering the property in the system. The details of the property can be entered online and can be assessed for calculation of the taxes. The PT Product is designed in a user friendly manner and reduces chances of error. System calculates the tax automatically and creates the demand. If a user wants to reassess his property due to any reason (for eg, incorrect data, change in property etc), it can be done by editing details of last assessment. Employee can edit the details of the last assessment, on behalf of the citizen based on owner’s input. Citizen can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.
+With this feature, a citizen and employee can perform a self-assessment of a new property for a financial year. This feature helps in registering the property in the system. The details of the property can be entered online and can be assessed for the calculation of the taxes. The PT Product is designed in a user-friendly manner and reduces the chances of error. The system calculates the tax automatically and creates the demand. If a user wants to reassess his property due to any reason (for eg, incorrect data, change in property etc), it can be done by editing the details of the last assessment. Employees can edit the details of the last assessment, on behalf of the citizen based on the owner’s input. A citizen can track down the status of the incomplete assessment. Any incomplete assessment can be searched and completed.
 
 This module provides enables the following capabilities:
 
 * Citizen/CSC can Assess New Property (By Different Financial Years).
-* Citizen/CSC can Capture Address, Assessment Info, Owner Info.for all types of properties like residential houses, flats and commercial buildings.
+* Citizen/CSC can capture Addresses, Assessment, and Owner information for all types of properties like residential houses, flats and commercial buildings.
   * Sample Details captured:
 * Door Number,
 * Mutation number,
@@ -59,14 +63,14 @@ This module provides enables the following capabilities:
 * Mailing & permanent address,
 * Built year
 * Individual room measurements
-* The system computes the property taxes automatically as per process and rules of the state.
-* The system has a facility to make entry in system by inspector after site visit and assessment of the same by the superintendent.
-* The system supports dynamic calculation for late fees, interest, rebates, etc. as on the day of demand generation.
-* The system fetches the data of previous year property data while e-filing for current year so that all the dues are calculated.
+* The system computes the property taxes automatically as per the process and rules of the state.
+* The system has a facility to make entries in the system by inspector after a site visit and assessment of the same by the superintendent.
+* The system supports the dynamic calculation for late fees, interest, rebates, etc. as on the day of demand generation.
+* The system fetches the data of the previous year's property data while e-filing for the current year so that all the dues are calculated.
 * The system assigns a unique property ID based on the process defined in the ULBs.
-* Citizen/CSC : View/Print Summary of Filled Form
+* Citizen/CSC: View/Print Summary of Filled Form
   * Assessment Form
-  * Assessment Form is also sent by email to citizen
+  * The assessment form is also sent by email to citizen
 * Upload Documents
   * Ownership/Title related
   * ID Proof
@@ -74,21 +78,21 @@ This module provides enables the following capabilities:
 
 ### Module 3: Searching for a Property
 
-Citizen or Employee can track down the status of his incomplete assessment. Any incomplete assessment can be searched and completed.
+Citizens or Employees can track down the status of their incomplete assessment. Any incomplete assessment can be searched and completed.
 
 This module provides the following capabilities:
 
-* Citizen/CSC can search for Property by
+* Citizens/CSC can search for Property by
   * Mobile No,
   * City,
   * Property Tax Unique ID
-* Citizen/ CSC can view Incomplete Assessments
+* Citizens/ CSC can view Incomplete Assessments
 * Citizen/CSC can reassess Searched Property
 * View Property details and pending dues
 
 ### Module 4: Modifications to a Property
 
-The PT system provides the ability to capture mutation and transfer of ownership. It reduces interfaces between the user and the State and thus promote greater transparency. It also helps in reducing the time taken for mutation after registration. The system provides the ability for alteration of assessment after verification and inspection. Any structural changes like addition/extension/reduction of existing built up area or construction type OR utility changes like usage or occupancy have an impact on the increase/decrease in property tax demand. These changes can be handled by the ‘Additional/Alteration of Assessment’ feature. The System provides the ability for bifurcation/ amalgamation of property. The property bifurcation/ amalgamation undergoes an approval process. The parent property needs to be modified accordingly, which can be done in the system.
+The PT system provides the ability to capture mutation and transfer of ownership. It reduces interfaces between the user and the State and thus promotes greater transparency. It also helps in reducing the time taken for mutation after registration. The system provides the ability for alteration of assessment after verification and inspection. Any structural changes like addition/extension/reduction of existing built-up area or construction type OR utility changes like usage or occupancy have an impact on the increase/decrease in a property tax demand. These changes can be handled by the ‘Additional/Alteration of Assessment’ feature. The System provides the ability for bifurcation/ amalgamation of property. The property bifurcation/ amalgamation undergoes an approval process. The parent property needs to be modified accordingly, which can be done in the system.
 
 This module provides the following capabilities:
 
@@ -99,11 +103,11 @@ This module provides the following capabilities:
 
 ### Module 5: Generate Demand Notice
 
-System has the capability to automatically generate demand notice for a financial year based on set triggers like time-based roll over on completion of a financial year. The system notifies the citizens about the demand through SMS/Email. The generated Bills can also be grouped and printed for physical distribution by the ULB employees. The system provides the capability to Employees to merge and download bills based on given parameters to plan their distribution drives.
+The system has the capability to automatically generate demand notices for a financial year based on set triggers like time-based rollover on completion of a financial year. The system notifies the citizens about the demand through SMS/Email. The generated Bills can also be grouped and printed for physical distribution by the ULB employees. The system provides the capability for Employees to merge and download bills based on given parameters to plan their distribution drives.
 
 This module provides the following capabilities:
 
-* Generate Demand Notice based on periodic basis
+* Generate Demand Notice based on a periodic basis
 * Group Demand Notices
 * Print Demand Notices
 * Cancel Demand Notices
@@ -111,24 +115,24 @@ This module provides the following capabilities:
 
 ### Module 6: Payments collection and Receipts
 
-The citizen/ employee can view payment status of previous assessments from Assessment History section. Payment for any assessment with full or partially paid amount can be completed. Receipts for assessment can be downloaded in Assessment history section after searching for the property details.
+The citizen/ employee can view the payment status of previous assessments from the Assessment History section. Payment for any assessment with full or partially paid amount can be completed. Receipts for assessment can be downloaded in the Assessment history section after searching for the property details.
 
 This module provides the following capabilities:
 
-* Payment of Property Tax -Online, Cheque, Cash, DD, during assessment
-* Partial Payment of Property Tax -Online, Cheque, Cash, DD, during assessment
+* Payment of Property Tax -Online, Cheque, Cash, DD, during the assessment
+* Partial Payment of Property Tax -Online, Cheque, Cash, DD, during the assessment
 * The system allows a citizen to pay for anyone's property without changing the demand
-* The system can also be integrated with PoS machines to enable doorstep collection of property tax and issue of receipt.
+* The system can also be integrated with PoS machines to enable doorstep collection of property tax and the issue of a receipt.
 
 ### Module 7: Reports and Dashboards
 
-PT reports provides facility to access receipt register, cancelled receipt register, account receipt register, ULB wise PT collection report, DCB Register. All reports can be downloaded in PDF/XLS format. State level administrator can monitor property tax collections, assessments and other information at a state level through dashboards.
+PT reports provide the facility to access the receipt register, cancelled receipt register, account receipt register, ULB-wise PT collection report, and DCB Register. All reports can be downloaded in PDF/XLS format. State-level administrators can monitor property tax collections, assessments and other information at a state level through dashboards.
 
 This module provides the following capabilities:
 
-* State Dashboard : View Reports for Total Collections, Properties Assessed, ULBs on Prod, Usage Type, Payment Distribution
-* State Dashboard : PT Collection Timeline (Monthly,Weekly)
-* State Dashboard : ULB Wise (Collection, Assessments)
+* State Dashboard: View Reports for Total Collections, Properties Assessed, ULBs on Prod, Usage Type, Payment Distribution
+* State Dashboard: PT Collection Timeline (Monthly, Weekly)
+* State Dashboard: ULB Wise (Collection, Assessments)
 * Cancelled Receipt Register Report
 * PT Collection Report (ULB/Date Wise)
 
@@ -136,7 +140,7 @@ This module provides the following capabilities:
 
 #### Notifications
 
-The system has the capability to send notifications to citizens. These notifications can be sent for various steps like - assessment completion, payment reminder, payment confirmation. These notifications can be sent in the language chosen by the ULB through all channels - SMS, Whatsapp, Email.
+The system has the capability to send notifications to citizens. These notifications can be sent for various steps like - assessment completion, payment reminder, and payment confirmation. These notifications can be sent in the language chosen by the ULB through all channels - SMS, Whatsapp, and Email.
 
 #### Legacy Data Migration
 
@@ -146,9 +150,9 @@ The system has the capability to migrate Demand and Collection. In most states, 
 
 The system provides the following masters that can be configured as per the State’s requirements:
 
-* Charges & Calculation : Calculation Engine, Rebate, Penalty,
+* Charges & Calculation: Calculation Engine, Rebate, Penalty,
 * Rate Master
-* State Masters : Property Ontology, Documents List, Employee Data Mapping, Boundary Data Mapping
+* State Masters: Property Ontology, Documents List, Employee Data Mapping, Boundary Data Mapping
 
 | Reform No. | Reform Area                                           | Weightage (score) | Recommendation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Remarks                                                                                                                                                                  |
 | ---------- | ----------------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -161,15 +165,15 @@ The system provides the following masters that can be configured as per the Stat
 | 13         | Land administration and Transfer of Land and Property | 1                 | Provide model deed templates for sale, gift, lease, mortgage and rent in downloadable and editable format along with instructions to use them                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | This provision is made available through the ULB portal to make these features accessible to the citizens                                                                |
 | 14         | Land administration and Transfer of Land and Property | 2                 | <p>Integrate the mutation process with the registration process and mandate initiation of mutation process (Revenue department and/ or ULB) as soon as the deed is registered. Ensure that:</p><p>i. Information to mutation authority to be automatically shared on completion of transaction (registration). This should be considered as initiation of mutation process.</p><p>ii. No separate application from transferee to be required.</p><p>iii. SMS/email should be sent to transferee/ transferor to inform about the initiation of mutation</p>                                                                                                                                                                                                                                                                                                                                                                                                             | The integration with external portals and systems of other departments can be enabled by state teams who can enhance the offered product to cater to this recommendation |
 
-## Property Tax (PT) Implementation Methodology
+## Section 3: Property Tax (PT) Implementation Methodology
 
-This section provides an overview of the methodology for State-wide implementation of PT. The Implementation of PT is distributed across seven distinct stages. Each stage has a predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision making for the overall success of the program. Details of each stage are defined in this section.
+This section provides an overview of the methodology for State-wide implementation of PT. The Implementation of PT is distributed across seven distinct stages. Each stage has predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision-making for the overall success of the program. Details of each stage are defined in this section.
 
 ![](https://lh4.googleusercontent.com/ghE5J\_YGs1X1DSgwTdwh-j0meXtcHsvY2TEXy7875jmmRzZlZolKJi6\_airBN5zN2yAn067iIFi0yZTyxtC4xm-S4ytmWmZFwqJocm8TFKGryqMBorHnVrxokgImW-zff02qLR8)
 
 Note: This document is specific for States that have more than 30 ULBs
 
-PT implementation program is expected to be completed approximately between 38- 42 weeks depending on the variety in Processes, Integration and the Disparate legacy data systems involved. This is done with the resource deployment by the State and System Integrator (SI) Team. However, it is critical that activities and exit criteria set for each stage are achieved to adhere to this timeline.
+PT implementation program is expected to be completed approximately between 38- 42 weeks depending on the variety of Processes, Integration and the Disparate legacy data systems involved. This is done with the resource deployment by the State and System Integrator (SI) Team. However, it is critical that activities and exit criteria set for each stage are achieved to adhere to this timeline.
 
 ### Seven Stages of Implementation
 
@@ -184,7 +188,7 @@ This is a set of initial critical activities undertaken on receiving a letter of
 | **Entry Criteria**                       | Acceptance Letter/MoU by State                                                                                                                                                                                                                                                                                                                                                           |
 | **Exit Criteria**                        | <ul><li>Finalize Property Tax Program Vision</li><li>Finalize funding for the program</li><li>Define State- specific procurement process</li><li><p>Property Tax Cell appointment (*). Consisting of :</p><ul><li>Domain expert</li><li>Nodal officer (EO/ Commissioner/ Senior Official)</li><li>Program Head</li></ul></li><li>System Integrator(SI) Team sign-up/onboarding</li></ul> |
 
-\*Details of PT cell is mentioned in section 4 of the handbook
+\*Details of PT cell is mentioned in [section 4](pt-implementation-guide.md#roles-and-responsibilities) of this handbook
 
 ### System Integrator(SI) Sign-up
 
@@ -201,7 +205,7 @@ This stage envisages in-person interaction of crucial State officials and implem
 | **Key Activities**         | <ul><li>Identify &#x26; agree on scope and exclusions</li><li>Identify pilot ULBs</li><li>Project Kickoff - Implementation Methodology Presentation</li><li>Product Walkthroughs</li><li>Define Project Steering Committee Structure and Project Governance process</li><li>Define phases of rollout/ deployment</li><li>Agreement on Deployment Priorities and high-level delivery timelines</li><li>Assessment of all current PT processes along</li></ul><p>(1) Citizen services/channels around it</p><p>(2) Integration with other Department process</p><ul><li>Finalise Program Success Metrics for Rollout, Adoption and Governance, adhering to the vision of the program</li><li>Internal Capacity Building, program logistics at State and ULBs, as per the current scenario</li><li>Collection of baseline data to measure endline target for the product (Revenue generated, total properties in ULBs etc.)</li></ul> |
 | **Exit Criteria**          | <ul><li><p>Publish the program charter</p><ul><li>Implementation plan agreement with priority applications and broad timelines</li><li>Program Governance Model and processes</li><li>Program Success Metrics</li><li>Capacity Building</li></ul></li><li>PT Cell formation and appointment (*)</li><li>Data preparation/collection kickoff from Pilot ULBs</li><li>Cloud Infrastructure procured</li><li>Project Office Space allocated</li><li>Program Branding (name, logo, tagline etc.)</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-\*Details of PT cell is mentioned in section 4 of the handbook
+\*Details of PT cell is mentioned in [section 4](pt-implementation-guide.md#roles-and-responsibilities) of this handbook
 
 ### Stage 2 - Solution Design
 
@@ -217,7 +221,7 @@ During the Solution design stage, key State officials and members, who are subje
 
 ### Stage 3 - Configuration & Customization
 
-This stage consists of a series of developments in accordance with the detailed project plan to ensure smooth functioning of the customised product. Master Data Collection & Environment Setup will be achieved in this phase. Further monitoring and maintenance strategies are put in place.
+This stage consists of a series of developments in accordance with the detailed project plan to ensure the smooth functioning of the customised product. Master Data Collection & Environment Setup will be achieved in this phase. Further monitoring and maintenance strategies are put in place.
 
 |                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -229,7 +233,7 @@ This stage consists of a series of developments in accordance with the detailed 
 
 ### Stage 4 - UAT & Go Live
 
-During this stage, demonstration of the product followed by a hands on session is conducted for the ULB officials. Necessary training of ULB officials and resources required for UAT is conducted and identified respectively. The establishment of the State support Team and required processes are initiated in this stage.
+During this stage, a demonstration of the product followed by a hands-on session is conducted for the ULB officials. Necessary training of ULB officials and resources required for UAT is conducted and identified respectively. The establishment of the State Support Team and required processes are initiated in this stage.
 
 |                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -241,7 +245,7 @@ During this stage, demonstration of the product followed by a hands on session i
 
 ### Stage 5 – Rollout
 
-On successful Go-Live in the Pilot ULBs, and further fine tuning to stabilize the product, the solution will be rolled out to the rest of the ULBs in phases. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.
+On successful Go-Live in the Pilot ULBs, and further fine-tuning to stabilize the product, the solution will be rolled out to the rest of the ULBs in phases. Guidance and support from the State Team will be required to create the rollout plans and assure the necessary infrastructure for training and deployment is available at each ULB.
 
 Note: The rollout phase needs to be detailed out for iterative activities of onboarding ULBs in batches.
 
@@ -253,11 +257,11 @@ Note: The rollout phase needs to be detailed out for iterative activities of onb
 | **Key Activities**    | <ul><li>ULB configurations phase wise as per the Project Plan</li><li>Migration and verification of ULB data</li><li>Logistics planning for training</li><li>Establishment of bug ticketing tool for resolving ground level issues by the state team</li><li>Training the Users at the district level</li><li>Pan State Roll Out - Phase wise</li><li>Stabilise product</li></ul> |
 | **Exit Criteria**     | <p>State-wide Rollout in batches:</p><ul><li>Adoption tracking &#x26; Review Cadence operational</li><li>Help Desk Effectiveness assured</li><li>Critical Bugs fixed</li><li>Program Success Metrics Tracking Kick-started</li></ul>                                                                                                                                              |
 
-Note: Only once all the stages are complete in one batch of rollout of around 30 ULBs, the next batch begins. There are multiple phases of rollout. The second batch begins after the first batch has successfully fulfilled all the criteria of the Rollout Phase. Typical timeline for closure of rollout in each batch is 5-6 weeks (in a batch of 30 ULBs)
+Note: Only once all the stages are complete in one batch of the rollout of around 30 ULBs, the next batch begins. There are multiple phases of rollout. The second batch begins after the first batch has successfully fulfilled all the criteria of the Rollout Phase. A typical timeline for the closure of rollout in each batch is 5-6 weeks (in a batch of 30 ULBs)
 
 ### Stage 6 – Sustenance and Ongoing Improvement
 
-The final stage consists of strategies to ensure the sustenance of the program in the State. Systems are put in place to ensure the continuous tracking of data and provisions are made to improve the product if new data suggests.
+The final stage consists of strategies to ensure the sustenance of the program in the State. Systems are put in place to ensure the continuous tracking of data and provisions are made to improve the product if new data suggest.
 
 |                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -266,11 +270,11 @@ The final stage consists of strategies to ensure the sustenance of the program i
 | **Entry Criteria**                              | <ul><li>Rollout Phase 1 (First set of 30 ULBs where rollout will happen after all ULBs are live)</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Key Ongoing Activities**                      | <ul><li>Adoption Review Meetings as per the vision defined for the program</li><li><p>Plans for Execution of Core Team to ensure Sustenance of the initiative in the areas of:</p><ul><li>Funding</li><li>IT support (infra, helpdesk, ongoing enhancements)</li><li>Process Effectiveness and Improvements</li></ul></li><li><p>PT Cell Focuses on Using data for:</p><ul><li>tracking field issues and performance data to identify improvements</li><li>identify additional Integrations around PT to make processes more robust towards enhancing PT revenues (e.g Upstream and downstream Processes)</li></ul></li></ul> |
 
-## Roles and Responsibilities
+## Section 4: Roles and Responsibilities
 
 ### PT Cell, eGov Team & System Integrator(SI)Team
 
-This section outlines the activities involved in each stage of the implementation along with responsibility and accountability of critical stakeholders - State, eGov Team and System Integrator Team onboard.
+This section outlines the activities involved in each stage of the implementation along with the responsibility and accountability of critical stakeholders - State, eGov Team and System Integrator Team onboard.
 
 **PT Cell:** PT Cell is the government-appointed body chaired by the Principal Secretary/Secretary, Urban Development Department with members from Urban Development Department etc.
 
@@ -285,16 +289,16 @@ Resource requirements for the PT cell required to be formed by the State
 
 Note:
 
-* Designations mentioned above are in accordance with those already driving PT implementation at the State level.
+* The designations mentioned above are in accordance with those already driving PT implementation at the State level.
 * The description of each designation is explained below.
 * Project Head: Is the Head of the PT Cell who will drive the project from the State’s Side
-* Domain Expert: Person who is well aware of the on ground scenario, well versed with the act, GOs passed, Prevalent Business processes, Deviations from the acts, PT Rates/ slabs applicable. In addition, provisions may be made to include External Domain Consultants/Advisors.
-* Nodal officer (EO/Commissioner/ Senior Official): the product coordinator to drive the project centrally. Monitor usage post Go Live- point of escalation for Implementation Team, Seasoned and worked in Multiple ULBs on various modules and has a good understanding of PT, Facilitate and Track data collection Post Go Live, Monitors and facilitates adoption of application. Point of contact for Management team, SI and at the HQ level.
-* MIS Expert: Data Preparation for ULBs,Day to day tracking of the data specific to ULBs, data collection/validation for correctness and comprehesiness, reporting and review to senior officials
+* Domain Expert: A person who is well aware of the on-ground scenario, well versed with the act, GOs passed, Prevalent Business processes, Deviations from the acts, and PT Rates/ slabs applicable. In addition, provisions may be made to include External Domain Consultants/Advisors.
+* Nodal officer (EO/Commissioner/ Senior Official): the product coordinator to drive the project centrally. Monitor usage post Go Live- point of escalation for Implementation Team, Seasoned and worked in Multiple ULBs on various modules and has a good understanding of PT, Facilitates and Tracks data collection Post Go Live, Monitors and facilitates the adoption of the application. Point of contact for the Management team, SI and at the HQ level.
+* MIS Expert: Data Preparation for ULBs, Day to day tracking of the data specific to ULBs, data collection/validation for correctness and comprehensiveness, reporting and review to senior officials
 
 **eGOv Team:** eGov Team is the technical partner of the project which will provide all necessary support to the State/UT concerning the implementation, Program Designing etc.
 
-**System Integrator (SI)Team:** SI Team will be responsible for consulting, program management and the implementation of the state specific customized and configured products in the ULBs in close collaboration with the PT cell, technical partner (eGov) and various other stakeholders.
+**System Integrator (SI)Team:** SI Team will be responsible for consulting, program management and the implementation of the state-specific customized and configured products in the ULBs in close collaboration with the PT cell, technical partner (eGov) and various other stakeholders.
 
 #### Guidelines to read the tables below:
 
@@ -404,96 +408,52 @@ Note: Stage 0 is where the PT cell and SI team is formed, hence there are only t
 | ----------- |
 | **PROGRAM** |
 
-Vision:
+Vision: Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets
 
-Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets
+Project Plan: A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required.
 
-Project Plan:
+System Integrator: The Entity/Company which collates all the subsystem required for the project and integrates them to achieve the program objective
 
-A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required.
+Program Charter: Outline of implementation plan agreement with priority applications and broad timelines, program governance model, program success metrics and capacity building.
 
-System Integrator:
+Acceptance Letter/MOU: Formal Acceptance/Sign Off of the Client State with a clear mandate of the Program
 
-The Entity/Company which collates all the subsystem required for the project and integrates them to achieve the program objective
+Program Success Metrics: Defining the parameters (which are measurable) prior to the program, on which the success of the program is to be measured on the completion of the program
 
-Program Charter:
+Project steering committee: The key body within the governance structure which is responsible for the business issues associated with the project that are essential in ensuring the delivery of the project outputs and the attainment of project outcomes.
 
-Outline of implementation plan agreement with priority applications and broad timelines, program governance model, program success metrics and capacity building.
+Project governance: Set of policies, regulations, functions, processes, procedures and responsibilities that define the establishment, management and control of projects, programmes and portfolios.
 
-Acceptance Letter/MOU:
+Scoping: List of activities measured against the time taken to complete them in accordance with the project goals
 
-Formal Acceptance/Sign Off of the Client State with a clear mandate of the Program
+Baseline data: Set of information that serves as a foundation to compare other data acquired afterwards
 
-Program Success Metrics:
+Project Kick-off meeting: Meeting with the project team and the client of the project. This meeting would follow the definition of the base elements for the project and other project planning activities
 
-Defining the parameters (which are measurable) prior to the program, on which the success of the program is to be measured on the completion of the program
+Fitment Study: GAP Study of the Existing/Required Field Process Vs Product
 
-Project steering committee:
+Data migration: Existing Records of the functional activities need to be moved into the Database of the newly released Application
 
-The key body within the governance structure which is responsible for the business issues associated with the project that are essential in ensuring the delivery of the project outputs and the attainment of project outcomes.
+Data collection: Required data for the roll-out of the applications, which needs to be collected from the existing functional process
 
-Project governance:
+Data validation approach: This approach enables the sanctity of the Data with built-in validation by the Design
 
-Set of policies, regulations, functions, processes, procedures and responsibilities that define the establishment, management and control of projects, programmes and portfolios.
+Data synchronization: The process of establishing consistency among data from a source to a target data storage and vice versa and the continuous harmonization of the data over time.
 
-Scoping:
+Pilot Implementation: Any new process is tested out as a pilot in one or two instances before pan implementation
 
-List of activities measured against time taken to complete them in accordance with the project goals
+Pilot ULB: The ULBs Selected for the pilot implementation are called pilot ULBs.
 
-Baseline data:
+Roll out: On successful clearance of the Pilot, the Process/Application/Services are implemented across all Offices/ULBs
 
-Set of information that serves as a foundation to compare other data acquired afterwards
+Deployment: Deployment defines the complete package of Software components set up in a particular environment
 
-Project Kick off meeting:
+Customisation: Details of changes to be made in the Product to comply with the needed field process
 
-Meeting with the project team and the client of the project. This meeting would follow definition of the base elements for the project and other project planning activities
+Configuration: Defining existing content such as Options and Variables based on the requirements on the ground
 
-Fitment Study:
+Product walkthrough: Explaining to the users step-by-step through a set of actions that they need to take to achieve a specific outcome
 
-GAP Study of the Existing/Required Field Process Vs Product
 
-Data migration:
-
-Existing Records of the functional activities need to be moved into the Database of the newly released Application
-
-Data collection:
-
-Required data for the roll-out of the applications, which needs to be collected from the existing functional process
-
-Data validation approach:
-
-This approach enables the sanctity of the Data with built-in validation by Design
-
-Data synchronization:
-
-The process of establishing consistency among data from a source to a target data storage and vice versa and the continuous harmonization of the data over time.
-
-Pilot Implementation:
-
-Any new process is tested out as pilot in one or two instances before pan implementation
-
-Pilot ULB:
-
-The ULB's Selected for the pilot implementation are called pilot ULB’s.
-
-Roll out:
-
-On successful clearance of the Pilot, the Process/Application/Services are implemented across all Offices/ULB's
-
-Deployment:
-
-Deployment defines the complete package of Software components set up in a particular environment
-
-Customisation:
-
-Details of changes to be made in the Product to comply with the needed field process
-
-Configuration:
-
-Defining existing content such as Options and Variables based on the requirements on the ground
-
-Product walkthrough:
-
-Explaining the users step-by-step through a set of actions that they need to take to achieve a specific outcome
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
