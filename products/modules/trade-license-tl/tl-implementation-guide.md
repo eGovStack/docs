@@ -20,7 +20,7 @@ Stage One requires scoping of the initiative and decisions on the priorities for
 
 Stage Two - the State Team works on identifying and finding solutions to the significant gaps in the product offered with respect to the need of the State. Stage Three - involves the Configuration and customization of the product offered. This involves working on various aspects of State-specific needs and incorporating them into the product offered.&#x20;
 
-Stage Four - is about doing a pilot launch in UAT and including all the necessary feedback on the product. Stage Five - the roll-out of the product is done at the State level (Go Live) from a couple of ULBs to pan State coverage in batches. Finally, in Stage Six sustenance and ongoing improvements are worked upon while the product is already functioning in the State. (For details on the implementation plan refer to Section 3)
+Stage Four - is about doing a pilot launch in UAT and including all the necessary feedback on the product. Stage Five - the roll-out of the product is done at the State level (Go Live) from a couple of ULBs to pan State coverage in batches. Finally, in Stage Six sustenance and ongoing improvements are worked upon while the product is already functioning in the State. (For details on the implementation plan refer to [Section 3](tl-implementation-guide.md#section-3-trade-license-tl-implementation-methodology))
 
 ### Critical Success Factors For Implementation
 
@@ -74,7 +74,7 @@ This is a set of initial critical activities undertaken on receiving a letter of
 | Entry Criteria                       | Acceptance Letter/MoU by State                                                                                                                                                                                                                                                                                                                                            |
 | Exit Criteria                        | <ul><li>Finalise Trade License Program Vision</li><li>Finalise funding for the program</li><li>Define State-specific procurement process</li><li>Trade License Cell appointment (*). Consisting of:</li><li>Domain expert</li><li>Nodal officer (EO/ Commissioner/ Senior Official)</li><li>Program Head</li><li>System Integrator (SI) Team sign-up/onboarding</li></ul> |
 
-\*Details of TL cell is mentioned in section 4 of the handbook
+\*Details of TL cell is mentioned in [section 4](tl-implementation-guide.md#section-4-roles-and-responsibilities-tl-cell-egov-team-and-system-integrator-si-team) of this handbook
 
 #### System Integrator (SI) Sign-up:
 
@@ -93,7 +93,7 @@ This stage envisages the in-person interaction of crucial State officials and im
 
 \*Exploration is required to understand the Inter and Intra Departmental Jurisdictions of Local Governments with respect to Trade License.
 
-\#Details of TL cell is mentioned in section 4 of the handbook
+\#Details of TL cell is mentioned in [section 4](tl-implementation-guide.md#section-4-roles-and-responsibilities-tl-cell-egov-team-and-system-integrator-si-team) of this handbook
 
 {% hint style="info" %}
 **State Baseline Data:** A Baseline Template is provided to collect certain vital information like no. of transactions, revenue collected in the last FYs, collection mode, budget data, etc. This data must be collected pre-rollout
