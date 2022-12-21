@@ -80,11 +80,14 @@ The trade-license service is currently used to issue trade licenses, perform sta
 
 {% file src="../../../../.gitbook/assets/encryption-service (2).pdf" %}
 
-{% file src="../../../../.gitbook/assets/bpa-stakeholder-registration-release-doc (1).pdf" %}
+{% content-ref url="../../online-building-plan-approval-system-obpas/obpas-service-configuration/bpa-stakeholder-registration.md" %}
+[bpa-stakeholder-registration.md](../../online-building-plan-approval-system-obpas/obpas-service-configuration/bpa-stakeholder-registration.md)
+{% endcontent-ref %}
 
-|                                           |                                                                                                                                      |
+
+
+| Title                                     | Link                                                                                                                                 |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Title**                                 | **Link**                                                                                                                             |
 | Local Setup                               | [LOCALSETUP.md](https://github.com/egovernments/core-services/blob/4a74fd3be04ab0a2fe0641f10b57b7e9b9f82aff/egov-user/LOCALSETUP.md) |
 | API Swagger Documentation (Trade License) | [Swagger Documentation TL](https://raw.githubusercontent.com/egovernments/egov-services/master/docs/common/contracts/v1-0-0.yml)     |
 

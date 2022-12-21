@@ -343,6 +343,7 @@
         * [Town Planning Schemes](products/modules/online-building-plan-approval-system-obpas/obpas-master-data-templates/town-planning-schemes.md)
       * [OBPAS Service Configuration](products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/README.md)
         * [BPA Service Configuration](products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/bpa-service-setup-and-configuration.md)
+        * [BPA Stakeholder Registration](products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/bpa-stakeholder-registration.md)
         * [Legacy/Re-Indexing For OBPS](products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/legacy-re-indexing-for-obps.md)
         * [BPA Calculator Service](products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/bpa-calculator-service.md)
         * [Setting Up eDCR Service](products/modules/online-building-plan-approval-system-obpas/obpas-service-configuration/setting-up-edcr-service.md)
