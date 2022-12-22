@@ -1,42 +1,42 @@
 # Employee Inbox UI Details
 
-Inbox page is constituted out of 4 react components:-
+The inbox page is constituted of 4 react components:-
 
-## ApplicationLinks
+## Application Links
 
-ApplicationLinks is a separate component that hold links to other pages of possible navigation from inbox. This component is common in both Mobile and Desktop view. Links are conditionally rendered according to the user roles
+Application Links is a separate component that holds links to other pages of possible navigation from the inbox. This component is common in both mobile and desktop views. Links are conditionally rendered according to the user roles.
 
 ![](<../../../../../.gitbook/assets/image (127).png>)
 
-## SearchApplication
+## Search Application
 
-Search Application component is a form based component, that controls the Table component and the search param for Inbox API, it uses FormComposer HOC to render fields.
+The Search Application component is a form-based component, that controls the Table component and the search param for Inbox API, it uses FormComposer HOC to render fields.
 
-Validation of these fields are achieved by using controlled component rules
+Validation of these fields is achieved by using controlled component rules
 
 ![](<../../../../../.gitbook/assets/image (244).png>)
 
-Any number of search fields can be added but by convention, only mobile numbers and appilication numbers are provided
+Any number of search fields can be added but by convention, only mobile numbers and application numbers are provided.
 
 ## Filters
 
-Filters contain input fields to filter the result of api, by sending search params to inbox api.
+Filters contain input fields to filter the result of API, by sending search params to inbox API.
 
 It contains 3 sections
 
-1. Assigned to Me/ All - It is a radio component to send assignedToMe param as _true_ or _false_
-2. Locality - Filter result according to the selected locality by sending locality code in moduleSearch params in inbox api
-3. Status - Status filters are achieved by sending id received from inbox api response and mapping the name of businessService, status name and count
+1. Assigned to Me/ All - It is a radio component to send the assignedToMe param as _true_ or _false._
+2. Locality - Filter result according to the selected locality by sending locality code in module search params in inbox API.
+3. Status - Status filters are achieved by sending the id received from the inbox API response and mapping the name of businessService, status name and count
 
 ![](<../../../../../.gitbook/assets/image (118) (1).png>)
 
 ## Table
 
-Table is a react component which uses React-Table plugin, used in multiple modules
+The table is a react component which uses the React-Table plugin, used in multiple modules
 
 ![](<../../../../../.gitbook/assets/image (116).png>)
 
-However in Mobile view are using cards to list all the applications without pagination support
+However, in Mobile view are using cards to list all the applications without pagination support.
 
 ## APIs
 

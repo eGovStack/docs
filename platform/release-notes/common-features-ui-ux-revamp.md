@@ -9,7 +9,7 @@ This note consists of common UI/UX elements revamped for employee and citizen Pr
 | **Feature**          | **Description**                                                                                                                                                                                                   |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Citizen Profile      | <p>Citizens can now edit name, email, passwords etc using their profile details section</p><p><img src="../../.gitbook/assets/image (41).png" alt=""><img src="../../.gitbook/assets/image (43).png" alt=""></p>  |
-| Employee Profile     | <p>Employees can now edit names, email, passwords etc using their profile details section</p><p><img src="../../.gitbook/assets/image (3).png" alt=""><img src="../../.gitbook/assets/image (42).png" alt=""></p> |
+| Employee Profile     | <p>Employees can now edit names, email, passwords etc using their profile details section</p><p><img src="../../.gitbook/assets/image (8).png" alt=""><img src="../../.gitbook/assets/image (42).png" alt=""></p> |
 | Employee City Switch | <p>Employees will be able to switch between multiple tenants that are mapped to his/her profile.</p><p><img src="../../.gitbook/assets/image (2).png" alt=""></p>                                                 |
 
 &#x20;

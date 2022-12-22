@@ -6,21 +6,21 @@ Search Application has 2 components.
 
 ## Search Fields
 
-Search field component is a form which takes inputs and pass it into tl-search api params. It utilizes SearchForm and SearchField component to create and arrange the form.
+A search field component is a form which takes inputs and passes them into tl-search API params. It utilizes SearchForm and SearchField components to create and arrange the form.
 
 ![](<../../../../../.gitbook/assets/image (242).png>)
 
 ## Result Table
 
-Result Table uses Table react component and the result from api is adapted to the table config using a custom hook inside common parent wrapper and passing the response to individual components
+Result Table uses the Table react component and the result from API is adapted to the table config using a custom hook inside the common parent wrapper and passing the response to individual components.
 
 ![](<../../../../../.gitbook/assets/image (184).png>)
 
-Search License has fixed param where the status of the application is _“APPROVED”_, other than differences in table config
+Search License has a fixed param where the status of the application is _“APPROVED”_, other than differences in table config
 
 ## APIs
 
-API end point for searching trade licenses is `{env}/tl-services/v1/_search`
+The API end point for searching trade licenses is `{env}/tl-services/v1/_search`
 
 API CURL -
 

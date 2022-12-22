@@ -1,6 +1,6 @@
 # My Applications UI Flow
 
-## **My Applications**
+## **Overview**
 
 Users can review the list of applications and their status registered under their mobile numbers in the My Applications tab. Each Application for the initial view displays the Application No, Service Category, Owner Name (Multiple with a comma), status, SLA, and Trade Name with the View Details option. If the status is pending for payment the View Details & Pay button is available that enables the users to look up more details about the application.
 
@@ -32,7 +32,7 @@ The link for the Applications and Application Details main code is given below, 
 
 The template for My Application List is present under [https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/pages/citizen/Applications/Application.js](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/pages/citizen/Applications/Application.js) and Application Details page is present inside - [https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/pages/citizen/Applications/ApplicationDetails.js](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/pages/citizen/Applications/ApplicationDetails.js) .
 
-All the Application lists are retrieved by calling the search API "`/tl-services/v1/_search`", if the view is set as “bills”, all the application is loaded using the hook `useFetchBill` which calls the `/billing-service/bill/v2/_fetchbill` API. SLA value in the Application List Screen is being calculated from the data received from workflow API : `/egov-workflow-v2/egov-wf/process/_search`
+All the Application lists are retrieved by calling the search API "`/tl-services/v1/_search`". If the view is set as “bills”, all the application is loaded using the hook `useFetchBill` which calls the `/billing-service/bill/v2/_fetchbill` API. SLA value in the Application List Screen is calculated from the data received from workflow API : `/egov-workflow-v2/egov-wf/process/_search`
 
 Following is the hook used for the trade search API.
 
@@ -47,7 +47,7 @@ const { isLoading, isError, data, error, ...rest } = view === "bills" ? Digit.Ho
   });
 ```
 
-To get the Application details in key-value format, in order to make it more compatible, following hook is being used, which is a common service to be used across modules.
+To get the Application details in key-value format, in order to make it more compatible, the following hook is being used, which is a common service to be used across modules.
 
 ```
  const { isLoading, isError, error, data: application, error: errorApplication } = Digit.Hooks.tl.useTLApplicationDetails({
