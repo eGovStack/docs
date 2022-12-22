@@ -2,7 +2,7 @@
 
 ## **Objective**
 
-Provide Employee to purpose workflow actions.
+Provide Employee purpose workflow actions.
 
 The same screen is used for both application details and trade details.
 
@@ -20,19 +20,19 @@ Apply Trade Licence
 
 ![](<../../../../../.gitbook/assets/image (234).png>)
 
-File Path:[ ![](https://github.com/fluidicon.png)digit-ui-internals/ApplicationDetails.js at main · egovernments/digit-ui-internals](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/pages/employee/ApplicationDetails.js)
+File Path:[ <img src="https://github.com/fluidicon.png" alt="" data-size="line">digit-ui-internals/ApplicationDetails.js at main · egovernments/digit-ui-internals](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/pages/employee/ApplicationDetails.js)
 
 ## **Trade Details**
 
 ![](<../../../../../.gitbook/assets/image (130).png>)
 
-Timeline View
+### Timeline View
 
 ![](<../../../../../.gitbook/assets/image (176).png>)
 
-It is common for all modules, find the path here:[ ![](https://github.com/fluidicon.png)digit-ui-internals/ApplicationDetailsContent.js at main · egovernments/digit-ui-internals](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/templates/ApplicationDetails/components/ApplicationDetailsContent.js)
+It is common for all modules, find the path here:[ <img src="https://github.com/fluidicon.png" alt="" data-size="line">digit-ui-internals/ApplicationDetailsContent.js at main · egovernments/digit-ui-internals](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/templates/ApplicationDetails/components/ApplicationDetailsContent.js)
 
-Workflow is the same as Old UI only, please refer to the documentation link below.
+The workflow is the same as Old UI only, please refer to the documentation link below.
 
 {% file src="../../../../../.gitbook/assets/apply-trade-license (1).pdf" %}
 Apply TradeLicence

@@ -13,11 +13,15 @@ Renewal can be two types:
 
 Once the user click on Renew Trade License button at the home page, it will redirect to the renewal list page which will display all the application eligible for the renewal corresponding to the mobile number on which the user has logged in. It will show the Trade name, License Number, Owner Name and status whether active or expired.![](blob:https://digit-discuss.atlassian.net/0330bfe3-4d76-473b-8177-c2a888c1a862#media-blob-url=true\&id=64447843-1df7-4f77-b485-97a1d5dc41b2\&collection=contentId-1849000004\&contextId=1849000004\&mimeType=image%2Fpng\&name=Screenshot%20from%202021-07-28%2014-18-45.png\&size=25937\&width=273\&height=393)
 
-Once the user click on Renew Button, it will redirect the user on the summary page just like in edit Trade license, with all the values pre-populated from the search API. Info card will be declared so that user will understand how to proceed with either direct renewal or edit renewal.![](blob:https://digit-discuss.atlassian.net/64fc168e-4bd7-49aa-ad44-1514112bc3f9#media-blob-url=true\&id=13ce6433-5384-422d-80a9-39e205a91c7c\&collection=contentId-1849000004\&contextId=1849000004\&mimeType=image%2Fpng\&name=Screenshot%20from%202021-07-28%2014-20-51.png\&size=40302\&width=271\&height=493)
+Once the user click on Renew Button, it will redirect the user on the summary page just like in edit Trade license, with all the values pre-populated from the search API. Info card will be declared so that user will understand how to proceed with either direct renewal or edit renewal.
+
+![](<../../../../../.gitbook/assets/image (5).png>)
 
 ### **Direct Renewal**
 
-If the user just want to renew the same application without updating any data, it will cross-verify all the values in the summary page and then click on submit button directly at the end of the page, this will lead the application with the next status as pending for payment and user can go through payment flow from the acknowledgement screen also, by clicking on the Make Payment button.![](blob:https://digit-discuss.atlassian.net/6b431ff0-55dd-4195-9e05-cb526cb021f1#media-blob-url=true\&id=fa464dc9-12b5-4d06-85a0-fc066a9edf17\&collection=contentId-1849000004\&contextId=1849000004\&mimeType=image%2Fpng\&name=Screenshot%20from%202021-07-28%2014-23-07.png\&size=30291\&width=276\&height=375)
+If the user just want to renew the same application without updating any data, it will cross-verify all the values in the summary page and then click on submit button directly at the end of the page, this will lead the application with the next status as pending for payment and user can go through payment flow from the acknowledgement screen also, by clicking on the Make Payment button.
+
+![](../../../../../.gitbook/assets/image.png)
 
 ### **Edit Renewal**
 
