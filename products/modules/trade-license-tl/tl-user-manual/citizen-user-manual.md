@@ -22,7 +22,7 @@ The citizen can also approach the Counter Employee (CE) to submit new TL applica
 
 Citizens or CE can apply for a new trade license through the DIGIT web portal or the DIGIT mobile app. To apply for a new TL click on the **Trade License** card available in the **Citizen Services** section of the DIGIT home page.
 
-Enter **Mobile Number**, **Name**, and **City** details. Click on the **Continue** button.
+Enter your **Mobile Number**, **Name**, and **City** details. Click on the **Continue** button.
 
 ![](<../../../../.gitbook/assets/image (128).png>)
 
@@ -102,7 +102,7 @@ Enter the **Owner’s Address**. Check the **Same as Trade Address** box if the 
 
 Upload the documents as required.
 
-Validate the information entered in the application summary screen. Click on **Change** to modify the information if required. Click on **Submit** button once the filled in details are found correct and complete.
+Validate the information entered in the application summary screen. Click on **Change** to modify the information if required. Click on **Submit** button once the filled-in details are found correct and complete.
 
 ![](<../../../../.gitbook/assets/image (139) (2).png>)
 
