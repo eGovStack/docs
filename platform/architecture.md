@@ -24,7 +24,7 @@ DIGIT is India’s largest open-source platform for digital governance. It is bu
 
 ![](<../.gitbook/assets/image (36).png>)
 
-![](<../.gitbook/assets/image (13).png>)
+![](<../.gitbook/assets/image (13) (1).png>)
 
 ### Multi-layer Architecture
 

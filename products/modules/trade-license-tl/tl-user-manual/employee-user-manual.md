@@ -31,7 +31,7 @@ Select the applicable Financial Year for which the trade license is to be issued
 
 Fill in the application details (same as given in the citizen application process).
 
-Click on the Submit button once all details are found complete and accurate.![](blob:https://digit-discuss.atlassian.net/94adcad3-2cc5-41d8-a0ad-31a32bfe7871#media-blob-url=true\&id=314afb1b-ec44-4d60-98aa-d9875392f8ac\&collection=contentId-1864597542\&contextId=1864597542\&mimeType=image%2Fpng\&name=TL6-counter-emp2.png\&size=70128\&width=1080\&height=675)
+Click on the Submit button once all details are found complete and accurate.
 
 ![](<../../../../.gitbook/assets/image (187).png>)
 
@@ -39,15 +39,15 @@ A unique application reference number is generated. This number is used to acces
 
 ## **Collect Payment**
 
-Click on **Inbox** to view the list of applications submitted.![](blob:https://digit-discuss.atlassian.net/e28c572d-6dd2-4b31-89f4-2c9af2ae41cc#media-blob-url=true\&id=7e8d6fb9-c2f0-4253-8200-2085e27a37a7\&collection=contentId-1864597542\&contextId=1864597542\&mimeType=image%2Fpng\&name=assets%252F-MEQnEQWBZ6Gjip-3pEg%252F-MWNbvelJUiH4bj38Tnz%252F-MWNddDF3QlXZUiRhitL%252FCEMP1.png%3Falt%3Dmedia%26token%3D6d80d1e4-ed87-4205-a9cd-ffe1b9e2eea9\&size=36139\&width=1080\&height=608)
+Click on **Inbox** to view the list of applications submitted.
 
 ![](<../../../../.gitbook/assets/image (192).png>)
 
-Click on the relevant **Application Number** hyperlink to open and view the application details.![](blob:https://digit-discuss.atlassian.net/b162dca1-c1c0-42f0-a53b-dd8b6936b8d5#media-blob-url=true\&id=5798242e-5b9e-49a8-8ba0-56ff86e02663\&collection=contentId-1864597542\&contextId=1864597542\&mimeType=image%2Fpng\&name=TL-CE-pay1.png\&size=134469\&width=1080\&height=675)
+Click on the relevant **Application Number** hyperlink to open and view the application details.
 
 ![](<../../../../.gitbook/assets/image (178).png>)
 
-Scroll down the application and click on the **Take Action** button. Click on **Pay**.![](blob:https://digit-discuss.atlassian.net/ab8387b0-4e9f-4393-bfcb-23b28a59b74b#media-blob-url=true\&id=ba1565fe-aad8-4ab7-9323-18618d0fec91\&collection=contentId-1864597542\&contextId=1864597542\&mimeType=image%2Fpng\&name=TL7-CE-pay2.png\&size=78292\&width=1080\&height=675)
+Scroll down the application and click on the **Take Action** button. Click on **Pay**.
 
 ![](<../../../../.gitbook/assets/image (235).png>)
 
@@ -61,7 +61,7 @@ The system generates a unique payment **Receipt Number**. Click on the **Print R
 
 ## **Renew License**
 
-Click on **Renew Trade License** option on the home page.![](blob:https://digit-discuss.atlassian.net/7f4f8464-8e4b-4621-bf3d-c70a1bd42ffa#media-blob-url=true\&id=d952bbc9-36eb-47bb-b332-c552448d969c\&collection=contentId-1864597542\&contextId=1864597542\&mimeType=image%2Fpng\&name=TL-Renew-lp.png\&size=95606\&width=1076\&height=611)
+Click on **Renew Trade License** option on the home page.
 
 ![](<../../../../.gitbook/assets/image (249).png>)
 
@@ -89,7 +89,7 @@ Log in with **Document Verifier** credentials.
 
 The employee landing page displays the list of applications waiting for processing. Use the search filters on the page to find specific applications from the list.
 
-Click on the **Application Number** hyperlink to open the application.![](blob:https://digit-discuss.atlassian.net/0fc0c502-60d2-4881-8ebb-00c7a6acc34a#media-blob-url=true\&id=825b2f19-c185-4109-93e0-7a1942fdb7f5\&collection=contentId-1864597542\&contextId=1864597542\&mimeType=image%2Fpng\&name=TL-DV1.png\&size=142476\&width=1080\&height=675)
+Click on the **Application Number** hyperlink to open the application.
 
 ![](<../../../../.gitbook/assets/image (153).png>)
 
