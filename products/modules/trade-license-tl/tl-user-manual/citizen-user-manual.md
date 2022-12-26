@@ -114,9 +114,11 @@ The system generates a unique application reference number. Click on **Download 
 
 Citizens can renew their existing trade applications on the DIGIT portal. CE can also apply for TL renewal on behalf of the citizens. To renew TL navigate to the home page and then click on the **Trade License** option. Click on **My Applications**. Click on the **Renew Now** button on the specific license.
 
-<figure><img src="https://lh3.googleusercontent.com/gXCeWzDF2fW83VFUCcEdzERyrlr1EA_mZaTpvdchjUlJsWr3vnnlPCaEybKcm81w-FtpMg4zhzIAD65Y0HugMx9CyI27z2xb3AVBWXbwqTY_-t9qcFvV0ry554hFt7Ss7xrGHqTS_enaaExWdaWVgKlo2M1YWGiZSpzwgeWSxEkxFGCye0GNgFuknCmb" alt=""><figcaption></figcaption></figure>
+![](<../../../../.gitbook/assets/image (1).png>)
 
 The system will display the license details. Click on the **Take Action** button. Click on the **Edit** button to make any changes to the existing license details. Click on the **Submit for Renewal** button to apply for renewal.
+
+![](<../../../../.gitbook/assets/image (21).png>)
 
 The Trade License is submitted for renewal.
 

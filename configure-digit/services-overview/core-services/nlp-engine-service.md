@@ -32,7 +32,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 ![](<../../../.gitbook/assets/image (284).png>)
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
