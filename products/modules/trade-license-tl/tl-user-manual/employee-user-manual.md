@@ -8,10 +8,10 @@ description: >-
 
 Employees can
 
-1. Create applications on behalf of citizens
-2. Make a payment on behalf of citizens
-3. Process applications
-4. Renew trade license
+1. [Create applications on behalf of citizens](employee-user-manual.md#create-applications)
+2. [Make a payment on behalf of citizens](employee-user-manual.md#collect-payment)
+3. [Process applications](employee-user-manual.md#process-application)
+4. [Renew trade license](employee-user-manual.md#renew-license)
 
 ## Create Applications
 
@@ -19,7 +19,7 @@ Log in to the employee portal using your credential.
 
 ![](<../../../../.gitbook/assets/image (144).png>)
 
-Click on the **New Application** option in the top left corner of the landing page.![](blob:https://digit-discuss.atlassian.net/a72dc851-5fd4-46af-8adc-f943cc292016#media-blob-url=true\&id=e259875f-5fec-4d71-8095-cb3f6c9f9f6c\&collection=contentId-1864597542\&contextId=1864597542\&mimeType=image%2Fpng\&name=TL6-counter-emp-lp.png\&size=95573\&width=1076\&height=605)
+Click on the **New Application** option in the top left corner of the landing page.
 
 ![](<../../../../.gitbook/assets/image (248).png>)
 

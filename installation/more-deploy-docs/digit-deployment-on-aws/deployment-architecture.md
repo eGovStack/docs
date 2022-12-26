@@ -10,7 +10,7 @@ This section contains architectural details about DIGIT deployment. It discusses
 
 ![](<../../../.gitbook/assets/image (12) (1).png>)
 
-![](<../../../.gitbook/assets/image (10) (1) (1).png>)
+![](<../../../.gitbook/assets/image (10) (1).png>)
 
 ### The CI/CD Flow
 

@@ -36,7 +36,7 @@ On completing the flow, the same object structure which was being used earlier i
 
 {% embed url="https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/utils/index.js" %}
 
-<figure><img src="../../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## **MDMS**
 

@@ -4,7 +4,7 @@
 
 Fetching data from the MDMS
 
-![](<../../../../../.gitbook/assets/image (6).png>)
+![](<../../../../../.gitbook/assets/image (6) (1).png>)
 
 ## Customizing Fields In A Form <a href="#customizing-fields-in-a-form" id="customizing-fields-in-a-form"></a>
 
@@ -142,7 +142,7 @@ Code snippet for schedule window:
         );
 ```
 
-![](<../../../../../.gitbook/assets/image (10) (1).png>)
+![](<../../../../../.gitbook/assets/image (10).png>)
 
 ScheduleDso.js is the file responsible for the schedule window pop up.&#x20;
 

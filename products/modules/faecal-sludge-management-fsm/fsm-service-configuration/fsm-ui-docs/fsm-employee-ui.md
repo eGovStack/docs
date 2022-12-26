@@ -92,7 +92,7 @@ The number of trips is editable only if the payment type is selected as post-pay
 
 Vehicle Type has been replaced by Vehicle Capacity and the vehicle capacity shown in the drop-down is filtered by the available DSOs. The unique value for capacity is shown in the drop-down.
 
-![](<../../../../../.gitbook/assets/image (7).png>)
+![](<../../../../../.gitbook/assets/image (7) (1).png>)
 
 ## Application Timeline <a href="#application-timeline" id="application-timeline"></a>
 
