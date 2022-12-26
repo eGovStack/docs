@@ -14,7 +14,9 @@ Example: If the application is not in an approved state and the business Service
 
 For workflow action details, please refer to the file below.
 
-
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
 
 ![](<../../../../../.gitbook/assets/image (234).png>)
 
@@ -32,9 +34,9 @@ It is common for all modules, find the path here:[ <img src="https://github.com/
 
 The workflow is the same as Old UI only, please refer to the documentation link below.
 
-{% file src="../../../../../.gitbook/assets/apply-trade-license (1).pdf" %}
-Apply TradeLicence
-{% endfile %}
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
 
 ## **Role Action Mapping**
 
