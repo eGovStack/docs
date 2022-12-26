@@ -12,11 +12,9 @@ Example: If the application is not in an approved state and the business Service
 
 ## **Application Details**
 
-For workflow actions, please refer to the file below.
+For workflow action details, please refer to the file below.
 
-{% file src="../../../../../.gitbook/assets/apply-trade-license (1).pdf" %}
-Apply Trade Licence
-{% endfile %}
+
 
 ![](<../../../../../.gitbook/assets/image (234).png>)
 
