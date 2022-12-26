@@ -82,7 +82,7 @@ Enable the **Location** Finder to allow GPS to track the current location. Or, m
 
 The **Pincode** field gets auto-populated if the location is selected on the map. Else, enter the **Pincode** of the location details manually. Click on **Skip and Continue** in case you are unable to provide the Pincode details.
 
-**City** and **Locality/Mohalla** fields are auto-populated once the **Pincode** is entered. Else, select the **City** and applicable **Locality/Mohalla** from the drop-down list\*\*.\*\*
+**City** and **Locality/Mohalla** fields are auto-populated once the **Pincode** is entered. Else, select the **City** and applicable **Locality/Mohalla** from the drop-down list.
 
 ![](<../../../../.gitbook/assets/image (177).png>)
 
@@ -114,15 +114,13 @@ The system generates a unique application reference number. Click on **Download 
 
 Citizens can renew their existing trade applications on the DIGIT portal. CE can also apply for TL renewal on behalf of the citizens. To renew TL navigate to the home page and then click on the **Trade License** option. Click on **My Applications**. Click on the **Renew Now** button on the specific license.
 
-![](https://lh4.googleusercontent.com/AIdYdmPsMws5vQ0nsoUXcVeTlJI3vO1zx\_8AvI0Ckuv64trW6P1usBonC-boIhe5DHuNtkQGlFGvEJlArdp9N7ZS295blqKy2QWV5YzC-ApOYguMEHkrGKSTCtPXctba85tjJ65x)
+<figure><img src="https://lh3.googleusercontent.com/gXCeWzDF2fW83VFUCcEdzERyrlr1EA_mZaTpvdchjUlJsWr3vnnlPCaEybKcm81w-FtpMg4zhzIAD65Y0HugMx9CyI27z2xb3AVBWXbwqTY_-t9qcFvV0ry554hFt7Ss7xrGHqTS_enaaExWdaWVgKlo2M1YWGiZSpzwgeWSxEkxFGCye0GNgFuknCmb" alt=""><figcaption></figcaption></figure>
 
 The system will display the license details. Click on the **Take Action** button. Click on the **Edit** button to make any changes to the existing license details. Click on the **Submit for Renewal** button to apply for renewal.
 
-![](https://lh3.googleusercontent.com/GG25eCOAdnLBxLCt8d7NRr8BHP1Bm5QVqMnH8R50yTEZ3gyGSQ9nv2aBLCJhEBlAhqGPUD86dqzjuoGsSiKtbz-rdijYFG1nG\_L2Y9JQJuQ3m1i6h7zuahwBLrooyTVzDt4SWVAU)
-
 The Trade License is submitted for renewal.
 
-### **View Application Status and Pay**
+### **View Application Status & Pay**
 
 My Applications option allows applicants to view their applications and track their status.
 
@@ -140,7 +138,7 @@ The **Application Timeline** displays the current status and completed actions o
 
 ![](<../../../../.gitbook/assets/image (173) (1).png>)
 
-Click on **Pay** redirects the citizen to the internet banking page and make the payment.![](blob:https://digit-discuss.atlassian.net/2d99c9b0-cbfa-461a-b28f-d0f4921468ae#media-blob-url=true\&id=7a08cd9f-1b02-4dfa-aa41-52bf9bea5552\&collection=contentId-1540423721\&contextId=1540423721\&mimeType=image%2Fpng\&name=assets%252F-MEQnEQWBZ6Gjip-3pEg%252F-MWNlF4KL2xwXupo2CcQ%252F-MWNoN6YXRll-4Ae8VdA%252FCITI-PAY2.png%3Falt%3Dmedia%26token%3Dafd42340-739f-43a0-ba7f-155664a4742a\&size=32932\&width=428\&height=760\&alt=)
+Click on **Pay** redirects the citizen to the internet banking page and make the payment.
 
 ![](<../../../../.gitbook/assets/image (122) (1).png>)
 
