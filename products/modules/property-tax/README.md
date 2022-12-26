@@ -24,7 +24,7 @@ This section contains all docs and information required to understand the PT mod
 * [PT Roadmap](pt-roadmap.md)
 * [PT User Manual](pt-user-manual/)
 * [Product Brochure](pt-brochure.md)
-* [PT Workflows](pt-workflows.md)
+* [PT Workflows](broken-reference)
 * [Master Data Configuration Template](pt-master-data-templates/)
 * PT Service Configuration
 * [Implementation Handbook](pt-implementation-guide.md)

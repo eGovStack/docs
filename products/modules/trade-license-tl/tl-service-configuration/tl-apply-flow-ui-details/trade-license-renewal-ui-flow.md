@@ -21,7 +21,7 @@ Once the user clicks on Renew Button, it redirects the user to the summary page 
 
 If the user just wants to renew the same application without updating any data, it will cross-verify all the values in the summary page and then click on submit button directly at the end of the page, this will lead the application to the next status as pending for payment and user can go through payment flow from the acknowledgement screen also, by clicking on the Make Payment button.
 
-![](<../../../../../.gitbook/assets/image (2).png>)
+![](<../../../../../.gitbook/assets/image (1).png>)
 
 ### **Edit Renewal**
 
