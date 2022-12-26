@@ -34,7 +34,9 @@ It is similar to Accessories and Units - the only difference is in UI. Users can
 
 On completing the flow, the same object structure which was being used earlier in the flow gets changed into the request body structure for the update API: `/tl-services/v1/_update`, for this, the method which gets used is declared inside the Utils folder. Method name: `convertToResubmitTrade` and it can be found in the below link:
 
-[https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/utils/index.js](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/utils/index.js)![](blob:https://digit-discuss.atlassian.net/4e2802b2-9a96-4ec6-9c98-8a460896386d#media-blob-url=true\&id=6d9d422b-f7ff-4999-b7ed-e014ddc2e590\&collection=contentId-1848672338\&contextId=1848672338\&mimeType=image%2Fpng\&name=Screenshot%20from%202021-07-28%2013-35-12.png\&size=61348\&width=525\&height=405)
+{% embed url="https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/utils/index.js" %}
+
+<figure><img src="../../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 ## **MDMS**
 

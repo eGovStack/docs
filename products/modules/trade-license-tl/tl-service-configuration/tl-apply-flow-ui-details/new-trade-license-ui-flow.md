@@ -47,7 +47,7 @@ documents:[ <img src="https://github.com/fluidicon.png" alt="" data-size="line">
 
 ![](<../../../../../.gitbook/assets/image (132).png>)
 
-After the success of creating and updating calls will route to the \*\*\*\*acknowledgement screen.
+After the success of creating and updating calls will route to the acknowledgement screen.
 
 File Path:[ <img src="https://github.com/fluidicon.png" alt="" data-size="line">digit-ui-internals/getTLAcknowledgementData.js at main · egovernments/digit-ui-internals](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/tl/src/utils/getTLAcknowledgementData.js)
 

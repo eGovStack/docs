@@ -1,6 +1,6 @@
 # Employee Inbox UI Details
 
-The inbox page is constituted of 4 react components:-
+The Inbox page contains 4 react components:-
 
 ## Application Links
 
