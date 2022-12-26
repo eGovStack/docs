@@ -15,7 +15,7 @@ Once the user clicks on Renew Trade License button on the home page, it will red
 
 Once the user clicks on Renew Button, it redirects the user to the summary page just like in edit Trade license, with all the values pre-populated from the search API. The info card will be declared so that the user will understand how to proceed with either direct renewal or edit renewal.
 
-![](<../../../../../.gitbook/assets/image (9).png>)
+![](<../../../../../.gitbook/assets/image (9) (1).png>)
 
 ### **Direct Renewal**
 

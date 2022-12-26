@@ -107,6 +107,6 @@ For getting vehicle timeline /vehicle/trip/v1/\_search API is called for that pa
 
 Code for handling vehicle trip timeline data available here: _frontend/micro-ui/web/micro-ui-internals/packages/libraries/src/services/elements/WorkFlow.js_
 
-![](<../../../../../.gitbook/assets/image (8) (1).png>)
+![](<../../../../../.gitbook/assets/image (8) (1) (1).png>)
 
 ![](<../../../../../.gitbook/assets/image (14).png>)
