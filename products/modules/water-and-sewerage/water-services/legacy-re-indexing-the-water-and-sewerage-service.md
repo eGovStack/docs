@@ -1,31 +1,32 @@
 # Legacy/Re-Indexing the Water & Sewerage Service
 
-#### Overview <a href="#overview" id="overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
-We are using re-indexing to get all the data to respective indexer. We have 2 steps for this. First as to run the connector from playground, which is followed by legacyindexer service call from indexer service, which internally call the respective plain search service to get the data and to send to respective indexer.
+We are using re-indexing to get all the data to the respective indexer. We have 2 steps for this. The first is to run the connector from the playground. This is followed by a legacy indexer service call from the indexer service, which internally calls the respective plain search service to get the data and send it to the respective indexer.
 
-\
-**Prerequisites**:
+## **Pre-requisites**
 
 * Access to kubectl of the environment targetted
 * Postman scripts
-* Plain search apis in the respective services
+* Plain search APIs in the respective services
+
+## Steps
 
 **We have two services for water and sewerage**
 
 * water-services
 * sewerage-services
 
-**water-services reindexing steps**
+### **Water-services Reindexing Steps**
 
 * Connect to playground pod.
-* Delete the kafka connector if already exists with the kafka connection, using below command through playground pod.
+* Delete the Kafka connector if already exists with the Kafka connection, using the below command through playground pod.
 
 ```
 curl --location --request DELETE 'http://kafka-connect.kafka-cluster:8083/connectors/water-services-enriched-es-sink'
 ```
 
-* Run below kafka connector curl from playground pod:
+* Run below Kafka connector curl from playground pod:
 
 ```
 curl --location --request POST 'http://kafka-connect.kafka-cluster:8083/connectors/' \
@@ -114,13 +115,13 @@ curl --location --request POST 'http://localhost:8088/egov-indexer/index-operati
 }'
 ```
 
-* Delete the kafka connection after all the data has been re-indexed by follwing below command through playground pod.
+* Delete the Kafka connection after all the data has been re-indexed by following the below command through the playground pod.
 
 ```
 curl --location --request DELETE 'http://kafka-connect.kafka-cluster:8083/connectors/water-services-enriched-es-sink'
 ```
 
-* Alias water-services-enriched as water-services through kibana server.
+* Alias water-services-enriched as water-services through the Kibana server.
 
 ```
 POST /_aliases 
@@ -138,16 +139,16 @@ POST /_aliases
 
 
 
-**sewerage-services re-indexing steps**
+### **Sewerage-services Reindexing Steps**
 
 * Connect to playground pod.
-* Delete the kafka connector if already exists with the kafka connection, using below command through playground pod.
+* Delete the Kafka connector if already exists with the Kafka connection, using the below command through playground pod.
 
 ```
 curl --location --request DELETE 'http://kafka-connect.kafka-cluster:8083/sewerage-services-enriched-es-sink'
 ```
 
-* Run below kafka connector curl from playground pod:
+* Run below Kafka connector curl from playground pod:
 
 ```
 curl --location --request POST 'http://kafka-connect.kafka-cluster:8083/connectors/' \
@@ -236,13 +237,13 @@ curl --location --request POST 'http://localhost:8088/egov-indexer/index-operati
 }'
 ```
 
-* Delete the kafka connection after all the data has been re-indexed by follwing below command through playground pod.
+* Delete the Kafka connection after all the data has been re-indexed by following the below command through the playground pod.
 
 ```
 curl --location --request DELETE 'http://kafka-connect.kafka-cluster:8083/sewerage-services-enriched-es-sink'
 ```
 
-* Alias water-services-enriched as water-services through kibana server.
+* Alias water-services-enriched as water-services through the Kibana server.
 
 ```
 POST /_aliases 
