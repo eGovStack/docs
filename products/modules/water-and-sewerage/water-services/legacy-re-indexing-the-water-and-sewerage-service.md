@@ -10,7 +10,7 @@ We are using re-indexing to get all the data to the respective indexer. We have 
 * Postman scripts
 * Plain search APIs in the respective services
 
-## Steps
+## Configuration Steps
 
 **We have two services for water and sewerage**
 

@@ -30,7 +30,7 @@ Code snippets to fetch the application number:
 
 ## Trip Number In FSTPO Details <a href="#trip-no-in-fstpo-details" id="trip-no-in-fstpo-details"></a>
 
-![](<../../../../../.gitbook/assets/image (20).png>)
+![](<../../../../../.gitbook/assets/image (20) (1).png>)
 
 We have added the Trip No. field on the fstp-operator-details page so that the FSTPO can access the ongoing trip of the application number.
 

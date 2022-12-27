@@ -4,7 +4,7 @@
 
 Details of components added to the employee's new application screen are given below.
 
-![](<../../../../../.gitbook/assets/image (16).png>)
+![](<../../../../../.gitbook/assets/image (16) (10).png>)
 
 * **Payment Type:** Employees can select the mode of payment while creating a new application.
 
@@ -92,7 +92,7 @@ The number of trips is editable only if the payment type is selected as post-pay
 
 Vehicle Type has been replaced by Vehicle Capacity and the vehicle capacity shown in the drop-down is filtered by the available DSOs. The unique value for capacity is shown in the drop-down.
 
-![](<../../../../../.gitbook/assets/image (7) (1).png>)
+![](<../../../../../.gitbook/assets/image (7) (1) (1).png>)
 
 ## Application Timeline <a href="#application-timeline" id="application-timeline"></a>
 
@@ -109,4 +109,4 @@ Code for handling vehicle trip timeline data available here: _frontend/micro-ui/
 
 ![](<../../../../../.gitbook/assets/image (8) (1).png>)
 
-![](<../../../../../.gitbook/assets/image (14).png>)
+![](<../../../../../.gitbook/assets/image (14) (1).png>)
