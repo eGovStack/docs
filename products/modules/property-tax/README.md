@@ -21,7 +21,7 @@ DIGIT-Property Tax (PT) is a self-serve web and mobile-based, easy-to-use and co
 This section contains all docs and information required to understand the PT module, its key features, functional scope, and configuration details. Click on the links below to learn more about deploying, configuring, customizing, and using the PT module.
 
 * [Functional Specifications](pt-module-functional-specifications.md)
-* [PT Roadmap](pt-roadmap.md)
+* [PT Roadmap](broken-reference)
 * [PT User Manual](pt-user-manual/)
 * [Product Brochure](pt-brochure.md)
 * [PT Workflows](broken-reference)

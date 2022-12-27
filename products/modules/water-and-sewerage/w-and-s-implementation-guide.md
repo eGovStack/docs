@@ -4,29 +4,29 @@
 
 ### Overview of the Product
 
-Access to clean and safe water is one of the basic needs of citizens. Each Urban local body has been mandated with catering to the water and sanitation needs of its citizens. The computerized and automatic Water and Sewerage system offered by eGov enables citizens who seek to apply and pay for water and sewerage connections within any Urban Local Body with a transparent, speedy, hassle-free and user-friendly procedure. The ULB officials can now sanction connections, generate bills and collect payments for water and sewerage connections more efficiently. (For details on product features refer to Section-2)
+Access to clean and safe water is one of the basic needs of citizens. Each Urban local body has been mandated with catering to the water and sanitation needs of its citizens. The computerized and automatic Water and Sewerage system offered by eGov enables citizens who seek to apply and pay for water and sewerage connections within any Urban Local Body with a transparent, speedy, hassle-free and user-friendly procedure. The ULB officials can now sanction connections, generate bills and collect payments for water and sewerage connections more efficiently. (For details on product features refer to [Section 2](w-and-s-implementation-guide.md#section-2-water-and-sewerage-w-and-s-product-overview))
 
 ### Implementation Methodology for W\&S
 
-For the offered product, the implementation process can be divided into six major distinctive stages. Each stage has predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision making for the overall success of the engagement. The whole implementation lifecycle is typical of 23-27 weeks for the State/UT keeping in mind the entry, and exit criteria defined at the beginning and end of each stage are met on time recommended.
+For the offered product, the implementation process can be divided into six major distinctive stages. Each stage has predefined entry and exit criteria, roles & responsibilities to assure objective monitoring and decision-making for the overall success of the engagement. The whole implementation lifecycle is typical of 23-27 weeks for the State/UT keeping in mind the entry, and exit criteria defined at the beginning and end of each stage are met on time recommended.
 
 ![](https://lh6.googleusercontent.com/oTzTqSSRDKpFkpNzY9WL1gNp5X-I5LSRxIPs4LLZiyfp78EKyYJSDowUrkJC9X61ZlQ8UbbNr1r1mDHntUyxmMTfM9xd6P4Lmpm1hNQirB6lmWK-Vue6fHkDrx81jbgdUolVnYgx)
 
-Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick-off and requires setup of the governance model, implementation team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One of the initiative requires scoping of the initiative and decide on the priorities for implementation by the State/UT implementation Team. In Stage Two, the W\&S team is appointed and its processes are standardized. In Stage Three, the State/UT Team will work upon identifying and finding solutions to the significant gaps in the product offered w.r.t. to the need of the State/UT. Configuration and customization of the product offered in the primary objective of stage four. This involves working on various aspects of UT-specific needs and incorporating them into the product suite offered. In Stage Four and Five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State/UT level(Go Live) from a couple of ULBs to pan State/UT coverage. In Stage Six of sustenance and ongoing improvement, key activities are adoption and governance tracking with the planning of ongoing sustenance. (For details on implementation plan refer to Section-3).
+Stage Zero-program setup and onboarding is a pre-requisite for the initiative to kick off and requires setup of the governance model, implementation team and decision regarding other significant elements of the initiative like funding and procurement process. Stage One of the initiative requires scoping the initiative and deciding on the priorities for implementation by the State/UT Implementation Team. In Stage Two, the W\&S team is appointed and its processes are standardized. In Stage Three, the State/UT Team will work on identifying and finding solutions to the significant gaps in the product offered w.r.t. to the need of the State/UT. Configuration and customization of the product is the primary objective of Stage Four. This involves working on various aspects of UT-specific needs and incorporating them into the product suite offered. In Stage Four and Five, post doing UAT and including all the necessary feedback on the product, the roll-out of the product is done at the State/UT level(Go Live) from a couple of ULBs to pan State/UT coverage. In Stage Six of sustenance and ongoing improvement, key activities are adoption and governance tracking with the planning of ongoing sustenance. (For details on the implementation plan refer to [Section 3](w-and-s-implementation-guide.md#section-3-water-and-sewerage-w-and-s-implementation-methodology)).
 
-### Critical Success Factors for implementation
+### Critical Success Factors For Implementation
 
-Implementation of Water and Sewerage (W\&S) requires meticulous planning and close coordination between various stakeholders at the centre and State/UT level. The success of the initiative is dependent upon many factors like strong Program governance, availability of the trained resource, financial planning, targeted implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to the urban centre. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Water and Sewerage Implementation System in the UT.
+Implementation of Water and Sewerage (W\&S) requires meticulous planning and close coordination between various stakeholders at the centre and State/UT levels. The success of the initiative is dependent upon many factors like strong Program governance, availability of trained resources, financial planning, targeted implementation Team onboarding, focus on last-mile capacity building and ensuring necessary support to the urban centre. Achievement of all these factors will provide the most effective and efficient roll-out and adoption of the Water and Sewerage Implementation System in the UT.
 
 ## Section 2: Water and Sewerage (W\&S) Product - Overview
 
-The Water and Sewerage (W\&S) module provides a digital interface to apply for water and sewerage connections and pay the water and sewerage charges for connection/s. It can be used by the citizens, Urban Local Body (ULB) counter employees and field employees, and ULB Administrators to accomplish their specific tasks. It is available as a mobile and web-based application. The W\&S product features can be broadly classified as the following modules:
+The Water and Sewerage (W\&S) module provides a digital interface to apply for water and sewerage connections and pay the water and sewerage charges for connection/s. The citizens can use it, Urban Local Body (ULB) counter employees and field employees, and ULB Administrators to accomplish their specific tasks. It is available as a mobile and web-based application. The W\&S product features can be broadly classified as the following modules:
 
 1. Registration, Login and Creation of User Profile
 2. Application for new Water/Sewerage connection
 3. Searching for a Connection
 4. Modifications to a Connection
-5. Entering meter reading of metered connections
+5. Entering meter readings of metered connections
 6. Generate Demand
 7. Payments collection and Receipts
 8. Dashboards and Reports
@@ -35,13 +35,13 @@ The Water and Sewerage (W\&S) module provides a digital interface to apply for w
 
 This module provides enables the following capabilities:
 
-* OTP Based Login for Citizen via Web/Mobile App
-* OTP Based Login for Employee via Web/Mobile App
-*   Provision for language selection during first time registration for both Employee and
+* OTP-based login for citizens via Web/Mobile App
+* OTP-based login for employees via Web/Mobile App
+*   Provision for language selection during first-time registration for both employees and
 
     citizens
-* Provision of creating a personalized Profile for Citizens and employees on Web App
-* Login Credentials for the various hierarchy of employees
+* Provision of creating a personalized profile for citizens and employees on the Web App
+* Login credentials for the various hierarchy of employees
 * Role-based access for performing different actions relating to the W\&S module
 
 ### Module 2: Application for new Water & Sewerage connection
@@ -63,13 +63,13 @@ Only employees from the W\&S department will be able to access the feature, to s
 
 The search result contains the Application number, Consumer number, Owner name, Status, Due amount and the Pay now option. The Employee can make payment for a connection on the citizen’s behalf using the ‘Pay Now’ option.
 
-Citizens can also search for their connection in the portal. They can search using the Owners mobile number, Property ID, Consumer number etc. The search result yields, Owner’s Name, Address, Due amount and Pay option.
+Citizens can also search for their connections in the portal. They can search using the Owners mobile number, Property ID, Consumer number etc. The search result yields, the Owner’s Name, Address, Due amount and Pay options.
 
 ### Module 4: Modifications to a Connection
 
-The system facilitates the title transfer of water tap connection from one person to the other person. Title transfer of water tap connection directly depends upon Property tax. If title transfer is done in the property tax module then at the time of final approval, the changes will reflect in the W\&S module automatically. After the title transfer has been completed successfully, subsequent bills will be generated with the details of the new owner/s.
+The system facilitates the title transfer of the water tap connection from one person to the other person. Title transfer of water tap connection directly depends upon Property tax. If title transfer is done in the property tax module then at the time of final approval, the changes will reflect in the W\&S module automatically. After the title transfer has been completed successfully, subsequent bills will be generated with the details of the new owner/s.
 
-Water tap change in usage happens when property type is changed from residential to Non-residential or from Non-residential to residential. Change in usage directly depends on the property tax module. If the property type is changed in the Property tax system then it will automatically reflect in the W\&S system. When there is a change in the usage type, the subsequent bills will reflect the rates as per the updated usage category. When there is a change in the usage category in the middle of the billing cycle, pro-rata charges will be applied in the next billing period.
+Water tap change in usage happens when the property type is changed from residential to Non-residential or from Non-residential to residential. Change in usage directly depends on the property tax module. If the property type is changed in the Property tax system then it will automatically reflect in the W\&S system. When there is a change in the usage type, the subsequent bills will reflect the rates as per the updated usage category. When there is a change in the usage category in the middle of the billing cycle, pro-rata charges will be applied in the next billing period.
 
 The change in connection category from non-metered to metered and vice-versa is also possible in the W\&S system with the appropriate workflow configured to intimate all stakeholders of the change and collect any charges (if applicable) from the citizen.
 
@@ -103,7 +103,7 @@ The citizen can pay for dues by searching his/her connection. In search results,
 
 ### Module 8: Closure of Water Connection
 
-If the Water tap owner has got his own water source then the water tap owner can initiate for Water tap connection closure permanently. So, that tap will be closed permanently and demand would not be generated for the connection. Application for the closing of water tap connection is accepted only with the latest water charges receipt and clearing of old dues.
+If the Water tap owner has got his own water source then the water tap owner can initiate for Water tap connection closure permanently. So, that tap will be closed permanently and demand would not be generated for the connection. Application for the closing of the water tap connection is accepted only with the latest water charges receipt and clearing of old dues.
 
 ### Module 9: Dashboards and Reports
 
@@ -124,7 +124,7 @@ The dashboard has these components:
   * W & S Consumers by Usage Type
   * Total Collections by Source
   * Total Collections by Mode
-  * W & S Adoption : ULB Wise
+  * W & S Adoption: ULB Wise
 * Today’s Collections
   * W\&S Total collections: Today
   * Water Charges - Total collections: Today
@@ -132,14 +132,12 @@ The dashboard has these components:
   * W\&S - Total No. of Receipts: Today
   * Water - Total No. of Receipts: Today
   * Sewerage - Total No. of Receipts: Today
-  * Mode wise W\&S collections: Today
+  * Mode-wise W\&S collections: Today
   * W\&S ULB wise collections: Today
-
-## Water & Sewerage (W\&S) Implementation Methodology for the State of xxx
 
 ## Section 3 Water and Sewerage (W\&S) Implementation Methodology
 
-This section provides an overview of the methodology for State-wide implementation of W\&S. The Implementation of W\&S is distributed across seven distinct stages. Each stage has predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision making for the overall success of the program. Details of each stage are defined in this section.
+This section provides an overview of the methodology for the State-wide implementation of W\&S. The Implementation of W\&S is distributed across seven distinct stages. Each stage has predefined entry & exit criteria and roles & responsibilities. This is to ensure objective monitoring and decision-making for the overall success of the program. Details of each stage are defined in this section.
 
 ![](https://lh4.googleusercontent.com/bN1Oeyb0rz8voxHH4pNMbAynq8W0uEBvQwtErV6ZvVaP5FfbNFoHrURdS8MYFfslR079BInVnPpWt10cAOJEh6fT\_diHc\_RUHu3YxlzFUPLggZ2AVwaAHsWvLNNCUWpryOuX8zbo)
 
@@ -153,7 +151,7 @@ W\&S implementation program is expected to be completed approximately between 38
 
 ### Stage 0 - Program Setup/Onboarding
 
-There is a set of initial critical activities that are undertaken on receiving a letter of Enrollment from the State/Union Territory. Successful completion of these activities assures that the program is started with crucial personnel, System Integrator(SI) Teams and funds.
+There is a set of initial critical activities that are undertaken upon receiving a letter of enrollment from the State/Union Territory. Successful completion of these activities assures that the program is started with crucial personnel, System Integrator(SI) teams and funds.
 
 | Stage 0 - Program Setup/ On-Boarding |                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -161,7 +159,7 @@ There is a set of initial critical activities that are undertaken on receiving a
 | Entry Criteria                       | Acceptance Letter/MoU by State                                                                                                                                                                                                                                                                                                                                                                                   |
 | Exit Criteria                        | <ul><li>Finalize Water and Sewerage Program Vision</li><li>Finalize funding for the program</li><li>Define State/Union Territory -specific procurement process</li><li><p>Water and Sewerage Cell appointment. Consisting of :</p><ul><li>Domain expert</li><li>Nodal officer (EO/ Commissioner/ Senior Official)</li><li>Program Head</li></ul></li><li>System Integrator(SI) Team sign-up/onboarding</li></ul> |
 
-#### Vision:
+#### Vision
 
 * Define the value proposition of the programme for the state
 * Define the time frame within which the state needs to:
@@ -187,7 +185,7 @@ This stage envisages the in-person interaction of crucial State/UT officials and
 {% hint style="info" %}
 **Note**
 
-1\) State Baseline Data (As per the Module): A Baseline Template is provided to collect certain vital information like no. of transactions, revenue collected in the last FYs, collection mode, budget data, etc. This data is vital for various analysis at the state level. This data must be collected pre-rollout. The baseline data collection templates will be provided to the state/SI Team.
+1\) State Baseline Data (As per the Module): A Baseline Template is provided to collect certain vital information like no. of transactions, revenue collected in the last FYs, collection mode, budget data, etc. This data is vital for various analyses at the state level. This data must be collected pre-rollout. The baseline data collection templates will be provided to the state/SI Team.
 
 2\) ULBs Specific Product Data Configuration: This Master data is required from the Product Perspective to go live. For eg: Connection Legacy Data, Boundary Data, List of Employees, Rates etc. Master Data Template will be provided for the collection of this particular data type.
 {% endhint %}
@@ -270,17 +268,17 @@ Resource requirements for the W\&S cell required to be formed by the UT
 | MIS Expert    | 4                |
 
 {% hint style="info" %}
-Note: Designation mentioned above are as per designations known driving W\&S implementation at the State/UT level as explained below. (These are the preferred figures in the case of Domain Expert, 2 people are subject to availability)
+Note: The designation mentioned above is as per designations known to drive W\&S implementation at the State/UT level (explained below). These are the preferred figures in the case of Domain Expert, 2 people are subject to availability.
 {% endhint %}
 
 * Project Head: Is the Head of the W\&S Cell who will drive the project from the State/UT Side
-* Domain Expert: Person who is well aware of the on-ground scenario, well versed with the act, GOs passed, Prevalent Business processes, Deviations from the acts, Rates/ slabs applicable
-* Nodal officer (EO/Commissioner/ Senior Official): the product coordinator to drive the project centrally. Monitor usage post Go Live- point of escalation for Implementation Team, Seasoned and worked in Multiple ULBs on various modules and has a good understanding of W\&S, Facilitate and Track data collection Post Go Live, Monitors and facilitates the adoption of the application. point of contact for eGov, SI and at the HQ level.
-* MIS Expert: Day to day tracking of the program, data entry, reporting and review to senior officials
+* Domain Expert: A person who is well aware of the on-ground scenario, well versed with the act, GOs passed, Prevalent Business processes, Deviations from the acts, Rates/ slabs applicable
+* Nodal officer (EO/Commissioner/ Senior Official): the product coordinator to drive the project centrally; monitors usage post Go Live; point of escalation for Implementation Team; seasoned and worked in multiple ULBs on various modules and has a good understanding of W\&S; facilitates and tracks data collection post-go-live; monitors and facilitates the adoption of the application; point of contact for eGov, SI and at the HQ level.
+* MIS Expert: Day-to-day tracking of the program, data entry, reporting and review to senior officials
 
 eGov Team: eGov Team is the technical partner of the project which will provide all necessary support to the State/UT concerning the implementation, Program Designing etc.
 
-System Integrator (SI) Team: SI Team will be responsible for the rollout of the initiative in the UT, providing end to end support to the State/UT w.r.t. The implementation of the products in the ULBs.
+System Integrator (SI) Team: SI Team will be responsible for the rollout of the initiative in the UT, providing end-to-end support to the State/UT w.r.t. The implementation of the products in the ULBs.
 
 Guidelines to read the table are mentioned on the next page:
 
@@ -296,7 +294,7 @@ Guidelines to read the table are mentioned on the next page:
 | System Integrator(SI) Team sign-up/onboarding | Consult  | Execute              |
 | Finalize Water and Sewerage Program Vision    | Consult  | Execute              |
 
-Note: Stage 0 is where the W\&S cell and SI team are formed, hence there are only two entities playing a role which is that of eGov and the state leadership. Once the W\&S cell and SI team are finalized, their role begins in the following stages.
+Note: Stage 0 is where the W\&S cell and SI team are formed, hence there are only two entities playing a role which are that of eGov and the state leadership. Once the W\&S cell and SI team are finalized, their role begins in the following stages.
 
 | Stage 1 - Program kick-off                                                                                                                              |          |               |             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------- | ----------- |
@@ -385,13 +383,13 @@ Note: Stage 0 is where the W\&S cell and SI team are formed, hence there are onl
 
 Vision: Defining the time frame to go live, the time frame to scale it pan state, the value proposition of the programme for the state and year-on-year financial targets and adoption targets
 
-Project Plan: A detailed plan of Program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required.
+Project Plan: A detailed plan of program schedule/timelines, implementation phases, team structure and ongoing support and maintenance required.
 
-System Integrator: The Entity/Company which collates all the subsystem required for the project and integrates them to achieve the program objective
+System Integrator: The entity/company which collates all the subsystems required for the project and integrates them to achieve the program objective
 
 Program Charter: Outline of implementation plan agreement with priority applications and broad timelines, program governance model, program success metrics and capacity building.
 
-Acceptance Letter/MOU: Formal Acceptance/Sign Off of the Client State with a clear mandate of the Program
+Acceptance Letter/MOU: Formal acceptance/sign-off of the client state with a clear mandate of the program
 
 Program Success Metrics: Defining the parameters (which are measurable) prior to the program, on which the success of the program is to be measured on the completion of the program
 
@@ -405,28 +403,30 @@ Baseline data: Set of information that serves as a foundation to compare other d
 
 Project Kick-off meeting: Meeting with the project team and the client of the project. This meeting would follow the definition of the base elements for the project and other project planning activities
 
-Fitment Study: GAP Study of the Existing/Required Field Process Vs Product
+Fitment Study: GAP study of the existing/required field process vs product
 
-Data migration: Existing Records of the functional activities need to be moved into the Database of the newly released Application
+Data migration: Existing records of the functional activities need to be moved into the database of the newly released application
 
 Data collection: Required data for the roll-out of the applications, which needs to be collected from the existing functional process
 
-Data validation approach: This approach enables the sanctity of the Data with built-in validation by Design
+Data validation approach: This approach enables the sanctity of the data with built-in validation by design
 
 Data synchronization: The process of establishing consistency among data from a source to a target data storage and vice versa and the continuous harmonization of the data over time.
 
-Pilot Implementation: Any new process is tested out as a pilot in one or two instances before pan implementation
+Pilot Implementation: Any new process is tested out as a pilot in one or two instances before pan implementation.
 
 Pilot ULB: The ULBs selected for the pilot implementation are called pilot ULB.
 
-Roll out: On successful clearance of the Pilot, the Process/Application/Services are implemented across all Offices/ULB's
+Roll out: On successful clearance of the pilot, the process/application/services are implemented across all Offices/ULBs.
 
-Deployment: Deployment defines the complete package of Software components set up in a particular environment
+Deployment: Deployment defines the complete package of software components set up in a particular environment.
 
-Customisation: Details of changes to be made in the Product to comply with the needed field process
+Customisation: Details of changes to be made in the product to comply with the needed field process.
 
-Configuration: Defining existing content such as Options and Variables based on the requirements on the ground
+Configuration: Defining existing content such as options and variables based on the requirements on the ground
 
-Product walkthrough: Explaining the users step-by-step through a set of actions that they need to take to achieve a specific outcome
+Product walkthrough: Explaining the users step-by-step through a set of actions that they need to take to achieve a specific outcome.
+
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
