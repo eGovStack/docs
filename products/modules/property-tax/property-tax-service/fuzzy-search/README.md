@@ -100,4 +100,4 @@ pt.fuzzy.searh.is.wildcard=true
 
 The indices need to be reindexed for the fuzzy search to work if changes are done in the index. particularly in the case of protected fields being indexed but not to be returned in the search.
 
-**Reindexing for PT**: [Refer here](https://docs.google.com/document/d/1WKFB4Dbb0kmOFZBfPm5HnA290i\_CEvIinsL22V59CU4/edit)
+**Reindexing for PT**: [Refer here](fuzzy-search-reindexing.md).
