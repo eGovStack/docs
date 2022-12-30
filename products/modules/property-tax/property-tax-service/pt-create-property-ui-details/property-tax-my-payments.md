@@ -57,12 +57,12 @@ For My Payments the Localization keys are added to the ‘_rainmaker-pt_’ loca
 
 ## **Role Action Mapping**
 
-| **Url**                                             | **Roles**               | **Action Id**                         |
-| --------------------------------------------------- | ----------------------- | ------------------------------------- |
-| `egov-workflow-v2/egov-wf/process/_search`          | `PTCEMP,FI,APPROVER,DV` | `1730`                                |
-| `/property-services/property/_search`               | `PTCEMP,FI,APPROVER,DV` | `1897`                                |
-| `/egov-workflow-v2/egov-wf/businessservice/_search` | `PTCEMP,FI,APPROVER,DV` | `1743`                                |
-| `/filestore/v1/files/url`                           | `PTCEMP,FI,APPROVER,DV` | `1528`                                |
-| `/egov-mdms-service/v1/_search?`                    | `PTCEMP,FI,APPROVER,DV` | <p></p><p></p><p></p><p></p><p>O </p> |
+| **Url**                                             | **Roles**               | **Action Id**                       |
+| --------------------------------------------------- | ----------------------- | ----------------------------------- |
+| `egov-workflow-v2/egov-wf/process/_search`          | `PTCEMP,FI,APPROVER,DV` | `1730`                              |
+| `/property-services/property/_search`               | `PTCEMP,FI,APPROVER,DV` | `1897`                              |
+| `/egov-workflow-v2/egov-wf/businessservice/_search` | `PTCEMP,FI,APPROVER,DV` | `1743`                              |
+| `/filestore/v1/files/url`                           | `PTCEMP,FI,APPROVER,DV` | `1528`                              |
+| `/egov-mdms-service/v1/_search?`                    | `PTCEMP,FI,APPROVER,DV` | <p></p><p></p><p></p><p></p><p></p> |
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
