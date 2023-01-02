@@ -236,6 +236,7 @@
       * [PT Brochure](products/modules/property-tax/pt-brochure.md)
       * [PT Module Functional Specifications](products/modules/property-tax/pt-module-functional-specifications.md)
       * [PT Implementation Guide](products/modules/property-tax/pt-implementation-guide.md)
+      * [Page 1](products/modules/property-tax/page-1.md)
       * [PT Master Data Templates](products/modules/property-tax/pt-master-data-templates/README.md)
         * [Mutation Fee](products/modules/property-tax/pt-master-data-templates/mutation-fee.md)
         * [Rebate Rates](products/modules/property-tax/pt-master-data-templates/rebate-rates.md)
