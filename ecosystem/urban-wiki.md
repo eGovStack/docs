@@ -42,7 +42,7 @@ description: Explore our docs by topics
 
 [Public Grievance & Redressal Module](../products/modules/public-grievances-and-redressal/)
 
-* [Implementation Guide](broken-reference)
+* [Implementation Guide](../products/modules/public-grievances-and-redressal/pgr-implementation-guide.md)
 * [Master Data Templates](../products/modules/public-grievances-and-redressal/pgr-master-data-templates/)
 * [Service Configuration](../products/modules/public-grievances-and-redressal/pgr-service-configuration/)
 * [File Complaints](../products/modules/public-grievances-and-redressal/pgr-user-manual/citizen-user-manual.md#file-complaints)

@@ -389,17 +389,15 @@ PGR service can be integrated with any organisation or system which wants to tra
 
 ### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-|                             |                        |
-| --------------------------- | ---------------------- |
-| **Title**                   | **Link**               |
-| Workflow Technical Document | [Workflow Service](./) |
-| User Technical Document     | [User Service](./)     |
+| Title                       | Link                                                                               |
+| --------------------------- | ---------------------------------------------------------------------------------- |
+| Workflow Technical Document | [Workflow Service](https://core.digit.org/platform/core-services/workflow-service) |
+| User Technical Document     | [User Service](https://core.digit.org/platform/core-services/user-services)        |
 
 ### API List <a href="#api-list" id="api-list"></a>
 
-|                    |                                                                                                                            |
+| API                | Link                                                                                                                       |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-|                    | **Link**                                                                                                                   |
 | /requests/\_create | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |
 | /requests/\_update | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |
 | /requests/\_search | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |

@@ -6,9 +6,8 @@ description: Learn more about module migration details
 
 ## Setup <a href="#setup" id="setup"></a>
 
-|                                  |                                                                                                                                                                                    |
+| Config/Service Name              | Path/Build                                                                                                                                                                         |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Config/Service Name**          | **Path/Build**                                                                                                                                                                     |
 | Persister yml for bulk migration | [https://github.com/egovernments/configs/blob/DEV/egov-persister/pgr-migration-batch.yml](https://github.com/egovernments/configs/blob/DEV/egov-persister/pgr-migration-batch.yml) |
 | pgr-services                     | pgr-services-db:pgr-migration-2475ec38-56                                                                                                                                          |
 | rainmaker-pgr                    | rainmaker-pgr-db:pgr-migration-c046a264-20                                                                                                                                         |
