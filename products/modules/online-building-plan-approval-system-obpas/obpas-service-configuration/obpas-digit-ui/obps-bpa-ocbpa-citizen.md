@@ -1,14 +1,16 @@
 # OBPS BPA / OCBPA Citizen
 
-## Objective
+## Overview
 
-To provide the facility for the citizen user to view the application details, updating the BPA application state and make the payment.
+To provide the facility for the citizen user to view the application details, update the BPA application state and make the payment.
+
+## Workflow Details
+
+Users can review the list of applications and their status registered using their mobile number on the My Applications page. Each Application initially displays the Application Number, Application Type, Service Type, status, and SLA with the View Details option.
 
 ![BPA Home Card](<../../../../../.gitbook/assets/Screenshot from 2021-09-30 10-20-48 (3).png>)
 
-Users can review the list of applications and their status registered using their mobile number on the My Applications page. Each Application initially displays the Application Number, Application Type, Service Type, status, SLA with the View Details option.
-
-## **View Application By Citizen**
+### **View Application By Citizen**
 
 Click on the View Applications by Citizen link routes users to the My Applications screen.\
 The screen provides BPA, OC-BPA and stakeholder registration applications and details.\
@@ -30,7 +32,7 @@ Clicking on the BPA/OC BPA application card routes users to the BPA application 
 
 &#x20;
 
-Clicking on the Action button provides the citizen users with the actions list. Clicking on any one of the options opens a popup window. Users can enter the comments and upload documents. Clicking on the Submit or Forward button triggers the Update API call.
+Clicking on the Action button provides the citizen users with the actions list. Clicking on any one of the options opens a popup window. Users can enter comments and upload documents. Clicking on the Submit or Forward button triggers the Update API call.
 
 File Path
 
@@ -57,7 +59,7 @@ File Path
 
 {% embed url="https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/BpaApplicationDetail/index.js" %}
 
-## **Stakeholder Registration Application Details**
+### **Stakeholder Registration Application Details**
 
 Clicking on the Stakeholder Application card routes the user to the stakeholder application details. The application details page displays the details of the application and also showcases all the actions that can be taken on the application.
 
@@ -73,7 +75,7 @@ The Timeline component is present at the end of the application details and prov
 
 ![](../../../../../.gitbook/assets/image-20211209-054317.png)
 
-## **Technical Implementation Details**
+## **Technical Implementation**&#x20;
 
 All the screens have been developed using the new-UI structure followed previously in FSM, PGR, PT and TL.\
 

@@ -1342,7 +1342,7 @@ More details about the respective charts are below:
 
 **Permits Issued by Risk Type:** This chart is a pie chart showing the bifurcation of total permits issued by risk type (low risk, medium risk, high risk) for the applied date filter.
 
-![](<../../../../.gitbook/assets/image (4) (3).png>)
+![](<../../../../.gitbook/assets/image (4).png>)
 
 &#x20;**Permits Issued by Occupancy Type:** This chart is a pie chart showing the bifurcation of total permits issued by occupancy type (Residential, Institutional etc) for the applied date filter.
 

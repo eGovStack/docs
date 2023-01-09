@@ -1,8 +1,10 @@
 # Stakeholder Search Application
 
+## Overview
+
 The stakeholder search application screen is used to search all the applications independent of its workflow or process instance data, which eliminates the presence of valid roles to search an application from any business service.
 
-The details for this screen is the same as discussed in the [OBPS search application](../obps-bpa-oc-bpa-employee-flow/obps-search-application.md). Please refer to the same.
+The details for this screen are the same as discussed in the [OBPS search application](../obps-bpa-oc-bpa-employee-flow/obps-search-application.md). Please refer to the same.
 
 
 

@@ -1914,7 +1914,7 @@ This graph shows the collection amount based on the usage/property type and this
 
 This graph shows the collection amount based on the collection channel type(eg-online, counter, etc) and this amount will change as per the denomination filter change.
 
-![](<../../../../.gitbook/assets/image (2) (4).png>)
+![](<../../../../.gitbook/assets/image (2).png>)
 
 #### **W\&S Key Financial Indicators** <a href="#w-and-s-key-financial-indicators" id="w-and-s-key-financial-indicators"></a>
 

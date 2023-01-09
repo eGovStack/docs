@@ -67,5 +67,5 @@ curl 'https://qa.digit.org/egov-mdms-service/v1/_search?tenantId=pb' \
 
 The localization module used across the OBPS module was rainmaker-bpa and rainmaker-common, out of which we initialized rainmaker-bpa with module initialization.
 
-<figure><img src="../../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 

@@ -6,7 +6,7 @@ To provide the facility for the stakeholder users to create and submit the eDCR 
 
 ## **Workflow Details**
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>BPA Home Card</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>BPA Home Card</p></figcaption></figure>
 
 File Path: [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/Module.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/Module.js)
 

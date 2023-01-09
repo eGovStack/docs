@@ -28,7 +28,7 @@ Click on the **OBPS Inbox** option on the home screen.
 
 Click on the **Application No**. hyperlink available in the list of applications **Inbox** of the employee dashboard.
 
-Or, enter the **Application No.** or any other search parameter to search for the application.
+Or, enter **Application No.** or any other search parameter to search for the application.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.53.54 PM (1).png>)
 
@@ -36,7 +36,7 @@ Click on the **Application No.** link to open the application.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 1.54.52 PM.png>)
 
-Scroll down the application page to review the filled in details.&#x20;
+Scroll down the application page to review the filled-in details.&#x20;
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.03.35 PM.png>)
 
@@ -76,7 +76,7 @@ Enter the **Application No.** or any other search parameter to search for the ap
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.17.07 PM.png>)
 
-Scroll down the application page to review the filled in details.&#x20;
+Scroll down the application page to review the filled-in details.&#x20;
 
 Click on the **Take Action** button at the bottom of the application page once the review is complete.
 
@@ -92,13 +92,13 @@ The application is rejected and a notification is sent to the owner informing th
 
 Permit orders are sanctioned instantly for low-risk applications. However, the application goes through the normal workflows for document verification, field inspection, and NOC verification. The ULB authorities can revoke the permit order in case any anomalies are detected during the verification process.
 
-Applications can be revoked at any stage by the Document Verifier, Field Inspector, or the NOC Verifier.
+Applications can be revoked at any stage by the Document Verifier, Field Inspector, or NOC Verifier.
 
 **To revoke application**
 
-Click on the **Application No.** in the employee **Inbox** or enter the **Application No.** or any other search parameter to search for the application.
+Click on **Application No.** in the employee **Inbox** or enter **Application No.** or any other search parameter to search for the application.
 
-Click on the **Application No.** link to open the application. Scroll down the application page to review the filled in details.&#x20;
+Click on the **Application No.** link to open the application. Scroll down the application page to review the filled-in details.&#x20;
 
 Click on the **Take Action** button at the bottom of the application page once the review is completed.
 
@@ -122,7 +122,7 @@ Enter the **Application No.** or any other search parameter to search for the ap
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.36.35 PM.png>)
 
-Scroll down the application page to review the filled in details. Click on the **Take Action** button at the bottom of the application page once the review is complete.
+Scroll down the application page to review the filled-in details. Click on the **Take Action** button at the bottom of the application page once the review is complete.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.36.54 PM.png>)
 
@@ -156,7 +156,7 @@ To prepare the inspection report
 
 Click on the **Application No.** hyperlink available in the list of applications available in the employee **Inbox**.
 
-Or, enter the **Application No.** or any other search parameter to search for the application. Click on the **Application No.** link to open the application.
+Or, enter **Application No.** or any other search parameter to search for the application. Click on the **Application No.** link to open the application.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.42.13 PM.png>)
 
@@ -164,7 +164,7 @@ Or, enter the **Application No.** or any other search parameter to search for th
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 2.42.47 PM.png>)
 
-Scroll down the application page to review the filled in details. Enter the **Inspection Date** and **Inspection Time** in the panel. FI can add multiple field inspection reports as required.
+Scroll down the application page to review the filled-in details. Enter the **Inspection Date** and **Inspection Time** in the panel. FI can add multiple field inspection reports as required.
 
 Mark **Yes** or **No** as applicable for each item in the **Inspection Checklist**. Enter any additional information in the **Remarks** section available for each item in the checklist.
 
@@ -186,7 +186,7 @@ Click on the **Take Action** button at the bottom of the application page once t
 
 To send the application back to the citizen
 
-Click on **Send Back to Citizen** if any information or document is missing in the application.
+Click on **Send Back to Citizen** if any information or document is missing from the application.
 
 Select the applicable **Assignee Name**. State the reasons for sending the application back to the citizen in the **Comments** section.
 
@@ -244,7 +244,7 @@ The application is forwarded to the **NOC Verifier** for further processing.
 
 ## **NOC Verifier**
 
-The NOC Verifier is responsible for checking the no-objection permissions obtained for various civic authorities in context to the building construction. Commonly, a NOC is required from the Airports Authority and the Fire department to certify all guidelines are met by the builder and owner. If all requirements are met the NOC verifier forwards the application to the BPA Approver.
+The NOC Verifier is responsible for checking the no-objection permissions obtained for various civic authorities in the context of the building construction. Commonly, a NOC is required from the Airports Authority and the Fire department to certify all guidelines are met by the builder and owner. If all requirements are met the NOC verifier forwards the application to the BPA Approver.
 
 **NOC Verifier can**
 
@@ -263,7 +263,7 @@ Click on the **OBPS Inbox** option on the home screen.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-28 at 10.12.39 AM.png>)
 
-Click on the **Application No.** hyperlink available in the list of applications in the employee **Inbox**. Or, enter the **Application No.** or any other search parameter to search for the application.
+Click on the **Application No.** hyperlink available in the list of applications in the employee **Inbox**. Or, enter **Application No.** or any other search parameter to search for the application.
 
 Click on the **Application No.** link to open the application.
 
@@ -271,7 +271,7 @@ Click on the **Application No.** link to open the application.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.13.11 PM (1).png>)
 
-Scroll down the application page to review the filled in details.
+Scroll down the application page to review the filled-in details.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.15.56 PM.png>)
 
@@ -285,7 +285,7 @@ Click on the **Take Action** button at the bottom of the application page once t
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.18.54 PM.png>)
 
-Click on the **Send Back to Citizen** button if the documents do not meet the application requirements or any document is missing.
+Click on the **Send Back to Citizen** button if the documents do not meet the application requirements or if any document is missing.
 
 Select the applicable **Assignee Name**. State the reasons for sending the application back to the citizen in the **Comments** section.
 
@@ -370,7 +370,7 @@ Click on the **OBPS Inbox** option on the home screen.
 
 Click on the **Application No**. hyperlink available in the list of applications section of the employee dashboard.&#x20;
 
-Or, enter the **Application No.** or any other search parameter to search for the application.&#x20;
+Or, enter **Application No.** or any other search parameter to search for the application.&#x20;
 
 Click on the **Application No.** link to open the application.
 
@@ -378,7 +378,7 @@ Click on the **Application No.** link to open the application.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.41.34 PM.png>)
 
-Scroll down the application to review the filled in details.
+Scroll down the application to review the filled-in details.
 
 ![](<../../../../.gitbook/assets/Screenshot 2022-01-27 at 3.46.39 PM.png>)
 

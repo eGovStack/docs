@@ -1,12 +1,18 @@
 # Stakeholder Inbox
 
+## Overview
+
 Users can view all the applications assigned to them in the stakeholder inbox. And it provides multiple filters and search options to filter the applications.
+
+## Workflow Details
 
 Stakeholder Inbox uses InboxComposer React HOC to create the Inbox through various child components, for both mobile and Desktop Components.
 
 ![](../../../../../../.gitbook/assets/image-20211207-132308.png)
 
-Inbox wrapper API used to fetch the inbox data :-
+## API Role Action Mapping
+
+Inbox wrapper API used to fetch the inbox data:-
 
 ```
 curl 'https://qa.digit.org/inbox/v1/_search?_=1638883408487' \
