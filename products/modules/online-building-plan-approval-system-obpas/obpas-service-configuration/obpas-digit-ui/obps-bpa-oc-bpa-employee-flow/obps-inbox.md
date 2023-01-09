@@ -1,14 +1,18 @@
 # OBPS Inbox
 
-## Objective
+## Overview
 
 Users can view all the applications assigned to them in the employee inbox. And it provides multiple filters and search options to filter the applications.
 
-## Application Details
+## Workflow Details
+
+### Inbox
 
 OBPS Inbox uses InboxComposer React HOC to create the Inbox through various child components, for both mobile and Desktop Components.
 
 ![](<../../../../../../.gitbook/assets/Desktop - 40.png>)
+
+## Technical Implementation
 
 The API used to fetch applications in the inbox
 
@@ -34,7 +38,9 @@ curl 'https://qa.digit.org/inbox/v1/_search?_=1634785190890' \
 
 For viewing OBPS inbox these roles are necessary `"BPA_FIELD_INSPECTOR", "BPA_NOC_VERIFIER", "BPA_APPROVER", "BPA_VERIFIER", "CEMP"`
 
-The MDMS links (blue text hyperlinks) are used while selecting OBPS [application type](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/BPA/ApplicationType.json), [service type](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/BPA/ServiceType.json), risk type with business service and status filters.&#x20;
+## MDMS Data
+
+The MDMS links (blue text hyperlinks) are used while selecting the OBPS [application type](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/BPA/ApplicationType.json), [service type](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/BPA/ServiceType.json), risk type with business service and status filters.&#x20;
 
 Refer to the config below for risk type definition:-
 

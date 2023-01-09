@@ -1,20 +1,20 @@
 # OBPS EDCR /OC-EDCR
 
-## **Objective** <a href="#objective" id="objective"></a>
+## **Overview** <a href="#objective" id="objective"></a>
 
-To provide the facility for the stakeholder users to create and submit the eDCR Application. Stakeholders include Architect, Builder.....etc.
+To provide the facility for the stakeholder users to create and submit the eDCR Application. Stakeholders include Architects, Builders.....etc.
 
-![BPA Home Card](<../../../../../.gitbook/assets/Screenshot from 2021-09-30 10-20-48 (2).png>)
+## **Workflow Details**
 
-File Path:&#x20;
+<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>BPA Home Card</p></figcaption></figure>
 
-[https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/Module.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/Module.js)
+File Path: [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/Module.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/Module.js)
 
-## **Apply for eDCR Application**
+### **Apply For eDCR Application**
 
-Users can apply for the eDCR application by clicking on the “Registered Architect Login”, through which only registered stakeholders (Stakeholder includes Architect, Builder.....etc) can log in. Other users will not be able to proceed further.
+Users can generate and submit the eDCR application by clicking on the “Registered Architect Login”, through which only registered stakeholders (Stakeholders including Architect, Builder.....etc) can log in. Other users will not be able to proceed further.
 
-Stakeholders can generate the eDCR scrutiny number by clicking on Plan Scrutiny For New Construction link. They can add all the information, according to the questions asked, after filling the information in the eDCR form click on the Submit button. This triggers the Create API call. The success or failure of the API routes the user to the acknowledgement screen.\
+Stakeholders can generate the eDCR scrutiny number by clicking on Plan Scrutiny For New Construction link. They can add all the information, according to the questions asked, after filling in the information in the eDCR form click on the Submit button. This triggers the Create API call. The success or failure of the API routes the user to the acknowledgement screen.\
 \
 **If eDCR API is Success** => it routes to the acknowledgement screen. Stakeholders can see the eDCR number, application number and download option.\
 \
@@ -26,7 +26,7 @@ File Path: [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micr
 
 ### &#x20;**eDCR Scrutiny**
 
-Users need to provide City, Applicant Name and Upload dxf file in order to generate the eDCR number.
+Users need to provide their City, Applicant Name and Upload dxf file in order to generate the eDCR number.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 11-09-36 (1).png>)
 
@@ -34,7 +34,7 @@ File Path: [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micr
 
 ### **Success Screen**
 
-Acknowledgement Page gets displayed after the success of eDCR create call. Here stakeholders can see -
+The acknowledgement Page gets displayed after the success of eDCR creates call. Here stakeholders can see -
 
 1. eDCR Number
 2. Application Number
@@ -48,7 +48,7 @@ File Path: [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micr
 
 ### **Failure Screen**
 
-Failure acknowledgement page gets displayed if the eDCR Create API call results in failure due to some reason. Here stakeholders can see -
+The failure acknowledgement page gets displayed if the eDCR Create API call results in failure due to some reason. Here stakeholders can see -
 
 1. Application Number
 2. Download option for downloading the scrutiny report
@@ -58,17 +58,17 @@ Failure acknowledgement page gets displayed if the eDCR Create API call results 
 
 File Path: [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/EDCR/EDCRAcknowledgement.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/EDCR/EDCRAcknowledgement.js)
 
-## **Applying for OC eDCR Application**
+### **Applying for OC eDCR Application**
 
-Users can apply for OC eDCR application by clicking on the Registered Architect Login link through which only registered stakeholders (Stakeholder includes Architect, Builder.....etc) can log in. Other users will not be able to proceed further.\
+Users can apply for the OC eDCR application by clicking on the Registered Architect Login link through which only registered stakeholders (Stakeholders including Architect, Builder.....etc) can log in. Other users will not be able to proceed further.\
 \
-Stakeholders can generate the OC eDCR scrutiny number by clicking on the **OC Plan Scrutiny for new Construction** link. They can add all the information, according to the question asked, and after filling the information in the eDCR form steps clicking on the Submit button triggers the Create API call. Depending on the success or failure of the API call users are routed to the acknowledgement screen.
+Stakeholders can generate the OC eDCR scrutiny number by clicking on the **OC Plan Scrutiny for new Construction** link. They can add all the information, according to the question asked, and after filling in the information in the eDCR form steps clicking on the Submit button triggers the Create API call. Depending on the success or failure of the API call users are routed to the acknowledgement screen.
 
-Permit Date and Permit Number of BPA is required to generate the OC eDCR. The permit details enables the search for specific BPA record followed by a search for the OLD eDCR details (BPA eDCR). These details are used to generate the OC eDCR Number.
+The Permit Date and Permit Number of BPA are required to generate the OC eDCR. The permit details enable the search for specific BPA records followed by a search for the OLD eDCR details (BPA eDCR). These details are used to generate the OC eDCR Number.
 
 &#x20;1\. **Data Required**
 
-Click on **OC Plan Scrutiny for new Construction** link. This routes the user to the Data required screen and the screen provides information about the data required to generate OC eDCR number.
+Click on **OC Plan Scrutiny for new Construction** link. This routes the user to the Data Required screen and the screen provides information about the data required to generate OC eDCR number.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 14-56-12 (1).png>)
 
@@ -104,7 +104,7 @@ File Path:
 
 ### **Success Screen**
 
-The Succss Acknowledgement Page gets displayed after a successful eDCR create call. Here stakeholders can see -
+The Success Acknowledgement Page gets displayed after a successful eDCR create call. Here stakeholders can see -
 
 1. eDCR Number
 2. Application Number
@@ -132,7 +132,7 @@ File Path:&#x20;
 
 [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCEDCR/EDCRAcknowledgement.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCEDCR/EDCRAcknowledgement.js)****
 
-## **Technical Implementation Details**
+## **Technical Implementation**&#x20;
 
 All screens have been developed using the new-UI structure followed previously in FSM, PGR, PT and TL.
 

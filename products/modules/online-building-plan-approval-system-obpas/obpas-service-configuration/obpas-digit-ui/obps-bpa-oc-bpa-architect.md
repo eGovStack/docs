@@ -1,12 +1,16 @@
 # OBPS-BPA/OC-BPA Architect
 
-## Objective
+## Overview
 
-To provide the facility for the user for creating New Building Permit Application by the citizen. Every application which is created is a part of the workflow.
+To provide the facility for the user for creating New Building Permit Application by the citizen.&#x20;
 
 ![BPA Home Card](<../../../../../.gitbook/assets/Screenshot from 2021-09-30 10-20-48 (1).png>)
 
-## **Apply for New Building Permit Application (BPA)**
+## **Workflow Details**
+
+Every application which is created is a part of the workflow.
+
+### **Apply For New Building Permit Application (BPA)**
 
 Users can apply for a new building permit application by clicking on the “Registered Architect Login”. This option can be used only by registered architects to log in.  Other users will not be able to proceed further.&#x20;
 
@@ -16,17 +20,17 @@ The Create API is called in the middle of the workflow after owner details. And,
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 10-25-18.png>)
 
-## eDCR Scrutiny Registration
+### eDCR Scrutiny Registration
 
 Users must provide the City, Applicant Name and upload the dxf file in order to generate eDCR number.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 11-09-36.png>)
 
-Acknowledgement Page gets displayed. Users can apply for the building permit by clicking on the Apply for Building Plan Permit button. Or, they can go back and apply from the home page as mentioned in the previous section.
+The Acknowledgement Page gets displayed. Users can apply for the building permit by clicking on the Apply for Building Plan Permit button. Or, they can go back and apply from the home page as mentioned in the previous section.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 11-10-11.png>)
 
-## New Building Plan Permit Registration
+### New Building Plan Permit Registration
 
 The New Building Permit Document Required screen is displayed after login, which helps the user to understand the necessary documents needed to complete the new registration for New Building Permit. A Citizen Info card is also shown at the bottom of the page for any additional information such as the maximum size of the file that can be uploaded.
 
@@ -40,7 +44,7 @@ The TimeLine component is present on all pages of the application. It informs th
 
 ### Scrutiny Details Step
 
-In this step, the users need to provide and verify the details from scrutiny API.
+In this step, the users need to provide and verify the details from the scrutiny API.
 
 #### Basic Details
 
@@ -56,7 +60,7 @@ The data asked here is not compulsory - users can enter or skip it too.
 
 #### Scrutiny Details
 
-On this page, half of the details are received from the scrutiny details API and a drop-down for sub occupancy which is multiple in nature. Users can select accordingly.
+On this page, half of the details are received from the scrutiny details API and a drop-down for sub-occupancy which is multiple in nature. Users can select accordingly.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 11-33-00.png>)
 
@@ -76,17 +80,17 @@ In this step, users have to provide details about the owner. Owners could be sin
 
 #### Owner Details
 
-Select the type of owner and enter owner details
+Select the type of owner and enter owner's details
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 12-02-46.png>)
 
-In case, multiple owner option is selected, the Add Owner button is visible. The Primary Owner checkbox is also available. Click on the Add Owner button allows users to add multiple owners accordingly. Click on the Next button calls the Create API.
+In case, the multiple owner option is selected, the Add Owner button is visible. The Primary Owner checkbox is also available. Click on the Add Owner button allows users to add multiple owners accordingly. Click on the Next button calls the Create API.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 12-12-49.png>)
 
 #### Document Details
 
-Users have to select the document type. The upload multiple documents if needed using the document upload component. If the type is only one, then it came pre-selected for user convenience. Also, the documents which are mandatory are defined in MDMS from where it is fetched.
+Users have to select the document type. Upload multiple documents if needed using the document upload component. If the type is only one, then it came pre-selected for user convenience. Also, the documents which are mandatory are defined in MDMS from where it is fetched.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 12-20-55.png>)
 
@@ -100,7 +104,7 @@ Users need to verify and upload the documents, if required, for the NOC details.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 14-43-01.png>)
 
-### Summary Page and Acknowledgement Screen
+### Summary Page & Acknowledgement Screen
 
 Users can cross-verify the data entered throughout the flow on the Summary page. In case any change or update is required, they can click on the edit icon available adjacent to the section headers. This redirects them to the relevant page and the entire flow is repeated again in order to submit the application.
 
@@ -118,7 +122,7 @@ If the API response is successful, then the Acknowledgement Screen is displayed.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 14-48-42.png>)
 
-## **OC Apply For New Building Permit Application (BPA)**
+### **OC Apply For New Building Permit Application (BPA)**
 
 The OCBPA flow is similar to the BPA flow detailed above with the exception of a few steps that are not necessary and therefore omitted in this flow.
 
@@ -146,11 +150,9 @@ The success acknowledgement page is shown in case of no errors in the applicatio
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-11-08 14-59-15.png>)
 
-Click on the Apply for OC New Construction redirects users to the Apply for new building permit form page. The Location & Owner Details will get auto-populated from the previous application details. The application triggers the Create API call from the scrutiny details page. The remaining flow is the same as for New Building Plan Permit.
+Clicking on Apply for OC New Construction redirects users to the Apply for new building permit form page. The Location & Owner Details will get auto-populated from the previous application details. The application triggers the Create API call from the scrutiny details page. The remaining flow is the same as for New Building Plan Permit.
 
-&#x20;
-
-## **Technical Implementation Details**
+## **Technical Implementation**
 
 All the screens have been developed using the new-UI structure followed previously in FSM, PGR, PT and TL. Some new components have been introduced such as the TimeLine, Multi-Document Upload feature etc.
 
@@ -166,7 +168,7 @@ The links for the OCBPA & OCEDCR Main Index are given below. These help in under
 
 [<img src="https://github.githubassets.com/favicon.ico" alt="" data-size="line">https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit - Connect to preview](https://github.com/egovernments/DIGIT-Dev/tree/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit)
 
-The OBPS Module is segregated into a specified structure. All the screen configurations are available inside the PageComponent Folder and the configuration for routing of the pages are available within the config folder which is common for both Citizen as well as Employees. New components like TimeLine is defined within the component folder. Below is the snippet for folder structure and routing configuration.
+The OBPS Module is segregated into a specified structure. All the screen configurations are available inside the PageComponent Folder and the configuration for routing of the pages are available within the config folder which is common for both Citizen as well as Employees. New components like TimeLine are defined within the component folder. Below is the snippet for folder structure and routing configuration.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-10-07 22-55-13 (1).png>)
 
@@ -188,13 +190,13 @@ OCEDCR (OC Scrutiny number):&#x20;
 
 [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/config/ocEdcrConfig.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/config/ocEdcrConfig.js)
 
-The Pages Folder is where the high-level configuration for controlling the whole flow is defined, for citizens and employees. Citizen configuration details include Apply flows, send back flows, Application details etc. The folder contains the index (the main starting point of the whole flow).
+The Pages Folder is where the high-level configuration for controlling the whole flow is defined, for citizens and employees. Citizen configuration details include Apply flows, send backflows, Application details etc. The folder contains the index (the main starting point of the whole flow).
 
 The main difference in the BPA/OCBPA registration flow from other modules is in the apply flow. The create API is called in between the flow and the Update API is called at the end.
 
 The code for Create API request object generation is available inside the Owner details or scrutiny details component for BPA & OCBPA respectively. This API call is triggered when the user clicks on the Next button on the Correspondence Address page.
 
-The BPA/OBPS create API call uses the `Digit.OBPSService.create` method to call the API. The code details are available within the gonext() method in the following files respectively.
+The BPA/OBPS Create API call uses the `Digit.OBPSService.create` method to call the API. The code details are available within the gonext() method in the following files respectively.
 
 Code reference:
 
@@ -227,21 +229,19 @@ const fileStore = await Digit.PaymentService.printReciept(tenantId, { fileStoreI
 window.open(fileStore[response?.filestoreIds[0]], "_blank");
 ```
 
-For Occupancy Certificate use: `occupancy-certificate` and for Permit order: `buildingpermit-low`
+For Occupancy Certificate use: `occupancy-certificate` and for Permit orders: `buildingpermit-low`
 
 For updating an Application, the update API from BPA is called using the React hooks, which is declared under hooks/elements/obps as OBPSService.
 
-The response object from the Create API is used for the request object of Update API, in addition to the document details that users have entered. This changes the status of the Application as Applied instead of initiated. Along with this NOC Update API is also called which updates the status of the NOC aligned with the particular application.
+The response object from the Create API is used for the request object of Update API, in addition to the document details that users have entered. This changes the status of the Application as Applied instead of initiated. Along with this NOC Update API is also called which updates the status of the NOC aligned with the particular application.&#x20;
 
-for update API for NOC, BPA & OCBPA, the hook used for calling the API is:
+Update API for NOC, BPA & OCBPA, the hook used for calling the API is:
 
 `1Digit.Hooks.obps.useObpsAPI( 2 data?.address?.city ? data.address?.city?.code : tenantId, 3 true 4 );`
 
-This API is called in the respective Acnowledgement Page:
+This API is called in the respective Acknowledgement Page:
 
 [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit/OBPSAcknowledgement.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit/OBPSAcknowledgement.js) / [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit/OBPSAcknowledgement.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/OCBuildingPermit/OBPSAcknowledgement.js)
-
-&#x20;
 
 ## **MDMS Data**
 
@@ -253,7 +253,7 @@ Throughout the flow, a few of the page data is imported from the MDMS. Following
 | BasicDetails | Risk Type                   | `BPA`                                                     | `RiskTypeComputation`                                               |
 | OwnerDetails | Gender & Ownership category | `common-masters`                                          | <p><code>OwnerShipCategory</code></p><p><code>GenderType</code></p> |
 
-For calling of MDMS data React Hooks has been used, so that it can be shared throughout the modules. Below is the little code snippet used for MDMS call.
+For calling MDMS data React Hooks has been used, so that it can be shared throughout the modules. Below is the little code snippet used for the MDMS call.
 
 ```
   const { data:homePageUrlLinks , isLoading: homePageUrlLinksLoading } = Digit.Hooks.obps.useMDMS(stateCode, "BPA", ["homePageUrlLinks"]);

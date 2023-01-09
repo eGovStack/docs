@@ -1,14 +1,16 @@
 # Stakeholder - Registration Flow
 
-## **Objective** <a href="#objective" id="objective"></a>
+## **Overview** <a href="#objective" id="objective"></a>
 
-This page provides details on the Stakeholder Registration workflow in the OBPAS module. Citizens have the option to submit the registration applications for various Stakeholders such as architects and construction companies.&#x20;
+This page provides details on the Stakeholder Registration workflow in the OBPAS module. Citizens have the option to submit registration applications for various stakeholders such as architects and construction companies.&#x20;
 
 ![BPA Home Card](<../../../../../.gitbook/assets/Screenshot from 2021-09-30 10-20-48.png>)
 
-## Apply For Stakeholder Application
+## Workflow Details
 
-Users can apply for stakeholder application by clicking on the “Register as a Stakeholder”, and while going through the workflow, can add all the information, according to the question asked, in the middle of the workflow after correspondence address Create API will be called, and at the end of the flow, a summary screen will be visible for the review of the answers and on clicking the submit button an Update API will be called which will change the status from Initiated to Applied and Registration Application will get updated.
+### Apply For Stakeholder Application
+
+Users can apply for stakeholder application by clicking on the “Register as a Stakeholder”, and while going through the workflow, can add all the information, according to the question asked, in the middle of the workflow after the correspondence address Create API will be called, and at the end of the flow, a summary screen will be visible for the review of the answers and on clicking the submit button an Update API will be called which will change the status from Initiated to Applied and Registration Application will get updated.
 
 ### Registration Flow
 
@@ -22,7 +24,7 @@ The TimeLine component is present on all pages. It informs the users about the s
 
 ![TimeLine](<../../../../../.gitbook/assets/Screenshot from 2021-10-07 22-28-57.png>)
 
-### &#x20;Licensee Details&#x20;
+### Licensee Details&#x20;
 
 In this step, users need to provide information about the License type and Licensee.
 
@@ -60,11 +62,11 @@ Clicking on the Next button calls the Create API. Further information is availab
 
 #### Licensee Document Details
 
-This screen displays a list of documents and their type (in dropdown format) from the MDMS. The document list displayed is as per the role selected by the user in license step. Users have to upload all the mandatory documents in order to proceed further.
+This screen displays a list of documents and their type (in dropdown format) from the MDMS. The document list displayed is as per the role selected by the user in the license step. Users have to upload all the mandatory documents in order to proceed further.
 
 ![Document Details](<../../../../../.gitbook/assets/Screenshot from 2021-10-07 22-42-20.png>)
 
-### Summary Page and Acknowledgement Screen
+### Summary Page & Acknowledgement Screen
 
 Users can cross-verify the data entered throughout the flow on the Summary page. In case of any change or update required, the edit icon available adjacent to the section header allows the users to make the changes. It redirects users to the particular section page and the whole flow is repeated again in order to submit the application.
 
@@ -72,7 +74,7 @@ Along with the application details, the fee estimate for the corresponding appli
 
 ![Fee Estimate](<../../../../../.gitbook/assets/Screenshot from 2021-10-07 22-48-38.png>)
 
-The Update API is called for the BPAREG Application update. Update API snippet given below:&#x20;
+The Update API is called for the BPAREG Application update. Update API snippet is given below:&#x20;
 
 ```
 bpaRegUpdate: "/tl-services/v1/BPAREG/_update"
@@ -82,9 +84,9 @@ If the API response is successful, the Acknowledgement Screen is displayed. Else
 
 ![Summary Page](<../../../../../.gitbook/assets/Screenshot from 2021-10-07 22-47-12.png>) ![Acknowledgement Page](<../../../../../.gitbook/assets/Screenshot from 2021-10-07 22-49-38.png>)
 
-Clicking on the Make Payment option to pay the registration fees is said in the summary screen.
+Click on the Make Payment option to pay the registration fees on the summary screen.
 
-## **Technical Implementation Details**
+## **Technical Implementation**&#x20;
 
 All the screen has been developed using the new-UI structure followed previously in FSM, PGR, PT and TL, few new components have been introduced such as TimeLine, Multi upload Document etc
 
@@ -92,11 +94,11 @@ The link for the Stakeholder Registration Main Index is given below, it can be u
 
 [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/StakeholderRegistration/index.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/StakeholderRegistration/index.js)
 
-The OBPAS module is segregated into a specified structure. The screen configuration details are available in the PageComponent folder and the configuration for routing of the pages are available in the config folder which is common for both citizens as well as employees. New components like TimeLine is defined in the component folder. Below is the snippet for folder structure and routing configuration.
+The OBPAS module is segregated into a specified structure. The screen configuration details are available in the PageComponent folder and the configuration for routing of the pages is available in the config folder which is common for both citizens as well as employees. New components like TimeLine are defined in the component folder. Below is the snippet for folder structure and routing configuration.
 
 ![](<../../../../../.gitbook/assets/Screenshot from 2021-10-07 22-55-13.png>)
 
-The Stakeholder config responsible for the routing of the pages is defined under config folder. Click on the link below to access the code.
+The stakeholder config responsible for the routing of the pages is defined under the config folder. Click on the link below to access the code.
 
 {% embed url="https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/config/stakeholderConfig.js" %}
 
@@ -130,7 +132,7 @@ The Stakeholder config responsible for the routing of the pages is defined under
 
 The Pages folder contains the high-level configuration for controlling the whole flow for citizens and employees. The flows for citizens include Apply flows, Send Back flows, Application details etc. These carry the index (the main starting point of the whole flow).
 
-The main difference of Stakeholder registration flow from the apply flow in other modules is that the Create API is called in between the flow and at the end, the Update API is called.
+The main difference between the Stakeholder registration flow from the apply flow in other modules is that the Create API is called in between the flow and at the end, the Update API is called.
 
 The code for Create API request object generation is found inside the correspondence address component. This API call is triggered when the user clicks on the Next button on the correspondence address page.
 
@@ -140,11 +142,11 @@ Code reference:
 
 [https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pageComponents/CorrospondenceAddress.js](https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pageComponents/CorrospondenceAddress.js)
 
-The Utils folder basically contains all the methods that are used throughout the OBPAS module, and if any common method needs to be declared here, which in turn can be imported in other files.&#x20;
+The Utils folder basically contains all the methods that are used throughout the OBPAS module, and if any common method needs to be declared here, which in turn can be imported into other files.&#x20;
 
-For updating an application the Update API from BPAREG is called using the React hooks, which has been declared under hooks/elements/obps as OBPSService.
+For updating an application the Update API from BPAREG is called using the React hooks, which have been declared under hooks/elements/obps as OBPSService.
 
-The response object from the Create API is used for the request object of Update API, with the addition of document details which the user has entered. This marks the status of the Application as Applied instead of initiated.
+The response object from the Create API is used for the request object of Update API, with the addition of document details that the user has entered. This marks the status of the Application as Applied instead of initiated.
 
 Below is the hook used for fetching the update API call.
 
@@ -161,9 +163,9 @@ Code reference:
 
 {% embed url="https://github.com/egovernments/DIGIT-Dev/blob/develop/frontend/micro-ui/web/micro-ui-internals/packages/modules/obps/src/pages/citizen/StakeholderRegistration/StakeholderAcknowledgement.js" %}
 
-### **MDMS Data**
+## **MDMS Data**
 
-Throughout the flow, a few of the page data is imported from MDMS. Following are the list of pages that use MDMS data. These pages .js files can be found under page components.
+Throughout the flow, a few of the page data is imported from MDMS. Following is the list of pages that use MDMS data. These pages .js files can be found under page components.
 
 | PageComponent           | MDMS Detail                                 | Module Details Name        | Master Detail Name         |
 | ----------------------- | ------------------------------------------- | -------------------------- | -------------------------- |
@@ -178,11 +180,11 @@ For calling the MDMS data, React Hooks are used, so that it could be shared thro
 const { data, isLoading } = Digit.Hooks.obps.useMDMS(state, "StakeholderRegistraition", "TradeTypetoRoleMapping");
 ```
 
-### **Localization**
+## **Localization**
 
 Localization keys are added in the ‘_rainmaker-bpareg_’ locale module. In future, if any new labels are implemented in the OBPS - Stakeholder (Citizen) they should be pushed in the locale DB under _rainmaker-bpareg_ locale module. Below is an example of a few locale labels.
 
-**API Call Role Action Mapping**
+## **API Call Role Action Mapping**
 
 | [**S.No**](http://s.no/)**.** | <p><strong>API</strong></p><p> </p>   | **Action id** | **Roles** |
 | ----------------------------- | ------------------------------------- | ------------- | --------- |

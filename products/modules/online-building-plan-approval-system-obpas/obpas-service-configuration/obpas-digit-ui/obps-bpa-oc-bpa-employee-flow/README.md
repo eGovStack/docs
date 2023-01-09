@@ -1,16 +1,12 @@
 # OBPS-BPA/OC-BPA Employee Flow
 
-## Objective <a href="#objective" id="objective"></a>
+## Overview <a href="#objective" id="objective"></a>
 
 To provide the facility for the employee users to update the BPA application state.
 
-## Localization <a href="#localization" id="localization"></a>
+## Workflow Details <a href="#application-details" id="application-details"></a>
 
-The localization module used across the OBPS module was rainmaker-bpa and rainmaker-common, out of which we initialized rainmaker-bpa with module initialization.
-
-![](<../../../../../../.gitbook/assets/image-20211207-124358 (1).png>)
-
-## Application Details <a href="#application-details" id="application-details"></a>
+### Application Details&#x20;
 
 The application details page is used to display the details of the application and also showcase all the actions that can be taken on the application.
 
@@ -34,15 +30,15 @@ The user fills in the inspection details (date, time, question, remarks) and sub
 
 Here the user approves the required permit conditions and can also add new conditions.
 
-### UI Implementation <a href="#ui-implementation" id="ui-implementation"></a>
+## Technical Implementation <a href="#ui-implementation" id="ui-implementation"></a>
 
 All the screens are developed using the new-UI structure followed previously in FSM, PGR, PT, and TL. Certain new components have been introduced such as Multi-Document Upload, Approval Checks, etc.
 
-### MDMS Data <a href="#mdms-data" id="mdms-data"></a>
+## MDMS Data <a href="#mdms-data" id="mdms-data"></a>
 
-Throughout the flow, some data is imported from the MDMS. Following are the list of MDMS data:
+Throughout the flow, some data is imported from the MDMS. Following is the list of MDMS data:
 
-1. CheckList
+1. Checklist
 2. RiskTypeComputation
 
 Below is the MDMS config used to fetch MDMS data:
@@ -67,6 +63,9 @@ curl 'https://qa.digit.org/egov-mdms-service/v1/_search?tenantId=pb' \
   --compressed
 ```
 
+## Localization <a href="#localization" id="localization"></a>
 
+The localization module used across the OBPS module was rainmaker-bpa and rainmaker-common, out of which we initialized rainmaker-bpa with module initialization.
 
->
+<figure><img src="../../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+

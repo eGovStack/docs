@@ -6,7 +6,6 @@ description: Technical Doc
 
 ## **Overview**
 
-\
 DSS has two sides to it. One is the process in which the data is pooled into ElasticSearch and the other is the way it is fetched, aggregated, computed, transformed and sent across.
 
 As this revolves around a variety of data sets, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, it is just a configuration away from getting the newly introduced scenario involved in this flow of the process.&#x20;
@@ -1343,7 +1342,7 @@ More details about the respective charts are below:
 
 **Permits Issued by Risk Type:** This chart is a pie chart showing the bifurcation of total permits issued by risk type (low risk, medium risk, high risk) for the applied date filter.
 
-![](<../../../../.gitbook/assets/image (4).png>)
+![](<../../../../.gitbook/assets/image (4) (3).png>)
 
 &#x20;**Permits Issued by Occupancy Type:** This chart is a pie chart showing the bifurcation of total permits issued by occupancy type (Residential, Institutional etc) for the applied date filter.
 
