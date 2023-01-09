@@ -4,109 +4,1286 @@ description: Technical Doc
 
 # State DSS - OBPS
 
-**OBPS-DSS Documentation**
+## **Overview**
 
 \
-DSS has two sides to it. One being the process in which the Data is pooled to ElasticSearch and the other being the way it is fetched, aggregated, computed, transformed and sent across.
+DSS has two sides to it. One is the process in which the data is pooled into ElasticSearch and the other is the way it is fetched, aggregated, computed, transformed and sent across.
 
-As this revolves around a variety of Data Set, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, then it is just a configuration away from getting the newly introduced scenario involved in this flow of process.&#x20;
+As this revolves around a variety of data sets, there is a need for making this configurable. So that, tomorrow, given a new scenario is introduced, it is just a configuration away from getting the newly introduced scenario involved in this flow of the process.&#x20;
 
-This document explains the steps on how to define the configurations for Analytics Side Of DSS for OBPS.
+This document explains the steps on how to define the configurations for the analytics side Of DSS for OBPS.
 
 **What is analytics?**
 
-**Analytics :** Micro Service which is responsible for building, fetching, aggregating and computing the Data on ElasticSearch to a consumable Data Response. Which shall be later used for visualizations and graphical representations.&#x20;
+**Analytics:** Micro Service which is responsible for building, fetching, aggregating and computing the Data on ElasticSearch to a consumable Data Response. Which shall be later used for visualizations and graphical representations. &#x20;
 
-&#x20;
+**Analytics Configurations:** Analytics contains multiple configurations. we need to add the changes related to OBPS in this dashboard analytics.\
+Here is the location : [<img src="https://github.com/fluidicon.png" alt="" data-size="line">configs/egov-dss-dashboards/dashboard-analytics at qa · egovernments/configs](https://github.com/egovernments/configs/tree/qa/egov-dss-dashboards/dashboard-analytics)
 
-**Analytics Configurations:**\
-Analytics contains multiple configurations. we need to add the changes related to OBPS in this dashboard-analytics.\
-Here is the location : [![](https://github.com/fluidicon.png)configs/egov-dss-dashboards/dashboard-analytics at qa · egovernments/configs](https://github.com/egovernments/configs/tree/qa/egov-dss-dashboards/dashboard-analytics)\
 Below is a list of configurations that need to be changed to run OBPS successfully.
 
 1. Chart API Configuration
 2. Master Dashboard Configuration
 3. Role Dashboard Mappings Configuration
 
-#### **Description :** <a href="#description" id="description"></a>
+## **Configuration Details** <a href="#description" id="description"></a>
 
-**Chart API Configuration :**&#x20;
+### **Chart API Configuration**&#x20;
 
-Each Visualization has its own properties. Each Visualization comes from different data sources (Sometimes it is a combination of different data sources)&#x20;
+Each visualization has its own properties. Each visualization comes from different data sources (Sometimes it is a combination of different data sources).
 
-In order to configure each visualization and their properties, we have a Chart API Configuration Document.
+In order to configure each visualization and its properties, we have a Chart API configuration document.
 
-In this, Visualization Code, which happens to be the key, will be having its properties configured as a part of configuration and are easily changeable.
+In this, visualization code, which happens to be the key, will have its properties configured as a part of the configuration and easily changeable.
 
-&#x20;
+Below is the sample ChartApiConfiguration.json data for the OBPS.
 
-Here is the sample ChartApiConfiguration.json data for the OBPS.
+```
+  "bpaTodaysCollection": {
+    "chartName": "DSS_BPA_TODAYS_COLLECTION",
+    "queries": [
+      {
+        "module": "BPA",
+        "indexName": "dss-collection_v2",
+        "aggrQuery": "{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must\": [ { \"range\": { \"dataObject.paymentDetails.receiptDate\": { \"gte\": \"now-24h\", \"lte\": \"now\" } } }, { \"terms\": { \"dataObject.paymentDetails.businessService.keyword\": [ \"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\" ] } } ], \"must_not\": [ { \"term\": { \"dataObject.tenantId.keyword\": \"pb.testing\" } }, { \"term\": { \"dataObject.paymentStatus.keyword\": \"Cancelled\" } } ] } }, \"aggs\": { \"Today's Collection\": { \"sum\": { \"field\": \"dataObject.paymentDetails.totalAmountPaid\" } } } } } }",
+        "requestQueryMap":"{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }",
+        "dateRefField": ""
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "amount",
+    "action": "",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Today's Collection"
+    ],
+    "insight": {
+     
+    },
+    "_comment": "BPA Today's collections "
+  },
+  "bpaTotalCollection": {
+    "chartName": "DSS_BPA_TOTAL_COLLECTION",
+    "queries": [
+      {
+        "module": "BPA",
+        "indexName": "dss-collection_v2",
+        "aggrQuery": " { \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"dataObject.paymentDetails.businessService.keyword\": [ \"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\" ] } } ], \"must_not\": [ { \"term\": { \"dataObject.tenantId.keyword\": \"pb.testing\" } }, { \"term\": { \"dataObject.paymentStatus.keyword\": \"Cancelled\" } } ] } }, \"aggs\": { \"Total Collection\": { \"sum\": { \"field\": \"dataObject.paymentDetails.totalAmountPaid\" } } } } } } ",
+        "requestQueryMap":"{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }",
+        "dateRefField": "dataObject.paymentDetails.receiptDate"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "metric",
+    "valueType": "amount",
+    "action": "",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Collection"
+    ],
+    "insight": {
+      "chartResponseMap" : "bpaTotalCollection",
+      "action" : "differenceOfNumbers",
+      "upwardIndicator" : "positive",
+      "downwardIndicator" : "negative",
+      "textMessage" : "$indicator$value% than last $insightInterval",
+      "colorCode" : "#228B22",
+      "insightInterval" : "year",
+      "isRoundOff": true
+    },
+    "_comment": "BPA total collections "
+  },
+  "bpaTotalPlansScrutinized": {
+    "chartName": "DSS_BPA_TOTAL_PLANS_SCRUTINIZED",
+    "queries": [
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": "Data.@timestamp",
+        "indexName": "edcr-index",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"PERMIT\",\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"Total Plans Scrutnized\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Total Plans Scrutnized"
+    ],
+    "insight": {
+      "chartResponseMap" : "bpaTotalPlansScrutinized",
+      "action" : "differenceOfNumbers",
+      "upwardIndicator" : "positive",
+      "downwardIndicator" : "negative",
+      "textMessage" : "$indicator$value% than last $insightInterval",
+      "colorCode" : "#228B22",
+      "insightInterval" : "year",
+      "isRoundOff": true
+    },
+    "_comment": " Total Number of Complaints "
+  },
+  "bpaTotalApplicationsSubmitted": {
+    "chartName": "DSS_BPA_TOTAL_APPLICATIONS_SUBMITTED",
+    "queries": [
+      {
+        "module": "OBPS",
+        "indexName": "bpa-index",
+        "aggrQuery": "{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ], \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\"] } } ] } }, \"aggs\": { \"Total Applications\": { \"value_count\": { \"field\": \"Data.applicationNo.keyword\" } } } } }} ",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": "Data.@timestamp"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Applications"
+    ],
+    "insight": {
+      "chartResponseMap" : "bpaTotalApplicationsSubmitted",
+      "action" : "differenceOfNumbers",
+      "upwardIndicator" : "positive",
+      "downwardIndicator" : "negative",
+      "textMessage" : "$indicator$value% than last $insightInterval",
+      "colorCode" : "#228B22",
+      "insightInterval" : "year",
+      "isRoundOff": true
+    },
+    "_comment": "BPA Total Applications"
+  },
+  "bpaTotalPermitsIssued": {
+    "chartName": "DSS_BPA_TOTAL_PERMITS_ISSUED",
+    "queries": [
+      {
+        "module": "OBPS",
+        "indexName": "bpa-index",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "aggrQuery": "{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ], \"must\": [ { \"term\": { \"Data.status.keyword\": \"APPROVED\" } }, { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\"] } } ] } }, \"aggs\": { \"Total Permits Issued\": { \"value_count\": { \"field\": \"Data.applicationNo.keyword\" } } } } } }",
+        "dateRefField": "Data.@timestamp"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Permits Issued"
+    ],
+    "insight": {
+      "chartResponseMap" : "bpaTotalPermitsIssued",
+      "action" : "differenceOfNumbers",
+      "upwardIndicator" : "positive",
+      "downwardIndicator" : "negative",
+      "textMessage" : "$indicator$value% than last $insightInterval",
+      "colorCode" : "#228B22",
+      "insightInterval" : "year",
+      "isRoundOff": true
+    },
+    "_comment": "Total Permits Issued"
+  },
+  "bpaTotalLandApplied": {
+    "chartName": "DSS_BPA_TOTAL_LAND_APPLIED",
+    "queries": [
+      {
+        "module": "OBPS",
+        "indexName": "bpa-index",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "aggrQuery":"{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ], \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\",\"BPA_OC\"] } } ] } }, \"aggs\": { \"Total Land Applied\": { \"sum\": { \"field\": \"Data.plotArea\" } } } } } }",
+        "dateRefField": "Data.@timestamp"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Total Land Applied"
+    ],
+    "insight": {
+      "chartResponseMap" : "bpaTotalLandApplied",
+      "action" : "differenceOfNumbers",
+      "upwardIndicator" : "positive",
+      "downwardIndicator" : "negative",
+      "textMessage" : "$indicator$value% than last $insightInterval",
+      "colorCode" : "#228B22",
+      "insightInterval" : "year",
+      "isRoundOff": true
+    },
+    "_comment": "Total Land Applied"
+  },
 
-&#x20;
+  "bpaAverageDaysToIssuePermit": {
+    "chartName": "DSS_BPA_AVERAGE_DAYS_ISSUE_PERMIT",
+    "queries": [
+      {
+        "module": "OBPS",
+        "indexName": "bpa-index",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "aggrQuery":"{ \"aggs\": { \"BPA\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ] } }, \"aggs\": { \"Average days to issue Permit\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\"] } }, { \"term\": { \"Data.status.keyword\": \"APPROVED\" } } ] } }, \"aggs\": { \"average_days\": { \"avg\": { \"script\": { \"source\": \"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)/(86400*1000)\" } } } } } } } } }",
+        "dateRefField": "Data.@timestamp"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Average days to issue Permit"
+    ],
+    "insight": {
+      "chartResponseMap" : "bpaAverageDaysToIssuePermit",
+      "action" : "differenceOfNumbers",
+      "upwardIndicator" : "positive",
+      "downwardIndicator" : "negative",
+      "textMessage" : "$indicator$value% than last $insightInterval",
+      "colorCode" : "#228B22",
+      "insightInterval" : "year",
+      "isRoundOff": true
+    },
+    "_comment": "Average days to issue Permit"
+  },
+  "bpaSLACompliance": {
+    "chartName": "DSS_BPA_SLA_COMPLIANCE",
+    "queries": [
+      {
+        "module": "OBPS",
+        "indexName": "bpa-index",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "aggrQuery":"{ \"aggs\": { \"BPA\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ] } }, \"aggs\": { \"SLA Compliance Permit\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\"] } }, { \"term\": { \"Data.status.keyword\": \"APPROVED\" } }, { \"script\": { \"script\": { \"source\": \"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\", \"lang\": \"painless\", \"params\": { \"threshold\": 172800000 } } } } ] } } } } } } }",
+        "dateRefField": "Data.@timestamp"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "SLA Compliance Permit"
+    ],
+    "insight": {
+      "chartResponseMap" : "bpaSLACompliance",
+      "action" : "differenceOfNumbers",
+      "upwardIndicator" : "positive",
+      "downwardIndicator" : "negative",
+      "textMessage" : "$indicator$value% than last $insightInterval",
+      "colorCode" : "#228B22",
+      "insightInterval" : "year",
+      "isRoundOff": true
+    },
+    "_comment": "SLA Compliance (Permit)"
+  },
+  "bpaAverageDaysToIssueOC": {
+    "chartName": "DSS_BPA_AVERAGE_DAYS_ISSUE_OC",
+    "queries": [
+      {
+        "module": "OBPS",
+        "indexName": "bpa-index",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "aggrQuery":"{ \"aggs\": { \"BPA\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ] } }, \"aggs\": { \"Average days to issue OC\": { \"filter\": { \"bool\": { \"must\": [ { \"term\": { \"Data.businessService.keyword\": \"BPA_OC\" } }, { \"term\": { \"Data.status.keyword\": \"APPROVED\" } } ] } }, \"aggs\": { \"average_days\": { \"avg\": { \"script\": { \"source\": \"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)/(86400*1000)\" } } } } } } } } }",
+        "dateRefField": "Data.@timestamp"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Average days to issue OC"
+    ],
+    "insight": {
+      "chartResponseMap" : "bpaAverageDaysToIssueOC",
+      "action" : "differenceOfNumbers",
+      "upwardIndicator" : "positive",
+      "downwardIndicator" : "negative",
+      "textMessage" : "$indicator$value% than last $insightInterval",
+      "colorCode" : "#228B22",
+      "insightInterval" : "year",
+      "isRoundOff": true
+    },
+    "_comment": "Average days to issue OC"
+  },
+  "bpaSLAComplianceOC": {
+    "chartName": "DSS_BPA_SLA_COMPLIANCE_OC",
+    "queries": [
+      {
+        "module": "OBPS",
+        "indexName": "bpa-index",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "aggrQuery":"{ \"aggs\": { \"BPA\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ] } }, \"aggs\": { \"SLA Compliance OC\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA_OC\"] } }, { \"term\": { \"Data.status.keyword\": \"APPROVED\" } }, { \"script\": { \"script\": { \"source\": \"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\", \"lang\": \"painless\", \"params\": { \"threshold\": 172800000 } } } } ] } } } } } } }",
+        "dateRefField": "Data.@timestamp"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "metric",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "SLA Compliance OC"
+    ],
+    "insight": {
+      "chartResponseMap" : "bpaSLAComplianceOC",
+      "action" : "differenceOfNumbers",
+      "upwardIndicator" : "positive",
+      "downwardIndicator" : "negative",
+      "textMessage" : "$indicator$value% than last $insightInterval",
+      "colorCode" : "#228B22",
+      "insightInterval" : "year",
+      "isRoundOff": true
+    },
+    "_comment": "SLA Compliance OC"
+  },
+  "bpaCumulativeCollections": {
+    "chartName": "DSS_BPA_TOTAL_CUMULATIVE_COLLECTION",
+    "queries": [
+      {
+        "module": "OBPS",
+        "dateRefField": "dataObject.paymentDetails.receiptDate",
+        "requestQueryMap": "{\"wardId\" : \"domainObject.ward.name.keyword\",\r\n  \"module\" : \"dataObject.paymentDetails.businessService.keyword\", \n\"tenantId\" : \"dataObject.tenantId\"}",
+        "indexName": "dss-collection_v2",
+        "aggrQuery": "{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"dataObject.paymentStatus.keyword\": [ \"DEPOSITED\", \"NEW\" ] } }, { \"terms\": { \"dataObject.paymentDetails.businessService.keyword\": [ \"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\" ] } } ], \"must_not\": [ { \"term\": { \"dataObject.tenantId.keyword\": \"pb.testing\" } }, { \"terms\": { \"dataObject.bill.status.keyword\": [ \"Cancelled\" ] } } ] } }, \"aggs\": { \"BPA Cumulative Collections\": { \"date_histogram\": { \"field\": \"dataObject.paymentDetails.receiptDate\", \"interval\": \"month\" }, \"aggs\": { \"Sum\": { \"sum\": { \"field\": \"dataObject.paymentDetails.totalAmountPaid\" } } } } } } } }"      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "line",
+    "valueType": "amount",
+    "action": "",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "aggregationPaths": [
+      "BPA Cumulative Collections"
+    ],
+    "isCumulative": true,
+    "interval": "month",
+    "insight": {
+    },
+    "_comment": "Total Cumulative Collection"
+  },
+  "permitIssuedByRiskType": {
+    "chartName": "DSS_BPA_PERMIT_ISSUED_BY_RISK_TYPE",
+    "queries": [
+      {
+        "module": "OBPS",
+        "dateRefField": "Data.@timestamp",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "indexName": "bpa-index",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"PermitsIssued By RiskType\":{\"terms\":{\"field\":\"Data.riskType.keyword\"},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.riskType.keyword\"}}}}}}}}"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "pie",
+    "valueType": "number",
+    "isRoundOff": true,
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "PermitsIssued By RiskType"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+   "permitIssuedByOccupancyType": {
+    "chartName": "DSS_BPA_PERMIT_ISSUED_BY_OCCUPANCY_TYPE",
+    "queries": [
+      {
+        "module": "OBPS",
+        "dateRefField": "Data.@timestamp",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "indexName": "bpa-index",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"PermitsIssued By OccupancyType\":{\"terms\":{\"field\":\"Data.landInfo.unit.occupancyType.keyword\"},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.landInfo.unit.occupancyType.keyword\"}}}}}}}}"
+      }
+    ],
+    "translateTenantCode": false,
+    "chartType": "pie",
+    "valueType": "number",
+    "isRoundOff": true,
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "PermitsIssued By OccupancyType"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "permitsandOCissued": {
+    "chartName": "DSS_TOTAL_PERMIT_ISSUED_VS_TOTAL_OC_ISSUED_VS_TOTAL_OC_SUBMITTED",
+    "queries": [
+      {
+        "module": "OBPS",
+        "dateRefField": "Data.@timestamp",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "indexName": "bpa-index",
+        "aggrQuery":"{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"TotalPermitIssued\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"interval\":\"intervalvalue\"},\"aggs\":{\"totalPermitIssued\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_LOW\",\"BPA\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.businessService.keyword\"}}}}}},\"TotalOCSubmitted\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"interval\":\"intervalvalue\"},\"aggs\":{\"totalOCSUB\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.businessService.keyword\"}}}}}},\"TotalOCissued\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"interval\":\"intervalvalue\"},\"aggs\":{\"totalOCissued\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.businessService.keyword\"}}}}}}}}}}"
+      }
+    ],
+    "chartType": "line",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "aggregationPaths": [
+      "TotalPermitIssued",
+      "TotalOCSubmitted",
+      "TotalOCissued"
 
-&#x20;
+    ],
+    "isRoundOff": true,
+    "isCumulative": true,
+    "interval": "month",
+    "insight": {
+    },
+    "_comment": " "
+  },
+"obpsServiceReport": {
+    "chartName": "DSS_OBPS_SERVICE_REPORT",
+    "queries": [
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }",
+   		"dateRefField": "dataObject.paymentDetails.receiptDate",
+        "indexName": "dss-collection_v2",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"dataObject.tenantId.keyword\":\"pb.testing\"}},{\"terms\":{\"dataObject.bill.status.keyword\":[\"Cancelled\"]}}],\"must\":[{\"terms\":{\"dataObject.paymentDetails.businessService.keyword\":[\"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\"]}}]}},\"aggs\":{\"Total Collection\":{\"sum\":{\"field\":\"dataObject.paymentDetails.totalAmountPaid\"}}}}}}"
+      },
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}",
+        "dateRefField": "Data.auditDetails.createdTime",
+        "indexName": "bpa-index",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"Total Applications Submitted\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.applicationNo.keyword\"}}}},\"Total Permits Issued\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.businessService.keyword\"}}}},\"Average days to issue Permit\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"average_days\":{\"avg\":{\"script\":{\"source\":\"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)\/(86400*1000)\"}}}}},\"Average days to issue OC\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.businessService.keyword\":\"BPA_OC\"}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"average_days\":{\"avg\":{\"script\":{\"source\":\"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)\/(86400*1000)\"}}}}},\"SLA Compliance Permit\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"script\":{\"script\":{\"source\":\"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\"lang\":\"painless\",\"params\":{\"threshold\":172800000}}}}]}}},\"SLA Compliance OC\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.businessService.keyword\":\"BPA_OC\"}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"script\":{\"script\":{\"source\":\"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\"lang\":\"painless\",\"params\":{\"threshold\":172800000}}}}]}}},\"Total OC Issued\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}}},\"Total OC Submitted\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}}},\"Deviation\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\",\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"exists\":{\"field\":\"Data.plotAreaApproved\"}}]}},\"aggs\":{\"deviation\":{\"avg\":{\"script\":{\"source\":\" Math.round(((doc['Data.plotAreaApproved'].value-doc['Data.plotArea'].value)*100)\/(doc['Data.plotArea'].value))\"}}}}}}}}}"
+      },
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}",
+        "dateRefField": "Data.@timestamp",
+        "indexName": "edcr-index",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"Total Plans Scrutnized\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"PERMIT\",\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}},\"Total OC Scrutnized\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}}}}}}"
+      }
+      
+    ],
+    "isMdmsEnabled": true,
+    "filterKeys": [
+      {"key": "tenantId", "column": "DDRs"}
+    ],
+    "chartType": "table",
+    "valueType": "number",
+    "drillChart": "obpsServiceReportDrillDown",
+    "documentType": "_doc",
+    "plotLabel": "DDRs",
+    "aggregationPaths": [
+      "Total Collection",
+      "Total Plans Scrutnized",
+      "Total Applications Submitted",
+      "Total Permits Issued",
+      "Average days to issue Permit",
+      "SLA Compliance Permit",
+      "Total OC Scrutnized",
+      "Total OC Submitted",
+      "Total OC Issued",
+      "Deviation",
+      "Average days to issue OC",
+      "SLA Compliance OC"
+    ],
+    "pathDataTypeMapping": [
+      {
+        "Total Collection": "amount"
+      },
+      {
+        "Total Applications Submitted": "number"
+      },
+      {
+        "Total Permits Issued": "number"
+      },
+      {
+        "Average days to issue Permit": "number"
+      },
+      {
+        "SLA Compliance Permit": "number"
+      },
+      {
+        "Total OC Submitted": "number"
+      },
+      {
+        "Total OC Issued": "number"
+      },
+      {
+        "Deviation": "percentage"
+      },
+      {
+        "Average days to issue OC": "number"
+      },
+      {
+        "SLA Compliance OC": "number"
+      },
+      {
+        "Total Plans Scrutnized": "number"
+      
+      },
+      {
+        "Total OC Scrutnized": "number"
+      }
+    ],
+    "insight": {
+    },
+    "_comment": "OBPS Service Report "
+  },
 
-`1 "bpaTodaysCollection": { 2 "chartName": "DSS_BPA_TODAYS_COLLECTION", 3 "queries": [ 4 { 5 "module": "BPA", 6 "indexName": "dss-collection_v2", 7 "aggrQuery": "{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must\": [ { \"range\": { \"dataObject.paymentDetails.receiptDate\": { \"gte\": \"now-24h\", \"lte\": \"now\" } } }, { \"terms\": { \"dataObject.paymentDetails.businessService.keyword\": [ \"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\" ] } } ], \"must_not\": [ { \"term\": { \"dataObject.tenantId.keyword\": \"pb.testing\" } }, { \"term\": { \"dataObject.paymentStatus.keyword\": \"Cancelled\" } } ] } }, \"aggs\": { \"Today's Collection\": { \"sum\": { \"field\": \"dataObject.paymentDetails.totalAmountPaid\" } } } } } }", 8 "requestQueryMap":"{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }", 9 "dateRefField": "" 10 } 11 ], 12 "chartType": "metric", 13 "valueType": "amount", 14 "action": "", 15 "drillChart": "none", 16 "aggregationPaths": [ 17 "Today's Collection" 18 ], 19 "insight": { 20 21 }, 22 "_comment": "BPA Today's collections " 23 }, 24 "bpaTotalCollection": { 25 "chartName": "DSS_BPA_TOTAL_COLLECTION", 26 "queries": [ 27 { 28 "module": "BPA", 29 "indexName": "dss-collection_v2", 30 "aggrQuery": " { \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"dataObject.paymentDetails.businessService.keyword\": [ \"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\" ] } } ], \"must_not\": [ { \"term\": { \"dataObject.tenantId.keyword\": \"pb.testing\" } }, { \"term\": { \"dataObject.paymentStatus.keyword\": \"Cancelled\" } } ] } }, \"aggs\": { \"Total Collection\": { \"sum\": { \"field\": \"dataObject.paymentDetails.totalAmountPaid\" } } } } } } ", 31 "requestQueryMap":"{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }", 32 "dateRefField": "dataObject.paymentDetails.receiptDate" 33 } 34 ], 35 "translateTenantCode": false, 36 "chartType": "metric", 37 "valueType": "amount", 38 "action": "", 39 "drillChart": "none", 40 "aggregationPaths": [ 41 "Total Collection" 42 ], 43 "insight": { 44 "chartResponseMap" : "bpaTotalCollection", 45 "action" : "differenceOfNumbers", 46 "upwardIndicator" : "positive", 47 "downwardIndicator" : "negative", 48 "textMessage" : "$indicator$value% than last $insightInterval", 49 "colorCode" : "#228B22", 50 "insightInterval" : "year", 51 "isRoundOff": true 52 }, 53 "_comment": "BPA total collections " 54 }, 55 "bpaTotalPlansScrutinized": { 56 "chartName": "DSS_BPA_TOTAL_PLANS_SCRUTINIZED", 57 "queries": [ 58 { 59 "module": "OBPS", 60 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 61 "dateRefField": "Data.@timestamp", 62 "indexName": "edcr-index", 63 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"PERMIT\",\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"Total Plans Scrutnized\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}}}}" 64 } 65 ], 66 "chartType": "metric", 67 "valueType": "number", 68 "drillChart": "none", 69 "documentType": "_doc", 70 "action": "", 71 "aggregationPaths": [ 72 "Total Plans Scrutnized" 73 ], 74 "insight": { 75 "chartResponseMap" : "bpaTotalPlansScrutinized", 76 "action" : "differenceOfNumbers", 77 "upwardIndicator" : "positive", 78 "downwardIndicator" : "negative", 79 "textMessage" : "$indicator$value% than last $insightInterval", 80 "colorCode" : "#228B22", 81 "insightInterval" : "year", 82 "isRoundOff": true 83 }, 84 "_comment": " Total Number of Complaints " 85 }, 86 "bpaTotalApplicationsSubmitted": { 87 "chartName": "DSS_BPA_TOTAL_APPLICATIONS_SUBMITTED", 88 "queries": [ 89 { 90 "module": "OBPS", 91 "indexName": "bpa-index", 92 "aggrQuery": "{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ], \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\"] } } ] } }, \"aggs\": { \"Total Applications\": { \"value_count\": { \"field\": \"Data.applicationNo.keyword\" } } } } }} ", 93 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 94 "dateRefField": "Data.@timestamp" 95 } 96 ], 97 "translateTenantCode": false, 98 "chartType": "metric", 99 "valueType": "number", 100 "action": "", 101 "drillChart": "none", 102 "aggregationPaths": [ 103 "Total Applications" 104 ], 105 "insight": { 106 "chartResponseMap" : "bpaTotalApplicationsSubmitted", 107 "action" : "differenceOfNumbers", 108 "upwardIndicator" : "positive", 109 "downwardIndicator" : "negative", 110 "textMessage" : "$indicator$value% than last $insightInterval", 111 "colorCode" : "#228B22", 112 "insightInterval" : "year", 113 "isRoundOff": true 114 }, 115 "_comment": "BPA Total Applications" 116 }, 117 "bpaTotalPermitsIssued": { 118 "chartName": "DSS_BPA_TOTAL_PERMITS_ISSUED", 119 "queries": [ 120 { 121 "module": "OBPS", 122 "indexName": "bpa-index", 123 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 124 "aggrQuery": "{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ], \"must\": [ { \"term\": { \"Data.status.keyword\": \"APPROVED\" } }, { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\"] } } ] } }, \"aggs\": { \"Total Permits Issued\": { \"value_count\": { \"field\": \"Data.applicationNo.keyword\" } } } } } }", 125 "dateRefField": "Data.@timestamp" 126 } 127 ], 128 "translateTenantCode": false, 129 "chartType": "metric", 130 "valueType": "number", 131 "action": "", 132 "drillChart": "none", 133 "aggregationPaths": [ 134 "Total Permits Issued" 135 ], 136 "insight": { 137 "chartResponseMap" : "bpaTotalPermitsIssued", 138 "action" : "differenceOfNumbers", 139 "upwardIndicator" : "positive", 140 "downwardIndicator" : "negative", 141 "textMessage" : "$indicator$value% than last $insightInterval", 142 "colorCode" : "#228B22", 143 "insightInterval" : "year", 144 "isRoundOff": true 145 }, 146 "_comment": "Total Permits Issued" 147 }, 148 "bpaTotalLandApplied": { 149 "chartName": "DSS_BPA_TOTAL_LAND_APPLIED", 150 "queries": [ 151 { 152 "module": "OBPS", 153 "indexName": "bpa-index", 154 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 155 "aggrQuery":"{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ], \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\",\"BPA_OC\"] } } ] } }, \"aggs\": { \"Total Land Applied\": { \"sum\": { \"field\": \"Data.plotArea\" } } } } } }", 156 "dateRefField": "Data.@timestamp" 157 } 158 ], 159 "translateTenantCode": false, 160 "chartType": "metric", 161 "valueType": "number", 162 "action": "", 163 "drillChart": "none", 164 "aggregationPaths": [ 165 "Total Land Applied" 166 ], 167 "insight": { 168 "chartResponseMap" : "bpaTotalLandApplied", 169 "action" : "differenceOfNumbers", 170 "upwardIndicator" : "positive", 171 "downwardIndicator" : "negative", 172 "textMessage" : "$indicator$value% than last $insightInterval", 173 "colorCode" : "#228B22", 174 "insightInterval" : "year", 175 "isRoundOff": true 176 }, 177 "_comment": "Total Land Applied" 178 }, 179 180 "bpaAverageDaysToIssuePermit": { 181 "chartName": "DSS_BPA_AVERAGE_DAYS_ISSUE_PERMIT", 182 "queries": [ 183 { 184 "module": "OBPS", 185 "indexName": "bpa-index", 186 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 187 "aggrQuery":"{ \"aggs\": { \"BPA\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ] } }, \"aggs\": { \"Average days to issue Permit\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\"] } }, { \"term\": { \"Data.status.keyword\": \"APPROVED\" } } ] } }, \"aggs\": { \"average_days\": { \"avg\": { \"script\": { \"source\": \"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)/(86400*1000)\" } } } } } } } } }", 188 "dateRefField": "Data.@timestamp" 189 } 190 ], 191 "translateTenantCode": false, 192 "chartType": "metric", 193 "valueType": "number", 194 "action": "", 195 "drillChart": "none", 196 "aggregationPaths": [ 197 "Average days to issue Permit" 198 ], 199 "insight": { 200 "chartResponseMap" : "bpaAverageDaysToIssuePermit", 201 "action" : "differenceOfNumbers", 202 "upwardIndicator" : "positive", 203 "downwardIndicator" : "negative", 204 "textMessage" : "$indicator$value% than last $insightInterval", 205 "colorCode" : "#228B22", 206 "insightInterval" : "year", 207 "isRoundOff": true 208 }, 209 "_comment": "Average days to issue Permit" 210 }, 211 "bpaSLACompliance": { 212 "chartName": "DSS_BPA_SLA_COMPLIANCE", 213 "queries": [ 214 { 215 "module": "OBPS", 216 "indexName": "bpa-index", 217 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 218 "aggrQuery":"{ \"aggs\": { \"BPA\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ] } }, \"aggs\": { \"SLA Compliance Permit\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA\",\"BPA_LOW\"] } }, { \"term\": { \"Data.status.keyword\": \"APPROVED\" } }, { \"script\": { \"script\": { \"source\": \"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\", \"lang\": \"painless\", \"params\": { \"threshold\": 172800000 } } } } ] } } } } } } }", 219 "dateRefField": "Data.@timestamp" 220 } 221 ], 222 "translateTenantCode": false, 223 "chartType": "metric", 224 "valueType": "number", 225 "action": "", 226 "drillChart": "none", 227 "aggregationPaths": [ 228 "SLA Compliance Permit" 229 ], 230 "insight": { 231 "chartResponseMap" : "bpaSLACompliance", 232 "action" : "differenceOfNumbers", 233 "upwardIndicator" : "positive", 234 "downwardIndicator" : "negative", 235 "textMessage" : "$indicator$value% than last $insightInterval", 236 "colorCode" : "#228B22", 237 "insightInterval" : "year", 238 "isRoundOff": true 239 }, 240 "_comment": "SLA Compliance (Permit)" 241 }, 242 "bpaAverageDaysToIssueOC": { 243 "chartName": "DSS_BPA_AVERAGE_DAYS_ISSUE_OC", 244 "queries": [ 245 { 246 "module": "OBPS", 247 "indexName": "bpa-index", 248 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 249 "aggrQuery":"{ \"aggs\": { \"BPA\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ] } }, \"aggs\": { \"Average days to issue OC\": { \"filter\": { \"bool\": { \"must\": [ { \"term\": { \"Data.businessService.keyword\": \"BPA_OC\" } }, { \"term\": { \"Data.status.keyword\": \"APPROVED\" } } ] } }, \"aggs\": { \"average_days\": { \"avg\": { \"script\": { \"source\": \"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)/(86400*1000)\" } } } } } } } } }", 250 "dateRefField": "Data.@timestamp" 251 } 252 ], 253 "translateTenantCode": false, 254 "chartType": "metric", 255 "valueType": "number", 256 "action": "", 257 "drillChart": "none", 258 "aggregationPaths": [ 259 "Average days to issue OC" 260 ], 261 "insight": { 262 "chartResponseMap" : "bpaAverageDaysToIssueOC", 263 "action" : "differenceOfNumbers", 264 "upwardIndicator" : "positive", 265 "downwardIndicator" : "negative", 266 "textMessage" : "$indicator$value% than last $insightInterval", 267 "colorCode" : "#228B22", 268 "insightInterval" : "year", 269 "isRoundOff": true 270 }, 271 "_comment": "Average days to issue OC" 272 }, 273 "bpaSLAComplianceOC": { 274 "chartName": "DSS_BPA_SLA_COMPLIANCE_OC", 275 "queries": [ 276 { 277 "module": "OBPS", 278 "indexName": "bpa-index", 279 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 280 "aggrQuery":"{ \"aggs\": { \"BPA\": { \"filter\": { \"bool\": { \"must_not\": [ { \"term\": { \"Data.tenantId.keyword\": \"pb.testing\" } } ] } }, \"aggs\": { \"SLA Compliance OC\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"Data.businessService.keyword\": [\"BPA_OC\"] } }, { \"term\": { \"Data.status.keyword\": \"APPROVED\" } }, { \"script\": { \"script\": { \"source\": \"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\", \"lang\": \"painless\", \"params\": { \"threshold\": 172800000 } } } } ] } } } } } } }", 281 "dateRefField": "Data.@timestamp" 282 } 283 ], 284 "translateTenantCode": false, 285 "chartType": "metric", 286 "valueType": "number", 287 "action": "", 288 "drillChart": "none", 289 "aggregationPaths": [ 290 "SLA Compliance OC" 291 ], 292 "insight": { 293 "chartResponseMap" : "bpaSLAComplianceOC", 294 "action" : "differenceOfNumbers", 295 "upwardIndicator" : "positive", 296 "downwardIndicator" : "negative", 297 "textMessage" : "$indicator$value% than last $insightInterval", 298 "colorCode" : "#228B22", 299 "insightInterval" : "year", 300 "isRoundOff": true 301 }, 302 "_comment": "SLA Compliance OC" 303 }, 304 "bpaCumulativeCollections": { 305 "chartName": "DSS_BPA_TOTAL_CUMULATIVE_COLLECTION", 306 "queries": [ 307 { 308 "module": "OBPS", 309 "dateRefField": "dataObject.paymentDetails.receiptDate", 310 "requestQueryMap": "{\"wardId\" : \"domainObject.ward.name.keyword\",\r\n \"module\" : \"dataObject.paymentDetails.businessService.keyword\", \n\"tenantId\" : \"dataObject.tenantId\"}", 311 "indexName": "dss-collection_v2", 312 "aggrQuery": "{ \"aggs\": { \"AGGR\": { \"filter\": { \"bool\": { \"must\": [ { \"terms\": { \"dataObject.paymentStatus.keyword\": [ \"DEPOSITED\", \"NEW\" ] } }, { \"terms\": { \"dataObject.paymentDetails.businessService.keyword\": [ \"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\" ] } } ], \"must_not\": [ { \"term\": { \"dataObject.tenantId.keyword\": \"pb.testing\" } }, { \"terms\": { \"dataObject.bill.status.keyword\": [ \"Cancelled\" ] } } ] } }, \"aggs\": { \"BPA Cumulative Collections\": { \"date_histogram\": { \"field\": \"dataObject.paymentDetails.receiptDate\", \"interval\": \"month\" }, \"aggs\": { \"Sum\": { \"sum\": { \"field\": \"dataObject.paymentDetails.totalAmountPaid\" } } } } } } } }" } 313 ], 314 "translateTenantCode": false, 315 "chartType": "line", 316 "valueType": "amount", 317 "action": "", 318 "drillChart": "none", 319 "documentType": "_doc", 320 "aggregationPaths": [ 321 "BPA Cumulative Collections" 322 ], 323 "isCumulative": true, 324 "interval": "month", 325 "insight": { 326 }, 327 "_comment": "Total Cumulative Collection" 328 }, 329 "permitIssuedByRiskType": { 330 "chartName": "DSS_BPA_PERMIT_ISSUED_BY_RISK_TYPE", 331 "queries": [ 332 { 333 "module": "OBPS", 334 "dateRefField": "Data.@timestamp", 335 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 336 "indexName": "bpa-index", 337 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"PermitsIssued By RiskType\":{\"terms\":{\"field\":\"Data.riskType.keyword\"},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.riskType.keyword\"}}}}}}}}" 338 } 339 ], 340 "translateTenantCode": false, 341 "chartType": "pie", 342 "valueType": "number", 343 "isRoundOff": true, 344 "action": "", 345 "documentType": "_doc", 346 "drillChart": "none", 347 "aggregationPaths": [ 348 "PermitsIssued By RiskType" 349 ], 350 "insight": { 351 }, 352 "_comment": " " 353 }, 354 "permitIssuedByOccupancyType": { 355 "chartName": "DSS_BPA_PERMIT_ISSUED_BY_OCCUPANCY_TYPE", 356 "queries": [ 357 { 358 "module": "OBPS", 359 "dateRefField": "Data.@timestamp", 360 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 361 "indexName": "bpa-index", 362 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"PermitsIssued By OccupancyType\":{\"terms\":{\"field\":\"Data.landInfo.unit.occupancyType.keyword\"},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.landInfo.unit.occupancyType.keyword\"}}}}}}}}" 363 } 364 ], 365 "translateTenantCode": false, 366 "chartType": "pie", 367 "valueType": "number", 368 "isRoundOff": true, 369 "action": "", 370 "documentType": "_doc", 371 "drillChart": "none", 372 "aggregationPaths": [ 373 "PermitsIssued By OccupancyType" 374 ], 375 "insight": { 376 }, 377 "_comment": " " 378 }, 379 "permitsandOCissued": { 380 "chartName": "DSS_TOTAL_PERMIT_ISSUED_VS_TOTAL_OC_ISSUED_VS_TOTAL_OC_SUBMITTED", 381 "queries": [ 382 { 383 "module": "OBPS", 384 "dateRefField": "Data.@timestamp", 385 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 386 "indexName": "bpa-index", 387 "aggrQuery":"{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"TotalPermitIssued\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"interval\":\"intervalvalue\"},\"aggs\":{\"totalPermitIssued\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_LOW\",\"BPA\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.businessService.keyword\"}}}}}},\"TotalOCSubmitted\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"interval\":\"intervalvalue\"},\"aggs\":{\"totalOCSUB\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.businessService.keyword\"}}}}}},\"TotalOCissued\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"interval\":\"intervalvalue\"},\"aggs\":{\"totalOCissued\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"Data.businessService.keyword\"}}}}}}}}}}" 388 } 389 ], 390 "chartType": "line", 391 "valueType": "number", 392 "action": "", 393 "drillChart": "none", 394 "documentType": "_doc", 395 "aggregationPaths": [ 396 "TotalPermitIssued", 397 "TotalOCSubmitted", 398 "TotalOCissued" 399 400 ], 401 "isRoundOff": true, 402 "isCumulative": true, 403 "interval": "month", 404 "insight": { 405 }, 406 "_comment": " " 407 }, 408"obpsServiceReport": { 409 "chartName": "DSS_OBPS_SERVICE_REPORT", 410 "queries": [ 411 { 412 "module": "OBPS", 413 "requestQueryMap": "{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }", 414 "dateRefField": "dataObject.paymentDetails.receiptDate", 415 "indexName": "dss-collection_v2", 416 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"dataObject.tenantId.keyword\":\"pb.testing\"}},{\"terms\":{\"dataObject.bill.status.keyword\":[\"Cancelled\"]}}],\"must\":[{\"terms\":{\"dataObject.paymentDetails.businessService.keyword\":[\"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\"]}}]}},\"aggs\":{\"Total Collection\":{\"sum\":{\"field\":\"dataObject.paymentDetails.totalAmountPaid\"}}}}}}" 417 }, 418 { 419 "module": "OBPS", 420 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}", 421 "dateRefField": "Data.auditDetails.createdTime", 422 "indexName": "bpa-index", 423 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"Total Applications Submitted\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.applicationNo.keyword\"}}}},\"Total Permits Issued\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.businessService.keyword\"}}}},\"Average days to issue Permit\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"average_days\":{\"avg\":{\"script\":{\"source\":\"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)\/(86400*1000)\"}}}}},\"Average days to issue OC\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.businessService.keyword\":\"BPA_OC\"}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"average_days\":{\"avg\":{\"script\":{\"source\":\"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)\/(86400*1000)\"}}}}},\"SLA Compliance Permit\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"script\":{\"script\":{\"source\":\"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\"lang\":\"painless\",\"params\":{\"threshold\":172800000}}}}]}}},\"SLA Compliance OC\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.businessService.keyword\":\"BPA_OC\"}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"script\":{\"script\":{\"source\":\"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\"lang\":\"painless\",\"params\":{\"threshold\":172800000}}}}]}}},\"Total OC Issued\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}}},\"Total OC Submitted\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}}},\"Deviation\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\",\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"exists\":{\"field\":\"Data.plotAreaApproved\"}}]}},\"aggs\":{\"deviation\":{\"avg\":{\"script\":{\"source\":\" Math.round(((doc['Data.plotAreaApproved'].value-doc['Data.plotArea'].value)*100)\/(doc['Data.plotArea'].value))\"}}}}}}}}}" 424 }, 425 { 426 "module": "OBPS", 427 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}", 428 "dateRefField": "Data.@timestamp", 429 "indexName": "edcr-index", 430 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"Total Plans Scrutnized\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"PERMIT\",\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}},\"Total OC Scrutnized\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}}}}}}" 431 } 432 433 ], 434 "isMdmsEnabled": true, 435 "filterKeys": [ 436 {"key": "tenantId", "column": "DDRs"} 437 ], 438 "chartType": "table", 439 "valueType": "number", 440 "drillChart": "obpsServiceReportDrillDown", 441 "documentType": "_doc", 442 "plotLabel": "DDRs", 443 "aggregationPaths": [ 444 "Total Collection", 445 "Total Plans Scrutnized", 446 "Total Applications Submitted", 447 "Total Permits Issued", 448 "Average days to issue Permit", 449 "SLA Compliance Permit", 450 "Total OC Scrutnized", 451 "Total OC Submitted", 452 "Total OC Issued", 453 "Deviation", 454 "Average days to issue OC", 455 "SLA Compliance OC" 456 ], 457 "pathDataTypeMapping": [ 458 { 459 "Total Collection": "amount" 460 }, 461 { 462 "Total Applications Submitted": "number" 463 }, 464 { 465 "Total Permits Issued": "number" 466 }, 467 { 468 "Average days to issue Permit": "number" 469 }, 470 { 471 "SLA Compliance Permit": "number" 472 }, 473 { 474 "Total OC Submitted": "number" 475 }, 476 { 477 "Total OC Issued": "number" 478 }, 479 { 480 "Deviation": "percentage" 481 }, 482 { 483 "Average days to issue OC": "number" 484 }, 485 { 486 "SLA Compliance OC": "number" 487 }, 488 { 489 "Total Plans Scrutnized": "number" 490 491 }, 492 { 493 "Total OC Scrutnized": "number" 494 } 495 ], 496 "insight": { 497 }, 498 "_comment": "OBPS Service Report " 499 }, 500 501 "obpsServiceReportDrillDown": { 502 "chartName": "DSS_OBPS_SERVICE_REPORT_DRILL_DOWN", 503 "queries": [ 504 { 505 "module": "OBPS", 506 "requestQueryMap": "{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }", 507 "dateRefField": "dataObject.paymentDetails.receiptDate", 508 "indexName": "dss-collection_v2", 509 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"dataObject.tenantId.keyword\":\"pb.testing\"}},{\"terms\":{\"dataObject.bill.status.keyword\":[\"Cancelled\"]}}],\"must\":[{\"terms\":{\"dataObject.paymentDetails.businessService.keyword\":[\"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\"]}}]}},\"aggs\":{\"ULBs\":{\"terms\":{\"field\":\"dataObject.tenantId.keyword\",\"size\":1000},\"aggs\":{\"Total Collection\":{\"sum\":{\"field\":\"dataObject.paymentDetails.totalAmountPaid\"}}}}}}}}" 510 }, 511 { 512 "module": "OBPS", 513 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"ulbId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}", 514 "dateRefField": "Data.auditDetails.createdTime", 515 "indexName": "bpa-index", 516 "aggrQuery": "{\n \"aggs\": {\n \"AGGR\": {\n \"filter\": {\n \"bool\": {\n \"must_not\": [\n {\n \"term\": {\n \"Data.tenantId.keyword\": \"pb.testing\"\n }\n }\n ]\n }\n },\n \"aggs\": {\n \"ULBs\": {\n \"terms\": {\n \"field\": \"Data.tenantId.keyword\",\n \"size\": 1000\n },\n \"aggs\": {\n \"Total Applications Submitted\": {\n \"filter\": {\n \"bool\": {\n \"must\": [\n {\n \"terms\": {\n \"Data.businessService.keyword\": [\n \"BPA\",\n \"BPA_LOW\"\n ]\n }\n }\n ]\n }\n }\n },\n \"Total Permits Issued\": {\n \"filter\": {\n \"bool\": {\n \"must\": [\n {\n \"term\": {\n \"Data.status.keyword\": \"APPROVED\"\n }\n },\n {\n \"terms\": {\n \"Data.businessService.keyword\": [\n \"BPA\",\n \"BPA_LOW\"\n ]\n }\n }\n ]\n }\n }\n },\n \"Average days to issue Permit\": {\n \"filter\": {\n \"bool\": {\n \"must\": [\n {\n \"terms\": {\n \"Data.businessService.keyword\": [\n \"BPA\",\n \"BPA_LOW\"\n ]\n }\n },\n {\n \"term\": {\n \"Data.status.keyword\": \"APPROVED\"\n }\n }\n ]\n }\n },\n \"aggs\": {\n \"average_days\": {\n \"avg\": {\n \"script\": {\n \"source\": \"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)/(86400*1000)\"\n }\n }\n }\n }\n },\n \"Average days to issue OC\": {\n \"filter\": {\n \"bool\": {\n \"must\": [\n {\n \"term\": {\n \"Data.businessService.keyword\": \"BPA_OC\"\n }\n },\n {\n \"term\": {\n \"Data.status.keyword\": \"APPROVED\"\n }\n }\n ]\n }\n },\n \"aggs\": {\n \"average_days\": {\n \"avg\": {\n \"script\": {\n \"source\": \"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)/(86400*1000)\"\n }\n }\n }\n }\n },\n \"SLA Compliance Permit\": {\n \"filter\": {\n \"bool\": {\n \"must\": [\n {\n \"terms\": {\n \"Data.businessService.keyword\": [\n \"BPA\",\n \"BPA_LOW\"\n ]\n }\n },\n {\n \"term\": {\n \"Data.status.keyword\": \"APPROVED\"\n }\n },\n {\n \"script\": {\n \"script\": {\n \"source\": \"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\n \"lang\": \"painless\",\n \"params\": {\n \"threshold\": 172800000\n }\n }\n }\n }\n ]\n }\n }\n },\n \"SLA Compliance OC\": {\n \"filter\": {\n \"bool\": {\n \"must\": [\n {\n \"term\": {\n \"Data.businessService.keyword\": \"BPA_OC\"\n }\n },\n {\n \"term\": {\n \"Data.status.keyword\": \"APPROVED\"\n }\n },\n {\n \"script\": {\n \"script\": {\n \"source\": \"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\n \"lang\": \"painless\",\n \"params\": {\n \"threshold\": 172800000\n }\n }\n }\n }\n ]\n }\n }\n },\n \"Total OC Issued\": {\n \"filter\": {\n \"bool\": {\n \"must\": [\n {\n \"term\": {\n \"Data.status.keyword\": \"APPROVED\"\n }\n },\n {\n \"terms\": {\n \"Data.businessService.keyword\": [\n \"BPA_OC\"\n ]\n }\n }\n ]\n }\n }\n },\n \"Total OC Submitted\": {\n \"filter\": {\n \"bool\": {\n \"must\": [\n {\n \"terms\": {\n \"Data.businessService.keyword\": [\n \"BPA_OC\"\n ]\n }\n }\n ]\n }\n }\n },\n \"Deviation\": {\n \"filter\": {\n \"bool\": {\n \"must\": [\n {\n \"terms\": {\n \"Data.businessService.keyword\": [\n \"BPA_OC\",\n \"BPA\",\n \"BPA_LOW\"\n ]\n }\n },\n {\n \"term\": {\n \"Data.status.keyword\": \"APPROVED\"\n }\n },\n {\n \"exists\": {\n \"field\": \"Data.plotAreaApproved\"\n }\n }\n ]\n }\n },\n \"aggs\": {\n \"deviation\": {\n \"avg\": {\n \"script\": {\n \"source\": \" Math.round(((doc['Data.plotAreaApproved'].value-doc['Data.plotArea'].value)*100)/(doc['Data.plotArea'].value))\"\n }\n }\n }\n }\n }\n }\n }\n }\n }\n }\n}" 517 }, 518 { 519 "module": "OBPS", 520 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"ulbId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}", 521 "dateRefField": "Data.@timestamp", 522 "indexName": "edcr-index", 523 "aggrQuery": "{\"aggs\":{\"obps\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"ULBs\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":1000},\"aggs\":{\"Total Plans Scrutnized\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"PERMIT\",\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}},\"Total OC Scrutnized\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}}}}}}}}" 524 } 525 526 ], 527 528 "filterKeys": [ 529 {"key": "tenantId", "column": "ULBs"} ], 530 "chartType": "table", 531 "valueType": "number", 532 "drillChart": "obpsServiceReportBoundaryDrillDown", 533 "documentType": "_doc", 534 "plotLabel": "ULBs", 535 "aggregationPaths": [ 536 "Total Collection", 537 "Total Plans Scrutnized", 538 "Total Applications Submitted", 539 "Total Permits Issued", 540 "Average days to issue Permit", 541 "SLA Compliance Permit", 542 "Total OC Scrutnized", 543 "Total OC Submitted", 544 "Total OC Issued", 545 "Deviation", 546 "Average days to issue OC", 547 "SLA Compliance OC" 548 549 ], 550 "pathDataTypeMapping": [ 551 { 552 "Total Collection": "amount" 553 }, 554 { 555 "Total Applications Submitted": "number" 556 }, 557 { 558 "Total Permits Issued": "number" 559 }, 560 { 561 "Average days to issue Permit": "number" 562 }, 563 { 564 "SLA Compliance Permit": "number" 565 }, 566 { 567 "Total OC Submitted": "number" 568 }, 569 { 570 "Total OC Issued": "number" 571 }, 572 { 573 "Deviation": "percentage" 574 }, 575 { 576 "Average days to issue OC": "number" 577 }, 578 { 579 "SLA Compliance OC": "number" 580 }, 581 { 582 "Total Plans Scrutnized": "number" 583 584 }, 585 { 586 "Total OC Scrutnized": "number" 587 } 588 ], 589 "insight": { 590 }, 591 "_comment": "OBPS Service Report ULB Drill Down" 592 }, 593 "obpsServiceReportBoundaryDrillDown": { 594 "chartName": "DSS_OBPS_SERVICE_REPORT_BOUNDARY_DRILL_DOWN", 595 "queries": [ 596 { 597 "module": "OBPS", 598 "requestQueryMap": "{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }", 599 "dateRefField": "dataObject.paymentDetails.receiptDate", 600 "indexName": "dss-collection_v2", 601 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"dataObject.tenantId.keyword\":\"pb.testing\"}},{\"terms\":{\"dataObject.bill.status.keyword\":[\"Cancelled\"]}}],\"must\":[{\"terms\":{\"dataObject.paymentDetails.businessService.keyword\":[\"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\"]}}]}},\"aggs\":{\"ULBs\":{\"terms\":{\"field\":\"dataObject.tenantId.keyword\",\"size\":1000},\"aggs\":{\"Total Collection\":{\"sum\":{\"field\":\"dataObject.paymentDetails.totalAmountPaid\"}}}}}}}}" }, 602 { 603 "module": "OBPS", 604 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"ulbId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}", 605 "dateRefField": "Data.auditDetails.createdTime", 606 "indexName": "bpa-index", 607 "aggrQuery":"{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"ward\":{\"terms\":{\"field\":\"Data.ward.name.keyword\",\"size\":1000},\"aggs\":{\"Total Applications Submitted\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}}},\"Total Permits Issued\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}}},\"Average days to issue Permit\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"average_days\":{\"avg\":{\"script\":{\"source\":\"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)\/(86400*1000)\"}}}}},\"Average days to issue OC\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.businessService.keyword\":\"BPA_OC\"}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"average_days\":{\"avg\":{\"script\":{\"source\":\"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)\/(86400*1000)\"}}}}},\"SLA Compliance Permit\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"script\":{\"script\":{\"source\":\"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\"lang\":\"painless\",\"params\":{\"threshold\":172800000}}}}]}}},\"SLA Compliance OC\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.businessService.keyword\":\"BPA_OC\"}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"script\":{\"script\":{\"source\":\"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\"lang\":\"painless\",\"params\":{\"threshold\":172800000}}}}]}}},\"Total OC Issued\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}}},\"Total OC Submitted\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}}},\"Deviation\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\",\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"exists\":{\"field\":\"Data.plotAreaApproved\"}}]}},\"aggs\":{\"deviation\":{\"avg\":{\"script\":{\"source\":\" Math.round(((doc['Data.plotAreaApproved'].value-doc['Data.plotArea'].value)*100)\/(doc['Data.plotArea'].value))\"}}}}}}}}}}}" 608 } 609 610 611 ], 612 613 "filterKeys": [ 614 {"key": "wardId", "column": "Ward"}, 615 {"key": "ulbId", "column": "ULB"} ], 616 "chartType": "table", 617 "valueType": "number", 618 "drillChart": "none", 619 "documentType": "_doc", 620 "plotLabel": "Ward", 621 "aggregationPaths": [ 622 "Total Collection", 623 "Total Applications Submitted", 624 "Total Permits Issued", 625 "Average days to issue Permit", 626 "SLA Compliance Permit", 627 "Total OC Submitted", 628 "Total OC Issued", 629 "Deviation", 630 "Average days to issue OC", 631 "SLA Compliance OC" 632 ], 633 "pathDataTypeMapping": [ 634 { 635 "Total Collection": "amount" 636 }, 637 { 638 "Total Applications Submitted": "number" 639 }, 640 { 641 "Total Permits Issued": "number" 642 }, 643 { 644 "Average days to issue Permit": "number" 645 }, 646 { 647 "SLA Compliance Permit": "number" 648 }, 649 { 650 "Total OC Submitted": "number" 651 }, 652 { 653 "Total OC Issued": "number" 654 }, 655 { 656 "Deviation": "percentage" 657 }, 658 { 659 "Average days to issue OC": "number" 660 }, 661 { 662 "SLA Compliance OC": "number" 663 } 664 ], 665 "insight": { 666 }, 667 "_comment": "OBPS Service Report Ward Drill Down" 668 }, 669 "obpsTopUlbByPerformance": { 670 "chartName": "DSS_OBPS_TOP_ULB_BY_PERFORMANCE", 671 "queries": [ 672 { 673 "module": "OBPS", 674 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 675 "dateRefField": "Data.@timestamp", 676 "indexName": "bpa-index", 677 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"Total Applications\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":\"200\",\"order\":{\"Permits\":\"desc\"}},\"aggs\":{\"Permits\":{\"value_count\":{\"field\":\"Data.tenantId.keyword\"}}}}}}}}" 678 }, 679 { 680 "module": "OBPS", 681 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 682 "dateRefField": "Data.@timestamp", 683 "indexName": "bpa-index", 684 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"Approved Permit applications\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":\"200\",\"order\":{\"Permits\":\"desc\"}},\"aggs\":{\"Permits\":{\"value_count\":{\"field\":\"Data.tenantId.keyword\"}}}}}}}}" 685 } 686 ], 687 "chartType": "perform", 688 "valueType": "percentage", 689 "documentType": "_doc", 690 "drillChart": "none", 691 "action": "percentage", 692 "plotLabel": "DSS_COMPLETION_RATE", 693 "isRoundOff": true, 694 "order": "desc", 695 "limit": 3, 696 "aggregationPaths": [ 697 "Approved Permit applications", 698 "Total Applications" 699 700 ], 701 "isCumulative": false, 702 "interval": "month", 703 "insight": { 704 }, 705 "_comment": "" 706 }, 707 708 "obpsBottomUlbByPerformance": { 709 "chartName": "DSS_OBPS_BOTTOM_ULB_BY_PERFORMANCE", 710 "queries": [ 711 { 712 "module": "OBPS", 713 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 714 "dateRefField": "Data.@timestamp", 715 "indexName": "bpa-index", 716 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"Total Applications\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":\"200\",\"order\":{\"Permits\":\"asc\"}},\"aggs\":{\"Permits\":{\"value_count\":{\"field\":\"Data.tenantId.keyword\"}}}}}}}}" 717 }, 718 { 719 "module": "OBPS", 720 "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}", 721 "dateRefField": "Data.@timestamp", 722 "indexName": "bpa-index", 723 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"Approved Permit applications\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":\"200\",\"order\":{\"Permits\":\"asc\"}},\"aggs\":{\"Permits\":{\"value_count\":{\"field\":\"Data.tenantId.keyword\"}}}}}}}}" 724 } 725 ], 726 "isMdmsEnabled": false, 727 "isPostResponseHandler": true, 728 "postAggregationTheory" : "repsonseToDifferenceOfDates", 729 "chartType": "perform", 730 "valueType": "percentage", 731 "documentType": "_doc", 732 "drillChart": "none", 733 "action": "percentage", 734 "isRoundOff": true, 735 "plotLabel": "DSS_COMPLETION_RATE", 736 "order": "asc", 737 "limit":3, 738 "aggregationPaths": [ 739 "Approved Permit applications", 740 "Total Applications" 741 742 ], 743 "isCumulative": false, 744 "interval": "month", 745 "insight": { 746 }, 747 "_comment": "" 748 }, 749 "obpsCollectionByPaymentMode": { 750 "chartName": "DSS_OBPS_COLLECTION_BY_PAYMENT_MODE", 751 "queries": [ 752 { 753 "module": "OBPS", 754 "requestQueryMap": "{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }", 755 "dateRefField": "dataObject.paymentDetails.receiptDate", 756 "indexName": "dss-collection_v2", 757 "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"dataObject.paymentDetails.businessService.keyword\":[\"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\"]}}],\"must_not\":[{\"term\":{\"dataObject.tenantId.keyword\":\"pb.testing\"}},{\"terms\":{\"dataObject.bill.status.keyword\":[\"Cancelled\"]}}]}},\"aggs\":{\"PaymentMode\":{\"terms\":{\"field\":\"dataObject.paymentMode.keyword\"},\"aggs\":{\"Total Collection\":{\"sum\":{\"field\":\"dataObject.paymentDetails.totalAmountPaid\"}}}}}}}}" 758 } 759 ], 760 "chartType": "pie", 761 "valueType": "amount", 762 "action": "", 763 "isRoundOff": true, 764 "documentType": "_doc", 765 "drillChart": "none", 766 "aggregationPaths": [ 767 "PaymentMode" 768 ], 769 "insight": { 770 }, 771 "_comment": " " 772 }`
+  "obpsServiceReportDrillDown": {
+    "chartName": "DSS_OBPS_SERVICE_REPORT_DRILL_DOWN",
+    "queries": [
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }",
+        "dateRefField": "dataObject.paymentDetails.receiptDate",
+        "indexName": "dss-collection_v2",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"dataObject.tenantId.keyword\":\"pb.testing\"}},{\"terms\":{\"dataObject.bill.status.keyword\":[\"Cancelled\"]}}],\"must\":[{\"terms\":{\"dataObject.paymentDetails.businessService.keyword\":[\"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\"]}}]}},\"aggs\":{\"ULBs\":{\"terms\":{\"field\":\"dataObject.tenantId.keyword\",\"size\":1000},\"aggs\":{\"Total Collection\":{\"sum\":{\"field\":\"dataObject.paymentDetails.totalAmountPaid\"}}}}}}}}"
+      },
+      {
+        "module": "OBPS",
+        "requestQueryMap":  "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"ulbId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}",
+        "dateRefField": "Data.auditDetails.createdTime",
+        "indexName": "bpa-index",
+        "aggrQuery": "{\n  \"aggs\": {\n    \"AGGR\": {\n      \"filter\": {\n        \"bool\": {\n          \"must_not\": [\n            {\n              \"term\": {\n                \"Data.tenantId.keyword\": \"pb.testing\"\n              }\n            }\n          ]\n        }\n      },\n      \"aggs\": {\n        \"ULBs\": {\n          \"terms\": {\n            \"field\": \"Data.tenantId.keyword\",\n            \"size\": 1000\n          },\n          \"aggs\": {\n            \"Total Applications Submitted\": {\n              \"filter\": {\n                \"bool\": {\n                  \"must\": [\n                    {\n                      \"terms\": {\n                        \"Data.businessService.keyword\": [\n                          \"BPA\",\n                          \"BPA_LOW\"\n                        ]\n                      }\n                    }\n                  ]\n                }\n              }\n            },\n            \"Total Permits Issued\": {\n              \"filter\": {\n                \"bool\": {\n                  \"must\": [\n                    {\n                      \"term\": {\n                        \"Data.status.keyword\": \"APPROVED\"\n                      }\n                    },\n                    {\n                      \"terms\": {\n                        \"Data.businessService.keyword\": [\n                          \"BPA\",\n                          \"BPA_LOW\"\n                        ]\n                      }\n                    }\n                  ]\n                }\n              }\n            },\n            \"Average days to issue Permit\": {\n              \"filter\": {\n                \"bool\": {\n                  \"must\": [\n                    {\n                      \"terms\": {\n                        \"Data.businessService.keyword\": [\n                          \"BPA\",\n                          \"BPA_LOW\"\n                        ]\n                      }\n                    },\n                    {\n                      \"term\": {\n                        \"Data.status.keyword\": \"APPROVED\"\n                      }\n                    }\n                  ]\n                }\n              },\n              \"aggs\": {\n                \"average_days\": {\n                  \"avg\": {\n                    \"script\": {\n                      \"source\": \"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)/(86400*1000)\"\n                    }\n                  }\n                }\n              }\n            },\n            \"Average days to issue OC\": {\n              \"filter\": {\n                \"bool\": {\n                  \"must\": [\n                    {\n                      \"term\": {\n                        \"Data.businessService.keyword\": \"BPA_OC\"\n                      }\n                    },\n                    {\n                      \"term\": {\n                        \"Data.status.keyword\": \"APPROVED\"\n                      }\n                    }\n                  ]\n                }\n              },\n              \"aggs\": {\n                \"average_days\": {\n                  \"avg\": {\n                    \"script\": {\n                      \"source\": \"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)/(86400*1000)\"\n                    }\n                  }\n                }\n              }\n            },\n            \"SLA Compliance Permit\": {\n              \"filter\": {\n                \"bool\": {\n                  \"must\": [\n                    {\n                      \"terms\": {\n                        \"Data.businessService.keyword\": [\n                          \"BPA\",\n                          \"BPA_LOW\"\n                        ]\n                      }\n                    },\n                    {\n                      \"term\": {\n                        \"Data.status.keyword\": \"APPROVED\"\n                      }\n                    },\n                    {\n                      \"script\": {\n                        \"script\": {\n                          \"source\": \"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\n                          \"lang\": \"painless\",\n                          \"params\": {\n                            \"threshold\": 172800000\n                          }\n                        }\n                      }\n                    }\n                  ]\n                }\n              }\n            },\n            \"SLA Compliance OC\": {\n              \"filter\": {\n                \"bool\": {\n                  \"must\": [\n                    {\n                      \"term\": {\n                        \"Data.businessService.keyword\": \"BPA_OC\"\n                      }\n                    },\n                    {\n                      \"term\": {\n                        \"Data.status.keyword\": \"APPROVED\"\n                      }\n                    },\n                    {\n                      \"script\": {\n                        \"script\": {\n                          \"source\": \"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\n                          \"lang\": \"painless\",\n                          \"params\": {\n                            \"threshold\": 172800000\n                          }\n                        }\n                      }\n                    }\n                  ]\n                }\n              }\n            },\n            \"Total OC Issued\": {\n              \"filter\": {\n                \"bool\": {\n                  \"must\": [\n                    {\n                      \"term\": {\n                        \"Data.status.keyword\": \"APPROVED\"\n                      }\n                    },\n                    {\n                      \"terms\": {\n                        \"Data.businessService.keyword\": [\n                          \"BPA_OC\"\n                        ]\n                      }\n                    }\n                  ]\n                }\n              }\n            },\n            \"Total OC Submitted\": {\n              \"filter\": {\n                \"bool\": {\n                  \"must\": [\n                    {\n                      \"terms\": {\n                        \"Data.businessService.keyword\": [\n                          \"BPA_OC\"\n                        ]\n                      }\n                    }\n                  ]\n                }\n              }\n            },\n            \"Deviation\": {\n              \"filter\": {\n                \"bool\": {\n                  \"must\": [\n                    {\n                      \"terms\": {\n                        \"Data.businessService.keyword\": [\n                          \"BPA_OC\",\n                          \"BPA\",\n                          \"BPA_LOW\"\n                        ]\n                      }\n                    },\n                    {\n                      \"term\": {\n                        \"Data.status.keyword\": \"APPROVED\"\n                      }\n                    },\n                    {\n                      \"exists\": {\n                        \"field\": \"Data.plotAreaApproved\"\n                      }\n                    }\n                  ]\n                }\n              },\n              \"aggs\": {\n                \"deviation\": {\n                  \"avg\": {\n                    \"script\": {\n                      \"source\": \" Math.round(((doc['Data.plotAreaApproved'].value-doc['Data.plotArea'].value)*100)/(doc['Data.plotArea'].value))\"\n                    }\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"     
+         },
+         {
+          "module": "OBPS",
+          "requestQueryMap":  "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"ulbId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}",
+          "dateRefField": "Data.@timestamp",
+          "indexName": "edcr-index",
+          "aggrQuery": "{\"aggs\":{\"obps\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"ULBs\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":1000},\"aggs\":{\"Total Plans Scrutnized\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"PERMIT\",\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}},\"Total OC Scrutnized\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.applicationType.keyword\":[\"OCCUPANCY_CERTIFICATE\"]}}]}},\"aggs\":{\"total\":{\"value_count\":{\"field\":\"Data.dcrNumber.keyword\"}}}}}}}}}}"
+        }
 
-[Click here to check the complete configuration](https://github.com/egovernments/configs/blob/qa/egov-dss-dashboards/dashboard-analytics/ChartApiConfig.json)
+    ],
+   
+    "filterKeys": [
+      {"key": "tenantId", "column": "ULBs"}    ],
+    "chartType": "table",
+    "valueType": "number",
+    "drillChart": "obpsServiceReportBoundaryDrillDown",
+    "documentType": "_doc",
+    "plotLabel": "ULBs",
+    "aggregationPaths": [
+      "Total Collection",
+      "Total Plans Scrutnized",
+      "Total Applications Submitted",
+      "Total Permits Issued",
+      "Average days to issue Permit",
+      "SLA Compliance Permit",
+      "Total OC Scrutnized",
+      "Total OC Submitted",
+      "Total OC Issued",
+      "Deviation",
+      "Average days to issue OC",
+      "SLA Compliance OC"
+    
+    ],
+    "pathDataTypeMapping": [
+      {
+        "Total Collection": "amount"
+      },
+      {
+        "Total Applications Submitted": "number"
+      },
+      {
+        "Total Permits Issued": "number"
+      },
+      {
+        "Average days to issue Permit": "number"
+      },
+      {
+        "SLA Compliance Permit": "number"
+      },
+      {
+        "Total OC Submitted": "number"
+      },
+      {
+        "Total OC Issued": "number"
+      },
+      {
+        "Deviation": "percentage"
+      },
+      {
+        "Average days to issue OC": "number"
+      },
+      {
+        "SLA Compliance OC": "number"
+      },
+      {
+        "Total Plans Scrutnized": "number"
+      
+      },
+      {
+        "Total OC Scrutnized": "number"
+      }
+    ],
+    "insight": {
+    },
+    "_comment": "OBPS Service Report ULB Drill Down"
+  },
+  "obpsServiceReportBoundaryDrillDown": {
+    "chartName": "DSS_OBPS_SERVICE_REPORT_BOUNDARY_DRILL_DOWN",
+    "queries": [
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }",
+        "dateRefField": "dataObject.paymentDetails.receiptDate",
+        "indexName": "dss-collection_v2",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"dataObject.tenantId.keyword\":\"pb.testing\"}},{\"terms\":{\"dataObject.bill.status.keyword\":[\"Cancelled\"]}}],\"must\":[{\"terms\":{\"dataObject.paymentDetails.businessService.keyword\":[\"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\"]}}]}},\"aggs\":{\"ULBs\":{\"terms\":{\"field\":\"dataObject.tenantId.keyword\",\"size\":1000},\"aggs\":{\"Total Collection\":{\"sum\":{\"field\":\"dataObject.paymentDetails.totalAmountPaid\"}}}}}}}}"      },
+      {
+        "module": "OBPS",
+        "requestQueryMap":  "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\", \"ulbId\" : \"Data.tenantId\", \"district\" : \"Data.tenantData.city.districtCode\"}",
+        "dateRefField": "Data.auditDetails.createdTime",
+        "indexName": "bpa-index",
+        "aggrQuery":"{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}]}},\"aggs\":{\"ward\":{\"terms\":{\"field\":\"Data.ward.name.keyword\",\"size\":1000},\"aggs\":{\"Total Applications Submitted\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}}},\"Total Permits Issued\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}}},\"Average days to issue Permit\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"average_days\":{\"avg\":{\"script\":{\"source\":\"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)\/(86400*1000)\"}}}}},\"Average days to issue OC\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.businessService.keyword\":\"BPA_OC\"}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}}]}},\"aggs\":{\"average_days\":{\"avg\":{\"script\":{\"source\":\"(doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value)\/(86400*1000)\"}}}}},\"SLA Compliance Permit\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"script\":{\"script\":{\"source\":\"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\"lang\":\"painless\",\"params\":{\"threshold\":172800000}}}}]}}},\"SLA Compliance OC\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.businessService.keyword\":\"BPA_OC\"}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"script\":{\"script\":{\"source\":\"doc['Data.auditDetails.lastModifiedTime'].value-doc['Data.auditDetails.createdTime'].value<params.threshold\",\"lang\":\"painless\",\"params\":{\"threshold\":172800000}}}}]}}},\"Total OC Issued\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}}},\"Total OC Submitted\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\"]}}]}}},\"Deviation\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA_OC\",\"BPA\",\"BPA_LOW\"]}},{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"exists\":{\"field\":\"Data.plotAreaApproved\"}}]}},\"aggs\":{\"deviation\":{\"avg\":{\"script\":{\"source\":\" Math.round(((doc['Data.plotAreaApproved'].value-doc['Data.plotArea'].value)*100)\/(doc['Data.plotArea'].value))\"}}}}}}}}}}}"
+         }
+        
 
-&#x20;
+    ],
+  
+    "filterKeys": [
+      {"key": "wardId", "column": "Ward"},
+      {"key": "ulbId", "column": "ULB"}    ],
+    "chartType": "table",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "plotLabel": "Ward",
+    "aggregationPaths": [
+      "Total Collection",
+      "Total Applications Submitted",
+      "Total Permits Issued",
+      "Average days to issue Permit",
+      "SLA Compliance Permit", 
+      "Total OC Submitted",
+      "Total OC Issued",
+      "Deviation",
+      "Average days to issue OC",
+      "SLA Compliance OC"
+    ],
+    "pathDataTypeMapping": [
+      {
+        "Total Collection": "amount"
+      },
+      {
+        "Total Applications Submitted": "number"
+      },
+      {
+        "Total Permits Issued": "number"
+      },
+      {
+        "Average days to issue Permit": "number"
+      },
+      {
+        "SLA Compliance Permit": "number"
+      },
+      {
+        "Total OC Submitted": "number"
+      },
+      {
+        "Total OC Issued": "number"
+      },
+      {
+        "Deviation": "percentage"
+      },
+      {
+        "Average days to issue OC": "number"
+      },
+      {
+        "SLA Compliance OC": "number"
+      }
+    ],
+    "insight": {
+    },
+    "_comment": "OBPS Service Report Ward Drill Down"
+  },
+    "obpsTopUlbByPerformance": {
+    "chartName": "DSS_OBPS_TOP_ULB_BY_PERFORMANCE",
+    "queries": [
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": "Data.@timestamp",
+        "indexName": "bpa-index",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"Total Applications\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":\"200\",\"order\":{\"Permits\":\"desc\"}},\"aggs\":{\"Permits\":{\"value_count\":{\"field\":\"Data.tenantId.keyword\"}}}}}}}}"
+      },
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": "Data.@timestamp",
+        "indexName": "bpa-index",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"Approved Permit applications\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":\"200\",\"order\":{\"Permits\":\"desc\"}},\"aggs\":{\"Permits\":{\"value_count\":{\"field\":\"Data.tenantId.keyword\"}}}}}}}}"
+      }
+    ],
+    "chartType": "perform",
+    "valueType": "percentage",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "action": "percentage",
+    "plotLabel": "DSS_COMPLETION_RATE",
+    "isRoundOff": true,
+    "order": "desc",
+    "limit": 3,
+    "aggregationPaths": [
+      "Approved Permit applications",
+      "Total Applications"
+      
+    ],
+    "isCumulative": false,
+    "interval": "month",
+    "insight": {
+    },
+    "_comment": ""
+  },
 
-**Master Dashboard Configuration:**
+  "obpsBottomUlbByPerformance": {
+    "chartName": "DSS_OBPS_BOTTOM_ULB_BY_PERFORMANCE",
+    "queries": [
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": "Data.@timestamp",
+        "indexName": "bpa-index",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"Total Applications\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":\"200\",\"order\":{\"Permits\":\"asc\"}},\"aggs\":{\"Permits\":{\"value_count\":{\"field\":\"Data.tenantId.keyword\"}}}}}}}}"
+      },
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"Data.ward.name.keyword\",\"tenantId\" : \"Data.tenantId\" \r\n}",
+        "dateRefField": "Data.@timestamp",
+        "indexName": "bpa-index",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.tenantId.keyword\":\"pb.testing\"}}],\"must\":[{\"term\":{\"Data.status.keyword\":\"APPROVED\"}},{\"terms\":{\"Data.businessService.keyword\":[\"BPA\",\"BPA_LOW\"]}}]}},\"aggs\":{\"Approved Permit applications\":{\"terms\":{\"field\":\"Data.tenantId.keyword\",\"size\":\"200\",\"order\":{\"Permits\":\"asc\"}},\"aggs\":{\"Permits\":{\"value_count\":{\"field\":\"Data.tenantId.keyword\"}}}}}}}}"
+      }
+    ],
+    "isMdmsEnabled": false,
+    "isPostResponseHandler": true,
+    "postAggregationTheory" : "repsonseToDifferenceOfDates",
+    "chartType": "perform",
+    "valueType": "percentage",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "action": "percentage",
+    "isRoundOff": true,
+    "plotLabel": "DSS_COMPLETION_RATE",
+    "order": "asc",
+    "limit":3,
+    "aggregationPaths": [
+      "Approved Permit applications",
+      "Total Applications"
+      
+    ],
+    "isCumulative": false,
+    "interval": "month",
+    "insight": {
+    },
+    "_comment": ""
+  },
+  "obpsCollectionByPaymentMode": {
+    "chartName": "DSS_OBPS_COLLECTION_BY_PAYMENT_MODE",
+    "queries": [
+      {
+        "module": "OBPS",
+        "requestQueryMap": "{\"wardId\" : \"dataObject.ward.name.keyword\",\"module\" : \"dataObject.paymentDetails.businessService.keyword\",\"tenantId\" : \"dataObject.tenantId\", \"district\" : \"dataObject.tenantData.city.districtCode\" }",
+        "dateRefField": "dataObject.paymentDetails.receiptDate",
+        "indexName": "dss-collection_v2",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must\":[{\"terms\":{\"dataObject.paymentDetails.businessService.keyword\":[\"BPA.LOW_RISK_PERMIT_FEE\",\"BPA.NC_APP_FEE\",\"BPA.NC_OC_APP_FEE\"]}}],\"must_not\":[{\"term\":{\"dataObject.tenantId.keyword\":\"pb.testing\"}},{\"terms\":{\"dataObject.bill.status.keyword\":[\"Cancelled\"]}}]}},\"aggs\":{\"PaymentMode\":{\"terms\":{\"field\":\"dataObject.paymentMode.keyword\"},\"aggs\":{\"Total Collection\":{\"sum\":{\"field\":\"dataObject.paymentDetails.totalAmountPaid\"}}}}}}}}"
+      }
+    ],
+    "chartType": "pie",
+    "valueType": "amount",
+    "action": "",
+    "isRoundOff": true,
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "PaymentMode"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  }
+```
 
-Master Dashboard Configuration is the main configuration which defines as which are the Dashboards which are to be painted on screen.&#x20;
+&#x20;[Click here to check the complete configuration](https://github.com/egovernments/configs/blob/qa/egov-dss-dashboards/dashboard-analytics/ChartApiConfig.json)
 
-It includes all the Visualizations, their groups, the charts which comes within them and even their dimensions as what should be their height and width.
+### &#x20;**Master Dashboard Configuration**
 
-`1 { 2 "name":"DSS_BUILDING_PLANNING_DASHBOARD", 3 "id":"obps", 4 "isActive":"", 5 "style":"linear", 6 "visualizations":[ 7 { 8 "row": 1, 9 "name": "DSS_BUILDING_PLANNING", 10 "vizArray": [ 11 { 12 "id": 111, 13 "name": "DSS_OVERVIEW_REVENUE", 14 "dimensions": { 15 "height": 350, 16 "width": 5 17 }, 18 "vizType": "metric-collection", 19 "noUnit": true, 20 "isCollapsible": false, 21 "label": "DSS_OVERVIEW_REVENUE", 22 "charts": [ 23 { 24 "id": "bpaTodaysCollection", 25 "name": "DSS_BPA_TODAYS_COLLECTION", 26 "code": "", 27 "chartType": "metric", 28 "filter": "", 29 "headers": [] 30 }, 31 { 32 "id": "bpaTotalCollection", 33 "name": "DSS_BPA_TOTAL_COLLECTION", 34 "code": "", 35 "chartType": "metric", 36 "filter": "", 37 "headers": [] 38 } 39 ] 40 } 41 ,{ 42 "id": 112, 43 "name": "DSS_BPA_TOTAL_CUMULATIVE_COLLECTION", 44 "dimensions": { 45 "height": 350, 46 "width": 7 47 }, 48 "vizType": "chart", 49 "noUnit": true, 50 "isCollapsible": false, 51 "charts": [ 52 { 53 "id": "bpaCumulativeCollections", 54 "name": "Monthly", 55 "code": "", 56 "chartType": "line", 57 "filter": "", 58 "headers": [] 59 } 60 ] 61 } 62 ] 63 }, 64 { 65 "row":2, 66 "name":"DSS_BUILDING_PLANNING", 67 "vizArray":[ 68 { 69 "id": 210, 70 "name": "DSS_OVERVIEW_SERVICES", 71 "dimensions": { 72 "height": 350, 73 "width": 5 74 }, 75 "vizType": "metric-collection", 76 "noUnit": true, 77 "isCollapsible": false, 78 "label": "DSS_OVERVIEW_SERVICES", 79 "charts": [ 80 { 81 "id": "bpaTotalPlansScrutinized", 82 "name": "DSS_BPA_TOTAL_PLANS_SCRUTINIZED", 83 "code": "", 84 "chartType": "metric", 85 "filter": "", 86 "headers": [] 87 }, 88 { 89 "id": "bpaTotalPermitsIssued", 90 "name": "DSS_BPA_TOTAL_PERMITS_ISSUED", 91 "code": "", 92 "chartType": "metric", 93 "filter": "", 94 "headers": [] 95 }, 96 { 97 "id": "bpaTotalLandApplied", 98 "name": "DSS_BPA_TOTAL_LAND_APPLIED", 99 "code": "", 100 "chartType": "metric", 101 "filter": "", 102 "headers": [] 103 }, 104 { 105 "id": "bpaAverageDaysToIssuePermit", 106 "name": "DSS_BPA_AVERAGE_DAYS_ISSUE_PERMIT", 107 "code": "", 108 "chartType": "metric", 109 "filter": "", 110 "headers": [] 111 }, 112 { 113 "id": "bpaSLACompliance", 114 "name": "DSS_BPA_SLA_COMPLIANCE", 115 "code": "", 116 "chartType": "metric", 117 "filter": "", 118 "headers": [] 119 }, 120 { 121 "id": "bpaAverageDaysToIssueOC", 122 "name": "DSS_BPA_AVERAGE_DAYS_ISSUE_OC", 123 "code": "", 124 "chartType": "metric", 125 "filter": "", 126 "headers": [] 127 }, 128 { 129 "id": "bpaSLAComplianceOC", 130 "name": "DSS_BPA_SLA_COMPLIANCE_OC", 131 "code": "", 132 "chartType": "metric", 133 "filter": "", 134 "headers": [] 135 } 136 ] 137 }, 138 { 139 "id": 211, 140 "name": "DSS_TOTAL_PERMIT_ISSUED_VS_TOTAL_OC_ISSUED_VS_TOTAL_OC_SUBMITTED", 141 "dimensions": { 142 "height": 250, 143 "width": 7 144 }, 145 "vizType": "chart", 146 "isCollapsible": false, 147 "label": "", 148 "charts": [ 149 { 150 "id": "permitsandOCissued", 151 "name": "Monthly", 152 "code": "", 153 "chartType": "line", 154 "filter": "", 155 "headers": [] 156 } 157 ] 158 } 159 ] 160 }, 161 { 162 "row": 3, 163 "name": "DSS_BUILDING_PLANNING", 164 "vizArray": [ 165 { 166 "id": 323, 167 "name": "DSS_OBPS_COLLECTION_BY_USAGE_TYPE", 168 "dimensions": { 169 "height": 250, 170 "width": 4 171 }, 172 "vizType": "chart", 173 "label": "", 174 "noUnit": false, 175 "isCollapsible": false, 176 "charts": [ 177 { 178 "id": "obpsCollectionByPaymentMode", 179 "name": "DSS_OBPS_COLLECTION_BY_PAYMENT_MODE", 180 "code": "", 181 "chartType": "donut", 182 "filter": "", 183 "headers": [] 184 } 185 ] 186 }, 187 { 188 "id": 321, 189 "name": "DSS_OBPS_TOP_ULB_BY_PERFORMANCE", 190 "dimensions": { 191 "height": 250, 192 "width": 3 193 }, 194 "vizType": "performing-metric", 195 "label": "", 196 "noUnit": false, 197 "isCollapsible": false, 198 "charts": [ 199 { 200 "id": "obpsTopUlbByPerformance", 201 "name": "Monthly", 202 "code": "", 203 "chartType": "bar", 204 "filter": "", 205 "headers": [] 206 } 207 ] 208 }, 209 { 210 "id": 322, 211 "name": "DSS_OBPS_BOTTOM_ULB_BY_PERFORMANCE", 212 "dimensions": { 213 "height": 250, 214 "width": 3 215 }, 216 "vizType": "performing-metric", 217 "label": "", 218 "noUnit": false, 219 "isCollapsible": false, 220 "charts": [ 221 { 222 "id": "obpsBottomUlbByPerformance", 223 "name": "Monthly", 224 "code": "", 225 "chartType": "bar", 226 "filter": "", 227 "headers": [] 228 } 229 ] 230 } 231 232 ] 233 }, 234 { 235 "row":4, 236 "name":"DSS_BUILDING_PLANNING", 237 "vizArray":[ 238 { 239 "id":311, 240 "name":"DSS_BPA_PERMIT_ISSUED_BY_RISK_TYPE", 241 "dimensions":{ 242 "height":250, 243 "width":4 244 }, 245 "vizType":"chart", 246 "noUnit": false, 247 "isCollapsible":false, 248 "charts":[ 249 { 250 "id":"permitIssuedByRiskType", 251 "name":"DSS_BPA_PERMIT_ISSUED_BY_RISK_TYPE", 252 "code":"", 253 "chartType":"donut", 254 "filter":"", 255 "headers":[ 256 257 ] 258 } 259 ] 260 }, 261 { 262 "id":312, 263 "name":"DSS_BPA_PERMIT_ISSUED_BY_OCCUPANCY_TYPE", 264 "dimensions":{ 265 "height":250, 266 "width":4 267 }, 268 "vizType":"chart", 269 "noUnit": false, 270 "isCollapsible":false, 271 "charts":[ 272 { 273 "id":"permitIssuedByOccupancyType", 274 "name":"DSS_BPA_PERMIT_ISSUED_BY_OCCUPANCY_TYPE", 275 "code":"", 276 "chartType":"donut", 277 "filter":"", 278 "headers":[ 279 280 ] 281 } 282 ] 283 } 284 285 ] 286 }, 287 { 288 "row": 5, 289 "name": "DSS_BUILDING_PLANNING", 290 "vizArray": [ 291 { 292 "id": 231, 293 "name": "DSS_OBPS_SERVICE_REPORT", 294 "dimensions": { 295 "height": 350, 296 "width": 12 297 }, 298 "vizType": "chart", 299 "noUnit": false, 300 "isCollapsible": false, 301 "charts": [ 302 { 303 "id": "obpsServiceReport", 304 "name": "DSS_OBPS_SERVICE_REPORT", 305 "code": "", 306 "chartType": "table", 307 "filter": "", 308 "headers": [] 309 } 310 311 ] 312 } 313 ] 314 } 315 ] 316 }, 317`
+Master dashboard configuration is the main configuration which defines which Dashboards are to be painted on screen.&#x20;
+
+It includes all the visualizations, their groups, the charts which come within them and even their dimensions as what should be their height and width.
+
+```
+    {
+      "name":"DSS_BUILDING_PLANNING_DASHBOARD",
+      "id":"obps",
+      "isActive":"",
+      "style":"linear",
+      "visualizations":[
+        {
+          "row": 1,
+          "name": "DSS_BUILDING_PLANNING",
+          "vizArray": [
+            {
+              "id": 111,
+              "name": "DSS_OVERVIEW_REVENUE",
+              "dimensions": {
+                "height": 350,
+                "width": 5
+              },
+              "vizType": "metric-collection",
+              "noUnit": true,
+              "isCollapsible": false,
+              "label": "DSS_OVERVIEW_REVENUE",
+              "charts": [
+                {
+                  "id": "bpaTodaysCollection",
+                  "name": "DSS_BPA_TODAYS_COLLECTION",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "bpaTotalCollection",
+                  "name": "DSS_BPA_TOTAL_COLLECTION",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ,{
+              "id": 112,
+              "name": "DSS_BPA_TOTAL_CUMULATIVE_COLLECTION",
+              "dimensions": {
+                "height": 350,
+                "width": 7
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "bpaCumulativeCollections",
+                  "name": "Monthly",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row":2,
+          "name":"DSS_BUILDING_PLANNING",
+          "vizArray":[
+            {
+              "id": 210,
+              "name": "DSS_OVERVIEW_SERVICES",
+              "dimensions": {
+                "height": 350,
+                "width": 5
+              },
+              "vizType": "metric-collection",
+              "noUnit": true,
+              "isCollapsible": false,
+              "label": "DSS_OVERVIEW_SERVICES",
+              "charts": [
+                {
+                  "id": "bpaTotalPlansScrutinized",
+                  "name": "DSS_BPA_TOTAL_PLANS_SCRUTINIZED",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "bpaTotalPermitsIssued",
+                  "name": "DSS_BPA_TOTAL_PERMITS_ISSUED",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "bpaTotalLandApplied",
+                  "name": "DSS_BPA_TOTAL_LAND_APPLIED",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "bpaAverageDaysToIssuePermit",
+                  "name": "DSS_BPA_AVERAGE_DAYS_ISSUE_PERMIT",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "bpaSLACompliance",
+                  "name": "DSS_BPA_SLA_COMPLIANCE",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "bpaAverageDaysToIssueOC",
+                  "name": "DSS_BPA_AVERAGE_DAYS_ISSUE_OC",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "bpaSLAComplianceOC",
+                  "name": "DSS_BPA_SLA_COMPLIANCE_OC",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 211,
+              "name": "DSS_TOTAL_PERMIT_ISSUED_VS_TOTAL_OC_ISSUED_VS_TOTAL_OC_SUBMITTED",
+              "dimensions": {
+                "height": 250,
+                "width": 7
+              },
+              "vizType": "chart",
+              "isCollapsible": false,
+              "label": "",
+              "charts": [
+                {
+                  "id": "permitsandOCissued",
+                  "name": "Monthly",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "DSS_BUILDING_PLANNING",
+          "vizArray": [
+            {
+              "id": 323,
+              "name": "DSS_OBPS_COLLECTION_BY_USAGE_TYPE",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "label": "",
+              "noUnit": false,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "obpsCollectionByPaymentMode",
+                  "name": "DSS_OBPS_COLLECTION_BY_PAYMENT_MODE",
+                  "code": "",
+                  "chartType": "donut",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 321,
+              "name": "DSS_OBPS_TOP_ULB_BY_PERFORMANCE",
+              "dimensions": {
+                "height": 250,
+                "width": 3
+              },
+              "vizType": "performing-metric",
+              "label": "",
+              "noUnit": false,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "obpsTopUlbByPerformance",
+                  "name": "Monthly",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 322,
+              "name": "DSS_OBPS_BOTTOM_ULB_BY_PERFORMANCE",
+              "dimensions": {
+                "height": 250,
+                "width": 3
+              },
+              "vizType": "performing-metric",
+              "label": "",
+              "noUnit": false,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "obpsBottomUlbByPerformance",
+                  "name": "Monthly",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+            
+          ]
+        },
+        {
+          "row":4,
+          "name":"DSS_BUILDING_PLANNING",
+          "vizArray":[
+            {
+              "id":311,
+              "name":"DSS_BPA_PERMIT_ISSUED_BY_RISK_TYPE",
+              "dimensions":{
+                "height":250,
+                "width":4
+              },
+              "vizType":"chart",
+              "noUnit": false,
+              "isCollapsible":false,
+              "charts":[
+                {
+                  "id":"permitIssuedByRiskType",
+                  "name":"DSS_BPA_PERMIT_ISSUED_BY_RISK_TYPE",
+                  "code":"",
+                  "chartType":"donut",
+                  "filter":"",
+                  "headers":[
+
+                  ]
+                }
+              ]
+            },
+            {
+              "id":312,
+              "name":"DSS_BPA_PERMIT_ISSUED_BY_OCCUPANCY_TYPE",
+              "dimensions":{
+                "height":250,
+                "width":4
+              },
+              "vizType":"chart",
+              "noUnit": false,
+              "isCollapsible":false,
+              "charts":[
+                {
+                  "id":"permitIssuedByOccupancyType",
+                  "name":"DSS_BPA_PERMIT_ISSUED_BY_OCCUPANCY_TYPE",
+                  "code":"",
+                  "chartType":"donut",
+                  "filter":"",
+                  "headers":[
+
+                  ]
+                }
+              ]
+            }
+
+          ]
+        },
+        {
+          "row": 5,
+          "name": "DSS_BUILDING_PLANNING",
+          "vizArray": [
+            {
+              "id": 231,
+              "name": "DSS_OBPS_SERVICE_REPORT",
+              "dimensions": {
+                "height": 350,
+                "width": 12
+              },
+              "vizType": "chart",
+              "noUnit": false,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "obpsServiceReport",
+                  "name": "DSS_OBPS_SERVICE_REPORT",
+                  "code": "",
+                  "chartType": "table",
+                  "filter": "",
+                  "headers": []
+                }
+              
+              ]
+            }
+          ]
+        } 
+      ]
+    },
+
+```
 
 [Click here for the complete configuration](https://github.com/egovernments/configs/blob/qa/egov-dss-dashboards/dashboard-analytics/MasterDashboardConfig.json)
 
-**Role Dashboard Mappings Configuration:**
+### **Role Dashboard Mappings Configuration**
 
-Master Dashboard Configuration which was explained earlier hold the list of Dashboards which are available.
+Master dashboard configuration which was explained earlier hold the list of Dashboards which are available. Given the instance where Role Action Mapping is not maintained in the application service, this configuration acts as the Role-Dashboard mapping configuration.&#x20;
 
-Given the instance where Role Action Mapping is not maintained in the Application Service, this configuration will act as Role - Dashboard Mapping Configuration&#x20;
+In this, each role is mapped against the dashboard which they are authorized to see. This was used earlier when the role action mapping of eGov was not integrated.
 
-In this, each Role is mapped against the Dashboard which they are authorized to see
+Later, when the role action mapping started controlling the dashboards to be seen on the client side, this configuration was just used to enable the dashboards for viewing.&#x20;
 
-This was used earlier when the Role Action Mapping of eGov was not integrated.
+```
+{
+  "_comment": "Holds mapping for each role with and its associated dashboards",
+  "roles" : [
+    {
+      "_comment":"This role is super role which can access all the available dashboards: [other/new roles are suppose to be added]",
+      "roleId": 6,
+      "roleName" : "Admin",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "OBPS",
+          "id": "obps"
+        }
+      ]
+    },
+    {
+      "_comment":"This role is super role which can access all the available dashboards: [other/new roles are suppose to be added]",
+      "roleId": 7,
+      "roleName" : "Commissioner",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+         {
+          "id": "ulb-obps"
+        }
+      ]
+    }
+  ]
+}
+```
 
-Later, when the Role Action Mapping started controlling the Dashboards to be seen on the client side, this configuration was just used to enable the Dashboards for viewing.&#x20;
+[Click here to check the configuration](https://github.com/egovernments/configs/blob/qa/egov-dss-dashboards/dashboard-analytics/RoleDashboardMappingsConf.json)&#x20;
 
-`1{ 2 "_comment": "Holds mapping for each role with and its associated dashboards", 3 "roles" : [ 4 { 5 "_comment":"This role is super role which can access all the available dashboards: [other/new roles are suppose to be added]", 6 "roleId": 6, 7 "roleName" : "Admin", 8 "isSuper" : "", 9 "orgId": "", 10 "dashboards": [ 11 { 12 "name": "OBPS", 13 "id": "obps" 14 } 15 ] 16 }, 17 { 18 "_comment":"This role is super role which can access all the available dashboards: [other/new roles are suppose to be added]", 19 "roleId": 7, 20 "roleName" : "Commissioner", 21 "isSuper" : "", 22 "orgId": "", 23 "dashboards": [ 24 { 25 "id": "ulb-obps" 26 } 27 ] 28 } 29 ] 30}`
-
-[Click here to check the configuration](https://github.com/egovernments/configs/blob/qa/egov-dss-dashboards/dashboard-analytics/RoleDashboardMappingsConf.json)
-
-&#x20;
-
-**MDMS Configuration to be added:**
+### **MDMS Configuration**
 
 _common-masters/uiCommonConstants.json_
 
-`1"obps": { 2 "routePath": "/dashboard/obps", 3 "isOrigin": true 4 }`
+```
+"obps": {
+                  "routePath": "/dashboard/obps",
+                  "isOrigin": true
+               }
+```
 
 [Click here to check the complete configuration](https://github.com/egovernments/egov-mdms-data/blob/QA/data/pb/common-masters/uiCommonConstants.json)
 
 roleaction.json
 
-`1 { 2 "rolecode": "STADMIN", 3 "actionid": {{PlaceHolder1}}, 4 "actioncode": "", 5 "tenantId": "pb" 6 } 7 8 9 { 10 "rolecode": "STADMIN", 11 "actionid": {{PlaceHolder2}}, 12 "actioncode": "", 13 "tenantId": "pb" 14 }, 15 { 16 "rolecode": "EMPLOYEE", 17 "actionid": {{PlaceHolder2}}, 18 "actioncode": "", 19 "tenantId": "pb" 20 }, 21 { 22 "rolecode": "UC_EMP", 23 "actionid": {{PlaceHolder2}}, 24 "actioncode": "", 25 "tenantId": "pb" 26 }, 27`
+```
+ {
+      "rolecode": "STADMIN",
+      "actionid": {{PlaceHolder1}},
+      "actioncode": "",
+      "tenantId": "pb"
+    }
+    
+    
+    {
+      "rolecode": "STADMIN",
+      "actionid": {{PlaceHolder2}},
+      "actioncode": "",
+      "tenantId": "pb"
+    },
+     {
+      "rolecode": "EMPLOYEE",
+      "actionid": {{PlaceHolder2}},
+      "actioncode": "",
+      "tenantId": "pb"
+    },  
+     {
+      "rolecode": "UC_EMP",
+      "actionid": {{PlaceHolder2}},
+      "actioncode": "",
+      "tenantId": "pb"
+    },
+
+```
 
 [Click here to check the complete configuration](https://github.com/egovernments/egov-mdms-data/blob/QA/data/pb/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
 
-Action test.json:\
-\
+Action test.json:
 
-
-`1{ 2 "id": {{PlaceHolder1}}, 3 "name": "DSS Dashboard Config obps", 4 "url": "/dashboard-analytics/dashboard/getDashboardConfig/obps", 5 "parentModule": "", 6 "displayName": "DSS", 7 "orderNumber": 0, 8 "enabled": false, 9 "serviceCode": "DSS", 10 "code": "null", 11 "path": "" 12 }, 13 { 14 "id": 2233, 15 "name": "Dashboard OBPS", 16 "url": "url", 17 "displayName": "OBPS", 18 "orderNumber": 4, 19 "parentModule": "dss-dashboard", 20 "enabled": true, 21 "serviceCode": "DSS", 22 "code": "null", 23 "path": "Dashboard.OBPS", 24 "navigationURL": "/digit-ui/employee/dss/dashboard/obps", 25 "leftIcon": "places:business-center", 26 "rightIcon": "" 27 }, 28 { 29 "id": {{PlaceHolder2}}, 30 "name": "DSS Dashboard Charts", 31 "url": "/dashboard-analytics/dashboard/getChartV2", 32 "parentModule": "", 33 "displayName": "DSS", 34 "orderNumber": 0, 35 "enabled": false, 36 "serviceCode": "DSS", 37 "code": "null", 38 "path": "" 39 }`
+```
+{
+      "id": {{PlaceHolder1}},
+     "name": "DSS Dashboard Config obps",
+      "url": "/dashboard-analytics/dashboard/getDashboardConfig/obps",
+      "parentModule": "",
+      "displayName": "DSS",
+      "orderNumber": 0,
+      "enabled": false,
+      "serviceCode": "DSS",
+      "code": "null",
+      "path": ""
+    },
+    {
+      "id": 2233,
+      "name": "Dashboard OBPS",
+      "url": "url",
+      "displayName": "OBPS",
+      "orderNumber": 4,
+      "parentModule": "dss-dashboard",
+      "enabled": true,
+      "serviceCode": "DSS",
+      "code": "null",
+      "path": "Dashboard.OBPS",
+      "navigationURL": "/digit-ui/employee/dss/dashboard/obps",
+      "leftIcon": "places:business-center",
+      "rightIcon": ""
+    },
+  {
+      "id": {{PlaceHolder2}},
+      "name": "DSS Dashboard Charts",
+      "url": "/dashboard-analytics/dashboard/getChartV2",
+      "parentModule": "",
+      "displayName": "DSS",
+      "orderNumber": 0,
+      "enabled": false,
+      "serviceCode": "DSS",
+      "code": "null",
+      "path": ""
+    }
+```
 
 [Click here to check the complete configuration](https://github.com/egovernments/egov-mdms-data/blob/QA/data/pb/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
 
-&#x20;
+## Charts Configuration Details
 
-OBPS-State DSS Consists of multiple graphs which represent the data of OBPS. Each graph has its own configuration which will describe the chart and its type.
+&#x20;OBPS-State DSS consists of multiple graphs which represent the data of OBPS. Each graph has its own configuration which describes the chart and its type.
 
-State DSS Consists of following charts in OBPS:
+State DSS consists of the following charts in OBPS:
 
 * Overview-Revenue
 * Overview-Service
@@ -119,172 +1296,135 @@ State DSS Consists of following charts in OBPS:
 * Permits Issued by Occupancy Type
 * Service Report
 
-More details about respective charts below:
+More details about the respective charts are below:
 
-&#x20;
+**Overview-Revenue:** The Overview-Revenue chart contains multiple data information as below in the selected time period.
 
-**Overview-Revenue:**
-
-Overview-Revenue chart contains multiple data information as below in the selected time period.
-
-* **Today's Collection -** This represents the today’s collection amount for OBPS Application Fee + Permit Fee.
+* **Today's Collection -** This represents today’s collection amount for OBPS Application Fee + Permit Fee.
 * **Total Collection** - This represents the total collection amount for OBPS Application Fee + Permit Fee.
 
-![](blob:https://digit-discuss.atlassian.net/64cd72b6-1814-4461-bac2-b118ca1fbaa4#media-blob-url=true\&id=0b98e224-b309-420c-9dc4-55afd4bf9aa3\&collection=contentId-2076999681\&contextId=2076999681\&height=273\&width=250\&alt=)
+![](<../../../../.gitbook/assets/image (21).png>)
 
-**Overview-Service:**
+**Overview-Service:** The Overview-Service chart contains multiple data information as below in the selected time period.
 
-Overview-Service chart contains multiple data information as below in the selected time period.
-
-* **Total Plans Scrutinized** - This represents the total number of plans submitted by an architect for scrutiny for new construction to concerned authority.
+* **Total Plans Scrutinized** - This represents the total number of plans submitted by an architect for scrutiny for new construction to the concerned authority.
 * **Total permits issued** - This represents the total number of new permits issued by the concerned authority.
 * **Total sq m of land applied in the BPA system** - This represents the total area in square meters approved for construction.
-* **Avg. days to issue permit** - This represents the average number of days taken to issue a permit application.
+* **Avg. days to issue permits** - This represents the average number of days taken to issue a permit application.
 * **SLA Compliance (Permits)** - This represents the total percentage of permits issued within SLA.
 * **Avg. days to issue OC** - This represents the average number of days taken to issue an OC.
 * **SLA Compliance (OC)** - This represents the percentage of OCs issued within SLA
 
-![](blob:https://digit-discuss.atlassian.net/4a5839e0-4913-4649-a82f-dd80c28aa6b6#media-blob-url=true\&id=292a6ba8-05d4-424e-8d1e-85eb9ee748f9\&collection=contentId-2076999681\&contextId=2076999681\&height=523\&width=359\&alt=)
+![](<../../../../.gitbook/assets/image (26).png>)
 
-&#x20;
-
-**Total Cumulative Collection**
-
-This Graph contains the OBPS collection amount information in the monthly base as a cumulative line graph for each obps collection separately. This will change as per the denomination amount filter selection.
+**Total Cumulative Collection:** This graph contains the OBPS collection amount information on a monthly basis as a cumulative line graph for each OBPS collection separately. This changes as per the denomination amount filter selection.
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
-![](blob:https://digit-discuss.atlassian.net/c4087ed1-526a-442f-a401-c6b0820bae44#media-blob-url=true\&id=e132b007-2040-4b96-9ade-3576810e6d96\&collection=contentId-2076999681\&contextId=2076999681\&height=524\&width=744\&alt=)
+![](<../../../../.gitbook/assets/image (1).png>)
 
-&#x20;
-
-**Total permits issued vs Total OC submitted vs Total OC issued**
-
-This Graph shows total permits issued vs total OC submitted vs total OC issued for a given time period in the form of a line chart.
+**Total permits issued vs Total OC submitted vs Total OC issued:** This graph shows the total permits issued vs total OC submitted vs total OC issued for a given time period in the form of a line chart.
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
-![](blob:https://digit-discuss.atlassian.net/e49ef84b-82ed-4bad-b42d-c81748bdde6c#media-blob-url=true\&id=9757b3ce-0f61-4604-ae3f-2eb07e43b8f7\&collection=contentId-2076999681\&contextId=2076999681\&height=529\&width=894\&alt=)
+![](<../../../../.gitbook/assets/image (6).png>)
 
-&#x20;
+&#x20;**Collection by Payment Mode:** This chart is a pie chart showing the bifurcation of total collections by payment mode (online, cash, card, cheque) which is the sum of revenue collected from the OBPS module for the applied date filter.
 
-**Collection by Payment Mode**
+![](<../../../../.gitbook/assets/image (30).png>)
 
-This chart is a pie chart showing bifurcation of total collections by payment mode (online, cash, card, cheque) which is the sum of revenue collected from OBPS module for the applied date filter.
+&#x20;**Top 3 Performing ULBs:** This card will show the Top 3 Performing ULBs based on the percentage of permits issued. The number of permits issued / Number of applications.
 
-![](blob:https://digit-discuss.atlassian.net/b9d55287-a689-491d-85f4-6af921e46823#media-blob-url=true\&id=eced917d-61fd-4f5e-b070-e1dac54d045c\&collection=contentId-2076999681\&contextId=2076999681\&height=441\&width=414\&alt=)
+![](<../../../../.gitbook/assets/image (4).png>)
 
-&#x20;
+&#x20;**Bottom 3 Performing States:** This card shows the bottom 3 Performing States/ULBs/Wards based on the percentage of permits issued. Number of Permits issued / Number of applications
 
-**Top 3 Performing ULBs :** This card will show the Top 3 Performing ULBs based on percentage of Permits issued. Number of Permits issued / Number of applications.
+![](<../../../../.gitbook/assets/image (29).png>)
 
-![](blob:https://digit-discuss.atlassian.net/f1395cf7-a28b-4eff-a5a1-a8d60b279b0a#media-blob-url=true\&id=771a4fb7-8ee8-445f-b72f-9c8eb172d838\&collection=contentId-2076999681\&contextId=2076999681\&height=408\&width=515\&alt=)
+**Permits Issued by Risk Type:** This chart is a pie chart showing the bifurcation of total permits issued by risk type (low risk, medium risk, high risk) for the applied date filter.
 
-&#x20;
+![](<../../../../.gitbook/assets/image (10).png>)
 
-**Bottom 3 Performing States :** This card will show the Bottom 3 Performing States/ULBs/Wards based on percentage of Permits issued. Number of Permits issued / Number of applications
+&#x20;**Permits Issued by Occupancy Type:** This chart is a pie chart showing the bifurcation of total permits issued by occupancy type (Residential, Institutional etc) for the applied date filter.
 
-![](blob:https://digit-discuss.atlassian.net/7d48da3b-c2fc-421b-aceb-bb1bf95372ce#media-blob-url=true\&id=72d86c22-e67c-476b-8742-d48168376f08\&collection=contentId-2076999681\&contextId=2076999681\&height=411\&width=522\&alt=)
+![](../../../../.gitbook/assets/image.png)
 
-**Permits Issued by Risk Type**
+**Service Report:** This tabular chart representation graph shows information about multiple OBPS-related categories like Total Collection or Total Cumulative Collection, Total Plans Scrutinized, Total applications submitted, Total permits issued, Avg. days to issue a permit, SLA Compliance (Permits), Total OC Plans scrutinized, Total OC submitted, Total OC issued, Deviation Percentage, Avg. days to issue OC, SLA Compliance (OC), Total OCs with deviation. This table also shows the data at the state level and also has the drill-down chart for each state to ULB and from ULB to ward level data for the same.
 
-This chart is a pie chart showing bifurcation of total permits issued by risk type (low risk, medium risk, high risk) for the applied date filter.
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-![](blob:https://digit-discuss.atlassian.net/928fbfd3-fa80-45bc-a67c-c17545e289ce#media-blob-url=true\&id=464e6d65-196f-44cf-9508-1a6deffd0438\&collection=contentId-2076999681\&contextId=2076999681\&height=500\&width=601\&alt=)
+Clicking on any DDR name drills down the charts to show the specified state data.
 
-&#x20;
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-**Permits Issued by Occupancy Type**
+&#x20;Clicking on the ULB navigates to the ward-level data for the specified ULB.
 
-This chart is a pie chart showing bifurcation of total permits issued by occupancy type (Residential, Institutional etc) for the applied date filter.
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-![](blob:https://digit-discuss.atlassian.net/f0df8322-4039-4bb9-9334-6e097cb924fd#media-blob-url=true\&id=f47ac87f-e881-4d6c-ad78-1a0070f10187\&collection=contentId-2076999681\&contextId=2076999681\&height=501\&width=599\&alt=)
+## **Newly Introduced Property Details** <a href="#newly-introduced-property" id="newly-introduced-property"></a>
 
-&#x20;
+**isRoundOff**: This property is introduced to round off the decimal values. For instance, if the value is 25.43 by using isRoundOff property in the configuration, the value is displayed as 25. Similarly, if the value is 22.56 round of value is displayed as 23. This can be used for insights configuration as well for overview graphs.
 
-**Service Report :** This tabular chart representation graph shows information about multiple obps related categories like Total Collection or Total Cumulative Collection, Total Plans Scrutinized, Total applications submitted, Total permits issued, Avg. days to issue permit, SLA Compliance (Permits), Total OC Plans scrutinized, Total OC submitted, Total OC issued, Deviation Percentage, Avg. days to issue OC, SLA Compliance (OC), Total OCs with deviation. And this table shows the data in state level and also has the drill down chart for each state to ulb and from ulb to ward level data for the same.
+## Common Properties Available <a href="#common-properties-available" id="common-properties-available"></a>
 
-![](blob:https://digit-discuss.atlassian.net/9e4efb2c-f455-41d2-b40f-8de861e8ac5d#media-blob-url=true\&id=726be5ff-52a6-4910-9b85-fa473500e106\&collection=contentId-2076999681\&contextId=2076999681\&height=565\&width=1259\&alt=)
+**Key(eg: bpaTotalCollection):** This is the visualization code. This key is referred to in further visualization configurations. This is the key which will be used by the client application to indicate which visualization is needed for display.
 
-&#x20;
+**chartName:** The name of the chart which has to be used as a label on the dashboard. The name of the chart will be a detailed name. In this configuration, the Name of the Chart will be the code of Localization which will be used by the Client Side.
 
-On click of any DDR name will enter into drill down charts, which will represents that specific state data.
-
-![](blob:https://digit-discuss.atlassian.net/aae835bd-aa9b-4c7c-ab0e-9091d006e02b#media-blob-url=true\&id=7467e7eb-9bb1-4ea1-9e69-91ec8b849e98\&collection=contentId-2076999681\&contextId=2076999681\&height=287\&width=1259\&alt=)
-
-&#x20;
-
-On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
-
-![](blob:https://digit-discuss.atlassian.net/2bdabc99-da57-4178-9928-4e90d5fee2e9#media-blob-url=true\&id=52899384-6bbd-4ac1-857c-01bda904e455\&collection=contentId-2076999681\&contextId=2076999681\&height=351\&width=1256\&alt=)
-
-#### **Newly introduced property:** <a href="#newly-introduced-property" id="newly-introduced-property"></a>
-
-**isRoundOff**: This property is introduced to round off the decimal values. Ex: if the value is 25.43 by using isRoundOff property in configuration we will get it as 25. if value is 22.56 round of value will be 23.\
-This can be used for insights configuration as well for overview graph.
-
-#### Common Properties available: <a href="#common-properties-available" id="common-properties-available"></a>
-
-**Key(eg: bpaTotalCollection) :** This is the Visualization Code. This key will be referred to in further visualization configurations.
-
-This is the key which will be used by the client application to indicate which visualization is needed for display.
-
-**chartName :** The name of the Chart which has to be used as a label on the Dashboard. The name of the Chart will be a detailed name.
-
-In this configuration, the Name of the Chart will be the code of Localization which will be used by Client Side.
-
-**queries :** Some visualizations are derived from a specific data source. While some others are derived from different data sources and are combined together to get a meaningful representation.
+**queries:** Some visualizations are derived from a specific data source. While some others are derived from different data sources and are combined together to get a meaningful representation.
 
 The queries of aggregation which are to be used to fetch out the right data in the right aggregated format are configured here.
 
-**queries.module :** The module / domain level, on which the query should be applied on i.e., OBPS
+**queries.module:** The module/domain level, on which the query should be applied i.e., OBPS
 
-**queries.indexName :** The name of the index upon which the query has to be executed is configured here.
+**queries.indexName:** The name of the index upon which the query has to be executed is configured here.
 
-**queries.aggrQuery :** The aggregation query in itself is added here. Based on the Module and the Index name specified, this query is attached to the filter part of the complete search request and then executed against that index
+**queries.aggrQuery:** The aggregation query in itself is added here. Based on the Module and the Index name specified, this query is attached to the filter part of the complete search request and then executed against that index
 
-**queries.requestQueryMap :** Client Request would carry certain fields which are to be filtered. The parameters specified in the Client Request are different from the parameters in each of these indexed documents.
+**queries.requestQueryMap:** Client Request would carry certain fields which are to be filtered. The parameters specified in the Client Request are different from the parameters in each of these indexed documents.
 
 In order to map the parameters of the request to the parameters of the ElasticSearch Document, this mapping is maintained.
 
-**queries.dateRefField :** Each of these modules have separate indexes. And all of them have their own date fields.&#x20;
+**queries.dateRefField:** Each of these modules have separate indexes. And all of them have their own date fields.&#x20;
 
 When there is a date filter applied against these visualizations, each of them has to apply it against their own date reference fields.
 
 In order to maintain what is the date field in which index, we have this configured in this configuration parameter.
 
-**chartType :** As there are different types of visualizations, this field defines what is the type of chart / visualization that this data should be used to represent.&#x20;
+**chartType:** As there are different types of visualizations, this field defines what is the type of chart/visualization that this data should be used to represent.&#x20;
 
-**Chart types available are**:
+## **Chart Types Available**
 
-**metric** - this represents the aggregated amount/value for records filter by the aggregate es query&#x20;
+**metric** - this represents the aggregated amount/value for records filtered by the aggregate es query&#x20;
 
 **pie** - this represents the aggregated data on grouping. This is can be used to represent any line graph, bar graph, pie chart or donuts
 
 **line** - this graph/chart is data representation on date histograms or date groupings
 
-**perform** - this chart represents groping data as performance wise.
+**perform** - this chart represents groping data performance-wise.
 
-**table** - represents a form of plots and value with headers as grouped on and list of its key, values pairs.&#x20;
+**table** - represents a form of plots and values with headers as grouped on and a list of its key, values pairs.&#x20;
 
-**xtable -** represents a advanced feature of table, it has addition capabilities for dynamic adding header values.
+**xtable -** represents an advanced feature of the table, it has the addition capabilities for adding dynamic header values.
 
-**valueType :** In any case of data, the values which are sent to plot, might be a percentage, sometimes an amount and sometimes it is just a count.
+**valueType -** In any instance of data, the values which are sent for plotting, might be a percentage, sometimes an amount or sometimes just a count.
 
-In order to represent them and differentiate the numbers from amount from percentage, this field is used to indicate the type of value that this Visualization will be sending.
+In order to represent them and differentiate the numbers from the amount from the percentage, this field is used to indicate the type of value that this visualization will be sending.
 
-**action :** Some of the visualizations are not just aggregation on data source. There might be some cases where we have to do a post aggregation computation.
+**action:** Some of the visualizations are not just aggregations of data sources. There might be some cases where we have to do a post-aggregation computation.
 
-For Example, in the case of Top 3 Performing ULBs, the Target and Total Collection is obtained and then the percentage is calculated. In these kinds of cases, what is the action that has to be performed on that data obtained is defined in this parameter.&#x20;
+For example, in the case of the Top 3 performing ULBs, the target and total collection are obtained and then the percentage is calculated. In these kinds of cases, the action that has to be performed on the data obtained is defined in this parameter.&#x20;
 
-**documentType :** The type of document upon which the query has to be executed is defined here.&#x20;
+**documentType:** The type of document upon which the query has to be executed is defined here.&#x20;
 
-**drillChart :** If there is a drill down on the visualization, then the code of the Drill Down Visualization is added here. This will be used by Client Service to manage drill downs.
+**drillChart:** If there is a drill down on the visualization, then the code of the Drill Down Visualization is added here. This will be used by Client Service to manage drill-downs.
 
-**aggregationPaths :** All the queries will be having Aggregation names in it. In order to fetch the value out of each Aggregation Responses, the name of the aggregation in the query will be an easy bet. These aggregation paths will have the names of Aggregation in it.
+**aggregationPaths :** All the queries will be having Aggregation names in it. In order to fetch the value out of each Aggregation Responses, the name of the aggregation in the query will be an easy bet. These aggregation paths will have the names of Aggregation in them.
 
-**insights :** It is to show the data with the comparison of last year with arrow symbols, it will show the data in how much % is increased or decreased.&#x20;
+**insights:** It is to show the data with the comparison of last year with arrow symbols, it will show the data in how much % is increased or decreased.&#x20;
 
-**\_comment :** In order to display information on the “i” symbol of each visualization, Visualization Information is maintained in this field.&#x20;
+**\_comment:** In order to display information on the “i” symbol of each visualization, Visualization Information is maintained in this field.&#x20;
 
-**Postman collection for OBPS-dss:** [https://www.getpostman.com/collections/667f52a25918f7f5ba25](https://www.getpostman.com/collections/667f52a25918f7f5ba25)
+## **Postman Collection For OBPS-DSS**
+
+[https://www.getpostman.com/collections/667f52a25918f7f5ba25](https://www.getpostman.com/collections/667f52a25918f7f5ba25)

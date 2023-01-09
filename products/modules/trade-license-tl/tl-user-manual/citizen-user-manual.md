@@ -118,7 +118,7 @@ Citizens can renew their existing trade applications on the DIGIT portal. CE can
 
 The system will display the license details. Click on the **Renew** button to apply for renewal.
 
-![](<../../../../.gitbook/assets/image (10).png>)
+![](<../../../../.gitbook/assets/image (10) (1).png>)
 
 If there are any changes in the trade details, click on the **Change** button adjacent to the fields before submitting for renewal.
 
@@ -126,7 +126,7 @@ If there are any changes in the trade details, click on the **Change** button ad
 
 Click on the **Submit** button once all changes are done and reviewed.
 
-![](<../../../../.gitbook/assets/image (4) (1).png>)
+![](<../../../../.gitbook/assets/image (4) (1) (1).png>)
 
 The Trade License is submitted for renewal.
 
