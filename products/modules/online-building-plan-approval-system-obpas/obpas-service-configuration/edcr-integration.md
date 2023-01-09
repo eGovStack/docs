@@ -85,9 +85,3 @@ For integrating eDCR the below knowledge and infrastructure requirements need to
   * Eclipse or any IDE
 * Cloud instance for deployment (Azure / AWS)
 
-&#x20;
-
-## &#x20; 
-
-\
-\
