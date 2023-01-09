@@ -1882,7 +1882,7 @@ The overview graph contains multiple data information as below in the selected t
 * **Target Collection:** This represents the target collection amount for the Water and Sewerage connections.
 * **Target Achievement:** This represents the target achieved in percentage. This is calculated by the formula- (Total Collection/Target Collection)\*100%
 
-![](<../../../../.gitbook/assets/image (14).png>)&#x20;
+![](<../../../../.gitbook/assets/image (14) (2).png>)&#x20;
 
 #### **Total Cumulative Collection** <a href="#total-cumulative-collection" id="total-cumulative-collection"></a>
 
@@ -1914,7 +1914,7 @@ This graph shows the collection amount based on the usage/property type and this
 
 This graph shows the collection amount based on the collection channel type(eg-online, counter, etc) and this amount will change as per the denomination filter change.
 
-![](<../../../../.gitbook/assets/image (2) (1).png>)
+![](<../../../../.gitbook/assets/image (2).png>)
 
 #### **W\&S Key Financial Indicators** <a href="#w-and-s-key-financial-indicators" id="w-and-s-key-financial-indicators"></a>
 
@@ -1940,7 +1940,7 @@ This tabular chart representation graph shows multiple W\&S information like Tot
 
 _**table**_ type allows to addition of multiple aggregated fields.
 
-&#x20;![](<../../../../.gitbook/assets/image (2).png>)
+&#x20;![](<../../../../.gitbook/assets/image (7).png>)
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 
@@ -1948,7 +1948,7 @@ On click of any district name will enter into drill-down charts, which will repr
 
 On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
 
-![](<../../../../.gitbook/assets/image (4) (1).png>)
+![](<../../../../.gitbook/assets/image (4) (2).png>)
 
 ### **Service Tab** <a href="#service-tab" id="service-tab"></a>
 
@@ -1971,7 +1971,7 @@ This Graph contains the Water and Sewerage connections information on a monthly 
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (5) (2).png>)
 
 #### **Water Connections by Usage Type** <a href="#water-connections-by-usage-type" id="water-connections-by-usage-type"></a>
 
@@ -2003,7 +2003,7 @@ To add multiple computed columns,  **computedFields** \[]  where actionName (ICo
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 
-![](<../../../../.gitbook/assets/image (16).png>)
+![](<../../../../.gitbook/assets/image (16) (4).png>)
 
 On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
 

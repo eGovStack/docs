@@ -6,7 +6,7 @@ Users can view all the applications assigned to them in the employee inbox. And 
 
 NOC Inbox uses InboxComposer React HOC to create the Inbox through various child components, for both mobile and desktop components.
 
-![](<../../../../.gitbook/assets/image (30) (1).png>)
+![](<../../../../.gitbook/assets/image (30).png>)
 
 ## API Details
 

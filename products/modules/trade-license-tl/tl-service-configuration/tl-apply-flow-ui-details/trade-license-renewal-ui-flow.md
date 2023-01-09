@@ -15,13 +15,13 @@ Once the user clicks on Renew Trade License button on the home page, it will red
 
 Once the user clicks on Renew Button, it redirects the user to the summary page just like in edit Trade license, with all the values pre-populated from the search API. The info card will be declared so that the user will understand how to proceed with either direct renewal or edit renewal.
 
-![](<../../../../../.gitbook/assets/image (9).png>)
+![](<../../../../../.gitbook/assets/image (9) (2).png>)
 
 ### **Direct Renewal**
 
 If the user just wants to renew the same application without updating any data, it will cross-verify all the values in the summary page and then click on submit button directly at the end of the page, this will lead the application to the next status as pending for payment and user can go through payment flow from the acknowledgement screen also, by clicking on the Make Payment button.
 
-![](<../../../../../.gitbook/assets/image (1) (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (1) (1) (2).png>)
 
 ### **Edit Renewal**
 
