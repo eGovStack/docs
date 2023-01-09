@@ -4,9 +4,11 @@ description: Frontend Repo
 
 # Current Bill Cancellation UI Flow
 
-## Objective
+## Overview
 
-Once the user logs in with `WS_CEMP` **or** `SW_CEMP` roles the BillGenie tree option is available on the left panel on the screen.
+Once the user logs in with `WS_CEMP` **or** `SW_CEMP` roles the BillGenie tree option is available on the left panel of the screen.
+
+## Workflow Details
 
 ![](<../../../../../.gitbook/assets/image (157) (1).png>)
 
@@ -16,11 +18,9 @@ Clicking on the BillGenie displays two options as seen in the screenshot below.
 
 Click on the Bill Cancellation option. This routes the user to the search bill screen.
 
-## **Search Bill**
+### **Search Bill**
 
-### **Objective**
-
-This option allows employees to search for active bills, download bills, or cancel bills.
+**Objective:** This option allows employees to search for active bills, download bills, or cancel bills.
 
 For instance, a bill can be cancelled if the tax head information is entered wrong in a bill.&#x20;
 
@@ -28,7 +28,7 @@ Route -[ mSeva](https://qa.digit.org/employee/bills/billSearch)
 
 ![](<../../../../../.gitbook/assets/image (221).png>)
 
-## Technical Implementation Details
+## Technical Implementation
 
 * Initial page - [<img src="https://github.com/fluidicon.png" alt="" data-size="line">frontend/billSearch.js at master · egovernments/frontend](https://github.com/egovernments/frontend/blob/master/web/rainmaker/dev-packages/egov-abg-dev/src/ui-config/screens/specs/bills/billSearch.js)
 * Initial MDMS call is made on page load
@@ -107,15 +107,14 @@ To cancel bills, employees have to click on the Cancel Bill option. The system n
 
 For bill details refer to the document here - [Bill Details](bill-details-ui-flow.md).
 
-### **API Used**
+#### **API Used**
 
 1. `egov-mdms-service/v1/_search,`
 2. `egov-searcher/bill-genie/billswithaddranduser/_get`
 
 ## **Role Action Mapping**
 
-|                                                      |                          |               |
-| ---------------------------------------------------- | ------------------------ | ------------- |
-| **API**                                              | **ROLES**                | **ACTION ID** |
-| `egov-mdms-service/v1/_search`                       |                          | `954`         |
-| `egov-searcher/bill-genie/billswithaddranduser/_get` | `SUPERUSER` , `EMPLOYEE` | `1804`        |
+| API                                                  | Roles                    | Action ID |
+| ---------------------------------------------------- | ------------------------ | --------- |
+| `egov-mdms-service/v1/_search`                       |                          | `954`     |
+| `egov-searcher/bill-genie/billswithaddranduser/_get` | `SUPERUSER` , `EMPLOYEE` | `1804`    |

@@ -2,7 +2,7 @@
 
 ## About mCollect
 
-The mCollect module is designed to facilitate the ULBs process of miscellaneous types of payments. Miscellaneous payments may include parking fees, advertising fees, rent, challans, \*\*\*\*etc. The module objective is to process and record payment collections on account of miscellaneous heads within the ULBs. This makes it easy to track payment receipts and generate reports for administrative purposes.
+The mCollect module is designed to facilitate the ULBs process miscellaneous types of payments. Miscellaneous payments may include parking fees, advertising fees, rent, challans, etc. The module objective is to process and record payment collections on account of miscellaneous heads within the ULBs. This makes it easy to track payment receipts and generate reports for administrative purposes.
 
 ## Key Features
 
@@ -16,7 +16,7 @@ The mCollect module is designed to facilitate the ULBs process of miscellaneous 
 This section contains all docs and information required to understand the MCS module, its key features, functional scope, and configuration details. Click on the links below to learn more about deploying, configuring, customizing, and using the MCS module.
 
 * Functional Specifications
-* [MCS Roadmap](mcollect-roadmap.md)
+* [MCS Roadmap](broken-reference)
 * [MCS User Manual](mcollect-user-manual/)
 * Product Brochure
 * MCS Workflows

@@ -1,17 +1,14 @@
 # Re-Indexing The mCollect Service
 
-#### Overview <a href="#overview" id="overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
-We are using re-indexing to get all the data to respective indexer. We have 2 steps for this. First as to run the connector from playground, which is followed by legacyindexer service call from indexer service, which internally call the respective plain search service to get the data and to send to respective indexer.
+We are using re-indexing to get all the data to the respective indexer. We have 2 steps for this. The first is to run the connector from the playground, which is followed by the legacyindexer service call from the indexer service, which internally calls the respective plain search service to get the data and send it to the respective indexer.
 
-\
-**Prerequisites**:
+## **Pre-requisites**
 
 * Access to kubectl of the environment targetted
 * Postman scripts
 * Plain search apis in the respective services
-
-&#x20;
 
 **mCollect/echallan-services reindexing steps**
 
@@ -23,7 +20,7 @@ We are using re-indexing to get all the data to respective indexer. We have 2 st
 curl --location --request DELETE 'http://kafka-connect.kafka-cluster:8083/connectors/echallan-services-enriched-es-sink'
 ```
 
-* Run below kafka connector curl from playground pod:
+* Run the below kafka connector curl from playground pod:
 
 ```
 curl --location --request POST 'http://kafka-connect.kafka-cluster:8083/connectors/' \
@@ -134,4 +131,4 @@ POST /_aliases
 }
 ```
 
-NOW your echallan-services index is update with the data of eChallan/mCollect till now in the system.
+NOW your echallan-services index is updated with the eChallan/mCollect data.

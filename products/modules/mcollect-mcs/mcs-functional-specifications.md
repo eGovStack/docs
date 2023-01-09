@@ -59,12 +59,14 @@ The Report has the following filters: Collection Channel, Collection Mode, Servi
 
 ### General Features
 
-**Notifications:** The system has the capability to send notifications to citizens. The notification is sent to the citizen when a payment is made. The citizen gets a receipt download link in the notification. These notifications can be sent in the language chosen by the ULB through all channels - SMS, WhatsApp, Email.
+**Notifications:** The system has the capability to send notifications to citizens. The notification is sent to the citizen when a payment is made. The citizen gets a receipt download link in the notification. These notifications can be sent in the language chosen by the ULB through all channels - SMS, WhatsApp, and Email.
 
 **Configurable Masters**&#x20;
 
 * **Business Service Master:** To configure the Service Categories and Service Types for which mCollect can capture payments&#x20;
 * Tax Head Master: To define the tax heads for each Service Type&#x20;
 * Tax Period Master: To define a tax period for each Service Type
+
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

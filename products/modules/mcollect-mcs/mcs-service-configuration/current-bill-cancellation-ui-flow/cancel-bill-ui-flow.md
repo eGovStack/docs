@@ -1,8 +1,10 @@
 # Cancel Bill UI Flow
 
-## **Objective**
+## **Overview**
 
 To provide users with the option to select cancel reasons and the options to cancel the bill.
+
+## Workflow Details
 
 ![](<../../../../../.gitbook/assets/image (254).png>)
 
@@ -44,8 +46,7 @@ For localisation, the “rainmaker-ws” and “rainmaker-abg” modules are re-
 
 ## **API Call Role Action Mapping**
 
-|                                       |               |                                   |
-| ------------------------------------- | ------------- | --------------------------------- |
-| **API**                               | **Action id** | **Roles**                         |
-| `billing-service/bill/v2/_cancelbill` | `1936`        | `SUPERUSER`, `SW_CEMP`, `WS_CEMP` |
-| `egov-mdms-service/v1/_search`        | `954`         |                                   |
+| API                                   | Action ID | Roles                             |
+| ------------------------------------- | --------- | --------------------------------- |
+| `billing-service/bill/v2/_cancelbill` | `1936`    | `SUPERUSER`, `SW_CEMP`, `WS_CEMP` |
+| `egov-mdms-service/v1/_search`        | `954`     |                                   |

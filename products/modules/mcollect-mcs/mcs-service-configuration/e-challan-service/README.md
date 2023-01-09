@@ -316,16 +316,14 @@ The eChallan service is used to generate **e-challans / bill** for all miscellan
 
 #### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-|                           |                                                                                                                                                                 |
+| Title                     | Link                                                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Title**                 | **Link**                                                                                                                                                        |
 | API Swagger Documentation | [Swagger Documentation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/develop/docs/e-Challan-v1.0.0.yaml#!/) |
 
 #### API List <a href="#api-list" id="api-list"></a>
 
-|                                          |                                                                                                                            |
+| Title                                    | Link                                                                                                                       |
 | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Title                                    | **Link**                                                                                                                   |
 | _echallan-services/eChallan/v1/\_create_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
 | _echallan-services/eChallan/v1/\_update_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
 | _echallan-services/eChallan/v1/\_search_ | [https://www.getpostman.com/collections/349413e52bf743d50b0a](https://www.getpostman.com/collections/349413e52bf743d50b0a) |
