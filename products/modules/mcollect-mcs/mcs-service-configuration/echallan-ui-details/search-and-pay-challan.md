@@ -2,17 +2,17 @@
 
 ## Overview
 
-This page offers the UI details for the search and pay challan feature. Once a Challan is created, in order to Pay the challan or update the challan, we have to find the relevant challan.
+This page offers the UI details for the search and pays challan feature. Once a challan is created, in order to pay the challan or update the challan, we have to find the relevant challan.
 
 ## **Search and Pay**
 
-**A citizen** can only search the challan, download the challan, and pay for the challan.
+**A citizen** can only search for the challan, download the challan, and pay for the challan.
 
-In order to make any payment for challans, both _**Citizen and Employee**_ roles, use the **Bill genie** screens to get the bill and can proceed for payment.
+In order to make any payment for challans, both _**Citizen and Employee**_ roles, use the **Bill genie** screens to get the bill and can proceed with payment.
 
-[BillGenie](https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/436502610/BillGenie)
+[BillGenie](../current-bill-cancellation-ui-flow/)
 
-To Enable the service category to search we have to configure `billGineiURL` in MDMS as follow.
+To enable the service category to search we have to configure `billGineiURL` in MDMS as follow.
 
 ```
 {
@@ -49,19 +49,17 @@ Click here to find the [Search Challan file](https://github.com/egovernments/fro
 
 ## **Role Action Mapping**
 
-|           |                                         |           |               |
-| --------- | --------------------------------------- | --------- | ------------- |
-| **S.No.** | **API**                                 | **ROLES** | **ACTION ID** |
-| 1         | `egov-mdms-service/v1/_search`          |           | 954           |
-| 2         | `echallan-services/eChallan/v1/_search` | UC\_EMP   | 2114          |
+| API                                     | Roles   | Action ID |
+| --------------------------------------- | ------- | --------- |
+| `egov-mdms-service/v1/_search`          |         | 954       |
+| `echallan-services/eChallan/v1/_search` | UC\_EMP | 2114      |
 
 ## **Documents and Resource Links**
 
-|                                |                                                                                            |
-| ------------------------------ | ------------------------------------------------------------------------------------------ |
-| **Related Title**              | **Documentation**                                                                          |
-| MCollect Create Challan        | [eChallan - Technical Documentation](./)                                                   |
-| MCollect Pay Challan           | [BillGenie](https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/436502610/BillGenie) |
-| MCollect Edit / Update Challan | [Edit/Cancel Challan](edit-cancel-challan.md)                                              |
+| Related Title                  | Documentation                                      |
+| ------------------------------ | -------------------------------------------------- |
+| MCollect Create Challan        | [eChallan - Technical Documentation](./)           |
+| MCollect Pay Challan           | [BillGenie](../current-bill-cancellation-ui-flow/) |
+| MCollect Edit / Update Challan | [Edit/Cancel Challan](edit-cancel-challan.md)      |
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

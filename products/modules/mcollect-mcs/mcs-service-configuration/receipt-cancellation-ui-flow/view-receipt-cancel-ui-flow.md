@@ -1,8 +1,10 @@
 # View Receipt - Cancel UI Flow
 
-## **Objective**
+## **Overview**
 
 Provide employees with the option to Cancel a Receipt for a specific receipt number.
+
+## Workflow Details
 
 Route -[ ![](https://cdn.jsdelivr.net/npm/@egovernments/digit-ui-css/img/browser-icon.png)mSeva](https://qa.digit.org/digit-ui/employee/receipts/details/PT/PT%2F107%2F2021-22%2F226438)
 
@@ -14,9 +16,9 @@ The search page displays the receipts. Click on the specific receipt number navi
 
 View receipt details are available here [https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/receipts/src/pages/ReceiptDetails.js](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/receipts/src/pages/ReceiptDetails.js)
 
-## **Technical Implementation Details**
+## **Technical Implementation**&#x20;
 
-Initial MDMS call is made on page load. CancelReceiptReason MDMS is used to display multiple reasons for cancelling.
+The initial MDMS call is made on page load. CancelReceiptReason MDMS is used to display multiple reasons for cancelling.
 
 ```
      moduleDetails: [
@@ -50,9 +52,8 @@ File details - [https://github.com/egovernments/digit-ui-internals/blob/main/pac
 
 ## **Role Action Mapping**
 
-|                                              |           |               |
-| -------------------------------------------- | --------- | ------------- |
-| **API**                                      | **ROLES** | **ACTION ID** |
-| `egov-mdms-service/v1/_search`               | `CR_PT`   | `954`         |
-| `collection-services/payments/PT/_search`    | `CR_PT`   | `2029`        |
-| `/collection-services/payments/PT/_workflow` | `CR_PT`   | `2028`        |
+| API                                          | Roles   | Action ID |
+| -------------------------------------------- | ------- | --------- |
+| `egov-mdms-service/v1/_search`               | `CR_PT` | `954`     |
+| `collection-services/payments/PT/_search`    | `CR_PT` | `2029`    |
+| `/collection-services/payments/PT/_workflow` | `CR_PT` | `2028`    |

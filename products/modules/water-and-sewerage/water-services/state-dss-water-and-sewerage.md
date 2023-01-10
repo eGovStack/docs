@@ -1908,13 +1908,13 @@ This graph represents the ULBs based on the target achieved in bar chart represe
 
 This graph shows the collection amount based on the usage/property type and this amount will change as per the denomination filter change.
 
-![](<../../../../.gitbook/assets/image (13) (2).png>)
+![](<../../../../.gitbook/assets/image (13).png>)
 
 #### **W\&S Collection by Channel Type** <a href="#w-and-s-collection-by-channel-type" id="w-and-s-collection-by-channel-type"></a>
 
 This graph shows the collection amount based on the collection channel type(eg-online, counter, etc) and this amount will change as per the denomination filter change.
 
-![](<../../../../.gitbook/assets/image (2).png>)
+![](<../../../../.gitbook/assets/image (2) (1).png>)
 
 #### **W\&S Key Financial Indicators** <a href="#w-and-s-key-financial-indicators" id="w-and-s-key-financial-indicators"></a>
 
@@ -1932,7 +1932,7 @@ On click of any district name will enter into drill-down charts, which will repr
 
 On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
 
-![](<../../../../.gitbook/assets/image (24) (2).png>)
+![](<../../../../.gitbook/assets/image (24).png>)
 
 #### **W\&S Tax Heads** <a href="#w-and-s-tax-heads" id="w-and-s-tax-heads"></a>
 
@@ -1940,11 +1940,11 @@ This tabular chart representation graph shows multiple W\&S information like Tot
 
 _**table**_ type allows to addition of multiple aggregated fields.
 
-&#x20;![](<../../../../.gitbook/assets/image (7) (2).png>)
+&#x20;![](<../../../../.gitbook/assets/image (7) (3).png>)
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 
-![](<../../../../.gitbook/assets/image (20).png>)
+![](<../../../../.gitbook/assets/image (20) (2).png>)
 
 On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
 
@@ -1963,7 +1963,7 @@ The overview graph contains multiple data information as below in the selected t
 * **Water-Non Metered Connections:** This represents the total active non-metered water connections.
 * **Sewerage Connections:** This represents the total active sewerage connections.
 
-![](<../../../../.gitbook/assets/image (1) (1).png>)
+![](<../../../../.gitbook/assets/image (1) (1) (3).png>)
 
 **Total Cumulative Connections**
 
@@ -1977,13 +1977,13 @@ This Graph contains the Water and Sewerage connections information on a monthly 
 
 This graph shows the active Water connections based on the usage/property type.
 
-![](<../../../../.gitbook/assets/image (7) (2) (1).png>)
+![](<../../../../.gitbook/assets/image (7) (2).png>)
 
 **Sewerage Connections by Usage Type**
 
 This graph shows the active Sewerage connections based on the usage/property type.
 
-![](<../../../../.gitbook/assets/image (23).png>)
+![](<../../../../.gitbook/assets/image (23) (2).png>)
 
 #### **W\&S Connections by Channel Type** <a href="#w-and-s-connections-by-channel-type" id="w-and-s-connections-by-channel-type"></a>
 
@@ -1999,7 +1999,7 @@ _**xtable**_ type allows the addition of multiple computed fields with the aggre
 
 To add multiple computed columns,  **computedFields** \[]  where actionName (IComputedField\<T> interface), fields \[] names as in exist in query key, newField as name to appear for computation must be defined.
 
-![](<../../../../.gitbook/assets/image (19).png>)
+![](<../../../../.gitbook/assets/image (19) (2).png>)
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 
@@ -2007,7 +2007,7 @@ On click of any district name will enter into drill-down charts, which will repr
 
 On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
 
-![](<../../../../.gitbook/assets/image (12) (2).png>)
+![](<../../../../.gitbook/assets/image (12).png>)
 
 ### **Newly Introduced Property** <a href="#newly-introduced-property" id="newly-introduced-property"></a>
 

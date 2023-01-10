@@ -2,15 +2,17 @@
 
 ## **Search Receipt**
 
-## **Objective**
+## **Overview**
 
-Provide employees with the option to search receipts specific to a module, download receipts, check its current status and cancel selected receipts.
+Provide employees with the option to search receipts specific to a module, download receipts, check the current status and cancel selected receipts.
 
-Once the user login with **CR\_PT** role, the system displays the Receipts module card along with the  Total Receipts count.
+## Workflow Details
+
+Once the user logins with the **CR\_PT** role, the system displays the Receipts module card along with the  Total Receipts count.
 
 ![](<../../../../../.gitbook/assets/image (131).png>)
 
-Clicking on Search receipts redirects users to the Inbox/search receipt screen.
+Clicking on the Search Receipts redirects users to the Inbox/search receipt screen.
 
 Route -[ ![](https://cdn.jsdelivr.net/npm/@egovernments/digit-ui-css/img/browser-icon.png)mSeva](https://qa.digit.org/digit-ui/employee/receipts/inbox)
 
@@ -19,7 +21,7 @@ Route -[ ![](https://cdn.jsdelivr.net/npm/@egovernments/digit-ui-css/img/browser
 Inbox File details\
 [https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/receipts/src/pages/ReceiptInbox.js](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/receipts/src/pages/ReceiptInbox.js)
 
-## Technical Implementation Details
+## Technical Implementation
 
 MDMS Configs used in this inbox screen `ReceiptStatus` show the required status in the inbox similarly `uiCommonPay` fetches the service categories.
 
@@ -81,8 +83,7 @@ rainmaker-receipts
 
 Only the CR\_PT role is allowed to use this module.
 
-|                                           |           |               |
-| ----------------------------------------- | --------- | ------------- |
-| **API**                                   | **ROLES** | **ACTION ID** |
-| `egov-mdms-service/v1/_search`            | `CR_PT`   | `954`         |
-| `collection-services/payments/PT/_search` | `CR_PT`   | `2029`        |
+| API                                       | Roles   | Action ID |
+| ----------------------------------------- | ------- | --------- |
+| `egov-mdms-service/v1/_search`            | `CR_PT` | `954`     |
+| `collection-services/payments/PT/_search` | `CR_PT` | `2029`    |

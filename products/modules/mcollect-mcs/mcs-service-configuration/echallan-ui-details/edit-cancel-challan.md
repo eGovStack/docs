@@ -33,7 +33,7 @@ Update challan can be used to edit only Tax head information. Any other informat
 
 ![](../../../../../.gitbook/assets/image-20210514-104431.png)
 
-Once you click on update challan `echallan-services/eChallan/v1/_update?` API will be called and challan will be updated accordingly.
+Once you click on update challan `echallan-services/eChallan/v1/_update?` API will be called and the challan will be updated accordingly.
 
 ## **Localisation Module**
 
@@ -49,20 +49,18 @@ rainmaker-uc
 
 ## **Role Action Mapping**
 
-|                          |                                        |           |               |
-| ------------------------ | -------------------------------------- | --------- | ------------- |
-| [**S.NO**](http://s.no/) | **API**                                | **ROLES** | **ACTION ID** |
-| 1                        | egov-mdms-service/v1/\_search          |           | 954           |
-| 2                        | echallan-services/eChallan/v1/\_update | UC\_EMP   | 2117          |
-| 3                        | egov-pdf/download/UC/mcollect-challan  | UC\_EMP   | 2115          |
-| 4                        | echallan-services/eChallan/v1/\_search | UC\_EMP   | 2114          |
-| 5                        | billing-service/bill/v2/\_search       |           | 1861          |
+| API                                    | Roles   | Action ID |
+| -------------------------------------- | ------- | --------- |
+| egov-mdms-service/v1/\_search          |         | 954       |
+| echallan-services/eChallan/v1/\_update | UC\_EMP | 2117      |
+| egov-pdf/download/UC/mcollect-challan  | UC\_EMP | 2115      |
+| echallan-services/eChallan/v1/\_search | UC\_EMP | 2114      |
+| billing-service/bill/v2/\_search       |         | 1861      |
 
 ## **Documents and Resources Links**
 
-|                         |                                                                                            |
+| Related Title           | Documentation                                                                              |
 | ----------------------- | ------------------------------------------------------------------------------------------ |
-| **Related Title**       | **Documentation**                                                                          |
 | MCollect Create Challan | [eChallan - Technical Documentation](./)                                                   |
 | MCollect Search Challan | [Search Challan and Pay Challan](search-and-pay-challan.md)                                |
 | MCollect Pay Challan    | [BillGenie](https://digit-discuss.atlassian.net/wiki/spaces/EGR/pages/436502610/BillGenie) |
