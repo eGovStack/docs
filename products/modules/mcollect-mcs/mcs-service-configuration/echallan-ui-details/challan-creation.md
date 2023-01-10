@@ -8,7 +8,7 @@ Provide employees with the option to create Challan, by selecting the service ca
 
 ### **MCollect - Create Challan**
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 File Path:[ <img src="https://github.com/fluidicon.png" alt="" data-size="line">digit-ui-internals/CreateChallan.js at main · egovernments/digit-ui-internals](https://github.com/egovernments/digit-ui-internals/blob/main/packages/modules/mCollect/src/pages/employee/CreateChallan.js)
 

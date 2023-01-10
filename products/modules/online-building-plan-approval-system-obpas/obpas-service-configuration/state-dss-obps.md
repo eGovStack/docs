@@ -1314,7 +1314,7 @@ More details about the respective charts are below:
 * **Avg. days to issue OC** - This represents the average number of days taken to issue an OC.
 * **SLA Compliance (OC)** - This represents the percentage of OCs issued within SLA
 
-![](<../../../../.gitbook/assets/image (1) (1).png>)
+![](<../../../../.gitbook/assets/image (1) (4).png>)
 
 **Total Cumulative Collection:** This graph contains the OBPS collection amount information on a monthly basis as a cumulative line graph for each OBPS collection separately. This changes as per the denomination amount filter selection.
 
@@ -1334,7 +1334,7 @@ More details about the respective charts are below:
 
 &#x20;**Top 3 Performing ULBs:** This card will show the Top 3 Performing ULBs based on the percentage of permits issued. The number of permits issued / Number of applications.
 
-![](<../../../../.gitbook/assets/image (6).png>)
+![](<../../../../.gitbook/assets/image (6) (3).png>)
 
 &#x20;**Bottom 3 Performing States:** This card shows the bottom 3 Performing States/ULBs/Wards based on the percentage of permits issued. Number of Permits issued / Number of applications
 
@@ -1342,15 +1342,15 @@ More details about the respective charts are below:
 
 **Permits Issued by Risk Type:** This chart is a pie chart showing the bifurcation of total permits issued by risk type (low risk, medium risk, high risk) for the applied date filter.
 
-![](<../../../../.gitbook/assets/image (4) (3).png>)
+![](<../../../../.gitbook/assets/image (4) (1).png>)
 
 &#x20;**Permits Issued by Occupancy Type:** This chart is a pie chart showing the bifurcation of total permits issued by occupancy type (Residential, Institutional etc) for the applied date filter.
 
-![](<../../../../.gitbook/assets/image (5) (2).png>)
+![](<../../../../.gitbook/assets/image (5).png>)
 
 **Service Report:** This tabular chart representation graph shows information about multiple OBPS-related categories like Total Collection or Total Cumulative Collection, Total Plans Scrutinized, Total applications submitted, Total permits issued, Avg. days to issue a permit, SLA Compliance (Permits), Total OC Plans scrutinized, Total OC submitted, Total OC issued, Deviation Percentage, Avg. days to issue OC, SLA Compliance (OC), Total OCs with deviation. This table also shows the data at the state level and also has the drill-down chart for each state to ULB and from ULB to ward level data for the same.
 
-<figure><img src="../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on any DDR name drills down the charts to show the specified state data.
 

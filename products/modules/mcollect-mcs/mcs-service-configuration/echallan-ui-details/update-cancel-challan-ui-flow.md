@@ -52,7 +52,7 @@ This pay screen is common for all the modules.
 
 Clicking on the Collect Payment button payment allows users to collect and route to the acknowledgement screen it is common for all modules.
 
-<figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Click on Print Receipt, `qa.digit.org/collection-services/payments/{challanBusinessService}/_search` (we need to configure bussinessServices to the respective roles in the MDMS like below ) API will get the payment response, by using that response again we need to call `pdf-service/v1/_create` API.
 

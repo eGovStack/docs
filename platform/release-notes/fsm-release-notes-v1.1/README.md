@@ -28,38 +28,38 @@ FSM 1.1 is a release that has a few functional changes.
 
 ### UI Technical Documents
 
-{% content-ref url="../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-ui-docs/fsm-citizen-ui.md" %}
-[fsm-citizen-ui.md](../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-ui-docs/fsm-citizen-ui.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-ui-docs/fsm-employee-ui.md" %}
-[fsm-employee-ui.md](../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-ui-docs/fsm-employee-ui.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-ui-docs/fsm-dso-ui.md" %}
-[fsm-dso-ui.md](../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-ui-docs/fsm-dso-ui.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-ui-docs/fsm-fstpo-ui.md" %}
-[fsm-fstpo-ui.md](../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-ui-docs/fsm-fstpo-ui.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Backend Service Documents
 
-{% content-ref url="../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-service-configuration-v1.1.md" %}
-[fsm-service-configuration-v1.1.md](../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-service-configuration-v1.1.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-calculator-v1.1.md" %}
-[fsm-calculator-v1.1.md](../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-calculator-v1.1.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-vehicle-registry-v1.1.md" %}
-[fsm-vehicle-registry-v1.1.md](../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-vehicle-registry-v1.1.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-vendor-registry-v1.1.md" %}
-[fsm-vendor-registry-v1.1.md](../../../products/modules/faecal-sludge-management-fsm/fsm-service-configuration/fsm-vendor-registry-v1.1.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 &#x20;\

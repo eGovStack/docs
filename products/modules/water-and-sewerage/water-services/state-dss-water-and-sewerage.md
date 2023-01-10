@@ -1890,7 +1890,7 @@ This Graph contains the Water and Sewerage collection amount information on a mo
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
-![](<../../../../.gitbook/assets/image (25) (2).png>)
+![](<../../../../.gitbook/assets/image (25).png>)
 
 #### **Top ULB By Performance**  <a href="#top-ulb-by-performance" id="top-ulb-by-performance"></a>
 
@@ -1902,13 +1902,13 @@ This graph represents the ULBs based on the Target achieved in bar chart represe
 
 This graph represents the ULBs based on the target achieved in bar chart representation with the % of target achieved in ascending order.
 
-![](<../../../../.gitbook/assets/image (18).png>)
+![](<../../../../.gitbook/assets/image (18) (3).png>)
 
 **W\&S Collection by Usage Type**
 
 This graph shows the collection amount based on the usage/property type and this amount will change as per the denomination filter change.
 
-![](<../../../../.gitbook/assets/image (13).png>)
+![](<../../../../.gitbook/assets/image (13) (1).png>)
 
 #### **W\&S Collection by Channel Type** <a href="#w-and-s-collection-by-channel-type" id="w-and-s-collection-by-channel-type"></a>
 
@@ -1940,7 +1940,7 @@ This tabular chart representation graph shows multiple W\&S information like Tot
 
 _**table**_ type allows to addition of multiple aggregated fields.
 
-&#x20;![](<../../../../.gitbook/assets/image (7) (3).png>)
+&#x20;![](<../../../../.gitbook/assets/image (7) (1).png>)
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 
@@ -1963,7 +1963,7 @@ The overview graph contains multiple data information as below in the selected t
 * **Water-Non Metered Connections:** This represents the total active non-metered water connections.
 * **Sewerage Connections:** This represents the total active sewerage connections.
 
-![](<../../../../.gitbook/assets/image (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (1) (1).png>)
 
 **Total Cumulative Connections**
 
@@ -1971,7 +1971,7 @@ This Graph contains the Water and Sewerage connections information on a monthly 
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
-![](<../../../../.gitbook/assets/image (5) (2) (1).png>)
+![](<../../../../.gitbook/assets/image (5) (2).png>)
 
 #### **Water Connections by Usage Type** <a href="#water-connections-by-usage-type" id="water-connections-by-usage-type"></a>
 
@@ -1989,7 +1989,7 @@ This graph shows the active Sewerage connections based on the usage/property typ
 
 This graph shows the active water and sewerage connections by channel type(eg-online, counter, etc).
 
-![](<../../../../.gitbook/assets/image (27).png>)
+![](<../../../../.gitbook/assets/image (27) (18).png>)
 
 **W\&S Connection Ageing**
 
@@ -1999,7 +1999,7 @@ _**xtable**_ type allows the addition of multiple computed fields with the aggre
 
 To add multiple computed columns,  **computedFields** \[]  where actionName (IComputedField\<T> interface), fields \[] names as in exist in query key, newField as name to appear for computation must be defined.
 
-![](<../../../../.gitbook/assets/image (19).png>)
+![](<../../../../.gitbook/assets/image (19) (2).png>)
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 

@@ -29,7 +29,7 @@ Click on the **New Collection** button on the screen. This will open a new colle
 
 ![](https://docs.google.com/drawings/u/0/d/sZFok4oTVR3-Z5P6RpiHlrQ/image?w=624\&h=184\&rev=57\&ac=1\&parent=1GZKzf7O\_6WDB5ba1gb6QUT6CqipoQzuRuWT44fTAgGo)
 
-Enter the **Mobile No.** and **Consumer Name** of the payee.
+Enter the **Mobile No.** and the **Consumer Name** of the payee.
 
 ![](https://docs.google.com/drawings/u/0/d/sU091UrGzf-BIhQXc-K1OnA/image?w=598\&h=349\&rev=65\&ac=1\&parent=1GZKzf7O\_6WDB5ba1gb6QUT6CqipoQzuRuWT44fTAgGo)
 
@@ -41,7 +41,7 @@ Enter the **From Date** and **To Date** to identify the applicable payment perio
 
 Click on the **Next** button to move to the payment section. The **Payment Collection Details** page displays the fee details and captures the payment form. The **Fee Details** panel displays the fee breakup and **Total Amount** details.
 
-The **Capture Payment** panel displays the available payment methods. Click on the preferred payment tab. The available payment tabs are **Cash, Cheque, Credit/Debit Card.**
+The **Capture Payment** panel displays the available payment methods. Click on the preferred payment tab. The available payment tabs are **Cash, Cheque, and Credit/Debit Card.**
 
 Enter the **Paid By** and the **Payee Name** details.
 

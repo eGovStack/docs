@@ -1283,7 +1283,7 @@ State DSS contains the following charts in Fire NOC:
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
-![](<../../../../.gitbook/assets/image (44) (1).png>)
+![](<../../../../.gitbook/assets/image (44).png>)
 
 **Total applications vs Provisional NOCs issued vs Actual NOCs issued:** This graph contains the Fire NOC showing total applications submitted vs provisional NOCs issued vs actual NOCs issued for a given month collection separately. This will change as per the denomination amount filter selection.
 
