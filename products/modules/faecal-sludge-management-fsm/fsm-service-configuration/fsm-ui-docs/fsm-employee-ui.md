@@ -109,4 +109,4 @@ Code for handling vehicle trip timeline data available here: _frontend/micro-ui/
 
 ![](<../../../../../.gitbook/assets/image (8) (1).png>)
 
-![](<../../../../../.gitbook/assets/image (14) (1).png>)
+![](<../../../../../.gitbook/assets/image (14) (1) (1).png>)

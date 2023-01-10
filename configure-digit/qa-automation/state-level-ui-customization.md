@@ -70,7 +70,7 @@ Add the state-level tests in this new maven project and use the already existing
 
 * Add testing.xml with the test which is needed to run
 
-![](<../../.gitbook/assets/image (12) (1).png>)
+![](<../../.gitbook/assets/image (12) (1) (1).png>)
 
 * To run the tests, execute the following maven command:
 

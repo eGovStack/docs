@@ -1232,41 +1232,41 @@ DSS consists of the following charts in mCollect:
 * **Total Receipts**: This represents the total number of receipts.
 * **Total Categories**: Number of categories against which miscellaneous collections have been made.
 
-![](<../../../../.gitbook/assets/image (20).png>)
+![](<../../../../.gitbook/assets/image (2).png>)
 
 **Total Cumulative Collection:** This Graph contains the mCollect collection amount information on a monthly base as a cumulative line graph. This will change as per the denomination amount filter selection.
 
-![](<../../../../.gitbook/assets/image (16).png>)
+![](<../../../../.gitbook/assets/image (3).png>)
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
 **Receipts by Payment Mode:** This graph represents the number of receipts according to the payment mode used.
 
-![](<../../../../.gitbook/assets/image (2).png>)
+![](<../../../../.gitbook/assets/image (34).png>)
 
 **Collection by Payment Mode:** This graph represents the total collection according to the payment mode used.
 
-![](<../../../../.gitbook/assets/image (9).png>)
+![](<../../../../.gitbook/assets/image (14).png>)
 
 **Challan Count By Status:** This graph shows the total number of challans according to status
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (12).png>)
 
 **Receipts Count by Status:** This graph shows the total number of receipts according to status
 
-![](<../../../../.gitbook/assets/image (7).png>)
+![](<../../../../.gitbook/assets/image (33).png>)
 
 **Collection by Status:** This graph shows the total collection according to status
 
-![](<../../../../.gitbook/assets/image (1).png>)
+![](<../../../../.gitbook/assets/image (25).png>)
 
 **Top Categories Collection:** This graph shows the category-wise collection for all the categories in descending order.
 
-<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 **Monthly Collections:** This shows the monthly break-up of total collections and the total number of receipts.
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 **Collection Report:** This tabular chart representation graph shows multiple mCollect information like Total Challans, Total Collection and the total number of receipts. This table also shows the data at the district level and the drill-down chart for each district to ULB and from ULBs to ward level data for the same.
 
@@ -1274,15 +1274,15 @@ _**xtable**_ type allows the addition of multiple computed fields with the aggre
 
 To add multiple computed columns,  **computedFields** \[]  where actionName (IComputedField\<T> interface), fields \[] names as in exist in query key, newField as name to appear for computation must be defined.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on any district name drills down charts to provide the data specific to the listed District.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on the ULB navigates to the wards for the specified ULB and displays the ward-specific data.
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Common Properties Available <a href="#common-properties-available" id="common-properties-available"></a>
 

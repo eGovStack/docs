@@ -117,7 +117,7 @@ The link for the MDMS changes made is given below.
 
 ## Schedule Action For Post Pay In DSO <a href="#schedule-action-for-post-pay-in-dso" id="schedule-action-for-post-pay-in-dso"></a>
 
-![](<../../../../../.gitbook/assets/image (17) (1).png>)
+![](<../../../../../.gitbook/assets/image (17) (1) (1).png>)
 
 Schedule Action is added for post-pay applications where DSOs can schedule the trip by entering the number of trips.
 
