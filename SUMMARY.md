@@ -16,7 +16,7 @@
     * [Property Tax Release Notes](platform/release-notes/property-tax-release-notes.md)
   * [Platform Features](platform/platform-features.md)
   * [Architecture](platform/architecture.md)
-  * [Specifications](https://standards.digit.org/)
+  * [Specifications](https://specs.digit.org/)
   * [Installation](installation/README.md)
     * [Setup Basics](installation/more-deploy-docs/README.md)
       * [Setup Requirements](installation/more-deploy-docs/setup-digit/README.md)
