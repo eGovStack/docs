@@ -63,8 +63,8 @@ This checklist covers the activities which are specific to the entity.
 
 ## Attachments <a href="#attachments" id="attachments"></a>
 
-[Configuration Data Templateconfiguration-data-template-bank-branch.xlsx - 9KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2Fb16442703f47d0b0661618b2d9fdfd4e8e07d2d4.xlsx?generation=1602050612563819\&alt=media)
+{% file src="../../../../.gitbook/assets/Configuration Data Template - Bank Branch.xlsx" %}
 
-[Sample Datasample-confugration-data-bank-branch.xlsx - 9KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2Fd214ef43cac480d75ca4f204c02b022e40477e9f.xlsx?generation=1602050612420139\&alt=media)
+{% file src="../../../../.gitbook/assets/Sample Confugration Data - Bank Branch.xlsx" %}
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

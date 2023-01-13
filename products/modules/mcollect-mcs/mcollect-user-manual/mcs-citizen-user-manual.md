@@ -14,9 +14,13 @@ The citizen pays the fees for miscellaneous services through the CEs or FEs. Onc
 
 ## **Search Download And Print Receipts**
 
-Citizens can search for payment receipts and download or print these online. To search for payment receipts navigate to the **Collections** option in the sidebar main menu.
+Citizens can search for payment receipts and download or print these online. To search for payment receipts navigate to the **mCollect** option in the sidebar main menu. Click on **Search Challan**.
+
+![](<../../../../.gitbook/assets/image (45).png>)
 
 Enter the relevant search parameter. The system enables you to search using payment **Receipt No.** or **Service Category**, or payee **Mobile No.** Click on the **Search** button.
+
+<figure><img src="../../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 The system will display the relevant search results in the panel below. Click on the relevant record to view the payment receipt.
 

@@ -2,7 +2,7 @@
 
 ## Introduction <a href="#introduction" id="introduction"></a>
 
-A chart of Accounts (COA) is a listing of the Ledger codes that a State or ULB’s has identified and made available for recording transactions in its general ledger. COA is a standard data that need to be set up as per the National Municipal Accounting Manual or Respective State-wise manual. Click [here](http://www.cmao.nic.in/Resources/National%20Accounting%20Manual.pdf) for the NMAM manual. The COA definition can consist of 3 or 4 levels of hierarchy. Ex: Major->Minor->Detailed (3 levels) or Major->Minor->Sub Minor->Detailed (4 Levels). It is up to the state to define the levels required depending on the reporting needs. Detailed code is the node or the level at which the transaction is done.
+A chart of Accounts (COA) is a listing of the Ledger codes that a State or ULBs has identified and made available for recording transactions in its general ledger. COA is a standard data that need to be set up as per the National Municipal Accounting Manual or Respective State-wise manual. Click [here](http://210.212.227.99/adminx/na\_mu\_ac\_ma\_Staff\_.pdf) for the NMAM manual. The COA definition can consist of 3 or 4 levels of hierarchy. Ex: Major->Minor->Detailed (3 levels) or Major->Minor->Sub Minor->Detailed (4 Levels). It is up to the state to define the levels required depending on the reporting needs. Detailed code is the node or the level at which the transaction is done.
 
 ## Data Table <a href="#data-table" id="data-table"></a>
 

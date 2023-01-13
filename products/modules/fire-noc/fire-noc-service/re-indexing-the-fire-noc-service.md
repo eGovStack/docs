@@ -1,15 +1,14 @@
 # Re-Indexing the Fire NOC Service
 
-#### Overview: <a href="#overview" id="overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
-We are using re-indexing to get all the data to respective indexer. We have 2 steps for this. First as to run the connector from playground, which is followed by legacyindexer service call from indexer service, which internally call the respective plain search service to get the data and to send to respective indexer.
+We are using re-indexing to get all the data to the respective indexer. We have 2 steps for this. First is to run the connector from the playground, which is followed by legacyindexer service call from the indexer service, which internally calls the respective plain search service to get the data and to send it to the respective indexer.
 
-\
-**Prerequisites**:
+## **Pre-requisites**
 
 * Access to kubectl of the environment targetted
 * Postman scripts
-* Plain search apis in the respective services
+* Plain search APIs in the respective services
 
 **fire noc-services reindexing steps**
 

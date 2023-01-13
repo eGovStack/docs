@@ -6,7 +6,7 @@ description: Service configuration
 
 ## Overview
 
-The main objective of the Fire-NOC module is to provide a **No Objection Certificate** indicating that the building is designed as per fire safety norms and regulation.
+The main objective of the Fire-NOC module is to provide a **No Objection Certificate** indicating that the building is designed as per fire safety norms and regulations.
 
 ## Pre-requisites
 
@@ -23,7 +23,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 ## Key Functionalities
 
-* Used for No Objection Certificate generations indicating that the building is designed as per fire safety norms and regulation.
+* Used for No Objection Certificate generations indicating that the building is designed as per fire safety norms and regulations.
 * Generate application number and fire noc number
 * Support workflow
 * Provide notification on various status changes for an application
@@ -33,16 +33,15 @@ Before you proceed with the documentation, make sure the following pre-requisite
 1. Add mdms configs required for firenoc service and restart mdms service.
 2. Deploy the latest version of firenoc-services service.
 3. Add firenoc-services persister yaml path in persister configuration and restart persister service.
-4. Add Role-Action mapping for API’s.
+4. Add Role-Action mapping for APIs.
 5. Create businessService (workflow configuration) according to firenoc registration.
 
 ## Configuration Details
 
 Following are the properties in application.properties file in trade firenoc-service which are configurable.
 
-|                                  |                                            |                                                                                        |
+| Property                         | Value                                      | Remarks                                                                                |
 | -------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------- |
-| **Property**                     | **Value**                                  | **Remarks**                                                                            |
 | EGOV\_APPLICATION\_FORMATE       | PB-FN-\[cy:yyyy-MM-dd]-\[SEQ\_EG\_TL\_APL] | The format of the firenoc application number                                           |
 | EGOV\_CIRTIFICATE\_FORMATE       | PB-FN-\[cy:yyyy-MM-dd]-\[SEQ\_EG\_PT\_LN]  | The format of the firenoc certificate number                                           |
 | EGOV\_DEFAULT\_STATE\_ID         | pb                                         | Variable store the default value of state tenantid                                     |
@@ -56,7 +55,7 @@ Following are the properties in application.properties file in trade firenoc-ser
 
 **MDMS Configuration**
 
-Firenoc service makes calls to egov-mdms-service to fetch required masters. These are significant in validations of application.
+Firenoc service makes calls to egov-mdms-service to fetch required masters. These are significant in the validation of the application.
 
 | Fire-NOC masters                                                                                                                  | Description                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -367,19 +366,19 @@ BasePath /firenoc-services/v1/\[API endpoint]
 
 a) \_create
 
-Create API call is called with INITIATED action to create new application. In this API call we validate request body(using ajv module for contract specific validation and explicit checking for user related validation checks), enrich audit details, generate application no using idgen, persist data using persister and return response.
+Create API call is called with INITIATED action to create a new application. In this API call, we validate the request body(using ajv module for contract-specific validation and explicit checking for user-related validation checks), enrich audit details, generate application no using idgen, persist data using persister and return response.
 
 **Allowed user roles:** NOC\_CEMP, CITIZEN
 
 b) \_update
 
-Once application is created it can be updated by citizen or employee while taking action on application
+Once the application is created it can be updated by citizens or employees while taking action on the application
 
 **Allowed user roles:** NOC\_CEMP, CITIZEN, NOC\_DOC\_VERIFIER, NOC\_FIELD\_INSPECTOR, NOC\_APPROVER
 
 c) \_search
 
-Search API call is used to search for application. If search call is being made by CITIZEN then only his application would be fetched applying other search filters. For employee search based on search filter will return data.
+The search API call is used to search for applications. If a search call is being made by CITIZEN then only his application would be fetched by applying other search filters. For employee search based on search filter will return data.
 
 **Allowed user roles:** NOC\_CEMP, CITIZEN, NOC\_DOC\_VERIFIER, NOC\_FIELD\_INSPECTOR, NOC\_APPROVER, EMPLOYEE
 
@@ -387,7 +386,7 @@ Search API call is used to search for application. If search call is being made 
 
 ### Integration Scope
 
-The Fire-Noc service is used to provide a **No Objection Certificate** indicating that the building is designed as per fire safety norms and regulation.
+The Fire-Noc service is used to provide a **No Objection Certificate** indicating that the building is designed as per fire safety norms and regulations.
 
 ### Integration Benefits
 
@@ -397,15 +396,11 @@ The Fire-Noc service is used to provide a **No Objection Certificate** indicatin
 
 ### Steps to Integration
 
-To integrate, host of firenoc-services service should be overwritten in helm chart.
+To integrate, the host of firenoc-services service should be overwritten in the helm chart.
 
-1. firenoc-services/v1/\_create should be added as the create endpoint for creating fire noc application in the system.
+1. firenoc-services/v1/\_create should be added as the create endpoint for creating the fire noc application in the system.
 2. firenoc-services/v1/\_search should be added as the search endpoint. This method handles all requests to search existing records depending on different search criteria.
 3. firenoc-services/v1/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update the status of the application based on workflow.
-
-### Interaction Diagram
-
-To Do
 
 ## Reference Docs
 

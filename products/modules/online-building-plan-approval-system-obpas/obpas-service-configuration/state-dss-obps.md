@@ -1302,7 +1302,7 @@ More details about the respective charts are below:
 * **Today's Collection -** This represents today’s collection amount for OBPS Application Fee + Permit Fee.
 * **Total Collection** - This represents the total collection amount for OBPS Application Fee + Permit Fee.
 
-![](<../../../../.gitbook/assets/image (9).png>)
+![](<../../../../.gitbook/assets/image (9) (2).png>)
 
 **Overview-Service:** The Overview-Service chart contains multiple data information as below in the selected time period.
 
@@ -1320,7 +1320,7 @@ More details about the respective charts are below:
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
-![](<../../../../.gitbook/assets/image (38).png>)
+![](<../../../../.gitbook/assets/image (38) (2).png>)
 
 **Total permits issued vs Total OC submitted vs Total OC issued:** This graph shows the total permits issued vs total OC submitted vs total OC issued for a given time period in the form of a line chart.
 
@@ -1342,15 +1342,15 @@ More details about the respective charts are below:
 
 **Permits Issued by Risk Type:** This chart is a pie chart showing the bifurcation of total permits issued by risk type (low risk, medium risk, high risk) for the applied date filter.
 
-![](<../../../../.gitbook/assets/image (4) (1).png>)
+![](<../../../../.gitbook/assets/image (4) (1) (2).png>)
 
 &#x20;**Permits Issued by Occupancy Type:** This chart is a pie chart showing the bifurcation of total permits issued by occupancy type (Residential, Institutional etc) for the applied date filter.
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (5) (3).png>)
 
 **Service Report:** This tabular chart representation graph shows information about multiple OBPS-related categories like Total Collection or Total Cumulative Collection, Total Plans Scrutinized, Total applications submitted, Total permits issued, Avg. days to issue a permit, SLA Compliance (Permits), Total OC Plans scrutinized, Total OC submitted, Total OC issued, Deviation Percentage, Avg. days to issue OC, SLA Compliance (OC), Total OCs with deviation. This table also shows the data at the state level and also has the drill-down chart for each state to ULB and from ULB to ward level data for the same.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on any DDR name drills down the charts to show the specified state data.
 

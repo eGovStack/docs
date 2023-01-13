@@ -1908,7 +1908,7 @@ This graph represents the ULBs based on the target achieved in bar chart represe
 
 This graph shows the collection amount based on the usage/property type and this amount will change as per the denomination filter change.
 
-![](<../../../../.gitbook/assets/image (13) (1).png>)
+![](<../../../../.gitbook/assets/image (13) (1) (1).png>)
 
 #### **W\&S Collection by Channel Type** <a href="#w-and-s-collection-by-channel-type" id="w-and-s-collection-by-channel-type"></a>
 
@@ -1924,11 +1924,11 @@ _**xtable**_ type allows to the addition of multiple computed fields with the ag
 
 To add multiple computed columns,  **computedFields** \[]  where actionName (IComputedField\<T> interface), fields \[] names as in exist in query key, newField as name to appear for computation must be defined.
 
-![](<../../../../.gitbook/assets/image (15).png>)
+![](<../../../../.gitbook/assets/image (15) (2).png>)
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 
-![](<../../../../.gitbook/assets/image (22).png>)
+![](<../../../../.gitbook/assets/image (22) (2).png>)
 
 On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
 
@@ -1940,7 +1940,7 @@ This tabular chart representation graph shows multiple W\&S information like Tot
 
 _**table**_ type allows to addition of multiple aggregated fields.
 
-&#x20;![](<../../../../.gitbook/assets/image (7) (1).png>)
+&#x20;![](<../../../../.gitbook/assets/image (7) (1) (3).png>)
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 
@@ -1963,7 +1963,7 @@ The overview graph contains multiple data information as below in the selected t
 * **Water-Non Metered Connections:** This represents the total active non-metered water connections.
 * **Sewerage Connections:** This represents the total active sewerage connections.
 
-![](<../../../../.gitbook/assets/image (1) (1).png>)
+![](<../../../../.gitbook/assets/image (1) (1) (2).png>)
 
 **Total Cumulative Connections**
 
@@ -2007,7 +2007,7 @@ On click of any district name will enter into drill-down charts, which will repr
 
 On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
 
-![](<../../../../.gitbook/assets/image (12) (1).png>)
+![](<../../../../.gitbook/assets/image (12) (1) (2).png>)
 
 ### **Newly Introduced Property** <a href="#newly-introduced-property" id="newly-introduced-property"></a>
 

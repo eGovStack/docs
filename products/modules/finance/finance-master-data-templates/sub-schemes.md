@@ -61,8 +61,8 @@ This checklist covers the activities which are specific to the entity.
 
 ## Attachments <a href="#attachments" id="attachments"></a>
 
-[Configuration Data Templateconfiguration-data-template-sub-schemes.xlsx - 11KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2Fd158ffdd911fbe6065276581b636631eed4b17c5.xlsx?generation=1602050612245039\&alt=media)
+{% file src="../../../../.gitbook/assets/Configuration Data Template - Sub Schemes.xlsx" %}
 
-[Sample Datasample-confugration-data-sub-schemes.xlsx - 11KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2F5852ba15b0ab2c2b62a5d1d413e5f789b25e8a97.xlsx?generation=1602050612283769\&alt=media)
+{% file src="../../../../.gitbook/assets/Sample Confugration Data - Sub Schemes.xlsx" %}
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

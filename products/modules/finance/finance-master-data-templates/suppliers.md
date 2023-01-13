@@ -64,8 +64,8 @@ This checklist covers the activities which are specific to the entity.
 
 ## Attachments <a href="#attachments" id="attachments"></a>
 
-[Configuration Data Templateconfiguration-data-template-supplier.xlsx - 9KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2F7e62095d910d264a4bfc45775e67cee94dd1f5a8.xlsx?generation=1602050611451358\&alt=media)
+{% file src="../../../../.gitbook/assets/Configuration Data Template - Supplier.xlsx" %}
 
-[Sample Datasample-confugration-data-supplier.xlsx - 10KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2Fc7f2c8a90b1ad0c87985fd60468f2cd8c0c46ca3.xlsx?generation=1602050611597129\&alt=media)
+{% file src="../../../../.gitbook/assets/Sample Confugration Data - Supplier.xlsx" %}
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

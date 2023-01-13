@@ -54,8 +54,8 @@ This checklist covers the activities which are specific to the entity.
 
 ## Attachments <a href="#attachments" id="attachments"></a>
 
-[Configuration Data Templateconfiguration-data-template-subledger-category.xlsx - 12KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2F9c5fade5f56fc39a1701f99b609d8da8fbfa113c.xlsx?generation=1602050612156761\&alt=media)
+{% file src="../../../../.gitbook/assets/Configuration Data Template - Subledger Category.xlsx" %}
 
-[Sample Datasample-confugration-data-subledger-category.xlsx - 12KB](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MERG\_iQW5oN4ukgXP8K%2Fsync%2Fb824f66047387809cd951581d2700b2b702fc473.xlsx?generation=1602050612064671\&alt=media)
+{% file src="../../../../.gitbook/assets/Sample Confugration Data - Subledger Category.xlsx" %}
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
