@@ -1232,7 +1232,7 @@ DSS consists of the following charts in mCollect:
 * **Total Receipts**: This represents the total number of receipts.
 * **Total Categories**: Number of categories against which miscellaneous collections have been made.
 
-![](<../../../../.gitbook/assets/image (14) (3).png>)
+![](<../../../../.gitbook/assets/image (14) (1).png>)
 
 **Total Cumulative Collection:** This Graph contains the mCollect collection amount information on a monthly base as a cumulative line graph. This will change as per the denomination amount filter selection.
 
@@ -1242,7 +1242,7 @@ DSS consists of the following charts in mCollect:
 
 **Receipts by Payment Mode:** This graph represents the number of receipts according to the payment mode used.
 
-![](<../../../../.gitbook/assets/image (18) (4).png>)
+![](<../../../../.gitbook/assets/image (18).png>)
 
 **Collection by Payment Mode:** This graph represents the total collection according to the payment mode used.
 
@@ -1250,11 +1250,11 @@ DSS consists of the following charts in mCollect:
 
 **Challan Count By Status:** This graph shows the total number of challans according to status
 
-![](<../../../../.gitbook/assets/image (2) (1).png>)
+![](<../../../../.gitbook/assets/image (2) (4).png>)
 
 **Receipts Count by Status:** This graph shows the total number of receipts according to status
 
-![](<../../../../.gitbook/assets/image (11) (2).png>)
+![](<../../../../.gitbook/assets/image (11) (1).png>)
 
 **Collection by Status:** This graph shows the total collection according to status
 
@@ -1278,7 +1278,7 @@ To add multiple computed columns,  **computedFields** \[]  where actionName (ICo
 
 Clicking on any district name drills down charts to provide the data specific to the listed District.
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on the ULB navigates to the wards for the specified ULB and displays the ward-specific data.
 

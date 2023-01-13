@@ -63,10 +63,6 @@ So in future, if calculation logic needs to modify then changes can be carried o
 4. ULB Employee can update billing slab calling /firenoc-calculator/billingslab/\_update
 5. ULB Employee can search billing slab calling /firenoc-calculator/billingslab/\_search
 
-### Interaction Diagram
-
-TBD
-
 ## Reference Docs
 
 #### Doc Links <a href="#doc-links" id="doc-links"></a>

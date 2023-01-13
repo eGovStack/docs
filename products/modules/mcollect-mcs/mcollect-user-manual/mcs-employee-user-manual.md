@@ -63,7 +63,7 @@ To search for payment receipts navigate to the Universal Collections page in the
 
 Enter the relevant search parameter. The system enables you to search using payment **Receipt No**. or **Service Category**, or payee **Mobile No.** Click on the **Search** button.
 
-<figure><img src="../../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 The system will display the relevant search results in the panel below. Click on the relevant record to view the payment receipt. The system will generate a pdf format of the payment receipt.
 

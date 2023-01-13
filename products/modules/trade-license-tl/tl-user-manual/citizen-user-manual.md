@@ -126,7 +126,7 @@ If there are any changes in the trade details, click on the **Change** button ad
 
 Click on the **Submit** button once all changes are done and reviewed.
 
-![](<../../../../.gitbook/assets/image (4) (1) (2) (1).png>)
+![](<../../../../.gitbook/assets/image (4) (1) (2).png>)
 
 The Trade License is submitted for renewal.
 

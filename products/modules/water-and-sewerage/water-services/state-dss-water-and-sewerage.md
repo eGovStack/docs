@@ -1896,7 +1896,7 @@ This Graph contains the Water and Sewerage collection amount information on a mo
 
 This graph represents the ULBs based on the Target achieved in bar chart representation with the % of target achieved in descending order.
 
-![](<../../../../.gitbook/assets/image (28).png>)
+![](<../../../../.gitbook/assets/image (28) (8).png>)
 
 #### **Bottom ULB by Performance** <a href="#bottom-ulb-by-performance" id="bottom-ulb-by-performance"></a>
 
@@ -1908,13 +1908,13 @@ This graph represents the ULBs based on the target achieved in bar chart represe
 
 This graph shows the collection amount based on the usage/property type and this amount will change as per the denomination filter change.
 
-![](<../../../../.gitbook/assets/image (13) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (13) (1).png>)
 
 #### **W\&S Collection by Channel Type** <a href="#w-and-s-collection-by-channel-type" id="w-and-s-collection-by-channel-type"></a>
 
 This graph shows the collection amount based on the collection channel type(eg-online, counter, etc) and this amount will change as per the denomination filter change.
 
-![](<../../../../.gitbook/assets/image (2) (4).png>)
+![](<../../../../.gitbook/assets/image (2) (4) (1).png>)
 
 #### **W\&S Key Financial Indicators** <a href="#w-and-s-key-financial-indicators" id="w-and-s-key-financial-indicators"></a>
 
@@ -1944,7 +1944,7 @@ _**table**_ type allows to addition of multiple aggregated fields.
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 
-![](<../../../../.gitbook/assets/image (20).png>)
+![](<../../../../.gitbook/assets/image (20) (2).png>)
 
 On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
 
@@ -1963,7 +1963,7 @@ The overview graph contains multiple data information as below in the selected t
 * **Water-Non Metered Connections:** This represents the total active non-metered water connections.
 * **Sewerage Connections:** This represents the total active sewerage connections.
 
-![](<../../../../.gitbook/assets/image (1) (1) (2).png>)
+![](<../../../../.gitbook/assets/image (1) (1) (1).png>)
 
 **Total Cumulative Connections**
 
@@ -1971,7 +1971,7 @@ This Graph contains the Water and Sewerage connections information on a monthly 
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
-![](<../../../../.gitbook/assets/image (5) (2).png>)
+![](<../../../../.gitbook/assets/image (5) (2) (1).png>)
 
 #### **Water Connections by Usage Type** <a href="#water-connections-by-usage-type" id="water-connections-by-usage-type"></a>
 
@@ -2003,11 +2003,11 @@ To add multiple computed columns,  **computedFields** \[]  where actionName (ICo
 
 On click of any district name will enter into drill-down charts, which will represent that specific District data.
 
-![](<../../../../.gitbook/assets/image (16) (4).png>)
+![](<../../../../.gitbook/assets/image (16) (4) (2).png>)
 
 On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
 
-![](<../../../../.gitbook/assets/image (12) (1) (2).png>)
+![](<../../../../.gitbook/assets/image (12) (1) (3).png>)
 
 ### **Newly Introduced Property** <a href="#newly-introduced-property" id="newly-introduced-property"></a>
 
