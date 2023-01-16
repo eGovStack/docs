@@ -6,10 +6,10 @@ This document describes the steps to be followed to set up a new instance of Fin
 
 ### **Technical Prerequisites** <a href="#technical-prerequisites" id="technical-prerequisites"></a>
 
-* Prior Knowledge of Java/J2EE.
-* Prior Knowledge of Spring and Hibernate
+* Prior knowledge of Java/J2EE.
+* Prior knowledge of Spring and Hibernate
 * Prior knowledge of Maven
-* Prior knowledge of Git.
+* Prior knowledge of Git
 
 ### **Hardware/Software Prerequisites** <a href="#hardware-software-prerequisites" id="hardware-software-prerequisites"></a>
 
@@ -23,12 +23,12 @@ This document describes the steps to be followed to set up a new instance of Fin
 
 ### **Configurations and Setup** <a href="#configurations-and-setup" id="configurations-and-setup"></a>
 
-The [Co-existence repository](https://github.com/egovernments/egov-coexistence) is the base repository for the finance product and the client-specific data needs to be defined in the [Client implementation repository](https://github.com/egovernments/eGov-Punjab-Implementation/tree/punjab-financeerp-impl)
+The [Co-existence repository](https://github.com/egovernments/egov-coexistence) is the base repository for the finance product and the client-specific data needs to be defined in the client repository defined within the base repository.
 
 #### **How to set up a client implementation repository** <a href="#how-to-set-up-a-client-implementation-repository" id="how-to-set-up-a-client-implementation-repository"></a>
 
-1. Fork and create a client implementation repository from [Client implementation repository](https://github.com/egovernments/eGov-Punjab-Implementation/tree/punjab-financeerp-impl) to keep client-specific data and configurations.
-2. Any configurations and data specific to the client should be added in the client repository.
+1. Fork and create a client implementation repository from the base repository to keep client-specific data and configurations.
+2. Any configurations and data specific to the client should be added to the client repository.
 
 #### **Application Configuration** <a href="#application-configuration" id="application-configuration"></a>
 
@@ -64,7 +64,7 @@ secrets:
 
 #### **Set up a schema-based multi-tenant database** <a href="#set-up-a-schema-based-multi-tenant-database" id="set-up-a-schema-based-multi-tenant-database"></a>
 
-Finance co-existence service uses schema-based multi-tenancy, this means there will be one schema present for a city. The following are the configuration changes to set up this kind of database.
+Finance co-existence service uses schema-based multi-tenancy, which means there will be one schema present for a city. The following are the configuration changes to set up this kind of database.
 
 * Enable multi-tenancy by enabling the following property
 
@@ -243,7 +243,7 @@ scheduler: true
 
 #### DIGIT integration configuration <a href="#digit-integration-configuration" id="digit-integration-configuration"></a>
 
-Finance service reads data from multiple other DIGIT services. The following are the different services finance system reads data from. Update the domain URL of the respective service based on the service where it is running.
+The finance service reads data from multiple other DIGIT services. The following are the different services the finance system reads data from. Update the domain URL of the respective service based on the service where it is running.
 
 ```
 microservice: |
@@ -277,7 +277,7 @@ microservice: |
   * OnlineGLCodeMapping
 * Define all the departments in the [Departments](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/common-masters/Department.json) json
 * Define all the designations in the [Designations](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/common-masters/Designation.json) json
-* Configure finance tenants in the [Citymodule](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/tenant/citymodule.json) json to enable finance module in the ULB.
+* Configure finance tenants in the [Citymodule](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/tenant/citymodule.json) json to enable the finance module in the ULB.
 
 ```
 {
@@ -295,18 +295,18 @@ microservice: |
 ```
 
 * Define business services mapping in the [Business Service Mapping](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/FinanceService/BusinessServiceMapping.json) json to integrate different business services like Property Tax, Trade License and FireNOC etc with Finance and to post vouchers like demand and receipt vouchers. Enabling and disabling voucher posting for any service can be configured here.
-* Define the Tax head and instrument glcode mappings in the [Account Head Mapping](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/FinanceService/AccountheadMapping.json) json. This file contains each tax head wise glcode mapping and each instrument wise glcode mappings.
+* Define the Tax head and instrument glcode mappings in the [Account Head Mapping](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/FinanceService/AccountheadMapping.json) json. This file contains each tax head-wise glcode mapping and each instrument-wise glcode mapping.
 * Different instrument statuses can be defined in the [Instrument Status Mapping](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/FinanceService/EgfInstrumentStatusMapping.json) json file.
 * Different types of contractor bill templates are defined in the [AccountCode Template](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/FinanceService/AccountCodeTemplate.json) file. These templates will be used in the contractor bill creation screen to auto-populate the account codes.
 * Service-wise glcode mapping for the online instrument type for the particular city is defined in the [Online Instrument Type](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/amritsar/FinanceService/OnlineInstrumentType.json) json.
-* Define the business service wise bank account mappings in the [BankAccount Service Mapping](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/jalandhar/FinanceService/BankAccountServiceMapping.json) json file. These details to be configured city wise as the bank details are specific to a city.
+* Define the business service-wise bank account mappings in the [BankAccount Service Mapping](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/jalandhar/FinanceService/BankAccountServiceMapping.json) json file. These details are to be configured city-wise as the bank details are specific to a city.
 
-MDMS serach url is configured in the [Application Configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file.
+MDMS search URL is configured in the [Application Configuration](https://github.com/egovernments/egov-coexistence/blob/master/egov/egov-egi/src/main/resources/config/application-config.properties) file.
 
-#### Changes required to setup workspace in local machine <a href="#changes-required-to-setup-workspace-in-local-machine" id="changes-required-to-setup-workspace-in-local-machine"></a>
+#### Changes required to setup workspace in the local machine <a href="#changes-required-to-setup-workspace-in-local-machine" id="changes-required-to-setup-workspace-in-local-machine"></a>
 
-1. Setup Finance service workspace by following the instructions provided in [README](https://github.com/egovernments/egov-coexistence/blob/master/README.md).
-2. After set up is done, make the changes to the host file in the local machine, by mapping the domain URLs with a local IP address and save the changes. Restart your local machine to make the host mapping effective.
+1. Set up the Finance service workspace by following the instructions provided in [README](https://github.com/egovernments/egov-coexistence/blob/master/README.md).
+2. After set-up is done, make the changes to the host file in the local machine, by mapping the domain URLs with a local IP address and saving the changes. Restart your local machine to make the host mapping effective.
 
 ```
 $ vim /etc/hosts
@@ -316,13 +316,12 @@ $ vim /etc/hosts
 
 ### **Reference Docs**
 
-|                                         |                                                                                                                       |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **Title**                               | **Link**                                                                                                              |
-| API Contracts                           | [Voucher APIs](https://github.com/egovernments/egov-coexistence/blob/master/docs/voucher\_apis.yaml)                  |
-| Co-existence finance code available     | [Co-existence repository](https://github.com/egovernments/egov-coexistence)                                           |
-| Sample client implementation repository | [Punjab implementation repository](https://github.com/egovernments/eGov-Punjab-Implementation)                        |
-| Configuring MDMS                        | [Configuring Master Data](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/644349987/Configuring+Master+Data) |
-| Adding new service and CI/CD            | [CI/CD process](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/19333450/MS+-+Adding+new+service)          |
+|                                     |                                                                                                                       |
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Title**                           | **Link**                                                                                                              |
+| API Contracts                       | [Voucher APIs](https://github.com/egovernments/egov-coexistence/blob/master/docs/voucher\_apis.yaml)                  |
+| Co-existence finance code available | [Co-existence repository](https://github.com/egovernments/egov-coexistence)                                           |
+| Configuring MDMS                    | [Configuring Master Data](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/644349987/Configuring+Master+Data) |
+| Adding new service and CI/CD        | [CI/CD process](https://digit-discuss.atlassian.net/wiki/spaces/DOPS/pages/19333450/MS+-+Adding+new+service)          |
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
