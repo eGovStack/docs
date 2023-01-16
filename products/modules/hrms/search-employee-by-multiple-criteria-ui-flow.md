@@ -2,7 +2,7 @@
 
 URL - digit-ui/employee/hrms/inbox
 
-Admin can able to search Employee bases on multiple Filters and search Parameters
+Admin can search employees based on multiple filters and Search parameters
 
 Filter By
 
@@ -16,30 +16,25 @@ Search
 * Employee ID
 * Mobile Number
 
-Has a pagination feature
+The search screen has a pagination feature.
 
 ![](<../../../.gitbook/assets/image (165).png>)
 
 **On Hover** **of Roles Count**
 
-Logged User can able see the detail assigned roles
+Logged Users can see the detailed assigned roles
 
 ![](<../../../.gitbook/assets/image (141).png>)
 
-On click upon Employee Id Logged User are routed to Employee Detail screen
+On clicking upon Employee Id logged-in users are routed to the Employee Detail screen.
 
-|           |                                |                                                                                                                          |             |               |
-| --------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ----------- | ------------- |
-| **SL.No** | **API**                        | **Paramaters**                                                                                                           | **Role**    | **Access ID** |
-| 1         | `egov-hrms/employees/_search?` | <ul><li>tendantId</li><li>limit</li><li>orderby</li><li>offset</li><li>{Filter Params}</li><li>{Search Params}</li></ul> | HRMS\_ADMIN | `1752`        |
+| API                            | Parameters                                                                                                               | Role        | Access ID |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ----------- | --------- |
+| `egov-hrms/employees/_search?` | <ul><li>tendantId</li><li>limit</li><li>orderby</li><li>offset</li><li>{Filter Params}</li><li>{Search Params}</li></ul> | HRMS\_ADMIN | `1752`    |
 
-Primary Files
+Primary Files: [https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/Inbox.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/Inbox.js)
 
-[https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/Inbox.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/Inbox.js)
-
-Secondary Files
-
-[https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/DesktopInbox.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/DesktopInbox.js)
+Secondary Files: [https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/DesktopInbox.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/DesktopInbox.js)
 
 [https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/search.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/components/inbox/search.js)
 

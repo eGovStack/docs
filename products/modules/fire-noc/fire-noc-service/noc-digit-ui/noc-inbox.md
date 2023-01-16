@@ -6,7 +6,7 @@ Users can view all the applications assigned to them in the employee inbox. And 
 
 NOC Inbox uses InboxComposer React HOC to create the Inbox through various child components, for both mobile and desktop components.
 
-![](<../../../../.gitbook/assets/image (30) (1).png>)
+![](<../../../../../.gitbook/assets/image (30) (1).png>)
 
 ## API Details
 
@@ -34,7 +34,7 @@ curl 'https://qa.digit.org/inbox/v1/_search?_=1639397081025' \
 
 **NOCAccess function to view NOC Inbox**
 
-![](../../../../.gitbook/assets/image-20211213-120744.png)
+![](../../../../../.gitbook/assets/image-20211213-120744.png)
 
 Use the MDMS (available as blue hyperlinks) for selecting OBPS [application type](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/BPA/ApplicationType.json), [service type](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/BPA/ServiceType.json), risk type with business service and status filter.
 

@@ -10,7 +10,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 * _Java 8_
 * Kafka server is up and running
-* egov-persister service is running and has Hrms service persister config path added in it
+* egov-persister service is running and has the HRMS service persister config path added to it
 * PSQL server is running and a database is created to store employee data.
 
 ## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
@@ -34,17 +34,13 @@ Following are the properties in the application.properties file in HRMS service 
 | <p>egov.idgen.ack.name</p><p> </p>                | <p>hrms.employeecode</p><p> </p>                                                               | Key to be configured in Idgen alongwith the ID format to generate employee code.                                                                       |
 | egov.idgen.ack.format                             | <p>EMP-[city]-[SEQ_EG_HRMS_EMP_CODE]</p><p> </p>                                               | Format to be configured in ID gen to generate employee code.                                                                                           |
 
-&#x20;
-
 ## Interaction Diagram
 
 ![](../../../.gitbook/assets/hrms.png)
 
-
-
 ## Configuration Details <a href="#configuration-details" id="configuration-details"></a>
 
-Following are the list of masters required for HRMS:&#x20;
+Following is the list of masters required for HRMS:&#x20;
 
 #### common-masters:  <a href="#common-masters" id="common-masters"></a>
 
@@ -520,9 +516,9 @@ _Create messages to be sent on employee creation./ reactivation_&#x20;
 
 ## Service Details <a href="#service-details" id="service-details"></a>
 
-**Details of all the entities involved:**
+**Details of the entities involved**
 
-**Assignments:** Every employee is assigned a list of assignments, every assignment is a designation provided to that employee for a given period of time. These designations are mapped to departments. This also includes marking the employee as HOD for that department if needed. An employee can also provide information on who does he report to.
+**Assignments:** Every employee is assigned a list of assignments, every assignment is a designation provided to that employee for a given period of time. These designations are mapped to departments. This also includes marking the employee as HOD for that department if needed. An employee can also provide information on who he reports to.
 
 * **Constraints:**
   1. For a given period of time, an employee shouldn't have more than one assignment.
@@ -550,13 +546,13 @@ _Create messages to be sent on employee creation./ reactivation_&#x20;
 
     Details pertaining to educational details like Degree, Specialization must be configured.
 
-**Departmental Tests:** Captures details of the tests undertaken by the employee. Like the name of the test and year of passing.
+**Departmental Tests:** Captures details of the tests undertaken by the employee. Like the name of the test and the year of passing.
 
 *   **Constraints:**
 
     Test details must be configured in the system.
 
-**Deactivation Details:** Details of deactivation of the employee, which captures the reason for deactivation, period of deactivation, and other necessary details.
+**Deactivation Details:** Details of the deactivation of the employee, which captures the reason for deactivation, period of deactivation, and other necessary details.
 
 *   **Constraints:**
 
@@ -582,7 +578,7 @@ _Create messages to be sent on employee creation./ reactivation_&#x20;
 1. Add MDMS configs required for HRMS Service and restart MDMS service.
 2. Deploy the latest version of egov-hrms Service.
 3. Add HRMS Service persister yaml path in persister configuration and restart persister service
-4. Add Role-Action mapping for APIs.
+4. Add role-action mapping for APIs.
 
 ## Integration Details <a href="#integration" id="integration"></a>
 
@@ -592,7 +588,7 @@ The egov-hrms service is used to manage all the employees enrolled in the system
 
 ### Integration Benefits <a href="#integration-benefits" id="integration-benefits"></a>
 
-* Can create an employee with a specific role to assign it a particular module.
+* Can create an employee with a specific role to assign it to a particular module.
 * Can add any role to an employee across multiple jurisdictions.
 * Provide a feature to deactivate and reactivate an employee.
 
@@ -602,7 +598,7 @@ The egov-hrms service is used to manage all the employees enrolled in the system
 2. `egov-hrms/employees/_create` __ should be added as the create endpoint for creating employees in the system
 3. `egov-hrms/employees/_search` should be added as the search endpoint. This method handles all requests to search existing employee records depending on different search criteria
 4. `egov-hrms/employees/_update` should be added as the update endpoint. This method is used to update employee details.
-5. `egov-hrms/employees/_count` should be added as count API to get a list of active and inactive employees present in the system.
+5. `egov-hrms/employees/_count` should be added as a count API to get a list of active and inactive employees present in the system.
 
 ## Reference Docs <a href="#reference-docs" id="reference-docs"></a>
 
@@ -621,8 +617,4 @@ The egov-hrms service is used to manage all the employees enrolled in the system
 | _egov-hrms/employees/\_search_              | [https://www.getpostman.com/collections/c9d8ae63a10fac6fdd43](https://www.getpostman.com/collections/c9d8ae63a10fac6fdd43) |
 | _egov-hrms/employees/\_count_               | [https://www.getpostman.com/collections/c9d8ae63a10fac6fdd43](https://www.getpostman.com/collections/c9d8ae63a10fac6fdd43) |
 
-_(Note: All the API’s are in the same postman collection therefore the same link is added in each row)_
-
-__
-
-__
+_(Note: All the APIs are in the same postman collection therefore the same link is added in each row)_

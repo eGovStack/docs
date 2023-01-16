@@ -2,7 +2,7 @@
 
 URL- digit-ui/employee/hrms/details/{Employee Id}
 
-Logged User should able to see details of Employee
+Logged in users should able to see details of employees
 
 * **Employment Status**
 * **Personal Details**
@@ -16,17 +16,14 @@ Logged User should able to see details of Employee
 
 **Supported Documents**
 
-If User has uploaded any Documents against Employment Status. Those Documents should be one click Downloadable
+If the user has uploaded any documents against Employment Status. Those documents are downloadable in one click.
 
 ![](<../../../.gitbook/assets/image (277).png>)
 
 **API details**
 
-|           |                                |             |               |
-| --------- | ------------------------------ | ----------- | ------------- |
-| **SL No** | **API**                        | **Role**    | **Access ID** |
-| 1         | `/egov-hrms/employees/_search` | HRMS\_ADMIN | `1752`        |
+| API                            | Role        | Access ID |
+| ------------------------------ | ----------- | --------- |
+| `/egov-hrms/employees/_search` | HRMS\_ADMIN | `1752`    |
 
-Primary Files
-
-[https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EmployeeDetails.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EmployeeDetails.js)
+Primary Files: [https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EmployeeDetails.js](https://github.com/egovernments/digit-ui-internals/blob/development/packages/modules/hrms/src/pages/EmployeeDetails.js)
