@@ -4,7 +4,7 @@
 
 The application overview page shows the details of the application selected and the action that a specific user is allowed to take on that application.
 
-![](../../../../../.gitbook/assets/image-20211213-130023.png)
+![](../../../../.gitbook/assets/image-20211213-130023.png)
 
 ## MDMS Details <a href="#mdms" id="mdms"></a>
 
@@ -14,7 +14,7 @@ Common documents that are required are fetched from [DocumentType ](https://gith
 
 ## Workflow Actions
 
-![](../../../../../.gitbook/assets/image-20211214-050052.png)
+![](../../../../.gitbook/assets/image-20211214-050052.png)
 
 **Forward** application with the uploaded NOC certificate to forward the application to concerned authorities for approval.
 

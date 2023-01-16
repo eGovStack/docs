@@ -4,9 +4,9 @@
 
 Refer to the employee inbox technical documentation below before reading the auto-escalation flow details.
 
-{% file src="../../../.gitbook/assets/employee-inbox (1).pdf" %}
-Employee Inbox
-{% endfile %}
+{% content-ref url="../property-tax/property-tax-service/pt-create-property-ui-details/employee-inbox-old-ui.md" %}
+[employee-inbox-old-ui.md](../property-tax/property-tax-service/pt-create-property-ui-details/employee-inbox-old-ui.md)
+{% endcontent-ref %}
 
 The auto-escalation option provides employees with the option to view all escalated applications that have not been acted on.
 
@@ -60,9 +60,9 @@ Functionality file path:[ <img src="https://github.com/fluidicon.png" alt="" dat
 **Note:** Inbox functionality works the same as before as outlined in the Employee Inbox document attached here.
 {% endhint %}
 
-{% file src="../../../.gitbook/assets/employee-inbox (1).pdf" %}
-Employee Inbox
-{% endfile %}
+{% content-ref url="../property-tax/property-tax-service/pt-create-property-ui-details/employee-inbox-old-ui.md" %}
+[employee-inbox-old-ui.md](../property-tax/property-tax-service/pt-create-property-ui-details/employee-inbox-old-ui.md)
+{% endcontent-ref %}
 
 ## **Role Action Mapping**
 
