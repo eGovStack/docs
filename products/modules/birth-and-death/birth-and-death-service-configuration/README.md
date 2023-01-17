@@ -116,7 +116,7 @@ The How It works section shows the configured pdf to help citizens download cert
 Also in Global config file\
 [https://qa.digit.org/egov-qa-assets/globalConfigs.js](https://qa.digit.org/egov-qa-assets/globalConfigs.js)\
 `var assetS3Bucket = 'egov-qa-assets';`\
-[egov-qa-assets/BDUserManual\_Citizen.pdf](https://s3.ap-south-1.amazonaws.com/egov-qa-assets/BDUserManual\_Citizen.pdf) is added and used to refer for downloading the file.
+Refer to the [Citizen User Manual ](../birth-and-death-user-manual/birth-and-death-citizen-user-manual.md)for details.
 
 **Localization Module -** `rainmaker-bnd`
 

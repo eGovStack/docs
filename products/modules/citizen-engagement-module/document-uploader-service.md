@@ -14,17 +14,13 @@ Document uploader will be used by ULB employees to upload the document which wil
 
 ### Key Functionalities And Configurations <a href="#key-functionalities-and-configurations" id="key-functionalities-and-configurations"></a>
 
-Employees can perform all four operations i.e. creating, searching, updating and deleting the documents whereas the citizens can only search for the created documents. For creating documents in a particular ULB, the document category that needs to be provided in the create API cURL has to be present in the document category mdms file for the tenantId for which the document is getting uploaded.&#x20;
+Employees can perform all four operations i.e. creating, searching, updating and deleting the documents whereas the citizens can only search for the created documents. For creating documents in a particular ULB, the document category that needs to be provided in the create API cURL has to be present in the document category MDMS file for the tenantId for which the document is getting uploaded.&#x20;
 
-&#x20;
+A sample MDMS document category configuration file can be viewed here - [<img src="https://github.com/fluidicon.png" alt="" data-size="line">egov-mdms-data/DocumentUploader.json at DEV · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/DocumentUploader/DocumentUploader.json)
 
-A sample mdms document category configuration file can be viewed here - [![](https://github.com/fluidicon.png)egov-mdms-data/DocumentUploader.json at DEV · egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/DocumentUploader/DocumentUploader.json)
+In this MDMS configuration file, ULB key can be added and the allowed category types can be added in categoryList key.
 
-In this mdms configuration file, ulb key can be added and the allowed category types can be added in categoryList key.
-
-&#x20;
-
-Once a document is created in any ULB, the following attributes can be updated for that document -&#x20;
+Once a document is created in any ULB, the following attributes can be updated for that document -
 
 1. ULB
 2. Document name
@@ -36,28 +32,18 @@ Upon deleting any document, that document is soft deleted from the records i.e. 
 
 ### API Details <a href="#api-details" id="api-details"></a>
 
-1. /egov-document-uploader/egov-du/document/\_create - Takes RequestInfo and DocumentEntity in request body. Document entity has all the parameters related to the document being inserted.\
-   \
-
-2. /egov-document-uploader/egov-du/document/\_update - Allows editing of attributes related to an already existing document. Searches document based on its uuid and updates attributes.\
-   \
-
+1. /egov-document-uploader/egov-du/document/\_create - Takes RequestInfo and DocumentEntity in request body. Document entity has all the parameters related to the document being inserted.
+2. /egov-document-uploader/egov-du/document/\_update - Allows editing of attributes related to an already existing document. Searches document based on its uuid and updates attributes.
 3.  /egov-document-uploader/egov-du/document/\_search - Allows searching existing documents in the database. Takes search parameters in the url and RequestInfo in request body.\
     For looking at documents that have been created/updated in a given time range, **fromDate** and **toDate** parameters can be used which accept epoch values.
 
-    For looking at documents that have been deleted, **viewDeletedDocuments** parameter should be used with **“true”** as the parameter value.\
-    \
+    For looking at documents that have been deleted, **viewDeletedDocuments** parameter should be used with **“true”** as the parameter value.
+4. /egov-document-uploader/egov-du/document/\_delete - Soft deletes an existing document from the database i.e. it makes the document inactive. It takes the DocumentEntity that needs to be deleted in the request body along with RequestInfo object.&#x20;
 
-4. /egov-document-uploader/egov-du/document/\_delete - Soft deletes an existing document from the database i.e. it makes the document inactive. It takes the DocumentEntity that needs to be deleted in the request body along with RequestInfo object.
-
-&#x20;
-
-Detailed API payloads for interacting with document service for all the four endpoints can be found in the following collection -
-
-[https://www.getpostman.com/collections/c0774674d0c8c05181a7](https://www.getpostman.com/collections/c0774674d0c8c05181a7)
+Detailed API payloads for interacting with document service for all four endpoints can be found in the following collection - [https://www.getpostman.com/collections/c0774674d0c8c05181a7](https://www.getpostman.com/collections/c0774674d0c8c05181a7)
 
 ### Swagger Documentation <a href="#swagger-documentation" id="swagger-documentation"></a>
 
-Link to the swagger documentation can be found below -
+The link to the swagger documentation can be found below -
 
 [![](https://editor.swagger.io/dist/favicon-16x16.png)Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/DIGIT-OSS/master/core-services/docs/egov-document-uploader-contract.yml)

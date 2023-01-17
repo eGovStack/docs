@@ -1309,7 +1309,7 @@ This Graph contains the Fire NOC showing total applications submitted vs provisi
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (5) (3).png>)
 
 **Collection by Payment Mode:** This will be a pie chart showing the bifurcation of total collections by payment mode (online, cash, card, cheque) which is the sum of revenue collected from Fire NOC for the applied date filter.
 
@@ -1331,7 +1331,7 @@ On click of Actual it shows the % of NOCs issued for Actual FireNocs.
 
 On click of Provisional it shows the % of NOCs issued for Actual FireNocs.
 
-![](../../../../.gitbook/assets/image.png)
+![](<../../../../.gitbook/assets/image (1).png>)
 
 On click of Show More, it shows the information of all the states.
 
@@ -1341,7 +1341,7 @@ On click of Show More, it shows the information of all the states.
 
 On click of Actual it shows the % of NOCs issued for Actual FireNocs.
 
-![](<../../../../.gitbook/assets/image (3).png>)
+![](<../../../../.gitbook/assets/image (3) (3).png>)
 
 On click of Provisional it shows the % of NOCs issued for Actual FireNocs.
 
@@ -1359,7 +1359,7 @@ To add multiple computed columns,  computedFields \[]  where actionName (IComput
 
 <figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on any region name provides a drill down to the specific state data.
 
@@ -1367,7 +1367,7 @@ Clicking on any region name provides a drill down to the specific state data.
 
 Clicking on the ULB navigates to the wards under that specific ULB and each ward shows the specific data for that ward.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 ## **Newly Introduced Property** <a href="#newly-introduced-property" id="newly-introduced-property"></a>
 

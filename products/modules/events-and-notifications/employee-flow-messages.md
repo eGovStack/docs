@@ -14,7 +14,7 @@
 
 Employee users with user roles including “`EMPLOYEE ADMIN`" or “`EMPLOYEE`" have access to the event actions.
 
-## Events API cURLs  <a href="#events-api-curls" id="events-api-curls"></a>
+## Events API Curls  <a href="#events-api-curls" id="events-api-curls"></a>
 
 ### Search Inbox API
 

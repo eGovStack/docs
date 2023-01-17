@@ -206,8 +206,6 @@ eGov-user-events can be integrated with any organisation or system which wants t
 
 #### API List <a href="#api-list" id="api-list"></a>
 
-
-
 | <h4 id="title"><strong>Title</strong> </h4>      | **Link**                                                                                                                   |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
 |  _/egov-user-event/v1/events/\_create_           | [https://www.getpostman.com/collections/14812d58dff5565bd3d9](https://www.getpostman.com/collections/14812d58dff5565bd3d9) |
@@ -217,5 +215,7 @@ eGov-user-events can be integrated with any organisation or system which wants t
 | /egov-user-event/v1/events/lat/\_update          | [https://www.getpostman.com/collections/14812d58dff5565bd3d9](https://www.getpostman.com/collections/14812d58dff5565bd3d9) |
 
 _(Note: All the APIs are in the same postman collection therefore the same link is added in each row)_
+
+__
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

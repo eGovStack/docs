@@ -1,10 +1,10 @@
 # Birth & Death Service Setup
 
-This is the egov application, which helps and provides a digital interface, allowing employees/citizens for downloading the Birth & death Certificates. Employee can register both birth and death applications, update and search where in citizen has an access to download the certificates. There are two processes while downloading the certificates as citizen can download the certificate free for the first time and it will be charged for next downloads so citizen has to pay the amount and download the certificates.
+This is the egov application, which helps and provides a digital interface, allowing employees/citizens for downloading Birth & Death Certificates. Employees can register both birth and death applications, and update and search where the citizen has an access to download the certificates. There are two processes while downloading the certificates citizen can download the certificate free for the first time and it will be charged for the next downloads so the citizen has to pay the amount and download the certificates.
 
 The setup of the Application is as follows
 
-**Requirements:**
+### **Requirements**
 
 * Knowledge of Java/J2EE(preferably Java 8 version)
 * Knowledge of Spring Boot and spring-boot microservices.
@@ -13,23 +13,23 @@ The setup of the Application is as follows
 * Knowledge of the Lombok library will helpful.
 * knowledge of eGov-mdms service, eGov-persister, eGov-idgen, eGov-sms, eGov-email,eGov-user, eGov-localization, eGov-workflow-service will be helpful.
 
-**Functionality**:
+### **Functionality**
 
 1. The BnD Module facilitates the citizen to search and download the certificate.
 2. The BnD Module enables the counter employee to enter the details of Birth and Death using\
    the Registration form.
-3. The BnD Module provides facility to the counter employee to search the details of\
+3. The BnD Module provides a facility to the counter employee to search the details of\
    registration and view the details of the registration.
-4. The BnD Module provides facility to any one who has downloaded the certificate, to check\
+4. The BnD Module provides a facility to anyone who has downloaded the certificate, to check\
    the correctness of the certificate by scanning the QR Code.
 
-### **Setup and usage:** <a href="#setup-and-usage" id="setup-and-usage"></a>
+### **Setup & Usage** <a href="#setup-and-usage" id="setup-and-usage"></a>
 
-The [**Application**](https://github.com/egovernments/municipal-services/tree/master) is present among the _**municipal services**_ group of applications available in the eGov-services git repository with the folder name [**birth-death-services**](https://github.com/egovernments/DIGIT-Dev/tree/master/municipal-services/birth-death-services) **** .  The spring boot application needs the **Lombok\*** extension added in your IDE to load it. Once the application is up and running API requests can be posted to the URL and ids can be generated.&#x20;
+The [**Application**](https://github.com/egovernments/municipal-services/tree/master) is present among the _**municipal services**_ group of applications available in the eGov-services git repository with the folder name [**birth-death-services**](https://github.com/egovernments/DIGIT-Dev/tree/master/municipal-services/birth-death-services).  The spring boot application needs the **Lombok\*** extension added to your IDE to load it. Once the application is up and running API requests can be posted to the URL and ids can be generated.&#x20;
 
-* in case of IntelliJ, the plugin can be installed directly, for eclipse the Lombok jar location has to be added in eclipse.ini file in this format  javaagent:lombok.jar
+* in the case of IntelliJ, the plugin can be installed directly, for eclipse the Lombok jar location has to be added in the eclipse.ini file in this format  javaagent:lombok.jar
 
-### _**API Information :**_ <a href="#api-information" id="api-information"></a>
+### **API Information** <a href="#api-information" id="api-information"></a>
 
 * Please refer to Swagger API for YAML file details. Link -[<img src="https://github.com/fluidicon.png" alt="" data-size="line">DIGIT-OSS/birth-death.yml at master · egovernments/DIGIT-OSS](https://github.com/egovernments/DIGIT-OSS/blob/master/municipal-services/docs/birth-death/birth-death.yml)
 
@@ -51,7 +51,7 @@ _**URLs for the external API references:**_
   egov.idgen.deathapplnum.name=death\_cert.receipt.id\
   egov.idgen.deathapplnum.format=DT/CB/01/2022-0/063767
 
-**Configuration:**
+### **Configuration**
 
 _**Mdms configuration**_**:**
 
@@ -1687,13 +1687,13 @@ Birth and Death Roles
 
 [BND Persister YAML](https://github.com/egovernments/configs/blob/DEV/egov-persister/birth-death.yml)
 
-#### Indexer Configuration: <a href="#indexer-configuration" id="indexer-configuration"></a>
+### Indexer Configuration <a href="#indexer-configuration" id="indexer-configuration"></a>
 
 [Birth Indexer YAML](https://github.com/egovernments/configs/blob/DEV/egov-indexer/rainmaker-birth-indexer.yml)
 
 [Death Indexer YAML](https://github.com/egovernments/configs/blob/DEV/egov-indexer/rainmaker-death-indexer.yml)
 
-#### Database Schema <a href="#database-schema" id="database-schema"></a>
+### Database Schema <a href="#database-schema" id="database-schema"></a>
 
 ![](<../../../../.gitbook/assets/image (230).png>)
 

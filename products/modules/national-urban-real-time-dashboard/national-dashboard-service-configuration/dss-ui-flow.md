@@ -4,9 +4,15 @@ Individual DSS configurations like FSM - DSS configuration is built on the DSS m
 
 ## Module-wise Role Access To DSS Module
 
-| Role       | Module | API                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ---------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| FSM\_ADMIN | FSM    | `1curl 'https://qa.digit.org/dashboard-analytics/dashboard/getDashboardConfig/fsm?_=1627404589797' \ 2 -H 'authority: qa.digit.org' \ 3 -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \ 4 -H 'accept: application/json, text/plain, */*' \ 5 -H 'dnt: 1' \ 6 -H 'sec-ch-ua-mobile: ?0' \ 7 -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36' \ 8 -H 'auth-token: 1bc96a3e-c6c0-4af7-9b97-5cff0c035f98' \ 9 -H 'content-type: application/json;charset=utf-8' \ 10 -H 'sec-fetch-site: same-origin' \ 11 -H 'sec-fetch-mode: cors' \ 12 -H 'sec-fetch-dest: empty' \ 13 -H 'referer: https://qa.digit.org/digit-ui/employee/dss/dashboard/fsm' \ 14 -H 'accept-language: en-US,en;q=0.9,hi;q=0.8' \ 15 --compressed` |
+**Role** - FSM\_ADMIN
+
+**Module** - FSM
+
+**API Curl**
+
+```javascript
+1curl 'https://qa.digit.org/dashboard-analytics/dashboard/getDashboardConfig/fsm?_=1627404589797' \ 2 -H 'authority: qa.digit.org' \ 3 -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \ 4 -H 'accept: application/json, text/plain, */*' \ 5 -H 'dnt: 1' \ 6 -H 'sec-ch-ua-mobile: ?0' \ 7 -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36' \ 8 -H 'auth-token: 1bc96a3e-c6c0-4af7-9b97-5cff0c035f98' \ 9 -H 'content-type: application/json;charset=utf-8' \ 10 -H 'sec-fetch-site: same-origin' \ 11 -H 'sec-fetch-mode: cors' \ 12 -H 'sec-fetch-dest: empty' \ 13 -H 'referer: https://qa.digit.org/digit-ui/employee/dss/dashboard/fsm' \ 14 -H 'accept-language: en-US,en;q=0.9,hi;q=0.8' \ 15 --compressed
+```
 
 ## APIs
 
@@ -33,7 +39,7 @@ curl 'https://qa.digit.org/dashboard-analytics/dashboard/getChartV2?_=1627404593
   --compressed
 ```
 
-Each of the charts will have unique data params and responses in distinct API calls.
+Each of the charts will have unique data parameters and responses in distinct API calls.
 
 ## UI Components
 

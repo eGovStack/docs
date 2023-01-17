@@ -1,8 +1,8 @@
 # Citizen Flow
 
-Notifications and Citizen Home Screen are part of the core module.
+Notifications and the citizen home screen are part of the core module.
 
-Screen Flow for the Citizen Home
+Screen flow for the citizen home
 
 ![](../../../.gitbook/assets/image-20211210-054617.png)
 
@@ -14,7 +14,7 @@ Screen Flow for the Citizen Home
 
 ## Notifications <a href="#notifications" id="notifications"></a>
 
-The Notifications screen is a part of the user engagement module and shows all the active events, messages and broadcast messages.
+The notifications screen is a part of the user engagement module and shows all the active events, messages and broadcast messages.
 
 ![Notifications Screen](../../../.gitbook/assets/image-20211210-054818.png)
 

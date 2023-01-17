@@ -58,7 +58,7 @@ curl 'https://qa.digit.org/egov-document-uploader/egov-du/document/_create' \
 
 ![Success Screen With Document ID](../../../.gitbook/assets/image-20211112-071630.png)
 
-## **Document Details Page**
+## **Document Details**&#x20;
 
 This page provides complete information about the created document. By clicking on the name of any document employee gets navigated to the details page.
 
@@ -108,7 +108,7 @@ Employees can remove documents from the listing by navigating to the inbox → s
 
 ## **Citizen Screens**
 
-Citizens can view all uploaded documents in the `information & updated section` of the Home Page. Here, all the categories are listed and also enables search by document title. Selecting any category fetches all the documents for the selected category.
+Citizens can view all uploaded documents on `information & updated section` on the home page. Here, all the categories are listed and also enable search by document title. Selecting any category fetches all the documents for the selected category.
 
 ![Category of Documents](../../../.gitbook/assets/image-20211112-075651.png)
 
@@ -152,12 +152,12 @@ Localization keys are added under the ‘_rainmaker-common_’ locale module. In
 
 ## **API Call Role Action Mapping**
 
-| [**S.No**](http://s.no/)**.** | <p><strong>API</strong></p><p> </p> | **Action id** | **Roles**             |
-| ----------------------------- | ----------------------------------- | ------------- | --------------------- |
-| 1                             | `/egov-mdms-service/v1/_search`     | `954`         | `CITIZEN`             |
-| 2                             | `/egov-document-uploader`           | `1685`        | `EMPLOYEE`            |
-| 3                             | `/filestore/v1/files/url`           | `1528`        | `CITIZEN`, `EMPLOYEE` |
-| 7                             | `/localization/messages/v1/_search` | `1531`        | `CITIZEN`, `EMPLOYEE` |
+| <p><strong>API</strong></p><p> </p> | **Action id** | **Roles**             |
+| ----------------------------------- | ------------- | --------------------- |
+| `/egov-mdms-service/v1/_search`     | `954`         | `CITIZEN`             |
+| `/egov-document-uploader`           | `1685`        | `EMPLOYEE`            |
+| `/filestore/v1/files/url`           | `1528`        | `CITIZEN`, `EMPLOYEE` |
+| `/localization/messages/v1/_search` | `1531`        | `CITIZEN`, `EMPLOYEE` |
 
 \
 

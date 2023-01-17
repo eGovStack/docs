@@ -1408,8 +1408,4 @@ Modules are: PropertyTax, TradeLicense, Water\&Sewerage, FireNoc, OBPS.
 
 ![](<../../../../.gitbook/assets/image (299).png>)
 
-
-
-
-
-![](blob:https://digit-discuss.atlassian.net/6dd96673-ca3d-4c5b-bd62-77518aa02e43#media-blob-url=true\&id=3041198f-560f-4a43-8964-08ab7bc0f0dc\&collection=contentId-2055503921\&contextId=2055503921\&height=487\&width=494\&alt=)\
+\

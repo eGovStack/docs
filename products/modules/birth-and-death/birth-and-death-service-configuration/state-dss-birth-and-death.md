@@ -6,19 +6,17 @@ description: Technical Doc
 
 ## Overview
 
-There are two dimensions to DSS. The first refers to the process where the data is pooled to ElasticSearch and the second relates to the way the data is fetched, aggregated, computed, transformed and sent across.
+There are two dimensions to DSS. The first refers to the process where the data is pooled into ElasticSearch and the second relates to the way the data is fetched, aggregated, computed, transformed and sent across.
 
 The DSS processes are easily configurable and this enables users to configure new analytics insights using a wide range of data sets.&#x20;
 
-This document defines the configuration steps for the fetching analytical insights on the DSS for the Birth & Death module.
-
-
+This document defines the configuration steps for fetching analytical insights on the DSS for the Birth & Death module.
 
 ## Key Concepts
 
 **Analytics:** Micro Service responsible for building, fetching, aggregating and computing the data on ElasticSearch to a consumable data response. This is used for visualizations and graphical representations. &#x20;
 
-**Analytics Configurations:** Analytics contains multiple configurations. Add the changes related to FSM in the dashboard-analytics configuration file.\
+**Analytics Configurations:** Analytics contains multiple configurations. Add the changes related to Birth& Death in the dashboard analytics configuration file.\
 File location : [<img src="https://github.com/fluidicon.png" alt="" data-size="line">configs/egov-dss-dashboards/dashboard-analytics at qa · egovernments/configs](https://github.com/egovernments/configs/tree/qa/egov-dss-dashboards/dashboard-analytics)\
 List of configurations that need to be changed to run FSM successfully.
 
@@ -654,7 +652,7 @@ Sample ChartApiConfiguration.json data for Birth and Death.
 
 [Click here to check the complete configuration](https://github.com/egovernments/configs/blob/qa/egov-dss-dashboards/dashboard-analytics/ChartApiConfig.json)
 
-**Master Dashboard Configuration:** Master Dashboard Configuration is the main configuration that defines the key insights and visualizations to be painted on the screen. It includes all the visualizations, the groups, charts embedded within them and even the dimensions in terms of height and width.&#x20;
+**Master Dashboard Configuration:** Master Dashboard Configuration is the main configuration that defines the key insights and visualizations to be painted on the screen. It includes all the visualizations, the groups, the charts embedded within them and even the dimensions in terms of height and width.&#x20;
 
 ```
  {
@@ -1034,7 +1032,7 @@ Action test.json:
 
 Birth and Death - State DSS contains multiple graphs which represent the data of Birth and Death. Each graph has its own configuration which will describe the chart and its type.
 
-State DSS contains the following charts in Birth & Death module:
+State DSS contains the following charts in the Birth & Death module:
 
 **Birth and Death Page**
 
@@ -1102,7 +1100,7 @@ Clicking on the ULB navigates to show the data at the ward level.
 
 ![](<../../../../.gitbook/assets/image (399).png>)
 
-**Certificates Download Trend: A** line graph that shows total death certificates downloaded for a given month, total death Certificates downloaded for the applied date filter.
+**Certificates Download Trend: A** line graph that shows the total death certificates downloaded for a given month, and total death Certificates downloaded for the applied date filter.
 
 **line** - this graph/chart is data representation on date histograms or date groupings.
 
@@ -1114,98 +1112,96 @@ Clicking on the ULB navigates to show the data at the ward level.
 
 **Deaths by Gender:** This will be a split bar graph where total deaths registered will be bifurcated by age category (< 2 years, 2-15, 15-29, 30-44, 45-59, 60-74, >= 75) and each bar will show gender wise split
 
-![](blob:https://digit-discuss.atlassian.net/affdf73f-e0d2-499b-a187-372b60f38ec7#media-blob-url=true\&id=397f47ca-dd02-4232-971a-52ba43e46c81\&collection=contentId-2131591200\&contextId=2131591200\&height=432\&width=818\&alt=)
+![](<../../../../.gitbook/assets/image (5).png>)
 
-On click of any Category name will enter into drill down charts, which will represents that specific age group data.
+Clicking on any Category name drills down to charts that provide specific age group data.
 
-![](blob:https://digit-discuss.atlassian.net/c4af0872-cd31-4110-8640-762423c19127#media-blob-url=true\&id=9fbdc409-390b-4807-a024-43a6ec76cf16\&collection=contentId-2131591200\&contextId=2131591200\&height=489\&width=827\&alt=)
+![](<../../../../.gitbook/assets/image (2).png>)
 
-&#x20;
-
-**Certificate Downloads by Boundary :** This tabular chart representation graph shows multiple Birth information like Total Downloads (Mobile App), Total Downloads (Web), Total Downloads, Delayed Registrations. And this table shows the data in DDR level and also has the drill down chart for each state to ulb and from ulb to ward level data for the same.
+**Certificate Downloads by Boundary:** This tabular chart representation graph shows multiple Birth information like Total Downloads (Mobile App), Total Downloads (Web), Total Downloads, and Delayed Registrations. And this table shows the data at the DDR level and also has the drill-down chart for each state to ULB and from ULB to ward level data for the same.
 
 xtable type allows to add multiple computed fields with the aggregated fields dynamically added.
 
 To add multiple computed columns,  computedFields \[]  where actionName (IComputedField\<T> interface), fields \[] names as in exist in query key, newField as name to appear for computation must be defined.
 
-![](blob:https://digit-discuss.atlassian.net/a807fa5c-9bb6-4088-bd6c-d420ac7c57b2#media-blob-url=true\&id=e3ea34f1-7da3-4917-9628-d1cd3caf09ef\&collection=contentId-2131591200\&contextId=2131591200\&height=389\&width=1662\&alt=)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-On click of any DDR name will enter into drill down charts, which will represents that specific state data.
+Clicking on any DDR name provides the drill-down charts that represent state-specific data.
 
-![](blob:https://digit-discuss.atlassian.net/edd6d2c3-053e-4931-a5c0-8c6fdd481cf1#media-blob-url=true\&id=d379671e-3f1c-4bc5-ab59-7de260e03b99\&collection=contentId-2131591200\&contextId=2131591200\&height=340\&width=1658\&alt=)
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-On click of the ULB will navigate to wards under that specific ULB and each ward shows the specific data regarding that ward.
+Clicking on the ULB navigates to wards under that specific ULB and each ward shows the specific data regarding that ward.
 
-![](blob:https://digit-discuss.atlassian.net/f3c9dc03-8314-46af-aec7-abefc2182240#media-blob-url=true\&id=00076825-61a2-417d-a4b4-c7a0670506a6\&collection=contentId-2131591200\&contextId=2131591200\&height=532\&width=1706\&alt=)
+<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-#### **Newly introduced property:** <a href="#newly-introduced-property" id="newly-introduced-property"></a>
+## **Newly Introduced Property** <a href="#newly-introduced-property" id="newly-introduced-property"></a>
 
-**isRoundOff**: This property is introduced to round off the decimal values. Ex: if the value is 25.43 by using isRoundOff property in configuration we will get it as 25. if value is 22.56 round of value will be 23.\
-This can be used for insights configuration as well for overview graph.
+**isRoundOff**: This property is introduced to round off the decimal values. Ex: if the value is 25.43 by using the isRoundOff property in the configuration we will get it as 25. if the value is 22.56 round of value will be 23.\
+This can be used for insights configuration as well for overview graphs.
 
-#### Common Properties available: <a href="#common-properties-available" id="common-properties-available"></a>
+## Common Properties Available <a href="#common-properties-available" id="common-properties-available"></a>
 
-**Key(eg: fsmTotalrequest) :** This is the Visualization Code. This key will be referred to in further visualization configurations.
+**Key(eg: fsmTotalrequest):** This is the Visualization Code. This key will be referred to in further visualization configurations.
 
 This is the key which will be used by the client application to indicate which visualization is needed for display.
 
-**chartName :** The name of the Chart which has to be used as a label on the Dashboard. The name of the Chart will be a detailed name.
+**chartName:** The name of the Chart which has to be used as a label on the Dashboard. The name of the Chart will be a detailed name.
 
-In this configuration, the Name of the Chart will be the code of Localization which will be used by Client Side.
+In this configuration, the Name of the Chart will be the code of Localization which will be used by the Client Side.
 
-**queries :** Some visualizations are derived from a specific data source. While some others are derived from different data sources and are combined together to get a meaningful representation.
+**queries:** Some visualizations are derived from a specific data source. While some others are derived from different data sources and are combined together to get a meaningful representation.
 
 The queries of aggregation which are to be used to fetch out the right data in the right aggregated format are configured here.
 
-**queries.module :** The module / domain level, on which the query should be applied on. Birth and Death is birth-death.
+**queries.module:** The module/domain level, on which the query should be applied on. Birth and Death is birth-death.
 
-**queries.indexName :** The name of the index upon which the query has to be executed is configured here.
+**queries.indexName:** The name of the index upon which the query has to be executed is configured here.
 
-**queries.aggrQuery :** The aggregation query in itself is added here. Based on the Module and the Index name specified, this query is attached to the filter part of the complete search request and then executed against that index
+**queries.aggrQuery:** The aggregation query in itself is added here. Based on the Module and the Index name specified, this query is attached to the filter part of the complete search request and then executed against that index
 
-**queries.requestQueryMap :** Client Request would carry certain fields which are to be filtered. The parameters specified in the Client Request are different from the parameters in each of these indexed documents.
+**queries.requestQueryMap:** Client Request would carry certain fields which are to be filtered. The parameters specified in the Client Request are different from the parameters in each of these indexed documents.
 
 In order to map the parameters of the request to the parameters of the ElasticSearch Document, this mapping is maintained.
 
-**queries.dateRefField :** Each of these modules have separate indexes. And all of them have their own date fields.&#x20;
+**queries.dateRefField:** Each of these modules have separate indexes. And all of them have their own date fields.&#x20;
 
 When there is a date filter applied against these visualizations, each of them has to apply it against their own date reference fields.
 
 In order to maintain what is the date field in which index, we have this configured in this configuration parameter.
 
-**chartType :** As there are different types of visualizations, this field defines what is the type of chart / visualization that this data should be used to represent.&#x20;
+**chartType:** As there are different types of visualizations, this field defines what is the type of chart/visualization that this data should be used to represent.&#x20;
 
-**Chart types available are**:
+## **Available Chart Types**&#x20;
 
-**metric** - this represents the aggregated amount/value for records filter by the aggregate es query&#x20;
+**metric** - this represents the aggregated amount/value for records filtered by the aggregate es query&#x20;
 
 **pie** - this represents the aggregated data on grouping. This is can be used to represent any line graph, bar graph, pie chart or donuts
 
 **line** - this graph/chart is data representation on date histograms or date groupings
 
-**perform** - this chart represents groping data as performance wise.
+**perform** - this chart represents groping data performance-wise.
 
-**table** - represents a form of plots and value with headers as grouped on and list of its key, values pairs.&#x20;
+**table** - represents a form of plots and values with headers as grouped on and a list of its key, values pairs.&#x20;
 
-**xtable -** represents a advanced feature of table, it has addition capabilities for dynamic adding header values.
+**xtable -** represents an advanced feature of the table, it has the addition capabilities for adding dynamic header values.
 
-**valueType :** In any case of data, the values which are sent to plot, might be a percentage, sometimes an amount and sometimes it is just a count.
+**valueType:** In any case of data, the values which are sent to the plot, might be a percentage, sometimes an amount and sometimes it is just a count.
 
-In order to represent them and differentiate the numbers from amount from percentage, this field is used to indicate the type of value that this Visualization will be sending.
+In order to represent them and differentiate the numbers from the amount from the percentage, this field is used to indicate the type of value that this Visualization will be sending.
 
-**action :** Some of the visualizations are not just aggregation on data source. There might be some cases where we have to do a post aggregation computation.
+**action:** Some of the visualizations are not just aggregations of data sources. There might be some cases where we have to do a post-aggregation computation.
 
-For Example, in the case of Top 3 Performing ULBs, the Target and Total Collection is obtained and then the percentage is calculated. In these kinds of cases, what is the action that has to be performed on that data obtained is defined in this parameter.&#x20;
+For Example, in the case of the Top 3 Performing ULBs, the Target and Total Collection are obtained and then the percentage is calculated. In these kinds of cases, the action that has to be performed on the data obtained is defined in this parameter.&#x20;
 
-**documentType :** The type of document upon which the query has to be executed is defined here.&#x20;
+**documentType:** The type of document upon which the query has to be executed is defined here.&#x20;
 
-**drillChart :** If there is a drill down on the visualization, then the code of the Drill Down Visualization is added here. This will be used by Client Service to manage drill downs.
+**drillChart:** If there is a drill down on the visualization, then the code of the Drill Down Visualization is added here. This will be used by Client Service to manage drill-downs.
 
-**aggregationPaths :** All the queries will be having Aggregation names in it. In order to fetch the value out of each Aggregation Responses, the name of the aggregation in the query will be an easy bet. These aggregation paths will have the names of Aggregation in it.
+**aggregationPaths:** All the queries will be having Aggregation names in them. In order to fetch the value out of each Aggregation Responses, the name of the aggregation in the query will be an easy bet. These aggregation paths will have the names of Aggregation in them.
 
-**insights :** It is to show the data with the comparison of last year with arrow symbols, it will show the data in how much % is increased or decreased.&#x20;
+**insights:** It is to show the data with the comparison of last year with arrow symbols, it will show the data in how much % is increased or decreased.&#x20;
 
-**\_comment :** In order to display information on the “i” symbol of each visualization, Visualization Information is maintained in this field.&#x20;
+**\_comment:** In order to display information on the “i” symbol of each visualization, Visualization Information is maintained in this field.&#x20;
 
 #### **Index Properties of State Birth and Death- Dss:** <a href="#index-properties-of-state-birth-and-death-dss" id="index-properties-of-state-birth-and-death-dss"></a>
 
@@ -1213,13 +1209,383 @@ The index that contains data for State-Birth and Death are - birth-cert-v1, deat
 
 The mapping for this index is:
 
-Birth :
+**Birth**
 
-`1"properties" : { 2 "Data" : { 3 "properties" : { 4 "additionalDetail" : { 5 "properties" : { 6 "cb" : { 7 "type" : "text", 8 "fields" : { 9 "keyword" : { 10 "type" : "keyword", 11 "ignore_above" : 256 12 } 13 } 14 }, 15 "code" : { 16 "type" : "text", 17 "fields" : { 18 "keyword" : { 19 "type" : "keyword", 20 "ignore_above" : 256 21 } 22 } 23 } 24 } 25 }, 26 "applicationStatus" : { 27 "type" : "text", 28 "fields" : { 29 "keyword" : { 30 "type" : "keyword", 31 "ignore_above" : 256 32 } 33 } 34 }, 35 "auditDetails" : { 36 "properties" : { 37 "createdBy" : { 38 "type" : "text", 39 "fields" : { 40 "keyword" : { 41 "type" : "keyword", 42 "ignore_above" : 256 43 } 44 } 45 }, 46 "createdTime" : { 47 "type" : "long" 48 }, 49 "lastModifiedBy" : { 50 "type" : "text", 51 "fields" : { 52 "keyword" : { 53 "type" : "keyword", 54 "ignore_above" : 256 55 } 56 } 57 }, 58 "lastModifiedTime" : { 59 "type" : "long" 60 } 61 } 62 }, 63 "birthCertificateNo" : { 64 "type" : "text", 65 "fields" : { 66 "keyword" : { 67 "type" : "keyword", 68 "ignore_above" : 256 69 } 70 } 71 }, 72 "birthDtlId" : { 73 "type" : "text", 74 "fields" : { 75 "keyword" : { 76 "type" : "keyword", 77 "ignore_above" : 256 78 } 79 } 80 }, 81 "birthPlace" : { 82 "type" : "text", 83 "fields" : { 84 "keyword" : { 85 "type" : "keyword", 86 "ignore_above" : 256 87 } 88 } 89 }, 90 "dateofbirth" : { 91 "type" : "long" 92 }, 93 "dateofissue" : { 94 "type" : "date", 95 "format" : "dd-MM-yyyy HH:mm:ss||dd-MM-yyyy||epoch_millis" 96 }, 97 "dateofreport" : { 98 "type" : "long" 99 }, 100 "district" : { 101 "type" : "text", 102 "fields" : { 103 "keyword" : { 104 "type" : "keyword", 105 "ignore_above" : 256 106 } 107 } 108 }, 109 "embeddedUrl" : { 110 "type" : "text", 111 "fields" : { 112 "keyword" : { 113 "type" : "keyword", 114 "ignore_above" : 256 115 } 116 } 117 }, 118 "filestoreid" : { 119 "type" : "text", 120 "fields" : { 121 "keyword" : { 122 "type" : "keyword", 123 "ignore_above" : 256 124 } 125 } 126 }, 127 "gender" : { 128 "type" : "text", 129 "fields" : { 130 "keyword" : { 131 "type" : "keyword", 132 "ignore_above" : 256 133 } 134 } 135 }, 136 "id" : { 137 "type" : "text", 138 "fields" : { 139 "keyword" : { 140 "type" : "keyword", 141 "ignore_above" : 256 142 } 143 } 144 }, 145 "source" : { 146 "type" : "text", 147 "fields" : { 148 "keyword" : { 149 "type" : "keyword", 150 "ignore_above" : 256 151 } 152 } 153 }, 154 "state" : { 155 "type" : "text", 156 "fields" : { 157 "keyword" : { 158 "type" : "keyword", 159 "ignore_above" : 256 160 } 161 } 162 }, 163 "tenantId" : { 164 "type" : "text", 165 "fields" : { 166 "keyword" : { 167 "type" : "keyword", 168 "ignore_above" : 256 169 } 170 } 171 }, 172 "ward" : { 173 "type" : "text", 174 "fields" : { 175 "keyword" : { 176 "type" : "keyword", 177 "ignore_above" : 256 178 } 179 } 180 } 181 } 182 } 183 }`
+```
+"properties" : {
+          "Data" : {
+            "properties" : {
+              "additionalDetail" : {
+                "properties" : {
+                  "cb" : {
+                    "type" : "text",
+                    "fields" : {
+                      "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                      }
+                    }
+                  },
+                  "code" : {
+                    "type" : "text",
+                    "fields" : {
+                      "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                      }
+                    }
+                  }
+                }
+              },
+              "applicationStatus" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "auditDetails" : {
+                "properties" : {
+                  "createdBy" : {
+                    "type" : "text",
+                    "fields" : {
+                      "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                      }
+                    }
+                  },
+                  "createdTime" : {
+                    "type" : "long"
+                  },
+                  "lastModifiedBy" : {
+                    "type" : "text",
+                    "fields" : {
+                      "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                      }
+                    }
+                  },
+                  "lastModifiedTime" : {
+                    "type" : "long"
+                  }
+                }
+              },
+              "birthCertificateNo" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "birthDtlId" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "birthPlace" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "dateofbirth" : {
+                "type" : "long"
+              },
+              "dateofissue" : {
+                "type" : "date",
+                "format" : "dd-MM-yyyy HH:mm:ss||dd-MM-yyyy||epoch_millis"
+              },
+              "dateofreport" : {
+                "type" : "long"
+              },
+              "district" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "embeddedUrl" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "filestoreid" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "gender" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "id" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "source" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "state" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "tenantId" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "ward" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              }
+            }
+          }
+        }
+```
 
-Death :
+**Death**
 
-`1"properties" : { 2 "Data" : { 3 "properties" : { 4 "additionalDetail" : { 5 "properties" : { 6 "cb" : { 7 "type" : "text", 8 "fields" : { 9 "keyword" : { 10 "type" : "keyword", 11 "ignore_above" : 256 12 } 13 } 14 }, 15 "code" : { 16 "type" : "text", 17 "fields" : { 18 "keyword" : { 19 "type" : "keyword", 20 "ignore_above" : 256 21 } 22 } 23 } 24 } 25 }, 26 "age" : { 27 "type" : "long" 28 }, 29 "applicationStatus" : { 30 "type" : "text", 31 "fields" : { 32 "keyword" : { 33 "type" : "keyword", 34 "ignore_above" : 256 35 } 36 } 37 }, 38 "auditDetails" : { 39 "properties" : { 40 "createdBy" : { 41 "type" : "text", 42 "fields" : { 43 "keyword" : { 44 "type" : "keyword", 45 "ignore_above" : 256 46 } 47 } 48 }, 49 "createdTime" : { 50 "type" : "long" 51 }, 52 "lastModifiedBy" : { 53 "type" : "text", 54 "fields" : { 55 "keyword" : { 56 "type" : "keyword", 57 "ignore_above" : 256 58 } 59 } 60 }, 61 "lastModifiedTime" : { 62 "type" : "long" 63 } 64 } 65 }, 66 "dateofdeath" : { 67 "type" : "long" 68 }, 69 "dateofissue" : { 70 "type" : "long" 71 }, 72 "dateofreport" : { 73 "type" : "long" 74 }, 75 "deathCertificateNo" : { 76 "type" : "text", 77 "fields" : { 78 "keyword" : { 79 "type" : "keyword", 80 "ignore_above" : 256 81 } 82 } 83 }, 84 "deathDtlId" : { 85 "type" : "text", 86 "fields" : { 87 "keyword" : { 88 "type" : "keyword", 89 "ignore_above" : 256 90 } 91 } 92 }, 93 "district" : { 94 "type" : "text", 95 "fields" : { 96 "keyword" : { 97 "type" : "keyword", 98 "ignore_above" : 256 99 } 100 } 101 }, 102 "embeddedUrl" : { 103 "type" : "text", 104 "fields" : { 105 "keyword" : { 106 "type" : "keyword", 107 "ignore_above" : 256 108 } 109 } 110 }, 111 "filestoreid" : { 112 "type" : "text", 113 "fields" : { 114 "keyword" : { 115 "type" : "keyword", 116 "ignore_above" : 256 117 } 118 } 119 }, 120 "gender" : { 121 "type" : "text", 122 "fields" : { 123 "keyword" : { 124 "type" : "keyword", 125 "ignore_above" : 256 126 } 127 } 128 }, 129 "id" : { 130 "type" : "text", 131 "fields" : { 132 "keyword" : { 133 "type" : "keyword", 134 "ignore_above" : 256 135 } 136 } 137 }, 138 "placeofdeath" : { 139 "type" : "text", 140 "fields" : { 141 "keyword" : { 142 "type" : "keyword", 143 "ignore_above" : 256 144 } 145 } 146 }, 147 "source" : { 148 "type" : "text", 149 "fields" : { 150 "keyword" : { 151 "type" : "keyword", 152 "ignore_above" : 256 153 } 154 } 155 }, 156 "state" : { 157 "type" : "text", 158 "fields" : { 159 "keyword" : { 160 "type" : "keyword", 161 "ignore_above" : 256 162 } 163 } 164 }, 165 "tenantId" : { 166 "type" : "text", 167 "fields" : { 168 "keyword" : { 169 "type" : "keyword", 170 "ignore_above" : 256 171 } 172 } 173 }, 174 "ward" : { 175 "type" : "text", 176 "fields" : { 177 "keyword" : { 178 "type" : "keyword", 179 "ignore_above" : 256 180 } 181 } 182 } 183 } 184 } 185 }`
+```
+"properties" : {
+          "Data" : {
+            "properties" : {
+              "additionalDetail" : {
+                "properties" : {
+                  "cb" : {
+                    "type" : "text",
+                    "fields" : {
+                      "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                      }
+                    }
+                  },
+                  "code" : {
+                    "type" : "text",
+                    "fields" : {
+                      "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                      }
+                    }
+                  }
+                }
+              },
+              "age" : {
+                "type" : "long"
+              },
+              "applicationStatus" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "auditDetails" : {
+                "properties" : {
+                  "createdBy" : {
+                    "type" : "text",
+                    "fields" : {
+                      "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                      }
+                    }
+                  },
+                  "createdTime" : {
+                    "type" : "long"
+                  },
+                  "lastModifiedBy" : {
+                    "type" : "text",
+                    "fields" : {
+                      "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                      }
+                    }
+                  },
+                  "lastModifiedTime" : {
+                    "type" : "long"
+                  }
+                }
+              },
+              "dateofdeath" : {
+                "type" : "long"
+              },
+              "dateofissue" : {
+                "type" : "long"
+              },
+              "dateofreport" : {
+                "type" : "long"
+              },
+              "deathCertificateNo" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "deathDtlId" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "district" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "embeddedUrl" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "filestoreid" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "gender" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "id" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "placeofdeath" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "source" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "state" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "tenantId" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              },
+              "ward" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              }
+            }
+          }
+        }
+```
 
 #### _Postman Links_ <a href="#postman-links" id="postman-links"></a>
 
