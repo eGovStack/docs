@@ -37,7 +37,7 @@ This section contains all docs and information required to understand the TL mod
 * [TL Roadmap](broken-reference)
 * [TL User Manual](tl-user-manual/)
 * [Product Brochure](tl-brochure.md)
-* [TL Workflows](tl-workflows.md)
+* [TL Workflows](broken-reference)
 * [Master Data Configuration Templates](tl-master-data-templates/)
 * [TL Service Configuration](tl-service-configuration/)
 * [Implementation Handbook](tl-implementation-guide.md)

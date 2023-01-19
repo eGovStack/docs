@@ -62,10 +62,6 @@ So in future, if calculation logic requires changes, the modifications can be ca
 
 e-Challan service application needs to call the eChallan-calculator/v1/\_calculate API to calculate and generate the demand for the e-Challan application.
 
-### Interaction Diagram
-
-TBD
-
 ## Reference Docs
 
 #### Doc Links <a href="#doc-links" id="doc-links"></a>

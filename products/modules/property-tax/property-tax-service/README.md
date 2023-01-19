@@ -6,7 +6,7 @@ description: Service configuration details
 
 ## **Overview** <a href="#overview" id="overview"></a>
 
-One of the major applications of the eGov stack which helps municipal and citizens to handle property tax payments and other related functions on the property such as assessments, mutation, and so on.
+One of the major applications of the eGov stack which helps municipalities and citizens to handle property tax payments and other related functions on the property such as assessments, mutation, and so on.
 
 ## **Pre-requisites**
 
@@ -14,8 +14,8 @@ One of the major applications of the eGov stack which helps municipal and citize
 * Prior Knowledge of Spring Boot.
 * Prior Knowledge of REST APIs and related concepts like path parameters, headers, JSON etc.
 * Prior knowledge of Git
-* Prior knowledge of the demand-based systems.
-* Following services should be up and running:
+* Prior knowledge of demand-based systems.
+* The following services should be up and running:
   * user
   * MDMS
   * Persister
@@ -38,10 +38,10 @@ An assessment can be done so as to calculate and pay tax on the property. The di
 
 **Registry Explanation**
 
-* The registry flow helps the citizen/Employee to create a property in the system with the minimal information required.
+* The registry flow helps the citizen/Employee to create a property in the system with minimal information required.
 * Other workflows such as assessment or mutation can be triggered on the existing ACTIVE Property in the registry.
-* The property can be created, updated, cancelled, searched, Followed by the process of Mutation and Assessment.
-* The same entry in the registry can be referred by other modules for their business purposes(Water charges).
+* The property can be created, updated, cancelled, and searched, Followed by the process of Mutation and Assessment.
+* The same entry in the registry can be referred to by other modules for their business purposes(Water charges).
 
 ## **Configuration Details**
 
@@ -53,22 +53,18 @@ The persister File config for property services can be found in the Config repo 
 
 **Workflow-configs**
 
-Each flow in property has a workflow associated with it, which can be controlled by the following configs
+Each flow in the property has a workflow associated with it, which can be controlled by the following configs. The Boolean field which can enable/disable Workflow - the same field controls the update and create the workflow
 
-The Boolean field which can enable/disable Workflow - same field controls the update and create the workflow
-
-|                                                                                        |               |                                                                            |
+| name                                                                                   | value         | description                                                                |
 | -------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------- |
-| **name**                                                                               | **value**     | **description**                                                            |
 | **is.workflow.enabled**                                                                | true/false    | enable disbale workflow                                                    |
 | [**property.workflow.name**](http://property.workflow.name/)                           | **PT.CREATE** | the name should match the config name in the workflow businessservice JSON |
 | [**property.legacy.entry.workflow.name**](http://property.legacy.entry.workflow.name/) | **PT.LEGACY** |                                                                            |
 | [**property.update.workflow.name**](http://property.update.workflow.name/)             | **PT.UPDATE** |                                                                            |
 
-Workflow Config for property create if the source is from **WATER CONNECTION** module
+Workflow Config for property create if the source is from the **WATER CONNECTION** module
 
-For the creation of property from the water and sewerage module, as per the use case mentioned in this [ticket](https://digit-discuss.atlassian.net/browse/RAIN-1772), a different workflow config is used.\
-For each use case, to identify which workflow to use can be identified from this [mdms file](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/PropertyTax/PTWorkflow.json).
+For the creation of property from the water and sewerage module, a different workflow config is used. For each use case, to identify which workflow to use can be identified from this [mdms file](https://github.com/egovernments/egov-mdms-data/blob/DEV/data/pb/PropertyTax/PTWorkflow.json).
 
 ```
 {
@@ -89,28 +85,25 @@ For each use case, to identify which workflow to use can be identified from this
   }
      
  ]
-}
-```
-
-**For use case 1** which says, The property which is creating from Water and sewerage module should have one step workflow.\
-for this requirement in the above MDMS file businessService with PT.CREATEWITHWNS object must have enabled the field to set as true.\
+}For use case 1 which says, The property which is creating from Water and sewerage module should have one step workflow.
+for this requirement in the above MDMS file businessService with PT.CREATEWITHWNS object must have enabled the field to set as true.
 Then for all the property creation from Water and Sewerage module would have one step workflow and property would be created with an ACTIVE state.
+```
 
 **Fields in the above MDMS file**
 
-|                             |                                                                                                                                                                                                                                                                                                                       |
+| MDMS Fields                 | Description                                                                                                                                                                                                                                                                                                           |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **MDMS Fields**             | **Description**                                                                                                                                                                                                                                                                                                       |
 | **businessService**         | Name of workflow config                                                                                                                                                                                                                                                                                               |
 | **initialAction**           | Indicate the start(initial) action of the particular workflow mention in businessService.                                                                                                                                                                                                                             |
 | **inWorkflowStatusAllowed** | This field indicate whether the property with application status as “**inWorkflow**” can be use with water and sewerage connection creation. If this field is true then for that particular use case, the property with “**inWorkflow**” status can be use with water and sewerage connection creation and vice versa |
 | **enable**                  | If this filed is set as true, then the other fields associate with the particular object is use for property creation.                                                                                                                                                                                                |
 
 {% hint style="info" %}
-Note: The above objects indicate each use case mentioned in this [ticket](https://digit-discuss.atlassian.net/browse/RAIN-1772), so at a time only one object (use case) enable field must set as true
+**Note:** The above objects indicate that for each use case, only one object (use case) enabled the field must be set as true
 {% endhint %}
 
-Sample workflow config for use case 1 where property creation is from water and sewerage module with one step workflow
+one-stepSample workflow config for use case 1 where property creation is from water and sewerage module with one-step workflow
 
 ```
 {
@@ -483,9 +476,9 @@ Sample workflow config - (The same PT.CREATE can be used for update workflow als
   }
 ```
 
-Notifications :
+**Notifications**
 
-To enable or disable notifcation\
+To enable or disable notifications\
 **notif.sms.enabled**=true
 
 \#notif urls - makes use of the UI app host in notification service\
@@ -493,7 +486,7 @@ To enable or disable notifcation\
 **egov.notif.view.property** = citizen/property-tax/my-properties/property/{PROPERTYID}/{TENANTID}\
 **egov.notif.view.mutation** = citizen/pt-mutation/search-preview?applicationNumber={APPID}\&tenantId={TENANTID}
 
-The Current localization messages for notification
+The current localization messages for notification
 
 ```
 [
@@ -618,11 +611,11 @@ Property service can be integrated with any organization or system that wants to
 
 * Easy to create and simple process of self-assessment to avoid the hassle.
 * Helps maintain property data which can be used in the integration of other essential services like asset management, water connection and so on.
-* provides additional functionalities like mutation, assessment of properties.
+* provides additional functionalities like mutation, and assessment of properties.
 
 ### Steps to Integration
 
-1. Customer can create a property using the /property/\_create
+1. Customers can create a property using the /property/\_create
 2. Search the property using /property/\_searchendpoint
 3. /property/\_update endpoint to update the property demand as per need.
 4. Mutation can be carried out with the help of /property/\_update itself, no extra API is needed.
@@ -631,9 +624,8 @@ Property service can be integrated with any organization or system that wants to
 
 **Doc Links**
 
-|                 |                                                                                                                     |
+| Title           | Link                                                                                                                |
 | --------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **Title**       | **Link**                                                                                                            |
 | USER Service    | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service)                     |
 | url-shortening  | [URL Shortening service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/896892936/URL+Shortening+service) |
 | MDMS            | [MDMS (Master Data Management Service)](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/723189807)         |
@@ -644,11 +636,10 @@ Property service can be integrated with any organization or system that wants to
 | Localization    |                                                                                                                     |
 | Id-Gen service  |                                                                                                                     |
 
-API LIST:
+**API LIST**
 
-|                    |                                                                                                                            |
+| Title              | Link                                                                                                                       |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| **Title**          | **Link**                                                                                                                   |
 | /Property/\_create | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
 | /Property/\_update | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
 | /property/\_search | [https://www.getpostman.com/collections/02d01e7b46c79c140863](https://www.getpostman.com/collections/02d01e7b46c79c140863) |
