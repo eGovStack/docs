@@ -1,6 +1,6 @@
 ---
 description: The Digital Urban Governance Platform
-cover: .gitbook/assets/digit-banner1.png
+cover: .gitbook/assets/DIGIT Docs New.jpg
 coverY: 0
 ---
 
