@@ -64,7 +64,7 @@ Click on the **Search** button. You can also use the **Filter By** parameters in
 
 To reopen the complaints navigate to **Complaints > My Complaints** menu option in the sidebar. Click on the closed complaint that you want to reopen. Scroll down to the **Complaint Timeline** section. Click on the **Re-Open** button on the timeline.
 
-![](https://lh6.googleusercontent.com/4wAdWqA\_U-UpkWgBFt9Nfqz25\_SMQskdaBrclRtRd6tSOei5sj3TqrLH96kViDib4X9QFEnd7mzxMl-FzDJK7k1K-ENldTmt8dfTwidrDmNZdusuZM5zE19c2sGoXEJ3Wu-RAnMo)
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-01-25 at 11.23.40 AM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The Re-Open button will be available only for 5 days after the complaint is resolved and closed by the department employee. The number of days can vary depending on the State or ULBs. The citizen or CSR will not be able to reopen complaints once this period is over.
@@ -84,10 +84,9 @@ GROs can
 
 1. [Assign complaints](employee-user-manual.md)
 2. [Re-Assign complaints](employee-user-manual.md)
-3. [Share complaints](employee-user-manual.md)
-4. [Reject complaints](employee-user-manual.md)
-5. Call citizens
-6. Comment on complaints
+3. [Reject complaints](employee-user-manual.md)
+4. Call citizens
+5. Comment on complaints
 
 ### Assign Complaints
 
@@ -113,27 +112,7 @@ The complaint is assigned to the selected employee.
 
 Assigned complaints can be re-assigned by the GRO depending on the situation and requirements. Or, Employees can request the GRO to reassign complaints due to various reasons.
 
-
-
-
-
 The Complaint is re-assigned to the selected employee.
-
-### Share Complaints
-
-GROs can share complaints with other department users based on the requirements.
-
-To share complaints click on the complaint you want to share.
-
-![](https://lh4.googleusercontent.com/-XhFUUKrYfG\_6zvZZvLT8VP28JMjmjInSk3OH9qgPjGQ4iGl3cde-m-UivlEzUePFbDrU8RYPpHh-kZPjGkyna5smWeJP9dhvMLA1wrEbe-FpCenhpVXSG7e3UQuOQwrZI-fpe4F)
-
-Click on the share icon in blue on the top right corner of the screen.
-
-![](https://lh3.googleusercontent.com/ECLvDJ-AX9Tjgf45YFvW49Y3tgsEHTpUbR8BAmZSkH5RkmVUPZZyCHjOqaGTDlNyljzssd6lHR0GoEdj4eeytTRHdohA2jAa5WzQ927ScpPeZd79IfkaoEJO2ZOfOrfEV5wMHZzh)
-
-Select the appropriate channel. The system will redirect you to the selected channel interface. Select the person or list of people for sharing. Click on the **Send** button.
-
-The complaint is shared with the selected recipients.
 
 ### Reject Complaints
 
@@ -160,7 +139,6 @@ FMEs can -
 3. Call citizens
 4. Comment on complaints
 5. [Search complaints](employee-user-manual.md)
-6. [Share complaints](employee-user-manual.md)
 
 ### **Request Re-Assign**
 
