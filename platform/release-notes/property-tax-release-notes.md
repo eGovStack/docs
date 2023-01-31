@@ -1,10 +1,10 @@
 # Property Tax Release Notes
 
-### Overview <a href="#overview" id="overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
 This release provides features which are identified as GAP between old UI and New UI.
 
-### Release Highlights <a href="#release-highlights" id="release-highlights"></a>
+## Release Highlights <a href="#release-highlights" id="release-highlights"></a>
 
 UI audit of property tax covers the features given below.
 
@@ -30,7 +30,7 @@ UI audit of property tax covers the features given below.
 6. Collect Mutation Fee
 7. Update Property
 
-### Release Features <a href="#release-features" id="release-features"></a>
+## Release Features <a href="#release-features" id="release-features"></a>
 
 | Key Feature               | Description                                                      |
 | ------------------------- | ---------------------------------------------------------------- |
@@ -54,16 +54,16 @@ UI audit of property tax covers the features given below.
 | Collect Mutation Fee      | Collect mutation fee is changed to view missing details.         |
 | Update Property           | Update property is changed to view missing details.              |
 
-### Known Issues <a href="#known-issues" id="known-issues"></a>
+## Known Issues <a href="#known-issues" id="known-issues"></a>
 
 &#x20;None.
 
-### Upcoming Release Features <a href="#upcoming-release-features" id="upcoming-release-features"></a>
+## Upcoming Release Features <a href="#upcoming-release-features" id="upcoming-release-features"></a>
 
 1. Reports revamp
 2. Output Documents PDF revamp
 
-### Reference Doc Links <a href="#reference-doc-links" id="reference-doc-links"></a>
+## Reference Doc Links <a href="#reference-doc-links" id="reference-doc-links"></a>
 
 | **Doc Links** | **Description** |
 | ------------- | --------------- |

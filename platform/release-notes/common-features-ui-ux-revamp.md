@@ -1,10 +1,10 @@
 # Common Features UI/UX Revamp
 
-### Release Summary <a href="#release-summary" id="release-summary"></a>
+## Release Summary <a href="#release-summary" id="release-summary"></a>
 
 This note consists of common UI/UX elements revamped for employee and citizen Profiles.
 
-### New ‌Feature Additions <a href="#new-feature-additions" id="new-feature-additions"></a>
+## New ‌Feature Additions <a href="#new-feature-additions" id="new-feature-additions"></a>
 
 | **Feature**          | **Description**                                                                                                                                                                                                           |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -14,7 +14,7 @@ This note consists of common UI/UX elements revamped for employee and citizen Pr
 
 &#x20;
 
-**Detailed user Manuals**
+## **Detailed user Manuals**
 
 Common UI/UX: [Common UI/UX](../../products/modules/common-ui-docs/)
 
