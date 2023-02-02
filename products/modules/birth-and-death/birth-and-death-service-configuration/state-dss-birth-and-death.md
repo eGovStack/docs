@@ -1112,11 +1112,11 @@ Clicking on the ULB navigates to show the data at the ward level.
 
 **Deaths by Gender:** This will be a split bar graph where total deaths registered will be bifurcated by age category (< 2 years, 2-15, 15-29, 30-44, 45-59, 60-74, >= 75) and each bar will show gender wise split
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (5) (4).png>)
 
 Clicking on any Category name drills down to charts that provide specific age group data.
 
-![](<../../../../.gitbook/assets/image (2).png>)
+![](<../../../../.gitbook/assets/image (2) (6).png>)
 
 **Certificate Downloads by Boundary:** This tabular chart representation graph shows multiple Birth information like Total Downloads (Mobile App), Total Downloads (Web), Total Downloads, and Delayed Registrations. And this table shows the data at the DDR level and also has the drill-down chart for each state to ULB and from ULB to ward level data for the same.
 

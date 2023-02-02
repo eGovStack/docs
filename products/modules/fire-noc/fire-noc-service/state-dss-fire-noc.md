@@ -1331,7 +1331,7 @@ On click of Actual it shows the % of NOCs issued for Actual FireNocs.
 
 On click of Provisional it shows the % of NOCs issued for Actual FireNocs.
 
-![](<../../../../.gitbook/assets/image (1).png>)
+![](<../../../../.gitbook/assets/image (1) (5).png>)
 
 On click of Show More, it shows the information of all the states.
 
@@ -1357,9 +1357,9 @@ xtable type allows the addition of multiple computed fields with the aggregated 
 
 To add multiple computed columns,  computedFields \[]  where actionName (IComputedField\<T> interface), fields \[] names as in exist in query key, newField as name to appear for computation must be defined.
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on any region name provides a drill down to the specific state data.
 

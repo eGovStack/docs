@@ -16,29 +16,21 @@ Why would you worry about the minimum amount of resources guaranteed to a pod? W
 
 ![](https://theithollow.com/wp-content/uploads/2020/04/image-3.png)
 
-What a resource request can do, is to ensure that at least a small part of that processor’s time is reserved for both containers. This way if there is resource contention, each pod will have a guaranteed, minimum amount of resource in which to still function.
-
-![](https://documents.lucidchart.com/documents/85c359e4-da7c-4eca-8ed2-bfa90d599d5f/pages/FO6Qkj8\_qSsz?a=3238\&x=63\&y=265\&w=1386\&h=393\&store=1\&accept=image%2F\*\&auth=LCA%20e43a8117eede4818321fafb1b5db60de1176fc32-ts%3D1587233233)
+What a resource request can do, is ensure that at least a small part of that processor’s time is reserved for both containers. This way if there is resource contention, each pod will have a guaranteed, minimum amount of resources in which to still function.
 
 ## Resource Limits
 
 As you might guess, a resource limit is the maximum amount of CPU or memory that can be used by a container. The limit represents the upper bounds of how much CPU or memory that a container within a pod can consume in a Kubernetes cluster, regardless of whether or not the cluster is under resource contention.
 
-![](https://documents.lucidchart.com/documents/85c359e4-da7c-4eca-8ed2-bfa90d599d5f/pages/FO6Qkj8\_qSsz?a=3379\&x=57\&y=712\&w=1386\&h=341\&store=1\&accept=image%2F\*\&auth=LCA%20b77deea5245261d2dff4f5589901166d5770a4fb-ts%3D1587233233)
-
 Limits prevent containers from taking up more resources on the cluster than you’re willing to let them.
 
 ## Common Practices
 
-As a general rule, all containers should have a request for memory and CPU before deploying to a cluster. This will ensure that if resources are running low, your container can still do the minimum amount of work to stay in a healthy state until those resource free up again (hopefully).
+As a general rule, all containers should have a request for memory and CPU before deploying to a cluster. This will ensure that if resources are running low, your container can still do the minimum amount of work to stay in a healthy state until those resources free up again (hopefully).
 
 Limits are often used in conjunction with requests to create a “guaranteed pod”. This is where the request and limit are set to the same value. In that situation, the container will always have the same amount of CPU available to it, no more or less.
 
-![](https://documents.lucidchart.com/documents/85c359e4-da7c-4eca-8ed2-bfa90d599d5f/pages/FO6Qkj8\_qSsz?a=3436\&x=59\&y=1069\&w=1386\&h=242\&store=1\&accept=image%2F\*\&auth=LCA%20a7431baf99afe49cb2ff25696b15d8495c7c1b01-ts%3D1587233233)
-
-At this point, you may be thinking about adding a high “request” value to make sure you have plenty of resources available for your container. This might sound like a good idea, but have dramatic consequences to scheduling on the Kubernetes cluster. If you set a high CPU request, for example, 2 CPUs, then your pod will ONLY be able to be scheduled on Kubernetes nodes that have 2 full CPUs available that aren’t reserved by other pods’ requests. In the example below, the 2 vCPU pods couldn’t be scheduled on the cluster. However, if you were to lower the “request” amount to say 1 vCPU, it could.
-
-![](https://documents.lucidchart.com/documents/85c359e4-da7c-4eca-8ed2-bfa90d599d5f/pages/FO6Qkj8\_qSsz?a=3687\&x=1733\&y=273\&w=1045\&h=1026\&store=1\&accept=image%2F\*\&auth=LCA%208947fe6e088cd6618338a5b630abff3858c6849f-ts%3D1587233233)
+At this point, you may be thinking about adding a high “request” value to make sure you have plenty of resources available for your container. This might sound like a good idea, but have dramatic consequences for scheduling on the Kubernetes cluster. If you set a high CPU request, for example, 2 CPUs, then your pod will ONLY be able to be scheduled on Kubernetes nodes that have 2 full CPUs available that aren’t reserved by other pods’ requests. In the example below, the 2 vCPU pods couldn’t be scheduled on the cluster. However, if you were to lower the “request” amount to say 1 vCPU, it could.
 
 ## Resource Requests and Limits – In Action
 
@@ -111,9 +103,7 @@ After redeploying the container and again increasing my CPU load to 400m, we can
 
 ### CPU Requests Example
 
-OK, next, I’ve deployed two pods into my Kubernetes cluster and those pods are on the same worker node for a simple example about contention. I’ve got a guaranteed pod that has 1000m CPU set as a limit but also as a request. The other pod is unbounded, meaning there is no limit on how much CPU it can utilize.
-
-![](https://documents.lucidchart.com/documents/85c359e4-da7c-4eca-8ed2-bfa90d599d5f/pages/FO6Qkj8\_qSsz?a=3781\&x=2893\&y=664\&w=1034\&h=355\&store=1\&accept=image%2F\*\&auth=LCA%201ecab817124a0d3e7b4adb45940d58b96c87f3ce-ts%3D1587233233)
+OK, next, I’ve deployed two pods into my Kubernetes cluster and those pods are on the same worker node for a simple example of contention. I’ve got a guaranteed pod that has 1000m CPU set as a limit but also as a request. The other pod is unbounded, meaning there is no limit on how much CPU it can utilize.
 
 After the deployment, each pod is really not using any resources as you can see here.
 
@@ -123,7 +113,7 @@ We make a request to increase the load on my non-guaranteed pod.
 
 ![](https://theithollow.com/wp-content/uploads/2020/04/image-5-1024x52.png)
 
-And if we look at the container's resources you can see that even though my container wants to use 2000m CPU, it’s only actually using 1000m CPU. The reason for this is because the guaranteed pod is guaranteed 1000m CPU, whether it is actively using that CPU or not.
+And if we look at the container's resources you can see that even though my container wants to use a 2000m CPU, it’s only actually using a 1000m CPU. The reason for this is that the guaranteed pod is guaranteed a 1000m CPU, whether it is actively using that CPU or not.
 
 ![](https://theithollow.com/wp-content/uploads/2020/04/image-6-1024x82.png)
 
@@ -134,5 +124,3 @@ Kubernetes uses Resource Requests to set a minimum amount of resources for a giv
 Taking these two concepts and using them together can ensure that your critical pods always have the resources that they need to stay healthy. They can also be configured to take advantage of shared resources within the cluster.
 
 Be careful setting resource requests too high so your Kubernetes scheduler can still scheduler these pods. Good luck!
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation](https://egov.org.in/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

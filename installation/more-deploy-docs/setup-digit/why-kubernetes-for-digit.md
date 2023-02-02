@@ -155,7 +155,7 @@ Using the same CLI command `kubectl set image deployment` an update can be rolle
 
 ## Autoscaling
 
-![Image for post](https://miro.medium.com/max/60/1\*MdH5uByqV1uZmH-9qF-L1Q.png?q=20)
+<img src="../../../.gitbook/assets/image (13).png" alt="" data-size="original">
 
 Figure 10: Kubernetes Pod Autoscaling Model
 
@@ -169,9 +169,9 @@ As shown in the above figure this functionality can be extended by adding anothe
 
 ## Package Management
 
-![Image for post](https://miro.medium.com/max/60/1\*47vHS7ZkOF7tp-hRBp3A-w.png?q=20)
+![](<../../../.gitbook/assets/image (5).png>)
 
-![Image for post](https://miro.medium.com/max/60/1\*crrEEYAFkGHiawIF94qaMA.png?q=20)
+![](<../../../.gitbook/assets/image (1).png>)
 
 Figure 11: Helm and Kubeapps Hub
 

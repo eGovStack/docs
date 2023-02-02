@@ -157,10 +157,10 @@ Information Images for PGR and Open Search
 
 ### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| Title                        | Link                                                                                                                                                                                                                   |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Chatbot Message Localisation | [Chatbot Message Localisation Doc](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1174306907/Xstate-Chatbot+Message+Localisation?atlOrigin=eyJpIjoiOTg3NTVmYTRhYTgzNDE3ODliODIzN2E1ODIxNmFkNmYiLCJwIjoiYyJ9) |
-| nlp-search engine            | [NLP Engine Service](../nlp-engine-service.md)                                                                                                                                                                         |
+| Title                        | Link                                                                       |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| Chatbot Message Localisation | [Chatbot Message Localisation Doc](xstate-chatbot-message-localisation.md) |
+| nlp-search engine            | [NLP Engine Service](../nlp-engine-service.md)                             |
 
 ### API List
 
@@ -170,6 +170,3 @@ Information Images for PGR and Open Search
 | /xstate-chatbot/reminder | [https://www.getpostman.com/collections/47c10d1bc82a7133c269](https://www.getpostman.com/collections/47c10d1bc82a7133c269) |
 | /xstate-chatbot/status   | [https://www.getpostman.com/collections/47c10d1bc82a7133c269](https://www.getpostman.com/collections/47c10d1bc82a7133c269) |
 
-
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this website by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

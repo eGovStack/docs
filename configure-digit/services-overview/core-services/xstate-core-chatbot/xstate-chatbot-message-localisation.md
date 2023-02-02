@@ -36,6 +36,3 @@ Some guidelines to follow when adding new messages:
 1. The parameter names are written within \{{\}} _(double curly brackets)._
 2. The content inside these curly brackets should be written in English even when writing messages for any new language.
 
-
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this website by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

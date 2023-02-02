@@ -61,7 +61,7 @@ This includes almost all functions except the guard condition code snippets.
 | `SERVICE_PROVIDER`      | <p>If it’s value is configured to be eGov, it will call the backend rainmaker services. If the value is configured as Dummy, dummy data would be used rather than fetching data from APIs.</p><p>Dummy option is provided for initial dialog development, and is only to be used locally.</p>         |
 | `SUPPORTED_LOCALES`     | A list of comma-separated locales supported by the chatbot.                                                                                                                                                                                                                                           |
 
-Other configuration details are mentioned in the [XState-Chatbot Integration Document](https://digit-discuss.atlassian.net/l/c/gg4EmH3k).
+Other configuration details are mentioned in the [XState-Chatbot Integration Document](xstate-chatbot-integration-document.md).
 
 ## Chat Flow&#x20;
 
@@ -89,6 +89,3 @@ Apart from the chat flow and its backend service API calls, a few other componen
     2. Outgoing message
     3. Transition of state
 
-
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
