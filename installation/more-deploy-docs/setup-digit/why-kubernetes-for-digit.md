@@ -155,7 +155,7 @@ Using the same CLI command `kubectl set image deployment` an update can be rolle
 
 ## Autoscaling
 
-<img src="../../../.gitbook/assets/image (13).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image.png" alt="" data-size="original">
 
 Figure 10: Kubernetes Pod Autoscaling Model
 
@@ -169,9 +169,9 @@ As shown in the above figure this functionality can be extended by adding anothe
 
 ## Package Management
 
-![](<../../../.gitbook/assets/image (5).png>)
-
 ![](<../../../.gitbook/assets/image (1).png>)
+
+![](<../../../.gitbook/assets/image (2).png>)
 
 Figure 11: Helm and Kubeapps Hub
 

@@ -1112,11 +1112,11 @@ Clicking on the ULB navigates to show the data at the ward level.
 
 **Deaths by Gender:** This will be a split bar graph where total deaths registered will be bifurcated by age category (< 2 years, 2-15, 15-29, 30-44, 45-59, 60-74, >= 75) and each bar will show gender wise split
 
-![](<../../../../.gitbook/assets/image (5) (4).png>)
+![](<../../../../.gitbook/assets/image (5).png>)
 
 Clicking on any Category name drills down to charts that provide specific age group data.
 
-![](<../../../../.gitbook/assets/image (2) (6).png>)
+![](<../../../../.gitbook/assets/image (2) (5).png>)
 
 **Certificate Downloads by Boundary:** This tabular chart representation graph shows multiple Birth information like Total Downloads (Mobile App), Total Downloads (Web), Total Downloads, and Delayed Registrations. And this table shows the data at the DDR level and also has the drill-down chart for each state to ULB and from ULB to ward level data for the same.
 
@@ -1124,11 +1124,11 @@ xtable type allows to add multiple computed fields with the aggregated fields dy
 
 To add multiple computed columns,  computedFields \[]  where actionName (IComputedField\<T> interface), fields \[] names as in exist in query key, newField as name to appear for computation must be defined.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on any DDR name provides the drill-down charts that represent state-specific data.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on the ULB navigates to wards under that specific ULB and each ward shows the specific data regarding that ward.
 

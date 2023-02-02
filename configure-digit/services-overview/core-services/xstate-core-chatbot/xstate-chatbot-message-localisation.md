@@ -4,7 +4,9 @@
 
 Click on the link to the google sheet below to access all the messages with the codes:
 
-[<img src="https://developers.google.com/drive/images/drive_icon.png" alt="" data-size="line">https://docs.google.com/spreadsheets/d/1j5ldAHbwdR2jTCgUuxlrEdLKDZuHmkJg589v7OML-eA/edit?usp=sharing - Connect to preview](https://docs.google.com/spreadsheets/d/1j5ldAHbwdR2jTCgUuxlrEdLKDZuHmkJg589v7OML-eA/edit?usp=sharing)
+{% embed url="https://docs.google.com/spreadsheets/d/1XygouJlljm2SedBatciVJKu9yDcX1J-s1MS1vPKJgYE/edit?usp=sharing" %}
+
+[Click here](https://docs.google.com/spreadsheets/d/1XygouJlljm2SedBatciVJKu9yDcX1J-s1MS1vPKJgYE/edit?usp=sharing) to download the file.
 
 ## Message Localisation Details
 

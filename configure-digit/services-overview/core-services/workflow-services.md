@@ -33,7 +33,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 #### Interaction Diagram
 
-![](<../../../.gitbook/assets/image (74).png>)
+![](<../../../.gitbook/assets/image (74) (1).png>)
 
 ## Deployment Details
 
