@@ -27,5 +27,5 @@ _(Note: The above structure image is for reference only)_
   * Kafka server configuration value
   * Kafka producer and the consumer configuration value
   * Kafka topic
-  * External service path and many more. Whatever changes are done in application.properties file the same changes need to be reflected in the values.yaml file (for reference only) of a particular service.
-* After enhancing the service, the details about the new feature must be mentioned in README.md, LOCALSETUP.md and CHANGELOG.md files. And the version of the service in the pom.xml file needs to be incremented. **Eg:** 1.0.0 to 1.0.1 or 1.0.0 to 1.1.0 depending upon the level of the enhancement.
+  * External service path and many more. Whatever changes are done in application.properties file the same changes need to be reflected in the [values.yaml](https://digit-discuss.atlassian.net/wiki/spaces/EPE/overview) file (for reference only) of a particular service.
+* After enhancing the service, the details about the new feature must be mentioned in [README.md](http://readme.md/), [LOCALSETUP.md](http://localsetup.md/) and [CHANGELOG.md](http://changelog.md/) files. And the version of the service in the pom.xml file needs to be incremented. **Eg:** 1.0.0 to 1.0.1 or 1.0.0 to 1.1.0 depending upon the level of the enhancement.
