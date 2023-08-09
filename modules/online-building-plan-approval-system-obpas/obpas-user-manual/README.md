@@ -27,97 +27,14 @@ The module supports the following key functions -
 
 Refer to the table below to understand the different user roles and the scope of action linked to each role. The applicable user roles and action items can vary from one State to another. DIGIT customizes the workflows to suit the requirements defined at the State level.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>User Role</b>
-      </th>
-      <th style="text-align:left"><b>Scope of Action</b>
-      </th>
-      <th style="text-align:left"><b>Role Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>Citizen</b>
-      </td>
-      <td style="text-align:left">
-        <p>View BPA Application Status</p>
-        <p>Download Payment Receipts</p>
-        <p>Provide concurrence to the Architect to submit the application</p>
-        <p>Make payment for an application</p>
-        <p>Download Building Permit Order</p>
-      </td>
-      <td style="text-align:left">Individuals and society groups/communities who engage stakeholder/architects
-        to construct buildings for them</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Stakeholder/Architect</b>
-      </td>
-      <td style="text-align:left">
-        <p>Create BPA Application</p>
-        <p>Send application to the citizen for approval</p>
-        <p>Make payment for the application</p>
-        <p>Download permits</p>
-        <p>Download receipts</p>
-        <p>Check application status</p>
-      </td>
-      <td style="text-align:left">Architects, builders, or engineers who register as a stakeholder in the
-        BPA system - submit applications on behalf of the citizens</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Document Verifier (DV)</b>
-      </td>
-      <td style="text-align:left">
-        <p>Send application back to citizen</p>
-        <p>Reject applications</p>
-        <p>Upload document on behalf of citizen</p>
-        <p>Verify and forward applications to FI</p>
-      </td>
-      <td style="text-align:left">DV is the ULB employee responsible for verifying all documents uploaded
-        by the stakeholder/citizen along with the building permit or occupancy
-        certificate application.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Field Inspector (FI)</b>
-      </td>
-      <td style="text-align:left">
-        <p>Prepare Inspection Report</p>
-        <p>Send application back to the citizen</p>
-        <p>Reject applications</p>
-        <p>Verify and forward applications to NOC Verifier</p>
-      </td>
-      <td style="text-align:left">FI is the ULB employee responsible for inspecting construction onsite
-        details submitted by the stakeholder or owner.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>NOC Verifier</b>
-      </td>
-      <td style="text-align:left">
-        <p>Send back to citizen</p>
-        <p>Reject applications</p>
-        <p>Update NOC details on behalf of NOC department users</p>
-        <p>Verify and forward applications to BPA Approver
-          <br />
-        </p>
-      </td>
-      <td style="text-align:left">NOC Verifier is the ULB employee responsible for verifying NOC details
-        obtained from concerned authorities.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>BPA Approver</b>
-      </td>
-      <td style="text-align:left">
-        <p>Reject application</p>
-        <p>Update permit conditions</p>
-        <p>Approve application</p>
-      </td>
-      <td style="text-align:left">The BPA Approver is the ULB employee responsible for rejecting or approving
-        building permit or occupancy certificate applications.</td>
-    </tr>
-  </tbody>
-</table>
+| **User Role**              | **Scope of Action**                                                                                                                                                                                                | **Role Description**                                                                                                                                                    |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Citizen**                | <p>View BPA Application Status</p><p>Download Payment Receipts</p><p>Provide concurrence to the Architect to submit the application</p><p>Make payment for an application</p><p>Download Building Permit Order</p> | Individuals and society groups/communities who engage stakeholder/architects to construct buildings for them                                                            |
+| **Stakeholder/Architect**  | <p>Create BPA Application</p><p>Send application to the citizen for approval</p><p>Make payment for the application</p><p>Download permits</p><p>Download receipts</p><p>Check application status</p>              | Architects, builders, or engineers who register as a stakeholder in the BPA system - submit applications on behalf of the citizens                                      |
+| **Document Verifier (DV)** | <p>Send application back to citizen</p><p>Reject applications</p><p>Upload document on behalf of citizen</p><p>Verify and forward applications to FI</p>                                                           | DV is the ULB employee responsible for verifying all documents uploaded by the stakeholder/citizen along with the building permit or occupancy certificate application. |
+| **Field Inspector (FI)**   | <p>Prepare Inspection Report</p><p>Send application back to the citizen</p><p>Reject applications</p><p>Verify and forward applications to NOC Verifier</p>                                                        | FI is the ULB employee responsible for inspecting construction onsite details submitted by the stakeholder or owner.                                                    |
+| **NOC Verifier**           | <p>Send back to citizen</p><p>Reject applications</p><p>Update NOC details on behalf of NOC department users</p><p>Verify and forward applications to BPA Approver<br></p>                                         | NOC Verifier is the ULB employee responsible for verifying NOC details obtained from concerned authorities.                                                             |
+| **BPA Approver**           | <p>Reject application</p><p>Update permit conditions</p><p>Approve application</p>                                                                                                                                 | The BPA Approver is the ULB employee responsible for rejecting or approving building permit or occupancy certificate applications.                                      |
 
 ## **Getting Started with BPA**
 
@@ -137,4 +54,3 @@ This section guides you through the details of using the BPA module for each rol
 6. [BPA Approver](obpas-employee-user-manual.md#bpa-approver)
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-

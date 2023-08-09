@@ -1,12 +1,12 @@
 # BPA Calculator Service
 
-## Description <a id="Description"></a>
+## Description <a href="#description" id="description"></a>
 
 BPA application and BPA Occupancy Certificate application has Fee involved. Based on the Application Type, RiskType and ServiceType Fee to be calculated and generates a demand for the calculated amount for Payment. This service used to generate Application Fee, Sanction Fee, Low Application Permit Fee, Deviation Charges for BPA application and Occupancy Certificate Application.
 
-## **System Requirements** <a id="System-Requirements:"></a>
+## **System Requirements** <a href="#system-requirements" id="system-requirements"></a>
 
-* Knowledge of Java/J2EE\(preferably Java 8 version\)
+* Knowledge of Java/J2EE(preferably Java 8 version)
 * Knowledge of Spring Boot and spring-boot microservices.
 * Knowledge of Git or any version control system.
 * Knowledge of RESTful Web services.
@@ -17,13 +17,13 @@ BPA application and BPA Occupancy Certificate application has Fee involved. Base
 
 bpa calculator services present in municipal services provide multiple functionalities like calculating Application Fee, Sanction Fee, Low Permit Fee, OC Deviation Charges, generating demands for a particular BPA, BPA OC applications, updating demands, The different functionalities provided by sewerage calculator services are:
 
-### **Setup and usage** <a id="Setup-and-usage:"></a>
+### **Setup and usage** <a href="#setup-and-usage" id="setup-and-usage"></a>
 
 The [**Application**](https://github.com/egovernments/municipal-services/tree/master) is present among the _**municipal services**_ group of applications available in the eGov-services git repository with the folder name **bpa-calculator**. The spring boot application needs the **Lombok\*** extension added in your IDE to load it. Once the application is up and running API requests can be posted to the URL and ids can be generated.
 
 * in case of IntelliJ, the plugin can be installed directly, for eclipse the Lombok jar location has to be added in eclipse.ini file in this format  javaagent:lombok.jar
 
-### _**Application.properties File Information**_ <a id="Application.properties-File-Information:"></a>
+### _**Application.properties File Information**_ <a href="#application.properties-file-information" id="application.properties-file-information"></a>
 
 * Business service codes for
   * BPA High/Medium Risk Application Fee
@@ -52,78 +52,20 @@ The [**Application**](https://github.com/egovernments/municipal-services/tree/ma
 
 _**External Application references**_
 
-* dcr-services \(Use Edcr data \)
-* egov-mdms \( Configurations/master by MDMS \)
-* billing-service \( Generate and update demands \)
-* bpa-services \(Get the bpa application data for fee calculation \)
+* dcr-services (Use Edcr data )
+* egov-mdms ( Configurations/master by MDMS )
+* billing-service ( Generate and update demands )
+* bpa-services (Get the bpa application data for fee calculation )
 
-### _**API Information**_ <a id="API-Information-:"></a>
+### _**API Information**_ <a href="#api-information" id="api-information"></a>
 
 * bpa-calculator/v1/\_calculate End point to calculate the Fee and create Demand with the applicable businessService and TaxHeads
 
-### MDMS Configuration: <a id="MDMS-Configuration:"></a>
+### MDMS Configuration: <a href="#mdms-configuration" id="mdms-configuration"></a>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>MDMS Name</b>
-      </th>
-      <th style="text-align:left"><b>Path</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-      <th style="text-align:left"><b>Example Json</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>CalculationType</b>
-      </td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/CalculationType.json">CalculationType</a>
-      </td>
-      <td style="text-align:left">
-        <p>Used by bpa-calculator Service which Defines the Fee to be collected for
-          Given ApplicationType, ServiceType, RiskType and feeType</p>
-        <p>2. Second Example defines the calculation logic to figure out the fee
-          for the Service, considering the different parameters from EDCR information
-          of the BPA.</p>
-        <p><b>ParameterPath</b> indicates the EDCR Response Data path to get the data
-          point.</p>
-        <p><b>from</b>
-        </p>
-        <p>Indicates the from value of the data point to be considered</p>
-        <p><b>to</b>
-        </p>
-        <p>Indicates the to value of the data point to be considered</p>
-        <p><b>MF</b>
-        </p>
-        <p>multiplication factor to be considered to multiple the datapoint value
-          to calculate the value when data point value falls between from and to</p>
-        <p><b>UOM</b>
-        </p>
-        <p>UOM to be considered to multiple the datapoint value and MF to calculate
-          the Fee when data point value falls between from and to</p>
-      </td>
-      <td style="text-align:left">
-        <p> <code>{ &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;serviceType&quot;: &quot;ALL&quot;, &quot;riskType&quot;: &quot;LOW&quot;, &quot;feeType&quot;: &quot;SanctionFee&quot;, &quot;amount&quot;: 500 }, { &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;serviceType&quot;: &quot;NEW_CONSTRUCTION&quot;, &quot;riskType&quot;: &quot;ALL&quot;, &quot;feeType&quot;: &quot;ApplicationFee&quot;, &quot;amount&quot;: 120 }, { &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;serviceType&quot;: &quot;NEW_CONSTRUCTION&quot;, &quot;riskType&quot;: &quot;LOW&quot;, &quot;feeType&quot;: &quot;Low_ApplicationFee&quot;, &quot;amount&quot;: 100 }, { &quot;applicationType&quot;: &quot;BUILDING_OC_PLAN_SCRUTINY&quot;, &quot;serviceType&quot;: &quot;ALL&quot;, &quot;riskType&quot;: &quot;ALL&quot;, &quot;feeType&quot;: &quot;SanctionFee&quot;, &quot;amount&quot;: 500, &quot;calsiLogic&quot;: [ { &quot;parameter&quot;: &quot;builtuparea&quot;, &quot;tolerancelimit&quot;: 10, &quot;calculationType&quot;: &quot;number&quot;, &quot;deviation&quot;: [ { &quot;from&quot;: 11, &quot;to&quot;: 50, &quot;MF&quot;: 1, &quot;uom&quot;: 100 }, { &quot;from&quot;: 51, &quot;to&quot;: 100, &quot;MF&quot;: 2, &quot;uom&quot;: 150 }, { &quot;from&quot;: 101, &quot;to&quot;: 499, &quot;MF&quot;: 3, &quot;uom&quot;: 200 } ], &quot;paramPath&quot;: &quot;edcrDetail[0].planDetail.virtualBuilding.totalBuitUpArea&quot; } ] }</code>
-        </p>
-        <p>From the above example</p>
-        <ol>
-          <li>indicates SanctionFee is Rs 500 for applicationType=BuildingPlanScrutiny,
-            RiskType=LOW and any ServiceType</li>
-          <li>indicates applicationFee is Rs 120 for applicationType=BuildingPlanScrutiny,
-            ServiceType=NEW_CONSTRUCTION and any RiskType
-            <ol>
-              <li>indicates applicationFee is Rs 100 for applicationType=BuildingPlanScrutiny,
-                ServiceType=NEW_CONSTRUCTION and RiskType=LOW</li>
-            </ol>
-          </li>
-        </ol>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| **MDMS Name**       | **Path**                                                                                                       | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | **Example Json**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **CalculationType** | [CalculationType](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/CalculationType.json) | <p>Used by bpa-calculator Service which Defines the Fee to be collected for Given ApplicationType, ServiceType, RiskType and feeType</p><p>2. Second Example defines the calculation logic to figure out the fee for the Service, considering the different parameters from EDCR information of the BPA.</p><p><strong>ParameterPath</strong> indicates the EDCR Response Data path to get the data point.</p><p><strong>from</strong></p><p>Indicates the from value of the data point to be considered</p><p><strong>to</strong></p><p>Indicates the to value of the data point to be considered</p><p><strong>MF</strong></p><p>multiplication factor to be considered to multiple the datapoint value to calculate the value when data point value falls between from and to</p><p><strong>UOM</strong></p><p>UOM to be considered to multiple the datapoint value and MF to calculate the Fee when data point value falls between from and to</p> | <p> <code>{ "applicationType": "BUILDING_PLAN_SCRUTINY", "serviceType": "ALL", "riskType": "LOW", "feeType": "SanctionFee", "amount": 500 }, { "applicationType": "BUILDING_PLAN_SCRUTINY", "serviceType": "NEW_CONSTRUCTION", "riskType": "ALL", "feeType": "ApplicationFee", "amount": 120 }, { "applicationType": "BUILDING_PLAN_SCRUTINY", "serviceType": "NEW_CONSTRUCTION", "riskType": "LOW", "feeType": "Low_ApplicationFee", "amount": 100 }, { "applicationType": "BUILDING_OC_PLAN_SCRUTINY", "serviceType": "ALL", "riskType": "ALL", "feeType": "SanctionFee", "amount": 500, "calsiLogic": [ { "parameter": "builtuparea", "tolerancelimit": 10, "calculationType": "number", "deviation": [ { "from": 11, "to": 50, "MF": 1, "uom": 100 }, { "from": 51, "to": 100, "MF": 2, "uom": 150 }, { "from": 101, "to": 499, "MF": 3, "uom": 200 } ], "paramPath": "edcrDetail[0].planDetail.virtualBuilding.totalBuitUpArea" } ] }</code></p><p>From the above example</p><ol><li>indicates SanctionFee is Rs 500 for applicationType=BuildingPlanScrutiny, RiskType=LOW and any ServiceType</li><li><p>indicates applicationFee is Rs 120 for applicationType=BuildingPlanScrutiny, ServiceType=NEW_CONSTRUCTION and any RiskType</p><ol><li>indicates applicationFee is Rs 100 for applicationType=BuildingPlanScrutiny, ServiceType=NEW_CONSTRUCTION and RiskType=LOW</li></ol></li></ol> |
 
 **Access MDMS Config**
 
@@ -137,7 +79,7 @@ BusinessService Config for Fee’s to be collected
 
 Application Fee, Sanction Fee BPA High/Medium Risk
 
-```text
+```
  {
       "businessService": "BPA.NEWCONSTRUCTION_APP_FEE",
       "code": "BPA.NC_APP_FEE",
@@ -164,7 +106,7 @@ Application Fee, Sanction Fee BPA High/Medium Risk
 
 **Application Fee, Sanction Fee for BPA Low Risk**
 
-```text
+```
 {
       "businessService": "BPA.NEWCONSTRUCTION_LOW_RISK_PERMIT_FEE",
       "code": "BPA.LOW_RISK_PERMIT_FEE",
@@ -180,7 +122,7 @@ Application Fee, Sanction Fee BPA High/Medium Risk
 
 **Application Fee, Sanction Fee for BPA OC**
 
-```text
+```
 {
       "businessService": "BPA.NEWCONSTRUCTION_OC_APP_FEE",
       "code": "BPA.NC_OC_APP_FEE",
@@ -211,7 +153,7 @@ Application Fee, Sanction Fee BPA High/Medium Risk
 
 Tax Head for BPA High/Medium Risk
 
-```text
+```
 {
       "category": "FEE",
       "service": "BPA.NC_APP_FEE",
@@ -236,7 +178,7 @@ Tax Head for BPA High/Medium Risk
 
 TaxHead config for BPA Low Risk
 
-```text
+```
  {
       "category": "FEE",
       "service": "BPA.LOW_RISK_PERMIT_FEE",
@@ -261,7 +203,7 @@ TaxHead config for BPA Low Risk
 
 TaxHead config for BPA OC
 
-```text
+```
  {
       "category": "FEE",
       "service": "BPA.NC_OC_APP_FEE",
@@ -290,7 +232,7 @@ TaxHead config for BPA OC
 
 TaxPeriod MDMS for BPA High/Medium Risk
 
-```text
+```
 {
       "fromDate": 1522540801000,
       "toDate": 1838159999000,
@@ -311,7 +253,7 @@ TaxPeriod MDMS for BPA High/Medium Risk
 
 TaxPeriod MDMS for BPA Low Risk
 
-```text
+```
 {
       "fromDate": 1522540801000,
       "toDate": 1838159999000,
@@ -324,7 +266,7 @@ TaxPeriod MDMS for BPA Low Risk
 
 TaxPeriod Config for BPA OC
 
-```text
+```
 {
       "fromDate": 1522540801000,
       "toDate": 1838159999000,
@@ -343,25 +285,24 @@ TaxPeriod Config for BPA OC
     }
 ```
 
-## Workflow <a id="Workflow"></a>
+## Workflow <a href="#workflow" id="workflow"></a>
 
 NA
 
-## Persister configuration <a id="Persister-configuration"></a>
+## Persister configuration <a href="#persister-configuration" id="persister-configuration"></a>
 
 NA
 
-## Database Schema <a id="Database-Schema"></a>
+## Database Schema <a href="#database-schema" id="database-schema"></a>
 
 NA
 
-## Notifications <a id="Notifications"></a>
+## Notifications <a href="#notifications" id="notifications"></a>
 
 NA
 
-## PDF Configuration <a id="PDF-Configuration"></a>
+## PDF Configuration <a href="#pdf-configuration" id="pdf-configuration"></a>
 
 NA
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
