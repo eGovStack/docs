@@ -4,11 +4,11 @@ description: Learn how to setup and configure FSM service
 
 # FSM Service Configuration
 
-## Overview <a id="Overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
-Faecal Sludge Management \(FSM\) is a system that enables a citizen to raise a request for septic tank cleaning with there ULB’s directly or by reaching out to the ULB counter. The Citizen can track the application, make a payment for the charges and rate the service. This document contains the details about how to set up the FSM services and describes the functionalities it provides.
+Faecal Sludge Management (FSM) is a system that enables a citizen to raise a request for septic tank cleaning with there ULB’s directly or by reaching out to the ULB counter. The Citizen can track the application, make a payment for the charges and rate the service. This document contains the details about how to set up the FSM services and describes the functionalities it provides.
 
-## Pre-requisites <a id="Pre-requisites"></a>
+## Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
@@ -16,7 +16,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 * Kafka server is up and running
 * egov-persister service is running and has fsm-persister config path added in it
 * PSQL server is running and a database is created to store FSM Application data
-* _\(Optional\)_ Indexer config for FSM is added in egov-indexer yaml paths to index the generated data. An index is required for data visualisation in kibana or in DSS.
+* _(Optional)_ Indexer config for FSM is added in egov-indexer yaml paths to index the generated data. An index is required for data visualisation in kibana or in DSS.
 * Following services should be up and running:
   * egov-user
   * egov-workflow-v2
@@ -32,7 +32,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
   * billing-service
   * collection-services
 
-## Key Functionalities <a id="Key-Functionalities"></a>
+## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
 * A Citizen can file, track and rate the application for cleaning septic tank
 * ULB Employee can file an application for cleaning septic tank on behalf of Citizen
@@ -42,19 +42,19 @@ Before you proceed with the configuration, make sure the following pre-requisite
 * FSM Admin in ULB can cancel the application at any stage before completing the application
 * ULB Employee or Admin can view the audit log of the given application
 
-## Deployment Details <a id="Deployment-Details"></a>
+## Deployment Details <a href="#deployment-details" id="deployment-details"></a>
 
 1. Deploy the latest version of FSM
-2. Add fsm-persister.yml file in config folder in git and add that path in persister . _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
-3. If an index is to be created add the indexer config path in indexer service. \(_The file path is to be added in environment yaml file in param called_ egov-indexer-yaml-repo-path\)
+2. Add fsm-persister.yml file in config folder in git and add that path in persister . _(The file path is to be added in environment yaml file in param called_ persist-yml-path _)_
+3. If an index is to be created add the indexer config path in indexer service. (_The file path is to be added in environment yaml file in param called_ egov-indexer-yaml-repo-path)
 
-## Configuration Details <a id="Configuration-Details"></a>
+## Configuration Details <a href="#configuration-details" id="configuration-details"></a>
 
-### MDMS Configuration <a id="MDMS-Configuration[hardBreak]"></a>
+### MDMS Configuration <a href="#mdms-configuration-hardbreak" id="mdms-configuration-hardbreak"></a>
 
-Add master data in MDMS service with the module name as FSM. Following is some sample master data for Application Channel \(Source\).
+Add master data in MDMS service with the module name as FSM. Following is some sample master data for Application Channel (Source).
 
-```text
+```
 {
     "tenantId": "pb",
     "moduleName": "FSM",
@@ -81,9 +81,9 @@ Add master data in MDMS service with the module name as FSM. Following is some s
 }
 ```
 
-Checklist \(Checklist to be answered by a citizen while rating\)
+Checklist (Checklist to be answered by a citizen while rating)
 
-```text
+```
 {
     "tenantId": "pb",
     "moduleName": "FSM",
@@ -113,9 +113,9 @@ Checklist \(Checklist to be answered by a citizen while rating\)
 }
 ```
 
-Config \(Configuration at the application level\)
+Config (Configuration at the application level)
 
-```text
+```
 {
     "tenantId": "pb",
     "moduleName": "FSM",
@@ -162,9 +162,9 @@ Config \(Configuration at the application level\)
 }
 ```
 
-FSTP Plant Info \(FSTP information for each city\)
+FSTP Plant Info (FSTP information for each city)
 
-```text
+```
 {
     "tenantId": "pb",
     "moduleName": "FSM",
@@ -195,9 +195,9 @@ FSTP Plant Info \(FSTP information for each city\)
 }
 ```
 
-Pit Type \(Type of pit\)
+Pit Type (Type of pit)
 
-```text
+```
 {
     "tenantId": "pb",
     "moduleName": "FSM",
@@ -220,7 +220,7 @@ Pit Type \(Type of pit\)
 
 Property Type
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "FSM",
@@ -507,9 +507,9 @@ Property Type
 }
 ```
 
-Slum \(Slums mapped to the locality of the city\)
+Slum (Slums mapped to the locality of the city)
 
-```text
+```
 {
     "tenantId": "pb",
     "moduleName": "FSM",
@@ -591,11 +591,11 @@ Slum \(Slums mapped to the locality of the city\)
 
 ### Business Service / Workflow Configuration
 
-Create businessService \(workflow configuration\) using the \_\_/businessservice/\_create.
+Create businessService (workflow configuration) using the \_\_/businessservice/\_create.
 
 Following is the product configuration for FSM:
 
-```text
+```
 {
   "RequestInfo": {
     "apiId": "Rainmaker",
@@ -948,13 +948,13 @@ Following is the product configuration for FSM:
 }
 ```
 
-### Localization Setup <a id="Localization-Setup"></a>
+### Localization Setup <a href="#localization-setup" id="localization-setup"></a>
 
-Using /localization/messages/v1/\_upsert , add localisation \(templates\) for notification messages to be sent.
+Using /localization/messages/v1/\_upsert , add localisation (templates) for notification messages to be sent.
 
 Following are the product notification templates
 
-```text
+```
 {
   "messages":[
          {
@@ -1009,13 +1009,13 @@ Following are the product notification templates
 }
 ```
 
-### Actions & Role Action Mapping <a id="Actions-&amp;-Role-Action-Mapping"></a>
+### Actions & Role Action Mapping <a href="#actions-and-role-action-mapping" id="actions-and-role-action-mapping"></a>
 
 Add Role-Action mapping for the APIs in MDMS. Following are the required entries. They should be mapped to both CITIZEN and appropriate employee roles.
 
 **Action Configuration**
 
-```text
+```
 {
       "id": {{PLACEHOLDER1}},
       "name": "Create FSM Application",
@@ -1077,7 +1077,7 @@ Add Role-Action mapping for the APIs in MDMS. Following are the required entries
 
 **Role Action Mapping**
 
-```text
+```
 [
  {
     "rolecode": "CITIZEN",
@@ -1276,32 +1276,32 @@ Add Role-Action mapping for the APIs in MDMS. Following are the required entries
 
 **Infra Ops Configuration**
 
-Configurations that we can manage through values.yml fsm-calculator in infraops repo as follows  
+Configurations that we can manage through values.yml fsm-calculator in infraops repo as follows\
 values.yml for fms-calculator can be found [here](https://github.com/egovernments/eGov-infraOps/blob/master/helm/charts/municipal-services/fsm/values.yaml)
 
-| **Description** | **name in values.yml** | **Current Value** |
-| :--- | :--- | :--- |
-| id-gen host, to generate the application number | EGOV\_IDGEN\_HOST | egov-idgen from egov-service-host |
-| Kafka Consumer Group | SPRING\_KAFKA\_CONSUMER\_GROUP\_ID | egov-fsm-service |
-| kafka topic to which service push data to save new fsm application | PERSISTER\_SAVE\_FSM\_TOPIC | save-fsm-application |
-| kafka topic to which service push data to save workflow status | PERSISTER\_UPDATE\_FSM\_WORKFLOW\_TOPIC | update-fsm-workflow-application |
-| kafka topic to which service push data to update the existing fsm application | PERSISTER\_UPDATE\_FSM\_TOPIC | update-fsm-application |
-| mdms service host | EGOV\_MDMS\_HOST | egov-mdms-service from egov-service-host |
-| billing-service host | EGOV\_BILLINGSERVICE\_HOST | billing-service from egov-service-host |
-| fsm-calculator service host | EGOV\_FSM\_CALCULATOR\_HOST | fsm-calculator from egov-service-host |
-| workflow v2 service host | WORKFLOW\_CONTEXT\_PATH | egov-workflow-v2 from egov-service-host |
-| ui host, to return send the url of new application in sms notification | EGOV\_UI\_APP\_HOST | egov-services-fqdn-name from egov-service-host |
-| vendor service host, to get DSO details | EGOV\_VENDOR\_HOST | vendor from egov-service-host |
-| Vehicle service host, to get vehicle details and manage vehicleTrip | EGOV\_VEHICLE\_HOST | vehicle from egov-service-host |
-| Collection service host, to get the payment details | EGOV\_COLLECTION\_SERVICE\_HOST | collection-services from egov-service-host |
-| localization service host, to get the locale data | EGOV\_LOCALIZATION\_HOST | egov-localization from egov-service-host |
-| user service host, to get the locale data | EGOV\_USER\_HOST | egov-user from egov-service-host |
-| pdf service host, to get the locale data | EGOV\_PDF\_HOST | pdf-service from egov-service-host |
-| url shortening service host, to get the short url for the long once | EGOV\_URL\_SHORTNER\_HOST | egov-url-shortening from egov-service-host |
+| **Description**                                                               | **name in values.yml**                  | **Current Value**                              |
+| ----------------------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------- |
+| id-gen host, to generate the application number                               | EGOV\_IDGEN\_HOST                       | egov-idgen from egov-service-host              |
+| Kafka Consumer Group                                                          | SPRING\_KAFKA\_CONSUMER\_GROUP\_ID      | egov-fsm-service                               |
+| kafka topic to which service push data to save new fsm application            | PERSISTER\_SAVE\_FSM\_TOPIC             | save-fsm-application                           |
+| kafka topic to which service push data to save workflow status                | PERSISTER\_UPDATE\_FSM\_WORKFLOW\_TOPIC | update-fsm-workflow-application                |
+| kafka topic to which service push data to update the existing fsm application | PERSISTER\_UPDATE\_FSM\_TOPIC           | update-fsm-application                         |
+| mdms service host                                                             | EGOV\_MDMS\_HOST                        | egov-mdms-service from egov-service-host       |
+| billing-service host                                                          | EGOV\_BILLINGSERVICE\_HOST              | billing-service from egov-service-host         |
+| fsm-calculator service host                                                   | EGOV\_FSM\_CALCULATOR\_HOST             | fsm-calculator from egov-service-host          |
+| workflow v2 service host                                                      | WORKFLOW\_CONTEXT\_PATH                 | egov-workflow-v2 from egov-service-host        |
+| ui host, to return send the url of new application in sms notification        | EGOV\_UI\_APP\_HOST                     | egov-services-fqdn-name from egov-service-host |
+| vendor service host, to get DSO details                                       | EGOV\_VENDOR\_HOST                      | vendor from egov-service-host                  |
+| Vehicle service host, to get vehicle details and manage vehicleTrip           | EGOV\_VEHICLE\_HOST                     | vehicle from egov-service-host                 |
+| Collection service host, to get the payment details                           | EGOV\_COLLECTION\_SERVICE\_HOST         | collection-services from egov-service-host     |
+| localization service host, to get the locale data                             | EGOV\_LOCALIZATION\_HOST                | egov-localization from egov-service-host       |
+| user service host, to get the locale data                                     | EGOV\_USER\_HOST                        | egov-user from egov-service-host               |
+| pdf service host, to get the locale data                                      | EGOV\_PDF\_HOST                         | pdf-service from egov-service-host             |
+| url shortening service host, to get the short url for the long once           | EGOV\_URL\_SHORTNER\_HOST               | egov-url-shortening from egov-service-host     |
 
 **Sample values.yml**
 
-```text
+```
  - name: EGOV_IDGEN_HOST
     valueFrom:
       configMapKeyRef:
@@ -1388,131 +1388,62 @@ values.yml for fms-calculator can be found [here](https://github.com/egovernment
 
 **Users**
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>User</b>
-      </th>
-      <th style="text-align:left"><b>Role</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-      <th style="text-align:left"><b>How to create</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">FSM Creator</td>
-      <td style="text-align:left">FSM_CREATOR_EMP</td>
-      <td style="text-align:left">Can create FSM Application on behalf of Citizen</td>
-      <td style="text-align:left">Through HRMS with role</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">FSM Editor</td>
-      <td style="text-align:left">FSM_EDITOR_EMP</td>
-      <td style="text-align:left">
-        <ul>
-          <li>Can edit the application created by citizen for demand generation</li>
-          <li>Assing/ Re-Assign DSO</li>
-          <li>Complete the Application</li>
-        </ul>
-      </td>
-      <td style="text-align:left">Through HRMS with role</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">FSM Admin</td>
-      <td style="text-align:left">FSM_ADMIN</td>
-      <td style="text-align:left">
-        <ul>
-          <li>Can cancel the application at any stage of workflow</li>
-        </ul>
-      </td>
-      <td style="text-align:left">Through HRMS with role</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">DSO</td>
-      <td style="text-align:left">FSM_DSO</td>
-      <td style="text-align:left">
-        <ul>
-          <li>can accept/Reject the assigned Application</li>
-          <li>can complete the FSM Application</li>
-        </ul>
-      </td>
-      <td style="text-align:left">Through vendor service, use the create DSO Request from <a href="https://www.getpostman.com/collections/2d55f98479499672a23e">postman Collection</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">FSTP Operator</td>
-      <td style="text-align:left">FSM_EMP_FSTPO</td>
-      <td style="text-align:left">
-        <ul>
-          <li>Can mark the vehicle Trip as disposed. Not FSM Service User</li>
-        </ul>
-      </td>
-      <td style="text-align:left">Through HRMS with role</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Collector</td>
-      <td style="text-align:left">FSM_COLLECTOR</td>
-      <td style="text-align:left">
-        <ul>
-          <li>Can collect the payment amount for application based on demand</li>
-        </ul>
-      </td>
-      <td style="text-align:left">Through HRMS with role</td>
-    </tr>
-  </tbody>
-</table>
+| **User**      | **Role**          | **Description**                                                                                                                                    | **How to create**                                                                                                                         |
+| ------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| FSM Creator   | FSM\_CREATOR\_EMP | Can create FSM Application on behalf of Citizen                                                                                                    | Through HRMS with role                                                                                                                    |
+| FSM Editor    | FSM\_EDITOR\_EMP  | <ul><li>Can edit the application created by citizen for demand generation</li><li>Assing/ Re-Assign DSO</li><li>Complete the Application</li></ul> | Through HRMS with role                                                                                                                    |
+| FSM Admin     | FSM\_ADMIN        | <ul><li>Can cancel the application at any stage of workflow</li></ul>                                                                              | Through HRMS with role                                                                                                                    |
+| DSO           | FSM\_DSO          | <ul><li>can accept/Reject the assigned Application</li><li>can complete the FSM Application</li></ul>                                              | Through vendor service, use the create DSO Request from [postman Collection](https://www.getpostman.com/collections/2d55f98479499672a23e) |
+| FSTP Operator | FSM\_EMP\_FSTPO   | <ul><li>Can mark the vehicle Trip as disposed. Not FSM Service User</li></ul>                                                                      | Through HRMS with role                                                                                                                    |
+| Collector     | FSM\_COLLECTOR    | <ul><li>Can collect the payment amount for application based on demand</li></ul>                                                                   | Through HRMS with role                                                                                                                    |
 
 * User with userType employee and role FSM\_CREATOR\_EMP role,
 
-## Integration <a id="Integration"></a>
+## Integration <a href="#integration" id="integration"></a>
 
-### Integration Scope <a id="Integration-Scope"></a>
+### Integration Scope <a href="#integration-scope" id="integration-scope"></a>
 
 FSM can be integrated with any ULB or system which wants to track FSM application. The organisations can customise the workflow depending on there product requirements
 
-### Integration Benefits <a id="Integration-Benefits"></a>
+### Integration Benefits <a href="#integration-benefits" id="integration-benefits"></a>
 
 * Easy tracking and resolution FSM Application
 * Configurable workflow according to client requirement
 
-### Steps to Integration <a id="Steps-to-Integration"></a>
+### Steps to Integration <a href="#steps-to-integration" id="steps-to-integration"></a>
 
 1. Citizen/ULB Employee can file Application request using the /fsm/v1/\_create
 2. Organisation or System can search the FSM Applications using /fsm/v1/\_searchendpoint
 3. Once the application is filed the organisation or system can call /fsm/v1/\_update endpoint to move the application further in workflow until it gets resolved
 
-## Interaction Diagram <a id="Interaction-Diagram"></a>
+## Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
 TBD
 
-## Reference Docs <a id="Reference-Docs"></a>
+## Reference Docs <a href="#reference-docs" id="reference-docs"></a>
 
-### Doc Links <a id="Doc-Links"></a>
+### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title** | **Link** |
-| :--- | :--- |
-| Workflow Technical Document | [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service) |
-| User Technical Document | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service) |
-| MDMS Technical Document | **NEEDS TO BE UPDATED** |
-| IDGen Technical Document | **NEEDS TO BE UPDATED** |
-| Localization Technical Document | **NEEDS TO BE UPDATED** |
-| Persister Technical Document | **NEEDS TO BE UPDATED** |
-| SMS Notification Technical Document | **NEEDS TO BE UPDATED** |
-| HRMS Technical Document | **NEEDS TO BE UPDATED** |
-| API Contract | [FSM API Contract](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/fsm/Fsm_Apply_Contract.yaml) |
-| Postman Collection | [FSM Postman Collection](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
+| **Title**                           | **Link**                                                                                                                                                       |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Workflow Technical Document         | [Workflow Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/664174657/Workflow+Service)                                                        |
+| User Technical Document             | [User Service](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/669450371/User+Service)                                                                |
+| MDMS Technical Document             | **NEEDS TO BE UPDATED**                                                                                                                                        |
+| IDGen Technical Document            | **NEEDS TO BE UPDATED**                                                                                                                                        |
+| Localization Technical Document     | **NEEDS TO BE UPDATED**                                                                                                                                        |
+| Persister Technical Document        | **NEEDS TO BE UPDATED**                                                                                                                                        |
+| SMS Notification Technical Document | **NEEDS TO BE UPDATED**                                                                                                                                        |
+| HRMS Technical Document             | **NEEDS TO BE UPDATED**                                                                                                                                        |
+| API Contract                        | [FSM API Contract](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/municipal-services/master/docs/fsm/Fsm\_Apply\_Contract.yaml) |
+| Postman Collection                  | [FSM Postman Collection](https://www.getpostman.com/collections/8b9eb951a810486f41a4)                                                                          |
 
-### API List <a id="API-List"></a>
+### API List <a href="#api-list" id="api-list"></a>
 
-| **Title** | **Link** |
-| :--- | :--- |
+| **Title**        | **Link**                                                                                                                   |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | /fsm/v1/\_create | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | /fsm/v1/\_update | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 | /fsm/v1/\_search | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
-| /fsm/v1/\_audit | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
+| /fsm/v1/\_audit  | [https://www.getpostman.com/collections/8b9eb951a810486f41a4](https://www.getpostman.com/collections/8b9eb951a810486f41a4) |
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-

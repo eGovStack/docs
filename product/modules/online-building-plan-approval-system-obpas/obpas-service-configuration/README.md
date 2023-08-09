@@ -24,24 +24,24 @@ This section covers the high-level details of the functionalities available in t
 
 ## **System Requirements**
 
-* Knowledge of Java/J2EE\(preferably Java 8 version\)
+* Knowledge of Java/J2EE(preferably Java 8 version)
 * Knowledge of Spring Boot and spring-boot microservices
 * Knowledge of Git or any version control system
 * Knowledge of RESTful Web services
 * Knowledge of the Lombok library will helpful
 * knowledge of eGov-mdms service, eGov-persister, eGov-idgen, eGov-sms, eGov-email,eGov-user, eGov-localization, eGov-workflow-service,dcr, land-services, bpa-calculator will be helpful
 
-## **Setup and usage** <a id="Setup-and-usage:"></a>
+## **Setup and usage** <a href="#setup-and-usage" id="setup-and-usage"></a>
 
 The [**Application**](https://github.com/egovernments/municipal-services/tree/master) is present among the _**municipal services**_ group of applications available in the eGov-services git repository with the folder name **bpa-services**. The spring boot application needs the **Lombok\*** extension added in your IDE to load it. Once the application is up and running API requests can be posted to the URL and ids can be generated.
 
 * in the case of IntelliJ, the plugin can be installed directly, for eclipse the Lombok jar location has to be added in eclipse.ini file in this format  javaagent:lombok.jar
 
-## _**API Information**_ <a id="API-Information-:"></a>
+## _**API Information**_ <a href="#api-information" id="api-information"></a>
 
 * Please refer to Swagger API for YAML file details. Link - [API Specs](https://github.com/egovernments/municipal-services/blob/master/docs/bpa/bpa-service.yaml).
 
-## _**Application.properties File Information**_ <a id="Application.properties-File-Information:"></a>
+## _**Application.properties File Information**_ <a href="#application.properties-file-information" id="application.properties-file-information"></a>
 
 Here we are listing the configs apart from dependent service host, URLs, DB and Flyway configs.
 
@@ -91,38 +91,38 @@ Here we are listing the configs apart from dependent service host, URLs, DB and 
 
 ## **External API References**
 
-* **egov-user** - \(Manage user\)
-* **tl-services** - Stakeholder Registration \(Registration process of Stakeholder is handled by this service\)
-* **egov-user-event** \(What’s New and Events\)
-* **egov-filestore** \(To store the documents uploaded by the user\)
-* **egov-idgen** \(To generate the application No, Permit No\)
-* **egov-indexer** \(To index the BPA data\)
-* **egov-localization** \(To use the localized messages\)
-* **egov-location** \(To store the address locality\)
-* **egov-mdms** \(Configurations/master data used in the application is served by MDMS\)
-* **egov-notification-sms** \(Service to send SMS to the users involved in the application\)
-* **egov-persister** \(Helps to persist the data\)
-* **egov-searcher** \(Search query used to simplify the search\)
-* **egov-workflow-v2** \(Workflow configuration for different BPA application is configured\)
-* **pdf-service** \(Receipt’s, permit order etc.. and prepared\)
-* **billing-service** \(Create demands and bills for the fees to be collected\)
-* **collection-services** \(Create a receipt for the payment received for the bills\)
-* **bpa-calculator** \(Calculates the fees to be collected at different stages\)
-* **land-services** \(land information related to BPA application is stored\)
-* **dcr-services** \(get and validate EDCR data\)
-* **noc-services** \(NOC application\)
+* **egov-user** - (Manage user)
+* **tl-services** - Stakeholder Registration (Registration process of Stakeholder is handled by this service)
+* **egov-user-event** (What’s New and Events)
+* **egov-filestore** (To store the documents uploaded by the user)
+* **egov-idgen** (To generate the application No, Permit No)
+* **egov-indexer** (To index the BPA data)
+* **egov-localization** (To use the localized messages)
+* **egov-location** (To store the address locality)
+* **egov-mdms** (Configurations/master data used in the application is served by MDMS)
+* **egov-notification-sms** (Service to send SMS to the users involved in the application)
+* **egov-persister** (Helps to persist the data)
+* **egov-searcher** (Search query used to simplify the search)
+* **egov-workflow-v2** (Workflow configuration for different BPA application is configured)
+* **pdf-service** (Receipt’s, permit order etc.. and prepared)
+* **billing-service** (Create demands and bills for the fees to be collected)
+* **collection-services** (Create a receipt for the payment received for the bills)
+* **bpa-calculator** (Calculates the fees to be collected at different stages)
+* **land-services** (land information related to BPA application is stored)
+* **dcr-services** (get and validate EDCR data)
+* **noc-services** (NOC application)
 
-## **Configuration** <a id="Configuration:"></a>
+## **Configuration** <a href="#configuration" id="configuration"></a>
 
-### _**BPA Specific Mdms configuration**_ <a id="BPA-Specific-Mdms-configuration:"></a>
+### _**BPA Specific Mdms configuration**_ <a href="#bpa-specific-mdms-configuration" id="bpa-specific-mdms-configuration"></a>
 
 [MDMS Github Repo](https://github.com/egovernments/egov-mdms-data/tree/master)
 
-Under the data/&lt;state code&gt; folder you can find the **BPA** which has all the MDMS JSON’s
+Under the data/\<state code> folder you can find the **BPA** which has all the MDMS JSON’s
 
 master-config.json for BPA
 
-```text
+```
 "BPA": {
     "ServiceType": {
       "masterName": "ServiceType",
@@ -179,185 +179,27 @@ master-config.json for BPA
   }
 ```
 
-### MDMS Details <a id="MDMS-Details"></a>
+### MDMS Details <a href="#mdms-details" id="mdms-details"></a>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>MDMS Name</b>
-      </th>
-      <th style="text-align:left"><b>MDMS Path</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-      <th style="text-align:left"><b>Example</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>ServiceType</b>
-      </td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/ServiceType.json">ServiceType</a>
-      </td>
-      <td style="text-align:left">Values for ServiceType Dropdown</td>
-      <td style="text-align:left">NA</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Application Type</b>
-      </td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/ApplicationType.json">ApplicationType</a>
-      </td>
-      <td style="text-align:left">Values for Application Type Dropdown</td>
-      <td style="text-align:left">NA</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Occupancy Type</b>
-      </td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/OccupancyType.json">OccupancyType</a>
-      </td>
-      <td style="text-align:left">Values for Occupancy Type Dropdown</td>
-      <td style="text-align:left">NA</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>SubOccupancy Type</b>
-      </td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/SubOccupancyType.json">SubOccupancyType</a>
-      </td>
-      <td style="text-align:left">Values for SubOccupancy Type Dropdown</td>
-      <td style="text-align:left">NA</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>DocumentTypeMapping</b>
-      </td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/DocTypeMapping.json">DocumentTypeMapping</a>
-      </td>
-      <td style="text-align:left">
-        <p>List&#x2019;s out the documents required at the given stage of the application
-          for Given ApplicationType, ServiceType, RiskType and WorklowState.</p>
-        <p>In the docTypes we have</p>
-        <ul>
-          <li>Order - Indicates the sequence of the document</li>
-          <li>Code - Refers to the DocumentType parentGroup from <a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/common-masters/DocumentType.json">DocumentTypes</a> from
-            common masters MDMS</li>
-          <li>allow - Indicates allow to edit</li>
-          <li>required - Mandatory at given stage</li>
-        </ul>
-      </td>
-      <td style="text-align:left">
-        <p> <code>{ &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;ServiceType&quot;: &quot;NEW_CONSTRUCTION&quot;, &quot;RiskType&quot;: &quot;LOW&quot;, &quot;WFState&quot;: &quot;INPROGRESS&quot;, &quot;docTypes&quot;: [ { &quot;code&quot;: &quot;APPL.IDENTITYPROOF&quot;, &quot;required&quot;: false, &quot;allow&quot;: &quot;false&quot;, &quot;order&quot;: 1 }, { &quot;code&quot;: &quot;APPL.ADDRESSPROOF&quot;, &quot;required&quot;: true, &quot;allow&quot;: &quot;true&quot;, &quot;order&quot;: 2 } ]}</code>
-        </p>
-        <p>Above example indicates Documents from the common-master documentTypes
-          starting with code(s) in the above example should be displayed in BPA Application
-          UI when the Application of <b>ApplicationType</b> -BUILDINGPLAN_SCRUTINY
-          <br
-          /><b>ServiceType-</b> NEW_CONSTRUCTION
-          <br /><b>RiskType-</b> LOW
-          <br /><b>Workflow State -</b> INPROGRESS
-          <br />
-          <br />Out of this,
-          <br />IDENTITY documentType is not allowed to upload in this stage and not mandatory.
-          <br
-          />ADDRESSPROOF documentType is allowed to upload in this stage and mandatory
-          to move forward from this stage.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>CalculationType</b>
-      </td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/CalculationType.json">CalculationType</a>
-      </td>
-      <td style="text-align:left">Used by bpa-calculator Service which Defines the Fee to be collected for
-        Given ApplicationType, ServiceType, RiskType and feeType</td>
-      <td style="text-align:left">
-        <p> <code>{ &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;serviceType&quot;: &quot;ALL&quot;, &quot;riskType&quot;: &quot;LOW&quot;, &quot;feeType&quot;: &quot;SanctionFee&quot;, &quot;amount&quot;: 500 }, { &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;serviceType&quot;: &quot;NEW_CONSTRUCTION&quot;, &quot;riskType&quot;: &quot;ALL&quot;, &quot;feeType&quot;: &quot;ApplicationFee&quot;, &quot;amount&quot;: 120 }, { &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;serviceType&quot;: &quot;NEW_CONSTRUCTION&quot;, &quot;riskType&quot;: &quot;LOW&quot;, &quot;feeType&quot;: &quot;Low_ApplicationFee&quot;, &quot;amount&quot;: 100 },</code>
-        </p>
-        <p>From the above example
-          <br />
-          <br />
-        </p>
-        <ol>
-          <li>indicates SanctionFee is Rs 500 for applicationType=BuildingPlanScrutiny,
-            RiskType=LOW and any ServiceType</li>
-          <li>indicates applicationFee is Rs 120 for applicationType=BuildingPlanScrutiny,
-            ServiceType=NEW_CONSTRUCTION and any RiskType
-            <ol>
-              <li>indicates applicationFee is Rs 100 for applicationType=BuildingPlanScrutiny,
-                ServiceType=NEW_CONSTRUCTION and RiskType=LOW</li>
-            </ol>
-          </li>
-        </ol>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>RiskTypeComputation</b>
-      </td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/RiskTypeComputation.json">RiskTypeComputation</a>
-      </td>
-      <td style="text-align:left">Helps to Defines the RiskType of the Application based on the building
-        Height and plotArea received from the EDCR System</td>
-      <td style="text-align:left"> <code>{&quot;fromPlotArea&quot;: 500, &quot;toPlotArea&quot;: 9999999999, &quot;fromBuildingHeight&quot;: 15, &quot;toBuildingHeight&quot;:9999999999, &quot;riskType&quot;: &quot;HIGH&quot;, &quot;note&quot;: &quot;(Heigh 15 Mt or More) or ( Plot area &gt;=800 sq.Mt)&quot; }</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>CheckList</b>
-      </td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/CheckList.json">CheckList</a>
-      </td>
-      <td style="text-align:left">
-        <ol>
-          <li>Used to Define the List of Questions and Documents to be attached on Field
-            Inspection Pending Stage by Field Inspector.</li>
-        </ol>
-        <p>The Example indicates</p>
-        <p>Four Questions with fieldType &#x201C;YES/NO/NA&#x201C; ( Which indicates
-          that field of type dropdown with Yes, NO and NA options) should be asked.</p>
-        <p>Readable question will be available in</p>
-        <p>2. Used to configure the conditions for Approval Stage</p>
-        <p>Condition checkboxes to be shown before approve which can be considered
-          as Conditions for Approval</p>
-      </td>
-      <td style="text-align:left">
-        <ol>
-          <li>Field Inspection Questions &amp; Documents <code>{ &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;ServiceType&quot;: &quot;NEW_CONSTRUCTION&quot;, &quot;RiskType&quot;: &quot;LOW&quot;, &quot;WFState&quot;: &quot;FIELDINSPECTION_PENDING&quot;, &quot;questions&quot;: [ { &quot;question&quot;: &quot;RIVER_EXISTS_ON_SITE&quot;, &quot;fieldType&quot;: &quot;YES/NO/NA&quot;, &quot;active&quot;: true }, { &quot;question&quot;: &quot;TREE_EXISTS_ON_SITE&quot;, &quot;fieldType&quot;: &quot;YES/NO/NA&quot;, &quot;active&quot;: true }, { &quot;question&quot;: &quot;PLAN_AS_PER_THE_SITE&quot;, &quot;fieldType&quot;: &quot;YES/NO/NA&quot;, &quot;active&quot;: true }, { &quot;question&quot;: &quot;ROADWIDTH_AS_PER_THE_PLAN&quot;, &quot;fieldType&quot;: &quot;YES/NO/NA&quot;, &quot;active&quot;: true } ], &quot;docTypes&quot;: [ { &quot;code&quot;: &quot;FI.FIR&quot;, &quot;required&quot;: true }, { &quot;code&quot;: &quot;FI.SINS&quot;, &quot;required&quot;: true }, { &quot;code&quot;: &quot;FI.SISS&quot;, &quot;required&quot;: true }, { &quot;code&quot;: &quot;FI.SIES&quot;, &quot;required&quot;: true }, { &quot;code&quot;: &quot;FI.SIWS&quot;, &quot;required&quot;: true } ] }</code>
-          </li>
-        </ol>
-        <p>2. Conditions for Approval Stage <code>{ &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;ServiceType&quot;: &quot;NEW_CONSTRUCTION&quot;, &quot;RiskType&quot;: &quot;HIGH&quot;, &quot;WFState&quot;: &quot;PENDINGAPPROVAL&quot;, &quot;conditions&quot;: [ &quot;The development shall be undertaken strictly according to plans enclosed with necessary permission endorsement.&quot;, &quot;The land in question must be in lawful ownership and peaceful possession of the applicant.&quot;, &quot;The permission is valid for period of X(this is the validity period in years) years with effect from the date of issue.&quot;, &quot;Permission accorded under the provision cannot be construed as evidence in respect of right title interest of the plot over which the plan is approved.&quot;, &quot;Any dispute arising out of land record or in respect of right/ title/ interest after this approval the plan shall be treated automatically cancelled during the period of dispute.&quot;, &quot;Adequate safety precaution shall be provided at all stages of construction for safe guarding the life of workers and any public hazard.&quot;, &quot;The land/ Building shall be used exclusively for the above occupancy for which you applied and the uses shall not be changed to any other use without prior approval of this Authority.&quot;, &quot;Adequate space mentioned in the approved plan shall be kept open for parking and no part of it will be built upon.&quot;, &quot;The land over which construction is proposed is accessible by an approved means of access with sufficient road width.&quot; ] }</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">NocTypeMapping</td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/NocTypeMapping.json">NocTypeMaping</a>
-      </td>
-      <td style="text-align:left">
-        <p>Mapping of the NOC Types applicable for BPA ApplicationType, ServiceType
-          and riskType</p>
-        <p>From the Example</p>
-        <p><b>AIRPORT_AUTHORITY, NOC_FIRE</b> NOC&#x2019;s are applicable for applicationType
-          &#x2192; BULDING_PLAN_SCRUTINY</p>
-        <p>serviceType-&gt; NEW_CONSTRUCTION</p>
-        <p>riskType-&gt; ALL ( Any )</p>
-        <p>NocTypes-&gt; list out the NOC Type object</p>
-        <p>and NOC Applications get created when BPA is created by the NOC&#x2019;s
-          Workflow would be initiated when the BPA application Status is equl to
-          the nocTriggerState configured. ( According to this example, when the application
-          status changes to Citizen Approval Pending, all the NOc&#x2019;s workflow
-          would be initiated)</p>
-      </td>
-      <td style="text-align:left"> <code>{ &quot;applicationType&quot;: &quot;BUILDING_PLAN_SCRUTINY&quot;, &quot;serviceType&quot;: &quot;NEW_CONSTRUCTION&quot;, &quot;riskType&quot;: &quot;ALL&quot;, &quot;nocTriggerState&quot;: &quot;CITIZEN_APPROVAL_INPROCESS&quot;, &quot;nocTypes&quot;: [ { &quot;type&quot;: &quot;AIRPORT_AUTHORITY&quot;, &quot;required&quot;: true }, { &quot;type&quot;: &quot;FIRE_NOC&quot;, &quot;required&quot;: false } ] }</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| **MDMS Name**           | **MDMS Path**                                                                                                          | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | **Example**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **ServiceType**         | [ServiceType](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/ServiceType.json)                 | Values for ServiceType Dropdown                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | NA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Application Type**    | [ApplicationType](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/ApplicationType.json)         | Values for Application Type Dropdown                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | NA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Occupancy Type**      | [OccupancyType](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/OccupancyType.json)             | Values for Occupancy Type Dropdown                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | NA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **SubOccupancy Type**   | [SubOccupancyType](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/SubOccupancyType.json)       | Values for SubOccupancy Type Dropdown                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | NA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **DocumentTypeMapping** | [DocumentTypeMapping](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/DocTypeMapping.json)      | <p>List’s out the documents required at the given stage of the application for Given ApplicationType, ServiceType, RiskType and WorklowState.</p><p>In the docTypes we have</p><ul><li>Order - Indicates the sequence of the document</li><li>Code - Refers to the DocumentType parentGroup from <a href="https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/common-masters/DocumentType.json">DocumentTypes</a> from common masters MDMS</li><li>allow - Indicates allow to edit</li><li>required - Mandatory at given stage</li></ul>                                                                                                                         | <p> <code>{ "applicationType": "BUILDING_PLAN_SCRUTINY", "ServiceType": "NEW_CONSTRUCTION", "RiskType": "LOW", "WFState": "INPROGRESS", "docTypes": [ { "code": "APPL.IDENTITYPROOF", "required": false, "allow": "false", "order": 1 }, { "code": "APPL.ADDRESSPROOF", "required": true, "allow": "true", "order": 2 } ]}</code></p><p>Above example indicates Documents from the common-master documentTypes starting with code(s) in the above example should be displayed in BPA Application UI when the Application of <strong>ApplicationType</strong> -BUILDINGPLAN_SCRUTINY<br><strong>ServiceType-</strong> NEW_CONSTRUCTION<br><strong>RiskType-</strong> LOW<br><strong>Workflow State -</strong> INPROGRESS<br><br>Out of this,<br>IDENTITY documentType is not allowed to upload in this stage and not mandatory.<br>ADDRESSPROOF documentType is allowed to upload in this stage and mandatory to move forward from this stage.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **CalculationType**     | [CalculationType](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/CalculationType.json)         | Used by bpa-calculator Service which Defines the Fee to be collected for Given ApplicationType, ServiceType, RiskType and feeType                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <p> <code>{ "applicationType": "BUILDING_PLAN_SCRUTINY", "serviceType": "ALL", "riskType": "LOW", "feeType": "SanctionFee", "amount": 500 }, { "applicationType": "BUILDING_PLAN_SCRUTINY", "serviceType": "NEW_CONSTRUCTION", "riskType": "ALL", "feeType": "ApplicationFee", "amount": 120 }, { "applicationType": "BUILDING_PLAN_SCRUTINY", "serviceType": "NEW_CONSTRUCTION", "riskType": "LOW", "feeType": "Low_ApplicationFee", "amount": 100 },</code></p><p>From the above example<br><br></p><ol><li>indicates SanctionFee is Rs 500 for applicationType=BuildingPlanScrutiny, RiskType=LOW and any ServiceType</li><li><p>indicates applicationFee is Rs 120 for applicationType=BuildingPlanScrutiny, ServiceType=NEW_CONSTRUCTION and any RiskType</p><ol><li>indicates applicationFee is Rs 100 for applicationType=BuildingPlanScrutiny, ServiceType=NEW_CONSTRUCTION and RiskType=LOW</li></ol></li></ol>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **RiskTypeComputation** | [RiskTypeComputation](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/RiskTypeComputation.json) | Helps to Defines the RiskType of the Application based on the building Height and plotArea received from the EDCR System                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |  `{"fromPlotArea": 500, "toPlotArea": 9999999999, "fromBuildingHeight": 15, "toBuildingHeight":9999999999, "riskType": "HIGH", "note": "(Heigh 15 Mt or More) or ( Plot area >=800 sq.Mt)" }`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **CheckList**           | [CheckList](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/CheckList.json)                     | <ol><li>Used to Define the List of Questions and Documents to be attached on Field Inspection Pending Stage by Field Inspector.</li></ol><p>The Example indicates</p><p>Four Questions with fieldType “YES/NO/NA“ ( Which indicates that field of type dropdown with Yes, NO and NA options) should be asked.</p><p>Readable question will be available in</p><p>2. Used to configure the conditions for Approval Stage</p><p>Condition checkboxes to be shown before approve which can be considered as Conditions for Approval</p>                                                                                                                                            | <ol><li>Field Inspection Questions &#x26; Documents <code>{ "applicationType": "BUILDING_PLAN_SCRUTINY", "ServiceType": "NEW_CONSTRUCTION", "RiskType": "LOW", "WFState": "FIELDINSPECTION_PENDING", "questions": [ { "question": "RIVER_EXISTS_ON_SITE", "fieldType": "YES/NO/NA", "active": true }, { "question": "TREE_EXISTS_ON_SITE", "fieldType": "YES/NO/NA", "active": true }, { "question": "PLAN_AS_PER_THE_SITE", "fieldType": "YES/NO/NA", "active": true }, { "question": "ROADWIDTH_AS_PER_THE_PLAN", "fieldType": "YES/NO/NA", "active": true } ], "docTypes": [ { "code": "FI.FIR", "required": true }, { "code": "FI.SINS", "required": true }, { "code": "FI.SISS", "required": true }, { "code": "FI.SIES", "required": true }, { "code": "FI.SIWS", "required": true } ] }</code></li></ol><p>2. Conditions for Approval Stage <code>{ "applicationType": "BUILDING_PLAN_SCRUTINY", "ServiceType": "NEW_CONSTRUCTION", "RiskType": "HIGH", "WFState": "PENDINGAPPROVAL", "conditions": [ "The development shall be undertaken strictly according to plans enclosed with necessary permission endorsement.", "The land in question must be in lawful ownership and peaceful possession of the applicant.", "The permission is valid for period of X(this is the validity period in years) years with effect from the date of issue.", "Permission accorded under the provision cannot be construed as evidence in respect of right title interest of the plot over which the plan is approved.", "Any dispute arising out of land record or in respect of right/ title/ interest after this approval the plan shall be treated automatically cancelled during the period of dispute.", "Adequate safety precaution shall be provided at all stages of construction for safe guarding the life of workers and any public hazard.", "The land/ Building shall be used exclusively for the above occupancy for which you applied and the uses shall not be changed to any other use without prior approval of this Authority.", "Adequate space mentioned in the approved plan shall be kept open for parking and no part of it will be built upon.", "The land over which construction is proposed is accessible by an approved means of access with sufficient road width." ] }</code></p> |
+| NocTypeMapping          | [NocTypeMaping](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BPA/NocTypeMapping.json)            | <p>Mapping of the NOC Types applicable for BPA ApplicationType, ServiceType and riskType</p><p>From the Example</p><p><strong>AIRPORT_AUTHORITY, NOC_FIRE</strong> NOC’s are applicable for applicationType → BULDING_PLAN_SCRUTINY</p><p>serviceType-> NEW_CONSTRUCTION</p><p>riskType-> ALL ( Any )</p><p>NocTypes-> list out the NOC Type object</p><p>and NOC Applications get created when BPA is created by the NOC’s Workflow would be initiated when the BPA application Status is equl to the nocTriggerState configured. ( According to this example, when the application status changes to Citizen Approval Pending, all the NOc’s workflow would be initiated)</p> |  `{ "applicationType": "BUILDING_PLAN_SCRUTINY", "serviceType": "NEW_CONSTRUCTION", "riskType": "ALL", "nocTriggerState": "CITIZEN_APPROVAL_INPROCESS", "nocTypes": [ { "type": "AIRPORT_AUTHORITY", "required": true }, { "type": "FIRE_NOC", "required": false } ] }`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
-### Access MDMS Config <a id="Access-MDMS-Config"></a>
+### Access MDMS Config <a href="#access-mdms-config" id="access-mdms-config"></a>
 
 **Action Test : URL Actions adding**
 
 [action-test.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)\`\`
 
-```text
+```
   {
       "id": 1971,
       "name": "BPA-PermitOrderEDCR Report",
@@ -415,7 +257,7 @@ master-config.json for BPA
 
 [roleacton.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/ACCESSCONTROL-ROLEACTIONS/roleactions.json)\`\`
 
-```text
+```
 {
       "rolecode": "CEMP",
       "actionid": 1971,
@@ -609,7 +451,7 @@ master-config.json for BPA
     }
 ```
 
-### Billing Service MDMS Config <a id="Billing-Service-MDMS-Config"></a>
+### Billing Service MDMS Config <a href="#billing-service-mdms-config" id="billing-service-mdms-config"></a>
 
 [BusinessService.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BillingService/BusinessService.json)
 
@@ -617,7 +459,7 @@ BusinessService Config for Fee’s to be collected
 
 Application Fee, Sanction Fee BPA High/Medium Risk
 
-```text
+```
  {
       "businessService": "BPA.NEWCONSTRUCTION_APP_FEE",
       "code": "BPA.NC_APP_FEE",
@@ -644,7 +486,7 @@ Application Fee, Sanction Fee BPA High/Medium Risk
 
 Application Fee, Sanction Fee for BPA Low Risk
 
-```text
+```
 {
       "businessService": "BPA.NEWCONSTRUCTION_LOW_RISK_PERMIT_FEE",
       "code": "BPA.LOW_RISK_PERMIT_FEE",
@@ -660,7 +502,7 @@ Application Fee, Sanction Fee for BPA Low Risk
 
 Application Fee, Sanction Fee for BPA OC
 
-```text
+```
 {
       "businessService": "BPA.NEWCONSTRUCTION_OC_APP_FEE",
       "code": "BPA.NC_OC_APP_FEE",
@@ -685,13 +527,13 @@ Application Fee, Sanction Fee for BPA OC
     }
 ```
 
-### TaxHead MDMS <a id="TaxHead-MDMS"></a>
+### TaxHead MDMS <a href="#taxhead-mdms" id="taxhead-mdms"></a>
 
 [TaxHeader.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BillingService/TaxHeadMaster.json)
 
 Tax Head for BPA High/Medium Risk
 
-```text
+```
 {
       "category": "FEE",
       "service": "BPA.NC_APP_FEE",
@@ -716,7 +558,7 @@ Tax Head for BPA High/Medium Risk
 
 TaxHead config for BPA Low Risk
 
-```text
+```
  {
       "category": "FEE",
       "service": "BPA.LOW_RISK_PERMIT_FEE",
@@ -741,7 +583,7 @@ TaxHead config for BPA Low Risk
 
 TaxHead config for BPA OC
 
-```text
+```
  {
       "category": "FEE",
       "service": "BPA.NC_OC_APP_FEE",
@@ -764,13 +606,13 @@ TaxHead config for BPA OC
     },
 ```
 
-### TaxPeriod MDMS Config <a id="TaxPeriod-MDMS-Config"></a>
+### TaxPeriod MDMS Config <a href="#taxperiod-mdms-config" id="taxperiod-mdms-config"></a>
 
 [TaxPeriod.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/BillingService/TaxPeriod.json)
 
 TaxPeriod MDMS for BPA High/Medium Risk
 
-```text
+```
 {
       "fromDate": 1522540801000,
       "toDate": 1838159999000,
@@ -791,7 +633,7 @@ TaxPeriod MDMS for BPA High/Medium Risk
 
 TaxPeriod MDMS for BPA Low Risk
 
-```text
+```
 {
       "fromDate": 1522540801000,
       "toDate": 1838159999000,
@@ -804,7 +646,7 @@ TaxPeriod MDMS for BPA Low Risk
 
 TaxPeriod Config for BPA OC
 
-```text
+```
 {
       "fromDate": 1522540801000,
       "toDate": 1838159999000,
@@ -823,13 +665,13 @@ TaxPeriod Config for BPA OC
     }
 ```
 
-### ID Gen Config for BPA Numbers <a id="ID-Gen-Config-for-BPA-Numbers"></a>
+### ID Gen Config for BPA Numbers <a href="#id-gen-config-for-bpa-numbers" id="id-gen-config-for-bpa-numbers"></a>
 
 [idFormats.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/common-masters/IdFormat.json)
 
 BPA Application Number format Config
 
-```text
+```
 {
       "idname":"egov.idgen.bpa.applicationNum",
       "format":"PB-BP-[cy:yyyy-MM-dd]-[SEQ_EG_BP_APN]"
@@ -838,7 +680,7 @@ BPA Application Number format Config
 
 BPA Permit Number format Config
 
-```text
+```
 {
       "idname":"egov.idgen.bpa.applicationNum",
       "format":"PB-BP-[cy:yyyy-MM-dd]-[SEQ_EG_BP_PN]"
@@ -847,7 +689,7 @@ BPA Permit Number format Config
 
 BPA Receipt Number format config
 
-```text
+```
  {
       "format": "BPA/[CITY.CODE]/[fy:yyyy-yy]/[SEQ_EGOV_COMMON]",
       "idname": "bpa.nc_app_fee.receipt.id"
@@ -860,7 +702,7 @@ BPA Receipt Number format config
 
 BPA OC Receipt Number format config
 
-```text
+```
   {
       "format": "BPA/OC/[CITY.CODE]/[fy:yyyy-yy]/[SEQ_EGOV_COMMON]",
       "idname": "bpa.nc_oc_app_fee.receipt.id"
@@ -871,19 +713,19 @@ BPA OC Receipt Number format config
     },
 ```
 
-### _**Persister configuration**_ <a id="Persister-configuration:"></a>
+### _**Persister configuration**_ <a href="#persister-configuration" id="persister-configuration"></a>
 
 [BPA Persister YAML](https://github.com/egovernments/configs/blob/master/egov-persister/bpa-persist.yml)
 
-### Indexer Configuration <a id="Indexer-Configuration:"></a>
+### Indexer Configuration <a href="#indexer-configuration" id="indexer-configuration"></a>
 
 [BPA Indexer YAML](https://github.com/egovernments/configs/blob/master/egov-indexer/egov-bpa-indexer.yml)
 
-### Locality Search Configuration <a id="Locality-Search-Configuration:"></a>
+### Locality Search Configuration <a href="#locality-search-configuration" id="locality-search-configuration"></a>
 
 Setup the locality Search query in the [localitySearcher.yml](https://github.com/egovernments/configs/blob/master/egov-searcher/localitySearcher.yml) as **a** new entry. Add RoleAction Test and Role Action for the URL **`“`**`/egov-searcher/locality/bpa-services/_get`**`“`**
 
-```text
+```
   - name: bpa-services
     query:
       baseQuery: |
@@ -908,21 +750,21 @@ Setup the locality Search query in the [localitySearcher.yml](https://github.com
       responseInfoPath: $.ResponseInfo
 ```
 
-### Database Schema <a id="Database-Schema"></a>
+### Database Schema <a href="#database-schema" id="database-schema"></a>
 
-![](../../../../.gitbook/assets/image%20%28106%29.png)
+![](<../../../../.gitbook/assets/image (106).png>)
 
-## Postman Links <a id="Postman-Links"></a>
+## Postman Links <a href="#postman-links" id="postman-links"></a>
 
 [Postman Collection](https://www.getpostman.com/collections/667f52a25918f7f5ba25)
 
-## Workflow Configuration <a id="Workflow-Configuration"></a>
+## Workflow Configuration <a href="#workflow-configuration" id="workflow-configuration"></a>
 
 [BPA](https://github.com/egovernments/municipal-services/blob/master/bpa-services/src/main/resources/workflow-config.json) - Building Plan Approval Apply High/Medium Risk
 
-[BPA Low](https://github.com/egovernments/municipal-services/blob/master/bpa-services/src/main/resources/Lowrisk_Workflow.json) – Building Plan Approval Apply Low Risk
+[BPA Low](https://github.com/egovernments/municipal-services/blob/master/bpa-services/src/main/resources/Lowrisk\_Workflow.json) – Building Plan Approval Apply Low Risk
 
-[BPA OC](https://github.com/egovernments/municipal-services/blob/master/bpa-services/src/main/resources/OC_WorkflowConfig.json) - Building Plan Approval Occupancy Certificate Apply
+[BPA OC](https://github.com/egovernments/municipal-services/blob/master/bpa-services/src/main/resources/OC\_WorkflowConfig.json) - Building Plan Approval Occupancy Certificate Apply
 
 **BPA and BPA OC Workflow Stages**
 
@@ -932,7 +774,7 @@ BPA OC workflow configuration is for Building Plan Approval Occupancy Certificat
 
 Both the workflow flows as depicted below.
 
-![](../../../../.gitbook/assets/image%20%28107%29.png)
+![](<../../../../.gitbook/assets/image (107).png>)
 
 In the above Flow Chart
 
@@ -948,9 +790,9 @@ In the above Flow Chart
   * Process
     * DCR system is integrated to get the applicationType, serviceType and riskType based on the EDCR Number populated by the architect.
     * DCR system is integrated to validate the status of the EDCRNumber populated
-    * New BPA or BPAOC application cannot be created if there is existing **un ended**\( application status other than approved or rejected is considered as unended\) application with the same EDCR
+    * New BPA or BPAOC application cannot be created if there is existing **un ended**( application status other than approved or rejected is considered as unended) application with the same EDCR
   * How To add new Document
-    * Should add new documentType group in **DocumentTypeMapping** MDMS with the applicable applicationType, serviceType, riskType, wfState \(refer existing sample for understanding\)
+    * Should add new documentType group in **DocumentTypeMapping** MDMS with the applicable applicationType, serviceType, riskType, wfState (refer existing sample for understanding)
     * Can configure allow, required as well as the order for each documentType
     * Make sure the new documentType added exists in documentType of [common-masters](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/common-masters/DocumentType.json)
 * **Initiated Stage**
@@ -982,7 +824,7 @@ In the above Flow Chart
   * How to add new questions and documents
     * Should add/modify the questions for the desired combination of applicationType, serviceType, risktype
     * with the localization code for question text
-    * specify the fieldType \( ass of now only YES/NO/NA only supported \)
+    * specify the fieldType ( ass of now only YES/NO/NA only supported )
     * Should add/modify documents for the desired combination of applicationType, serviceType, risktype
 * **Noc Verification Pending State**
   * Process
@@ -1015,7 +857,7 @@ In the above Flow Chart
 
 BPA with risk Type low has a separate workflow, which is almost the same as the BPA workflow as depicted below.
 
-![](../../../../.gitbook/assets/image%20%28108%29.png)
+![](<../../../../.gitbook/assets/image (108).png>)
 
 In the above Flow Chart
 
@@ -1047,83 +889,30 @@ In the above Flow Chart
   * How to change Revocation Letter format
     * Can be changed by changing the data and format configs of the revocation letter, please refer PDF’s section of Revocation letter
 
-## Validations included <a id="Validations-included"></a>
+## Validations included <a href="#validations-included" id="validations-included"></a>
 
 * On Workflow action of Every Stage, System verifies the Documents Configured for the given stage of the workflow from the **DocumentTypeMapping** MDMS and validates the required Documents attached to move forward
 * DropDown values to be validated against the MDMS values, Value in those fields should be one of the MDMS value.
 
-## Notifications <a id="Notifications"></a>
+## Notifications <a href="#notifications" id="notifications"></a>
 
 Notifications Message codes for SMS and User Events are prepared as follows
 
 ApplicationType\_ServiceType\_WorkflowAction\_ApplicationStatus.
 
-Example BPA Apply Application \(i.e applicationType is **BUILDING\_PLAN\_SCRUTINY**\) with ServiceType **NEW\_CONSTRUCTION** and the current application status is **DOCUMENT\_VERIFICATION\_PENDING** and workflow Action of the request is **FORWARD** then the localized message for this notification will be looked for the code: **BUILDING\_PLAN\_SCRUTINY**\_**NEW\_CONSTRUCTION**\_**FORWARD**\_**DOCUMENT\_VERIFICATION\_PENDING**
+Example BPA Apply Application (i.e applicationType is **BUILDING\_PLAN\_SCRUTINY**) with ServiceType **NEW\_CONSTRUCTION** and the current application status is **DOCUMENT\_VERIFICATION\_PENDING** and workflow Action of the request is **FORWARD** then the localized message for this notification will be looked for the code: **BUILDING\_PLAN\_SCRUTINY**\_**NEW\_CONSTRUCTION**\_**FORWARD**\_**DOCUMENT\_VERIFICATION\_PENDING**
 
 The message text for the above code is sent through SMS and Notification filling in the owner, serviceType, application Number and other values.
 
-## PDFS used <a id="PDFS-used"></a>
+## PDFS used <a href="#pdfs-used" id="pdfs-used"></a>
 
 BPA supports below PDF’s
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>PDF Name</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-      <th style="text-align:left"> <b>Config&#x2019;s</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">BPA Permit Order</td>
-      <td style="text-align:left">PDF Generated for the Permit Order on approval of the BPA HIGH and MEDIUM
-        RISK Applications</td>
-      <td style="text-align:left">
-        <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/data-config/buildingpermit.json">Data Config</a>
-        </p>
-        <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/format-config/buildingpermit.json">Format Config</a>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">BPA LOW Permit Order</td>
-      <td style="text-align:left">PDF Generated for the Permit Order on approval of the BPA LOW RISK Applications</td>
-      <td
-      style="text-align:left">
-        <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/data-config/buildingpermit-low.json">Data Config</a>
-        </p>
-        <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/format-config/buildingpermit-low.json">Format Config</a>
-        </p>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Revocation Letter</td>
-      <td style="text-align:left">PDF of the Revocation Letter Generated when the LOW RISK BPA Application
-        is Rejected</td>
-      <td style="text-align:left">
-        <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/data-config/bpa-revocation.json">Data Config</a>
-        </p>
-        <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/format-config/bpa-revocation.json">Format Config</a>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Occupancy Certificate</td>
-      <td style="text-align:left">PDF Germinated for the Occupancy Certificate on Approval of the Occupancy
-        Certificate Application</td>
-      <td style="text-align:left">
-        <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/data-config/occupancy-certificate.json">Data Config</a>
-        </p>
-        <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/format-config/occupancy-certificate.json">Format Config</a>
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| **PDF Name**          | **Description**                                                                                   |  **Config’s**                                                                                                                                                                                                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BPA Permit Order      | PDF Generated for the Permit Order on approval of the BPA HIGH and MEDIUM RISK Applications       | <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/data-config/buildingpermit.json">Data Config</a></p><p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/format-config/buildingpermit.json">Format Config</a></p>               |
+| BPA LOW Permit Order  | PDF Generated for the Permit Order on approval of the BPA LOW RISK Applications                   | <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/data-config/buildingpermit-low.json">Data Config</a></p><p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/format-config/buildingpermit-low.json">Format Config</a></p>       |
+| Revocation Letter     | PDF of the Revocation Letter Generated when the LOW RISK BPA Application is Rejected              | <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/data-config/bpa-revocation.json">Data Config</a></p><p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/format-config/bpa-revocation.json">Format Config</a></p>               |
+| Occupancy Certificate | PDF Germinated for the Occupancy Certificate on Approval of the Occupancy Certificate Application | <p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/data-config/occupancy-certificate.json">Data Config</a></p><p><a href="https://github.com/egovernments/configs/blob/master/pdf-service/format-config/occupancy-certificate.json">Format Config</a></p> |
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-

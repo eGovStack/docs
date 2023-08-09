@@ -4,11 +4,11 @@ description: Learn how to setup and configure PGR service
 
 # PGR Service Configuration
 
-## Overview <a id="Overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
-Public Grievances & Redressal \(PGR\) is a system that enables citizens to raise a complaint with the ULBs. A citizen can track the complaint, upload image related to the complaint, re-open the complaint if he/she is not satisfied and rate the service. This document contains the details about how to setup PGR service and describes the functionalities it provides
+Public Grievances & Redressal (PGR) is a system that enables citizens to raise a complaint with the ULBs. A citizen can track the complaint, upload image related to the complaint, re-open the complaint if he/she is not satisfied and rate the service. This document contains the details about how to setup PGR service and describes the functionalities it provides
 
-## Pre-requisites <a id="Pre-requisites"></a>
+## Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
@@ -16,8 +16,8 @@ Before you proceed with the configuration, make sure the following pre-requisite
 * Kafka server is up and running
 * egov-persister service is running and has pgr-services persister config path added in it
 * PSQL server is running and database is created to store complaint data
-* _\(Optional\)_ Indexer config for pgr-services is added in egov-indexer yaml paths to index the generated data. Index is required for data visualisation in Kibana or in DSS.
-* _\(Optional\)_ Report config for pgr-services is added in Report service config paths. Required if reports are to be provided to the user.
+* _(Optional)_ Indexer config for pgr-services is added in egov-indexer yaml paths to index the generated data. Index is required for data visualisation in Kibana or in DSS.
+* _(Optional)_ Report config for pgr-services is added in Report service config paths. Required if reports are to be provided to the user.
 * Following services should be up and running:
   * egov-user
   * egov-workflow-v2
@@ -29,7 +29,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
   * egov-url-shortening
   * egov-hrms
 
-## Key Functionalities <a id="Key-Functionalities"></a>
+## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
 * A citizen can file, track and rate the complaint
 * A citizen can add image and comments related to the complaint
@@ -38,18 +38,18 @@ Before you proceed with the configuration, make sure the following pre-requisite
 * ULB can track the SLA for resolving each complaint and can use it as a metric to streamline the process for resolving complaints
 * Department wise assignment of the complaint to the LME
 
-## Deployment Details <a id="Deployment-Details"></a>
+## Deployment Details <a href="#deployment-details" id="deployment-details"></a>
 
 1. Deploy the latest version of pgr-services
-2. Add pgr-service-persister.yml file in config folder in git and add that path in persister. _\(The file path is to be added in environment yaml file in param called_ persist-yml-path _\)_
-3. If any Report Config is created, the config should be added to the config folder in git and that path should be added in Report service. \(_The file path is to be added in a file called “reportFileLocationsv1.txt” in Config folder_\)
-4. If index is to be created add the indexer config path in indexer service. \(_The file path is to be added in environment yaml file in param called_ egov-indexer-yaml-repo-path\)
+2. Add pgr-service-persister.yml file in config folder in git and add that path in persister. _(The file path is to be added in environment yaml file in param called_ persist-yml-path _)_
+3. If any Report Config is created, the config should be added to the config folder in git and that path should be added in Report service. (_The file path is to be added in a file called “reportFileLocationsv1.txt” in Config folder_)
+4. If index is to be created add the indexer config path in indexer service. (_The file path is to be added in environment yaml file in param called_ egov-indexer-yaml-repo-path)
 
-## Configuration Details <a id="Configuration-Details"></a>
+## Configuration Details <a href="#configuration-details" id="configuration-details"></a>
 
 1. Add master data in MDMS service with the module name as RAINMAKER-PGR. Following is some sample master data for the service:
 
-```text
+```
 {
   "tenantId": "pb",
   "moduleName": "RAINMAKER-PGR",
@@ -85,9 +85,9 @@ Before you proceed with the configuration, make sure the following pre-requisite
 }
 ```
 
-Create businessService \(workflow configuration\) using the \_\_/businessservice/\_create. Following is the product configuration for PGR:
+Create businessService (workflow configuration) using the \_\_/businessservice/\_create. Following is the product configuration for PGR:
 
-```text
+```
 {
       "tenantId": "pb",
       "businessService": "PGR",
@@ -271,9 +271,9 @@ Create businessService \(workflow configuration\) using the \_\_/businessservice
     }
 ```
 
-Using /localization/messages/v1/\_upsert , add localisation \(templates\) for notification messages to be sent. Following are the product notification templates:
+Using /localization/messages/v1/\_upsert , add localisation (templates) for notification messages to be sent. Following are the product notification templates:
 
-```text
+```
 {
   "messages": [
        {
@@ -312,7 +312,7 @@ Using /localization/messages/v1/\_upsert , add localisation \(templates\) for no
 
 Add Role-Action mapping for the APIs in MDMS. Following are the required entries. They should be mapped to both CITIZEN and appropriate employee roles.
 
-```text
+```
 {
   {
       "id": {{ID_PLACEHOLDER}},
@@ -364,44 +364,43 @@ Add Role-Action mapping for the APIs in MDMS. Following are the required entries
     }
 ```
 
-## Integration <a id="Integration"></a>
+## Integration <a href="#integration" id="integration"></a>
 
-### Integration Scope <a id="Integration-Scope"></a>
+### Integration Scope <a href="#integration-scope" id="integration-scope"></a>
 
 PGR service can be integrated with any organisation or system which wants to track customer queries or complaint. The organisations can customise the workflow depending on their product requirements.
 
-### Integration Benefits <a id="Integration-Benefits"></a>
+### Integration Benefits <a href="#integration-benefits" id="integration-benefits"></a>
 
 * Easy tracking and resolution of complaints
 * Configurable workflow according to client requirement
 
-### Steps to Integration <a id="Steps-to-Integration"></a>
+### Steps to Integration <a href="#steps-to-integration" id="steps-to-integration"></a>
 
 1. Customer can raise a complaint using the `/requests/_create`.
 2. Organisation or System can search the complaint using `/requests/_searchendpoint`.
 3. Once the complaint is raised the organisation or system can call `/requests/_update` endpoint to move the application further in workflow until it gets resolved.
 
-## Interaction Diagram <a id="Interaction-Diagram"></a>
+## Interaction Diagram <a href="#interaction-diagram" id="interaction-diagram"></a>
 
-![](../../../../.gitbook/assets/image%20%2877%29%20%284%29%20%287%29.png)
+![](<../../../../.gitbook/assets/image (77) (5).png>)
 
-## Reference Docs <a id="Interaction-Diagram"></a>
+## Reference Docs <a href="#interaction-diagram" id="interaction-diagram"></a>
 
-### Doc Links <a id="Doc-Links"></a>
+### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title** | **Link** |
-| :--- | :--- |
+| **Title**                   | **Link**               |
+| --------------------------- | ---------------------- |
 | Workflow Technical Document | [Workflow Service](./) |
-| User Technical Document | [User Service](./) |
+| User Technical Document     | [User Service](./)     |
 
-### API List <a id="API-List"></a>
+### API List <a href="#api-list" id="api-list"></a>
 
-|  | **Link** |
-| :--- | :--- |
+|                    | **Link**                                                                                                                   |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------- |
 | /requests/\_create | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |
 | /requests/\_update | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |
 | /requests/\_search | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |
-| /requests/\_count | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |
+| /requests/\_count  | [https://www.getpostman.com/collections/09154f94d2c291a96777](https://www.getpostman.com/collections/09154f94d2c291a96777) |
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)All content on this page by [eGov Foundation ](https://egov.org.in/)is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-

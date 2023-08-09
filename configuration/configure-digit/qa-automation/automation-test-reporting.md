@@ -10,7 +10,7 @@ If not done during setup, then please install karate runner plugin as shown belo
 
 Target folder generates test results folders as per time stamp of test suite runs.
 
-When we run TestRunner file \(ex: @regression\), all the features under classpath would run and feature wise reports would be generated and placed under target/surefire-reports.
+When we run TestRunner file (ex: @regression), all the features under classpath would run and feature wise reports would be generated and placed under target/surefire-reports.
 
 Post execution of test runs, the framework will automatically generate: **surefire-reports**
 
@@ -29,7 +29,7 @@ Pretty Format generates the Cucumber **test report in the HTML format**, i.e. an
 A folder will automatically create under **./target/** folder along with timestamp which will contain cucumber-html-reports.
 
 {% hint style="info" %}
-1. &lt;To Integrate cucumber reporting, first we need to add cucumber maven dependency in pom.xml file and save. dependency&gt; &lt;groupId&gt;net.masterthought&lt;/groupId&gt; &lt;artifactId&gt;cucumber-reporting&lt;/artifactId&gt; &lt;version&gt;3.8.0&lt;/version&gt; &lt;/dependency&gt;
+1. \<To Integrate cucumber reporting, first we need to add cucumber maven dependency in pom.xml file and save. dependency> \<groupId>net.masterthought\</groupId> \<artifactId>cucumber-reporting\</artifactId> \<version>3.8.0\</version> \</dependency>
 2. Test Results target folder: eGov Test Automation Results are composed at cucumber-html-reports with timestamp of test execution reports.
 {% endhint %}
 
@@ -39,17 +39,16 @@ Select the **karate runner** tab and click on **overview-features.html** to view
 
 **Summary of service features and test status can be seen in details with Pass / Fail / run time stamp**
 
-![](../../../.gitbook/assets/159%20%283%29.png)
+![](<../../../.gitbook/assets/159 (4).png>)
 
 \*\*\*\*
 
 Now, observe below **Feature Report**, you can see lots of verbose logging in the console and the actual output whether the features/scenarios are passed/ failed are skipped.
 
-![](../../../.gitbook/assets/159.png)
+![](<../../../.gitbook/assets/159 (7).png>)
 
 * karate-summary.html:
 
 ![](../../../.gitbook/assets/158.png)
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-

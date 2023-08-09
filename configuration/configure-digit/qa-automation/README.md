@@ -24,9 +24,9 @@ DIGIT Test Automation framework majorly deals with various API services validati
   * billing-service, collection-services, dashboard-analytics, dashboard-ingest, egf-instrument, egf-master, egov-apportion-service, egov-hrms
 * **Municipal Services**
   * bpa-calculator, bpa-services, firenoc-calculator, firenoc-services, land-services, property-services, pt-calculator-v2, rainmaker-pgr, sw-calculator, sw-services, tl-calculator, tl-services, ws-calculator, ws-services
-* **E2E - Integration of services**
+*   **E2E - Integration of services**
 
-  E2E pt services, E2E ws services, E2E pgr services, E2E tl services, mCollect
+    E2E pt services, E2E ws services, E2E pgr services, E2E tl services, mCollect
 
 ## Approach
 
@@ -36,54 +36,13 @@ Automation is accomplished by building a custom framework using Karate Framework
 * And uses generic functions to generate random mobile number, name, etc to pass values for respective fields in payload
 * Framework allows to test kafka related services by using third party tool as a proxy to access kafka clusters via REST API called kafka Rest Proxy
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>Title</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Karate Framework</td>
-      <td style="text-align:left"> <a href="https://github.com/intuit/karate"><img src="https://github.com/fluidicon.png" alt/>intuit/karate</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Gherkin Language</td>
-      <td style="text-align:left">
-        <ul>
-          <li>Gherkin is the format for cucumber specifications</li>
-          <li>Gherkin is line-oriented language just like YAML and Python</li>
-          <li>Gherkin Scripts connects the human concept of cause and effect to the
-            software concept of input/process and output</li>
-          <li>Feature, Background, Scenario, Given, When, Then, And But are importantly
-            used in Gherkin</li>
-          <li>In Gherkin, each scenario should execute separately</li>
-          <li>The biggest advantage of Gherkin is simple enough for non-programmers
-            to understand</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Cucumber</td>
-      <td style="text-align:left"> <a href="https://cucumber.io/"><img src="https://cucumber.io/cucumber/assets/img/favicon.png" alt/>BDD Testing &amp; Collaboration Tools for Teams | Cucumber</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">MDMS</td>
-      <td style="text-align:left"><a href="https://github.com/egovernments/egov-mdms-data"><img src="https://github.com/fluidicon.png" alt/>egovernments/egov-mdms-data</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Kafka Rest Proxy</td>
-      <td style="text-align:left"><a href="https://github.com/confluentinc/kafka-rest"><img src="https://github.com/fluidicon.png" alt/>confluentinc/kafka-rest</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| **Title**        | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Karate Framework |  [![](https://github.com/fluidicon.png)intuit/karate](https://github.com/intuit/karate)                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Gherkin Language | <ul><li>Gherkin is the format for cucumber specifications</li><li>Gherkin is line-oriented language just like YAML and Python</li><li>Gherkin Scripts connects the human concept of cause and effect to the software concept of input/process and output</li><li>Feature, Background, Scenario, Given, When, Then, And But are importantly used in Gherkin</li><li>In Gherkin, each scenario should execute separately</li><li>The biggest advantage of Gherkin is simple enough for non-programmers to understand</li></ul> |
+| Cucumber         |  [![](https://cucumber.io/cucumber/assets/img/favicon.png)BDD Testing & Collaboration Tools for Teams \| Cucumber](https://cucumber.io/)                                                                                                                                                                                                                                                                                                                                                                                     |
+| MDMS             | [![](https://github.com/fluidicon.png)egovernments/egov-mdms-data](https://github.com/egovernments/egov-mdms-data)                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Kafka Rest Proxy | [![](https://github.com/fluidicon.png)confluentinc/kafka-rest](https://github.com/confluentinc/kafka-rest)                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ### Tools Used
 
@@ -93,7 +52,7 @@ Automation is accomplished by building a custom framework using Karate Framework
 * [Cucumber](https://cucumber.io/docs/cucumber/api/)
 * [JUnit](https://junit.org/junit4/)
 * [Kafka Rest Proxy](https://github.com/confluentinc/kafka-rest)
-* [Maven](https://maven.apache.org/#:~:text=Apache%20Maven%20is%20a%20software,a%20central%20piece%20of%20information.)
+* [Maven](https://maven.apache.org)
 
 ### Environments currently working on
 
@@ -107,15 +66,14 @@ Automation is accomplished by building a custom framework using Karate Framework
 
 ## Reference Docs
 
-#### Doc Links <a id="Doc-Links"></a>
+#### Doc Links <a href="#doc-links" id="doc-links"></a>
 
-| **Title** | **Link** |
-| :--- | :--- |
-| Manual Test Cases | [![](https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico)Egov Automation: Test Cases](https://docs.google.com/spreadsheets/d/16BdbxgE4z38atk6MZBCRcw4_D4fL0AHEvblqGPSYJ_s/edit?usp=sharing) |
-| Automation Source Code | [![](https://github.com/fluidicon.png)egovernments/test-automation](https://github.com/egovernments/test-automation) |
-| Automation Readme | [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/test-automation/blob/master/README.md - Connect to preview](https://github.com/egovernments/test-automation/blob/master/README.md) |
-| Kafka Approach Document | [Kafka Consumer Producer Approach](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1540587710/Kafka+Consumer+Producer+Approach) |
-| Sample Config File \(for passing to execution command\) | [![](https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png)config.yaml](https://drive.google.com/file/d/19XDqJErhGrNegrmI2AxL9dsDqubxaWdo/view?usp=sharing) |
+| **Title**                                             | **Link**                                                                                                                                                                                                            |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Manual Test Cases                                     | [![](https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico)Egov Automation: Test Cases](https://docs.google.com/spreadsheets/d/16BdbxgE4z38atk6MZBCRcw4\_D4fL0AHEvblqGPSYJ\_s/edit?usp=sharing)                    |
+| Automation Source Code                                | [![](https://github.com/fluidicon.png)egovernments/test-automation](https://github.com/egovernments/test-automation)                                                                                                |
+| Automation Readme                                     | [![](https://github.githubassets.com/favicon.ico)https://github.com/egovernments/test-automation/blob/master/README.md - Connect to preview](https://github.com/egovernments/test-automation/blob/master/README.md) |
+| Kafka Approach Document                               | [Kafka Consumer Producer Approach](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1540587710/Kafka+Consumer+Producer+Approach)                                                                            |
+| Sample Config File (for passing to execution command) | [![](https://ssl.gstatic.com/images/branding/product/1x/drive\_2020q4\_32dp.png)config.yaml](https://drive.google.com/file/d/19XDqJErhGrNegrmI2AxL9dsDqubxaWdo/view?usp=sharing)                                    |
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)\_\_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_ ](https://egov.org.in/)_is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
-
